@@ -1,12 +1,14 @@
 // Optional browser regression: NODE_PATH=<Playwright modules> node tests/test_mobile_browser.cjs
 // BROWSER_EXECUTABLE may point at an installed Chrome; no personal profile is used.
+// BROWSER_ENGINE=webkit selects Safari's engine; PLAYWRIGHT_MODULE may select a compatible runtime.
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const {pathToFileURL} = require('node:url');
-const {chromium} = require('playwright');
+const {chromium,webkit} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 
 (async () => {
-  const browser = await chromium.launch({headless:true,
+  const engine = process.env.BROWSER_ENGINE==='webkit' ? webkit : chromium;
+  const browser = await engine.launch({headless:true,
     ...(process.env.BROWSER_EXECUTABLE ? {executablePath:process.env.BROWSER_EXECUTABLE} : {})});
   try {
     const context = await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true});
@@ -17,6 +19,26 @@ const {chromium} = require('playwright');
     const noOverflow = async () => assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     const count = async () => Number(await page.locator('#visibleCount').innerText());
     const initialCount = await count();
+    // A fresh visit must show selection before any theme toggle or saved preference.
+    const assertSelectedPaint = async (theme) => {
+      const paint = await page.locator('.filter-row [aria-pressed="true"],#monthFilterOptions [aria-pressed="true"]').evaluateAll(nodes => nodes.map(el => {
+        const s=getComputedStyle(el);return {bg:s.backgroundColor,color:s.color,appearance:s.appearance};
+      }));
+      assert.ok(paint.length>=2);
+      for (const style of paint) assert.deepEqual(style,{
+        bg:theme==='dark'?'rgb(255, 255, 255)':'rgb(0, 0, 0)',
+        color:theme==='dark'?'rgb(0, 0, 0)':'rgb(255, 255, 255)',appearance:'none'
+      });
+    };
+    assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
+    await assertSelectedPaint('dark');
+    for (const city of ['臺北市','新北市','桃園市']) {
+      await page.locator(`.filter-row [data-value="${city}"]`).tap();
+      await page.locator('#monthFilterOptions button').nth(1).tap();
+      await assertSelectedPaint('dark');
+    }
+    await page.reload();
+    await assertSelectedPaint('dark');
     for (const width of [320,390,700]) {
       await page.setViewportSize({width,height:844});
       await noOverflow();
@@ -58,8 +80,8 @@ const {chromium} = require('playwright');
           expected:ACTIVITIES_DATA.filter(a=>a.city==='新北市' && selectedMonths.has(taipeiDateKey(new Date(a.start_time)).slice(0,7))).length};
       });
       assert.deepEqual(selection.city,selection.month);
-      assert.equal(selection.city.bg,theme==='dark' ? 'rgb(245, 245, 247)' : 'rgb(29, 29, 31)');
-      assert.equal(selection.city.color,theme==='dark' ? 'rgb(29, 29, 31)' : 'rgb(255, 255, 255)');
+      assert.equal(selection.city.bg,theme==='dark' ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)');
+      assert.equal(selection.city.color,theme==='dark' ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)');
       assert.notEqual(selection.city.bg,selection.off.bg);
       assert.notEqual(selection.city.color,selection.off.color);
       assert.equal(selection.cityText,selection.city.color);
@@ -73,7 +95,9 @@ const {chromium} = require('playwright');
       assert.equal(await page.locator('.filter-row [data-value="all"]').getAttribute('aria-pressed'),'true');
     }
     await page.evaluate(() => document.documentElement.setAttribute('data-theme','dark'));
-    await page.locator('#mobileFilterButton').click();
+    // Safari does not focus buttons on pointer activation; establish keyboard focus for this check.
+    await page.locator('#mobileFilterButton').focus();
+    await page.keyboard.press('Enter');
     assert.ok(await page.locator('#filterModal').evaluate(el => el.open && el.matches(':modal')));
     const source = await page.locator('#sourceFilter option').nth(1).getAttribute('value');
     await page.locator('#sourceFilter').selectOption(source);

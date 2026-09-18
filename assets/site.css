@@ -119,6 +119,9 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 @keyframes sheet-enter{from{transform:translateY(28px);opacity:.5}to{transform:translateY(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.modal-dialog{animation:none}}
 
-/* Share the persistent selected state across desktop and touch layouts. */
-.filter-row .pill[aria-pressed=true],.month-options .pill[aria-pressed=true]{background:var(--primary);color:var(--inverse)}
+/* Explicit author-painted controls, including mobile browsers' native button rendering. */
+.filter-row .pill,.month-options .pill{-webkit-appearance:none;appearance:none;background-image:none;-webkit-text-fill-color:currentColor}
+:root{--filter-selected-bg:#000;--filter-selected-text:#fff}
+:root[data-theme=dark]{--filter-selected-bg:#fff;--filter-selected-text:#000}
+.filter-row .pill[aria-pressed="true"],.month-options .pill[aria-pressed="true"]{background-color:var(--filter-selected-bg);color:var(--filter-selected-text);background-image:none}
 .filter-row .pill[aria-pressed=true] .badge-city{background:transparent;color:inherit}
