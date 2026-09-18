@@ -1423,8 +1423,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="modal-desc" id="modalDesc"></div>
 
         <div class="modal-actions-bar">
-          <a id="modalTicketLink" href="#" target="_blank" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
-            🎟️ 前往官方購票 / 報名頁面
+          <a id="modalTicketLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
+            🌐 前往主辦/官方網站 ↗
+          </a>
+          <a id="modalGoogleSearchLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); font-weight:600;">
+            🔍 Google 搜尋此活動詳情 ↗
           </a>
           <!-- Dynamic Calendar CTA (Auto-adapted for Android Google Calendar vs iPhone Apple Calendar) -->
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
@@ -1879,7 +1882,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalPrice').innerText = act.price_info;
       document.getElementById('modalDesc').innerText = act.description;
 
-      document.getElementById('modalTicketLink').href = act.source_url;
+      const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
+      const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語`);
+      const googleSearchUrl = `https://www.google.com/search?q=${{searchQuery}}`;
+
+      document.getElementById('modalTicketLink').href = act.source_url || googleSearchUrl;
+      document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
       document.getElementById('modalGCalLink').href = act.gcal_url;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
