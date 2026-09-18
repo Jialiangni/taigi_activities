@@ -56,3 +56,8 @@ GitHub Actions 每日台灣時間 04:00、推送 `main` 或手動觸發時：執
 ## 各區圖書館與活動中心爬蟲
 
 已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有158個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。
+
+
+## Facebook 粉專與留言
+
+已將出外講台語、阿熒的教室及 `facebook.com/taigiloo` 加入[粉專待查名單](data/facebook_pages.json)，保留既有 `taigilok`。Facebook收集器已支援逐篇留言與回覆分頁、報名連結及來源證據；指定粉專不因本文沒台語關鍵字而跳過。**目前仍未設定Meta授權與Page ID對照，實際貼文／留言尚未完成連線驗收**，不會把待設定說成已抓取。設定、頁數限制與測試紀錄見[COLLECTORS.md](COLLECTORS.md#facebook-指定粉專與留言報名連結2026-09-18)。

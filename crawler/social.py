@@ -1,6 +1,8 @@
 """Official Meta API readers. Credentials only via environment; posts stay candidates."""
 import os
 import re
+import hashlib
+import json
 from urllib.parse import urlencode, urlsplit, parse_qs
 from .collection import Collector, CollectionError, Result, candidate, relevant, KEYWORDS
 
@@ -14,7 +16,13 @@ def read_pages(client, url, params, token, max_pages, allow_same_cursor=False):
             raise CollectionError('api_error')
         if not isinstance(data.get('data'), list):
             raise CollectionError('api_schema_changed')
-        fingerprint = tuple(str(x.get('id')) for x in data['data'])
+        if any(not isinstance(x, dict) for x in data['data']):
+            raise CollectionError('api_schema_changed')
+        # Some Page Public Content Access comment responses omit IDs. Distinct
+        # comment pages must not all collapse to the fingerprint (None, ...).
+        fingerprint = tuple(str(x.get('id')) if x.get('id') else
+                            hashlib.sha256(json.dumps(x, sort_keys=True).encode()).hexdigest()
+                            for x in data['data'])
         if fingerprint and fingerprint in seen_pages:
             raise CollectionError('repeated_api_page')
         seen_pages.add(fingerprint)

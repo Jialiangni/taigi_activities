@@ -585,12 +585,14 @@
         "https://taigiloo.tw/feed/"
       ],
       "social_urls": [
-        "https://www.facebook.com/taigilok"
+        "https://www.facebook.com/taigilok",
+        "https://www.facebook.com/taigiloo"
       ],
       "social_status": "needs_configuration",
       "notes": [
         "官方粉專由使用者指定且官網關於頁連結確認；尚無 Meta 授權，不宣稱已取得粉專貼文。",
-        "官網 RSS 未必持續更新；另以合作館舍與售票平台的官方活動公告交叉收集。"
+        "官網 RSS 未必持續更新；另以合作館舍與售票平台的官方活動公告交叉收集。",
+        "2026-09-18使用者另指定facebook.com/taigiloo；Facebook待查名單獨立保留兩個handle，取得數字Page ID後才判定是否同頁，不能只因名稱相近合併。"
       ]
     },
     {

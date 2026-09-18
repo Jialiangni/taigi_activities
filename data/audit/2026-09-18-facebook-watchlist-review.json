@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-18T21:54:04+08:00",
+  "public_page_checks": [
+    {
+      "url": "https://www.facebook.com/ChhutGoaKongTaiGi",
+      "evidence": {
+        "url": "https://www.facebook.com/ChhutGoaKongTaiGi",
+        "final_url": "https://www.facebook.com/ChhutGoaKongTaiGi",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:48:20+08:00",
+        "sha256": "260845ca7242af434e84a6269ea15ff1cfedadead90da974fe21d4b3334aef8a"
+      },
+      "title": "出外講台語 Chhut-gōa kóng Tâi-gí",
+      "status": "public_html_not_verified_as_feed",
+      "notes": "HTTP成功不代表可取得完整貼文或留言；沒有Meta授權，不作為收集成功。"
+    },
+    {
+      "url": "https://www.facebook.com/Guaayingla",
+      "evidence": {
+        "url": "https://www.facebook.com/Guaayingla",
+        "final_url": "https://www.facebook.com/Guaayingla",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:48:20+08:00",
+        "sha256": "b4b2f959421ead37c2bb9937b781cfd02d1fd6baf8d16c0b2ad47ee710dc9e1b"
+      },
+      "title": "阿熒的教室",
+      "status": "public_html_not_verified_as_feed",
+      "notes": "HTTP成功不代表可取得完整貼文或留言；沒有Meta授權，不作為收集成功。"
+    },
+    {
+      "url": "https://www.facebook.com/taigiloo",
+      "evidence": {
+        "url": "https://www.facebook.com/taigiloo",
+        "final_url": "https://www.facebook.com/taigiloo",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:48:21+08:00",
+        "sha256": "eed648dbbfb666b05cb151083036567823ecaf5649be947f9b8eb4f78c6e5aa9"
+      },
+      "title": "牽囡仔ê手 行台語ê路-台灣台語路協會",
+      "status": "public_html_not_verified_as_feed",
+      "notes": "HTTP成功不代表可取得完整貼文或留言；沒有Meta授權，不作為收集成功。"
+    }
+  ],
+  "collector_check": {
+    "source_id": "facebook",
+    "method": "authorized_meta_api_feed_and_comments",
+    "status": "needs_configuration",
+    "errors": [],
+    "notes": [
+      "FACEBOOK_ACCESS_TOKEN is missing; feed and comments have NOT been read.",
+      "Map every watched handle to a verified numeric Page ID using FACEBOOK_PAGE_ID_MAP; bare FACEBOOK_PAGE_IDS do not prove watchlist coverage.",
+      "Comments use filter=stream and cursor pagination, including visible replies; permissions, hidden/deleted comments and configured limits prevent a complete-coverage claim. Empty comments are not proof of absence."
+    ],
+    "coverage_complete": false,
+    "candidate_count": 0,
+    "successful_response_count": 0,
+    "started_at": "2026-09-18T21:52:41+08:00",
+    "completed_at": "2026-09-18T21:52:41+08:00",
+    "page_status": [
+      {
+        "handle": "taigilok",
+        "url": "https://www.facebook.com/taigilok",
+        "page_id": null,
+        "status": "needs_configuration"
+      },
+      {
+        "handle": "ChhutGoaKongTaiGi",
+        "url": "https://www.facebook.com/ChhutGoaKongTaiGi",
+        "page_id": null,
+        "status": "needs_configuration"
+      },
+      {
+        "handle": "Guaayingla",
+        "url": "https://www.facebook.com/Guaayingla",
+        "page_id": null,
+        "status": "needs_configuration"
+      },
+      {
+        "handle": "taigiloo",
+        "url": "https://www.facebook.com/taigiloo",
+        "page_id": null,
+        "status": "needs_configuration"
+      }
+    ]
+  },
+  "publication_changed": false,
+  "tests": "74 unit tests passed; includes 11 Facebook comment/watchlist tests. Authorized live feed/comments NOT tested because credentials are not configured.",
+  "technical_reference": "https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py"
+}

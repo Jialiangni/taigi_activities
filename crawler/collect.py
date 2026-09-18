@@ -31,7 +31,9 @@ def collectors(config, selected=None):
         'opentix': OpentixCrawler(keywords, pages, details),
         'eraticket': EraTicketCrawler(keywords, pages, details),
         'culture_open_data': CultureCrawler(keywords, definitions),
-        'facebook': FacebookCrawler(keywords, pages),
+        'facebook': FacebookCrawler(keywords, pages,
+                                    max_comment_pages=limits.get('facebook_comment_pages', 20),
+                                    max_posts=limits.get('facebook_posts_per_page', 200)),
         'instagram': InstagramCrawler(hashtags=config.get('instagram_hashtags'), keywords=keywords, max_pages=pages),
         'threads': ThreadsCrawler(keywords, pages),
         'li_kang_khiok': LiKangKhiokCrawler(keywords, limits.get('feed_pages', 5)),
@@ -99,6 +101,9 @@ def run(config, output, selected=None, client_factory=Client):
               'sources': [dict({k: r[k] for k in ('source_id', 'method', 'status', 'errors', 'notes', 'coverage_complete')},
                               candidate_count=len(r['candidates']), successful_response_count=len(r['requests']),
                               started_at=r['started_at'], completed_at=r['completed_at']) for r in results]}
+    for summary, result in zip(report['sources'], results):
+        if 'page_status' in result:
+            summary['page_status'] = result['page_status']
     # No tokens are accepted in config; only documented collection limits, keywords and tags.
     (output / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return report

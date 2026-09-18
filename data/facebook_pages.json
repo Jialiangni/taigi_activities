@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "handle": "taigilok",
+      "url": "https://www.facebook.com/taigilok",
+      "discovery": "previous_user_request_and_official_website"
+    },
+    {
+      "handle": "ChhutGoaKongTaiGi",
+      "url": "https://www.facebook.com/ChhutGoaKongTaiGi",
+      "discovery": "user_request",
+      "name": "出外講台語 Chhut-gōa kóng Tâi-gí"
+    },
+    {
+      "handle": "Guaayingla",
+      "url": "https://www.facebook.com/Guaayingla",
+      "discovery": "user_request",
+      "name": "阿熒的教室"
+    },
+    {
+      "handle": "taigiloo",
+      "url": "https://www.facebook.com/taigiloo",
+      "discovery": "user_request",
+      "name": "牽囡仔ê手 行台語ê路-台灣台語路協會"
+    }
+  ],
+  "notes": [
+    "每個handle獨立保留；未經Page ID確認，不將taigiloo與taigilok視為同一粉專。",
+    "需Meta授權與經確認的數字Page ID對照；未設定時逐粉專回報needs_configuration。",
+    "指定粉專讀取預算內每篇貼文的API可見留言與回覆，再作候選審閱，不先以本文是否含台語或報名連結排除。"
+  ]
+}

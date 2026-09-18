@@ -109,3 +109,10 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 官方明示起訖日期、固定星期與時間的整期課程，可在確認總時數一致後拆成實際日期；永春課程16次共32小時，每次標示整期報名及影印費自付，不能當作16個獨立可報名活動，也不能因免學費而標示全免。
 
 非場次類型增加 `reading_resource`，呈現臺語閱讀推廣；`exhibition_resource` 標籤為「台語相關展覽」，避免一般書展被誤稱為語音導覽。日期範圍但沒有固定時刻的活動以資源卡呈現，沒有日曆事件；日期到期界線使用結束日的次日零時，並非推定館方營業時間。全部資源仍須通過相同官方來源檢查。
+
+
+## 11. Facebook 粉專留言收集
+
+`data/facebook_pages.json` 為Facebook待查名單，包含ChhutGoaKongTaiGi、Guaayingla、taigiloo及既有taigilok；由Facebook收集器自動載入。以 `FACEBOOK_PAGE_ID_MAP` 明確綁定數字ID；未設定逐項標needs_configuration。名稱或網址相似不可直接合併。
+
+指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整；所有結果仍待人工核實，不直接刊登。詳見COLLECTORS.md。

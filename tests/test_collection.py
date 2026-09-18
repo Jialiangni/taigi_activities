@@ -189,7 +189,7 @@ class CollectionTests(unittest.TestCase):
             self.assertEqual(result.status, 'needs_configuration')
 
     def test_social_post_time_never_becomes_event_time(self):
-        fake = MockClient(jsons=[{'data': [{'id': '1', 'message': '台語講座', 'permalink_url': 'https://www.facebook.com/1', 'created_time': '2026-09-01'}]}])
+        fake = MockClient(jsons=[{'data': [{'id': '1', 'message': '台語講座', 'permalink_url': 'https://www.facebook.com/1', 'created_time': '2026-09-01'}]}, {'data': []}])
         result = FacebookCrawler(['台語'], env={'FACEBOOK_ACCESS_TOKEN': 'SECRET', 'FACEBOOK_PAGE_IDS': '123'}).collect(fake)
         self.assertIsNone(result.candidates[0]['fields']['start_time'])
         self.assertEqual(result.candidates[0]['fields']['published_at'], '2026-09-01')
