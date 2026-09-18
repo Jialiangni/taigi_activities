@@ -104,10 +104,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       </div>
       <div class="filter-row" role="group" aria-label="揀地區">
         <span class="filter-label">佗位</span>
+        <div class="city-options">
         <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" aria-pressed="false" onclick="setCityFilter('新北市')"><span class="badge-city city-newtaipei">新北</span><span class="pill-count" id="count-city-newtaipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
+        </div>
       </div>
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>

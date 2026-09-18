@@ -27,7 +27,18 @@ const {chromium} = require('playwright');
       const cityAll = await page.locator('.filter-row [data-value="all"]').boundingBox();
       const monthAll = await page.locator('[data-month="all"]').boundingBox();
       assert.ok(Math.abs(cityAll.x-monthAll.x)<1 && Math.abs(cityAll.width-monthAll.width)<1);
+      const month = await page.locator('#monthFilterOptions button').nth(1).boundingBox();
+      for (const city of ['臺北市','新北市','桃園市']) {
+        const box = await page.locator(`.filter-row [data-value="${city}"]`).boundingBox();
+        assert.ok(Math.abs(box.width-month.width)<1 && Math.abs(box.height-month.height)<1,'City and month buttons have equal dimensions');
+      }
     }
+    await page.setViewportSize({width:390,height:844});
+    await page.setViewportSize({width:320,height:844});
+    await page.locator('.filter-row [data-value="桃園市"]').tap();
+    assert.equal(await page.locator('.filter-row [data-value="桃園市"]').getAttribute('aria-pressed'),'true');
+    await noOverflow();
+    await page.locator('.filter-row [data-value="all"]').tap();
     await page.setViewportSize({width:390,height:844});
     // Selection is a persistent visual state after a real touch, including multi-month choices.
     for (const theme of ['dark','light']) {

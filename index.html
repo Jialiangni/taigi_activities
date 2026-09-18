@@ -55,6 +55,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 .filter-sheet-actions .btn-primary{flex:1}
 .select-filters label{font-size:13px}
 .filter-row .pill .badge-city{background:transparent;padding:0}
+.city-options{display:flex;align-items:center;gap:8px;min-width:0}
 @media(min-width:701px){
   .filter-label,.month-filter-label{flex:0 0 42px}
   .month-options{padding:3px 0}
@@ -80,16 +81,15 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
   .search-box input{font-size:16px;min-height:30px}
   .search-box>span{font-size:23px;line-height:1}
   .view-switchers{display:none}
-  .filter-row{display:grid;grid-template-columns:30px 52px repeat(3,minmax(0,1fr));gap:6px;padding:2px 0}
-  .filter-label{display:block;min-width:0;padding:0}
-  .filter-row .pill{flex:1;min-width:0;justify-content:center;padding:8px 4px;border-radius:12px;min-height:44px;background:transparent}
+  .filter-row{flex-wrap:nowrap;gap:6px}
+  .filter-label{display:block;min-width:30px;flex:0 0 30px;padding:0}
   .month-filter{gap:6px}
   .month-filter-label{min-width:30px;flex:0 0 30px;padding:0}
   .month-help{display:none}
-  .month-options{gap:6px;padding:2px 0;scrollbar-width:none}
-  .month-options::-webkit-scrollbar{display:none}
-  .month-options .pill{min-height:44px;padding:8px 12px;background:transparent;border-radius:12px}
-  .month-options .pill[data-month=all]{flex:0 0 52px;justify-content:center}
+  .city-options,.month-options{flex:1;gap:6px;padding:2px 0;overflow-x:auto;scrollbar-width:none}
+  .city-options::-webkit-scrollbar,.month-options::-webkit-scrollbar{display:none}
+  .city-options .pill,.month-options .pill{width:80px;flex:0 0 80px;height:44px;min-height:44px;justify-content:center;padding:8px 12px;background:transparent;border-radius:12px}
+  .city-options .pill[data-value=all],.month-options .pill[data-month=all]{width:52px;flex:0 0 52px}
   .mobile-filter-button{display:flex;align-items:center;gap:8px;min-height:44px;width:100%;padding:8px 13px;border:1px solid var(--border-color);border-radius:12px;background:transparent;font-size:13px;text-align:left}
   .mobile-filter-button>span:last-child{margin-left:auto;font-size:20px;line-height:1}
   #mobileFilterCount:not(:empty){display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:50%;background:var(--primary);color:var(--inverse);font-size:12px}
@@ -183,10 +183,12 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
       </div>
       <div class="filter-row" role="group" aria-label="揀地區">
         <span class="filter-label">佗位</span>
+        <div class="city-options">
         <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" aria-pressed="false" onclick="setCityFilter('新北市')"><span class="badge-city city-newtaipei">新北</span><span class="pill-count" id="count-city-newtaipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
+        </div>
       </div>
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
@@ -351,7 +353,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 01:44:32（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 01:48:24（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
