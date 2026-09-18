@@ -19,5 +19,6 @@ class InstitutionCrawler(Collector):
 
     def collect(self, client):
         from .sources.tmofa import TmofaCrawler
-        return [(TmofaCrawler(self.keywords) if spec['id'] == 'tmofa' else WebsiteCrawler(spec, self.keywords, self.max_pages)).collect(client)
+        from .sources.tfam import TfamCrawler
+        return [(TfamCrawler(self.keywords) if spec['id'] == 'tfam' else TmofaCrawler(self.keywords) if spec['id'] == 'tmofa' else WebsiteCrawler(spec, self.keywords, self.max_pages)).collect(client)
                 for spec in registry() if spec['group'] == self.group]

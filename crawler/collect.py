@@ -17,6 +17,7 @@ from .sources.threads import ThreadsCrawler
 from .sources.li_kang_khiok import LiKangKhiokCrawler
 from .sources.le_chang import LeChangCrawler
 from .sources.tmofa import TmofaCrawler
+from .sources.tfam import TfamCrawler
 
 
 def collectors(config, selected=None):
@@ -38,8 +39,9 @@ def collectors(config, selected=None):
     for spec in definitions:
         sources[spec['id']] = WebsiteCrawler(spec, keywords, limits.get('website_pages', 8))
     sources['tmofa'] = TmofaCrawler(keywords)
+    sources['tfam'] = TfamCrawler(keywords)
     requested = set(selected or sources)
-    for group in ('public_libraries', 'museums', 'government'):
+    for group in ('public_libraries', 'museums', 'government', 'organizations'):
         if group in requested:
             requested.remove(group)
             requested.update(s['id'] for s in definitions if s['group'] == group)

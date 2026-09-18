@@ -227,8 +227,8 @@ class CollectionTests(unittest.TestCase):
 
     def test_registry_covers_every_group_and_no_legacy_activity_fallback(self):
         all_sources = collectors({})
-        self.assertEqual(len(all_sources), 45)
-        for required in ['accupass', 'opentix', 'eraticket', 'li_kang_khiok', 'le_chang', 'facebook', 'instagram', 'threads', 'tpml', 'ntpclib', 'typl', 'tfam', 'gold', 'ty_youth']:
+        self.assertEqual(len(all_sources), 50)
+        for required in ['accupass', 'opentix', 'eraticket', 'li_kang_khiok', 'le_chang', 'facebook', 'instagram', 'threads', 'tpml', 'ntpclib', 'typl', 'tfam', 'gold', 'ty_youth', 'ntl', 'yingge_library', 'taigiloo', 'dadaocheng', '228_national']:
             self.assertIn(required, all_sources)
         with self.assertRaises(CollectionError):
             all_sources['accupass'].fetch_activities()

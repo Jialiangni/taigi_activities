@@ -4,13 +4,14 @@ Compiles activities into an iPhone & Android optimized, clutter-free standalone 
 """
 import json
 import os
+from html import escape
 from typing import List
 from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
-def generate_single_html(activities: List[Activity], output_path: str = "index.html") -> str:
+def generate_single_html(activities: List[Activity], output_path: str = "index.html", resources=None) -> str:
     activities_data = []
     g_sync = GoogleWorkspaceSync()
 
@@ -22,6 +23,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     activities_json = json.dumps(activities_data, ensure_ascii=False, indent=2).replace("<", "\\u003c")
     calendar_header_json = json.dumps(g_sync.HEADER, ensure_ascii=False)
+
+    resource_cards = ''.join(
+        '<article class="resource-card"><small>' + escape(r['city']) + ' · ' +
+        {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '展覽與台語語音導覽'}[r['kind']] +
+        '</small><h3>' + escape(r['title']) + '</h3><p>' + escape(r['description']) +
+        '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a>' +
+        '<small>核對：' + escape(r['checked_at'][:10]) + '</small></article>' for r in (resources or []))
+    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽與展覽資訊</h2>'
+                        '<p>常設語音、預約服務與展覽資訊；請依館方公告確認開館日、費用及預約。以下不列入場次數或日曆下載。</p>'
+                        '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -49,6 +60,14 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   
   <style>
+    .guide-resources {{ padding: 1.5rem 1rem; }}
+    .guide-resources > p {{ color: var(--text-muted); margin: .6rem 0 1rem; }}
+    .resource-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }}
+    .resource-card {{ padding: 1.2rem; border: 1px solid var(--border-color); border-radius: 14px; background: var(--bg-card); }}
+    .resource-card h3 {{ margin: .5rem 0; font-size: 1.05rem; }}
+    .resource-card p {{ line-height: 1.7; margin-bottom: .8rem; }}
+    .resource-card a {{ color: var(--primary); }}
+    .resource-card small {{ display: block; color: var(--text-muted); margin-top: .4rem; }}
     :root {{
       --font-main: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', sans-serif;
       --font-display: 'Outfit', 'Roboto', 'Noto Sans TC', sans-serif;
@@ -1202,7 +1221,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
 
-  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。</div>
+  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。 <a href="#guideResources" style="color:var(--primary)">台語導覽與展覽資訊 ↓</a></div>
 
   <!-- CONTROLS & FILTERS -->
   <div class="controls-wrapper">
@@ -1253,6 +1272,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却</button>
         <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
         <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
+        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
         <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院</button>
         <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
         <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
@@ -1306,6 +1326,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       </div>
     </div>
   </main>
+  {resource_section}
 
   <!-- MOBILE NATIVE BOTTOM TAB BAR (Android & iPhone) -->
   <nav class="ios-tab-bar">
@@ -1350,6 +1371,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
             <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
             <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
+        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
             <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院 OPENTIX</button>
             <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
             <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>

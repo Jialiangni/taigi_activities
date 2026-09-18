@@ -43,12 +43,12 @@ class VerifiedCalendarTests(unittest.TestCase):
 
     def test_expanded_public_catalog_has_reviewed_sessions(self):
         events = load_verified(now=NOW)
-        self.assertEqual(len(events), 58)
-        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 9)
-        self.assertEqual(sum(a.city.value == '新北市' for a in events), 7)
+        self.assertEqual(len(events), 63)
+        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 11)
+        self.assertEqual(sum(a.city.value == '新北市' for a in events), 10)
         self.assertEqual(sum(a.city.value == '桃園市' for a in events), 42)
         self.assertEqual(sum(a.is_free is True for a in events), 14)
-        self.assertEqual(sum(a.is_free is False for a in events), 10)
+        self.assertEqual(sum(a.is_free is False for a in events), 12)
         self.assertFalse(any('後街人生' in a.title for a in events))
         # Human-rights series has five explicit sessions, not one multi-month event.
         series = [a for a in events if a.id.startswith('acc_2607280236031295663510')]

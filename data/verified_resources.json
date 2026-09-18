@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "id": "ddc",
+      "title": "大稻埕戲苑《請戲—布袋戲一條街》",
+      "city": "臺北市",
+      "kind": "exhibition_resource",
+      "description": "展期至2026/12/6，週二至週日9:00–17:00；週一、端午節、中秋節休館。地點為迪化街一段21號8樓。現場掃描QR Code可聽台語導覽，請自備耳機。",
+      "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+      "status": "verified",
+      "checked_at": "2026-09-18T17:51:25+08:00",
+      "snapshot_sha256": "cb8dede1c78d0e2e444ed0b087b586e8b1d8749b8309ae5bec75e143d5287bbe",
+      "required_text": [
+        "115年3月12日(四)至12月6日(日)",
+        "週二至週日",
+        "9:00-17:00",
+        "週一、端午節、中秋節休館",
+        "現場提供華語、臺灣台語、英語導覽",
+        "迪化街一段21號8樓"
+      ],
+      "language_evidence": "115年3月12日(四)至12月6日(日)；週二至週日；9:00-17:00；週一、端午節、中秋節休館；現場提供華語、臺灣台語、英語導覽；迪化街一段21號8樓",
+      "expires_at": "2026-12-06T17:00:00+08:00"
+    },
+    {
+      "id": "ceramics_guide",
+      "title": "鶯歌陶瓷博物館常設展與園區",
+      "city": "新北市",
+      "kind": "audio_guide",
+      "description": "館方提供臺語語音版本，可使用自己的手機或平板連網聆聽。定時真人導覽公告為華語；台語語音導覽可自行使用。",
+      "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
+      "status": "verified",
+      "checked_at": "2026-09-18T17:46:35+08:00",
+      "snapshot_sha256": "c8c701d6adbfd0ba2cb9d2fdabf2e42a65e924ce869bd1fcb78e1808cf90c226",
+      "required_text": [
+        "臺語",
+        "常設展及陶瓷藝術園區",
+        "使用自己的手機或平板",
+        "華語專人定時導覽"
+      ],
+      "language_evidence": "臺語；常設展及陶瓷藝術園區；使用自己的手機或平板；華語專人定時導覽",
+      "expires_at": null
+    },
+    {
+      "id": "sshm_guide",
+      "title": "十三行博物館與新北考古公園",
+      "city": "新北市",
+      "kind": "audio_guide",
+      "description": "線上語音導覽可選台語；館內另有台語導覽筆與地圖可借用，須依規定提供證件或押金。定時真人導覽公告為華語。",
+      "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+      "status": "verified",
+      "checked_at": "2026-09-18T17:46:36+08:00",
+      "snapshot_sha256": "69a1ad40ac242a143589a14bcb134816b25bd870fd334de24472f5b839f41444",
+      "required_text": [
+        "線上語音導覽服務",
+        "館內或新北考古公園",
+        "華語、台語",
+        "免費借用",
+        "500元押金"
+      ],
+      "language_evidence": "線上語音導覽服務；館內或新北考古公園；華語、台語；免費借用；500元押金",
+      "expires_at": null
+    },
+    {
+      "id": "228_booking",
+      "title": "二二八國家紀念館團體導覽",
+      "city": "臺北市",
+      "kind": "reservation_guide",
+      "description": "官方團體預約服務列有台語；須先向館方申請並確認安排。本項為南海路的國家紀念館，與二二八公園內的台北二二八紀念館不同。",
+      "url": "https://www.228.org.tw/visitbooking",
+      "status": "verified",
+      "checked_at": "2026-09-18T17:46:38+08:00",
+      "snapshot_sha256": "123e2027e4febb4d1a3546f7fa84c2c87592e04829eab3e98c82500846bdb6e0",
+      "required_text": [
+        "團體參訪導覽預約",
+        "華語．台語",
+        "團體導覽線上預約"
+      ],
+      "language_evidence": "團體參訪導覽預約；華語．台語；團體導覽線上預約",
+      "expires_at": null
+    },
+    {
+      "id": "ntm_guide",
+      "title": "臺灣博物館多語導覽資訊",
+      "city": "臺北市",
+      "kind": "audio_guide",
+      "description": "館方2020年發布的服務頁列有本館常設展台語APP語音、台語真人導覽與土銀展示館台語影片。此舊公告仍可讀取；真人場次及服務現況請先向館方確認。",
+      "url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
+      "status": "verified",
+      "checked_at": "2026-09-18T17:46:35+08:00",
+      "snapshot_sha256": "8130490f22878369e186a51699c0a2fcb7d1227669c51fddef8fa7f89565008b",
+      "required_text": [
+        "發布日期：2020-01-03",
+        "本館常設展另提供臺灣台語",
+        "真人導覽服務",
+        "土銀展示館3樓"
+      ],
+      "language_evidence": "發布日期：2020-01-03；本館常設展另提供臺灣台語；真人導覽服務；土銀展示館3樓",
+      "expires_at": null
+    }
+  ]
+}

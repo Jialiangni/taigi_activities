@@ -1,0 +1,1982 @@
+{
+  "schema_version": 1,
+  "compiled_at": "2026-09-18T18:03:06+08:00",
+  "scope": "11個指定或關聯來源的最新實测彙整；未重跑全部50個來源。每站HTML最多20頁，已知服務與RSS另依方法收集。",
+  "sources": [
+    {
+      "source_id": "228",
+      "method": "official_website_discovery",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=14"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:21+08:00",
+      "completed_at": "2026-09-18T17:49:29+08:00",
+      "candidate_count": 0,
+      "successful_response_count": 14,
+      "requests": [
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News.aspx?n=0F045CB861C446B3&sms=12D6AE63DBFC5C7E",
+          "final_url": "https://228memorialmuseum.gov.taipei/News.aspx?n=0F045CB861C446B3&sms=12D6AE63DBFC5C7E",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:21+08:00",
+          "sha256": "54ca175ccb15d1e88a69c033c0f0a1fc46556e5f1b7b54c1fcde9547e4ce904b"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News.aspx?n=3DF4DD30C5AF2C8C&sms=C728433BBC049794",
+          "final_url": "https://228memorialmuseum.gov.taipei/News.aspx?n=3DF4DD30C5AF2C8C&sms=C728433BBC049794",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:22+08:00",
+          "sha256": "a060a4bb5889ec83de5bee3346e30d1cdb5ead51d0d154e880a76175ed13c621"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=E796E578C9D2BF8C&sms=F124FFD9E5EB71F9&s=A879EB0F2EFA93FA",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=E796E578C9D2BF8C&sms=F124FFD9E5EB71F9&s=A879EB0F2EFA93FA",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:22+08:00",
+          "sha256": "15e54e3c50e7f2127261586a4463e29b58c57cd1f54c7c48fbdbb67428b50a73"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=0F045CB861C446B3&sms=12D6AE63DBFC5C7E&s=BAD9DB93583D6F76",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=0F045CB861C446B3&sms=12D6AE63DBFC5C7E&s=BAD9DB93583D6F76",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:23+08:00",
+          "sha256": "f4f7b3f0e66699ba6dff2278428fc3212c5de851816dbec0c001a40d43d32824"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=3DF4DD30C5AF2C8C&sms=C728433BBC049794&s=27630E1E22753F5D",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=3DF4DD30C5AF2C8C&sms=C728433BBC049794&s=27630E1E22753F5D",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:23+08:00",
+          "sha256": "4f3072eb59cb99920987e3327949acc99cca46e34c0d773edd352686bb4333a2"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0",
+          "final_url": "https://228memorialmuseum.gov.taipei/News.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:24+08:00",
+          "sha256": "eca6ed5a7377a7cb06f062d8c37762a539eabe4178a628657365d6140aa93f08"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=D15D23ACDEE83D12",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=D15D23ACDEE83D12",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:24+08:00",
+          "sha256": "a36df8d7767c2abe9720434b58ff28abdc164ec655e92b55ca45d8ddc7f21bd4"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=281B915C113C1EE3",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=281B915C113C1EE3",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:25+08:00",
+          "sha256": "19e50252e0c2c5024a6cda735f61c382eb65753f097614e8e292bfc2da09ef8a"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=E01D117BABBD3717",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=E01D117BABBD3717",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:25+08:00",
+          "sha256": "8e3207a1dfefc7ca27b8e53e89f97350cfda6b7cd6367ac731bf5258081b1cf5"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=66966E8BB7FB3CD8",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=66966E8BB7FB3CD8",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:26+08:00",
+          "sha256": "4cb2c657ab8e1571483a38440ff97f129ccaf420cd08fff06aabfaf0d9f5b4ae"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=23574FBB7100AA6E",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=23574FBB7100AA6E",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:26+08:00",
+          "sha256": "28487a5f635c7e9e7db575e5ebfd011725fb8d8c8a017767d655f438768ae3e4"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=5411A767CCCEDCF6",
+          "final_url": "https://228memorialmuseum.gov.taipei/News_Content.aspx?n=93B34783809976D1&sms=2997686AEEEEC2C0&s=5411A767CCCEDCF6",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:27+08:00",
+          "sha256": "a02c9d5ebfc632a34478fa568984997f2dd7c72b14156511e1279673b44e3d1c"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/Content_List.aspx?n=C4ECFEF856D70A77",
+          "final_url": "https://228memorialmuseum.gov.taipei/Content_List.aspx?n=C4ECFEF856D70A77",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:27+08:00",
+          "sha256": "21d6e144fab21a56ac2744649d0aa613c47e327ee20b1ff6c4e6a148c2f9784c"
+        },
+        {
+          "url": "https://228memorialmuseum.gov.taipei/Content_List.aspx?n=41B8A3B170317B17",
+          "final_url": "https://228memorialmuseum.gov.taipei/Content_List.aspx?n=41B8A3B170317B17",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:29+08:00",
+          "sha256": "fa3efadf9c9a74111c6fe4ed0ddfa3bcb1147b7c124826db196272731232e6dd"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "source_id": "228_national",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:57+08:00",
+      "completed_at": "2026-09-18T17:50:33+08:00",
+      "candidate_count": 1,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.228.org.tw/visitbooking",
+          "final_url": "https://www.228.org.tw/visitbooking",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:58+08:00",
+          "sha256": "aa4c8c390c8f36b0c7701cc9fe94103c531299d24482fad2a641b48c3ae2c9bc"
+        },
+        {
+          "url": "https://www.228.org.tw/",
+          "final_url": "https://www.228.org.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:59+08:00",
+          "sha256": "69d82491c1af68a05e4ab8235886001f002b52b9a061474385b1fad88f64c3cb"
+        },
+        {
+          "url": "https://www.228.org.tw/exhibitionsnew",
+          "final_url": "https://www.228.org.tw/exhibitionsnew",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:00+08:00",
+          "sha256": "8f615a7af6d5b59183fb15a90a8c7d7692c4a915a37e133d0b183668a48336f2"
+        },
+        {
+          "url": "https://www.228.org.tw/eventsnew",
+          "final_url": "https://www.228.org.tw/eventsnew",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:01+08:00",
+          "sha256": "e7e8474e27b6c5e7cd33ee738d74b047160fb387d322440b4f61bd9dbbb7cd24"
+        },
+        {
+          "url": "https://www.228.org.tw/educationpromo",
+          "final_url": "https://www.228.org.tw/educationpromo",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:02+08:00",
+          "sha256": "b0e6d8230d9a29eb716685429df6dd3208090fb7818579eade826721c07db06d"
+        },
+        {
+          "url": "https://www.228.org.tw/newsmain",
+          "final_url": "https://www.228.org.tw/newsmain",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:03+08:00",
+          "sha256": "ffab417729cadb9e80539969623645ea034051608b3330c53225941dbbaf0ed3"
+        },
+        {
+          "url": "https://www.228.org.tw/incident-research1",
+          "final_url": "https://www.228.org.tw/incident-research1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:04+08:00",
+          "sha256": "78f999558036071b8273ffad9de3d4593e729b8aea2c4135bea008470fd7a9b6"
+        },
+        {
+          "url": "https://www.228.org.tw/publications",
+          "final_url": "https://www.228.org.tw/publications",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:05+08:00",
+          "sha256": "c76fb9f0c282ec485ed20ca6546bd3219421e9c58df13a8a2e97b7bc90269fa3"
+        },
+        {
+          "url": "https://www.228.org.tw/memorialevents",
+          "final_url": "https://www.228.org.tw/memorialevents",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:06+08:00",
+          "sha256": "3bb89595ce440ad441178d0d810cabfd70c61022d70000aef42206095bb9d582"
+        },
+        {
+          "url": "https://www.228.org.tw/disadvantagecare",
+          "final_url": "https://www.228.org.tw/disadvantagecare",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:07+08:00",
+          "sha256": "9abdc678bb8e7656a8d506f88e3d7cd43c639b578900c3706fb5ef117df6c978"
+        },
+        {
+          "url": "https://www.228.org.tw/%E8%B3%A0%E5%84%9F%E9%87%91%E5%AF%A9%E7%90%86%E7%B5%B1%E8%A8%88",
+          "final_url": "https://www.228.org.tw/%E8%B3%A0%E5%84%9F%E9%87%91%E5%AF%A9%E7%90%86%E7%B5%B1%E8%A8%88",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:08+08:00",
+          "sha256": "58acb96676d7c5dbed37f5cbe90cabcddb0fa6ebbbd01471796dfdfeff12db2e"
+        },
+        {
+          "url": "https://www.228.org.tw/events/special/2026-06-11",
+          "final_url": "https://www.228.org.tw/events/special/2026-06-11",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:12+08:00",
+          "sha256": "10714eff00f021b96bb8ce82460780dff6bd0448fd348717721223d296e5876d"
+        },
+        {
+          "url": "https://www.228.org.tw/events/special/2026-05-14",
+          "final_url": "https://www.228.org.tw/events/special/2026-05-14",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:15+08:00",
+          "sha256": "013a4fcad6ea9c8a7e89ec22d60266bf921839256896b6519f544244a50a4ae3"
+        },
+        {
+          "url": "https://www.228.org.tw/events/special/2026-05-11",
+          "final_url": "https://www.228.org.tw/events/special/2026-05-11",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:18+08:00",
+          "sha256": "727c506a67a56b6c669e88603a7ce55ee09b9093d9b6f091d30c5dd5fadfb662"
+        },
+        {
+          "url": "https://www.228.org.tw/newsmain-1/2026-09-07",
+          "final_url": "https://www.228.org.tw/newsmain-1/2026-09-07",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:22+08:00",
+          "sha256": "f585410e3cb6d4861ad645cc4be1e46dc7d73326528eb7c29da3c6e2161fba59"
+        },
+        {
+          "url": "https://www.228.org.tw/newsimage/2026-06-15",
+          "final_url": "https://www.228.org.tw/newsimage/2026-06-15",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:25+08:00",
+          "sha256": "e7ecc06f82b4aed4ce21cba1fe47adfc4e0dccd1dac6cf075930326253219076"
+        },
+        {
+          "url": "https://www.228.org.tw/newsimage/2026-04-28",
+          "final_url": "https://www.228.org.tw/newsimage/2026-04-28",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:28+08:00",
+          "sha256": "896817217c161c0e2b69e418b9cdaee9799eafdda9f9245398a267f6c77ee825"
+        },
+        {
+          "url": "https://www.228.org.tw/newsimage/2026-04-13",
+          "final_url": "https://www.228.org.tw/newsimage/2026-04-13",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:29+08:00",
+          "sha256": "1306c37abaaec2b1eb98825054c54fa0b81c63b5aaebce7f698c8cebfcae2725"
+        },
+        {
+          "url": "https://www.228.org.tw/newsimage/2026-03-31",
+          "final_url": "https://www.228.org.tw/newsimage/2026-03-31",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:30+08:00",
+          "sha256": "10f05336327df5f0cb6493b730a62ccdf0663a782403cf8ef0cfab8721f1c223"
+        },
+        {
+          "url": "https://www.228.org.tw/newsmain-1/2026-03-16",
+          "final_url": "https://www.228.org.tw/newsmain-1/2026-03-16",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:33+08:00",
+          "sha256": "7a29c0c00b044bc71c3b2c2f10af7375b168956625593cb62b0e5c9dff62b7b3"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "8b526f6e2dd6fb3b04a9e9fb",
+          "title": "二二八國家紀念館團體台語導覽預約",
+          "source_url": "https://www.228.org.tw/visitbooking",
+          "kind": "guide_service",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "ceramics",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:56:31+08:00",
+      "completed_at": "2026-09-18T17:56:51+08:00",
+      "candidate_count": 2,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:32+08:00",
+          "sha256": "c2878dfed155f0e24d0d8030d9dc5816895d2a4904afab7bc106c8f9f706e68d"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J149638456796918817",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J149638456796918817",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:33+08:00",
+          "sha256": "d8d88842492b2ad3d59feef9ab3a846eee722e91cc765eea56b7e5513feea723"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:34+08:00",
+          "sha256": "0ff8dd1c08f71eb0dd6bf22c5bbcc43f6c9f1f6c98949c08957c6199a15f2d8b"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653379916935418",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653379916935418",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:35+08:00",
+          "sha256": "eb2cb4918dc8b267d98ae69646a3153fe484eba7b500ec99725f7e12aae09048"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289652950564218832",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289652950564218832",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:36+08:00",
+          "sha256": "5704353848f140b56533d294d5482ac38dc355b7d4d84849c61e83e592b16053"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653561917500445",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653561917500445",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:37+08:00",
+          "sha256": "df3594a83987c3c88cdd3a9194a49ccfdc6d4c3fb3b8a75ad9781a52071b7d65"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J149505817291406144",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J149505817291406144",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:38+08:00",
+          "sha256": "11abf6be169043b2a261056dd100ffcb48484979e9ebc9b434a0161f48a97b97"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J151645318736764443",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J151645318736764443",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:38+08:00",
+          "sha256": "c53460d0f67482d4cfb85a6fa63cad96dc0a4aa36e6a4dc9119acdc976d215c1"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0H130597473717009765",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0H130597473717009765",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:39+08:00",
+          "sha256": "7f45170e166b6475f74044095f0785bd4d45a9130eb66314181936099dc75825"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G295628442596386193",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G295628442596386193",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:40+08:00",
+          "sha256": "d6edf3d1880823e7430ddba60d6afd015d9e49ac02a433f2bc4dc36afd5bb16e"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J154433802210608146",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J154433802210608146",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:41+08:00",
+          "sha256": "36360191184d468f1b68221fd5769fa23301146d8cd1d599d7579711e410bee7"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0O141577457188571938",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0O141577457188571938",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:42+08:00",
+          "sha256": "390bb0a63fe66b2863c0dacbd7c28d25cb893a7f162f4262751a1428bc44aa08"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G295628319050932049",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G295628319050932049",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:44+08:00",
+          "sha256": "0c1fa21487db88ebb2c2552b0e82970a13065004206a2e749a5e06f21fc300d5"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0P065389905733834448",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0P065389905733834448",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:45+08:00",
+          "sha256": "10a89e5b9f0fdda96a00f4b4831f45b6e348a1140b03823b6df4cecf74e43926"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:46+08:00",
+          "sha256": "6c2ccbfa9151016ece011d7248b3b09eab52339cf20341aece9f2b816f5fcd46"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0h130597473717009765",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0h130597473717009765",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:47+08:00",
+          "sha256": "4c1ea4ed7d66256e726fc00c9f73cba86416725326ee230277083fb676b82e7b"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q254390333059488076",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q254390333059488076",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:48+08:00",
+          "sha256": "80122a3cc1359f4e4633ffff8b08474aacc4ebce17ffd188be6eb5968e8be539"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q218331257202165569",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q218331257202165569",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:49+08:00",
+          "sha256": "3e846885b18aec52c050868ac870fbe9404c0e52e444231c957ccfb49caf40c1"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q218337056312033070",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q218337056312033070",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:50+08:00",
+          "sha256": "5fbf79262c1865d1fa199f0f286f07c1ca1df710d659ea83c4adbd0485835fcf"
+        },
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q238554544743104681",
+          "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q238554544743104681",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:51+08:00",
+          "sha256": "07389c99dc99b365df605665592f62dc6b8aa73721ae5531fc359c321cf496b3"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "d39854f471edb0ebc66a88d8",
+          "title": "鶯歌陶瓷博物館導覽服務",
+          "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
+          "kind": "guide_service",
+          "review_status": "pending"
+        },
+        {
+          "id": "4d7016b8d872d9e3142f3d56",
+          "title": "語種選擇，請點選最下方數字方格",
+          "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "dadaocheng",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:58+08:00",
+      "completed_at": "2026-09-18T17:50:23+08:00",
+      "candidate_count": 2,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:01+08:00",
+          "sha256": "cb8dede1c78d0e2e444ed0b087b586e8b1d8749b8309ae5bec75e143d5287bbe"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6",
+          "final_url": "https://www.tapo.gov.taipei/News.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:01+08:00",
+          "sha256": "091cb34b8ae70b9a07c3a4bfd9565d4c5b2296cafcad0f189b073c69446c74f6"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:03+08:00",
+          "sha256": "1efd9f0fe6cb6fbf16862ce5d25484f588c54479f2a7c6b39c51ac533079c8e7"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?Create=1&n=810C8D704CBDE9E9&state=F5D336F102ACBC68&s=9A109AC3EB017C52&sms=A72ECE12BEC2D23B",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?Create=1&n=810C8D704CBDE9E9&state=F5D336F102ACBC68&s=9A109AC3EB017C52&sms=A72ECE12BEC2D23B",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:04+08:00",
+          "sha256": "1e78602a5cbfdec09bdc9e169c30f6cff78a5a0a39bc35439df132a5c8848400"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?Create=1&n=810C8D704CBDE9E9&state=F5D336F102ACBC68&s=34F6A5B9C21A998D&sms=A72ECE12BEC2D23B",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?Create=1&n=810C8D704CBDE9E9&state=F5D336F102ACBC68&s=34F6A5B9C21A998D&sms=A72ECE12BEC2D23B",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:05+08:00",
+          "sha256": "a3f5fd5bc2fc16703052e77a4bce56a062fcebec3c7138edef37a70ffe9436f6"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=810C8D704CBDE9E9&s=9F974F425AD1C816&sms=A72ECE12BEC2D23B",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=810C8D704CBDE9E9&s=9F974F425AD1C816&sms=A72ECE12BEC2D23B",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:06+08:00",
+          "sha256": "8f4b06cb6e3f8007d270a87e08464f24118d33d0a513943818ff5a355d478c80"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=F455466D379796E9",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=F455466D379796E9",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:06+08:00",
+          "sha256": "767ca2c1c114ff8cab42484436ca68c198fd9b5a8559ce1fa0fa869b4488fc92"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=6771E5B3AA8BD3A6",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=6771E5B3AA8BD3A6",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:08+08:00",
+          "sha256": "0fc74c7c4bd0a2481581a07b9160753a890abb7eabb555457535933e6a560cc3"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=EF892EAFE13E705E",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=EF892EAFE13E705E",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:09+08:00",
+          "sha256": "c56aa086a3b2f0a2e10791a2150c846fd49178d73e2e3026533096713f954e7f"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=1B00B077A7A885FA",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=1B00B077A7A885FA",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:11+08:00",
+          "sha256": "b7d6240174129987a857183457a012f381789eb661dc2ea1c9b50c76d2e46208"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=8B4B36FDDF09F004",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=8B4B36FDDF09F004",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:12+08:00",
+          "sha256": "6747b117ce28f05573daed048896b671917194a01072068e517c2f185a0006af"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=DC49E4BD1A255C76",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=DC49E4BD1A255C76",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:13+08:00",
+          "sha256": "64410f988c27b1335061558a8e8b63fa4df301e1517c986f95fd44811c4f6871"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=C56D4532639E01FA",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=C56D4532639E01FA",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:15+08:00",
+          "sha256": "dfa5ea257f4c77a139f916495d90168eb0c847af890851e072e81cb57ef2e794"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/Content_List.aspx?n=26956D46961FC340",
+          "final_url": "https://www.tapo.gov.taipei/Content_List.aspx?n=26956D46961FC340",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:15+08:00",
+          "sha256": "8d8ec12d45e0b7f4cb1d259775ac2b8b15b5683a1db7d5ecf60e0a80d37259d3"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News.aspx?n=B66574CC4C990978&sms=39CE8CE06F2F8D42",
+          "final_url": "https://www.tapo.gov.taipei/News.aspx?n=B66574CC4C990978&sms=39CE8CE06F2F8D42",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:16+08:00",
+          "sha256": "902a09574b39d8e1d1974d7fd494d7777aed5c5021751021842cc7a1f63bcb60"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=B66574CC4C990978&sms=39CE8CE06F2F8D42&s=26C736F86942C40C",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=B66574CC4C990978&sms=39CE8CE06F2F8D42&s=26C736F86942C40C",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:17+08:00",
+          "sha256": "0444dcecd325ade8a1a1908e8d6ef7e4f5de1c024c613e7bb72c3b3ddcbb1e86"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/Content_List.aspx?n=285BE042C5BA434D",
+          "final_url": "https://www.tapo.gov.taipei/Content_List.aspx?n=285BE042C5BA434D",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:18+08:00",
+          "sha256": "143a08f3bde83571df429e23f5e1f5c456c66c01113b52b765e16da4d320f2cf"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F",
+          "final_url": "https://www.tapo.gov.taipei/News.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:20+08:00",
+          "sha256": "322fb3c53276d054d43bd972315471697829023cbe2455fe2aea8622fa2cba01"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F&s=5B42E453D290E499",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F&s=5B42E453D290E499",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:21+08:00",
+          "sha256": "eecc983e8348851740e1316bced40c3d0353ac3f6fd81a4da1170cc2d49c98ae"
+        },
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F&s=FC48F76CB7AFA0B0",
+          "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=0382F300286AD218&sms=765EC1B2ACA8EE2F&s=FC48F76CB7AFA0B0",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:50:23+08:00",
+          "sha256": "08e94abd186ca2f1b705b38cfaed70d783631cfa4d71ab5d6edb7776019b647b"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "edf0d3e2802b8815c2b56d8e",
+          "title": "《請戲—布袋戲一條街》特展：台語語音導覽",
+          "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+          "kind": "exhibition_resource",
+          "review_status": "pending"
+        },
+        {
+          "id": "d6b15a9aefbe3b294f277fdf",
+          "title": "《請戲–布袋戲一條街》特展",
+          "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "moca",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:13+08:00",
+      "completed_at": "2026-09-18T17:49:25+08:00",
+      "candidate_count": 0,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Events",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Events",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:14+08:00",
+          "sha256": "ca4fed782ad561b6aaf11e5dbe57e56275529b2619c7569e49c0f224c7236d97"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:15+08:00",
+          "sha256": "bd2347a3eeb4a61dc29ba0171babb66714ea24386d08ec2e155769e7e0d7a5b3"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E6%98%AF%E8%AA%B0%E8%BA%B2%E8%B5%B7%E4%BE%86%E4%BA%86%EF%BC%9F",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E6%98%AF%E8%AA%B0%E8%BA%B2%E8%B5%B7%E4%BE%86%E4%BA%86%EF%BC%9F",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:15+08:00",
+          "sha256": "459d6d0b45929f5f5d6c291c3855d60a3c37322b81b932abdc87ba34721c4a8f"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E7%BE%8E%E8%A1%93%E9%A4%A8%E4%B9%8B%E5%BE%8C",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E7%BE%8E%E8%A1%93%E9%A4%A8%E4%B9%8B%E5%BE%8C",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:16+08:00",
+          "sha256": "12a9ed9ffd812773b6fb58d3ae29384dd6ffcf4d41c6570a5d4eaf99b45e3c43"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E5%8F%A2%E9%9D%88%E9%96%8B%E5%A7%8B%E2%80%94%E9%BB%83%E6%80%A1%E5%98%89%E5%80%8B%E5%B1%95",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E5%8F%A2%E9%9D%88%E9%96%8B%E5%A7%8B%E2%80%94%E9%BB%83%E6%80%A1%E5%98%89%E5%80%8B%E5%B1%95",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:16+08:00",
+          "sha256": "863aa0f9eccbfffdf0e8792aad64818869ae428e8c2596aca96bd8c9073161d9"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E9%87%8E%E8%8D%89%E4%B8%8D%E6%9C%8D%E7%AE%A1",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E9%87%8E%E8%8D%89%E4%B8%8D%E6%9C%8D%E7%AE%A1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:17+08:00",
+          "sha256": "f658149eb6a84663524094b0f6e7e76dc06fd4451b46939fc8fb53783adc6d67"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E7%95%AB%E4%B8%80%E5%BA%A7%E6%83%B3%E5%83%8F%E4%B8%AD%E7%9A%84%E7%95%B6%E4%BB%A3%E9%A4%A8",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E7%95%AB%E4%B8%80%E5%BA%A7%E6%83%B3%E5%83%8F%E4%B8%AD%E7%9A%84%E7%95%B6%E4%BB%A3%E9%A4%A8",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:17+08:00",
+          "sha256": "d366bb5c9a455cce66dbf8dce05fa882c51efb0c712e4777781df723f8a8a2ca"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E5%B0%88%E5%AE%B6%E5%B0%8E%E8%A6%BD%E3%80%91%E7%8E%8B%E8%8B%A5%E7%92%87",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E5%B0%88%E5%AE%B6%E5%B0%8E%E8%A6%BD%E3%80%91%E7%8E%8B%E8%8B%A5%E7%92%87",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:18+08:00",
+          "sha256": "77688c42e73ae68e93994451c1a6e991d32be50f04a9e3050394d911c0f9d859"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E4%B8%8A%E8%AA%BC%E3%80%91%E3%80%8A%E4%BC%81%E9%B5%9D%E6%BC%94%E5%A5%8F%E6%9C%83%E3%80%8B%EF%BC%8C%E4%B8%80%E8%B5%B7%E6%94%B6%E8%97%8F%E7%9B%B8%E9%81%87%E7%9A%84%E7%BE%8E%E5%A5%BD%EF%BC%81",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E4%B8%8A%E8%AA%BC%E3%80%91%E3%80%8A%E4%BC%81%E9%B5%9D%E6%BC%94%E5%A5%8F%E6%9C%83%E3%80%8B%EF%BC%8C%E4%B8%80%E8%B5%B7%E6%94%B6%E8%97%8F%E7%9B%B8%E9%81%87%E7%9A%84%E7%BE%8E%E5%A5%BD%EF%BC%81",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:19+08:00",
+          "sha256": "88286c9064d1eb55b76e8a9f71012b6fba7ab2c8e4cf57f96f9b37a45ba11b71"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E7%B6%AD%E4%BA%AC%E5%9C%8B%E9%9A%9B%E3%80%91%E3%80%8A%E5%9C%B0%E5%9C%96%E4%B9%8B%E5%A4%96%E3%80%8B%EF%BC%8C%E4%B8%80%E8%B5%B7%E5%B1%95%E9%96%8B%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%85%E7%A8%8B",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E7%B6%AD%E4%BA%AC%E5%9C%8B%E9%9A%9B%E3%80%91%E3%80%8A%E5%9C%B0%E5%9C%96%E4%B9%8B%E5%A4%96%E3%80%8B%EF%BC%8C%E4%B8%80%E8%B5%B7%E5%B1%95%E9%96%8B%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%85%E7%A8%8B",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:19+08:00",
+          "sha256": "3862ae5050e7d5ac2392caa177675cc5ca9a1f223529a1a59b738ea5a1c2eea2"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/MoCA%2Aon%2AAir",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/MoCA%2Aon%2AAir",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:20+08:00",
+          "sha256": "37ea21e549f6984cd81f727662283ca9725dc823f9b1287981cd50852069cc20"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/VR%E7%B7%9A%E4%B8%8A%E5%B1%95%E8%A6%BD",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/VR%E7%B7%9A%E4%B8%8A%E5%B1%95%E8%A6%BD",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:20+08:00",
+          "sha256": "bd433ea502afddca7848a6cc44f80684abfb50b03559e8b1a9fd282843d49ded"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E7%B7%9A%E4%B8%8A%E5%B0%8F%E7%8E%A9%E8%97%9D",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E7%B7%9A%E4%B8%8A%E5%B0%8F%E7%8E%A9%E8%97%9D",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:21+08:00",
+          "sha256": "be79e637f969a50408ad26fba0c1b965ab4994d7927658d4c722fb6f46a0800c"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E9%9D%A2%E5%B0%8D%E9%9D%A2%E3%80%91%E5%9F%8E%E5%B8%82%E8%A3%A1%E7%9A%84%E6%B4%9E%EF%BC%8C%E6%B4%9E%E8%A3%A1%E7%9A%84%E5%9F%8E%E5%B8%82",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E9%9D%A2%E5%B0%8D%E9%9D%A2%E3%80%91%E5%9F%8E%E5%B8%82%E8%A3%A1%E7%9A%84%E6%B4%9E%EF%BC%8C%E6%B4%9E%E8%A3%A1%E7%9A%84%E5%9F%8E%E5%B8%82",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:21+08:00",
+          "sha256": "c04e3140b55226c0a37ce9254a1a1ff4255c77db5228c6a131393d34f687cef1"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%AD%96%E5%B1%95%E4%BA%BA%E5%B0%8E%E8%A6%BD%E3%80%91%E6%9E%97%E6%98%A0%E7%A9%8E%E3%80%81%E5%8A%89%E6%80%A1%E5%9D%87",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%AD%96%E5%B1%95%E4%BA%BA%E5%B0%8E%E8%A6%BD%E3%80%91%E6%9E%97%E6%98%A0%E7%A9%8E%E3%80%81%E5%8A%89%E6%80%A1%E5%9D%87",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:22+08:00",
+          "sha256": "fba4c6855b3e3654999fddca55ffba19a79124a1790b7ea7ab50dd10ed086f35"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%AD%96%E5%B1%95%E4%BA%BA%E5%B0%8E%E8%A6%BD%E3%80%91%E8%B3%B4%E4%BD%A9%E5%90%9B",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%AD%96%E5%B1%95%E4%BA%BA%E5%B0%8E%E8%A6%BD%E3%80%91%E8%B3%B4%E4%BD%A9%E5%90%9B",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:23+08:00",
+          "sha256": "f859293189dd8341d29f99e9b90d945b2baf0556afa13c848656dda092a9f502"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E5%9C%8B%E9%9A%9B%E8%97%9D%E8%A1%93%E6%95%99%E8%82%B2%E4%BA%A4%E6%B5%81%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E6%89%93%E9%96%8B%E6%88%91%E7%9A%84%E8%A1%A3%E6%AB%83",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E5%9C%8B%E9%9A%9B%E8%97%9D%E8%A1%93%E6%95%99%E8%82%B2%E4%BA%A4%E6%B5%81%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E6%89%93%E9%96%8B%E6%88%91%E7%9A%84%E8%A1%A3%E6%AB%83",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:23+08:00",
+          "sha256": "22171bb7b9f3ef77ab2997696ad8e652bf0839e9e9fc65cad2538245ec4ff61d"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E9%9D%A2%E5%B0%8D%E9%9D%A2%E3%80%91%E4%BD%A0%E6%80%8E%E9%BA%BC%E9%80%9B%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%9F",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E9%9D%A2%E5%B0%8D%E9%9D%A2%E3%80%91%E4%BD%A0%E6%80%8E%E9%BA%BC%E9%80%9B%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%9F",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:24+08:00",
+          "sha256": "ca35a0286ea2f4429a4a2ea66d30e17ce0773f7882be300e607cbed555e53abd"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E8%81%AF%E7%B6%93%E3%80%91%E3%80%8A%E9%98%BF%E6%98%A5%E5%92%8C1000%E6%A3%B5%E6%AB%BB%E8%8A%B1%E6%A8%B9%E3%80%8B%EF%BC%8C%E7%A8%AE%E4%B8%8B%E6%9C%80%E7%BE%8E%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%81",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E7%95%B6%E4%BB%A3%E9%A4%A8%EF%BD%98%E8%81%AF%E7%B6%93%E3%80%91%E3%80%8A%E9%98%BF%E6%98%A5%E5%92%8C1000%E6%A3%B5%E6%AB%BB%E8%8A%B1%E6%A8%B9%E3%80%8B%EF%BC%8C%E7%A8%AE%E4%B8%8B%E6%9C%80%E7%BE%8E%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%81",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:25+08:00",
+          "sha256": "5a1ef9ba1888471b56d5a1a873cf5b22a0c10d68cc6c19a71efdd61a5c4d3524"
+        },
+        {
+          "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E7%89%A9%E4%BB%A5%E5%9C%B0%E8%81%9A%EF%BC%9A%E5%9F%8E%E5%B8%82%E6%84%9F%E7%9F%A5",
+          "final_url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E3%80%90%E8%97%9D%E8%A1%93%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%91%E7%89%A9%E4%BB%A5%E5%9C%B0%E8%81%9A%EF%BC%9A%E5%9F%8E%E5%B8%82%E6%84%9F%E7%9F%A5",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:25+08:00",
+          "sha256": "b2ba1a65366bff4453f1bc85c2bc07b24845cc70c00aabd9183b57f11cea1417"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "source_id": "ntl",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "Feed coverage is limited to entries supplied by the publisher; publication dates are not event dates.",
+        "feed_is_publisher_limited_not_full_archive",
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:34+08:00",
+      "completed_at": "2026-09-18T17:49:53+08:00",
+      "candidate_count": 4,
+      "successful_response_count": 21,
+      "requests": [
+        {
+          "url": "https://www.ntl.edu.tw/ntlapi/ntlFront/Rss/LatestNews",
+          "final_url": "https://www.ntl.edu.tw/ntlapi/ntlFront/Rss/LatestNews",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:34+08:00",
+          "sha256": "44ef0406a52e48aed0442eb23ba68ea2e94a20282c816485a368b94207187046"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:35+08:00",
+          "sha256": "7f2a74b84c24fb7a643f6acc1025a2fbd177cc673ab28103e23757cc17f03c14"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/mp?mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/mp?mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:36+08:00",
+          "sha256": "ed5224b4939a00f0a0f75dec3a203c0942740c8b90ba230450b6a1cb74eba23c"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/np?ctNode=2790&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/sp?xdUrl=/wSite/ap/ntl_chtMonthAction.jsp&ctNode=1891&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:37+08:00",
+          "sha256": "6f1c011c7f3a25c22a5a214f86bc807ce9b3cabf57d798f03c08136409ceb27d"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=58536&ctNode=1711&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=58536&ctNode=1711&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:38+08:00",
+          "sha256": "6c66ee7baf37d7e5a88efdc6a2c12e6dff76a1f972a89e3972ac479ebbb0a177"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=12776&ctNode=2906&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=12776&ctNode=2906&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:39+08:00",
+          "sha256": "29512be2ba73e54811494579e693b4885b9c4a07abe1696dd11eb66087109192"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=41580&ctNode=3195&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=41580&ctNode=3195&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:40+08:00",
+          "sha256": "07f96cc5f21516b2f7665bf3b9606c35927a1907818f1c5080b9f260531464a3"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96887&ctNode=3195&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96887&ctNode=3195&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:41+08:00",
+          "sha256": "eca9734dd2357d3f70cc47326309fc685093503b3f70cf156efce7b7f9c0a67b"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96886&ctNode=3195&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96886&ctNode=3195&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:42+08:00",
+          "sha256": "9531aafc4972039e11c5f40221707874680c01fc4910a232f554ec8a6b23d430"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/sp?xdUrl=/wSite/ap/ntl_Form_X.jsp&xItem=7454&ctNode=1693&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/sp?xdUrl=/wSite/ap/ntl_Form_X.jsp&xItem=7454&ctNode=1693&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:43+08:00",
+          "sha256": "4738760a87cd4d7dd99a8cab0d2fc406560c51327b6d8cb0f2e528b219b58f79"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/sp?xdUrl=/wSite/ap/ntl_Form_Y.jsp&xItem=2862&ctNode=1906&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/sp?xdUrl=/wSite/ap/ntl_Form_Y.jsp&xItem=2862&ctNode=1906&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:44+08:00",
+          "sha256": "7d8e1697653b4c96e8135071373fdb7d3c81386cd04337a0f9c773e597cde136"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=7930&ctNode=3233&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=7930&ctNode=3233&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:45+08:00",
+          "sha256": "2af80481f6306744d7d597d7e12e009c51129c26aa452c005cc747ac1d8194ec"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=59993&ctNode=3195&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=59993&ctNode=3195&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:46+08:00",
+          "sha256": "4426139ac238d6f38e82c0e5c088403d9edb03438d0abab23af167b0fa0028f8"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=70120&ctNode=1869&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=70120&ctNode=1869&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:47+08:00",
+          "sha256": "3238f2d6ff5218cea8adcd34198e75917fe75f76fa2cf63d03e9f18e4142f359"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=97671&ctNode=2839&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=97671&ctNode=2839&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:47+08:00",
+          "sha256": "2faf5bd3c18eeae8d9a2715de1b736763bff9fbda1349612168d0328e65c1cf2"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96238&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96238&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:48+08:00",
+          "sha256": "0a7f93043436d8fe1b9601517b0b3644216238b7e2e7591d863bc8768e7e7289"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=97806&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=97806&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:49+08:00",
+          "sha256": "f71ba4e67db61e7b94db477d3da3a87a7e1180f2692b148606e9f88e59894c97"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96289&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96289&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:50+08:00",
+          "sha256": "18b264eb4b4a3dd663a69f30dfa83192773778cc2dab33a75d889f1313d4727c"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96730&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96730&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:51+08:00",
+          "sha256": "47b90e572559ae9e147fae73ea353397ad67254384cca15b79f0748ce3e8aeee"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:52+08:00",
+          "sha256": "1707e59e5f62dd43ad36555ee789f9bd48e4b06cff8e6d8f7d73fe4a3b60c91b"
+        },
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?xItem=96190&ctNode=2739&mp=1",
+          "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96190&ctNode=2739&mp=1",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:53+08:00",
+          "sha256": "e7c180c65438a5f40bfa27f96ee05cc4abdf4a949b819b26e70ac725464a21b6"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "fd55bc9a9ca015b5d1a53607",
+          "title": "【公告】115年獎助國內訪問學人（員）名單公告",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=97215&ctNode=2796&mp=1",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "b28368d8c3b8ae8bafee0a2f",
+          "title": "大手牽小手˙好繪說母語| 台語手語做伙來講古",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2796&mp=1",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "f7e02e5827ed2e38ce623cde",
+          "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "kind": "announcement",
+          "review_status": "pending"
+        },
+        {
+          "id": "7c2438d7753cf679ae8c808d",
+          "title": "國立臺灣圖書館",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "ntm",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T18:01:43+08:00",
+      "completed_at": "2026-09-18T18:01:56+08:00",
+      "candidate_count": 2,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
+          "final_url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:44+08:00",
+          "sha256": "101e1ad23070728d67224503576cc3fac3c97ad8c482440a367ff8d13823d4e6"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_actives.aspx?n=5481&sms=13389",
+          "final_url": "https://www.ntm.gov.tw/News_actives.aspx?n=5481&sms=13389",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:45+08:00",
+          "sha256": "65d9e8beced26ba257f217310186d61a9b42318e871e99e704b5ea911fd4f667"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_actives.aspx?n=5482&sms=13389",
+          "final_url": "https://www.ntm.gov.tw/News_actives.aspx?n=5482&sms=13389",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:45+08:00",
+          "sha256": "bf5de3430df7e2798b712b5966073257418fe14edb8750792379b5afe1ac9252"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_actives.aspx?n=5483&sms=13389",
+          "final_url": "https://www.ntm.gov.tw/News_actives.aspx?n=5483&sms=13389",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:46+08:00",
+          "sha256": "112817cdc83d00700fefc936cf24dc744178365546b6627b00e90420e38db8a0"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_actives.aspx?n=5484&sms=13389",
+          "final_url": "https://www.ntm.gov.tw/News_actives.aspx?n=5484&sms=13389",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:47+08:00",
+          "sha256": "a62ad9eb1ac3117c65822d035eeef129062eb75cccf43b6f14a05f3550d50d12"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_actives.aspx?n=5472&sms=13389",
+          "final_url": "https://www.ntm.gov.tw/News_actives.aspx?n=5472&sms=13389",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:47+08:00",
+          "sha256": "2f420e2b39bd926f17caad05b6432924bc99ed4fc4238ffec691a6f0e216c7eb"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:48+08:00",
+          "sha256": "0afbcbdfab839f30d906bfd0c55062e5af4f836486777a3674dafad24d28e2cc"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&sms=14296&s=147693",
+          "final_url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&sms=14296&s=147693",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:49+08:00",
+          "sha256": "167f9f1739b6bdc6e6e66a9573fa505118f7eec71fe534b74d0467aa3b0e5b8b"
+        },
+        {
+          "url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&sms=14296&s=147687",
+          "final_url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&sms=14296&s=147687",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:49+08:00",
+          "sha256": "0574d5ef22382133b44c2dc5befbb6b6fcf179d44ae7068c4bb3e29c5da07988"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60199",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60199",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:50+08:00",
+          "sha256": "54e0ecd1e76989a201761e10d6ceb391f4400f3a0aae6c532a898f49f3956391"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60197",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60197",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:51+08:00",
+          "sha256": "9a2399c67c5e0fd44ae10c962b3a739097daf72b524a6ead2ac566cc0d66d479"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60194",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60194",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:51+08:00",
+          "sha256": "5c8061ad88d8966e4b3bba4d32446eb1dc426b48e3a96bfa52fcc289c39d2840"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60191",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60191",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:52+08:00",
+          "sha256": "dee23b05a9be7be979e43c73eccb3fc1ec2d4fb7f361482db7205b6dda57dbe4"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60183",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60183",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:52+08:00",
+          "sha256": "3d171609a21676a2c5358f2e5a23912729115aef3b86230c3d3672e07d5586db"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60174",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60174",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:53+08:00",
+          "sha256": "4e393984791932e550d573c6be0e9d046f09b29709ff32642a3bc91c1e417f76"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60163",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60163",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:53+08:00",
+          "sha256": "b44025ac28f17ace8d00373d8dbbe456b39d37941eb6d2b455870ae6ef633653"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50023",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50023",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:54+08:00",
+          "sha256": "b9e7ecfa33b68725f9286b837119185ece7a6a3121317e5009657fa753614e6c"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50159",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50159",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:55+08:00",
+          "sha256": "05abed81419ae6fbd9bda48729024e16e610f1eec0e99c191918892c18f2d653"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60179",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60179",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:55+08:00",
+          "sha256": "f36ceb32e4f01d49e8161d6df8b99c77aad9c671f860de943f6377b5c40680e5"
+        },
+        {
+          "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60152",
+          "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60152",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:56+08:00",
+          "sha256": "2d7bef1e25aae7e96dbe83f2d79a2e349ea4ac002ad3b47119e3a3981bc30c4e"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "0630be0cf3b2489f7e9e3dec",
+          "title": "臺博多語導覽服務大全",
+          "source_url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
+          "kind": "guide_service",
+          "review_status": "pending"
+        },
+        {
+          "id": "f0bcead0a4c54899c0335ef8",
+          "title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
+          "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "sshm",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:49:29+08:00",
+      "completed_at": "2026-09-18T17:49:57+08:00",
+      "candidate_count": 3,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:31+08:00",
+          "sha256": "a17b6dff0e3d9f1269d4f5c9662e1ecbf84179ad543c9b5fc015b1aff86b678a"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xceventsnews?xsmsid=0G250557655940640091",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xceventsnews?xsmsid=0G250557655940640091",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:32+08:00",
+          "sha256": "10791085bc72e9b379fa549f88cea13c73b0527dd4bde5554ccc2db2a663f095"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc?xsmsid=0G244541084921596757",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc?xsmsid=0G244541084921596757",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:33+08:00",
+          "sha256": "0a8c4a484fd8eb8972d1bf8868d798081e8641685c82d5e6d6b3f7c1951aab07"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xceventsnews/cont?xsmsid=0G250557655940640091&sid=0Q254525952472181745",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xceventsnews/cont?xsmsid=0G250557655940640091&sid=0Q254525952472181745",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:34+08:00",
+          "sha256": "3804dd020e4a1e1215c70a6cb38b4b4a8d588a5aa93e8430c246e505aeebbda2"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xceventsnews?xsmsid=0G250557655940640091&page=2",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xceventsnews?xsmsid=0G250557655940640091&page=2",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:35+08:00",
+          "sha256": "ec462cb1d04cec1543edd6c1c418291d63a13faf79f34ea48167a18e479f3f3c"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244536427773780175",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244536427773780175",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:37+08:00",
+          "sha256": "70fa5ff8a0223fb2126b460be66272319ed9433cfa8d157ff1de612e9f464d50"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0N270615165349792009",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0N270615165349792009",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:39+08:00",
+          "sha256": "0e0b74f0660698a402ea4a0a46b3a7c5f2bde8ceb96a2209686a15352cc0ccd0"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244536688952538129",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244536688952538129",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:40+08:00",
+          "sha256": "6081e409aab134cfac1e39251b20400211cc1eef7d7307cdb71c7607760f8f59"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0I205656484365802008",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0I205656484365802008",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:42+08:00",
+          "sha256": "f72266e02471b8dd49768b4123c0d312dc69ae509a102edf63b7e4ba52d36121"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537195581528633",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537195581528633",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:43+08:00",
+          "sha256": "da46fea436c415914b8bd2db8db9171e77ec69e683e19fc340e570efc798f0e9"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537366769376687",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537366769376687",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:44+08:00",
+          "sha256": "9a3d032fc36c1b4e39bab684c79473bcfd4e20f00bf1544391a80e78a213ba48"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537677948124632",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244537677948124632",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:45+08:00",
+          "sha256": "48f733c0bd7654a2a66b73bc55ae7e2a37bbdc0bb817ae9db000126e270b6254"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245566982604740685",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245566982604740685",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:46+08:00",
+          "sha256": "72cb35b2aeac38b0023334726733c0adf358d8d27e8685273a2036de6706098b"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:47+08:00",
+          "sha256": "ef8c5e6a456dda1eb17a378dc2c8bb7932c75f985926785117ef2a676b1c49a3"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540472563990658",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540472563990658",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:49+08:00",
+          "sha256": "ceb6e455a74d1820d452db14064f7e74cd93c71a9a503c3e35641118173408c9"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0H269623148769570242",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0H269623148769570242",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:51+08:00",
+          "sha256": "e38ac6236fcd8c57313cdefc4979babf9437b123508604fdf230668ab7e57042"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0P169608094868788211",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0H269623148769570242",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:53+08:00",
+          "sha256": "50cd3b6d265cb88ad438901b8769acaa2209528fb1399d65994b7476ec4af44c"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G250558393203609532",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G250558393203609532",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:54+08:00",
+          "sha256": "ffa613bc608d1557d0e2384209ad3282920bd3390bb4de1efd1b278582e15149"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0N310664577604829770",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xceventsnews/cont?xsmsid=0G250557655940640091&sid=0Q013410442241525253",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:56+08:00",
+          "sha256": "e08e7ba98965d63da671a779fab75a4dea54aa574c7161009eb92cb9c7d1ba1a"
+        },
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244543721540577261",
+          "final_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244543721540577261",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:49:57+08:00",
+          "sha256": "ffaded82bbe484760f8d53f8edb2f44d9dcd8ddb5090b79eaf35346dafc633f5"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "3b7c9208f2dc9d276cf57aaa",
+          "title": "十三行博物館個人化導覽服務",
+          "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+          "kind": "guide_service",
+          "review_status": "pending"
+        },
+        {
+          "id": "a243e4d82720c6762f58148a",
+          "title": "標題： 2026全國古蹟日台語走讀 錄取名單",
+          "source_url": "https://www.sshm.ntpc.gov.tw/xceventsnews/cont?xsmsid=0G250557655940640091&sid=0Q254525952472181745",
+          "kind": "announcement",
+          "review_status": "pending"
+        },
+        {
+          "id": "fe652bb87e22e0976d6ed370",
+          "title": "十三行博物館摺頁 | 新北市立十三行博物館",
+          "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "taigiloo",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "Feed coverage is limited to entries supplied by the publisher; publication dates are not event dates.",
+        "feed_is_publisher_limited_not_full_archive",
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:56:32+08:00",
+      "completed_at": "2026-09-18T17:56:54+08:00",
+      "candidate_count": 10,
+      "successful_response_count": 21,
+      "requests": [
+        {
+          "url": "https://taigiloo.tw/feed/",
+          "final_url": "https://taigiloo.tw/feed/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:33+08:00",
+          "sha256": "2e42fc31c67b0bb02c3277178198fef767dbeafa0a28dea2b540ef29e8e8d595"
+        },
+        {
+          "url": "https://taigiloo.tw/category/news/",
+          "final_url": "https://taigiloo.tw/category/news/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:34+08:00",
+          "sha256": "b159fd4a0a129be8aad72d24eeefb54c9dd4af04af5ea6f79c9824c61fc436d7"
+        },
+        {
+          "url": "https://taigiloo.tw/",
+          "final_url": "https://taigiloo.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:35+08:00",
+          "sha256": "186453a9ae76f681c567d9216e7db07505a0df5c376e013dc907e839c53c19cf"
+        },
+        {
+          "url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+          "final_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:36+08:00",
+          "sha256": "802fe5443389f3ca8124fc85a2d0fc0e5123f6e8497fc23057d87c27e942aadb"
+        },
+        {
+          "url": "https://taigiloo.tw/courses-listing/",
+          "final_url": "https://taigiloo.tw/courses-listing/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:37+08:00",
+          "sha256": "04f5ba2191ebe4c966a8da33a5eebba22d910b7699669cd2704d2a6369b81be5"
+        },
+        {
+          "url": "https://taigiloo.tw/news/2023%e5%8f%b0%e8%aa%9e%e5%85%b1%e5%ad%b8%e5%9c%b0%e5%9c%96/",
+          "final_url": "https://taigiloo.tw/news/2023%e5%8f%b0%e8%aa%9e%e5%85%b1%e5%ad%b8%e5%9c%b0%e5%9c%96/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:38+08:00",
+          "sha256": "3a7d80228125d721f49a92d086ebc784d0efc724ff669e81d0deb3bf1413d471"
+        },
+        {
+          "url": "https://taigiloo.tw/news/%e5%8f%b0%e8%aa%9e%e5%9b%a1%e4%bb%94%e4%ba%88%e6%94%bf%e5%ba%9c%e3%80%8c%e5%9c%8b%e5%ae%b6%e8%aa%9e%e8%a8%80%e6%8e%a8%e5%8b%95%e8%a8%88%e7%95%ab-%e6%b0%91%e9%96%93%e5%9c%98%e9%ab%94%e5%8d%94%e5%95%86/",
+          "final_url": "https://taigiloo.tw/news/%e5%8f%b0%e8%aa%9e%e5%9b%a1%e4%bb%94%e4%ba%88%e6%94%bf%e5%ba%9c%e3%80%8c%e5%9c%8b%e5%ae%b6%e8%aa%9e%e8%a8%80%e6%8e%a8%e5%8b%95%e8%a8%88%e7%95%ab-%e6%b0%91%e9%96%93%e5%9c%98%e9%ab%94%e5%8d%94%e5%95%86/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:39+08:00",
+          "sha256": "f083ab15bc2c57e943da1f0a6ac630e33ae60ba7e448d67e641f3974c2be61b0"
+        },
+        {
+          "url": "https://taigiloo.tw/category/%e3%80%8c%e5%8f%b0%e8%aa%9e%e9%b9%bf%e5%87%ba%e4%bb%bb%e5%8b%99%e3%80%8d%e5%8b%9f%e8%b3%87/",
+          "final_url": "https://taigiloo.tw/category/%e3%80%8c%e5%8f%b0%e8%aa%9e%e9%b9%bf%e5%87%ba%e4%bb%bb%e5%8b%99%e3%80%8d%e5%8b%9f%e8%b3%87/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:40+08:00",
+          "sha256": "b6991a9f4a1d6d088d7db957e0b0634f097695ab10487dd9a2295bfa4dcb7807"
+        },
+        {
+          "url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/%e5%8f%b0%e8%aa%9e%e5%ae%b6%e5%ba%ad%e7%b6%93%e9%a9%97/",
+          "final_url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/%e5%8f%b0%e8%aa%9e%e5%ae%b6%e5%ba%ad%e7%b6%93%e9%a9%97/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:41+08:00",
+          "sha256": "218a70a60789a6f0403519fa80c2d46b0cd3462153ad8cbdcb9e067ba0d0c9c8"
+        },
+        {
+          "url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/%e5%8f%b0%e8%aa%9e%e5%af%a6%e9%a9%97%e7%8f%ad/",
+          "final_url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/%e5%8f%b0%e8%aa%9e%e5%af%a6%e9%a9%97%e7%8f%ad/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:42+08:00",
+          "sha256": "8edd13904d6f99252e3f17f625a79ab8fe2382d938d1f9707d32bdeaa63669b0"
+        },
+        {
+          "url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e6%96%87%e5%87%ba%e7%89%88%e5%93%81/",
+          "final_url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e6%96%87%e5%87%ba%e7%89%88%e5%93%81/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:43+08:00",
+          "sha256": "cfb12e85eaeb87c8a4b2a964296d1f1445618f49703939feb2aef55e5ef5d654"
+        },
+        {
+          "url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/",
+          "final_url": "https://taigiloo.tw/category/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:44+08:00",
+          "sha256": "504dd2df5433d75786992df874f13332fb3b5d02758928ce4d25af45f76e44e6"
+        },
+        {
+          "url": "https://taigiloo.tw/category/blog/sharestory/",
+          "final_url": "https://taigiloo.tw/category/blog/sharestory/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:45+08:00",
+          "sha256": "92aa7e8cef5fb336b21fe6260e04630576ae51176c6ca60f71d7a4cd7ac7c579"
+        },
+        {
+          "url": "https://taigiloo.tw/category/%e7%94%9f%e6%b4%bb%e5%8f%b0%e8%aa%9e%e8%a9%9e%e5%bd%99/",
+          "final_url": "https://taigiloo.tw/category/%e7%94%9f%e6%b4%bb%e5%8f%b0%e8%aa%9e%e8%a9%9e%e5%bd%99/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:46+08:00",
+          "sha256": "6a8f90b46959deec5633e440a91df156e86affe2380e2c497a831890a01bc8cb"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e5%b0%8f%e6%95%99%e5%ae%a4/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e5%b0%8f%e6%95%99%e5%ae%a4/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:47+08:00",
+          "sha256": "8632dec3caed2137f2fcce1f6413485dc49c3481ac786bf8ec4d01a760d66270"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e6%8c%89%e6%80%8e%e8%ac%9b/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e6%8c%89%e6%80%8e%e8%ac%9b/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:48+08:00",
+          "sha256": "e8c36177e5383133d74a2da4c4ffa2f5380d4d470c9e0bd2afe8ed9ea0e43a27"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%a6%aa%e5%ad%90e%e9%85%b8%e7%94%98%e8%9c%9c%e7%94%9c/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%a6%aa%e5%ad%90e%e9%85%b8%e7%94%98%e8%9c%9c%e7%94%9c/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:49+08:00",
+          "sha256": "a7725732d8a5bcbd21bbec648e894beeef183cb06c80b3c67388805996df8c38"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%a9%a9/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%a9%a9/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:50+08:00",
+          "sha256": "d6d62764df1eb4d87f99834cda014b006da15ae6bfaf096c621d7fb653180c0d"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%85%b1%e5%ad%b8%e6%a1%83%e5%9c%92/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%85%b1%e5%ad%b8%e6%a1%83%e5%9c%92/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:51+08:00",
+          "sha256": "fb8cd15dc4a38478c84d60a80fd8248de6a33bf7cd8464c6afa7e38127c90157"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%ae%a4%e5%85%a7%e5%85%b1%e5%ad%b8-%e5%8f%b0%e5%8c%97/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%ae%a4%e5%85%a7%e5%85%b1%e5%ad%b8-%e5%8f%b0%e5%8c%97/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:52+08:00",
+          "sha256": "a46044d49ab0629ffa497faefc154c91ba426a100ac110de6687342e8baf7edc"
+        },
+        {
+          "url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%ae%a4%e5%a4%96%e5%85%b1%e5%ad%b8-%e5%8f%b0%e5%8c%97/",
+          "final_url": "https://taigiloo.tw/tag/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%ae%a4%e5%a4%96%e5%85%b1%e5%ad%b8-%e5%8f%b0%e5%8c%97/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:56:54+08:00",
+          "sha256": "49b8e7e607ac220e6ce4522743883aa0e329efde2495bdfd5537840ca861c0d0"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "cf8edb7b38db1a8435c9093a",
+          "title": "島語言說",
+          "source_url": "https://taigiloo.tw/blog/articles/%e5%b3%b6%e8%aa%9e%e8%a8%80%e8%aa%aa/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "b3b354cce77a2ff98d896566",
+          "title": "2023年台語路分享會：從家庭到社區，讓台語再現生活",
+          "source_url": "https://taigiloo.tw/blog/articles/2023%e5%b9%b4%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%88%86%e4%ba%ab%e6%9c%83%ef%bc%9a%e5%be%9e%e5%ae%b6%e5%ba%ad%e5%88%b0%e7%a4%be%e5%8d%80%ef%bc%8c%e8%ae%93%e5%8f%b0%e8%aa%9e%e5%86%8d%e7%8f%be%e7%94%9f/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "2a652bd89a18e945aa791b87",
+          "title": "《變聲偵探》台語版",
+          "source_url": "https://taigiloo.tw/blog/articles/%e8%ae%8a%e8%81%b2%e5%81%b5%e6%8e%a2%e5%8f%b0%e8%aa%9e%e7%89%88/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "0b10b0e6988680bb8e036743",
+          "title": "重拾台語：從家庭到社區的文化傳承之路",
+          "source_url": "https://taigiloo.tw/blog/%e5%8f%b0%e8%aa%9e%e8%b7%af%e5%b0%88%e9%a1%8c/%e5%8f%b0%e8%aa%9e%e5%ae%b6%e5%ba%ad%e7%b6%93%e9%a9%97/%e5%be%9e%e5%ae%b6%e5%ba%ad%e5%88%b0%e7%a4%be%e5%8d%80%e7%9a%84%e6%96%87%e5%8c%96%e5%82%b3%e6%89%bf%e4%b9%8b%e8%b7%af/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "707aa6867b6a3cab1a885422",
+          "title": "台語魔術劇場心得",
+          "source_url": "https://taigiloo.tw/blog/articles/%e5%8f%b0%e8%aa%9e%e9%ad%94%e8%a1%93%e5%8a%87%e5%a0%b4%e5%bf%83%e5%be%97/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "8e96b806b6b044f5da20169b",
+          "title": "《黃金陣佮烏風幔》",
+          "source_url": "https://taigiloo.tw/blog/%e5%8f%b0%e8%aa%9e%e6%96%87%e5%87%ba%e7%89%88%e5%93%81/%e9%bb%83%e9%87%91%e9%99%a3%e4%bd%ae%e7%83%8f%e9%a2%a8%e5%b9%94/",
+          "kind": "post",
+          "review_status": "pending"
+        },
+        {
+          "id": "354df5cb54dab32cf32620a7",
+          "title": "台語路經驗分享",
+          "source_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+          "kind": "announcement",
+          "review_status": "pending"
+        },
+        {
+          "id": "8d9da6eab42177a42bc7c1e5",
+          "title": "台語路共學團—全台語團",
+          "source_url": "https://taigiloo.tw/courses-listing/",
+          "kind": "announcement",
+          "review_status": "pending"
+        },
+        {
+          "id": "1d2af8a433370566f1ffbd13",
+          "title": "2023台語共學地圖",
+          "source_url": "https://taigiloo.tw/news/2023%e5%8f%b0%e8%aa%9e%e5%85%b1%e5%ad%b8%e5%9c%b0%e5%9c%96/",
+          "kind": "announcement",
+          "review_status": "pending"
+        },
+        {
+          "id": "8c15327da2076e2c947b5928",
+          "title": "台語囡仔予政府「國家語言推動計畫-民間團體協商」會議的意見",
+          "source_url": "https://taigiloo.tw/news/%e5%8f%b0%e8%aa%9e%e5%9b%a1%e4%bb%94%e4%ba%88%e6%94%bf%e5%ba%9c%e3%80%8c%e5%9c%8b%e5%ae%b6%e8%aa%9e%e8%a8%80%e6%8e%a8%e5%8b%95%e8%a8%88%e7%95%ab-%e6%b0%91%e9%96%93%e5%9c%98%e9%ab%94%e5%8d%94%e5%95%86/",
+          "kind": "announcement",
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "source_id": "tfam",
+      "method": "official_current_activity_json",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "current_listing_records=12",
+        "Official current activity listing; no historical/full-museum coverage claim. Chinese/sign-language tours are not Taiwanese tours."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T17:56:31+08:00",
+      "completed_at": "2026-09-18T17:56:32+08:00",
+      "candidate_count": 0,
+      "successful_response_count": 1,
+      "requests": [
+        {
+          "url": "https://www.tfam.museum/ashx/Event.ashx?ddlLang=zh-tw",
+          "final_url": "https://www.tfam.museum/ashx/Event.ashx?ddlLang=zh-tw",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T17:56:32+08:00",
+          "sha256": "5fc13df10d1b35961fd9c4f8a8b2e577f9d7632b83ffa7702674462e046dd79e",
+          "request_body": {
+            "State": "Now",
+            "JJMethod": "GetEv"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "source_id": "yingge_library",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=20"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T18:01:43+08:00",
+      "completed_at": "2026-09-18T18:02:28+08:00",
+      "candidate_count": 0,
+      "successful_response_count": 20,
+      "requests": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=239&branch=EA",
+          "final_url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=239&branch=EA",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:45+08:00",
+          "sha256": "7d5462065d43a057b36e407cec39eb7a33dcb730042522f0f948b08abc6d6296"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=93baff6280e0479ca52f155ddd322ae2",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=93baff6280e0479ca52f155ddd322ae2",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:53+08:00",
+          "sha256": "5a36d753ba3aade76fe64ea03a3fcc0afbfb00533d6f9a0ca623b328f40994d9"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=e3d543d18cf441f7ab6adb4828e70d26",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=e3d543d18cf441f7ab6adb4828e70d26",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:56+08:00",
+          "sha256": "1de49603e967a0ec4aaf55dbfdceaf8e5ce7b0e2b10bb13975628f61c139dc1f"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=fe29114f1d3d43cda372b023e5875443",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=fe29114f1d3d43cda372b023e5875443",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:57+08:00",
+          "sha256": "728b6b10fb0c41142f7819b13dc2117f9c238196ecebbccf96c9c072f54daf88"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9c346d8e5e8d458090c8214f1c20d85c",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9c346d8e5e8d458090c8214f1c20d85c",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:01:58+08:00",
+          "sha256": "133d3219587b63d8a3ea1b55e022d81683e8c3b4778fe7126a7b98524cc771c4"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=81a875b233254af8bd1ca12016cf33f0",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=81a875b233254af8bd1ca12016cf33f0",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:02+08:00",
+          "sha256": "75174925f5bf7ee1f30bbb091078809950ceff5f955ead2f097ca6964eb1530a"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=ae826f94eaf34bc3b4ea1fbdcac9f477",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=ae826f94eaf34bc3b4ea1fbdcac9f477",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:04+08:00",
+          "sha256": "a12824965c511725e622824df02e78b26581f0553ead7c1adb98732c9c090b48"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=3c5f173f28ef426fa28e862b154cc480",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=3c5f173f28ef426fa28e862b154cc480",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:05+08:00",
+          "sha256": "cccd1c3e9d6e078952f96376342c1df75527ff1f905ff597925c0cf77363051d"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=922dfaafc8f2491cbc076f50b87ce917",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=922dfaafc8f2491cbc076f50b87ce917",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:07+08:00",
+          "sha256": "f850a855630047b9963ef2799a5299c3a89d3d8871d93e34eb5abaf329c88c5a"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=d9d2497ce97e4e7fba3c301413398099",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=d9d2497ce97e4e7fba3c301413398099",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:08+08:00",
+          "sha256": "9c961e7c31fca39d1c4398b5c700b9cf41d95012ff3475ce294f2e7e6f8fe896"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=1f8104022cbb4609bb7fe72758fc5136",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=1f8104022cbb4609bb7fe72758fc5136",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:10+08:00",
+          "sha256": "0e8b149eb5959320999db1186f192672250173fd9561827d96973a192fe9a632"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=d2a600579d114d0d9cadd7f1026a2960",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=d2a600579d114d0d9cadd7f1026a2960",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:11+08:00",
+          "sha256": "544b520da9da2473305e1dc71ac70539db38a9f3ea6ec011fd919bcd47c3e929"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/Info",
+          "final_url": "https://www.library.ntpc.gov.tw/multiplehtml/Info",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:13+08:00",
+          "sha256": "179129794800b0b3a1505b1579e45a89f6ce15ebbc2f5a402e45ec5635345f35"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=29e248e955484125865017a79c4df1a3",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=29e248e955484125865017a79c4df1a3",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:14+08:00",
+          "sha256": "7c7aff2b5686a4954afbd0d7377b83ad8a6e56d1644a22c23ee93daa162bf03d"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=fa1681781d5841f1a4395b90373a6e2b",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=fa1681781d5841f1a4395b90373a6e2b",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:16+08:00",
+          "sha256": "f1767749e97f61f5849d7a45f4e2225172e04f90375430adc85ede39a063970f"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=452a2bc4aa4045d8831bc275cf2d2832",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=452a2bc4aa4045d8831bc275cf2d2832",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:19+08:00",
+          "sha256": "e1f07c967f118b51f2fe6715237fdc474018a3401107603a4d06a6e039f7dade"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=ddd87604ebf3450bb5ec33525ddc535d",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=ddd87604ebf3450bb5ec33525ddc535d",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:20+08:00",
+          "sha256": "565749f9c1e17218b9cf8ca09ba6f2ae4ce404e41a0fe519f179e825304db9fc"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=d516e701fe944a3ab4696556b7bdfc97",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=d516e701fe944a3ab4696556b7bdfc97",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:21+08:00",
+          "sha256": "d6afce31c798275fd332584e51e036ccffa9916a6ba27ed781744c0c2da7b39c"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=0e4f7783b9d7447bb0aa1ac375cbffdd",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=0e4f7783b9d7447bb0aa1ac375cbffdd",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:26+08:00",
+          "sha256": "262439b3947f94f99709756efebf69f43f6593c9d462cc64cb680ef5efd16527"
+        },
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=65fae5e3d7fb4ab080d55595497247be",
+          "final_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=65fae5e3d7fb4ab080d55595497247be",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:02:28+08:00",
+          "sha256": "c62df089e2b3da6167534a79ada1d6adef17e2263196d806c253eb02054ddf7e"
+        }
+      ],
+      "candidate_index": []
+    }
+  ],
+  "published_activity_count": 63,
+  "published_resource_count": 5,
+  "new_activity_count": 5,
+  "limitations": [
+    "Meta未授權，台語路粉專僅完成官方網址登記。",
+    "台語路網站內容較舊，近期活動依合作館舍公告補充。",
+    "活動候選包含歷史資訊，尚待人工審核，不能以候選數稱有效場次數。",
+    "迪化街暫以大稻埕戲苑對應，仍待確認是否另指台原亞洲偶戲博物館。"
+  ]
+}

@@ -8,7 +8,7 @@
 
 ## 2. 資料與模組
 
-- `data/verified_activities.json`：目前唯一正式資料入口。
+- `data/verified_activities.json`：正式活動場次入口。
 - `crawler/verified.py`：核實紀錄、時間、地區、費用、重複場次與來源內容檢查。
 - `main.py`：載入資料，移除已結束場次，暫存完整產物後替換 HTML / ICS。
 - `build_html.py`：前端模板；CSS / JavaScript 大括號須在 Python f-string 中寫成 `{{`、`}}`。
@@ -16,8 +16,8 @@
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
 - `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
-- `crawler/collect.py`：45 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
-- `data/source_registry.json`：36 個官方機構入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
+- `crawler/collect.py`：50 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
+- `data/source_registry.json`：41 個官方機構／團體入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
 - `crawler/sources/`：已改為真實資料收集；不再回傳固定資料。舊 `fetch_activities()` 接口會明確拒絕未審核資料，請改用 `.collect(client)`。
 - `crawler/sample_data.py` 及 `processor.py`：保留的歷史實作；正式建置／候選收集均不使用。
 - `config.example.json`：現行候選收集設定；僅含公開搜尋條件和流量上限。全部 Python 程式只需標準庫。
@@ -77,3 +77,13 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 - 社群缺 App／帳號授權，尚待真實 API 驗收；動態網站、防護頁、圖片公告及未連出的舊活動仍可能需要人工或瀏覽器補查。
 - 新增來源先寫入候選區，通過場次核實後才進入正式清單。
 - 維護時先讀 README / SPEC / SOURCE_AUDIT、確認 Git 狀態，保留他人未提交修改。
+
+## 8. 指定館舍、台語路與非場次資訊
+
+2026-09-18 第二輪新增國臺圖與台語路合作故事 3 場、臺博館台語繪本親子共作 2 場，正式清單共 63 場（臺北 11、新北 10、桃園 42），另有 5 項導覽／展覽資訊。
+
+`data/verified_resources.json` 與 `crawler/resources.py` 管理非單場資訊：台語語音、預約導覽、展期資訊。必須有語言證據、核對時間、來源 SHA-256 與 required_text；`--check-sources` 同樣重查內容，失敗不覆寫。含 expires_at 的展覽到期後排除；不產生 ICS、不計入場次數。正式 UI 提供獨立資訊區及頁首跳轉入口，資料經 HTML escape。
+
+臺博館2020年導覽公告明示為舊頁，目前可讀取不代表真人導覽時間已確定。國臺圖故事每月日期採公告明列值，不能從「第3或4週」自行展開；系列總述11:00–12:00與單場11:00–11:50差異已向使用者顯示，採單場時間。臺博館活動需購票入館，is_free=false，說明活動本身免費。
+
+收集入口共50個／registry41個；北美館改用官網實際 JSON 活動API，其餘指定館舍方法與限制詳見COLLECTORS.md。候選與正式刊登持續分離，相關推薦文字不可作為該展覽的台語證據。

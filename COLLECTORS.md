@@ -100,3 +100,22 @@ Facebook 讀取範圍依[官方 Page feed 文件](https://developers.facebook.co
 合計 684 筆候選，包含文章、公告、節目期間及場次，也可能含過期內容或尚未確認地區的資料；不是 684 場已核實活動。ACCUPASS 的最終關鍵字過濾以這輪剛取得的完整文字重算，原始來源欄位及回應指紋保留於本機，摘要另記錄重算時間。
 
 爬蟲驗收當時，42 項 Python 測試、前端檢查及正式清單的 5 個官方來源重查通過，正式行事曆當時仍為 8 場。後續已逐場審核並新增 50 場，現在共 58 場；刊登紀錄另見 [正式清單擴充摘要](data/audit/2026-09-18-published-expansion.json)，不改寫上述歷史收集數。
+
+## 指定館舍與台語路補強（2026-09-18 第二輪）
+
+目前共 **50 個收集器**，registry 共 41 個入口。新增 `ntl`（國立臺灣圖書館／四號公園）、`yingge_library`、`228_national`、`dadaocheng`、`taigiloo`。`organizations` 群組可選取台語路。
+
+- **北美館**：使用官網 JavaScript 的公開 `POST /ashx/Event.ashx?ddlLang=zh-tw`，JSON `State=Now, JJMethod=GetEv`。檢查 Status/Data 結構，逐筆篩選完整活動內容；本次 12 筆當期公告沒有台語關鍵字，不把手語當台語。
+- **臺博館**：直接從本館、古生物館、南門館、鐵道部活動列表，跟隨官方連出的 `event.culture.tw/mocweb/reg/NTM/Detail.init.ctr` 報名頁。解析真正標題、排除「相關系列活動」污染，讀取 `viewDetail('id')` 連結但不執行網頁程式。個別場次仍需核對，不用系列首末日生成連續活動。
+- **台北二二八紀念館**：監測藝文活動與特展列表；另新增不同館舍「二二八國家紀念館」台語團體預約服務，不能混為同一館。
+- **陶博、十三行**：教育活動與展覽列表加已知導覽服務頁。`guide_service` 不自動生成日曆場次；華語定時真人導覽與臺語語音服務分開辨識。
+- **鶯歌分館**：使用新北市圖 `area=239&branch=EA` 活動清單，EA 由官方 `getBranch?area=239` 回傳；分館介紹頁的 UUID 不能拿來當查詢代碼。候選標題須對應鶯歌，排除全市公告中其他分館的台語活動。
+- **四號公園圖書館**：是國立臺灣圖書館，不是新北市圖；新增官網、官方最新消息 RSS 與台語路合作故事專頁。
+- **迪化街**：先依大稻埕戲苑加入藝文處官方列表、已知《請戲—布袋戲一條街》特展；尚待確認使用者是否另指原林柳新／台原亞洲偶戲博物館，未宣稱兩館同一處。
+- **台語路**：官方 `taigiloo.tw` RSS、最新消息及活動文章；aliases 包含台語路／台語鹿／台語路親子樂團／taigilok。官方粉專 `https://www.facebook.com/taigilok` 已登記，仍需 Meta 授權及正式 Page ID 才能透過既有 Facebook API 取得貼文。官網 RSS 內容可能較舊，合作圖書館／售票平台仍是目前新活動的重要來源，不能說已完整取得粉專。
+
+本輪指定網站驗收採每站 20 頁，日常預設仍為 8 頁；到達上限如實列 partial，沒有全站完整涵蓋承諾。詳見 `data/audit/2026-09-18-museum-collection-report.json`。
+
+```bash
+python3 -m crawler.collect --sources tfam,ntm,228,228_national,ceramics,sshm,ntl,yingge_library,dadaocheng,taigiloo --website-pages 20
+```

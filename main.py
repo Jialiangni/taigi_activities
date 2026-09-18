@@ -5,20 +5,23 @@ from tempfile import TemporaryDirectory
 from build_html import generate_single_html
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 from crawler.verified import load_verified
+from crawler.resources import load_resources
 
 
 def build(output_dir=Path('.'), check_sources=False):
     # Validate every record/source before replacing any existing artifact.
     activities = load_verified(check_sources=check_sources)
+    resources = load_resources(check_sources=check_sources)
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(dir=output_dir) as stage:
         stage = Path(stage)
         GoogleWorkspaceSync().export_ics(activities, stage / 'taigi_activities.ics')
-        generate_single_html(activities, stage / 'index.html')
+        generate_single_html(activities, stage / 'index.html', resources=resources)
         for name in ('index.html', 'taigi_activities.ics'):
             (stage / name).replace(output_dir / name)
     print(f'已產生 {len(activities)} 筆經人工核實、尚未結束的場次。')
+    print(f'另列 {len(resources)} 項導覽／展覽資訊，不計入場次或 ICS。')
     print('核實日期見個別活動；建置不會自動新增或認證活動。')
     return activities
 

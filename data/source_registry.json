@@ -18,7 +18,7 @@
       "group": "public_libraries",
       "name": "新北市立圖書館",
       "urls": [
-        "https://www.library.ntpc.gov.tw/"
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo"
       ],
       "aliases": [
         "新北市立圖書館"
@@ -42,7 +42,9 @@
       "group": "museums",
       "name": "臺北市立美術館",
       "urls": [
-        "https://www.tfam.museum/"
+        "https://www.tfam.museum/Event/Event.aspx?ContentID=18",
+        "https://www.tfam.museum/Event/Event.aspx",
+        "https://www.tfam.museum/Exhibition/Exhibition.aspx"
       ],
       "aliases": [
         "臺北市立美術館",
@@ -55,34 +57,52 @@
       "group": "museums",
       "name": "國立臺灣博物館（本館／鐵道部）",
       "urls": [
-        "https://www.ntm.gov.tw/"
+        "https://www.ntm.gov.tw/News_actives.aspx?n=5481&sms=13389",
+        "https://www.ntm.gov.tw/News_actives.aspx?n=5482&sms=13389",
+        "https://www.ntm.gov.tw/News_actives.aspx?n=5483&sms=13389",
+        "https://www.ntm.gov.tw/News_actives.aspx?n=5484&sms=13389",
+        "https://www.ntm.gov.tw/News_actives.aspx?n=5472&sms=13389"
       ],
       "aliases": [
         "國立臺灣博物館",
         "臺博館",
         "鐵道部"
       ],
-      "redirect_hosts": []
+      "redirect_hosts": [
+        "event.culture.tw"
+      ],
+      "known_pages": [
+        {
+          "url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
+          "title": "臺博多語導覽服務大全",
+          "kind": "guide_service"
+        }
+      ]
     },
     {
       "id": "moca",
       "group": "museums",
       "name": "台北當代藝術館",
       "urls": [
-        "https://www.mocataipei.org.tw/"
+        "https://www.moca.taipei/tw/ExhibitionAndEvent/Events",
+        "https://www.moca.taipei/tw/ExhibitionAndEvent"
       ],
       "aliases": [
         "台北當代藝術館",
         "臺北當代藝術館"
       ],
-      "redirect_hosts": []
+      "redirect_hosts": [
+        "www.mocataipei.org.tw",
+        "www.moca.taipei"
+      ]
     },
     {
       "id": "228",
       "group": "museums",
       "name": "台北二二八紀念館",
       "urls": [
-        "https://228memorialmuseum.gov.taipei/"
+        "https://228memorialmuseum.gov.taipei/News.aspx?n=0F045CB861C446B3&sms=12D6AE63DBFC5C7E",
+        "https://228memorialmuseum.gov.taipei/News.aspx?n=3DF4DD30C5AF2C8C&sms=C728433BBC049794"
       ],
       "aliases": [
         "二二八紀念館"
@@ -143,24 +163,40 @@
       "group": "museums",
       "name": "新北市立鶯歌陶瓷博物館",
       "urls": [
-        "https://www.ceramics.ntpc.gov.tw/"
+        "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J149638456796918817",
+        "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302"
       ],
       "aliases": [
         "鶯歌陶瓷博物館"
       ],
-      "redirect_hosts": []
+      "redirect_hosts": [],
+      "known_pages": [
+        {
+          "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
+          "title": "鶯歌陶瓷博物館導覽服務",
+          "kind": "guide_service"
+        }
+      ]
     },
     {
       "id": "sshm",
       "group": "museums",
       "name": "新北市立十三行博物館",
       "urls": [
-        "https://www.sshm.ntpc.gov.tw/"
+        "https://www.sshm.ntpc.gov.tw/xceventsnews?xsmsid=0G250557655940640091",
+        "https://www.sshm.ntpc.gov.tw/xmdoc?xsmsid=0G244541084921596757"
       ],
       "aliases": [
         "十三行博物館"
       ],
-      "redirect_hosts": []
+      "redirect_hosts": [],
+      "known_pages": [
+        {
+          "url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+          "title": "十三行博物館個人化導覽服務",
+          "kind": "guide_service"
+        }
+      ]
     },
     {
       "id": "tshs",
@@ -443,6 +479,119 @@
         "桃園市政府青年事務局"
       ],
       "redirect_hosts": []
+    },
+    {
+      "id": "ntl",
+      "group": "public_libraries",
+      "name": "國立臺灣圖書館（四號公園）",
+      "urls": [
+        "https://www.ntl.edu.tw/wSite/mp?mp=1",
+        "https://www.ntl.edu.tw/wSite/np?ctNode=2790&mp=1"
+      ],
+      "aliases": [
+        "國立臺灣圖書館",
+        "國臺圖",
+        "四號公園圖書館"
+      ],
+      "redirect_hosts": [],
+      "known_pages": [
+        {
+          "url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+          "kind": "announcement"
+        }
+      ],
+      "feed_urls": [
+        "https://www.ntl.edu.tw/ntlapi/ntlFront/Rss/LatestNews"
+      ]
+    },
+    {
+      "id": "yingge_library",
+      "group": "public_libraries",
+      "name": "新北市立圖書館鶯歌分館",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=239&branch=EA"
+      ],
+      "aliases": [
+        "鶯歌分館",
+        "鶯歌圖書館"
+      ],
+      "redirect_hosts": [],
+      "require_alias": true,
+      "priority_terms": [
+        "鶯歌"
+      ],
+      "notes": [
+        "館別代碼由官方 /multiplehtml/getBranch?area=239 回傳，EA=鶯歌分館；不是使用分館介紹頁的 UUID。"
+      ],
+      "alias_in_title": true
+    },
+    {
+      "id": "228_national",
+      "group": "museums",
+      "name": "二二八國家紀念館",
+      "urls": [
+        "https://www.228.org.tw/"
+      ],
+      "aliases": [
+        "二二八國家紀念館",
+        "二二八事件紀念基金會"
+      ],
+      "redirect_hosts": [],
+      "known_pages": [
+        {
+          "url": "https://www.228.org.tw/visitbooking",
+          "title": "二二八國家紀念館團體台語導覽預約",
+          "kind": "guide_service"
+        }
+      ]
+    },
+    {
+      "id": "dadaocheng",
+      "group": "museums",
+      "name": "大稻埕戲苑",
+      "urls": [
+        "https://www.tapo.gov.taipei/News.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6"
+      ],
+      "aliases": [
+        "大稻埕戲苑"
+      ],
+      "redirect_hosts": [],
+      "known_pages": [
+        {
+          "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+          "title": "《請戲—布袋戲一條街》特展：台語語音導覽",
+          "kind": "exhibition_resource"
+        }
+      ]
+    },
+    {
+      "id": "taigiloo",
+      "group": "organizations",
+      "name": "台灣台語路協會／台語路親子樂團",
+      "urls": [
+        "https://taigiloo.tw/category/news/",
+        "https://taigiloo.tw/"
+      ],
+      "aliases": [
+        "台語路",
+        "台語鹿",
+        "台灣台語路協會",
+        "台語路親子樂團",
+        "taigilok"
+      ],
+      "redirect_hosts": [],
+      "feed_urls": [
+        "https://taigiloo.tw/feed/"
+      ],
+      "social_urls": [
+        "https://www.facebook.com/taigilok"
+      ],
+      "social_status": "needs_configuration",
+      "notes": [
+        "官方粉專由使用者指定且官網關於頁連結確認；尚無 Meta 授權，不宣稱已取得粉專貼文。",
+        "官網 RSS 未必持續更新；另以合作館舍與售票平台的官方活動公告交叉收集。"
+      ]
     }
   ]
 }

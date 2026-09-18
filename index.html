@@ -24,6 +24,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   
   <style>
+    .guide-resources { padding: 1.5rem 1rem; }
+    .guide-resources > p { color: var(--text-muted); margin: .6rem 0 1rem; }
+    .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }
+    .resource-card { padding: 1.2rem; border: 1px solid var(--border-color); border-radius: 14px; background: var(--bg-card); }
+    .resource-card h3 { margin: .5rem 0; font-size: 1.05rem; }
+    .resource-card p { line-height: 1.7; margin-bottom: .8rem; }
+    .resource-card a { color: var(--primary); }
+    .resource-card small { display: block; color: var(--text-muted); margin-top: .4rem; }
     :root {
       --font-main: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', sans-serif;
       --font-display: 'Outfit', 'Roboto', 'Noto Sans TC', sans-serif;
@@ -1177,7 +1185,7 @@
     </div>
   </header>
 
-  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。</div>
+  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。 <a href="#guideResources" style="color:var(--primary)">台語導覽與展覽資訊 ↓</a></div>
 
   <!-- CONTROLS & FILTERS -->
   <div class="controls-wrapper">
@@ -1228,6 +1236,7 @@
         <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却</button>
         <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
         <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
+        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
         <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院</button>
         <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
         <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
@@ -1281,6 +1290,7 @@
       </div>
     </div>
   </main>
+  <section id="guideResources" class="container guide-resources"><h2>台語導覽與展覽資訊</h2><p>常設語音、預約服務與展覽資訊；請依館方公告確認開館日、費用及預約。以下不列入場次數或日曆下載。</p><div class="resource-grid"><article class="resource-card"><small>臺北市 · 展覽與台語語音導覽</small><h3>大稻埕戲苑《請戲—布袋戲一條街》</h3><p>展期至2026/12/6，週二至週日9:00–17:00；週一、端午節、中秋節休館。地點為迪化街一段21號8樓。現場掃描QR Code可聽台語導覽，請自備耳機。</p><a href="https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&amp;s=574623D4555EC568&amp;sms=9A0025CA3D7482D6" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>新北市 · 台語語音導覽</small><h3>鶯歌陶瓷博物館常設展與園區</h3><p>館方提供臺語語音版本，可使用自己的手機或平板連網聆聽。定時真人導覽公告為華語；台語語音導覽可自行使用。</p><a href="https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>新北市 · 台語語音導覽</small><h3>十三行博物館與新北考古公園</h3><p>線上語音導覽可選台語；館內另有台語導覽筆與地圖可借用，須依規定提供證件或押金。定時真人導覽公告為華語。</p><a href="https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&amp;xsmsid=0G244539301206394658" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語導覽預約</small><h3>二二八國家紀念館團體導覽</h3><p>官方團體預約服務列有台語；須先向館方申請並確認安排。本項為南海路的國家紀念館，與二二八公園內的台北二二八紀念館不同。</p><a href="https://www.228.org.tw/visitbooking" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語語音導覽</small><h3>臺灣博物館多語導覽資訊</h3><p>館方2020年發布的服務頁列有本館常設展台語APP語音、台語真人導覽與土銀展示館台語影片。此舊公告仍可讀取；真人場次及服務現況請先向館方確認。</p><a href="https://www.ntm.gov.tw/News_Content.aspx?n=5651&amp;s=147688" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a><small>核對：2026-09-18</small></article></div></section>
 
   <!-- MOBILE NATIVE BOTTOM TAB BAR (Android & iPhone) -->
   <nav class="ios-tab-bar">
@@ -1325,6 +1335,7 @@
             <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
             <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
             <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
+        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
             <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院 OPENTIX</button>
             <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
             <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
@@ -1471,7 +1482,7 @@
         本頁僅收錄已核對官方公告的場次，不代表完整活動清單。各地收錄數以已核實資料為準；出發前請再次查看官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面建置：2026-09-18 17:37:07（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
+        頁面建置：2026-09-18 18:00:40（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -1758,6 +1769,36 @@
     },
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E6%95%B8%E5%BF%B5%E7%9A%84%E5%8E%9D%E2%80%94%E5%8F%B0%E8%AA%9E%E5%85%92%E5%B0%91%E8%AE%80%E5%8A%87%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BC%88%E4%B8%8B%E5%8D%88%E5%A0%B4%EF%BC%89&dates=20260920T060000Z%2F20260920T083000Z&ctz=Asia%2FTaipei&details=%E8%A8%B1%E9%A8%8E%E5%87%B1%E5%B8%B6%E9%A0%98%E5%9C%8B%E5%B0%8F%E4%B8%AD%E3%80%81%E9%AB%98%E5%B9%B4%E7%B4%9A%E5%AD%B8%E7%AB%A5%E7%B7%B4%E7%BF%92%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E8%88%87%E7%9F%AD%E5%8A%87%E5%89%B5%E4%BD%9C%EF%BC%9B%E5%85%A9%E5%A0%B4%E9%A0%88%E4%BE%9D%E5%A0%B1%E5%90%8D%E9%A0%81%E9%81%B8%E6%93%87%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E9%A0%88%E5%A0%B1%E5%90%8D%EF%BC%8C%E9%A1%8D%E6%BB%BF%E7%82%BA%E6%AD%A2%0Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2608270744575474894310&location=%E6%A1%83%E5%9C%92%E5%B8%82%E5%9C%9F%E5%9C%B0%E5%85%AC%E6%96%87%E5%8C%96%E9%A4%A8+%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E4%B8%89%E6%B0%91%E8%B7%AF%E4%B8%80%E6%AE%B5100%E8%99%9F",
     "ics_event": "BEGIN:VEVENT\r\nUID:acc_2608270744575474894310_20260920_1400@taigiactivities.tw\r\nDTSTAMP:20260918T093117Z\r\nDTSTART:20260920T060000Z\r\nDTEND:20260920T083000Z\r\nSUMMARY:數念的厝—台語兒少讀劇工作坊（下午場）\r\nDESCRIPTION:許騎凱帶領國小中、高年級學童練習台語表演與\r\n 短劇創作；兩場須依報名頁選擇。\\n免費，須報名，額滿\r\n 為止\\nhttps://www.accupass.com/event/2608270744575474894310\r\nLOCATION:桃園市土地公文化館 台灣桃園市桃園區三民路一\r\n 段100號\r\nURL:https://www.accupass.com/event/2608270744575474894310\r\nEND:VEVENT\r\n"
+  },
+  {
+    "id": "ntm_rhino_20260920",
+    "title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
+    "description": "林雅熒帶領國小一至四年級親子，以台語導讀繪本、認識化石並共作犀牛角頭飾；每組一位學童與一位成人。整體約80%使用台語，其中10分鐘展場導覽使用華語。本場網路報名已於9/17中午截止；現場是否開放候補由館方決定。",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語繪本",
+    "start_time": "2026-09-20T14:00:00+08:00",
+    "end_time": "2026-09-20T16:00:00+08:00",
+    "venue": "國立臺灣博物館本館3樓自然教室",
+    "address": "臺北市中正區襄陽路2號",
+    "organizer": "國立臺灣博物館",
+    "source_platform": "美術館與博物館",
+    "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+    "cover_image": "",
+    "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
+    "is_free": false,
+    "tags": [
+      "親子",
+      "台語繪本",
+      "臺灣博物館",
+      "需購票入館"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-18T17:58:58+08:00",
+      "source_title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作"
+    },
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%90%E8%87%BA%E7%81%A3%E6%9C%89%E7%8A%80%E3%80%91%E3%80%8C%E7%8A%80%E3%80%8D%E7%BC%BA%E4%B8%80%E8%A7%92%E2%80%94%E8%87%BA%E7%81%A3%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E8%A6%AA%E5%AD%90%E5%85%B1%E4%BD%9C&dates=20260920T060000Z%2F20260920T080000Z&ctz=Asia%2FTaipei&details=%E6%9E%97%E9%9B%85%E7%86%92%E5%B8%B6%E9%A0%98%E5%9C%8B%E5%B0%8F%E4%B8%80%E8%87%B3%E5%9B%9B%E5%B9%B4%E7%B4%9A%E8%A6%AA%E5%AD%90%EF%BC%8C%E4%BB%A5%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%AE%80%E7%B9%AA%E6%9C%AC%E3%80%81%E8%AA%8D%E8%AD%98%E5%8C%96%E7%9F%B3%E4%B8%A6%E5%85%B1%E4%BD%9C%E7%8A%80%E7%89%9B%E8%A7%92%E9%A0%AD%E9%A3%BE%EF%BC%9B%E6%AF%8F%E7%B5%84%E4%B8%80%E4%BD%8D%E5%AD%B8%E7%AB%A5%E8%88%87%E4%B8%80%E4%BD%8D%E6%88%90%E4%BA%BA%E3%80%82%E6%95%B4%E9%AB%94%E7%B4%8480%25%E4%BD%BF%E7%94%A8%E5%8F%B0%E8%AA%9E%EF%BC%8C%E5%85%B6%E4%B8%AD10%E5%88%86%E9%90%98%E5%B1%95%E5%A0%B4%E5%B0%8E%E8%A6%BD%E4%BD%BF%E7%94%A8%E8%8F%AF%E8%AA%9E%E3%80%82%E6%9C%AC%E5%A0%B4%E7%B6%B2%E8%B7%AF%E5%A0%B1%E5%90%8D%E5%B7%B2%E6%96%BC9%2F17%E4%B8%AD%E5%8D%88%E6%88%AA%E6%AD%A2%EF%BC%9B%E7%8F%BE%E5%A0%B4%E6%98%AF%E5%90%A6%E9%96%8B%E6%94%BE%E5%80%99%E8%A3%9C%E7%94%B1%E9%A4%A8%E6%96%B9%E6%B1%BA%E5%AE%9A%E3%80%82%0A%E6%B4%BB%E5%8B%95%E5%85%8D%E8%B2%BB%EF%BC%8C%E4%BD%86%E9%9C%80%E8%B3%BC%E7%A5%A8%E5%85%A5%E9%A4%A8%EF%BC%9A%E5%85%A8%E7%A5%A830%E5%85%83%E3%80%81%E5%84%AA%E5%BE%85%E7%A5%A815%E5%85%83%EF%BC%9B%E5%85%8D%E7%A5%A8%E8%B3%87%E6%A0%BC%E4%BE%9D%E9%A4%A8%E6%96%B9%E8%A6%8F%E5%AE%9A%0Ahttps%3A%2F%2Fevent.culture.tw%2Fmocweb%2Freg%2FNTM%2FDetail.init.ctr%3FactId%3D60185&location=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9C%AC%E9%A4%A83%E6%A8%93%E8%87%AA%E7%84%B6%E6%95%99%E5%AE%A4+%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E8%A5%84%E9%99%BD%E8%B7%AF2%E8%99%9F",
+    "ics_event": "BEGIN:VEVENT\r\nUID:ntm_rhino_20260920@taigiactivities.tw\r\nDTSTAMP:20260918T095858Z\r\nDTSTART:20260920T060000Z\r\nDTEND:20260920T080000Z\r\nSUMMARY:【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共\r\n 作\r\nDESCRIPTION:林雅熒帶領國小一至四年級親子，以台語導讀繪\r\n 本、認識化石並共作犀牛角頭飾；每組一位學童與一位\r\n 成人。整體約80%使用台語，其中10分鐘展場導覽使用華語\r\n 。本場網路報名已於9/17中午截止；現場是否開放候補由\r\n 館方決定。\\n活動免費，但需購票入館：全票30元、優待\r\n 票15元；免票資格依館方規定\\nhttps://event.culture.tw/mocweb/re\r\n g/NTM/Detail.init.ctr?actId=60185\r\nLOCATION:國立臺灣博物館本館3樓自然教室 臺北市中正區襄\r\n 陽路2號\r\nURL:https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185\r\nEND:VEVENT\r\n"
   },
   {
     "id": "ntpc_xizhi_songs_20260926",
@@ -2460,6 +2501,36 @@
     "ics_event": "BEGIN:VEVENT\r\nUID:opentix_2081620242303524865@taigiactivities.tw\r\nDTSTAMP:20260918T093136Z\r\nDTSTART:20261011T063000Z\r\nDTEND:20261011T073000Z\r\nSUMMARY:台語光影戲《山神的餅店》劇場版\r\nDESCRIPTION:不貳偶劇的親子光影戲，台語發音比例98%，演出\r\n 約60分鐘。票價及套票優惠依官方購票頁。\\n票面價格：3\r\n 00元；折扣、贊助票與購票條件依官方頁面\\nhttps://www.open\r\n tix.life/event/2081615616389365761\r\nLOCATION:華山1914文創園區東3B館 烏梅劇院 臺北市中正區八\r\n 德路一段1號\r\nURL:https://www.opentix.life/event/2081615616389365761\r\nEND:VEVENT\r\n"
   },
   {
+    "id": "ntl_taigiloo_20261015",
+    "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+    "description": "國立臺灣圖書館（四號公園）與台灣台語路協會共學團合作，以台語說故事並搭配手語翻譯、同步聽打。自由入場。公告系列總述為11:00–12:00，個別場次明列11:00–11:50，本頁依個別場次時間刊登。",
+    "city": "新北市",
+    "district": "中和區",
+    "category": "台語故事",
+    "start_time": "2026-10-15T11:00:00+08:00",
+    "end_time": "2026-10-15T11:50:00+08:00",
+    "venue": "國立臺灣圖書館視障資料中心B1研習教室",
+    "address": "",
+    "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
+    "source_platform": "國立臺灣圖書館",
+    "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+    "cover_image": "",
+    "price_info": "費用未公告；官方標示歡迎自由入場參加",
+    "is_free": null,
+    "tags": [
+      "台語路",
+      "四號公園",
+      "親子",
+      "台語手語共融"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-18T17:46:34+08:00",
+      "source_title": "大手牽小手˙好繪說母語｜台語手語做伙來講古"
+    },
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%A4%A7%E6%89%8B%E7%89%BD%E5%B0%8F%E6%89%8B%CB%99%E5%A5%BD%E7%B9%AA%E8%AA%AA%E6%AF%8D%E8%AA%9E%EF%BD%9C%E5%8F%B0%E8%AA%9E%E6%89%8B%E8%AA%9E%E5%81%9A%E4%BC%99%E4%BE%86%E8%AC%9B%E5%8F%A4&dates=20261015T030000Z%2F20261015T035000Z&ctz=Asia%2FTaipei&details=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%EF%BC%88%E5%9B%9B%E8%99%9F%E5%85%AC%E5%9C%92%EF%BC%89%E8%88%87%E5%8F%B0%E7%81%A3%E5%8F%B0%E8%AA%9E%E8%B7%AF%E5%8D%94%E6%9C%83%E5%85%B1%E5%AD%B8%E5%9C%98%E5%90%88%E4%BD%9C%EF%BC%8C%E4%BB%A5%E5%8F%B0%E8%AA%9E%E8%AA%AA%E6%95%85%E4%BA%8B%E4%B8%A6%E6%90%AD%E9%85%8D%E6%89%8B%E8%AA%9E%E7%BF%BB%E8%AD%AF%E3%80%81%E5%90%8C%E6%AD%A5%E8%81%BD%E6%89%93%E3%80%82%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E3%80%82%E5%85%AC%E5%91%8A%E7%B3%BB%E5%88%97%E7%B8%BD%E8%BF%B0%E7%82%BA11%3A00%E2%80%9312%3A00%EF%BC%8C%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%98%8E%E5%88%9711%3A00%E2%80%9311%3A50%EF%BC%8C%E6%9C%AC%E9%A0%81%E4%BE%9D%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%99%82%E9%96%93%E5%88%8A%E7%99%BB%E3%80%82%0A%E8%B2%BB%E7%94%A8%E6%9C%AA%E5%85%AC%E5%91%8A%EF%BC%9B%E5%AE%98%E6%96%B9%E6%A8%99%E7%A4%BA%E6%AD%A1%E8%BF%8E%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E5%8F%83%E5%8A%A0%0Ahttps%3A%2F%2Fwww.ntl.edu.tw%2FwSite%2Fct%3FctNode%3D1876%26mp%3D1%26xItem%3D96939&location=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%E8%A6%96%E9%9A%9C%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83B1%E7%A0%94%E7%BF%92%E6%95%99%E5%AE%A4",
+    "ics_event": "BEGIN:VEVENT\r\nUID:ntl_taigiloo_20261015@taigiactivities.tw\r\nDTSTAMP:20260918T094634Z\r\nDTSTART:20261015T030000Z\r\nDTEND:20261015T035000Z\r\nSUMMARY:大手牽小手˙好繪說母語｜台語手語做伙來講古\r\nDESCRIPTION:國立臺灣圖書館（四號公園）與台灣台語路協會\r\n 共學團合作，以台語說故事並搭配手語翻譯、同步聽打\r\n 。自由入場。公告系列總述為11:00–12:00，個別場次明列1\r\n 1:00–11:50，本頁依個別場次時間刊登。\\n費用未公告；官\r\n 方標示歡迎自由入場參加\\nhttps://www.ntl.edu.tw/wSite/ct?ctNode=\r\n 1876&mp=1&xItem=96939\r\nLOCATION:國立臺灣圖書館視障資料中心B1研習教室\r\nURL:https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939\r\nEND:VEVENT\r\n"
+  },
+  {
     "id": "acc_2608051357275636349740_20261017_1000",
     "title": "中正紀念堂歷史小旅行（台語場）",
     "description": "歷史小旅行工作隊以台語導覽中正紀念堂及常設展；請於09:50到捷運站5號出口外集合。",
@@ -2598,6 +2669,36 @@
     },
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%AF%AB%E4%BA%88%E4%BD%A0%E7%9A%84%E6%89%B9%E2%80%94%E5%8F%B0%E8%AA%9E%E8%AE%80%E8%A9%A9%E5%89%B5%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BD%9C%E5%AF%AB%E4%BA%88%E6%84%9B%E4%BA%BA%E7%9A%84%E6%89%B9&dates=20261018T050000Z%2F20261018T093000Z&ctz=Asia%2FTaipei&details=%E6%B8%A9%E8%8B%A5%E5%96%AC%E5%B8%B6%E9%A0%98%E5%8F%B0%E8%AA%9E%E8%A9%A9%E9%96%B1%E8%AE%80%E8%88%87%E5%89%B5%E4%BD%9C%EF%BC%8C%E6%AF%8F%E5%A0%B4%E9%99%9025%E4%BD%8D%EF%BC%9B%E5%85%A9%E5%A0%B4%E5%8F%AF%E5%88%86%E5%88%A5%E5%A0%B1%E5%90%8D%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E6%AF%8F%E5%A0%B4%E9%99%9025%E4%BD%8D%EF%BC%8C%E9%A0%88%E5%A0%B1%E5%90%8D%0Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2609080954292886555710&location=%E6%A1%83%E5%9C%92%E6%96%87%E5%AD%B8%E9%A4%A8+%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A1%9711%E8%99%9F",
     "ics_event": "BEGIN:VEVENT\r\nUID:acc_2609080954292886555710_20261018_1300@taigiactivities.tw\r\nDTSTAMP:20260918T093134Z\r\nDTSTART:20261018T050000Z\r\nDTEND:20261018T093000Z\r\nSUMMARY:寫予你的批—台語讀詩創作工作坊｜寫予愛人的批\r\nDESCRIPTION:温若喬帶領台語詩閱讀與創作，每場限25位；兩\r\n 場可分別報名。\\n免費，每場限25位，須報名\\nhttps://www.ac\r\n cupass.com/event/2609080954292886555710\r\nLOCATION:桃園文學館 台灣桃園市桃園區忠孝街11號\r\nURL:https://www.accupass.com/event/2609080954292886555710\r\nEND:VEVENT\r\n"
+  },
+  {
+    "id": "ntm_rhino_20261018",
+    "title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
+    "description": "林雅熒帶領國小一至四年級親子，以台語導讀繪本、認識化石並共作犀牛角頭飾；每組一位學童與一位成人。整體約80%使用台語，其中10分鐘展場導覽使用華語。網路報名期間為9/24 17:00至10/12 12:00，須經審核。",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語繪本",
+    "start_time": "2026-10-18T14:00:00+08:00",
+    "end_time": "2026-10-18T16:00:00+08:00",
+    "venue": "國立臺灣博物館本館3樓自然教室",
+    "address": "臺北市中正區襄陽路2號",
+    "organizer": "國立臺灣博物館",
+    "source_platform": "美術館與博物館",
+    "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+    "cover_image": "",
+    "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
+    "is_free": false,
+    "tags": [
+      "親子",
+      "台語繪本",
+      "臺灣博物館",
+      "需購票入館"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-18T17:58:58+08:00",
+      "source_title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作"
+    },
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%90%E8%87%BA%E7%81%A3%E6%9C%89%E7%8A%80%E3%80%91%E3%80%8C%E7%8A%80%E3%80%8D%E7%BC%BA%E4%B8%80%E8%A7%92%E2%80%94%E8%87%BA%E7%81%A3%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E8%A6%AA%E5%AD%90%E5%85%B1%E4%BD%9C&dates=20261018T060000Z%2F20261018T080000Z&ctz=Asia%2FTaipei&details=%E6%9E%97%E9%9B%85%E7%86%92%E5%B8%B6%E9%A0%98%E5%9C%8B%E5%B0%8F%E4%B8%80%E8%87%B3%E5%9B%9B%E5%B9%B4%E7%B4%9A%E8%A6%AA%E5%AD%90%EF%BC%8C%E4%BB%A5%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%AE%80%E7%B9%AA%E6%9C%AC%E3%80%81%E8%AA%8D%E8%AD%98%E5%8C%96%E7%9F%B3%E4%B8%A6%E5%85%B1%E4%BD%9C%E7%8A%80%E7%89%9B%E8%A7%92%E9%A0%AD%E9%A3%BE%EF%BC%9B%E6%AF%8F%E7%B5%84%E4%B8%80%E4%BD%8D%E5%AD%B8%E7%AB%A5%E8%88%87%E4%B8%80%E4%BD%8D%E6%88%90%E4%BA%BA%E3%80%82%E6%95%B4%E9%AB%94%E7%B4%8480%25%E4%BD%BF%E7%94%A8%E5%8F%B0%E8%AA%9E%EF%BC%8C%E5%85%B6%E4%B8%AD10%E5%88%86%E9%90%98%E5%B1%95%E5%A0%B4%E5%B0%8E%E8%A6%BD%E4%BD%BF%E7%94%A8%E8%8F%AF%E8%AA%9E%E3%80%82%E7%B6%B2%E8%B7%AF%E5%A0%B1%E5%90%8D%E6%9C%9F%E9%96%93%E7%82%BA9%2F24+17%3A00%E8%87%B310%2F12+12%3A00%EF%BC%8C%E9%A0%88%E7%B6%93%E5%AF%A9%E6%A0%B8%E3%80%82%0A%E6%B4%BB%E5%8B%95%E5%85%8D%E8%B2%BB%EF%BC%8C%E4%BD%86%E9%9C%80%E8%B3%BC%E7%A5%A8%E5%85%A5%E9%A4%A8%EF%BC%9A%E5%85%A8%E7%A5%A830%E5%85%83%E3%80%81%E5%84%AA%E5%BE%85%E7%A5%A815%E5%85%83%EF%BC%9B%E5%85%8D%E7%A5%A8%E8%B3%87%E6%A0%BC%E4%BE%9D%E9%A4%A8%E6%96%B9%E8%A6%8F%E5%AE%9A%0Ahttps%3A%2F%2Fevent.culture.tw%2Fmocweb%2Freg%2FNTM%2FDetail.init.ctr%3FactId%3D60185&location=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9C%AC%E9%A4%A83%E6%A8%93%E8%87%AA%E7%84%B6%E6%95%99%E5%AE%A4+%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E8%A5%84%E9%99%BD%E8%B7%AF2%E8%99%9F",
+    "ics_event": "BEGIN:VEVENT\r\nUID:ntm_rhino_20261018@taigiactivities.tw\r\nDTSTAMP:20260918T095858Z\r\nDTSTART:20261018T060000Z\r\nDTEND:20261018T080000Z\r\nSUMMARY:【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共\r\n 作\r\nDESCRIPTION:林雅熒帶領國小一至四年級親子，以台語導讀繪\r\n 本、認識化石並共作犀牛角頭飾；每組一位學童與一位\r\n 成人。整體約80%使用台語，其中10分鐘展場導覽使用華語\r\n 。網路報名期間為9/24 17:00至10/12 12:00，須經審核。\\n活動\r\n 免費，但需購票入館：全票30元、優待票15元；免票資格\r\n 依館方規定\\nhttps://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?a\r\n ctId=60185\r\nLOCATION:國立臺灣博物館本館3樓自然教室 臺北市中正區襄\r\n 陽路2號\r\nURL:https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185\r\nEND:VEVENT\r\n"
   },
   {
     "id": "acc_2609140247402019682780_20261024_1300",
@@ -2936,6 +3037,36 @@
     "ics_event": "BEGIN:VEVENT\r\nUID:acc_2609140247402019682780_20261115_1300@taigiactivities.tw\r\nDTSTAMP:20260918T093117Z\r\nDTSTART:20261115T050000Z\r\nDTEND:20261115T080000Z\r\nSUMMARY:台語咱佮意｜咱ê土地，咱ê話——自圖中看見百年\r\n 前ê台灣\r\nDESCRIPTION:「台語咱佮意」系列講座，第25場，由李孟珊老\r\n 師授課。親子參加時，大人與孩子須分別報名。公告場\r\n 地欄列5樓研習教室、地址欄列4樓；樓層請向主辦確認。\r\n \\n費用未公告，請查看報名頁或洽主辦單位\\nhttps://www.accu\r\n pass.com/event/2609140247402019682780\r\nLOCATION:大園分館 桃園市大園區田心里中正西路12之1號\r\nURL:https://www.accupass.com/event/2609140247402019682780\r\nEND:VEVENT\r\n"
   },
   {
+    "id": "ntl_taigiloo_20261119",
+    "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+    "description": "國立臺灣圖書館（四號公園）與台灣台語路協會共學團合作，以台語說故事並搭配手語翻譯、同步聽打。自由入場。公告系列總述為11:00–12:00，個別場次明列11:00–11:50，本頁依個別場次時間刊登。",
+    "city": "新北市",
+    "district": "中和區",
+    "category": "台語故事",
+    "start_time": "2026-11-19T11:00:00+08:00",
+    "end_time": "2026-11-19T11:50:00+08:00",
+    "venue": "國立臺灣圖書館視障資料中心B1研習教室",
+    "address": "",
+    "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
+    "source_platform": "國立臺灣圖書館",
+    "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+    "cover_image": "",
+    "price_info": "費用未公告；官方標示歡迎自由入場參加",
+    "is_free": null,
+    "tags": [
+      "台語路",
+      "四號公園",
+      "親子",
+      "台語手語共融"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-18T17:46:34+08:00",
+      "source_title": "大手牽小手˙好繪說母語｜台語手語做伙來講古"
+    },
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%A4%A7%E6%89%8B%E7%89%BD%E5%B0%8F%E6%89%8B%CB%99%E5%A5%BD%E7%B9%AA%E8%AA%AA%E6%AF%8D%E8%AA%9E%EF%BD%9C%E5%8F%B0%E8%AA%9E%E6%89%8B%E8%AA%9E%E5%81%9A%E4%BC%99%E4%BE%86%E8%AC%9B%E5%8F%A4&dates=20261119T030000Z%2F20261119T035000Z&ctz=Asia%2FTaipei&details=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%EF%BC%88%E5%9B%9B%E8%99%9F%E5%85%AC%E5%9C%92%EF%BC%89%E8%88%87%E5%8F%B0%E7%81%A3%E5%8F%B0%E8%AA%9E%E8%B7%AF%E5%8D%94%E6%9C%83%E5%85%B1%E5%AD%B8%E5%9C%98%E5%90%88%E4%BD%9C%EF%BC%8C%E4%BB%A5%E5%8F%B0%E8%AA%9E%E8%AA%AA%E6%95%85%E4%BA%8B%E4%B8%A6%E6%90%AD%E9%85%8D%E6%89%8B%E8%AA%9E%E7%BF%BB%E8%AD%AF%E3%80%81%E5%90%8C%E6%AD%A5%E8%81%BD%E6%89%93%E3%80%82%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E3%80%82%E5%85%AC%E5%91%8A%E7%B3%BB%E5%88%97%E7%B8%BD%E8%BF%B0%E7%82%BA11%3A00%E2%80%9312%3A00%EF%BC%8C%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%98%8E%E5%88%9711%3A00%E2%80%9311%3A50%EF%BC%8C%E6%9C%AC%E9%A0%81%E4%BE%9D%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%99%82%E9%96%93%E5%88%8A%E7%99%BB%E3%80%82%0A%E8%B2%BB%E7%94%A8%E6%9C%AA%E5%85%AC%E5%91%8A%EF%BC%9B%E5%AE%98%E6%96%B9%E6%A8%99%E7%A4%BA%E6%AD%A1%E8%BF%8E%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E5%8F%83%E5%8A%A0%0Ahttps%3A%2F%2Fwww.ntl.edu.tw%2FwSite%2Fct%3FctNode%3D1876%26mp%3D1%26xItem%3D96939&location=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%E8%A6%96%E9%9A%9C%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83B1%E7%A0%94%E7%BF%92%E6%95%99%E5%AE%A4",
+    "ics_event": "BEGIN:VEVENT\r\nUID:ntl_taigiloo_20261119@taigiactivities.tw\r\nDTSTAMP:20260918T094634Z\r\nDTSTART:20261119T030000Z\r\nDTEND:20261119T035000Z\r\nSUMMARY:大手牽小手˙好繪說母語｜台語手語做伙來講古\r\nDESCRIPTION:國立臺灣圖書館（四號公園）與台灣台語路協會\r\n 共學團合作，以台語說故事並搭配手語翻譯、同步聽打\r\n 。自由入場。公告系列總述為11:00–12:00，個別場次明列1\r\n 1:00–11:50，本頁依個別場次時間刊登。\\n費用未公告；官\r\n 方標示歡迎自由入場參加\\nhttps://www.ntl.edu.tw/wSite/ct?ctNode=\r\n 1876&mp=1&xItem=96939\r\nLOCATION:國立臺灣圖書館視障資料中心B1研習教室\r\nURL:https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939\r\nEND:VEVENT\r\n"
+  },
+  {
     "id": "acc_2608051357275636349740_20261121_1000",
     "title": "中正紀念堂歷史小旅行（台語場）",
     "description": "歷史小旅行工作隊以台語導覽中正紀念堂及常設展；請於09:50到捷運站5號出口外集合。",
@@ -2990,6 +3121,36 @@
     },
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%8F%B0%E8%AA%9E%E5%92%B1%E4%BD%AE%E6%84%8F%EF%BD%9C%E5%92%B1%C3%AA%E5%9C%9F%E5%9C%B0%EF%BC%8C%E5%92%B1%C3%AA%E8%A9%B1%E2%80%94%E2%80%94%E8%87%AA%E5%9C%96%E4%B8%AD%E7%9C%8B%E8%A6%8B%E7%99%BE%E5%B9%B4%E5%89%8D%C3%AA%E5%8F%B0%E7%81%A3&dates=20261121T050000Z%2F20261121T080000Z&ctz=Asia%2FTaipei&details=%E3%80%8C%E5%8F%B0%E8%AA%9E%E5%92%B1%E4%BD%AE%E6%84%8F%E3%80%8D%E7%B3%BB%E5%88%97%E8%AC%9B%E5%BA%A7%EF%BC%8C%E7%AC%AC26%E5%A0%B4%EF%BC%8C%E7%94%B1%E6%9D%8E%E5%AD%9F%E7%8F%8A%E8%80%81%E5%B8%AB%E6%8E%88%E8%AA%B2%E3%80%82%E8%A6%AA%E5%AD%90%E5%8F%83%E5%8A%A0%E6%99%82%EF%BC%8C%E5%A4%A7%E4%BA%BA%E8%88%87%E5%AD%A9%E5%AD%90%E9%A0%88%E5%88%86%E5%88%A5%E5%A0%B1%E5%90%8D%E3%80%82%0A%E8%B2%BB%E7%94%A8%E6%9C%AA%E5%85%AC%E5%91%8A%EF%BC%8C%E8%AB%8B%E6%9F%A5%E7%9C%8B%E5%A0%B1%E5%90%8D%E9%A0%81%E6%88%96%E6%B4%BD%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%0Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2609140247402019682780&location=%E5%85%AB%E5%A1%8A%E5%8E%9D%E6%B0%91%E4%BF%97%E8%97%9D%E8%A1%93%E6%9D%91%EF%BC%8D%E8%AA%9E%E8%A8%80%E6%8E%A8%E5%BB%A3%E9%A4%A8%EF%BC%8D%E8%AA%9E%E8%A8%80%E6%95%99%E5%AE%A4+%E6%A1%83%E5%9C%92%E5%B8%82%E5%85%AB%E5%BE%B7%E5%8D%80%E5%A4%A7%E6%84%9B%E9%87%8C%E9%87%8D%E6%85%B6%E8%A1%9736-1%E8%99%9F",
     "ics_event": "BEGIN:VEVENT\r\nUID:acc_2609140247402019682780_20261121_1300@taigiactivities.tw\r\nDTSTAMP:20260918T093117Z\r\nDTSTART:20261121T050000Z\r\nDTEND:20261121T080000Z\r\nSUMMARY:台語咱佮意｜咱ê土地，咱ê話——自圖中看見百年\r\n 前ê台灣\r\nDESCRIPTION:「台語咱佮意」系列講座，第26場，由李孟珊老\r\n 師授課。親子參加時，大人與孩子須分別報名。\\n費用未\r\n 公告，請查看報名頁或洽主辦單位\\nhttps://www.accupass.com/ev\r\n ent/2609140247402019682780\r\nLOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園\r\n 市八德區大愛里重慶街36-1號\r\nURL:https://www.accupass.com/event/2609140247402019682780\r\nEND:VEVENT\r\n"
+  },
+  {
+    "id": "ntl_taigiloo_20261217",
+    "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+    "description": "國立臺灣圖書館（四號公園）與台灣台語路協會共學團合作，以台語說故事並搭配手語翻譯、同步聽打。自由入場。公告系列總述為11:00–12:00，個別場次明列11:00–11:50，本頁依個別場次時間刊登。",
+    "city": "新北市",
+    "district": "中和區",
+    "category": "台語故事",
+    "start_time": "2026-12-17T11:00:00+08:00",
+    "end_time": "2026-12-17T11:50:00+08:00",
+    "venue": "國立臺灣圖書館視障資料中心B1研習教室",
+    "address": "",
+    "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
+    "source_platform": "國立臺灣圖書館",
+    "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+    "cover_image": "",
+    "price_info": "費用未公告；官方標示歡迎自由入場參加",
+    "is_free": null,
+    "tags": [
+      "台語路",
+      "四號公園",
+      "親子",
+      "台語手語共融"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-18T17:46:34+08:00",
+      "source_title": "大手牽小手˙好繪說母語｜台語手語做伙來講古"
+    },
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%A4%A7%E6%89%8B%E7%89%BD%E5%B0%8F%E6%89%8B%CB%99%E5%A5%BD%E7%B9%AA%E8%AA%AA%E6%AF%8D%E8%AA%9E%EF%BD%9C%E5%8F%B0%E8%AA%9E%E6%89%8B%E8%AA%9E%E5%81%9A%E4%BC%99%E4%BE%86%E8%AC%9B%E5%8F%A4&dates=20261217T030000Z%2F20261217T035000Z&ctz=Asia%2FTaipei&details=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%EF%BC%88%E5%9B%9B%E8%99%9F%E5%85%AC%E5%9C%92%EF%BC%89%E8%88%87%E5%8F%B0%E7%81%A3%E5%8F%B0%E8%AA%9E%E8%B7%AF%E5%8D%94%E6%9C%83%E5%85%B1%E5%AD%B8%E5%9C%98%E5%90%88%E4%BD%9C%EF%BC%8C%E4%BB%A5%E5%8F%B0%E8%AA%9E%E8%AA%AA%E6%95%85%E4%BA%8B%E4%B8%A6%E6%90%AD%E9%85%8D%E6%89%8B%E8%AA%9E%E7%BF%BB%E8%AD%AF%E3%80%81%E5%90%8C%E6%AD%A5%E8%81%BD%E6%89%93%E3%80%82%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E3%80%82%E5%85%AC%E5%91%8A%E7%B3%BB%E5%88%97%E7%B8%BD%E8%BF%B0%E7%82%BA11%3A00%E2%80%9312%3A00%EF%BC%8C%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%98%8E%E5%88%9711%3A00%E2%80%9311%3A50%EF%BC%8C%E6%9C%AC%E9%A0%81%E4%BE%9D%E5%80%8B%E5%88%A5%E5%A0%B4%E6%AC%A1%E6%99%82%E9%96%93%E5%88%8A%E7%99%BB%E3%80%82%0A%E8%B2%BB%E7%94%A8%E6%9C%AA%E5%85%AC%E5%91%8A%EF%BC%9B%E5%AE%98%E6%96%B9%E6%A8%99%E7%A4%BA%E6%AD%A1%E8%BF%8E%E8%87%AA%E7%94%B1%E5%85%A5%E5%A0%B4%E5%8F%83%E5%8A%A0%0Ahttps%3A%2F%2Fwww.ntl.edu.tw%2FwSite%2Fct%3FctNode%3D1876%26mp%3D1%26xItem%3D96939&location=%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%9C%96%E6%9B%B8%E9%A4%A8%E8%A6%96%E9%9A%9C%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83B1%E7%A0%94%E7%BF%92%E6%95%99%E5%AE%A4",
+    "ics_event": "BEGIN:VEVENT\r\nUID:ntl_taigiloo_20261217@taigiactivities.tw\r\nDTSTAMP:20260918T094634Z\r\nDTSTART:20261217T030000Z\r\nDTEND:20261217T035000Z\r\nSUMMARY:大手牽小手˙好繪說母語｜台語手語做伙來講古\r\nDESCRIPTION:國立臺灣圖書館（四號公園）與台灣台語路協會\r\n 共學團合作，以台語說故事並搭配手語翻譯、同步聽打\r\n 。自由入場。公告系列總述為11:00–12:00，個別場次明列1\r\n 1:00–11:50，本頁依個別場次時間刊登。\\n費用未公告；官\r\n 方標示歡迎自由入場參加\\nhttps://www.ntl.edu.tw/wSite/ct?ctNode=\r\n 1876&mp=1&xItem=96939\r\nLOCATION:國立臺灣圖書館視障資料中心B1研習教室\r\nURL:https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939\r\nEND:VEVENT\r\n"
   },
   {
     "id": "opentix_2089882441028116481",
