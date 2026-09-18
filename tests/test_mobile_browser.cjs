@@ -23,8 +23,43 @@ const {chromium} = require('playwright');
       assert.ok(await page.locator('.ios-tab-bar').isVisible());
       assert.ok(!await page.locator('#advancedFilters').isVisible());
       assert.ok(!await page.locator('.view-switchers').isVisible());
+      assert.ok(await page.locator('.filter-label').isVisible());
+      const cityAll = await page.locator('.filter-row [data-value="all"]').boundingBox();
+      const monthAll = await page.locator('[data-month="all"]').boundingBox();
+      assert.ok(Math.abs(cityAll.x-monthAll.x)<1 && Math.abs(cityAll.width-monthAll.width)<1);
     }
     await page.setViewportSize({width:390,height:844});
+    // Selection is a persistent visual state after a real touch, including multi-month choices.
+    for (const theme of ['dark','light']) {
+      await page.evaluate(t => document.documentElement.setAttribute('data-theme',t),theme);
+      await page.locator('.filter-row [data-value="新北市"]').tap();
+      assert.equal(await page.locator('.filter-row [data-value="新北市"]').getAttribute('aria-pressed'),'true');
+      assert.equal(await page.locator('.filter-row [data-value="all"]').getAttribute('aria-pressed'),'false');
+      await page.locator('#monthFilterOptions button').nth(1).tap();
+      await page.locator('#monthFilterOptions button').nth(2).tap();
+      assert.equal(await page.locator('#monthFilterOptions [aria-pressed="true"]').count(),2);
+      const selection = await page.evaluate(() => {
+        const city = document.querySelector('.filter-row [aria-pressed="true"]');
+        const month = document.querySelector('#monthFilterOptions [aria-pressed="true"]');
+        const off = document.querySelector('.filter-row [data-value="all"]');
+        const style = el => {const s=getComputedStyle(el);return {bg:s.backgroundColor,color:s.color};};
+        return {city:style(city),month:style(month),off:style(off),cityText:getComputedStyle(city.querySelector('.badge-city')).color,
+          expected:ACTIVITIES_DATA.filter(a=>a.city==='新北市' && selectedMonths.has(taipeiDateKey(new Date(a.start_time)).slice(0,7))).length};
+      });
+      assert.deepEqual(selection.city,selection.month);
+      assert.notEqual(selection.city.bg,selection.off.bg);
+      assert.notEqual(selection.city.color,selection.off.color);
+      assert.equal(selection.cityText,selection.city.color);
+      assert.equal(await count(),selection.expected);
+      await page.locator('#monthFilterOptions button').nth(1).tap();
+      assert.equal(await page.locator('#monthFilterOptions [aria-pressed="true"]').count(),1);
+      await page.locator('[data-month="all"]').tap();
+      await page.locator('.filter-row [data-value="all"]').tap();
+      assert.equal(await count(),initialCount);
+      assert.equal(await page.locator('[data-month="all"]').getAttribute('aria-pressed'),'true');
+      assert.equal(await page.locator('.filter-row [data-value="all"]').getAttribute('aria-pressed'),'true');
+    }
+    await page.evaluate(() => document.documentElement.setAttribute('data-theme','dark'));
     await page.locator('#mobileFilterButton').click();
     assert.ok(await page.locator('#filterModal').evaluate(el => el.open && el.matches(':modal')));
     const source = await page.locator('#sourceFilter option').nth(1).getAttribute('value');
@@ -76,7 +111,7 @@ const {chromium} = require('playwright');
     assert.ok(!await page.locator('.ios-tab-bar').isVisible());
     await noOverflow();
     assert.deepEqual(errors,[]);
-    console.log('PASS: 320/390/700px mobile layout, filter sheet, equal selects, tabs, modal focus/Escape, scroll restoration, theme persistence, desktop resize, no JS errors');
+    console.log('PASS: 320/390/700px alignment, city/month touch selection and inversion in both themes, filter sheet, tabs, modal focus/Escape, scroll restoration, theme persistence, desktop resize, no JS errors');
   } finally {
     await browser.close();
   }
