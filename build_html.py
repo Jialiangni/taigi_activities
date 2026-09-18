@@ -111,7 +111,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
         </div>
       </div>
-      <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
+      <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个月"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个月</span></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
@@ -222,10 +222,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
         <div class="modal-actions-bar">
           <a id="modalTicketLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
-            🌐 前往主辦/官方網站 ↗
+            🌐 看主辦單位／官方網站 ↗
           </a>
           <a id="modalGoogleSearchLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); font-weight:600;">
-            🔍 Google 搜尋此活動詳情 ↗
+            🔍 用 Google 揣活動詳情 ↗
           </a>
           <!-- Dynamic Calendar CTA (Auto-adapted for Android Google Calendar vs iPhone Apple Calendar) -->
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
@@ -492,7 +492,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function formatDateDisplay(isoStr) {{
-      if (!isoStr) return '時間未公告';
+      if (!isoStr) return '時間猶未公告';
       const date = new Date(isoStr);
       const time = new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }}).format(date);
       return `${{formatCalendarDate(taipeiDateKey(date))}} ${{time}}`;
@@ -522,7 +522,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       </article>`;
     }}
     function renderGrid(events) {{
-      document.getElementById('viewGrid').innerHTML = events.length ? events.map(activityCard).join('') : '<div class="empty-state"><h3>揣無合意的台語活動</h3><p>這个條件猶無核實的場次，毋代表當地無活動。會當改揀別个條件。</p></div>';
+      document.getElementById('viewGrid').innerHTML = events.length ? events.map(activityCard).join('') : '<div class="empty-state"><h3>揣無合條件的台語活動</h3><p>這个條件猶無核實的場次，毋代表當地無活動。會當改揀別个條件。</p></div>';
     }}
 
     function renderAgenda(events) {{
@@ -530,7 +530,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (events.length === 0) {{
         container.innerHTML = `
           <div class="empty-state">
-            <h3>揣無合意的台語活動</h3>
+            <h3>揣無合條件的台語活動</h3>
           </div>
         `;
         return;
@@ -677,11 +677,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalCategory').innerText = act.category;
       document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
       document.getElementById('modalTitle').innerText = act.title;
-      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time) + (act.end_time ? ' ～ ' + formatDateDisplay(act.end_time) : '（結束時間未公告）');
+      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time) + (act.end_time ? ' ～ ' + formatDateDisplay(act.end_time) : '（結束時間猶未公告）');
       document.getElementById('modalVenue').innerText = act.venue + (act.address ? ` (${{act.address}})` : '');
       document.getElementById('modalOrganizer').innerText = act.organizer;
       document.getElementById('modalPrice').innerText = act.price_info;
-      document.getElementById('modalDesc').innerText = act.description + '\\n\\n官方資料核對：' + act.raw_metadata.verified_at.slice(0, 10) + '。出發前請再次確認官方最新公告。';
+      document.getElementById('modalDesc').innerText = act.description + '\\n\\n官方資料核對：' + act.raw_metadata.verified_at.slice(0, 10) + '。出門進前請閣看一擺官方最新公告。';
 
       const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
       const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語 報名 售票`);
@@ -689,10 +689,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
       const ticketBtn = document.getElementById('modalTicketLink');
       ticketBtn.href = act.source_url;
-      ticketBtn.textContent = '🌐 查看官方活動公告／報名 ↗';
+      ticketBtn.textContent = '🌐 看官方活動公告／報名 ↗';
 
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
-      document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 Google 查詢本活動報名/購票 ↗';
+      document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 用 Google 揣報名／買票資訊 ↗';
       document.getElementById('modalGCalLink').href = act.gcal_url;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
@@ -762,7 +762,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       }} else {{
         // Fallback: Copy to clipboard
         navigator.clipboard.writeText(`${{shareData.title}}\\n${{shareData.url}}`);
-        alert('活動資訊已複製到剪貼簿，可直接貼到 LINE 分享！');
+        alert('活動資訊已經複製到剪貼簿，會當直接貼到 LINE 分享！');
       }}
     }}
 
