@@ -107,7 +107,7 @@ class FeedCrawler(Collector):
 
 
 class WebsiteCrawler(Collector):
-    def __init__(self, spec, keywords, max_pages=8):
+    def __init__(self, spec, keywords, max_pages=30):
         self.spec, self.keywords, self.max_pages = spec, keywords, max_pages
 
     def collect(self, client):

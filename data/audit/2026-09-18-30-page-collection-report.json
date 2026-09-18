@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-18T18:21:45+08:00",
+  "publication_changed": false,
+  "config": {
+    "schema_version": 2,
+    "keywords": [
+      "台語",
+      "臺語",
+      "台灣話",
+      "臺灣話",
+      "閩南語",
+      "囡仔古",
+      "歌仔戲",
+      "布袋戲",
+      "唸歌",
+      "台文"
+    ],
+    "instagram_hashtags": [
+      "台語活動",
+      "台語繪本",
+      "台語故事",
+      "台語走讀",
+      "台語工作坊"
+    ],
+    "workers": 3,
+    "limits": {
+      "search_pages": 20,
+      "details": 200,
+      "feed_pages": 5,
+      "website_pages": 30
+    }
+  },
+  "sources": [
+    {
+      "source_id": "moca",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 30,
+      "started_at": "2026-09-18T18:20:26+08:00",
+      "completed_at": "2026-09-18T18:20:43+08:00"
+    },
+    {
+      "source_id": "ntpc_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 30,
+      "started_at": "2026-09-18T18:20:26+08:00",
+      "completed_at": "2026-09-18T18:20:59+08:00"
+    },
+    {
+      "source_id": "taipei_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 30,
+      "started_at": "2026-09-18T18:20:26+08:00",
+      "completed_at": "2026-09-18T18:21:10+08:00"
+    },
+    {
+      "source_id": "ty_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 30,
+      "started_at": "2026-09-18T18:20:43+08:00",
+      "completed_at": "2026-09-18T18:21:45+08:00"
+    }
+  ],
+  "scope": "MOCA 與臺北、新北、桃園文化局各 30 頁實測；未重跑其餘來源，不代表最近三週完整涵蓋。"
+}

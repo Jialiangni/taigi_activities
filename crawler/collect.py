@@ -37,7 +37,7 @@ def collectors(config, selected=None):
         'le_chang': LeChangCrawler(keywords, limits.get('feed_pages', 5)),
     }
     for spec in definitions:
-        sources[spec['id']] = WebsiteCrawler(spec, keywords, limits.get('website_pages', 8))
+        sources[spec['id']] = WebsiteCrawler(spec, keywords, limits.get('website_pages', 30))
     sources['tmofa'] = TmofaCrawler(keywords)
     sources['tfam'] = TfamCrawler(keywords)
     requested = set(selected or sources)

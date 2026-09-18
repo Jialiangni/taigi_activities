@@ -14,7 +14,7 @@ def registry():
 class InstitutionCrawler(Collector):
     group = ''
 
-    def __init__(self, keywords=None, max_pages=8):
+    def __init__(self, keywords=None, max_pages=30):
         self.keywords, self.max_pages = keywords or KEYWORDS, max_pages
 
     def collect(self, client):
