@@ -31,6 +31,7 @@ credentials.json
 token.json
 config.json
 public/
+taigi-activities-standalone.html
 data/candidates/
 .env
 

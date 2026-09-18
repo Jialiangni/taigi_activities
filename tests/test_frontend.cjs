@@ -23,7 +23,7 @@ run("currentPrice='paid'");
 assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.is_free===false).length);
 run("currentPrice='all';currentCity='臺北市'");
 run('renderGrid(getFilteredActivities())');
-if (!data.some(a=>a.city==='臺北市')) assert.match(element('viewGrid').innerHTML,/沒有已核實場次/);
+if (!data.some(a=>a.city==='臺北市')) assert.match(element('viewGrid').innerHTML,/猶無核實的場次/);
 run("currentCity='all';renderGrid(getFilteredActivities())");
 assert.equal((element('viewGrid').innerHTML.match(/class="event-card"/g)||[]).length,data.length);
 assert.match(run("formatDateDisplay('2026-09-20T14:00:00+08:00')"),/14:00/);
@@ -35,7 +35,7 @@ if (data.length) {
 }
 // Month selection is a union of year-months, intersected with all other filters.
 run('renderMonthFilters()');
-assert.match(element('monthFilterOptions').innerHTML, /全部月份/);
+assert.match(element('monthFilterOptions').innerHTML, /攏總月份/);
 const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();
 for (const key of monthKeys) assert.ok(element('monthFilterOptions').innerHTML.includes(key));
 if (monthKeys.length) {
@@ -85,7 +85,7 @@ assert.match(week, /city-newtaipei/);
 assert.match(week, /city-taoyuan/);
 assert.ok(week.indexOf('week-test-0"') < week.indexOf('week-test-13"'));
 assert.equal(element('calCurrentWeekLabel').innerText, '2026/9/14 – 2026/9/20');
-assert.match(element('calWeekSummary').innerText, /本週 14 場/);
+assert.match(element('calWeekSummary').innerText, /這禮拜 14 場/);
 run("currentCity='臺北市';renderCalendar()");
 assert.equal((element('calGridDays').innerHTML.match(/data-activity-id=/g)||[]).length, 5);
 run("currentCity='all';nextWeek()");
@@ -95,7 +95,7 @@ run('prevWeek()');
 assert.equal(element('calCurrentWeekLabel').innerText, '2026/9/14 – 2026/9/20');
 run("calDate=new Date('2027-01-01T00:00:00Z');renderCalendar()");
 assert.equal(element('calCurrentWeekLabel').innerText, '2026/12/28 – 2027/1/3');
-assert.match(element('calWeekSummary').innerText, /本週無符合條件/);
+assert.match(element('calWeekSummary').innerText, /這禮拜猶無合條件/);
 run('nextWeek()');
 assert.equal(element('calCurrentWeekLabel').innerText, '2027/1/4 – 2027/1/10');
 run("calDate=new Date('2028-02-29T00:00:00Z');renderCalendar()");
@@ -104,7 +104,7 @@ assert.equal(run("taipeiDateKey(new Date('2026-09-20T16:30:00Z'))"), '2026-09-21
 run('goToToday()');
 assert.equal(run('calDate.toISOString().slice(0,10)'), run('taipeiDateKey()'));
 assert.doesNotMatch(html, /max-height:\s*60px|prevMonth|nextMonth|月曆檢視/);
-assert.match(html, /white-space: normal/);
+assert.match(html, /white-space:\s*normal/);
 run(`
   ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length,
     {id:'year-2026', start_time:'2026-01-01T10:00:00+08:00'},
@@ -120,6 +120,16 @@ run('selectedMonths.clear()');
 run('ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length, ...originalActivities)');
 console.log('PASS: crowded week (14 events), city colors/filter, full titles, week navigation, year/leap boundaries, Taipei dates, empty week');
 (async()=>{
+  // Source selection must affect the cards, week, count and exported ICS together.
+  const sources=[...new Set(data.map(a=>a.source_platform))];
+  for(const source of sources){
+    run(`setPlatformFilter(${JSON.stringify(source)})`);
+    assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.source_platform===source).length);
+    assert.equal((element('viewGrid').innerHTML.match(/class="event-card"/g)||[]).length,data.filter(a=>a.source_platform===source).length);
+    run('exportCalendarFile()');
+    assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,data.filter(a=>a.source_platform===source).length);
+  }
+  run("setPlatformFilter('all')");
   run('exportCalendarFile()');
   assert.equal(await download.text(),fs.readFileSync('taigi_activities.ics','utf8'));
   if(data.length){

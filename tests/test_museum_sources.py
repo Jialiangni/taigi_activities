@@ -47,7 +47,7 @@ class MuseumTests(unittest.TestCase):
             p = Path(tmp) / 'index.html'
             generate_single_html([], p, resources=rows)
             html = p.read_text()
-        self.assertIn('台語導覽、展覽與閱讀資訊', html)
+        self.assertIn('台語導覽、展覽佮閱讀資訊', html)
         self.assertIn('&lt;script&gt;', html)
         self.assertNotIn('<script>alert(1)</script>', html)
 

@@ -3,7 +3,7 @@ Single-file HTML Builder for Taigi Activities Calendar
 Compiles activities into an iPhone & Android optimized, clutter-free standalone index.html
 """
 import json
-import os
+from pathlib import Path
 from html import escape
 from typing import List
 from datetime import datetime, timezone, timedelta
@@ -12,39 +12,48 @@ from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
 def generate_single_html(activities: List[Activity], output_path: str = "index.html", resources=None) -> str:
+    root = Path(__file__).resolve().parent
+    translations = json.loads((root / 'data/ui_taigi.json').read_text(encoding='utf-8'))
+    styles = (root / 'assets/site.css').read_text(encoding='utf-8')
     activities_data = []
     g_sync = GoogleWorkspaceSync()
 
     for act in activities:
         d = act.to_dict()
+        # Exact source-text keys prevent stale translations after an official correction.
+        d['description_taigi'] = translations.get(d['description'], '')
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
         d["ics_event"] = g_sync.event_content(act)
         activities_data.append(d)
 
+    source_names = sorted({a.source_platform for a in activities})
+    platform_options = '<option value="all">攏總來源</option>' + ''.join(
+        '<option value="' + escape(name, quote=True) + '">' + escape(name) +
+        '（' + str(sum(a.source_platform == name for a in activities)) + '）</option>' for name in source_names)
     activities_json = json.dumps(activities_data, ensure_ascii=False, indent=2).replace("<", "\\u003c")
     calendar_header_json = json.dumps(g_sync.HEADER, ensure_ascii=False)
 
     resource_cards = ''.join(
         '<article class="resource-card"><small>' + escape(r['city']) + ' · ' +
         {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '台語相關展覽', 'reading_resource': '台語閱讀推廣'}[r['kind']] +
-        '</small><h3>' + escape(r['title']) + '</h3><p>' + escape(r['description']) +
-        '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a>' +
+        '</small><h3 lang="zh-Hant">' + escape(r['title']) + '</h3><p>' + escape(translations.get(r['description'], r['description'])) +
+        '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a>' +
         '<small>核對：' + escape(r['checked_at'][:10]) + '</small></article>' for r in (resources or []))
-    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽與閱讀資訊</h2>'
-                        '<p>語音導覽、預約服務、書展與閱讀推廣；請依館方公告確認開館日、費用及預約。以下不列入場次數或日曆下載。</p>'
+    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽佮閱讀資訊</h2>'
+                        '<p>語音導覽、預約服務、書展佮閱讀推廣；開館日、費用佮預約，請照館方公告。下跤這寡無算入活動場次，也無囥入下載的日曆。</p>'
                         '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="nan-Hant-TW">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>北北桃台語活動日曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
   <meta name="description" content="北北桃台語活動行事曆：收錄有官方公告且經人工核對的場次。彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
   
   <!-- Android Chrome & PWA 支援 -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#C84C32">
+  <meta name="theme-color" content="#1d1d1f">
   <link rel="manifest" href="manifest.json">
   
   <!-- iOS iPhone Web App (PWA) 支援 -->
@@ -52,1197 +61,54 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="台語日曆">
   <meta name="format-detection" content="telephone=no">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d1d1f'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>台</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d1d1f'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>台</text></svg>">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  
   <style>
-    .guide-resources {{ padding: 1.5rem 1rem; }}
-    .guide-resources > p {{ color: var(--text-muted); margin: .6rem 0 1rem; }}
-    .resource-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }}
-    .resource-card {{ padding: 1.2rem; border: 1px solid var(--border-color); border-radius: 14px; background: var(--bg-card); }}
-    .resource-card h3 {{ margin: .5rem 0; font-size: 1.05rem; }}
-    .resource-card p {{ line-height: 1.7; margin-bottom: .8rem; }}
-    .resource-card a {{ color: var(--primary); }}
-    .resource-card small {{ display: block; color: var(--text-muted); margin-top: .4rem; }}
-    :root {{
-      --font-main: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', sans-serif;
-      --font-display: 'Outfit', 'Roboto', 'Noto Sans TC', sans-serif;
-      
-      /* Colors */
-      --bg-main: #F8F9FA;
-      --bg-card: #FFFFFF;
-      --bg-surface: #FFFFFF;
-      --bg-hover: #F1F3F5;
-      --border-color: #E2E8F0;
-      --border-focus: #C84C32;
-      
-      --text-main: #1E293B;
-      --text-muted: #64748B;
-      --text-light: #94A3B8;
-      
-      /* Brand Accents */
-      --primary: #C84C32; /* 胭脂磚紅 */
-      --primary-hover: #B03A22;
-      --primary-light: #FDE8E4;
-      --primary-glow: rgba(200, 76, 50, 0.18);
-      
-      --secondary: #1D3557;
-      --secondary-light: #EBF2F7;
-      
-      --accent-tea: #0D9488;
-      --accent-tea-light: #CCFBF1;
-      
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-      --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
-      --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-full: 9999px;
-      
-      --sat: env(safe-area-inset-top, 0px);
-      --sab: env(safe-area-inset-bottom, 0px);
-    }}
-
-    [data-theme="dark"] {{
-      --bg-main: #0B1120;
-      --bg-card: #1E293B;
-      --bg-surface: #1E293B;
-      --bg-hover: #334155;
-      --border-color: #334155;
-      --border-focus: #E05A47;
-      
-      --text-main: #F8FAFC;
-      --text-muted: #94A3B8;
-      --text-light: #64748B;
-      
-      --primary: #E05A47;
-      --primary-hover: #F26E5C;
-      --primary-light: rgba(224, 90, 71, 0.2);
-      
-      --secondary: #38BDF8;
-      --secondary-light: rgba(56, 189, 248, 0.15);
-      
-      --accent-tea: #2DD4BF;
-      --accent-tea-light: rgba(45, 212, 191, 0.15);
-      
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-      --shadow-md: 0 4px 14px rgba(0,0,0,0.4);
-      --shadow-lg: 0 12px 36px rgba(0,0,0,0.6);
-    }}
-
-    * {{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      -webkit-tap-highlight-color: transparent;
-    }}
-
-    body {{
-      font-family: var(--font-main);
-      background-color: var(--bg-main);
-      color: var(--text-main);
-      line-height: 1.5;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      transition: background-color 0.25s ease, color 0.25s ease;
-      -webkit-font-smoothing: antialiased;
-    }}
-
-    .container {{
-      max-width: 1320px;
-      margin: 0 auto;
-      width: 100%;
-    }}
-
-    /* Desktop Header */
-    header.hero-header {{
-      background: linear-gradient(135deg, #1E293B 0%, #0F172A 60%, #1D3557 100%);
-      color: #FFFFFF;
-      padding: 2.25rem 1.5rem 1.75rem;
-      position: relative;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }}
-
-    .header-top {{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.25rem;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }}
-
-    .brand {{
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }}
-
-    .brand-icon {{
-      width: 44px;
-      height: 44px;
-      background: var(--primary);
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      box-shadow: 0 4px 12px var(--primary-glow);
-      flex-shrink: 0;
-    }}
-
-    .brand-titles h1 {{
-      font-size: 1.55rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }}
-
-    .brand-titles p {{
-      font-size: 0.88rem;
-      color: #CBD5E1;
-      font-weight: 500;
-    }}
-
-    .header-actions {{
-      display: flex;
-      align-items: center;
-      gap: 0.65rem;
-    }}
-
-    .btn {{
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.5rem 1rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      border-radius: var(--radius-full);
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      text-decoration: none;
-      user-select: none;
-    }}
-
-    .btn:active {{
-      transform: scale(0.96);
-    }}
-
-    .btn-light {{
-      background: rgba(255, 255, 255, 0.12);
-      color: #FFFFFF;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-color: rgba(255, 255, 255, 0.2);
-    }}
-
-    .btn-primary {{
-      background: var(--primary);
-      color: #FFFFFF;
-      box-shadow: 0 4px 12px var(--primary-glow);
-    }}
-
-    .btn-share {{
-      background: #25D366; /* LINE / Share green */
-      color: #FFFFFF;
-    }}
-
-    .btn-icon {{
-      width: 38px;
-      height: 38px;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-    }}
-
-    .hero-stats {{
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 0.65rem;
-    }}
-
-    .stat-card {{
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-sm);
-      padding: 0.65rem 0.85rem;
-      display: flex;
-      flex-direction: column;
-    }}
-
-    .stat-card .label {{
-      font-size: 0.72rem;
-      color: #94A3B8;
-    }}
-
-    .stat-card .val {{
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #FFFFFF;
-      font-family: var(--font-display);
-    }}
-
-    /* Compact Controls Bar (Slim on mobile) */
-    .controls-wrapper {{
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 90;
-      box-shadow: var(--shadow-sm);
-    }}
-
-    .controls-container {{
-      padding: 0.65rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }}
-
-    .controls-row-1 {{
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }}
-
-    .search-box {{
-      position: relative;
-      flex: 1;
-    }}
-
-    .search-box input {{
-      width: 100%;
-      padding: 0.55rem 1rem 0.55rem 2.2rem;
-      font-size: 0.88rem;
-      border: 1.5px solid var(--border-color);
-      border-radius: var(--radius-full);
-      background: var(--bg-main);
-      color: var(--text-main);
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }}
-
-    .search-box input:focus {{
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px var(--primary-glow);
-    }}
-
-    .search-box svg {{
-      position: absolute;
-      left: 0.75rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-muted);
-      pointer-events: none;
-    }}
-
-    .btn-filter-toggle {{
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.52rem 0.85rem;
-      font-size: 0.82rem;
-      font-weight: 600;
-      border-radius: var(--radius-full);
-      border: 1.5px solid var(--border-color);
-      background: var(--bg-main);
-      color: var(--text-main);
-      cursor: pointer;
-      flex-shrink: 0;
-    }}
-
-    .btn-filter-toggle.has-filter {{
-      border-color: var(--primary);
-      color: var(--primary);
-      background: var(--primary-light);
-    }}
-
-    .view-switchers {{
-      display: flex;
-      background: var(--bg-main);
-      padding: 3px;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--border-color);
-      gap: 2px;
-      flex-shrink: 0;
-    }}
-
-    .view-btn {{
-      padding: 0.35rem 0.75rem;
-      font-size: 0.82rem;
-      font-weight: 600;
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      border-radius: var(--radius-full);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      transition: all 0.2s;
-    }}
-
-    .view-btn.active {{
-      background: var(--bg-card);
-      color: var(--primary);
-      box-shadow: var(--shadow-sm);
-    }}
-
-    .quick-strip-scroll {{
-      display: flex;
-      overflow-x: auto;
-      gap: 0.4rem;
-      align-items: center;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }}
-
-    .quick-strip-scroll::-webkit-scrollbar {{
-      display: none;
-    }}
-
-    .strip-divider {{
-      width: 1px;
-      height: 18px;
-      background: var(--border-color);
-      margin: 0 0.15rem;
-      flex-shrink: 0;
-    }}
-
-    .pill {{
-      padding: 0.32rem 0.7rem;
-      font-size: 0.78rem;
-      font-weight: 600;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--border-color);
-      background: var(--bg-main);
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all 0.15s ease;
-      user-select: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }}
-
-    .pill:active {{
-      transform: scale(0.95);
-    }}
-
-    .pill.active {{
-      background: var(--primary);
-      color: #FFFFFF;
-      border-color: var(--primary);
-      box-shadow: 0 2px 6px var(--primary-glow);
-    }}
-
-    .pill-count {{
-      background: rgba(0,0,0,0.08);
-      padding: 1px 5px;
-      border-radius: 10px;
-      font-size: 0.68rem;
-    }}
-
-    .pill.active .pill-count {{
-      background: rgba(255,255,255,0.25);
-    }}
-
-    .desktop-filters-row {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      align-items: center;
-      font-size: 0.8rem;
-    }}
-
-    /* Main Content Area */
-    main.main-content {{
-      padding: 1.25rem 1.25rem;
-      flex: 1;
-    }}
-
-    .filter-summary {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: .35rem .75rem;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.85rem;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }}
-
-    .filter-summary strong {{
-      color: var(--text-main);
-      font-weight: 700;
-    }}
-
-    /* Card Grid View */
-    .events-grid {{
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
-    }}
-
-    .event-card {{
-      background: var(--bg-card);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border-color);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-    }}
-
-    .event-card:hover {{
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary);
-    }}
-
-    .event-card:active {{
-      transform: scale(0.985);
-    }}
-
-    .card-cover {{
-      height: 165px;
-      width: 100%;
-      background: #E2E8F0;
-      position: relative;
-      overflow: hidden;
-    }}
-
-    .card-cover img {{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }}
-
-    .card-labels {{
-      display: flex;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 0.75rem;
-    }}
-
-    .badge {{
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-full);
-      font-size: 0.7rem;
-      font-weight: 700;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.2rem;
-    }}
-
-    .badge-city {{
-      background: rgba(30, 41, 59, 0.88);
-      color: #FFFFFF;
-    }}
-
-    .badge-category {{
-      background: var(--primary);
-      color: #FFFFFF;
-    }}
-
-    .badge-platform {{
-      background: var(--bg-main);
-      color: var(--text-muted);
-      font-size: 0.68rem;
-    }}
-
-    .card-body {{
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }}
-
-    .card-date {{
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 0.3rem;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }}
-
-    .card-title {{
-      font-size: 1.05rem;
-      font-weight: 700;
-      line-height: 1.35;
-      margin-bottom: 0.4rem;
-      color: var(--text-main);
-      overflow-wrap: anywhere;
-    }}
-
-    .card-desc {{
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.45;
-      margin-bottom: 0.75rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }}
-
-    .card-meta {{
-      margin-top: auto;
-      border-top: 1px solid var(--border-color);
-      padding-top: 0.65rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }}
-
-    .meta-item {{
-      display: flex;
-      gap: 0.35rem;
-      align-items: flex-start;
-      overflow-wrap: anywhere;
-    }}
-
-    .meta-item svg {{
-      flex-shrink: 0;
-      color: var(--text-light);
-    }}
-
-    .card-footer {{
-      padding: 0.65rem 1rem;
-      background: var(--bg-main);
-      border-top: 1px solid var(--border-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }}
-
-    .card-footer {{ gap: .75rem; }}
-    .card-footer .btn {{ flex-shrink: 0; }}
-
-    .card-price {{
-      font-weight: 700;
-      font-size: 0.82rem;
-      color: var(--text-main);
-    }}
-
-    .card-price.free {{
-      color: var(--accent-tea);
-    }}
-
-    /* Agenda / List View */
-    .agenda-list {{
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }}
-
-    .agenda-group-header {{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1rem;
-      font-weight: 800;
-      color: var(--text-main);
-      padding-bottom: 0.35rem;
-      border-bottom: 2px solid var(--primary);
-    }}
-
-    .agenda-item {{
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 0.85rem 1rem;
-      display: grid;
-      grid-template-columns: 110px 1fr auto;
-      gap: 1rem;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
-      cursor: pointer;
-    }}
-
-    .agenda-time-box {{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: var(--primary-light);
-      color: var(--primary);
-      border-radius: var(--radius-sm);
-      padding: 0.55rem 0.4rem;
-      text-align: center;
-    }}
-
-    .agenda-time-box .day-num {{
-      font-size: 1.5rem;
-      font-weight: 800;
-      line-height: 1;
-      font-family: var(--font-display);
-    }}
-
-    .agenda-time-box .month-name {{
-      font-size: 0.72rem;
-      font-weight: 700;
-    }}
-
-    .agenda-time-box .time-str {{
-      font-size: 0.7rem;
-      margin-top: 0.15rem;
-      font-weight: 600;
-    }}
-
-    .agenda-content h3 {{
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-      color: var(--text-main);
-    }}
-
-    .agenda-content-meta {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.3rem;
-    }}
-
-    .agenda-actions {{
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-      min-width: 110px;
-    }}
-
-    .month-filter {{ display: flex; align-items: center; gap: .6rem; min-width: 0; }}
-    .month-filter-label {{ font-size: .8rem; color: var(--text-muted); flex-shrink: 0; }}
-    .month-options {{ display: flex; gap: .4rem; overflow-x: auto; padding: .25rem 0; }}
-    .month-options .pill {{ flex-shrink: 0; }}
-
-    /* Weekly calendar: full-height event lists, no hidden overflow. */
-    .city-taipei {{ --city-ink: #174ea6; --city-bg: #e8f0fe; }}
-    .city-newtaipei {{ --city-ink: #14633b; --city-bg: #e4f4ea; }}
-    .city-taoyuan {{ --city-ink: #9a4600; --city-bg: #fff0da; }}
-    .badge-city[class*="city-"] {{ background: var(--city-bg, #eef1f5); color: var(--city-ink, #334155); }}
-    .calendar-container {{
-      background: var(--bg-card);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border-color);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-    }}
-    .cal-header {{
-      padding: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: .75rem;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--border-color);
-    }}
-    .cal-title {{ font-size: 1.1rem; font-weight: 800; font-family: var(--font-display); }}
-    .cal-nav {{ display: flex; gap: .4rem; }}
-    .cal-nav .btn {{ color: var(--text-main); border-color: var(--border-color); padding: .45rem .65rem; }}
-    .cal-legend {{ display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .75rem 1rem; }}
-    .cal-summary {{ font-size: .8rem; color: var(--text-muted); }}
-    .cal-grid {{ display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: start; }}
-    .cal-cell {{ min-width: 0; padding: .5rem; border-right: 1px solid var(--border-color); }}
-    .cal-cell:last-child {{ border-right: none; }}
-    .cal-cell.today {{ background: var(--primary-light); }}
-    .cal-cell-header {{ display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; margin-bottom: .65rem; }}
-    .cal-date-num {{ font-size: .85rem; font-weight: 800; margin: 0; }}
-    .cal-day-count {{ font-size: .72rem; color: var(--text-muted); }}
-    .cal-today-label {{ font-size: .7rem; background: var(--primary); color: white; padding: .1rem .35rem; border-radius: 4px; }}
-    .cal-events-list {{ display: flex; flex-direction: column; gap: .5rem; }}
-    .cal-event-pill {{
-      display: flex;
-      flex-direction: column;
-      gap: .3rem;
-      width: 100%;
-      font: inherit;
-      font-size: .8rem;
-      line-height: 1.5;
-      text-align: left;
-      padding: .65rem .5rem;
-      border: 1px solid transparent;
-      border-left: 4px solid var(--city-ink, #334155);
-      border-radius: 6px;
-      background: var(--city-bg, #eef1f5);
-      color: var(--city-ink, #334155);
-      white-space: normal;
-      overflow-wrap: anywhere;
-      cursor: pointer;
-    }}
-    .cal-event-pill:hover {{ border-color: var(--city-ink, #334155); }}
-    .cal-event-pill:focus-visible {{ outline: 3px solid var(--city-ink, #334155); outline-offset: 2px; }}
-    .cal-event-time {{ font-weight: 800; }}
-    .cal-event-title {{ font-size: .85rem; }}
-    .cal-event-meta {{ font-size: .72rem; }}
-    .cal-empty {{ font-size: .78rem; color: var(--text-muted); padding: .5rem 0; }}
-    @media (max-width: 1000px) {{
-      .cal-grid {{ grid-template-columns: 1fr; }}
-      .cal-cell {{ border-right: none; border-bottom: 1px solid var(--border-color); padding: 1rem; }}
-      .cal-events-list {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }}
-    }}
-
-    /* Mobile Bottom Navigation Bar */
-    .ios-tab-bar {{
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-top: 0.5px solid rgba(0, 0, 0, 0.15);
-      z-index: 99;
-      padding-bottom: max(6px, var(--sab));
-    }}
-
-    [data-theme="dark"] .ios-tab-bar {{
-      background: rgba(15, 23, 42, 0.92);
-      border-top: 0.5px solid rgba(255, 255, 255, 0.15);
-    }}
-
-    .ios-tab-bar-items {{
-      display: flex;
-      height: 52px;
-      justify-content: space-around;
-      align-items: center;
-    }}
-
-    .ios-tab-item {{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      height: 100%;
-      color: var(--text-muted);
-      font-size: 0.68rem;
-      font-weight: 600;
-      text-decoration: none;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      gap: 2px;
-    }}
-
-    .ios-tab-item svg {{
-      width: 20px;
-      height: 20px;
-      stroke-width: 2;
-    }}
-
-    .ios-tab-item.active {{
-      color: var(--primary);
-    }}
-
-    /* Modals */
-    .modal-overlay {{
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.25s ease;
-    }}
-
-    .modal-overlay.active {{
-      opacity: 1;
-      visibility: visible;
-    }}
-
-    .modal-dialog {{
-      background: var(--bg-card);
-      border-radius: var(--radius-lg);
-      max-width: 650px;
-      width: 100%;
-      max-height: 90vh;
-      overflow-y: auto;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      transform: translateY(20px);
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }}
-
-    .modal-overlay.active .modal-dialog {{
-      transform: translateY(0);
-    }}
-
-    .modal-sheet-handle {{
-      display: none;
-      width: 36px;
-      height: 5px;
-      background: #CBD5E1;
-      border-radius: 3px;
-      margin: 8px auto 0;
-    }}
-
-    .modal-close {{
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: rgba(0,0,0,0.5);
-      color: #FFFFFF;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-    }}
-
-    .modal-hero-img {{
-      height: 220px;
-      width: 100%;
-      background: #1E293B;
-      position: relative;
-    }}
-
-    .modal-hero-img img {{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }}
-
-    .modal-content {{
-      padding: 1.5rem;
-    }}
-
-    .modal-title {{
-      font-size: 1.35rem;
-      font-weight: 800;
-      line-height: 1.35;
-      margin: 0.75rem 0 0.85rem;
-      color: var(--text-main);
-    }}
-
-    .modal-info-grid {{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 0.75rem;
-      background: var(--bg-main);
-      padding: 1rem;
-      border-radius: var(--radius-md);
-      margin-bottom: 1.1rem;
-    }}
-
-    .info-row {{
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      font-size: 0.85rem;
-    }}
-
-    .info-row svg {{
-      color: var(--primary);
-      flex-shrink: 0;
-      margin-top: 3px;
-    }}
-
-    .modal-desc {{
-      font-size: 0.92rem;
-      color: var(--text-main);
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
-      white-space: pre-wrap;
-    }}
-
-    .modal-actions-bar {{
-      display: flex;
-      gap: 0.65rem;
-      flex-wrap: wrap;
-      border-top: 1px solid var(--border-color);
-      padding-top: 1.1rem;
-    }}
-
-    .empty-state {{
-      text-align: center;
-      padding: 3.5rem 1.25rem;
-      color: var(--text-muted);
-    }}
-
-    footer {{
-      background: var(--bg-card);
-      border-top: 1px solid var(--border-color);
-      padding: 2rem 1.25rem;
-      text-align: center;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-top: auto;
-    }}
-
-    /* =========================================================================
-       RESPONSIVE MOBILE VIEW (iPhone & Android)
-       ========================================================================= */
-    @media (max-width: 768px) {{
-      header.hero-header {{
-        padding: calc(var(--sat) + 0.5rem) 1rem 0.5rem;
-        box-shadow: none;
-      }}
-      .header-top {{
-        margin-bottom: 0;
-      }}
-      .brand-titles h1 {{
-        font-size: 1.15rem;
-      }}
-      .brand-titles p {{
-        display: none;
-      }}
-      .brand-icon {{
-        width: 32px;
-        height: 32px;
-        font-size: 1rem;
-      }}
-      .hero-stats {{
-        display: none;
-      }}
-      .header-actions {{
-        display: none;
-      }}
-
-      .desktop-filters-row {{
-        display: none !important;
-      }}
-      .view-switchers {{
-        display: none;
-      }}
-
-      .controls-container {{
-        padding: 0.45rem 0.85rem;
-        gap: 0.35rem;
-      }}
-      .search-box input {{
-        padding: 0.45rem 0.85rem 0.45rem 2rem;
-        font-size: 0.85rem;
-      }}
-
-      body {{
-        padding-bottom: calc(var(--sab) + 55px);
-      }}
-      main.main-content {{
-        padding: 0.75rem 0.85rem;
-      }}
-      .events-grid {{
-        grid-template-columns: 1fr;
-        gap: 0.85rem;
-      }}
-      .card-cover {{
-        height: 155px;
-      }}
-      .agenda-item {{
-        grid-template-columns: 1fr;
-        gap: 0.65rem;
-        padding: 0.75rem;
-      }}
-      .agenda-time-box {{
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 0.65rem;
-        padding: 0.4rem 0.75rem;
-      }}
-      .agenda-time-box .day-num {{
-        font-size: 1.25rem;
-      }}
-      .agenda-actions {{
-        flex-direction: row;
-        width: 100%;
-      }}
-      .agenda-actions .btn {{
-        flex: 1;
-        justify-content: center;
-      }}
-      .cal-events-list {{ grid-template-columns: 1fr; }}
-      .cal-event-pill {{ padding: .75rem; font-size: .9rem; }}
-      .cal-event-title {{ font-size: .95rem; }}
-      .cal-header {{ padding: .85rem; }}
-
-      .ios-tab-bar {{
-        display: block;
-      }}
-
-      .modal-overlay {{
-        align-items: flex-end;
-        padding: 0;
-      }}
-      .modal-dialog {{
-        border-radius: 20px 20px 0 0;
-        max-height: 85vh;
-        transform: translateY(100%);
-        padding-bottom: var(--sab);
-      }}
-      .modal-sheet-handle {{
-        display: block;
-      }}
-      .modal-actions-bar {{
-        flex-direction: column;
-      }}
-      .modal-actions-bar .btn {{
-        width: 100%;
-        justify-content: center;
-      }}
-    }}
+{styles}
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="hero-header">
-    <div class="container">
-      <div class="header-top">
-        <div class="brand">
-          <div class="brand-icon">🎭</div>
-          <div class="brand-titles">
-            <h1>北北桃台語活動日曆</h1>
-            <p>臺北市・新北市・桃園市 ｜ 舞台劇・表演・故事・繪本・體驗・導覽</p>
-          </div>
-        </div>
-        <div class="header-actions">
-          <button class="btn btn-light" onclick="exportCalendarFile()">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            下載 iCal (.ics)
-          </button>
-          <button class="btn btn-light" onclick="openSyncModal()">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
-            手機/日曆串接
-          </button>
-          <button class="btn btn-light btn-icon" onclick="toggleTheme()" title="切換深淺模式">
-            🌓
-          </button>
-        </div>
-      </div>
-
-      <!-- Desktop Hero Stats (Hidden on mobile) -->
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="label">活動總數</span>
-          <span class="val" id="statTotal">--</span>
-        </div>
-        <div class="stat-card">
-          <span class="label">臺北市</span>
-          <span class="val" id="statTaipei">--</span>
-        </div>
-        <div class="stat-card">
-          <span class="label">新北市</span>
-          <span class="val" id="statNewTaipei">--</span>
-        </div>
-        <div class="stat-card">
-          <span class="label">桃園市</span>
-          <span class="val" id="statTaoyuan">--</span>
-        </div>
-        <div class="stat-card">
-          <span class="label">免費活動</span>
-          <span class="val" id="statFree">--</span>
-        </div>
+    <div class="container header-top">
+      <div class="brand">北北桃台語活動</div>
+      <div class="header-actions">
+        <button class="btn download-top" onclick="exportCalendarFile()">下載日曆</button>
+        <button class="btn" onclick="openSyncModal()">日曆佮設定</button>
+        <button class="btn btn-icon" onclick="toggleTheme()" aria-label="換深色抑是淺色">◐</button>
       </div>
     </div>
   </header>
-
-  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。 <a href="#guideResources" style="color:var(--primary)">台語導覽、展覽與閱讀資訊 ↓</a></div>
-
-  <!-- CONTROLS & FILTERS -->
+  <section class="container intro">
+    <h1>後一場，台語相見。</h1>
+    <p>臺北、新北、桃園，做伙來講台語。</p>
+    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛付錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
+    <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
+  </section>
   <div class="controls-wrapper">
     <div class="container controls-container">
-      
       <div class="controls-row-1">
-        <div class="search-box">
-          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line></svg>
-          <input type="text" id="searchInput" placeholder="搜尋劇名、故事屋、導覽、圖書館..." oninput="handleSearch(this.value)">
-        </div>
-
-        <button class="btn-filter-toggle" id="btnFilterSheet" onclick="openFilterSheet()">
-          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" stroke-width="2"/></svg>
-          <span id="filterBtnLabel">進階篩選</span>
-        </button>
-
-        <div class="view-switchers">
-          <button class="view-btn active" data-view="grid" onclick="switchView('grid')">🗂️ 卡片</button>
-          <button class="view-btn" data-view="agenda" onclick="switchView('agenda')">📋 清單</button>
-          <button class="view-btn" data-view="calendar" onclick="switchView('calendar')">📅 週曆</button>
+        <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" aria-label="揣活動抑是地點" placeholder="揣活動抑是地點" oninput="handleSearch(this.value)"></div>
+        <div class="view-switchers" role="group" aria-label="欲按怎看">
+          <button class="view-btn active" data-view="grid" aria-pressed="true" onclick="switchView('grid')">活動</button>
+          <button class="view-btn" data-view="agenda" aria-pressed="false" onclick="switchView('agenda')">清單</button>
+          <button class="view-btn" data-view="calendar" aria-pressed="false" onclick="switchView('calendar')">看一禮拜</button>
         </div>
       </div>
-
-      <!-- Quick Strip for Mobile & Desktop -->
-      <div class="quick-strip-scroll">
-        <button class="pill active" data-filter-type="city" data-value="all" onclick="setCityFilter('all')">全部地區 <span class="pill-count" id="count-city-all"></span></button>
-        <button class="pill" data-filter-type="city" data-value="臺北市" onclick="setCityFilter('臺北市')">🏛️ 臺北 <span class="pill-count" id="count-city-taipei"></span></button>
-        <button class="pill" data-filter-type="city" data-value="新北市" onclick="setCityFilter('新北市')">🌊 新北 <span class="pill-count" id="count-city-newtaipei"></span></button>
-        <button class="pill" data-filter-type="city" data-value="桃園市" onclick="setCityFilter('桃園市')">✈️ 桃園 <span class="pill-count" id="count-city-taoyuan"></span></button>
-        
-        <div class="strip-divider"></div>
-
-        <button class="pill active" data-filter-type="category" data-value="all" onclick="setCategoryFilter('all')">全部類別</button>
-        <button class="pill" data-filter-type="category" data-value="台語舞台劇" onclick="setCategoryFilter('台語舞台劇')">🎭 舞台劇</button>
-        <button class="pill" data-filter-type="category" data-value="台語表演" onclick="setCategoryFilter('台語表演')">🎪 表演</button>
-        <button class="pill" data-filter-type="category" data-value="台語故事" onclick="setCategoryFilter('台語故事')">📖 故事屋</button>
-        <button class="pill" data-filter-type="category" data-value="台語繪本" onclick="setCategoryFilter('台語繪本')">📚 繪本</button>
-        <button class="pill" data-filter-type="category" data-value="台語體驗" onclick="setCategoryFilter('台語體驗')">🎨 體驗</button>
-        <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 導覽</button>
+      <div class="filter-row" role="group" aria-label="揀地區">
+        <span class="filter-label">佗位</span>
+        <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
+        <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
+        <button class="pill" data-filter-type="city" data-value="新北市" aria-pressed="false" onclick="setCityFilter('新北市')"><span class="badge-city city-newtaipei">新北</span><span class="pill-count" id="count-city-newtaipei"></span></button>
+        <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
       </div>
-
-      <div class="month-filter" role="group" aria-label="活動月份（可複選）">
-        <span class="month-filter-label">月份<br><small>可複選</small></span>
-        <div class="month-options" id="monthFilterOptions"></div>
+      <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
+      <div class="select-filters">
+        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
+        <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
+        <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛付錢</option></select></label>
       </div>
-
-      <!-- Desktop Only Filter Row -->
-      <div class="desktop-filters-row">
-        <span style="color:var(--text-muted); font-weight:700;">來源：</span>
-        <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
-        <button class="pill" data-filter-type="platform" data-value="美術館與博物館" onclick="setPlatformFilter('美術館與博物館')">🏛️ 美術館/博物館</button>
-        <button class="pill" data-filter-type="platform" data-value="北北桃市府局處" onclick="setPlatformFilter('北北桃市府局處')">🏛️ 市府各局處</button>
-        <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却</button>
-        <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
-        <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
-        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
-        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院</button>
-        <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
-        <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
-        <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 FB</button>
-        <button class="pill" data-filter-type="platform" data-value="Instagram" onclick="setPlatformFilter('Instagram')">📸 IG</button>
-        <button class="pill" data-filter-type="platform" data-value="Threads" onclick="setPlatformFilter('Threads')">🧵 Threads</button>
-        
-        <span style="color:var(--text-muted); font-weight:700; margin-left:0.5rem;">費用：</span>
-        <button class="pill active" data-filter-type="price" data-value="all" onclick="setPriceFilter('all')">全部</button>
-        <button class="pill" data-filter-type="price" data-value="free" onclick="setPriceFilter('free')">免費</button>
-        <button class="pill" data-filter-type="price" data-value="paid" onclick="setPriceFilter('paid')">售票/付費</button>
-      </div>
-
     </div>
   </div>
 
@@ -1250,7 +116,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <main class="main-content">
     <div class="container">
       <div class="filter-summary">
-        <div>顯示 <strong id="visibleCount">0</strong> 場活動</div>
+        <div>攏總 <strong id="visibleCount">0</strong> 場活動</div>
         <div id="activeFiltersSummary"></div>
       </div>
 
@@ -1265,9 +131,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="cal-header">
           <div class="cal-title" id="calCurrentWeekLabel" aria-live="polite"></div>
           <div class="cal-nav">
-            <button class="btn btn-light" onclick="prevWeek()" aria-label="上一週">◀ 上週</button>
-            <button class="btn btn-light" onclick="goToToday()">本週</button>
-            <button class="btn btn-light" onclick="nextWeek()" aria-label="下一週">下週 ▶</button>
+            <button class="btn btn-light" onclick="prevWeek()" aria-label="頂禮拜">‹ 頂禮拜</button>
+            <button class="btn btn-light" onclick="goToToday()">這禮拜</button>
+            <button class="btn btn-light" onclick="nextWeek()" aria-label="後禮拜">後禮拜 ›</button>
           </div>
         </div>
         <div class="cal-legend" aria-label="城市顏色圖例">
@@ -1276,84 +142,15 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <span class="badge badge-city city-taoyuan">桃園市</span>
           <span class="cal-summary" id="calWeekSummary" aria-live="polite"></span>
         </div>
+        <div class="week-strip" id="calWeekDays"></div>
         <div class="cal-grid" id="calGridDays"></div>
       </div>
     </div>
   </main>
   {resource_section}
 
-  <!-- MOBILE NATIVE BOTTOM TAB BAR (Android & iPhone) -->
-  <nav class="ios-tab-bar">
-    <div class="ios-tab-bar-items">
-      <button class="ios-tab-item active" data-tab="grid" onclick="switchViewMobile('grid')">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
-        <span>活動探索</span>
-      </button>
-      <button class="ios-tab-item" data-tab="agenda" onclick="switchViewMobile('agenda')">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-        <span>時間排程</span>
-      </button>
-      <button class="ios-tab-item" data-tab="calendar" onclick="switchViewMobile('calendar')">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <span>週曆檢視</span>
-      </button>
-      <button class="ios-tab-item" onclick="openFilterSheet()">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" stroke-width="2"/></svg>
-        <span>篩選</span>
-      </button>
-      <button class="ios-tab-item" onclick="openSyncModal()">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <span>同步/設定</span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- MOBILE FILTER BOTTOM SHEET -->
-  <div class="modal-overlay" id="filterSheetModal" onclick="closeModalOnBackdrop(event)">
-    <div class="modal-dialog" style="max-width: 500px;">
-      <div class="modal-sheet-handle"></div>
-      <button class="modal-close" onclick="closeFilterSheet()">✕</button>
-      <div class="modal-content">
-        <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 1rem; color:var(--text-main);">🔍 進階活動篩選</h3>
-
-        <div style="margin-bottom: 1.25rem;">
-          <h4 style="font-size: 0.85rem; font-weight: 700; color:var(--text-muted); margin-bottom: 0.5rem;">來源平台：</h4>
-          <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-            <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
-            <button class="pill" data-filter-type="platform" data-value="美術館與博物館" onclick="setPlatformFilter('美術館與博物館')">🏛️ 美術館與博物館導覽</button>
-            <button class="pill" data-filter-type="platform" data-value="北北桃市府局處" onclick="setPlatformFilter('北北桃市府局處')">🏛️ 臺北/新北/桃園市府各局處</button>
-            <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
-            <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
-            <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
-        <button class="pill" data-filter-type="platform" data-value="國立臺灣圖書館" onclick="setPlatformFilter('國立臺灣圖書館')">📚 國立臺灣圖書館</button>
-            <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院 OPENTIX</button>
-            <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
-            <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
-            <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 Facebook</button>
-            <button class="pill" data-filter-type="platform" data-value="Instagram" onclick="setPlatformFilter('Instagram')">📸 Instagram</button>
-            <button class="pill" data-filter-type="platform" data-value="Threads" onclick="setPlatformFilter('Threads')">🧵 Threads</button>
-            <button class="pill" data-filter-type="platform" data-value="Google 日曆" onclick="setPlatformFilter('Google 日曆')">📅 Google 日曆</button>
-          </div>
-        </div>
-
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="font-size: 0.85rem; font-weight: 700; color:var(--text-muted); margin-bottom: 0.5rem;">費用條件：</h4>
-          <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-            <button class="pill active" data-filter-type="price" data-value="all" onclick="setPriceFilter('all')">全部費用</button>
-            <button class="pill" data-filter-type="price" data-value="free" onclick="setPriceFilter('free')">免費入場</button>
-            <button class="pill" data-filter-type="price" data-value="paid" onclick="setPriceFilter('paid')">售票 / 付費活動</button>
-          </div>
-        </div>
-
-        <button class="btn btn-primary" onclick="closeFilterSheet()" style="width: 100%; justify-content: center; padding: 0.75rem;">
-          套用篩選
-        </button>
-      </div>
-    </div>
-  </div>
-
   <!-- EVENT DETAIL MODAL (Android & iPhone Bottom Sheet) -->
-  <div class="modal-overlay" id="eventModal" onclick="closeModalOnBackdrop(event)">
+  <div class="modal-overlay" lang="zh-Hant" id="eventModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
       <button class="modal-close" onclick="closeModal()">✕</button>
@@ -1427,39 +224,14 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </div>
 
-  <!-- SYNC & SETTINGS MODAL -->
   <div class="modal-overlay" id="syncModal" onclick="closeModalOnBackdrop(event)">
-    <div class="modal-dialog" style="max-width: 550px;">
-      <div class="modal-sheet-handle"></div>
-      <button class="modal-close" onclick="closeSyncModal()">✕</button>
-      <div class="modal-content">
-        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; color:var(--text-main);">📱 同步至 Android / iPhone 行事曆</h2>
-        <p style="font-size: 0.88rem; color:var(--text-muted); margin-bottom: 1rem;">
-          無論使用 Android 手機或 iPhone，皆可無縫同步日曆與安裝 App：
-        </p>
-
-        <!-- Android Section -->
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🤖 Android 手機 (Samsung / Pixel 等)</h4>
-          <p style="color:var(--text-muted); margin-bottom:0.5rem;">
-            1. <strong>加到 Google 日曆</strong>：任選活動點擊「加到 Google 日曆」，Android 系統會直接自動喚醒內建 Google Calendar App。<br>
-            2. <strong>安裝為手機 App</strong>：在 Chrome 瀏覽器點擊右上角三點選單 ➔ <strong>「安裝應用程式」</strong> 或 <strong>「新增至主螢幕」</strong>，即可全螢幕使用！
-          </p>
-          <button class="btn btn-primary" onclick="exportCalendarFile()">📥 下載日曆檔 taigi_activities.ics</button>
-        </div>
-
-        <!-- iPhone Section -->
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🍏 iPhone 手機</h4>
-          <p style="color:var(--text-muted);">
-            在 Safari 點擊分享按鈕 ➔ <strong>「加入主畫面」</strong> 即可當作原生 App 使用。點擊「加到 Apple 日曆」可直接匯入 iPhone 行事曆。
-          </p>
-        </div>
-
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; font-size:0.85rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🌓 主題切換</h4>
-          <button class="btn btn-light" onclick="toggleTheme();" style="color:var(--text-main); border-color:var(--border-color); margin-top:0.25rem;">切換 深色 / 淺色 模式</button>
-        </div>
+    <div class="modal-dialog" style="max-width:550px">
+      <button class="modal-close" onclick="closeSyncModal()" aria-label="關起來">×</button>
+      <div class="modal-content settings-options">
+        <h2>日曆佮設定</h2>
+        <div><h3>共活動囥入日曆</h3><p>下載的日曆干焦有你揀的活動，會當匯入 Apple、Google 抑是其他支援 ICS 的日曆。若欲加一場，請開「活動詳情」。</p><button class="btn btn-primary" onclick="exportCalendarFile()">下載揀好的日曆</button></div>
+        <div><h3>囥佇手機的主畫面</h3><p>iPhone 用 Safari 的分享選單揀「加入主畫面」；Android 用 Chrome 的選單揀「新增至主螢幕」。</p></div>
+        <div><h3>畫面的色水</h3><button class="btn" onclick="toggleTheme()">換深色抑是淺色</button></div>
       </div>
     </div>
   </div>
@@ -1469,10 +241,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="container">
       <p><strong>北北桃台語活動日曆 (Taigi Activities Hub)</strong></p>
       <p style="margin-top: 0.35rem; font-size: 0.78rem;">
-        本頁僅收錄已核對官方公告的場次，不代表完整活動清單。各地收錄數以已核實資料為準；出發前請再次查看官方公告。
+        這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面建置：{datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')}（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
+        頁面做好的時間：{datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')}（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -1516,7 +288,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function initTheme() {{
-      const saved = localStorage.getItem('taigi_theme') || 'light';
+      let saved = 'light';
+      try {{ saved = localStorage.getItem('taigi_theme') || 'light'; }} catch (_) {{}}
       document.documentElement.setAttribute('data-theme', saved);
     }}
 
@@ -1524,13 +297,14 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const current = document.documentElement.getAttribute('data-theme') || 'light';
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('taigi_theme', next);
+      try {{ localStorage.setItem('taigi_theme', next); }} catch (_) {{}}
     }}
 
     function switchView(viewName) {{
       currentView = viewName;
       document.querySelectorAll('.view-btn').forEach(btn => {{
         btn.classList.toggle('active', btn.dataset.view === viewName);
+        btn.setAttribute('aria-pressed', String(btn.dataset.view === viewName));
       }});
       document.querySelectorAll('.ios-tab-item').forEach(btn => {{
         btn.classList.toggle('active', btn.dataset.tab === viewName);
@@ -1565,14 +339,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function setPlatformFilter(platform) {{
       currentPlatform = platform;
       updatePills('platform', platform);
-      updateFilterButtonState();
       renderAll();
     }}
 
     function setPriceFilter(price) {{
       currentPrice = price;
       updatePills('price', price);
-      updateFilterButtonState();
       renderAll();
     }}
 
@@ -1584,7 +356,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderMonthFilters() {{
       const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
       document.getElementById('monthFilterOptions').innerHTML =
-        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">全部月份</button>` +
+        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">攏總月份</button>` +
         months.map(month => `<button class="pill ${{selectedMonths.has(month) ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonths.has(month)}}" onclick="toggleMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
     }}
 
@@ -1614,31 +386,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function updatePills(filterType, val) {{
+      document.querySelectorAll(`[data-filter-select="${{filterType}}"]`).forEach(select => {{ select.value = val; }});
       document.querySelectorAll(`button[data-filter-type="${{filterType}}"]`).forEach(p => {{
         p.classList.toggle('active', p.dataset.value === val);
+        p.setAttribute('aria-pressed', String(p.dataset.value === val));
       }});
-    }}
-
-    function updateFilterButtonState() {{
-      const hasCustom = (currentPlatform !== 'all' || currentPrice !== 'all');
-      const btn = document.getElementById('btnFilterSheet');
-      btn.classList.toggle('has-filter', hasCustom);
-      document.getElementById('filterBtnLabel').innerText = hasCustom ? '已篩選 ⚙️' : '進階篩選';
     }}
 
     function handleSearch(val) {{
       searchQuery = val.trim().toLowerCase();
       renderAll();
-    }}
-
-    function openFilterSheet() {{
-      document.getElementById('filterSheetModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }}
-
-    function closeFilterSheet() {{
-      document.getElementById('filterSheetModal').classList.remove('active');
-      document.body.style.overflow = '';
     }}
 
     function getFilteredActivities() {{
@@ -1650,7 +407,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         if (currentPrice === 'free' && act.is_free !== true) return false;
         if (currentPrice === 'paid' && act.is_free !== false) return false;
         if (searchQuery) {{
-          const targetStr = `${{act.title}} ${{act.description}} ${{act.venue}} ${{act.address}} ${{act.organizer}} ${{act.tags.join(' ')}}`.toLowerCase();
+          const targetStr = `${{act.title}} ${{act.description_taigi || ''}} ${{act.source_platform}} ${{act.description}} ${{act.venue}} ${{act.address}} ${{act.organizer}} ${{act.tags.join(' ')}}`.toLowerCase();
           if (!targetStr.includes(searchQuery)) return false;
         }}
         return true;
@@ -1679,7 +436,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderAll() {{
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
-      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '全部月份';
+      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總月份';
 
       renderGrid(filtered);
       renderAgenda(filtered);
@@ -1693,50 +450,31 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }}).format(new Date(isoStr));
     }}
 
+    function sourceLabel(source) {{
+      return {{'Accupass 活動通':'Accupass','北北桃市立圖書館':'市立圖書館','OPENTIX 兩廳院':'OPENTIX'}}[source] || source;
+    }}
+    function categoryLabel(category) {{
+      return {{'台語故事':'台語講古','台語導覽':'台語導覽'}}[category] || category;
+    }}
+    function feeLabel(act) {{
+      return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛付錢' : '費用猶未公告';
+    }}
+    function taigiDate(iso) {{
+      return formatDateDisplay(iso).replace(/週([一二三四五六日])/g, '禮拜$1');
+    }}
+    function activityCard(act) {{
+      const text = escapeCalendarText;
+      return `<article class="event-card" data-event-id="${{text(act.id)}}">
+        <div class="card-labels"><span class="badge badge-city ${{cityClass(act.city)}}">${{text(act.city)}}</span><span class="badge badge-category">${{text(categoryLabel(act.category))}}</span><span class="badge badge-platform">${{text(sourceLabel(act.source_platform))}}</span></div>
+        <div class="card-date">${{taigiDate(act.start_time)}}</div>
+        <h3 class="card-title" lang="zh-Hant">${{text(act.title)}}</h3>
+        <p class="card-desc">${{text(act.description_taigi || ('簡介原文：' + act.description))}}</p>
+        <p class="card-venue" lang="zh-Hant">${{text(act.venue)}}</p>
+        <div class="card-footer"><span class="card-price">${{feeLabel(act)}}</span><button class="card-detail" lang="zh-Hant" data-activity-id="${{text(act.id)}}" onclick="openModal(this.dataset.activityId)">活動詳情 ›</button></div>
+      </article>`;
+    }}
     function renderGrid(events) {{
-      const container = document.getElementById('viewGrid');
-      if (events.length === 0) {{
-        container.innerHTML = `
-          <div class="empty-state" style="grid-column: 1/-1;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="44" height="44" style="margin-bottom:0.75rem;color:var(--text-light);"><circle cx="12" cy="12" r="10" stroke-width="2"/><line x1="8" y1="15" x2="16" y2="15" stroke-width="2"/><line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2"/><line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2"/></svg>
-            <h3>查無符合條件的台語活動</h3>
-            <p style="font-size:0.85rem;">此條件目前沒有已核實場次，不代表當地沒有活動。可調整篩選條件。</p>
-          </div>
-        `;
-        return;
-      }}
-
-      container.innerHTML = events.map(act => {{
-        const cover = act.cover_image;
-        return `
-          <div class="event-card" onclick="openModal('${{act.id}}')">
-            ${{cover ? `<div class="card-cover"><img src="${{cover}}" alt="官方活動圖片" loading="lazy"></div>` : ''}}
-            <div class="card-body">
-              <div class="card-labels">
-                <span class="badge badge-city ${{cityClass(act.city)}}">📍 ${{act.city}}</span>
-                <span class="badge badge-category">${{act.category}}</span>
-                <span class="badge badge-platform">${{act.source_platform}}</span>
-              </div>
-              <div class="card-date">
-                <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
-                ${{formatDateDisplay(act.start_time)}}
-              </div>
-              <h3 class="card-title">${{act.title}}</h3>
-              <p class="card-desc">${{act.description}}</p>
-              <div class="card-meta">
-                <div class="meta-item">
-                  <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span>${{act.venue}}</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <span class="card-price ${{act.is_free ? 'free' : ''}}">${{act.price_info}}</span>
-              <button class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size:0.78rem;">查看詳情</button>
-            </div>
-          </div>
-        `;
-      }}).join('');
+      document.getElementById('viewGrid').innerHTML = events.length ? events.map(activityCard).join('') : '<div class="empty-state"><h3>揣無合意的台語活動</h3><p>這个條件猶無核實的場次，毋代表當地無活動。會當改揀別个條件。</p></div>';
     }}
 
     function renderAgenda(events) {{
@@ -1744,7 +482,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (events.length === 0) {{
         container.innerHTML = `
           <div class="empty-state">
-            <h3>查無符合條件的台語活動</h3>
+            <h3>揣無合意的台語活動</h3>
           </div>
         `;
         return;
@@ -1760,13 +498,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       let html = '';
       Object.keys(groups).sort().forEach(dateKey => {{
         const dt = new Date(dateKey);
-        const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+        const days = ['禮拜日', '禮拜一', '禮拜二', '禮拜三', '禮拜四', '禮拜五', '禮拜六'];
         const groupLabel = `${{dt.getFullYear()}}年 ${{dt.getMonth() + 1}}月 ${{dt.getDate()}}日 (${{days[dt.getDay()]}})`;
 
         html += `
           <div>
             <div class="agenda-group-header">
-              <span>📅 ${{groupLabel}}</span>
+              <span>${{groupLabel}}</span>
               <span style="font-size:0.75rem; font-weight:600; color:var(--text-muted);">${{groups[dateKey].length}} 場活動</span>
             </div>
             <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.65rem;">
@@ -1782,20 +520,20 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                     </div>
                     <div class="agenda-content">
                       <div style="display:flex; gap:0.3rem; margin-bottom:0.25rem; flex-wrap:wrap;">
-                        <span class="badge badge-city ${{cityClass(act.city)}}">📍 ${{act.city}}</span>
-                        <span class="badge badge-category">${{act.category}}</span>
-                        <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${{act.source_platform}}</span>
+                        <span class="badge badge-city ${{cityClass(act.city)}}">${{act.city}}</span>
+                        <span class="badge badge-category">${{categoryLabel(act.category)}}</span>
+                        <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${{sourceLabel(act.source_platform)}}</span>
                       </div>
                       <h3>${{act.title}}</h3>
                       <div class="agenda-content-meta">
-                        <span>🏛️ ${{act.venue}}</span>
-                        <span>🏷️ <strong style="color:var(--primary);">${{act.price_info}}</strong></span>
+                        <span>${{act.venue}}</span>
+                        <span><strong style="color:var(--primary);">${{feeLabel(act)}}</strong></span>
                       </div>
-                      <p style="font-size:0.8rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{act.description}}</p>
+                      <p style="font-size:0.8rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{escapeCalendarText(act.description_taigi || ('簡介原文：' + act.description))}}</p>
                     </div>
                     <div class="agenda-actions">
                       <button class="btn btn-primary" style="font-size:0.78rem; justify-content:center;">活動詳情</button>
-                      <a href="${{act.gcal_url}}" target="_blank" class="btn btn-light" style="font-size:0.75rem; justify-content:center; color:var(--text-main); border-color:var(--border-color);" onclick="event.stopPropagation();">📅 加日曆</a>
+                      <a href="${{act.gcal_url}}" target="_blank" class="btn btn-light" style="font-size:0.75rem; justify-content:center; color:var(--text-main); border-color:var(--border-color);" onclick="event.stopPropagation();">加日曆</a>
                     </div>
                   </div>
                 `;
@@ -1836,14 +574,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('calCurrentWeekLabel').innerText = `${{label(start)}} – ${{label(end)}}`;
       const filtered = getFilteredActivities().slice().sort((a, b) => new Date(a.start_time) - new Date(b.start_time) || a.id.localeCompare(b.id));
       const today = taipeiDateKey();
-      const weekdays = ['週一', '週二', '週三', '週四', '週五', '週六', '週日'];
+      const weekdays = ['禮拜一', '禮拜二', '禮拜三', '禮拜四', '禮拜五', '禮拜六', '禮拜日'];
       const time = iso => new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }}).format(new Date(iso));
       let html = '';
+      let strip = '';
       let weekCount = 0;
       for (let i = 0; i < 7; i++) {{
         const day = new Date(start);
         day.setUTCDate(day.getUTCDate() + i);
         const dateKey = day.toISOString().slice(0, 10);
+        strip += `<div>${{weekdays[i]}}<strong>${{day.getUTCDate()}}</strong></div>`;
         const dayEvents = filtered.filter(a => taipeiDateKey(new Date(a.start_time)) === dateKey);
         weekCount += dayEvents.length;
         html += `
@@ -1851,21 +591,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             <div class="cal-cell-header">
               <h3 class="cal-date-num">${{day.getUTCMonth() + 1}}/${{day.getUTCDate()}} ${{weekdays[i]}}</h3>
               <span class="cal-day-count">${{dayEvents.length}} 場</span>
-              ${{dateKey === today ? '<span class="cal-today-label">今天</span>' : ''}}
+              ${{dateKey === today ? '<span class="cal-today-label">今仔日</span>' : ''}}
             </div>
             <div class="cal-events-list">
-              ${{dayEvents.length ? dayEvents.map(ev => `
-                <button type="button" class="cal-event-pill ${{cityClass(ev.city)}}" data-activity-id="${{escapeCalendarText(ev.id)}}" onclick="openModal(this.dataset.activityId)">
-                  <span class="cal-event-time">${{time(ev.start_time)}}${{ev.end_time ? '–' + time(ev.end_time) : ' 起'}}</span>
-                  <strong class="cal-event-title">${{escapeCalendarText(ev.title)}}</strong>
-                  <span class="cal-event-meta">${{escapeCalendarText(ev.city)}} · ${{escapeCalendarText(ev.venue)}}</span>
-                </button>
-              `).join('') : '<p class="cal-empty">此日無符合條件的已核實場次</p>'}}
+              ${{dayEvents.length ? dayEvents.map(activityCard).join('') : '<p class="cal-empty">這工猶無合條件的核實場次</p>'}}
             </div>
           </section>`;
       }}
+      document.getElementById('calWeekDays').innerHTML = strip;
       document.getElementById('calGridDays').innerHTML = html;
-      document.getElementById('calWeekSummary').innerText = weekCount ? `本週 ${{weekCount}} 場・臺北時間・依開始時間排序` : '本週無符合條件的已核實場次，可切換週次或調整篩選';
+      document.getElementById('calWeekSummary').innerText = weekCount ? `這禮拜 ${{weekCount}} 場・臺北時間` : '這禮拜猶無合條件的核實場次，會當換禮拜抑是改揀條件';
     }}
 
     function prevWeek() {{

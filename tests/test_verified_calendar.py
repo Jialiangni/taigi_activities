@@ -192,5 +192,29 @@ class VerifiedCalendarTests(unittest.TestCase):
         generate_single_html([], empty)
         self.assertIn('const ACTIVITIES_DATA = [];', empty.read_text())
 
+    def test_taigi_summaries_do_not_replace_official_content(self):
+        events = load_verified(now=NOW)
+        output = Path(self.tmp.name) / 'index.html'
+        generate_single_html(events, output)
+        html = output.read_text()
+        rows = json.loads(re.search(r'const ACTIVITIES_DATA = (\[.*?\]);', html, re.S).group(1))
+        for row, event in zip(rows, events):
+            self.assertTrue(row['description_taigi'])
+            self.assertEqual(row['description'], event.description)
+            self.assertEqual(row['title'], event.title)
+            self.assertEqual(row['venue'], event.venue)
+        changed = copy.deepcopy(events[0])
+        changed.description += ' 官方更新的文字。'
+        generate_single_html([changed], output)
+        row = json.loads(re.search(r'const ACTIVITIES_DATA = (\[.*?\]);', output.read_text(), re.S).group(1))[0]
+        self.assertEqual(row['description_taigi'], '')
+        self.assertNotIn('fonts.googleapis.com', html)
+
+    def test_standalone_copy_matches_validated_public_html(self):
+        output = Path(self.tmp.name) / 'site'
+        with patch('main.load_verified', return_value=self.load()), patch('main.load_resources', return_value=[]):
+            build(output)
+        self.assertEqual((output / 'index.html').read_bytes(), (output / 'taigi-activities-standalone.html').read_bytes())
+
 
 if __name__ == '__main__': unittest.main()

@@ -18,7 +18,8 @@ def build(output_dir=Path('.'), check_sources=False):
         stage = Path(stage)
         GoogleWorkspaceSync().export_ics(activities, stage / 'taigi_activities.ics')
         generate_single_html(activities, stage / 'index.html', resources=resources)
-        for name in ('index.html', 'taigi_activities.ics'):
+        (stage / 'taigi-activities-standalone.html').write_bytes((stage / 'index.html').read_bytes())
+        for name in ('index.html', 'taigi_activities.ics', 'taigi-activities-standalone.html'):
             (stage / name).replace(output_dir / name)
     print(f'已產生 {len(activities)} 筆經人工核實、尚未結束的場次。')
     print(f'另列 {len(resources)} 項導覽／展覽／閱讀資訊，不計入場次或 ICS。')
