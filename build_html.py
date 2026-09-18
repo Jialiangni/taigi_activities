@@ -27,7 +27,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         activities_data.append(d)
 
     source_names = sorted({a.source_platform for a in activities})
-    platform_options = '<option value="all">攏總來源</option>' + ''.join(
+    platform_options = '<option value="all">攏總</option>' + ''.join(
         '<option value="' + escape(name, quote=True) + '">' + escape(name) +
         '（' + str(sum(a.source_platform == name for a in activities)) + '）</option>' for name in source_names)
     activities_json = json.dumps(activities_data, ensure_ascii=False, indent=2).replace("<", "\\u003c")
