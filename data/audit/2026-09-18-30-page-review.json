@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-18T18:27:56+08:00",
+  "scope": "30頁實測新取得的兩筆文化局候選公告及其後續場次查核；不代表所有歷史候選均已核實。",
+  "candidate_count": 2,
+  "new_published_sessions": 0,
+  "published_session_count": 63,
+  "resource_count": 5,
+  "reviews": [
+    {
+      "candidate_id": "5f9daac8b44f2df080301426",
+      "url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=AC80BEE2D15AABBD",
+      "evidence": {
+        "url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=AC80BEE2D15AABBD",
+        "final_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=AC80BEE2D15AABBD",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T18:26:46+08:00",
+        "sha256": "771516ec44c7213fbffd259181bd040bafc18c77df58402eecf30d8ca32015e6"
+      },
+      "title": "潮臺北「捷運那卡西」唱進北捷車廂！搭配捷運一日票優惠 一路暢玩臺北",
+      "decision": "excluded_expired",
+      "reason": "官方公告台語創作及民謠演出為2026年8月29日至9月6日週末；核對日9月18日已結束。不得把公告發布日或網站更新日當作未來場次。"
+    },
+    {
+      "candidate_id": "12b5d3b61427753fad3447ee",
+      "url": "https://www.culture.ntpc.gov.tw/xceventsnews/cont?xsmsid=0g295700334178642420&qcat=0G336743893825971626&sid=0Q140316004865830602",
+      "evidence": {
+        "url": "https://www.culture.ntpc.gov.tw/xceventsnews/cont?xsmsid=0g295700334178642420&qcat=0G336743893825971626&sid=0Q140316004865830602",
+        "final_url": "https://www.culture.ntpc.gov.tw/xceventsnews/cont?xsmsid=0g295700334178642420&qcat=0G336743893825971626&sid=0Q140316004865830602",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T18:26:47+08:00",
+        "sha256": "bc3ef26c025566f8a38032ea5e70def08b70d20948f88c05e93a2c945a17949d"
+      },
+      "title": "115新北市巷弄藝起來巡演活動",
+      "decision": "withheld_language_unconfirmed",
+      "reason": "系列包含歌仔戲、親子劇、民歌、馬戲及器樂演出；不能把整個系列視為台語活動。官方海報原訂歌仔戲場次均在9月18日之前；剩餘場次未取得支持台語內容的個別公告，暫不刊登。",
+      "series_date_conflict": "正文與海報至9月26日，網頁活動期間欄至9月29日；不以任一系列結束日生成場次。",
+      "poster_url": "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q140318276377703465/115%E6%96%B0%E5%8C%97%E5%B8%82%E5%B7%B7%E5%BC%84%E8%97%9D%E8%B5%B7%E4%BE%86%E5%A0%B4%E6%AC%A1%E7%B8%BD%E8%A1%A8.jpg",
+      "poster_review_method": "以瀏覽器放大官方場次總表，逐行人工核對；圖片未複製至公開網站。",
+      "future_rows_reviewed": [
+        {
+          "date": "2026-09-19",
+          "time": "19:00",
+          "title": "寶莉回家",
+          "venue": "林口社區運動公園綜合運動廣場",
+          "decision": "withheld_language_unconfirmed"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "16:30",
+          "title": "蕃薯森林奇遇記",
+          "venue": "新北市萬里區野柳國民小學操場",
+          "decision": "withheld_language_unconfirmed"
+        },
+        {
+          "date": "2026-09-26",
+          "time": "19:00",
+          "title": "弦動擊響映樂光",
+          "venue": "淡水金色水岸廣場",
+          "decision": "withheld_language_unconfirmed"
+        }
+      ],
+      "supporting_source": {
+        "url": "https://www.paperwindmill.com.tw/zh-tw/paper/schedule?page=2",
+        "evidence": {
+          "url": "https://www.paperwindmill.com.tw/zh-tw/paper/schedule?page=2",
+          "final_url": "https://www.paperwindmill.com.tw/zh-tw/paper/schedule?page=2",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T18:26:48+08:00",
+          "sha256": "f055e209398a27777e6bf282a4106fc8737ddad63b9b66e5513e868c4e291e41"
+        }
+      },
+      "notes": [
+        "劇團官網再次支持9/19與9/20的日期、時間、地點及免費入場，但未確認台語演出。",
+        "另查得樹林馬戲場由8/9延期至9/27的區公所公告；屬馬戲演出，未取得台語內容證據，亦不加入。"
+      ],
+      "postponement_url": "https://www.shulin.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=4239692ccd79049a71a5b5383bd15867&id=b60bde836f1c4ca5"
+    }
+  ]
+}
