@@ -40,7 +40,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a>' +
         '<small>核對：' + escape(r['checked_at'][:10]) + '</small></article>' for r in (resources or []))
     resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽佮閱讀資訊</h2>'
-                        '<p>語音導覽、預約服務、書展佮閱讀推廣；開館日、費用佮預約，請照館方公告。下跤這寡無算入活動場次，也無囥入下載的日曆。</p>'
+                        '<p>語音導覽、預約服務、書展佮閱讀推廣；開館日、所費佮預約，請照館方公告。下跤這寡無算入活動場次，也無囥入下載的日曆。</p>'
                         '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
@@ -89,7 +89,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <section class="container intro">
     <h1>後一場，台語相見。</h1>
     <p>臺北、新北、桃園，做伙來講台語。</p>
-    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
+    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
     <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
   </section>
   <div class="controls-wrapper">
@@ -112,11 +112,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
       </div>
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个月"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个月</span></div>
-      <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
+      <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
-        <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
+        <label for="priceFilter">所費 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
     </div>
   </div>
@@ -126,9 +126,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="modal-sheet-handle" aria-hidden="true"></div>
       <button class="modal-close" onclick="closeFilterModal()" aria-label="關起來" autofocus>×</button>
       <div class="modal-content">
-        <h2 id="filterTitle">來源・種類・費用</h2>
+        <h2 id="filterTitle">來源・種類・所費</h2>
         <div id="mobileFilterHost"></div>
-        <div class="filter-sheet-actions"><button class="btn" onclick="resetExtraFilters()" aria-label="來源、種類、費用攏總">攏總</button><button class="btn btn-primary" onclick="closeFilterModal()">看活動 <span id="filterResultCount"></span></button></div>
+        <div class="filter-sheet-actions"><button class="btn" onclick="resetExtraFilters()" aria-label="來源、種類、所費攏總">攏總</button><button class="btn btn-primary" onclick="closeFilterModal()">看活動 <span id="filterResultCount"></span></button></div>
       </div>
     </div>
   </dialog>
@@ -254,7 +254,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div><h3>共活動囥入日曆</h3><p>下載的日曆干焦有你揀的活動，會當匯入 Apple、Google 抑是其他支援 ICS 的日曆。若欲加一場，請開「活動詳情」。</p><button class="btn btn-primary" onclick="exportCalendarFile()">下載揀好的日曆</button></div>
         <div><h3>囥佇手機的主畫面</h3><p>iPhone 用 Safari 的分享選單揀「加入主畫面」；Android 用 Chrome 的選單揀「新增至主螢幕」。</p></div>
         <div><h3>畫面的色水</h3><button class="btn" onclick="toggleTheme()">換深色抑是淺色</button></div>
-        <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。</p></details>
+        <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。</p></details>
       </div>
     </div>
   </dialog>
@@ -505,7 +505,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return {{'台語故事':'台語講古','台語導覽':'台語導覽'}}[category] || category;
     }}
     function feeLabel(act) {{
-      return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛納錢' : '費用猶未公告';
+      return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛納錢' : '所費猶未公告';
     }}
     function taigiDate(iso) {{
       return formatDateDisplay(iso);
