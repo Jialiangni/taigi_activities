@@ -64,7 +64,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
   .events-grid,.cal-events-list,.resource-grid{grid-template-columns:minmax(0,1fr);gap:12px}
   .event-card{display:flex;flex-direction:column;grid-row:auto;padding:18px;border-radius:20px;border:1px solid color-mix(in srgb,var(--border-color) 45%,transparent)}
   .card-labels{margin-bottom:12px}
-  .card-date{color:var(--text-main);font-size:13px;margin-bottom:8px;font-variant-numeric:tabular-nums}
+  .card-date{color:var(--text-muted);font-weight:400;font-size:13px;margin-bottom:8px;font-variant-numeric:tabular-nums}
   .card-title{font-size:18px;line-height:1.5;margin-bottom:8px}
   .card-desc{font-size:13px;margin-bottom:14px}
   .card-venue{margin-bottom:8px}
