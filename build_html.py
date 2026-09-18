@@ -483,9 +483,17 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       }}
     }}
 
+    function formatCalendarDate(dateKey, withWeekday = true) {{
+      const label = dateKey.replace(/-/g, '∙');
+      const days = ['禮拜', '拜一', '拜二', '拜三', '拜四', '拜五', '拜六'];
+      return withWeekday ? `${{label}} (${{days[new Date(dateKey + 'T00:00:00Z').getUTCDay()]}})` : label;
+    }}
+
     function formatDateDisplay(isoStr) {{
       if (!isoStr) return '時間未公告';
-      return new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }}).format(new Date(isoStr)).replace(/週([一二三四五六日])/g, (_, day) => day === '日' ? '禮拜' : '拜' + day);
+      const date = new Date(isoStr);
+      const time = new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }}).format(date);
+      return `${{formatCalendarDate(taipeiDateKey(date))}} ${{time}}`;
     }}
 
     function sourceLabel(source) {{
@@ -536,8 +544,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       let html = '';
       Object.keys(groups).sort().forEach(dateKey => {{
         const dt = new Date(dateKey + 'T00:00:00Z');
-        const days = ['禮拜', '拜一', '拜二', '拜三', '拜四', '拜五', '拜六'];
-        const groupLabel = `${{dt.getUTCFullYear()}}年 ${{dt.getUTCMonth() + 1}}月 ${{dt.getUTCDate()}}日 (${{days[dt.getUTCDay()]}})`;
+        const groupLabel = formatCalendarDate(dateKey);
 
         html += `
           <div>
@@ -608,7 +615,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const start = weekStart(calDate);
       const end = new Date(start);
       end.setUTCDate(end.getUTCDate() + 6);
-      const label = date => `${{date.getUTCFullYear()}}/${{date.getUTCMonth() + 1}}/${{date.getUTCDate()}}`;
+      const label = date => formatCalendarDate(date.toISOString().slice(0, 10), false);
       document.getElementById('calCurrentWeekLabel').innerText = `${{label(start)}} – ${{label(end)}}`;
       const filtered = getFilteredActivities().slice().sort((a, b) => new Date(a.start_time) - new Date(b.start_time) || a.id.localeCompare(b.id));
       const today = taipeiDateKey();
@@ -627,7 +634,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         html += `
           <section class="cal-cell ${{dateKey === today ? 'today' : ''}}" data-date="${{dateKey}}" aria-label="${{dateKey}} ${{weekdays[i]}}">
             <div class="cal-cell-header">
-              <h3 class="cal-date-num">${{day.getUTCMonth() + 1}}/${{day.getUTCDate()}} ${{weekdays[i]}}</h3>
+              <h3 class="cal-date-num">${{formatCalendarDate(dateKey)}}</h3>
               <span class="cal-day-count">${{dayEvents.length}} 場</span>
               ${{dateKey === today ? '<span class="cal-today-label">今仔日</span>' : ''}}
             </div>
