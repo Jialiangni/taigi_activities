@@ -1,0 +1,51 @@
+{
+  "cities": ["臺北市", "新北市", "桃園市"],
+  "categories": [
+    "台語舞台劇",
+    "台語表演",
+    "台語故事",
+    "台語繪本",
+    "台語體驗",
+    "台語導覽"
+  ],
+  "sources": {
+    "accupass": {
+      "enabled": true,
+      "keywords": ["台語", "台灣話", "閩南語", "囡仔古", "台語故事", "台語繪本", "台語導覽"]
+    },
+    "opentix": {
+      "enabled": true,
+      "keywords": ["台語", "臺灣話", "歌仔戲", "布袋戲", "台語音樂劇", "台語舞台劇"]
+    },
+    "eraticket": {
+      "enabled": true,
+      "keywords": ["台語", "閩南語", "傳統戲曲"]
+    },
+    "facebook": {
+      "enabled": true,
+      "access_token": "",
+      "target_pages": [
+        "taigitv",
+        "twlangcenter",
+        "dadaochengtheater"
+      ]
+    },
+    "instagram": {
+      "enabled": true,
+      "access_token": "",
+      "hashtags": ["台語活動", "台語繪本", "台語故事", "台語走讀"]
+    },
+    "threads": {
+      "enabled": true,
+      "keywords": ["台語活動", "台語導覽", "台語舞台劇"]
+    },
+    "google_workspace": {
+      "enabled": true,
+      "calendar_id": "primary",
+      "credentials_path": "credentials.json",
+      "token_path": "token.json",
+      "export_ics": true,
+      "ics_output_path": "taigi_activities.ics"
+    }
+  }
+}

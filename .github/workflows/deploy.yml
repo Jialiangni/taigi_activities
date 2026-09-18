@@ -1,0 +1,57 @@
+name: Deploy Taigi Calendar to GitHub Pages
+
+on:
+  schedule:
+    # 每天台灣時間凌晨 04:00 自動更新活動資料 (UTC 20:00)
+    - cron: '0 20 * * *'
+  workflow_dispatch: # 支援在 GitHub 網頁上手動點擊立即執行
+  push:
+    branches:
+      - main
+
+# 設定 GitHub Pages 部屬權限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run crawler & generate index.html
+        run: |
+          python3 main.py
+
+      - name: Commit updated files if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add index.html taigi_activities.ics
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 自動更新台語活動資料庫 [skip ci]" && git push)
+        continue-on-error: true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 上傳根目錄作為靜態網頁（包含 index.html 與 taigi_activities.ics）
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

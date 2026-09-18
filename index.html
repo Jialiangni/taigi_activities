@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北北桃台語活動行事曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
+  <meta name="description" content="全台最完整的北北桃台語活動行事曆！彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。整合李江却基金會、樂暢、市立圖書館、OPENTIX 兩廳院、年代售票、Accupass、FB、IG、Threads 與 Google 日曆。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --font-main: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-display: 'Outfit', 'Noto Sans TC', sans-serif;
+      
+      /* Colors */
+      --bg-main: #F8F9FA;
+      --bg-card: #FFFFFF;
+      --bg-surface: #FFFFFF;
+      --bg-hover: #F1F3F5;
+      --border-color: #E2E8F0;
+      --border-focus: #C84C32;
+      
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+      
+      /* Brand Accents */
+      --primary: #C84C32; /* 磚紅 / 胭脂紅 */
+      --primary-hover: #B03A22;
+      --primary-light: #FDE8E4;
+      --primary-glow: rgba(200, 76, 50, 0.18);
+      
+      --secondary: #1D3557; /* 台灣海島青藍 */
+      --secondary-light: #EBF2F7;
+      
+      --accent-tea: #0D9488; /* 台灣茶綠 */
+      --accent-tea-light: #CCFBF1;
+      
+      --accent-amber: #D97706; /* 陽光金橙 */
+      --accent-amber-light: #FEF3C7;
+      
+      --accent-violet: #7C3AED; /* 藝文紫 */
+      --accent-violet-light: #EDE9FE;
+
+      --accent-blue: #2563EB;
+      --accent-blue-light: #DBEAFE;
+      
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    [data-theme="dark"] {
+      --bg-main: #0F172A;
+      --bg-card: #1E293B;
+      --bg-surface: #1E293B;
+      --bg-hover: #334155;
+      --border-color: #334155;
+      --border-focus: #E05A47;
+      
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --text-light: #64748B;
+      
+      --primary: #E05A47;
+      --primary-hover: #F26E5C;
+      --primary-light: rgba(224, 90, 71, 0.2);
+      
+      --secondary: #38BDF8;
+      --secondary-light: rgba(56, 189, 248, 0.15);
+      
+      --accent-tea: #2DD4BF;
+      --accent-tea-light: rgba(45, 212, 191, 0.15);
+      
+      --accent-amber: #FBBF24;
+      --accent-amber-light: rgba(251, 191, 36, 0.15);
+      
+      --accent-violet: #A78BFA;
+      --accent-violet-light: rgba(167, 139, 250, 0.15);
+      
+      --accent-blue: #60A5FA;
+      --accent-blue-light: rgba(96, 165, 250, 0.15);
+      
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.4);
+      --shadow-lg: 0 12px 36px rgba(0,0,0,0.6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    header.hero-header {
+      background: linear-gradient(135deg, #1E293B 0%, #0F172A 60%, #1D3557 100%);
+      color: #FFFFFF;
+      padding: 2.5rem 1.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    header.hero-header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(200, 76, 50, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    .brand-titles h1 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-titles p {
+      font-size: 0.92rem;
+      color: #CBD5E1;
+      font-weight: 500;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.1rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+    }
+
+    .btn-light {
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      backdrop-filter: blur(8px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-light:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    /* Stat Badges */
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-card .label {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-card .val {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+    }
+
+    /* Controls Bar */
+    .controls-wrapper {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .controls-container {
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .controls-row-1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.65rem 1rem 0.65rem 2.6rem;
+      font-size: 0.92rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-full);
+      background: var(--bg-main);
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .view-switchers {
+      display: flex;
+      background: var(--bg-main);
+      padding: 4px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      gap: 2px;
+    }
+
+    .view-btn {
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s;
+    }
+
+    .view-btn.active {
+      background: var(--bg-card);
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Filters Pill Group */
+    .filter-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .filter-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-right: 0.25rem;
+    }
+
+    .pill {
+      padding: 0.35rem 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background: var(--bg-main);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .pill:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .pill.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px var(--primary-glow);
+    }
+
+    .pill-count {
+      background: rgba(0,0,0,0.1);
+      padding: 1px 6px;
+      border-radius: 10px;
+      font-size: 0.72rem;
+      margin-left: 2px;
+    }
+
+    .pill.active .pill-count {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* Main Content Area */
+    main.main-content {
+      padding: 2rem 1.5rem;
+      flex: 1;
+    }
+
+    .filter-summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .filter-summary strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    /* Card Grid View */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .event-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .event-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .card-cover {
+      height: 180px;
+      width: 100%;
+      background: #E2E8F0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .event-card:hover .card-cover img {
+      transform: scale(1.05);
+    }
+
+    .card-badges-top {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      backdrop-filter: blur(8px);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .badge-city {
+      background: rgba(30, 41, 59, 0.85);
+      color: #FFFFFF;
+    }
+
+    .badge-category {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .badge-platform {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background: rgba(255, 255, 255, 0.95);
+      color: #1E293B;
+      font-size: 0.72rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-date {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .card-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+      color: var(--text-main);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-meta {
+      margin-top: auto;
+      border-top: 1px solid var(--border-color);
+      padding-top: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .meta-item svg {
+      flex-shrink: 0;
+      color: var(--text-light);
+    }
+
+    .card-footer {
+      padding: 0.85rem 1.25rem;
+      background: var(--bg-main);
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-price {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--text-main);
+    }
+
+    .card-price.free {
+      color: var(--accent-tea);
+    }
+
+    /* Agenda / List View */
+    .agenda-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .agenda-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-main);
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .agenda-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: 140px 1fr auto;
+      gap: 1.5rem;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .agenda-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .agenda-time-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+    }
+
+    .agenda-time-box .day-num {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1;
+      font-family: var(--font-display);
+    }
+
+    .agenda-time-box .month-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .agenda-time-box .time-str {
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      font-weight: 600;
+    }
+
+    .agenda-content h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--text-main);
+    }
+
+    .agenda-content-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .agenda-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      min-width: 140px;
+    }
+
+    /* Calendar Grid View */
+    .calendar-container {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .cal-header {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .cal-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+    }
+
+    .cal-nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .cal-day-header {
+      padding: 0.75rem;
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--bg-main);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .cal-cell {
+      min-height: 110px;
+      padding: 0.5rem;
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-card);
+      transition: background-color 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cal-cell:nth-child(7n) {
+      border-right: none;
+    }
+
+    .cal-cell.other-month {
+      background: var(--bg-main);
+      opacity: 0.45;
+    }
+
+    .cal-cell.today {
+      background: rgba(200, 76, 50, 0.04);
+    }
+
+    .cal-cell-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.4rem;
+    }
+
+    .cal-date-num {
+      font-size: 0.85rem;
+      font-weight: 700;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .cal-cell.today .cal-date-num {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .cal-events-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      overflow-y: auto;
+      max-height: 85px;
+    }
+
+    .cal-event-pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--primary-light);
+      color: var(--primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      border-left: 3px solid var(--primary);
+      transition: transform 0.1s;
+    }
+
+    .cal-event-pill:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-dialog {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal-overlay.active .modal-dialog {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.5);
+      color: #FFFFFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s;
+    }
+
+    .modal-close:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .modal-hero-img {
+      height: 240px;
+      width: 100%;
+      background: #1E293B;
+      position: relative;
+    }
+
+    .modal-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-content {
+      padding: 1.75rem;
+    }
+
+    .modal-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin: 0.85rem 0 1rem;
+      color: var(--text-main);
+    }
+
+    .modal-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.85rem;
+      background: var(--bg-main);
+      padding: 1.2rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.25rem;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+    }
+
+    .info-row svg {
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .modal-desc {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      line-height: 1.7;
+      margin-bottom: 1.75rem;
+      white-space: pre-wrap;
+    }
+
+    .modal-actions-bar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.25rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 4rem 1.5rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      header.hero-header {
+        padding: 1.5rem 1rem;
+      }
+      .brand-titles h1 {
+        font-size: 1.3rem;
+      }
+      .agenda-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .agenda-time-box {
+        flex-direction: row;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+      .cal-cell {
+        min-height: 70px;
+        padding: 0.25rem;
+      }
+      .cal-event-pill {
+        font-size: 0.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO HEADER -->
+  <header class="hero-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="brand">
+          <div class="brand-icon">🎭</div>
+          <div class="brand-titles">
+            <h1>北北桃台語活動行事曆</h1>
+            <p>臺北市・新北市・桃園市 ｜ 舞台劇・表演・故事・繪本・體驗・導覽</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-light" id="btnExportIcs" onclick="exportCalendarFile()">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            下載 iCal 行事曆 (.ics)
+          </button>
+          <button class="btn btn-light" id="btnSyncModal" onclick="openSyncModal()">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+            Google 行事曆串接
+          </button>
+          <button class="btn btn-light btn-icon" id="themeToggleBtn" onclick="toggleTheme()" title="切換深淺模式">
+            🌓
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="label">未來活動總數</span>
+          <span class="val" id="statTotal">--</span>
+        </div>
+        <div class="stat-card">
+          <span class="label">臺北市活動</span>
+          <span class="val" id="statTaipei">--</span>
+        </div>
+        <div class="stat-card">
+          <span class="label">新北市活動</span>
+          <span class="val" id="statNewTaipei">--</span>
+        </div>
+        <div class="stat-card">
+          <span class="label">桃園市活動</span>
+          <span class="val" id="statTaoyuan">--</span>
+        </div>
+        <div class="stat-card">
+          <span class="label">免費入場</span>
+          <span class="val" id="statFree">--</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTROLS & FILTERS -->
+  <div class="controls-wrapper">
+    <div class="container controls-container">
+      <div class="controls-row-1">
+        <div class="search-box">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line></svg>
+          <input type="text" id="searchInput" placeholder="搜尋劇名、故事屋、文史導覽、圖書館、李江却、樂暢、劇團..." oninput="handleSearch(this.value)">
+        </div>
+
+        <div class="view-switchers">
+          <button class="view-btn active" data-view="grid" onclick="switchView('grid')">
+            🗂️ 圖文卡片
+          </button>
+          <button class="view-btn" data-view="agenda" onclick="switchView('agenda')">
+            📋 清單時間軸
+          </button>
+          <button class="view-btn" data-view="calendar" onclick="switchView('calendar')">
+            📅 月曆檢視
+          </button>
+        </div>
+      </div>
+
+      <!-- City Filters -->
+      <div class="filter-pills-row">
+        <span class="filter-label">📍 地區：</span>
+        <button class="pill active" data-filter-type="city" data-value="all" onclick="setCityFilter('all')">全部地區 <span class="pill-count" id="count-city-all"></span></button>
+        <button class="pill" data-filter-type="city" data-value="臺北市" onclick="setCityFilter('臺北市')">🏛️ 臺北市 <span class="pill-count" id="count-city-taipei"></span></button>
+        <button class="pill" data-filter-type="city" data-value="新北市" onclick="setCityFilter('新北市')">🌊 新北市 <span class="pill-count" id="count-city-newtaipei"></span></button>
+        <button class="pill" data-filter-type="city" data-value="桃園市" onclick="setCityFilter('桃園市')">✈️ 桃園市 <span class="pill-count" id="count-city-taoyuan"></span></button>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-pills-row">
+        <span class="filter-label">🏷️ 類別：</span>
+        <button class="pill active" data-filter-type="category" data-value="all" onclick="setCategoryFilter('all')">全部類別</button>
+        <button class="pill" data-filter-type="category" data-value="台語舞台劇" onclick="setCategoryFilter('台語舞台劇')">🎭 台語舞台劇</button>
+        <button class="pill" data-filter-type="category" data-value="台語表演" onclick="setCategoryFilter('台語表演')">🎪 台語表演</button>
+        <button class="pill" data-filter-type="category" data-value="台語故事" onclick="setCategoryFilter('台語故事')">📖 台語故事</button>
+        <button class="pill" data-filter-type="category" data-value="台語繪本" onclick="setCategoryFilter('台語繪本')">📚 台語繪本</button>
+        <button class="pill" data-filter-type="category" data-value="台語體驗" onclick="setCategoryFilter('台語體驗')">🎨 台語體驗</button>
+        <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 台語導覽</button>
+      </div>
+
+      <!-- Platform Filters -->
+      <div class="filter-pills-row">
+        <span class="filter-label">🌐 來源：</span>
+        <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
+        <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
+        <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
+        <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
+        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🏛️ OPENTIX 兩廳院</button>
+        <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
+        <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
+        <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 Facebook</button>
+        <button class="pill" data-filter-type="platform" data-value="Instagram" onclick="setPlatformFilter('Instagram')">📸 Instagram</button>
+        <button class="pill" data-filter-type="platform" data-value="Threads" onclick="setPlatformFilter('Threads')">🧵 Threads</button>
+        <button class="pill" data-filter-type="platform" data-value="Google 日曆" onclick="setPlatformFilter('Google 日曆')">📅 Google 日曆</button>
+      </div>
+
+      <!-- Price Filters -->
+      <div class="filter-pills-row">
+        <span class="filter-label">💰 費用：</span>
+        <button class="pill active" data-filter-type="price" data-value="all" onclick="setPriceFilter('all')">全部費用</button>
+        <button class="pill" data-filter-type="price" data-value="free" onclick="setPriceFilter('free')">免費活動</button>
+        <button class="pill" data-filter-type="price" data-value="paid" onclick="setPriceFilter('paid')">售票/付費活動</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN EVENT DISPLAY -->
+  <main class="main-content">
+    <div class="container">
+      <div class="filter-summary">
+        <div>目前顯示 <strong id="visibleCount">0</strong> 場台語活動</div>
+        <div id="activeFiltersSummary"></div>
+      </div>
+
+      <!-- VIEW 1: Grid Cards -->
+      <div id="viewGrid" class="events-grid"></div>
+
+      <!-- VIEW 2: Agenda List -->
+      <div id="viewAgenda" class="agenda-list" style="display: none;"></div>
+
+      <!-- VIEW 3: Interactive Month Calendar -->
+      <div id="viewCalendar" class="calendar-container" style="display: none;">
+        <div class="cal-header">
+          <div class="cal-title" id="calCurrentMonthLabel">2026年 9月</div>
+          <div class="cal-nav">
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="prevMonth()">◀ 上個月</button>
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="goToToday()">今天</button>
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="nextMonth()">下個月 ▶</button>
+          </div>
+        </div>
+        <div class="cal-grid" id="calGridHeader">
+          <div class="cal-day-header">週日</div>
+          <div class="cal-day-header">週一</div>
+          <div class="cal-day-header">週二</div>
+          <div class="cal-day-header">週三</div>
+          <div class="cal-day-header">週四</div>
+          <div class="cal-day-header">週五</div>
+          <div class="cal-day-header">週六</div>
+        </div>
+        <div class="cal-grid" id="calGridDays"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- EVENT DETAIL MODAL -->
+  <div class="modal-overlay" id="eventModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-hero-img">
+        <img id="modalImg" src="" alt="活動海報">
+      </div>
+      <div class="modal-content">
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="badge badge-city" id="modalCity"></span>
+          <span class="badge badge-category" id="modalCategory"></span>
+          <span class="badge" style="background:var(--secondary); color:#fff;" id="modalPlatform"></span>
+        </div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+
+        <div class="modal-info-grid">
+          <div class="info-row">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <div>
+              <strong style="color:var(--text-main);">時間：</strong>
+              <div id="modalTime" style="color:var(--text-muted);"></div>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong style="color:var(--text-main);">場地/地址：</strong>
+              <div id="modalVenue" style="color:var(--text-muted);"></div>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            <div>
+              <strong style="color:var(--text-main);">主辦單位：</strong>
+              <div id="modalOrganizer" style="color:var(--text-muted);"></div>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
+            <div>
+              <strong style="color:var(--text-main);">票價/收費：</strong>
+              <div id="modalPrice" style="color:var(--text-muted);"></div>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color:var(--text-main);">活動內容介紹</h4>
+        <div class="modal-desc" id="modalDesc"></div>
+
+        <div class="modal-actions-bar">
+          <a id="modalTicketLink" href="#" target="_blank" class="btn btn-primary" style="flex:1; justify-content:center; padding:0.75rem 1.5rem; font-size:0.95rem;">
+            🎟️ 前往官方購票 / 活動頁面
+          </a>
+          <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
+            📅 加入 Google 行事曆
+          </a>
+          <button id="modalSingleIcsBtn" onclick="downloadSingleIcs()" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
+            💾 匯出 .ics
+          </button>
+          <a id="modalMapLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
+            🗺️ Google 地圖
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SYNC & GOOGLE WORKSPACE MODAL -->
+  <div class="modal-overlay" id="syncModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog" style="max-width: 550px;">
+      <button class="modal-close" onclick="closeSyncModal()">✕</button>
+      <div class="modal-content">
+        <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.75rem; color:var(--text-main);">📅 串接 Google Workspace 行事曆</h2>
+        <p style="font-size: 0.9rem; color:var(--text-muted); margin-bottom: 1.25rem;">
+          您可以透過以下方式將北北桃台語活動同步至您的 Google 行事曆、Apple 日曆或 Outlook：
+        </p>
+
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; margin-bottom:1.25rem; font-size:0.88rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 1：一鍵下載 iCalendar (.ics) 檔案</h4>
+          <p style="color:var(--text-muted); margin-bottom:0.75rem;">點擊下方按鈕下載完整日曆檔，可直接拖入 Google Calendar、Mac 日曆或手機中自動匯入。</p>
+          <button class="btn btn-primary" onclick="exportCalendarFile()">📥 下載 taigi_activities.ics</button>
+        </div>
+
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; margin-bottom:1.25rem; font-size:0.88rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 2：單場活動一鍵加入</h4>
+          <p style="color:var(--text-muted);">在任一活動卡片或彈窗中，點擊「加入 Google 行事曆」，系統會自動帶入活動主題、時間、地址與購票資訊。</p>
+        </div>
+
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; font-size:0.88rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 3：Python 後端自動同步</h4>
+          <p style="color:var(--text-muted);">使用專案內建的 <code>crawler/sources/google_workspace.py</code> 與 <code>credentials.json</code>，即可設定定時 Cron 自動將最新活動同步至指定 Google 日曆 ID。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p><strong>北北桃台語活動行事曆 (Taigi Activities Hub)</strong></p>
+      <p style="margin-top: 0.35rem; font-size: 0.8rem;">
+        資料來源涵蓋：李江却台語文教基金會、樂暢親子共學、臺北市立圖書館、新北市立圖書館、桃園市立圖書館、OPENTIX 兩廳院、年代售票、Accupass、Facebook、Instagram、Threads 與 Google Workspace。
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-light);">
+        更新時間：2026-09-18 13:25:43 ｜ 咱做伙來講台語！
+      </p>
+    </div>
+  </footer>
+
+  <!-- EMBEDDED ACTIVITIES DATA -->
+  <script>
+    const ACTIVITIES_DATA = [
+  {
+    "id": "opentix_taigi_play_01",
+    "title": "【台語舞台劇】阮劇團《熱天酣眠》經典巡演台北站",
+    "description": "改編自莎士比亞經典《仲夏夜之夢》，融入台灣常民信仰、廟會文化與生動流利的道地台語對白！全劇以台語發音，中英文字幕，笑料百出、情感真摯。",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語舞台劇",
+    "start_time": "2026-09-25T19:30:00",
+    "end_time": "2026-09-25T21:45:00",
+    "venue": "國家戲劇院 (National Theater)",
+    "address": "臺北市中正區中山南路21-1號",
+    "organizer": "阮劇團 Our Theatre",
+    "source_platform": "OPENTIX 兩廳院",
+    "source_url": "https://www.opentix.life/event/18392819201",
+    "cover_image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 600 ~ 2,500 (OPENTIX 兩廳院售票)",
+    "is_free": false,
+    "tags": [
+      "台語舞台劇",
+      "阮劇團",
+      "國家戲劇院",
+      "莎士比亞",
+      "兩廳院售票"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E9%98%AE%E5%8A%87%E5%9C%98%E3%80%8A%E7%86%B1%E5%A4%A9%E9%85%A3%E7%9C%A0%E3%80%8B%E7%B6%93%E5%85%B8%E5%B7%A1%E6%BC%94%E5%8F%B0%E5%8C%97%E7%AB%99&dates=20260925T193000%2F20260925T214500&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E9%98%AE%E5%8A%87%E5%9C%98%E3%80%8A%E7%86%B1%E5%A4%A9%E9%85%A3%E7%9C%A0%E3%80%8B%E7%B6%93%E5%85%B8%E5%B7%A1%E6%BC%94%E5%8F%B0%E5%8C%97%E7%AB%99%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E9%98%AE%E5%8A%87%E5%9C%98+Our+Theatre%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+600+~+2%2C500+%28OPENTIX+%E5%85%A9%E5%BB%B3%E9%99%A2%E5%94%AE%E7%A5%A8%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AOPENTIX+%E5%85%A9%E5%BB%B3%E9%99%A2%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18392819201%0A%0A%E6%94%B9%E7%B7%A8%E8%87%AA%E8%8E%8E%E5%A3%AB%E6%AF%94%E4%BA%9E%E7%B6%93%E5%85%B8%E3%80%8A%E4%BB%B2%E5%A4%8F%E5%A4%9C%E4%B9%8B%E5%A4%A2%E3%80%8B%EF%BC%8C%E8%9E%8D%E5%85%A5%E5%8F%B0%E7%81%A3%E5%B8%B8%E6%B0%91%E4%BF%A1%E4%BB%B0%E3%80%81%E5%BB%9F%E6%9C%83%E6%96%87%E5%8C%96%E8%88%87%E7%94%9F%E5%8B%95%E6%B5%81%E5%88%A9%E7%9A%84%E9%81%93%E5%9C%B0%E5%8F%B0%E8%AA%9E%E5%B0%8D%E7%99%BD%EF%BC%81%E5%85%A8%E5%8A%87%E4%BB%A5%E5%8F%B0%E8%AA%9E%E7%99%BC%E9%9F%B3%EF%BC%8C%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%B9%95%EF%BC%8C%E7%AC%91%E6%96%99%E7%99%BE%E5%87%BA%E3%80%81%E6%83%85%E6%84%9F%E7%9C%9F%E6%91%AF%E3%80%82&location=%E5%9C%8B%E5%AE%B6%E6%88%B2%E5%8A%87%E9%99%A2+%28National+Theater%29+%28%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF21-1%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18392819201"
+  },
+  {
+    "id": "accupass_tour_03",
+    "title": "【台語導覽】大稻埕百年風華・全台語文史深度走讀",
+    "description": "「行入大稻埕，聽阮講在地故事。」由資深文史學者全程以流利優美台語導覽迪化街百年商號、霞海城隍廟、李臨秋故居及大稻埕碼頭，體驗老台北的生活美學與母語魅力。",
+    "city": "臺北市",
+    "district": "大同區",
+    "category": "台語導覽",
+    "start_time": "2026-09-26T09:30:00",
+    "end_time": "2026-09-26T12:00:00",
+    "venue": "大稻埕遊客中心集合 (迪化街一段44號)",
+    "address": "臺北市大同區迪化街一段44號",
+    "organizer": "大稻埕文化工作坊 / 台灣母語聯盟",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2609200832101",
+    "cover_image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加 (需事先線上報名 Accupass)",
+    "is_free": true,
+    "tags": [
+      "台語導覽",
+      "大稻埕",
+      "文史走讀",
+      "迪化街",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E5%A4%A7%E7%A8%BB%E5%9F%95%E7%99%BE%E5%B9%B4%E9%A2%A8%E8%8F%AF%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E6%B7%B1%E5%BA%A6%E8%B5%B0%E8%AE%80&dates=20260926T093000%2F20260926T120000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E5%A4%A7%E7%A8%BB%E5%9F%95%E7%99%BE%E5%B9%B4%E9%A2%A8%E8%8F%AF%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E6%B7%B1%E5%BA%A6%E8%B5%B0%E8%AE%80%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%A4%A7%E7%A8%BB%E5%9F%95%E6%96%87%E5%8C%96%E5%B7%A5%E4%BD%9C%E5%9D%8A+%2F+%E5%8F%B0%E7%81%A3%E6%AF%8D%E8%AA%9E%E8%81%AF%E7%9B%9F%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0+%28%E9%9C%80%E4%BA%8B%E5%85%88%E7%B7%9A%E4%B8%8A%E5%A0%B1%E5%90%8D+Accupass%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2609200832101%0A%0A%E3%80%8C%E8%A1%8C%E5%85%A5%E5%A4%A7%E7%A8%BB%E5%9F%95%EF%BC%8C%E8%81%BD%E9%98%AE%E8%AC%9B%E5%9C%A8%E5%9C%B0%E6%95%85%E4%BA%8B%E3%80%82%E3%80%8D%E7%94%B1%E8%B3%87%E6%B7%B1%E6%96%87%E5%8F%B2%E5%AD%B8%E8%80%85%E5%85%A8%E7%A8%8B%E4%BB%A5%E6%B5%81%E5%88%A9%E5%84%AA%E7%BE%8E%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E8%BF%AA%E5%8C%96%E8%A1%97%E7%99%BE%E5%B9%B4%E5%95%86%E8%99%9F%E3%80%81%E9%9C%9E%E6%B5%B7%E5%9F%8E%E9%9A%8D%E5%BB%9F%E3%80%81%E6%9D%8E%E8%87%A8%E7%A7%8B%E6%95%85%E5%B1%85%E5%8F%8A%E5%A4%A7%E7%A8%BB%E5%9F%95%E7%A2%BC%E9%A0%AD%EF%BC%8C%E9%AB%94%E9%A9%97%E8%80%81%E5%8F%B0%E5%8C%97%E7%9A%84%E7%94%9F%E6%B4%BB%E7%BE%8E%E5%AD%B8%E8%88%87%E6%AF%8D%E8%AA%9E%E9%AD%85%E5%8A%9B%E3%80%82&location=%E5%A4%A7%E7%A8%BB%E5%9F%95%E9%81%8A%E5%AE%A2%E4%B8%AD%E5%BF%83%E9%9B%86%E5%90%88+%28%E8%BF%AA%E5%8C%96%E8%A1%97%E4%B8%80%E6%AE%B544%E8%99%9F%29+%28%E8%87%BA%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%BF%AA%E5%8C%96%E8%A1%97%E4%B8%80%E6%AE%B544%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2609200832101"
+  },
+  {
+    "id": "likang_lecture_01",
+    "title": "【台語故事/講座】李江却台語文教基金會《台灣母語文化講堂：台語文學佮民間講古》",
+    "description": "李江却基金會經典講座！邀請台語文學者深入淺出探討台語白話字、母語文學創作，並現場示範傳統民間說唱與講古藝術，適合對台語文與說故事有興趣的家長與青年。",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語故事",
+    "start_time": "2026-09-26T14:00:00",
+    "end_time": "2026-09-26T16:30:00",
+    "venue": "李江却台語文教基金會 講堂 (台文通訊BONG報)",
+    "address": "臺北市中正區青島東路5號2樓之1",
+    "organizer": "財團法人李江却台語文教基金會",
+    "source_platform": "李江却基金會",
+    "source_url": "https://www.tgb.org.tw",
+    "cover_image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加（事先線上報名）",
+    "is_free": true,
+    "tags": [
+      "李江却基金會",
+      "台語講座",
+      "台語講古",
+      "台文通訊",
+      "母語文教"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%2F%E8%AC%9B%E5%BA%A7%E3%80%91%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%8F%B0%E8%AA%9E%E6%96%87%E6%95%99%E5%9F%BA%E9%87%91%E6%9C%83%E3%80%8A%E5%8F%B0%E7%81%A3%E6%AF%8D%E8%AA%9E%E6%96%87%E5%8C%96%E8%AC%9B%E5%A0%82%EF%BC%9A%E5%8F%B0%E8%AA%9E%E6%96%87%E5%AD%B8%E4%BD%AE%E6%B0%91%E9%96%93%E8%AC%9B%E5%8F%A4%E3%80%8B&dates=20260926T140000%2F20260926T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%2F%E8%AC%9B%E5%BA%A7%E3%80%91%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%8F%B0%E8%AA%9E%E6%96%87%E6%95%99%E5%9F%BA%E9%87%91%E6%9C%83%E3%80%8A%E5%8F%B0%E7%81%A3%E6%AF%8D%E8%AA%9E%E6%96%87%E5%8C%96%E8%AC%9B%E5%A0%82%EF%BC%9A%E5%8F%B0%E8%AA%9E%E6%96%87%E5%AD%B8%E4%BD%AE%E6%B0%91%E9%96%93%E8%AC%9B%E5%8F%A4%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E8%B2%A1%E5%9C%98%E6%B3%95%E4%BA%BA%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%8F%B0%E8%AA%9E%E6%96%87%E6%95%99%E5%9F%BA%E9%87%91%E6%9C%83%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0%EF%BC%88%E4%BA%8B%E5%85%88%E7%B7%9A%E4%B8%8A%E5%A0%B1%E5%90%8D%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.tgb.org.tw%0A%0A%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%E7%B6%93%E5%85%B8%E8%AC%9B%E5%BA%A7%EF%BC%81%E9%82%80%E8%AB%8B%E5%8F%B0%E8%AA%9E%E6%96%87%E5%AD%B8%E8%80%85%E6%B7%B1%E5%85%A5%E6%B7%BA%E5%87%BA%E6%8E%A2%E8%A8%8E%E5%8F%B0%E8%AA%9E%E7%99%BD%E8%A9%B1%E5%AD%97%E3%80%81%E6%AF%8D%E8%AA%9E%E6%96%87%E5%AD%B8%E5%89%B5%E4%BD%9C%EF%BC%8C%E4%B8%A6%E7%8F%BE%E5%A0%B4%E7%A4%BA%E7%AF%84%E5%82%B3%E7%B5%B1%E6%B0%91%E9%96%93%E8%AA%AA%E5%94%B1%E8%88%87%E8%AC%9B%E5%8F%A4%E8%97%9D%E8%A1%93%EF%BC%8C%E9%81%A9%E5%90%88%E5%B0%8D%E5%8F%B0%E8%AA%9E%E6%96%87%E8%88%87%E8%AA%AA%E6%95%85%E4%BA%8B%E6%9C%89%E8%88%88%E8%B6%A3%E7%9A%84%E5%AE%B6%E9%95%B7%E8%88%87%E9%9D%92%E5%B9%B4%E3%80%82&location=%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%8F%B0%E8%AA%9E%E6%96%87%E6%95%99%E5%9F%BA%E9%87%91%E6%9C%83+%E8%AC%9B%E5%A0%82+%28%E5%8F%B0%E6%96%87%E9%80%9A%E8%A8%8ABONG%E5%A0%B1%29+%28%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E9%9D%92%E5%B3%B6%E6%9D%B1%E8%B7%AF5%E8%99%9F2%E6%A8%93%E4%B9%8B1%29&sprop=website%3Ahttps%3A%2F%2Fwww.tgb.org.tw"
+  },
+  {
+    "id": "lechang_picbook_01",
+    "title": "【台語繪本】樂暢親子共學《囡仔來聽繪本・逐家歡喜講台語》新北板橋場",
+    "description": "樂暢台語共學招牌活動！針對 2-7 歲幼兒設計的沉浸式台語繪本共讀，搭配肢體律動、台語手指謠與手作遊戲，讓孩子在自然歡樂的環境中開口說台語。",
+    "city": "新北市",
+    "district": "板橋區",
+    "category": "台語繪本",
+    "start_time": "2026-09-27T10:30:00",
+    "end_time": "2026-09-27T12:00:00",
+    "venue": "板橋 435 藝文特區 枋橋大劇院排練室",
+    "address": "新北市板橋區中正路435號",
+    "organizer": "樂暢親子共學團 (Le-tshiòng)",
+    "source_platform": "樂暢親子共學",
+    "source_url": "https://www.facebook.com/letshiong.taigi",
+    "cover_image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    "price_info": "材料費 NT$ 250 / 組 (一大一小)",
+    "is_free": false,
+    "tags": [
+      "樂暢",
+      "台語繪本",
+      "親子共學",
+      "板橋435",
+      "幼兒共讀"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E3%80%8A%E5%9B%A1%E4%BB%94%E4%BE%86%E8%81%BD%E7%B9%AA%E6%9C%AC%E3%83%BB%E9%80%90%E5%AE%B6%E6%AD%A1%E5%96%9C%E8%AC%9B%E5%8F%B0%E8%AA%9E%E3%80%8B%E6%96%B0%E5%8C%97%E6%9D%BF%E6%A9%8B%E5%A0%B4&dates=20260927T103000%2F20260927T120000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E3%80%8A%E5%9B%A1%E4%BB%94%E4%BE%86%E8%81%BD%E7%B9%AA%E6%9C%AC%E3%83%BB%E9%80%90%E5%AE%B6%E6%AD%A1%E5%96%9C%E8%AC%9B%E5%8F%B0%E8%AA%9E%E3%80%8B%E6%96%B0%E5%8C%97%E6%9D%BF%E6%A9%8B%E5%A0%B4%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E5%9C%98+%28Le-tshi%C3%B2ng%29%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E6%9D%90%E6%96%99%E8%B2%BB+NT%24+250+%2F+%E7%B5%84+%28%E4%B8%80%E5%A4%A7%E4%B8%80%E5%B0%8F%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.facebook.com%2Fletshiong.taigi%0A%0A%E6%A8%82%E6%9A%A2%E5%8F%B0%E8%AA%9E%E5%85%B1%E5%AD%B8%E6%8B%9B%E7%89%8C%E6%B4%BB%E5%8B%95%EF%BC%81%E9%87%9D%E5%B0%8D+2-7+%E6%AD%B2%E5%B9%BC%E5%85%92%E8%A8%AD%E8%A8%88%E7%9A%84%E6%B2%89%E6%B5%B8%E5%BC%8F%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E5%85%B1%E8%AE%80%EF%BC%8C%E6%90%AD%E9%85%8D%E8%82%A2%E9%AB%94%E5%BE%8B%E5%8B%95%E3%80%81%E5%8F%B0%E8%AA%9E%E6%89%8B%E6%8C%87%E8%AC%A0%E8%88%87%E6%89%8B%E4%BD%9C%E9%81%8A%E6%88%B2%EF%BC%8C%E8%AE%93%E5%AD%A9%E5%AD%90%E5%9C%A8%E8%87%AA%E7%84%B6%E6%AD%A1%E6%A8%82%E7%9A%84%E7%92%B0%E5%A2%83%E4%B8%AD%E9%96%8B%E5%8F%A3%E8%AA%AA%E5%8F%B0%E8%AA%9E%E3%80%82&location=%E6%9D%BF%E6%A9%8B+435+%E8%97%9D%E6%96%87%E7%89%B9%E5%8D%80+%E6%9E%8B%E6%A9%8B%E5%A4%A7%E5%8A%87%E9%99%A2%E6%8E%92%E7%B7%B4%E5%AE%A4+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%9D%BF%E6%A9%8B%E5%8D%80%E4%B8%AD%E6%AD%A3%E8%B7%AF435%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.facebook.com%2Fletshiong.taigi"
+  },
+  {
+    "id": "fb_story_04",
+    "title": "【台語故事】大稻埕戲苑《囡仔古講堂》：阿公的神秘藏寶圖",
+    "description": "專為 3-10 歲親子家庭設計的台語講古時間！專業台語故事老師結合掌中偶與互動道具，帶領小朋友邊聽故事邊學習生動實用的台語日常詞彙，現場備有精美母語繪本貼紙。",
+    "city": "臺北市",
+    "district": "大同區",
+    "category": "台語故事",
+    "start_time": "2026-09-27T10:30:00",
+    "end_time": "2026-09-27T11:45:00",
+    "venue": "大稻埕戲苑 8樓曲藝場",
+    "address": "臺北市大同區迪化街一段21號8樓",
+    "organizer": "大稻埕戲苑 / 臺北市立社會教育館",
+    "source_platform": "Facebook",
+    "source_url": "https://www.facebook.com/dadaochengtheater/events",
+    "cover_image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費入場（現場自由入座）",
+    "is_free": true,
+    "tags": [
+      "台語故事",
+      "囡仔古",
+      "大稻埕戲苑",
+      "親子活動",
+      "Facebook"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E5%A4%A7%E7%A8%BB%E5%9F%95%E6%88%B2%E8%8B%91%E3%80%8A%E5%9B%A1%E4%BB%94%E5%8F%A4%E8%AC%9B%E5%A0%82%E3%80%8B%EF%BC%9A%E9%98%BF%E5%85%AC%E7%9A%84%E7%A5%9E%E7%A7%98%E8%97%8F%E5%AF%B6%E5%9C%96&dates=20260927T103000%2F20260927T114500&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E5%A4%A7%E7%A8%BB%E5%9F%95%E6%88%B2%E8%8B%91%E3%80%8A%E5%9B%A1%E4%BB%94%E5%8F%A4%E8%AC%9B%E5%A0%82%E3%80%8B%EF%BC%9A%E9%98%BF%E5%85%AC%E7%9A%84%E7%A5%9E%E7%A7%98%E8%97%8F%E5%AF%B6%E5%9C%96%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%A4%A7%E7%A8%BB%E5%9F%95%E6%88%B2%E8%8B%91+%2F+%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E7%A4%BE%E6%9C%83%E6%95%99%E8%82%B2%E9%A4%A8%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%85%A5%E5%A0%B4%EF%BC%88%E7%8F%BE%E5%A0%B4%E8%87%AA%E7%94%B1%E5%85%A5%E5%BA%A7%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AFacebook%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.facebook.com%2Fdadaochengtheater%2Fevents%0A%0A%E5%B0%88%E7%82%BA+3-10+%E6%AD%B2%E8%A6%AA%E5%AD%90%E5%AE%B6%E5%BA%AD%E8%A8%AD%E8%A8%88%E7%9A%84%E5%8F%B0%E8%AA%9E%E8%AC%9B%E5%8F%A4%E6%99%82%E9%96%93%EF%BC%81%E5%B0%88%E6%A5%AD%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E8%80%81%E5%B8%AB%E7%B5%90%E5%90%88%E6%8E%8C%E4%B8%AD%E5%81%B6%E8%88%87%E4%BA%92%E5%8B%95%E9%81%93%E5%85%B7%EF%BC%8C%E5%B8%B6%E9%A0%98%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%82%8A%E8%81%BD%E6%95%85%E4%BA%8B%E9%82%8A%E5%AD%B8%E7%BF%92%E7%94%9F%E5%8B%95%E5%AF%A6%E7%94%A8%E7%9A%84%E5%8F%B0%E8%AA%9E%E6%97%A5%E5%B8%B8%E8%A9%9E%E5%BD%99%EF%BC%8C%E7%8F%BE%E5%A0%B4%E5%82%99%E6%9C%89%E7%B2%BE%E7%BE%8E%E6%AF%8D%E8%AA%9E%E7%B9%AA%E6%9C%AC%E8%B2%BC%E7%B4%99%E3%80%82&location=%E5%A4%A7%E7%A8%BB%E5%9F%95%E6%88%B2%E8%8B%91+8%E6%A8%93%E6%9B%B2%E8%97%9D%E5%A0%B4+%28%E8%87%BA%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%BF%AA%E5%8C%96%E8%A1%97%E4%B8%80%E6%AE%B521%E8%99%9F8%E6%A8%93%29&sprop=website%3Ahttps%3A%2F%2Fwww.facebook.com%2Fdadaochengtheater%2Fevents"
+  },
+  {
+    "id": "eraticket_opera_02",
+    "title": "【台語表演】明華園戲劇總團《大河彈劍》旗艦歌仔戲大作",
+    "description": "孫翠鳳領銜主演！明華園旗艦史詩大戲，磅礴再現戰國豪情。純正台語唱腔與文武兼備的精彩打鬥，結合現代光影科技與傳統管弦樂團伴奏。",
+    "city": "臺北市",
+    "district": "南港區",
+    "category": "台語表演",
+    "start_time": "2026-10-02T19:00:00",
+    "end_time": "2026-10-02T22:00:00",
+    "venue": "臺北流行音樂中心 表演廳",
+    "address": "臺北市南港區市民大道八段99號",
+    "organizer": "明華園戲劇總團",
+    "source_platform": "年代售票",
+    "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_00.aspx?PRODUCT_ID=N42B8U01",
+    "cover_image": "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 800 ~ 3,600 (年代售票系統)",
+    "is_free": false,
+    "tags": [
+      "歌仔戲",
+      "明華園",
+      "台語表演",
+      "年代售票",
+      "孫翠鳳"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E6%98%8E%E8%8F%AF%E5%9C%92%E6%88%B2%E5%8A%87%E7%B8%BD%E5%9C%98%E3%80%8A%E5%A4%A7%E6%B2%B3%E5%BD%88%E5%8A%8D%E3%80%8B%E6%97%97%E8%89%A6%E6%AD%8C%E4%BB%94%E6%88%B2%E5%A4%A7%E4%BD%9C&dates=20261002T190000%2F20261002T220000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E6%98%8E%E8%8F%AF%E5%9C%92%E6%88%B2%E5%8A%87%E7%B8%BD%E5%9C%98%E3%80%8A%E5%A4%A7%E6%B2%B3%E5%BD%88%E5%8A%8D%E3%80%8B%E6%97%97%E8%89%A6%E6%AD%8C%E4%BB%94%E6%88%B2%E5%A4%A7%E4%BD%9C%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%98%8E%E8%8F%AF%E5%9C%92%E6%88%B2%E5%8A%87%E7%B8%BD%E5%9C%98%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+800+~+3%2C600+%28%E5%B9%B4%E4%BB%A3%E5%94%AE%E7%A5%A8%E7%B3%BB%E7%B5%B1%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%B9%B4%E4%BB%A3%E5%94%AE%E7%A5%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fticket.com.tw%2Fapplication%2FUTK02%2FUTK0201_00.aspx%3FPRODUCT_ID%3DN42B8U01%0A%0A%E5%AD%AB%E7%BF%A0%E9%B3%B3%E9%A0%98%E9%8A%9C%E4%B8%BB%E6%BC%94%EF%BC%81%E6%98%8E%E8%8F%AF%E5%9C%92%E6%97%97%E8%89%A6%E5%8F%B2%E8%A9%A9%E5%A4%A7%E6%88%B2%EF%BC%8C%E7%A3%85%E7%A4%B4%E5%86%8D%E7%8F%BE%E6%88%B0%E5%9C%8B%E8%B1%AA%E6%83%85%E3%80%82%E7%B4%94%E6%AD%A3%E5%8F%B0%E8%AA%9E%E5%94%B1%E8%85%94%E8%88%87%E6%96%87%E6%AD%A6%E5%85%BC%E5%82%99%E7%9A%84%E7%B2%BE%E5%BD%A9%E6%89%93%E9%AC%A5%EF%BC%8C%E7%B5%90%E5%90%88%E7%8F%BE%E4%BB%A3%E5%85%89%E5%BD%B1%E7%A7%91%E6%8A%80%E8%88%87%E5%82%B3%E7%B5%B1%E7%AE%A1%E5%BC%A6%E6%A8%82%E5%9C%98%E4%BC%B4%E5%A5%8F%E3%80%82&location=%E8%87%BA%E5%8C%97%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82%E4%B8%AD%E5%BF%83+%E8%A1%A8%E6%BC%94%E5%BB%B3+%28%E8%87%BA%E5%8C%97%E5%B8%82%E5%8D%97%E6%B8%AF%E5%8D%80%E5%B8%82%E6%B0%91%E5%A4%A7%E9%81%93%E5%85%AB%E6%AE%B599%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fticket.com.tw%2Fapplication%2FUTK02%2FUTK0201_00.aspx%3FPRODUCT_ID%3DN42B8U01"
+  },
+  {
+    "id": "tpml_story_01",
+    "title": "【台語故事】臺北市立圖書館總館《台灣母語故事屋：阿公講古予你聽》",
+    "description": "北市圖總館定點母語推廣！特聘資深台語志工老師，以生動道具與台語童謠，為小朋友講述經典民間傳奇與台灣動物故事，歡迎闔家參與。",
+    "city": "臺北市",
+    "district": "大安區",
+    "category": "台語故事",
+    "start_time": "2026-10-03T10:00:00",
+    "end_time": "2026-10-03T11:00:00",
+    "venue": "臺北市立圖書館總館 B1小小世界外文圖書館多功能活動室",
+    "address": "臺北市大安區建國南路二段125號",
+    "organizer": "臺北市立圖書館",
+    "source_platform": "北北桃市立圖書館",
+    "source_url": "https://tpml.gov.taipei/News_Content.aspx?n=1&s=tpml_taigi_story",
+    "cover_image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費入場（自由入座）",
+    "is_free": true,
+    "tags": [
+      "臺北市立圖書館",
+      "台語故事",
+      "母語故事屋",
+      "北市圖總館",
+      "親子活動"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E5%8F%B0%E7%81%A3%E6%AF%8D%E8%AA%9E%E6%95%85%E4%BA%8B%E5%B1%8B%EF%BC%9A%E9%98%BF%E5%85%AC%E8%AC%9B%E5%8F%A4%E4%BA%88%E4%BD%A0%E8%81%BD%E3%80%8B&dates=20261003T100000%2F20261003T110000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E5%8F%B0%E7%81%A3%E6%AF%8D%E8%AA%9E%E6%95%85%E4%BA%8B%E5%B1%8B%EF%BC%9A%E9%98%BF%E5%85%AC%E8%AC%9B%E5%8F%A4%E4%BA%88%E4%BD%A0%E8%81%BD%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%85%A5%E5%A0%B4%EF%BC%88%E8%87%AA%E7%94%B1%E5%85%A5%E5%BA%A7%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%8C%97%E5%8C%97%E6%A1%83%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Ftpml.gov.taipei%2FNews_Content.aspx%3Fn%3D1%26s%3Dtpml_taigi_story%0A%0A%E5%8C%97%E5%B8%82%E5%9C%96%E7%B8%BD%E9%A4%A8%E5%AE%9A%E9%BB%9E%E6%AF%8D%E8%AA%9E%E6%8E%A8%E5%BB%A3%EF%BC%81%E7%89%B9%E8%81%98%E8%B3%87%E6%B7%B1%E5%8F%B0%E8%AA%9E%E5%BF%97%E5%B7%A5%E8%80%81%E5%B8%AB%EF%BC%8C%E4%BB%A5%E7%94%9F%E5%8B%95%E9%81%93%E5%85%B7%E8%88%87%E5%8F%B0%E8%AA%9E%E7%AB%A5%E8%AC%A0%EF%BC%8C%E7%82%BA%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%AC%9B%E8%BF%B0%E7%B6%93%E5%85%B8%E6%B0%91%E9%96%93%E5%82%B3%E5%A5%87%E8%88%87%E5%8F%B0%E7%81%A3%E5%8B%95%E7%89%A9%E6%95%85%E4%BA%8B%EF%BC%8C%E6%AD%A1%E8%BF%8E%E9%97%94%E5%AE%B6%E5%8F%83%E8%88%87%E3%80%82&location=%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8+B1%E5%B0%8F%E5%B0%8F%E4%B8%96%E7%95%8C%E5%A4%96%E6%96%87%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%B4%BB%E5%8B%95%E5%AE%A4+%28%E8%87%BA%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%BB%BA%E5%9C%8B%E5%8D%97%E8%B7%AF%E4%BA%8C%E6%AE%B5125%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Ftpml.gov.taipei%2FNews_Content.aspx%3Fn%3D1%26s%3Dtpml_taigi_story"
+  },
+  {
+    "id": "ig_picbook_05",
+    "title": "【台語繪本】信誼親子館《咱來讀繪本》台語親子共讀工作坊",
+    "description": "精選台灣在地原創台語繪本《點心擔》、《暗查查》，透過唱跳童謠、手指謠與台語繪本互動劇，讓家長與孩子在歡笑聲中自然開口講台語！",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語繪本",
+    "start_time": "2026-10-04T14:00:00",
+    "end_time": "2026-10-04T15:30:00",
+    "venue": "信誼小太陽親子館 故事舞台",
+    "address": "臺北市中正區重慶南路二段51號1樓",
+    "organizer": "信誼基金會 / @taigi_picturebooks",
+    "source_platform": "Instagram",
+    "source_url": "https://www.instagram.com/p/DA_taigi_kids_book/",
+    "cover_image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    "price_info": "材料費 NT$ 200 (一組一大一小)",
+    "is_free": false,
+    "tags": [
+      "台語繪本",
+      "信誼親子館",
+      "童謠",
+      "Instagram",
+      "幼兒共讀"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E4%BF%A1%E8%AA%BC%E8%A6%AA%E5%AD%90%E9%A4%A8%E3%80%8A%E5%92%B1%E4%BE%86%E8%AE%80%E7%B9%AA%E6%9C%AC%E3%80%8B%E5%8F%B0%E8%AA%9E%E8%A6%AA%E5%AD%90%E5%85%B1%E8%AE%80%E5%B7%A5%E4%BD%9C%E5%9D%8A&dates=20261004T140000%2F20261004T153000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E4%BF%A1%E8%AA%BC%E8%A6%AA%E5%AD%90%E9%A4%A8%E3%80%8A%E5%92%B1%E4%BE%86%E8%AE%80%E7%B9%AA%E6%9C%AC%E3%80%8B%E5%8F%B0%E8%AA%9E%E8%A6%AA%E5%AD%90%E5%85%B1%E8%AE%80%E5%B7%A5%E4%BD%9C%E5%9D%8A%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E4%BF%A1%E8%AA%BC%E5%9F%BA%E9%87%91%E6%9C%83+%2F+%40taigi_picturebooks%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E6%9D%90%E6%96%99%E8%B2%BB+NT%24+200+%28%E4%B8%80%E7%B5%84%E4%B8%80%E5%A4%A7%E4%B8%80%E5%B0%8F%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AInstagram%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.instagram.com%2Fp%2FDA_taigi_kids_book%2F%0A%0A%E7%B2%BE%E9%81%B8%E5%8F%B0%E7%81%A3%E5%9C%A8%E5%9C%B0%E5%8E%9F%E5%89%B5%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%8A%E9%BB%9E%E5%BF%83%E6%93%94%E3%80%8B%E3%80%81%E3%80%8A%E6%9A%97%E6%9F%A5%E6%9F%A5%E3%80%8B%EF%BC%8C%E9%80%8F%E9%81%8E%E5%94%B1%E8%B7%B3%E7%AB%A5%E8%AC%A0%E3%80%81%E6%89%8B%E6%8C%87%E8%AC%A0%E8%88%87%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E4%BA%92%E5%8B%95%E5%8A%87%EF%BC%8C%E8%AE%93%E5%AE%B6%E9%95%B7%E8%88%87%E5%AD%A9%E5%AD%90%E5%9C%A8%E6%AD%A1%E7%AC%91%E8%81%B2%E4%B8%AD%E8%87%AA%E7%84%B6%E9%96%8B%E5%8F%A3%E8%AC%9B%E5%8F%B0%E8%AA%9E%EF%BC%81&location=%E4%BF%A1%E8%AA%BC%E5%B0%8F%E5%A4%AA%E9%99%BD%E8%A6%AA%E5%AD%90%E9%A4%A8+%E6%95%85%E4%BA%8B%E8%88%9E%E5%8F%B0+%28%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E9%87%8D%E6%85%B6%E5%8D%97%E8%B7%AF%E4%BA%8C%E6%AE%B551%E8%99%9F1%E6%A8%93%29&sprop=website%3Ahttps%3A%2F%2Fwww.instagram.com%2Fp%2FDA_taigi_kids_book%2F"
+  },
+  {
+    "id": "likang_tour_02",
+    "title": "【台語導覽】李江却基金會《台北城內台語地名與文史散策走讀》",
+    "description": "全台語走讀台北舊城區！跟著李江却基金會資深母語講師，從北門（承恩門）出發，探尋撫臺街洋樓、重慶南路書店街與二二八和平公園，用最地道的母語聲調講述台北城百年故事。",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語導覽",
+    "start_time": "2026-10-10T09:00:00",
+    "end_time": "2026-10-10T11:30:00",
+    "venue": "台北北門廣場 (承恩門前集合)",
+    "address": "臺北市中正區忠孝西路一段與延平北路一段路口",
+    "organizer": "財團法人李江却台語文教基金會",
+    "source_platform": "李江却基金會",
+    "source_url": "https://www.tgb.org.tw/activity_walk_taipei",
+    "cover_image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加（限額 30 人）",
+    "is_free": true,
+    "tags": [
+      "李江却基金會",
+      "台語導覽",
+      "北門走讀",
+      "文史散策",
+      "母語文化"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%E3%80%8A%E5%8F%B0%E5%8C%97%E5%9F%8E%E5%85%A7%E5%8F%B0%E8%AA%9E%E5%9C%B0%E5%90%8D%E8%88%87%E6%96%87%E5%8F%B2%E6%95%A3%E7%AD%96%E8%B5%B0%E8%AE%80%E3%80%8B&dates=20261010T090000%2F20261010T113000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%E3%80%8A%E5%8F%B0%E5%8C%97%E5%9F%8E%E5%85%A7%E5%8F%B0%E8%AA%9E%E5%9C%B0%E5%90%8D%E8%88%87%E6%96%87%E5%8F%B2%E6%95%A3%E7%AD%96%E8%B5%B0%E8%AE%80%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E8%B2%A1%E5%9C%98%E6%B3%95%E4%BA%BA%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%8F%B0%E8%AA%9E%E6%96%87%E6%95%99%E5%9F%BA%E9%87%91%E6%9C%83%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0%EF%BC%88%E9%99%90%E9%A1%8D+30+%E4%BA%BA%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.tgb.org.tw%2Factivity_walk_taipei%0A%0A%E5%85%A8%E5%8F%B0%E8%AA%9E%E8%B5%B0%E8%AE%80%E5%8F%B0%E5%8C%97%E8%88%8A%E5%9F%8E%E5%8D%80%EF%BC%81%E8%B7%9F%E8%91%97%E6%9D%8E%E6%B1%9F%E5%8D%B4%E5%9F%BA%E9%87%91%E6%9C%83%E8%B3%87%E6%B7%B1%E6%AF%8D%E8%AA%9E%E8%AC%9B%E5%B8%AB%EF%BC%8C%E5%BE%9E%E5%8C%97%E9%96%80%EF%BC%88%E6%89%BF%E6%81%A9%E9%96%80%EF%BC%89%E5%87%BA%E7%99%BC%EF%BC%8C%E6%8E%A2%E5%B0%8B%E6%92%AB%E8%87%BA%E8%A1%97%E6%B4%8B%E6%A8%93%E3%80%81%E9%87%8D%E6%85%B6%E5%8D%97%E8%B7%AF%E6%9B%B8%E5%BA%97%E8%A1%97%E8%88%87%E4%BA%8C%E4%BA%8C%E5%85%AB%E5%92%8C%E5%B9%B3%E5%85%AC%E5%9C%92%EF%BC%8C%E7%94%A8%E6%9C%80%E5%9C%B0%E9%81%93%E7%9A%84%E6%AF%8D%E8%AA%9E%E8%81%B2%E8%AA%BF%E8%AC%9B%E8%BF%B0%E5%8F%B0%E5%8C%97%E5%9F%8E%E7%99%BE%E5%B9%B4%E6%95%85%E4%BA%8B%E3%80%82&location=%E5%8F%B0%E5%8C%97%E5%8C%97%E9%96%80%E5%BB%A3%E5%A0%B4+%28%E6%89%BF%E6%81%A9%E9%96%80%E5%89%8D%E9%9B%86%E5%90%88%29+%28%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B5%E8%88%87%E5%BB%B6%E5%B9%B3%E5%8C%97%E8%B7%AF%E4%B8%80%E6%AE%B5%E8%B7%AF%E5%8F%A3%29&sprop=website%3Ahttps%3A%2F%2Fwww.tgb.org.tw%2Factivity_walk_taipei"
+  },
+  {
+    "id": "accupass_exp_06",
+    "title": "【台語體驗】萬華青草巷・全台語調飲與香草球手作體驗",
+    "description": "走進百年萬華青草巷，用台語認識薄荷、魚腥草、仙草等台灣土產藥草！由在地青草達人全台語教學，親手配製客製化養生茶飲與舒壓香草球包。",
+    "city": "臺北市",
+    "district": "萬華區",
+    "category": "台語體驗",
+    "start_time": "2026-10-10T14:30:00",
+    "end_time": "2026-10-10T17:00:00",
+    "venue": "老濟安 Healing Herbar (萬華西昌街84號)",
+    "address": "臺北市萬華區西昌街84號",
+    "organizer": "萬華青草復興計畫 / Accupass",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2610100918231",
+    "cover_image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 450 (含手作材料與青草茶套餐)",
+    "is_free": false,
+    "tags": [
+      "台語體驗",
+      "萬華青草巷",
+      "手作工作坊",
+      "台語生活",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E8%90%AC%E8%8F%AF%E9%9D%92%E8%8D%89%E5%B7%B7%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E8%AA%BF%E9%A3%B2%E8%88%87%E9%A6%99%E8%8D%89%E7%90%83%E6%89%8B%E4%BD%9C%E9%AB%94%E9%A9%97&dates=20261010T143000%2F20261010T170000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E8%90%AC%E8%8F%AF%E9%9D%92%E8%8D%89%E5%B7%B7%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E8%AA%BF%E9%A3%B2%E8%88%87%E9%A6%99%E8%8D%89%E7%90%83%E6%89%8B%E4%BD%9C%E9%AB%94%E9%A9%97%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E8%90%AC%E8%8F%AF%E9%9D%92%E8%8D%89%E5%BE%A9%E8%88%88%E8%A8%88%E7%95%AB+%2F+Accupass%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+450+%28%E5%90%AB%E6%89%8B%E4%BD%9C%E6%9D%90%E6%96%99%E8%88%87%E9%9D%92%E8%8D%89%E8%8C%B6%E5%A5%97%E9%A4%90%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2610100918231%0A%0A%E8%B5%B0%E9%80%B2%E7%99%BE%E5%B9%B4%E8%90%AC%E8%8F%AF%E9%9D%92%E8%8D%89%E5%B7%B7%EF%BC%8C%E7%94%A8%E5%8F%B0%E8%AA%9E%E8%AA%8D%E8%AD%98%E8%96%84%E8%8D%B7%E3%80%81%E9%AD%9A%E8%85%A5%E8%8D%89%E3%80%81%E4%BB%99%E8%8D%89%E7%AD%89%E5%8F%B0%E7%81%A3%E5%9C%9F%E7%94%A2%E8%97%A5%E8%8D%89%EF%BC%81%E7%94%B1%E5%9C%A8%E5%9C%B0%E9%9D%92%E8%8D%89%E9%81%94%E4%BA%BA%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%95%99%E5%AD%B8%EF%BC%8C%E8%A6%AA%E6%89%8B%E9%85%8D%E8%A3%BD%E5%AE%A2%E8%A3%BD%E5%8C%96%E9%A4%8A%E7%94%9F%E8%8C%B6%E9%A3%B2%E8%88%87%E8%88%92%E5%A3%93%E9%A6%99%E8%8D%89%E7%90%83%E5%8C%85%E3%80%82&location=%E8%80%81%E6%BF%9F%E5%AE%89+Healing+Herbar+%28%E8%90%AC%E8%8F%AF%E8%A5%BF%E6%98%8C%E8%A1%9784%E8%99%9F%29+%28%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%A5%BF%E6%98%8C%E8%A1%9784%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2610100918231"
+  },
+  {
+    "id": "lechang_exp_02",
+    "title": "【台語體驗】樂暢親子共學《大自然台語探險家：桃園大溪森林野趣手作》",
+    "description": "全台語戶外自然探索！帶領親子走進桃園大溪林道，用台語認識花草樹木與昆蟲鳥類，並就地取材採集落葉枯枝，親手製作台語植物拓印畫與自然曼陀羅。",
+    "city": "桃園市",
+    "district": "大溪區",
+    "category": "台語體驗",
+    "start_time": "2026-10-11T13:30:00",
+    "end_time": "2026-10-11T16:30:00",
+    "venue": "大溪中正公園與大溪生態步道",
+    "address": "桃園市大溪區普濟路",
+    "organizer": "樂暢親子共學團 / 桃園母語共學小組",
+    "source_platform": "樂暢親子共學",
+    "source_url": "https://www.facebook.com/letshiong.taigi/posts/nature_exp",
+    "cover_image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 350 / 組 (含保險與手作教具包)",
+    "is_free": false,
+    "tags": [
+      "樂暢",
+      "台語體驗",
+      "大溪自然",
+      "戶外共學",
+      "生態探索"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E3%80%8A%E5%A4%A7%E8%87%AA%E7%84%B6%E5%8F%B0%E8%AA%9E%E6%8E%A2%E9%9A%AA%E5%AE%B6%EF%BC%9A%E6%A1%83%E5%9C%92%E5%A4%A7%E6%BA%AA%E6%A3%AE%E6%9E%97%E9%87%8E%E8%B6%A3%E6%89%8B%E4%BD%9C%E3%80%8B&dates=20261011T133000%2F20261011T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E3%80%8A%E5%A4%A7%E8%87%AA%E7%84%B6%E5%8F%B0%E8%AA%9E%E6%8E%A2%E9%9A%AA%E5%AE%B6%EF%BC%9A%E6%A1%83%E5%9C%92%E5%A4%A7%E6%BA%AA%E6%A3%AE%E6%9E%97%E9%87%8E%E8%B6%A3%E6%89%8B%E4%BD%9C%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E5%9C%98+%2F+%E6%A1%83%E5%9C%92%E6%AF%8D%E8%AA%9E%E5%85%B1%E5%AD%B8%E5%B0%8F%E7%B5%84%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+350+%2F+%E7%B5%84+%28%E5%90%AB%E4%BF%9D%E9%9A%AA%E8%88%87%E6%89%8B%E4%BD%9C%E6%95%99%E5%85%B7%E5%8C%85%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E6%A8%82%E6%9A%A2%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.facebook.com%2Fletshiong.taigi%2Fposts%2Fnature_exp%0A%0A%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%88%B6%E5%A4%96%E8%87%AA%E7%84%B6%E6%8E%A2%E7%B4%A2%EF%BC%81%E5%B8%B6%E9%A0%98%E8%A6%AA%E5%AD%90%E8%B5%B0%E9%80%B2%E6%A1%83%E5%9C%92%E5%A4%A7%E6%BA%AA%E6%9E%97%E9%81%93%EF%BC%8C%E7%94%A8%E5%8F%B0%E8%AA%9E%E8%AA%8D%E8%AD%98%E8%8A%B1%E8%8D%89%E6%A8%B9%E6%9C%A8%E8%88%87%E6%98%86%E8%9F%B2%E9%B3%A5%E9%A1%9E%EF%BC%8C%E4%B8%A6%E5%B0%B1%E5%9C%B0%E5%8F%96%E6%9D%90%E6%8E%A1%E9%9B%86%E8%90%BD%E8%91%89%E6%9E%AF%E6%9E%9D%EF%BC%8C%E8%A6%AA%E6%89%8B%E8%A3%BD%E4%BD%9C%E5%8F%B0%E8%AA%9E%E6%A4%8D%E7%89%A9%E6%8B%93%E5%8D%B0%E7%95%AB%E8%88%87%E8%87%AA%E7%84%B6%E6%9B%BC%E9%99%80%E7%BE%85%E3%80%82&location=%E5%A4%A7%E6%BA%AA%E4%B8%AD%E6%AD%A3%E5%85%AC%E5%9C%92%E8%88%87%E5%A4%A7%E6%BA%AA%E7%94%9F%E6%85%8B%E6%AD%A5%E9%81%93+%28%E6%A1%83%E5%9C%92%E5%B8%82%E5%A4%A7%E6%BA%AA%E5%8D%80%E6%99%AE%E6%BF%9F%E8%B7%AF%29&sprop=website%3Ahttps%3A%2F%2Fwww.facebook.com%2Fletshiong.taigi%2Fposts%2Fnature_exp"
+  },
+  {
+    "id": "threads_tour_07",
+    "title": "【台語導覽】艋舺夜遊：剝皮寮到龍山寺的台語庶民夜市探訪",
+    "description": "Threads 社群人氣走讀發起！夜間漫步萬華青山宮、清水巖祖師廟與剝皮寮歷史街區。聽文史青年用在地腔調台語細說艋舺三大廟宇傳奇與青草巷夜市小吃典故。",
+    "city": "臺北市",
+    "district": "萬華區",
+    "category": "台語導覽",
+    "start_time": "2026-10-16T19:00:00",
+    "end_time": "2026-10-16T21:00:00",
+    "venue": "龍山寺廟埕前集合",
+    "address": "臺北市萬華區廣州街211號",
+    "organizer": "@taigi_walk_night (Threads 揪團)",
+    "source_platform": "Threads",
+    "source_url": "https://www.threads.net/@taigi_walk_night/post/C9x81_nighttour",
+    "cover_image": "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加 (自備耳機導覽機押金100元)",
+    "is_free": true,
+    "tags": [
+      "台語導覽",
+      "Threads",
+      "艋舺",
+      "龍山寺",
+      "夜間走讀"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E8%89%8B%E8%88%BA%E5%A4%9C%E9%81%8A%EF%BC%9A%E5%89%9D%E7%9A%AE%E5%AF%AE%E5%88%B0%E9%BE%8D%E5%B1%B1%E5%AF%BA%E7%9A%84%E5%8F%B0%E8%AA%9E%E5%BA%B6%E6%B0%91%E5%A4%9C%E5%B8%82%E6%8E%A2%E8%A8%AA&dates=20261016T190000%2F20261016T210000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E8%89%8B%E8%88%BA%E5%A4%9C%E9%81%8A%EF%BC%9A%E5%89%9D%E7%9A%AE%E5%AF%AE%E5%88%B0%E9%BE%8D%E5%B1%B1%E5%AF%BA%E7%9A%84%E5%8F%B0%E8%AA%9E%E5%BA%B6%E6%B0%91%E5%A4%9C%E5%B8%82%E6%8E%A2%E8%A8%AA%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%40taigi_walk_night+%28Threads+%E6%8F%AA%E5%9C%98%29%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0+%28%E8%87%AA%E5%82%99%E8%80%B3%E6%A9%9F%E5%B0%8E%E8%A6%BD%E6%A9%9F%E6%8A%BC%E9%87%91100%E5%85%83%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AThreads%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.threads.net%2F%40taigi_walk_night%2Fpost%2FC9x81_nighttour%0A%0AThreads+%E7%A4%BE%E7%BE%A4%E4%BA%BA%E6%B0%A3%E8%B5%B0%E8%AE%80%E7%99%BC%E8%B5%B7%EF%BC%81%E5%A4%9C%E9%96%93%E6%BC%AB%E6%AD%A5%E8%90%AC%E8%8F%AF%E9%9D%92%E5%B1%B1%E5%AE%AE%E3%80%81%E6%B8%85%E6%B0%B4%E5%B7%96%E7%A5%96%E5%B8%AB%E5%BB%9F%E8%88%87%E5%89%9D%E7%9A%AE%E5%AF%AE%E6%AD%B7%E5%8F%B2%E8%A1%97%E5%8D%80%E3%80%82%E8%81%BD%E6%96%87%E5%8F%B2%E9%9D%92%E5%B9%B4%E7%94%A8%E5%9C%A8%E5%9C%B0%E8%85%94%E8%AA%BF%E5%8F%B0%E8%AA%9E%E7%B4%B0%E8%AA%AA%E8%89%8B%E8%88%BA%E4%B8%89%E5%A4%A7%E5%BB%9F%E5%AE%87%E5%82%B3%E5%A5%87%E8%88%87%E9%9D%92%E8%8D%89%E5%B7%B7%E5%A4%9C%E5%B8%82%E5%B0%8F%E5%90%83%E5%85%B8%E6%95%85%E3%80%82&location=%E9%BE%8D%E5%B1%B1%E5%AF%BA%E5%BB%9F%E5%9F%95%E5%89%8D%E9%9B%86%E5%90%88+%28%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E5%BB%A3%E5%B7%9E%E8%A1%97211%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.threads.net%2F%40taigi_walk_night%2Fpost%2FC9x81_nighttour"
+  },
+  {
+    "id": "opentix_puppet_08",
+    "title": "【台語表演】台北木偶劇團《西遊記之借芭蕉扇》掌中戲大戲",
+    "description": "國寶級掌中戲大師指導，台北木偶劇團精湛演繹！前後場鑼鼓絲竹現場伴奏，五音分明的台語說白、巧奪天工的木偶操演技巧，老少咸宜的台灣傳統偶戲極致之美。",
+    "city": "新北市",
+    "district": "板橋區",
+    "category": "台語表演",
+    "start_time": "2026-10-17T14:30:00",
+    "end_time": "2026-10-17T16:00:00",
+    "venue": "新北市藝文中心 演藝廳",
+    "address": "新北市板橋區莊敬路62號",
+    "organizer": "台北木偶劇團 / 新北市政府文化局",
+    "source_platform": "OPENTIX 兩廳院",
+    "source_url": "https://www.opentix.life/event/18392948201",
+    "cover_image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 300 ~ 800 (OPENTIX 售票)",
+    "is_free": false,
+    "tags": [
+      "布袋戲",
+      "掌中戲",
+      "台語表演",
+      "新北藝文中心",
+      "兩廳院售票"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E5%8F%B0%E5%8C%97%E6%9C%A8%E5%81%B6%E5%8A%87%E5%9C%98%E3%80%8A%E8%A5%BF%E9%81%8A%E8%A8%98%E4%B9%8B%E5%80%9F%E8%8A%AD%E8%95%89%E6%89%87%E3%80%8B%E6%8E%8C%E4%B8%AD%E6%88%B2%E5%A4%A7%E6%88%B2&dates=20261017T143000%2F20261017T160000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E5%8F%B0%E5%8C%97%E6%9C%A8%E5%81%B6%E5%8A%87%E5%9C%98%E3%80%8A%E8%A5%BF%E9%81%8A%E8%A8%98%E4%B9%8B%E5%80%9F%E8%8A%AD%E8%95%89%E6%89%87%E3%80%8B%E6%8E%8C%E4%B8%AD%E6%88%B2%E5%A4%A7%E6%88%B2%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%8F%B0%E5%8C%97%E6%9C%A8%E5%81%B6%E5%8A%87%E5%9C%98+%2F+%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+300+~+800+%28OPENTIX+%E5%94%AE%E7%A5%A8%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AOPENTIX+%E5%85%A9%E5%BB%B3%E9%99%A2%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18392948201%0A%0A%E5%9C%8B%E5%AF%B6%E7%B4%9A%E6%8E%8C%E4%B8%AD%E6%88%B2%E5%A4%A7%E5%B8%AB%E6%8C%87%E5%B0%8E%EF%BC%8C%E5%8F%B0%E5%8C%97%E6%9C%A8%E5%81%B6%E5%8A%87%E5%9C%98%E7%B2%BE%E6%B9%9B%E6%BC%94%E7%B9%B9%EF%BC%81%E5%89%8D%E5%BE%8C%E5%A0%B4%E9%91%BC%E9%BC%93%E7%B5%B2%E7%AB%B9%E7%8F%BE%E5%A0%B4%E4%BC%B4%E5%A5%8F%EF%BC%8C%E4%BA%94%E9%9F%B3%E5%88%86%E6%98%8E%E7%9A%84%E5%8F%B0%E8%AA%9E%E8%AA%AA%E7%99%BD%E3%80%81%E5%B7%A7%E5%A5%AA%E5%A4%A9%E5%B7%A5%E7%9A%84%E6%9C%A8%E5%81%B6%E6%93%8D%E6%BC%94%E6%8A%80%E5%B7%A7%EF%BC%8C%E8%80%81%E5%B0%91%E5%92%B8%E5%AE%9C%E7%9A%84%E5%8F%B0%E7%81%A3%E5%82%B3%E7%B5%B1%E5%81%B6%E6%88%B2%E6%A5%B5%E8%87%B4%E4%B9%8B%E7%BE%8E%E3%80%82&location=%E6%96%B0%E5%8C%97%E5%B8%82%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83+%E6%BC%94%E8%97%9D%E5%BB%B3+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%9D%BF%E6%A9%8B%E5%8D%80%E8%8E%8A%E6%95%AC%E8%B7%AF62%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18392948201"
+  },
+  {
+    "id": "accupass_tour_10",
+    "title": "【台語導覽】淡水滬尾河港百年風雲・台語古蹟歷史散策",
+    "description": "跟著台語文史導覽員從淡水捷運站出發，走訪紅毛城、前清淡水關稅務司官邸（小白宮）、得忌利士洋行，全台語解說滬尾戰役與開港通商的故事。",
+    "city": "新北市",
+    "district": "淡水區",
+    "category": "台語導覽",
+    "start_time": "2026-10-18T09:00:00",
+    "end_time": "2026-10-18T12:00:00",
+    "venue": "淡水捷運站 1號出口集合",
+    "address": "新北市淡水區中正路1號",
+    "organizer": "滬尾文史講堂 / Accupass",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2610180847291",
+    "cover_image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加 (限額 25 名)",
+    "is_free": true,
+    "tags": [
+      "台語導覽",
+      "淡水",
+      "紅毛城",
+      "歷史走讀",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E6%B7%A1%E6%B0%B4%E6%BB%AC%E5%B0%BE%E6%B2%B3%E6%B8%AF%E7%99%BE%E5%B9%B4%E9%A2%A8%E9%9B%B2%E3%83%BB%E5%8F%B0%E8%AA%9E%E5%8F%A4%E8%B9%9F%E6%AD%B7%E5%8F%B2%E6%95%A3%E7%AD%96&dates=20261018T090000%2F20261018T120000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E6%B7%A1%E6%B0%B4%E6%BB%AC%E5%B0%BE%E6%B2%B3%E6%B8%AF%E7%99%BE%E5%B9%B4%E9%A2%A8%E9%9B%B2%E3%83%BB%E5%8F%B0%E8%AA%9E%E5%8F%A4%E8%B9%9F%E6%AD%B7%E5%8F%B2%E6%95%A3%E7%AD%96%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%BB%AC%E5%B0%BE%E6%96%87%E5%8F%B2%E8%AC%9B%E5%A0%82+%2F+Accupass%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0+%28%E9%99%90%E9%A1%8D+25+%E5%90%8D%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2610180847291%0A%0A%E8%B7%9F%E8%91%97%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E5%B0%8E%E8%A6%BD%E5%93%A1%E5%BE%9E%E6%B7%A1%E6%B0%B4%E6%8D%B7%E9%81%8B%E7%AB%99%E5%87%BA%E7%99%BC%EF%BC%8C%E8%B5%B0%E8%A8%AA%E7%B4%85%E6%AF%9B%E5%9F%8E%E3%80%81%E5%89%8D%E6%B8%85%E6%B7%A1%E6%B0%B4%E9%97%9C%E7%A8%85%E5%8B%99%E5%8F%B8%E5%AE%98%E9%82%B8%EF%BC%88%E5%B0%8F%E7%99%BD%E5%AE%AE%EF%BC%89%E3%80%81%E5%BE%97%E5%BF%8C%E5%88%A9%E5%A3%AB%E6%B4%8B%E8%A1%8C%EF%BC%8C%E5%85%A8%E5%8F%B0%E8%AA%9E%E8%A7%A3%E8%AA%AA%E6%BB%AC%E5%B0%BE%E6%88%B0%E5%BD%B9%E8%88%87%E9%96%8B%E6%B8%AF%E9%80%9A%E5%95%86%E7%9A%84%E6%95%85%E4%BA%8B%E3%80%82&location=%E6%B7%A1%E6%B0%B4%E6%8D%B7%E9%81%8B%E7%AB%99+1%E8%99%9F%E5%87%BA%E5%8F%A3%E9%9B%86%E5%90%88+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%B7%A1%E6%B0%B4%E5%8D%80%E4%B8%AD%E6%AD%A3%E8%B7%AF1%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2610180847291"
+  },
+  {
+    "id": "ntpclib_picbook_02",
+    "title": "【台語繪本】新北市立圖書館總館《新北愛閱讀・台語繪本樂悠遊》",
+    "description": "新北市圖總館兒童館專場！精選教育部得獎台語繪本，帶領小朋友邊看生動大插圖邊用母語朗讀，並有繪本角色著色與台語字卡配對趣味闖關。",
+    "city": "新北市",
+    "district": "板橋區",
+    "category": "台語繪本",
+    "start_time": "2026-10-18T14:30:00",
+    "end_time": "2026-10-18T15:45:00",
+    "venue": "新北市立圖書館總館 3樓兒童閱覽區小舞台",
+    "address": "新北市板橋區貴興路139號",
+    "organizer": "新北市立圖書館",
+    "source_platform": "北北桃市立圖書館",
+    "source_url": "https://www.library.ntpc.gov.tw/singlepress/taigi_reading",
+    "cover_image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費入場（自由參加）",
+    "is_free": true,
+    "tags": [
+      "新北市立圖書館",
+      "台語繪本",
+      "新北市圖總館",
+      "板橋",
+      "愛閱讀"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E6%96%B0%E5%8C%97%E6%84%9B%E9%96%B1%E8%AE%80%E3%83%BB%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E6%A8%82%E6%82%A0%E9%81%8A%E3%80%8B&dates=20261018T143000%2F20261018T154500&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E3%80%91%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E6%96%B0%E5%8C%97%E6%84%9B%E9%96%B1%E8%AE%80%E3%83%BB%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%E6%A8%82%E6%82%A0%E9%81%8A%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%85%A5%E5%A0%B4%EF%BC%88%E8%87%AA%E7%94%B1%E5%8F%83%E5%8A%A0%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%8C%97%E5%8C%97%E6%A1%83%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.library.ntpc.gov.tw%2Fsinglepress%2Ftaigi_reading%0A%0A%E6%96%B0%E5%8C%97%E5%B8%82%E5%9C%96%E7%B8%BD%E9%A4%A8%E5%85%92%E7%AB%A5%E9%A4%A8%E5%B0%88%E5%A0%B4%EF%BC%81%E7%B2%BE%E9%81%B8%E6%95%99%E8%82%B2%E9%83%A8%E5%BE%97%E7%8D%8E%E5%8F%B0%E8%AA%9E%E7%B9%AA%E6%9C%AC%EF%BC%8C%E5%B8%B6%E9%A0%98%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%82%8A%E7%9C%8B%E7%94%9F%E5%8B%95%E5%A4%A7%E6%8F%92%E5%9C%96%E9%82%8A%E7%94%A8%E6%AF%8D%E8%AA%9E%E6%9C%97%E8%AE%80%EF%BC%8C%E4%B8%A6%E6%9C%89%E7%B9%AA%E6%9C%AC%E8%A7%92%E8%89%B2%E8%91%97%E8%89%B2%E8%88%87%E5%8F%B0%E8%AA%9E%E5%AD%97%E5%8D%A1%E9%85%8D%E5%B0%8D%E8%B6%A3%E5%91%B3%E9%97%96%E9%97%9C%E3%80%82&location=%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8+3%E6%A8%93%E5%85%92%E7%AB%A5%E9%96%B1%E8%A6%BD%E5%8D%80%E5%B0%8F%E8%88%9E%E5%8F%B0+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%9D%BF%E6%A9%8B%E5%8D%80%E8%B2%B4%E8%88%88%E8%B7%AF139%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.library.ntpc.gov.tw%2Fsinglepress%2Ftaigi_reading"
+  },
+  {
+    "id": "tylib_story_03",
+    "title": "【台語故事】桃園市立圖書館總館《桃林講古堂：台語童話巡演列車》",
+    "description": "在桃園最美總圖享受台語故事時光！由桃園市台語志工劇團現場說演互動劇《桃太郎遊桃園》，結合手偶戲與全場台語問答，寓教於樂。",
+    "city": "桃園市",
+    "district": "桃園區",
+    "category": "台語故事",
+    "start_time": "2026-10-24T10:30:00",
+    "end_time": "2026-10-24T11:45:00",
+    "venue": "桃園市立圖書館總館 1樓微光廳",
+    "address": "桃園市桃園區南平路303號",
+    "organizer": "桃園市立圖書館",
+    "source_platform": "北北桃市立圖書館",
+    "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/typl_taigi_drama",
+    "cover_image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費入場（需於官網預約劃位）",
+    "is_free": true,
+    "tags": [
+      "桃園市立圖書館",
+      "台語故事",
+      "桃園總圖",
+      "微光廳",
+      "偶戲互動"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E6%A1%83%E5%9C%92%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E6%A1%83%E6%9E%97%E8%AC%9B%E5%8F%A4%E5%A0%82%EF%BC%9A%E5%8F%B0%E8%AA%9E%E7%AB%A5%E8%A9%B1%E5%B7%A1%E6%BC%94%E5%88%97%E8%BB%8A%E3%80%8B&dates=20261024T103000%2F20261024T114500&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E6%A1%83%E5%9C%92%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8%E3%80%8A%E6%A1%83%E6%9E%97%E8%AC%9B%E5%8F%A4%E5%A0%82%EF%BC%9A%E5%8F%B0%E8%AA%9E%E7%AB%A5%E8%A9%B1%E5%B7%A1%E6%BC%94%E5%88%97%E8%BB%8A%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%A1%83%E5%9C%92%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%85%A5%E5%A0%B4%EF%BC%88%E9%9C%80%E6%96%BC%E5%AE%98%E7%B6%B2%E9%A0%90%E7%B4%84%E5%8A%83%E4%BD%8D%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%8C%97%E5%8C%97%E6%A1%83%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.typl.gov.tw%2Fzh-tw%2FActivity%2FContent%2Ftypl_taigi_drama%0A%0A%E5%9C%A8%E6%A1%83%E5%9C%92%E6%9C%80%E7%BE%8E%E7%B8%BD%E5%9C%96%E4%BA%AB%E5%8F%97%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E6%99%82%E5%85%89%EF%BC%81%E7%94%B1%E6%A1%83%E5%9C%92%E5%B8%82%E5%8F%B0%E8%AA%9E%E5%BF%97%E5%B7%A5%E5%8A%87%E5%9C%98%E7%8F%BE%E5%A0%B4%E8%AA%AA%E6%BC%94%E4%BA%92%E5%8B%95%E5%8A%87%E3%80%8A%E6%A1%83%E5%A4%AA%E9%83%8E%E9%81%8A%E6%A1%83%E5%9C%92%E3%80%8B%EF%BC%8C%E7%B5%90%E5%90%88%E6%89%8B%E5%81%B6%E6%88%B2%E8%88%87%E5%85%A8%E5%A0%B4%E5%8F%B0%E8%AA%9E%E5%95%8F%E7%AD%94%EF%BC%8C%E5%AF%93%E6%95%99%E6%96%BC%E6%A8%82%E3%80%82&location=%E6%A1%83%E5%9C%92%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8+1%E6%A8%93%E5%BE%AE%E5%85%89%E5%BB%B3+%28%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E5%8D%97%E5%B9%B3%E8%B7%AF303%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.typl.gov.tw%2Fzh-tw%2FActivity%2FContent%2Ftypl_taigi_drama"
+  },
+  {
+    "id": "gcal_play_09",
+    "title": "【台語舞台劇】差事劇團《母語的河流》新北客家與台語跨界劇",
+    "description": "以淡水河流域為歷史背景，融合台語口述歷史、客語歌謠與當代劇場肢體語言，探討土地、移民與語言傳承的生命記憶。",
+    "city": "新北市",
+    "district": "淡水區",
+    "category": "台語舞台劇",
+    "start_time": "2026-10-24T19:30:00",
+    "end_time": "2026-10-24T21:15:00",
+    "venue": "淡水雲門劇場 (Cloud Gate Theater)",
+    "address": "新北市淡水區中正路一段6巷36號",
+    "organizer": "差事劇團 / 新北市文化局",
+    "source_platform": "Google 日曆",
+    "source_url": "https://calendar.google.com",
+    "cover_image": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 500 ~ 1,200",
+    "is_free": false,
+    "tags": [
+      "台語舞台劇",
+      "雲門劇場",
+      "淡水",
+      "跨界戲劇",
+      "Google日曆"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E5%B7%AE%E4%BA%8B%E5%8A%87%E5%9C%98%E3%80%8A%E6%AF%8D%E8%AA%9E%E7%9A%84%E6%B2%B3%E6%B5%81%E3%80%8B%E6%96%B0%E5%8C%97%E5%AE%A2%E5%AE%B6%E8%88%87%E5%8F%B0%E8%AA%9E%E8%B7%A8%E7%95%8C%E5%8A%87&dates=20261024T193000%2F20261024T211500&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E5%B7%AE%E4%BA%8B%E5%8A%87%E5%9C%98%E3%80%8A%E6%AF%8D%E8%AA%9E%E7%9A%84%E6%B2%B3%E6%B5%81%E3%80%8B%E6%96%B0%E5%8C%97%E5%AE%A2%E5%AE%B6%E8%88%87%E5%8F%B0%E8%AA%9E%E8%B7%A8%E7%95%8C%E5%8A%87%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%B7%AE%E4%BA%8B%E5%8A%87%E5%9C%98+%2F+%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%87%E5%8C%96%E5%B1%80%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+500+~+1%2C200%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AGoogle+%E6%97%A5%E6%9B%86%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fcalendar.google.com%0A%0A%E4%BB%A5%E6%B7%A1%E6%B0%B4%E6%B2%B3%E6%B5%81%E5%9F%9F%E7%82%BA%E6%AD%B7%E5%8F%B2%E8%83%8C%E6%99%AF%EF%BC%8C%E8%9E%8D%E5%90%88%E5%8F%B0%E8%AA%9E%E5%8F%A3%E8%BF%B0%E6%AD%B7%E5%8F%B2%E3%80%81%E5%AE%A2%E8%AA%9E%E6%AD%8C%E8%AC%A0%E8%88%87%E7%95%B6%E4%BB%A3%E5%8A%87%E5%A0%B4%E8%82%A2%E9%AB%94%E8%AA%9E%E8%A8%80%EF%BC%8C%E6%8E%A2%E8%A8%8E%E5%9C%9F%E5%9C%B0%E3%80%81%E7%A7%BB%E6%B0%91%E8%88%87%E8%AA%9E%E8%A8%80%E5%82%B3%E6%89%BF%E7%9A%84%E7%94%9F%E5%91%BD%E8%A8%98%E6%86%B6%E3%80%82&location=%E6%B7%A1%E6%B0%B4%E9%9B%B2%E9%96%80%E5%8A%87%E5%A0%B4+%28Cloud+Gate+Theater%29+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%B7%A1%E6%B0%B4%E5%8D%80%E4%B8%AD%E6%AD%A3%E8%B7%AF%E4%B8%80%E6%AE%B56%E5%B7%B736%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fcalendar.google.com"
+  },
+  {
+    "id": "tpml_tour_04",
+    "title": "【台語導覽】臺北市立圖書館北投分館《綠建築與北投溫泉鄉台語文史走讀》",
+    "description": "全台首座綠建築圖書館走讀！由北投文史工作者以道地台語導覽北投公園、北投溫泉博物館、地熱谷，解說日治時期北投那卡西與台語電影發源地的風華記憶。",
+    "city": "臺北市",
+    "district": "北投區",
+    "category": "台語導覽",
+    "start_time": "2026-10-31T09:30:00",
+    "end_time": "2026-10-31T12:00:00",
+    "venue": "臺北市立圖書館北投分館 正門前廣場集合",
+    "address": "臺北市北投區光明路251號",
+    "organizer": "臺北市立圖書館北投分館 / 北投文史學會",
+    "source_platform": "北北桃市立圖書館",
+    "source_url": "https://tpml.gov.taipei/beitou_taigi_tour",
+    "cover_image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加（限額 25 名）",
+    "is_free": true,
+    "tags": [
+      "臺北市立圖書館",
+      "北投分館",
+      "台語導覽",
+      "北投溫泉",
+      "綠建築"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%8C%97%E6%8A%95%E5%88%86%E9%A4%A8%E3%80%8A%E7%B6%A0%E5%BB%BA%E7%AF%89%E8%88%87%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89%E9%84%89%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E8%B5%B0%E8%AE%80%E3%80%8B&dates=20261031T093000%2F20261031T120000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%8C%97%E6%8A%95%E5%88%86%E9%A4%A8%E3%80%8A%E7%B6%A0%E5%BB%BA%E7%AF%89%E8%88%87%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89%E9%84%89%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E8%B5%B0%E8%AE%80%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%8C%97%E6%8A%95%E5%88%86%E9%A4%A8+%2F+%E5%8C%97%E6%8A%95%E6%96%87%E5%8F%B2%E5%AD%B8%E6%9C%83%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0%EF%BC%88%E9%99%90%E9%A1%8D+25+%E5%90%8D%EF%BC%89%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%8C%97%E5%8C%97%E6%A1%83%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Ftpml.gov.taipei%2Fbeitou_taigi_tour%0A%0A%E5%85%A8%E5%8F%B0%E9%A6%96%E5%BA%A7%E7%B6%A0%E5%BB%BA%E7%AF%89%E5%9C%96%E6%9B%B8%E9%A4%A8%E8%B5%B0%E8%AE%80%EF%BC%81%E7%94%B1%E5%8C%97%E6%8A%95%E6%96%87%E5%8F%B2%E5%B7%A5%E4%BD%9C%E8%80%85%E4%BB%A5%E9%81%93%E5%9C%B0%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E5%8C%97%E6%8A%95%E5%85%AC%E5%9C%92%E3%80%81%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%80%81%E5%9C%B0%E7%86%B1%E8%B0%B7%EF%BC%8C%E8%A7%A3%E8%AA%AA%E6%97%A5%E6%B2%BB%E6%99%82%E6%9C%9F%E5%8C%97%E6%8A%95%E9%82%A3%E5%8D%A1%E8%A5%BF%E8%88%87%E5%8F%B0%E8%AA%9E%E9%9B%BB%E5%BD%B1%E7%99%BC%E6%BA%90%E5%9C%B0%E7%9A%84%E9%A2%A8%E8%8F%AF%E8%A8%98%E6%86%B6%E3%80%82&location=%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%8C%97%E6%8A%95%E5%88%86%E9%A4%A8+%E6%AD%A3%E9%96%80%E5%89%8D%E5%BB%A3%E5%A0%B4%E9%9B%86%E5%90%88+%28%E8%87%BA%E5%8C%97%E5%B8%82%E5%8C%97%E6%8A%95%E5%8D%80%E5%85%89%E6%98%8E%E8%B7%AF251%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Ftpml.gov.taipei%2Fbeitou_taigi_tour"
+  },
+  {
+    "id": "accupass_exp_12",
+    "title": "【台語體驗】鶯歌陶瓷老街・台語手拉坯與陶藝釉彩手作工作坊",
+    "description": "「用母語捏陶，感受泥土的溫度。」由三代陶藝傳人全台語指導拉坯技巧、造型修飾與傳統釉藥塗繪，親手做出獨一無二的台語刻字茶碗！",
+    "city": "新北市",
+    "district": "鶯歌區",
+    "category": "台語體驗",
+    "start_time": "2026-11-01T13:30:00",
+    "end_time": "2026-11-01T16:30:00",
+    "venue": "鶯歌老街陶藝工坊 (新北市鶯歌區尖山埔路)",
+    "address": "新北市鶯歌區尖山埔路68號",
+    "organizer": "鶯歌陶藝創作者協會 / Accupass",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2611010917221",
+    "cover_image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 650 (含陶土、窯燒代工與郵寄費)",
+    "is_free": false,
+    "tags": [
+      "台語體驗",
+      "鶯歌陶藝",
+      "手拉坯",
+      "文創手作",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E9%B6%AF%E6%AD%8C%E9%99%B6%E7%93%B7%E8%80%81%E8%A1%97%E3%83%BB%E5%8F%B0%E8%AA%9E%E6%89%8B%E6%8B%89%E5%9D%AF%E8%88%87%E9%99%B6%E8%97%9D%E9%87%89%E5%BD%A9%E6%89%8B%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A&dates=20261101T133000%2F20261101T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E9%B6%AF%E6%AD%8C%E9%99%B6%E7%93%B7%E8%80%81%E8%A1%97%E3%83%BB%E5%8F%B0%E8%AA%9E%E6%89%8B%E6%8B%89%E5%9D%AF%E8%88%87%E9%99%B6%E8%97%9D%E9%87%89%E5%BD%A9%E6%89%8B%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E9%B6%AF%E6%AD%8C%E9%99%B6%E8%97%9D%E5%89%B5%E4%BD%9C%E8%80%85%E5%8D%94%E6%9C%83+%2F+Accupass%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+650+%28%E5%90%AB%E9%99%B6%E5%9C%9F%E3%80%81%E7%AA%AF%E7%87%92%E4%BB%A3%E5%B7%A5%E8%88%87%E9%83%B5%E5%AF%84%E8%B2%BB%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2611010917221%0A%0A%E3%80%8C%E7%94%A8%E6%AF%8D%E8%AA%9E%E6%8D%8F%E9%99%B6%EF%BC%8C%E6%84%9F%E5%8F%97%E6%B3%A5%E5%9C%9F%E7%9A%84%E6%BA%AB%E5%BA%A6%E3%80%82%E3%80%8D%E7%94%B1%E4%B8%89%E4%BB%A3%E9%99%B6%E8%97%9D%E5%82%B3%E4%BA%BA%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%8C%87%E5%B0%8E%E6%8B%89%E5%9D%AF%E6%8A%80%E5%B7%A7%E3%80%81%E9%80%A0%E5%9E%8B%E4%BF%AE%E9%A3%BE%E8%88%87%E5%82%B3%E7%B5%B1%E9%87%89%E8%97%A5%E5%A1%97%E7%B9%AA%EF%BC%8C%E8%A6%AA%E6%89%8B%E5%81%9A%E5%87%BA%E7%8D%A8%E4%B8%80%E7%84%A1%E4%BA%8C%E7%9A%84%E5%8F%B0%E8%AA%9E%E5%88%BB%E5%AD%97%E8%8C%B6%E7%A2%97%EF%BC%81&location=%E9%B6%AF%E6%AD%8C%E8%80%81%E8%A1%97%E9%99%B6%E8%97%9D%E5%B7%A5%E5%9D%8A+%28%E6%96%B0%E5%8C%97%E5%B8%82%E9%B6%AF%E6%AD%8C%E5%8D%80%E5%B0%96%E5%B1%B1%E5%9F%94%E8%B7%AF%29+%28%E6%96%B0%E5%8C%97%E5%B8%82%E9%B6%AF%E6%AD%8C%E5%8D%80%E5%B0%96%E5%B1%B1%E5%9F%94%E8%B7%AF68%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2611010917221"
+  },
+  {
+    "id": "opentix_play_13",
+    "title": "【台語舞台劇】狂想劇場《阿爸的皮箱》台語原創家庭劇 桃園場",
+    "description": "狂想劇場得獎原創舞台劇！深刻刻畫台灣戰後三代家庭的情感糾葛與語言斷層，全劇台語對話細緻入微，撼動人心，全台巡演壓軸桃園場！",
+    "city": "桃園市",
+    "district": "桃園區",
+    "category": "台語舞台劇",
+    "start_time": "2026-11-07T19:30:00",
+    "end_time": "2026-11-07T21:40:00",
+    "venue": "桃園展演中心 展演廳",
+    "address": "桃園市桃園區中正路1188號",
+    "organizer": "狂想劇場 Fantasy Theatre",
+    "source_platform": "OPENTIX 兩廳院",
+    "source_url": "https://www.opentix.life/event/18393019283",
+    "cover_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 500 ~ 1,800 (OPENTIX 兩廳院售票)",
+    "is_free": false,
+    "tags": [
+      "台語舞台劇",
+      "狂想劇場",
+      "桃園展演中心",
+      "家庭劇",
+      "兩廳院售票"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E7%8B%82%E6%83%B3%E5%8A%87%E5%A0%B4%E3%80%8A%E9%98%BF%E7%88%B8%E7%9A%84%E7%9A%AE%E7%AE%B1%E3%80%8B%E5%8F%B0%E8%AA%9E%E5%8E%9F%E5%89%B5%E5%AE%B6%E5%BA%AD%E5%8A%87+%E6%A1%83%E5%9C%92%E5%A0%B4&dates=20261107T193000%2F20261107T214000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%88%9E%E5%8F%B0%E5%8A%87%E3%80%91%E7%8B%82%E6%83%B3%E5%8A%87%E5%A0%B4%E3%80%8A%E9%98%BF%E7%88%B8%E7%9A%84%E7%9A%AE%E7%AE%B1%E3%80%8B%E5%8F%B0%E8%AA%9E%E5%8E%9F%E5%89%B5%E5%AE%B6%E5%BA%AD%E5%8A%87+%E6%A1%83%E5%9C%92%E5%A0%B4%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E7%8B%82%E6%83%B3%E5%8A%87%E5%A0%B4+Fantasy+Theatre%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+500+~+1%2C800+%28OPENTIX+%E5%85%A9%E5%BB%B3%E9%99%A2%E5%94%AE%E7%A5%A8%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AOPENTIX+%E5%85%A9%E5%BB%B3%E9%99%A2%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18393019283%0A%0A%E7%8B%82%E6%83%B3%E5%8A%87%E5%A0%B4%E5%BE%97%E7%8D%8E%E5%8E%9F%E5%89%B5%E8%88%9E%E5%8F%B0%E5%8A%87%EF%BC%81%E6%B7%B1%E5%88%BB%E5%88%BB%E7%95%AB%E5%8F%B0%E7%81%A3%E6%88%B0%E5%BE%8C%E4%B8%89%E4%BB%A3%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%83%85%E6%84%9F%E7%B3%BE%E8%91%9B%E8%88%87%E8%AA%9E%E8%A8%80%E6%96%B7%E5%B1%A4%EF%BC%8C%E5%85%A8%E5%8A%87%E5%8F%B0%E8%AA%9E%E5%B0%8D%E8%A9%B1%E7%B4%B0%E7%B7%BB%E5%85%A5%E5%BE%AE%EF%BC%8C%E6%92%BC%E5%8B%95%E4%BA%BA%E5%BF%83%EF%BC%8C%E5%85%A8%E5%8F%B0%E5%B7%A1%E6%BC%94%E5%A3%93%E8%BB%B8%E6%A1%83%E5%9C%92%E5%A0%B4%EF%BC%81&location=%E6%A1%83%E5%9C%92%E5%B1%95%E6%BC%94%E4%B8%AD%E5%BF%83+%E5%B1%95%E6%BC%94%E5%BB%B3+%28%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E4%B8%AD%E6%AD%A3%E8%B7%AF1188%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F18393019283"
+  },
+  {
+    "id": "ntpclib_exp_05",
+    "title": "【台語體驗】新北市立圖書館新店分館《傳統紅龜粿模與台語食文化手作工作坊》",
+    "description": "帶孩子認識台灣傳統米食！全程台語教學紅龜粿「牽絲、包餡、印模」傳統工法，親手製作香甜紅豆草仔粿，並學習相關台語民俗諺語。",
+    "city": "新北市",
+    "district": "新店區",
+    "category": "台語體驗",
+    "start_time": "2026-11-08T14:00:00",
+    "end_time": "2026-11-08T16:30:00",
+    "venue": "新北市立圖書館新店分館 3樓多功能教室",
+    "address": "新北市新店區北新路三段105巷2號3樓",
+    "organizer": "新北市立圖書館新店分館",
+    "source_platform": "北北桃市立圖書館",
+    "source_url": "https://www.library.ntpc.gov.tw/xindian_taigi_food",
+    "cover_image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
+    "price_info": "材料費 NT$ 100",
+    "is_free": false,
+    "tags": [
+      "新北市立圖書館",
+      "新店分館",
+      "台語體驗",
+      "紅龜粿",
+      "食文化"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%96%B0%E5%BA%97%E5%88%86%E9%A4%A8%E3%80%8A%E5%82%B3%E7%B5%B1%E7%B4%85%E9%BE%9C%E7%B2%BF%E6%A8%A1%E8%88%87%E5%8F%B0%E8%AA%9E%E9%A3%9F%E6%96%87%E5%8C%96%E6%89%8B%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%8B&dates=20261108T140000%2F20261108T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%96%B0%E5%BA%97%E5%88%86%E9%A4%A8%E3%80%8A%E5%82%B3%E7%B5%B1%E7%B4%85%E9%BE%9C%E7%B2%BF%E6%A8%A1%E8%88%87%E5%8F%B0%E8%AA%9E%E9%A3%9F%E6%96%87%E5%8C%96%E6%89%8B%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%96%B0%E5%BA%97%E5%88%86%E9%A4%A8%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E6%9D%90%E6%96%99%E8%B2%BB+NT%24+100%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%8C%97%E5%8C%97%E6%A1%83%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.library.ntpc.gov.tw%2Fxindian_taigi_food%0A%0A%E5%B8%B6%E5%AD%A9%E5%AD%90%E8%AA%8D%E8%AD%98%E5%8F%B0%E7%81%A3%E5%82%B3%E7%B5%B1%E7%B1%B3%E9%A3%9F%EF%BC%81%E5%85%A8%E7%A8%8B%E5%8F%B0%E8%AA%9E%E6%95%99%E5%AD%B8%E7%B4%85%E9%BE%9C%E7%B2%BF%E3%80%8C%E7%89%BD%E7%B5%B2%E3%80%81%E5%8C%85%E9%A4%A1%E3%80%81%E5%8D%B0%E6%A8%A1%E3%80%8D%E5%82%B3%E7%B5%B1%E5%B7%A5%E6%B3%95%EF%BC%8C%E8%A6%AA%E6%89%8B%E8%A3%BD%E4%BD%9C%E9%A6%99%E7%94%9C%E7%B4%85%E8%B1%86%E8%8D%89%E4%BB%94%E7%B2%BF%EF%BC%8C%E4%B8%A6%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E5%8F%B0%E8%AA%9E%E6%B0%91%E4%BF%97%E8%AB%BA%E8%AA%9E%E3%80%82&location=%E6%96%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%96%B0%E5%BA%97%E5%88%86%E9%A4%A8+3%E6%A8%93%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%95%99%E5%AE%A4+%28%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%B0%E5%BA%97%E5%8D%80%E5%8C%97%E6%96%B0%E8%B7%AF%E4%B8%89%E6%AE%B5105%E5%B7%B72%E8%99%9F3%E6%A8%93%29&sprop=website%3Ahttps%3A%2F%2Fwww.library.ntpc.gov.tw%2Fxindian_taigi_food"
+  },
+  {
+    "id": "eraticket_perf_14",
+    "title": "【台語表演】台灣念歌團《琴聲話當年》台語唸歌與月琴民謠音樂會",
+    "description": "國寶級唸歌藝師同台獻藝！以大廣弦、月琴即興彈唱台灣歷史傳奇與勸世歌，原汁原味重現早期廟埕走唱藝術與優美的母語押韻聲調。",
+    "city": "桃園市",
+    "district": "中壢區",
+    "category": "台語表演",
+    "start_time": "2026-11-14T14:30:00",
+    "end_time": "2026-11-14T16:30:00",
+    "venue": "中壢藝術館 音樂廳",
+    "address": "桃園市中壢區中美路16號",
+    "organizer": "台灣念歌團 / 桃園市政府文化局",
+    "source_platform": "年代售票",
+    "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_00.aspx?PRODUCT_ID=N42B9V02",
+    "cover_image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 300 ~ 1,000 (年代售票)",
+    "is_free": false,
+    "tags": [
+      "台語唸歌",
+      "月琴",
+      "台語表演",
+      "中壢藝術館",
+      "年代售票"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E5%8F%B0%E7%81%A3%E5%BF%B5%E6%AD%8C%E5%9C%98%E3%80%8A%E7%90%B4%E8%81%B2%E8%A9%B1%E7%95%B6%E5%B9%B4%E3%80%8B%E5%8F%B0%E8%AA%9E%E5%94%B8%E6%AD%8C%E8%88%87%E6%9C%88%E7%90%B4%E6%B0%91%E8%AC%A0%E9%9F%B3%E6%A8%82%E6%9C%83&dates=20261114T143000%2F20261114T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E8%A1%A8%E6%BC%94%E3%80%91%E5%8F%B0%E7%81%A3%E5%BF%B5%E6%AD%8C%E5%9C%98%E3%80%8A%E7%90%B4%E8%81%B2%E8%A9%B1%E7%95%B6%E5%B9%B4%E3%80%8B%E5%8F%B0%E8%AA%9E%E5%94%B8%E6%AD%8C%E8%88%87%E6%9C%88%E7%90%B4%E6%B0%91%E8%AC%A0%E9%9F%B3%E6%A8%82%E6%9C%83%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E5%BF%B5%E6%AD%8C%E5%9C%98+%2F+%E6%A1%83%E5%9C%92%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+300+~+1%2C000+%28%E5%B9%B4%E4%BB%A3%E5%94%AE%E7%A5%A8%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9A%E5%B9%B4%E4%BB%A3%E5%94%AE%E7%A5%A8%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fticket.com.tw%2Fapplication%2FUTK02%2FUTK0201_00.aspx%3FPRODUCT_ID%3DN42B9V02%0A%0A%E5%9C%8B%E5%AF%B6%E7%B4%9A%E5%94%B8%E6%AD%8C%E8%97%9D%E5%B8%AB%E5%90%8C%E5%8F%B0%E7%8D%BB%E8%97%9D%EF%BC%81%E4%BB%A5%E5%A4%A7%E5%BB%A3%E5%BC%A6%E3%80%81%E6%9C%88%E7%90%B4%E5%8D%B3%E8%88%88%E5%BD%88%E5%94%B1%E5%8F%B0%E7%81%A3%E6%AD%B7%E5%8F%B2%E5%82%B3%E5%A5%87%E8%88%87%E5%8B%B8%E4%B8%96%E6%AD%8C%EF%BC%8C%E5%8E%9F%E6%B1%81%E5%8E%9F%E5%91%B3%E9%87%8D%E7%8F%BE%E6%97%A9%E6%9C%9F%E5%BB%9F%E5%9F%95%E8%B5%B0%E5%94%B1%E8%97%9D%E8%A1%93%E8%88%87%E5%84%AA%E7%BE%8E%E7%9A%84%E6%AF%8D%E8%AA%9E%E6%8A%BC%E9%9F%BB%E8%81%B2%E8%AA%BF%E3%80%82&location=%E4%B8%AD%E5%A3%A2%E8%97%9D%E8%A1%93%E9%A4%A8+%E9%9F%B3%E6%A8%82%E5%BB%B3+%28%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E7%BE%8E%E8%B7%AF16%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fticket.com.tw%2Fapplication%2FUTK02%2FUTK0201_00.aspx%3FPRODUCT_ID%3DN42B9V02"
+  },
+  {
+    "id": "accupass_tour_15",
+    "title": "【台語導覽】大溪老街木藝文化巡禮・全台語文史走讀",
+    "description": "走訪大溪和平老街、普濟堂與木藝生態博物館，由在地大溪文史耆老全程台語解說巴洛克牌樓建築、傳統木器雕刻技藝與大溪豆干的百年傳承。",
+    "city": "桃園市",
+    "district": "大溪區",
+    "category": "台語導覽",
+    "start_time": "2026-11-21T09:30:00",
+    "end_time": "2026-11-21T12:30:00",
+    "venue": "大溪木藝生態博物館 壹號館前",
+    "address": "桃園市大溪區中正路35號",
+    "organizer": "大溪木藝文史工作室 / Accupass",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2611210839121",
+    "cover_image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    "price_info": "免費參加 (需事先線上報名 Accupass)",
+    "is_free": true,
+    "tags": [
+      "台語導覽",
+      "大溪老街",
+      "木藝",
+      "桃園走讀",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E5%A4%A7%E6%BA%AA%E8%80%81%E8%A1%97%E6%9C%A8%E8%97%9D%E6%96%87%E5%8C%96%E5%B7%A1%E7%A6%AE%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E8%B5%B0%E8%AE%80&dates=20261121T093000%2F20261121T123000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E5%B0%8E%E8%A6%BD%E3%80%91%E5%A4%A7%E6%BA%AA%E8%80%81%E8%A1%97%E6%9C%A8%E8%97%9D%E6%96%87%E5%8C%96%E5%B7%A1%E7%A6%AE%E3%83%BB%E5%85%A8%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8F%B2%E8%B5%B0%E8%AE%80%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%A4%A7%E6%BA%AA%E6%9C%A8%E8%97%9D%E6%96%87%E5%8F%B2%E5%B7%A5%E4%BD%9C%E5%AE%A4+%2F+Accupass%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%85%8D%E8%B2%BB%E5%8F%83%E5%8A%A0+%28%E9%9C%80%E4%BA%8B%E5%85%88%E7%B7%9A%E4%B8%8A%E5%A0%B1%E5%90%8D+Accupass%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2611210839121%0A%0A%E8%B5%B0%E8%A8%AA%E5%A4%A7%E6%BA%AA%E5%92%8C%E5%B9%B3%E8%80%81%E8%A1%97%E3%80%81%E6%99%AE%E6%BF%9F%E5%A0%82%E8%88%87%E6%9C%A8%E8%97%9D%E7%94%9F%E6%85%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%EF%BC%8C%E7%94%B1%E5%9C%A8%E5%9C%B0%E5%A4%A7%E6%BA%AA%E6%96%87%E5%8F%B2%E8%80%86%E8%80%81%E5%85%A8%E7%A8%8B%E5%8F%B0%E8%AA%9E%E8%A7%A3%E8%AA%AA%E5%B7%B4%E6%B4%9B%E5%85%8B%E7%89%8C%E6%A8%93%E5%BB%BA%E7%AF%89%E3%80%81%E5%82%B3%E7%B5%B1%E6%9C%A8%E5%99%A8%E9%9B%95%E5%88%BB%E6%8A%80%E8%97%9D%E8%88%87%E5%A4%A7%E6%BA%AA%E8%B1%86%E5%B9%B2%E7%9A%84%E7%99%BE%E5%B9%B4%E5%82%B3%E6%89%BF%E3%80%82&location=%E5%A4%A7%E6%BA%AA%E6%9C%A8%E8%97%9D%E7%94%9F%E6%85%8B%E5%8D%9A%E7%89%A9%E9%A4%A8+%E5%A3%B9%E8%99%9F%E9%A4%A8%E5%89%8D+%28%E6%A1%83%E5%9C%92%E5%B8%82%E5%A4%A7%E6%BA%AA%E5%8D%80%E4%B8%AD%E6%AD%A3%E8%B7%AF35%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2611210839121"
+  },
+  {
+    "id": "accupass_exp_17",
+    "title": "【台語體驗】大溪木作童玩手作體驗工作坊（台語教學）",
+    "description": "親手打造傳統台語童玩「竹蜻蜓」與「陀螺（干樂）」！木工老師全程以生動台語介紹台灣木料特性與傳統榫接工藝，做完還能在中庭大玩打干樂競賽！",
+    "city": "桃園市",
+    "district": "大溪區",
+    "category": "台語體驗",
+    "start_time": "2026-12-05T14:00:00",
+    "end_time": "2026-12-05T16:30:00",
+    "venue": "大溪工藝基地 (大溪區普濟路)",
+    "address": "桃園市大溪區普濟路13-2號",
+    "organizer": "大溪木藝工坊 / Accupass",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2612050931201",
+    "cover_image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
+    "price_info": "NT$ 380 (含木作材料包與工具借用)",
+    "is_free": false,
+    "tags": [
+      "台語體驗",
+      "大溪木藝",
+      "童玩手作",
+      "打干樂",
+      "Accupass"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E5%A4%A7%E6%BA%AA%E6%9C%A8%E4%BD%9C%E7%AB%A5%E7%8E%A9%E6%89%8B%E4%BD%9C%E9%AB%94%E9%A9%97%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BC%88%E5%8F%B0%E8%AA%9E%E6%95%99%E5%AD%B8%EF%BC%89&dates=20261205T140000%2F20261205T163000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E9%AB%94%E9%A9%97%E3%80%91%E5%A4%A7%E6%BA%AA%E6%9C%A8%E4%BD%9C%E7%AB%A5%E7%8E%A9%E6%89%8B%E4%BD%9C%E9%AB%94%E9%A9%97%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BC%88%E5%8F%B0%E8%AA%9E%E6%95%99%E5%AD%B8%EF%BC%89%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%E5%A4%A7%E6%BA%AA%E6%9C%A8%E8%97%9D%E5%B7%A5%E5%9D%8A+%2F+Accupass%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9ANT%24+380+%28%E5%90%AB%E6%9C%A8%E4%BD%9C%E6%9D%90%E6%96%99%E5%8C%85%E8%88%87%E5%B7%A5%E5%85%B7%E5%80%9F%E7%94%A8%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AAccupass+%E6%B4%BB%E5%8B%95%E9%80%9A%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2612050931201%0A%0A%E8%A6%AA%E6%89%8B%E6%89%93%E9%80%A0%E5%82%B3%E7%B5%B1%E5%8F%B0%E8%AA%9E%E7%AB%A5%E7%8E%A9%E3%80%8C%E7%AB%B9%E8%9C%BB%E8%9C%93%E3%80%8D%E8%88%87%E3%80%8C%E9%99%80%E8%9E%BA%EF%BC%88%E5%B9%B2%E6%A8%82%EF%BC%89%E3%80%8D%EF%BC%81%E6%9C%A8%E5%B7%A5%E8%80%81%E5%B8%AB%E5%85%A8%E7%A8%8B%E4%BB%A5%E7%94%9F%E5%8B%95%E5%8F%B0%E8%AA%9E%E4%BB%8B%E7%B4%B9%E5%8F%B0%E7%81%A3%E6%9C%A8%E6%96%99%E7%89%B9%E6%80%A7%E8%88%87%E5%82%B3%E7%B5%B1%E6%A6%AB%E6%8E%A5%E5%B7%A5%E8%97%9D%EF%BC%8C%E5%81%9A%E5%AE%8C%E9%82%84%E8%83%BD%E5%9C%A8%E4%B8%AD%E5%BA%AD%E5%A4%A7%E7%8E%A9%E6%89%93%E5%B9%B2%E6%A8%82%E7%AB%B6%E8%B3%BD%EF%BC%81&location=%E5%A4%A7%E6%BA%AA%E5%B7%A5%E8%97%9D%E5%9F%BA%E5%9C%B0+%28%E5%A4%A7%E6%BA%AA%E5%8D%80%E6%99%AE%E6%BF%9F%E8%B7%AF%29+%28%E6%A1%83%E5%9C%92%E5%B8%82%E5%A4%A7%E6%BA%AA%E5%8D%80%E6%99%AE%E6%BF%9F%E8%B7%AF13-2%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2612050931201"
+  },
+  {
+    "id": "threads_story_18",
+    "title": "【台語故事】中壢米倉劇場《巷仔內的台語講古暗訪》",
+    "description": "週五夜晚限定的青年台語講古茶會！在老倉庫改建的米倉劇場內，一邊品飲桃園在地東方美人茶，一邊聆聽桃園老火車站與中壢事件的庶民台語記憶。",
+    "city": "桃園市",
+    "district": "中壢區",
+    "category": "台語故事",
+    "start_time": "2026-12-11T19:30:00",
+    "end_time": "2026-12-11T21:30:00",
+    "venue": "米倉劇場 (桃園市中壢區中美路二段88號)",
+    "address": "桃園市中壢區中美路二段88號",
+    "organizer": "@taoyuan_taigi_crew (Threads 發起)",
+    "source_platform": "Threads",
+    "source_url": "https://www.threads.net/@taoyuan_taigi_crew/post/C9z01_storynight",
+    "cover_image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+    "price_info": "場地清潔費 NT$ 150 (含冷泡茶)",
+    "is_free": false,
+    "tags": [
+      "台語故事",
+      "米倉劇場",
+      "中壢",
+      "Threads",
+      "青年講古"
+    ],
+    "raw_metadata": {},
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5B%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%5D+%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E4%B8%AD%E5%A3%A2%E7%B1%B3%E5%80%89%E5%8A%87%E5%A0%B4%E3%80%8A%E5%B7%B7%E4%BB%94%E5%85%A7%E7%9A%84%E5%8F%B0%E8%AA%9E%E8%AC%9B%E5%8F%A4%E6%9A%97%E8%A8%AA%E3%80%8B&dates=20261211T193000%2F20261211T213000&details=%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E3%80%90%E5%8F%B0%E8%AA%9E%E6%95%85%E4%BA%8B%E3%80%91%E4%B8%AD%E5%A3%A2%E7%B1%B3%E5%80%89%E5%8A%87%E5%A0%B4%E3%80%8A%E5%B7%B7%E4%BB%94%E5%85%A7%E7%9A%84%E5%8F%B0%E8%AA%9E%E8%AC%9B%E5%8F%A4%E6%9A%97%E8%A8%AA%E3%80%8B%0A%0A%F0%9F%93%8C+%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%EF%BC%9A%40taoyuan_taigi_crew+%28Threads+%E7%99%BC%E8%B5%B7%29%0A%F0%9F%8F%B7%EF%B8%8F+%E8%B2%BB%E7%94%A8%EF%BC%9A%E5%A0%B4%E5%9C%B0%E6%B8%85%E6%BD%94%E8%B2%BB+NT%24+150+%28%E5%90%AB%E5%86%B7%E6%B3%A1%E8%8C%B6%29%0A%F0%9F%8C%90+%E4%BE%86%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%9AThreads%0A%F0%9F%94%97+%E6%B4%BB%E5%8B%95%2F%E8%B3%BC%E7%A5%A8%E7%B6%B2%E5%9D%80%EF%BC%9Ahttps%3A%2F%2Fwww.threads.net%2F%40taoyuan_taigi_crew%2Fpost%2FC9z01_storynight%0A%0A%E9%80%B1%E4%BA%94%E5%A4%9C%E6%99%9A%E9%99%90%E5%AE%9A%E7%9A%84%E9%9D%92%E5%B9%B4%E5%8F%B0%E8%AA%9E%E8%AC%9B%E5%8F%A4%E8%8C%B6%E6%9C%83%EF%BC%81%E5%9C%A8%E8%80%81%E5%80%89%E5%BA%AB%E6%94%B9%E5%BB%BA%E7%9A%84%E7%B1%B3%E5%80%89%E5%8A%87%E5%A0%B4%E5%85%A7%EF%BC%8C%E4%B8%80%E9%82%8A%E5%93%81%E9%A3%B2%E6%A1%83%E5%9C%92%E5%9C%A8%E5%9C%B0%E6%9D%B1%E6%96%B9%E7%BE%8E%E4%BA%BA%E8%8C%B6%EF%BC%8C%E4%B8%80%E9%82%8A%E8%81%86%E8%81%BD%E6%A1%83%E5%9C%92%E8%80%81%E7%81%AB%E8%BB%8A%E7%AB%99%E8%88%87%E4%B8%AD%E5%A3%A2%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%BA%B6%E6%B0%91%E5%8F%B0%E8%AA%9E%E8%A8%98%E6%86%B6%E3%80%82&location=%E7%B1%B3%E5%80%89%E5%8A%87%E5%A0%B4+%28%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E7%BE%8E%E8%B7%AF%E4%BA%8C%E6%AE%B588%E8%99%9F%29+%28%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E7%BE%8E%E8%B7%AF%E4%BA%8C%E6%AE%B588%E8%99%9F%29&sprop=website%3Ahttps%3A%2F%2Fwww.threads.net%2F%40taoyuan_taigi_crew%2Fpost%2FC9z01_storynight"
+  }
+];
+  </script>
+
+  <!-- APPLICATION JAVASCRIPT LOGIC -->
+  <script>
+    let currentView = 'grid';
+    let currentCity = 'all';
+    let currentCategory = 'all';
+    let currentPlatform = 'all';
+    let currentPrice = 'all';
+    let searchQuery = '';
+    let selectedActivity = null;
+    let calDate = new Date();
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      computeStats();
+      renderAll();
+    });
+
+    function initTheme() {
+      const saved = localStorage.getItem('taigi_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('taigi_theme', next);
+    }
+
+    function switchView(viewName) {
+      currentView = viewName;
+      document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.view === viewName);
+      });
+
+      document.getElementById('viewGrid').style.display = viewName === 'grid' ? 'grid' : 'none';
+      document.getElementById('viewAgenda').style.display = viewName === 'agenda' ? 'flex' : 'none';
+      document.getElementById('viewCalendar').style.display = viewName === 'calendar' ? 'block' : 'none';
+
+      if (viewName === 'calendar') {
+        renderCalendar();
+      }
+    }
+
+    function setCityFilter(city) {
+      currentCity = city;
+      updatePills('city', city);
+      renderAll();
+    }
+
+    function setCategoryFilter(category) {
+      currentCategory = category;
+      updatePills('category', category);
+      renderAll();
+    }
+
+    function setPlatformFilter(platform) {
+      currentPlatform = platform;
+      updatePills('platform', platform);
+      renderAll();
+    }
+
+    function setPriceFilter(price) {
+      currentPrice = price;
+      updatePills('price', price);
+      renderAll();
+    }
+
+    function updatePills(filterType, val) {
+      document.querySelectorAll(`button[data-filter-type="${filterType}"]`).forEach(p => {
+        p.classList.toggle('active', p.dataset.value === val);
+      });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      renderAll();
+    }
+
+    function getFilteredActivities() {
+      return ACTIVITIES_DATA.filter(act => {
+        if (currentCity !== 'all' && act.city !== currentCity) return false;
+        if (currentCategory !== 'all' && act.category !== currentCategory) return false;
+        if (currentPlatform !== 'all' && act.source_platform !== currentPlatform) return false;
+        if (currentPrice === 'free' && !act.is_free) return false;
+        if (currentPrice === 'paid' && act.is_free) return false;
+        if (searchQuery) {
+          const targetStr = `${act.title} ${act.description} ${act.venue} ${act.address} ${act.organizer} ${act.tags.join(' ')}`.toLowerCase();
+          if (!targetStr.includes(searchQuery)) return false;
+        }
+        return true;
+      });
+    }
+
+    function computeStats() {
+      const total = ACTIVITIES_DATA.length;
+      const taipei = ACTIVITIES_DATA.filter(a => a.city === '臺北市').length;
+      const newTaipei = ACTIVITIES_DATA.filter(a => a.city === '新北市').length;
+      const taoyuan = ACTIVITIES_DATA.filter(a => a.city === '桃園市').length;
+      const free = ACTIVITIES_DATA.filter(a => a.is_free).length;
+
+      document.getElementById('statTotal').innerText = total;
+      document.getElementById('statTaipei').innerText = taipei;
+      document.getElementById('statNewTaipei').innerText = newTaipei;
+      document.getElementById('statTaoyuan').innerText = taoyuan;
+      document.getElementById('statFree').innerText = free;
+
+      document.getElementById('count-city-all').innerText = total;
+      document.getElementById('count-city-taipei').innerText = taipei;
+      document.getElementById('count-city-newtaipei').innerText = newTaipei;
+      document.getElementById('count-city-taoyuan').innerText = taoyuan;
+    }
+
+    function renderAll() {
+      const filtered = getFilteredActivities();
+      document.getElementById('visibleCount').innerText = filtered.length;
+
+      renderGrid(filtered);
+      renderAgenda(filtered);
+      if (currentView === 'calendar') {
+        renderCalendar();
+      }
+    }
+
+    function formatDateDisplay(isoStr) {
+      if (!isoStr) return '';
+      const dt = new Date(isoStr);
+      if (isNaN(dt)) return isoStr;
+      const y = dt.getFullYear();
+      const m = dt.getMonth() + 1;
+      const d = dt.getDate();
+      const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+      const dayName = days[dt.getDay()];
+      const time = dt.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
+      return `${y}/${m}/${d} (${dayName}) ${time}`;
+    }
+
+    function renderGrid(events) {
+      const container = document.getElementById('viewGrid');
+      if (events.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1/-1;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="48" height="48" style="margin-bottom:1rem;color:var(--text-light);"><circle cx="12" cy="12" r="10" stroke-width="2"/><line x1="8" y1="15" x2="16" y2="15" stroke-width="2"/><line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2"/><line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2"/></svg>
+            <h3>查無符合條件的台語活動</h3>
+            <p>請嘗試清除篩選條件或縮小搜尋字詞</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = events.map(act => {
+        const cover = act.cover_image || 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80';
+        return `
+          <div class="event-card" onclick="openModal('${act.id}')">
+            <div class="card-cover">
+              <img src="${cover}" alt="${act.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80'">
+              <div class="card-badges-top">
+                <span class="badge badge-city">📍 ${act.city}</span>
+                <span class="badge badge-category">${act.category}</span>
+              </div>
+              <span class="badge badge-platform">${act.source_platform}</span>
+            </div>
+            <div class="card-body">
+              <div class="card-date">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                ${formatDateDisplay(act.start_time)}
+              </div>
+              <h3 class="card-title">${act.title}</h3>
+              <p class="card-desc">${act.description}</p>
+              <div class="card-meta">
+                <div class="meta-item">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>${act.venue}</span>
+                </div>
+                <div class="meta-item">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  <span>${act.organizer}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="card-price ${act.is_free ? 'free' : ''}">${act.price_info}</span>
+              <button class="btn btn-primary" style="padding: 0.35rem 0.85rem; font-size:0.8rem;">查看詳情</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderAgenda(events) {
+      const container = document.getElementById('viewAgenda');
+      if (events.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>查無符合條件的台語活動</h3>
+          </div>
+        `;
+        return;
+      }
+
+      const groups = {};
+      events.forEach(act => {
+        const dateKey = act.start_time.substring(0, 10);
+        if (!groups[dateKey]) groups[dateKey] = [];
+        groups[dateKey].push(act);
+      });
+
+      let html = '';
+      Object.keys(groups).sort().forEach(dateKey => {
+        const dt = new Date(dateKey);
+        const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+        const groupLabel = `${dt.getFullYear()}年 ${dt.getMonth() + 1}月 ${dt.getDate()}日 (${days[dt.getDay()]})`;
+
+        html += `
+          <div>
+            <div class="agenda-group-header">
+              <span>📅 ${groupLabel}</span>
+              <span style="font-size:0.82rem; font-weight:600; color:var(--text-muted);">${groups[dateKey].length} 場活動</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:1rem; margin-top:0.85rem;">
+              ${groups[dateKey].map(act => {
+                const d = new Date(act.start_time);
+                const timeStr = d.toLocaleTimeString('zh-TW', { hour:'2-digit', minute:'2-digit', hour12:false });
+                return `
+                  <div class="agenda-item" onclick="openModal('${act.id}')">
+                    <div class="agenda-time-box">
+                      <div class="day-num">${d.getDate()}</div>
+                      <div class="month-name">${d.getMonth()+1}月</div>
+                      <div class="time-str">${timeStr}</div>
+                    </div>
+                    <div class="agenda-content">
+                      <div style="display:flex; gap:0.4rem; margin-bottom:0.35rem; flex-wrap:wrap;">
+                        <span class="badge badge-city">📍 ${act.city}</span>
+                        <span class="badge badge-category">${act.category}</span>
+                        <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${act.source_platform}</span>
+                      </div>
+                      <h3>${act.title}</h3>
+                      <div class="agenda-content-meta">
+                        <span>🏛️ ${act.venue}</span>
+                        <span>👥 ${act.organizer}</span>
+                        <span>🏷️ <strong style="color:var(--primary);">${act.price_info}</strong></span>
+                      </div>
+                      <p style="font-size:0.85rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${act.description}</p>
+                    </div>
+                    <div class="agenda-actions">
+                      <button class="btn btn-primary" style="font-size:0.82rem; justify-content:center;">活動詳情</button>
+                      <a href="${act.gcal_url}" target="_blank" class="btn btn-light" style="font-size:0.8rem; justify-content:center; color:var(--text-main); border-color:var(--border-color);" onclick="event.stopPropagation();">📅 加日曆</a>
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function renderCalendar() {
+      const year = calDate.getFullYear();
+      const month = calDate.getMonth();
+      document.getElementById('calCurrentMonthLabel').innerText = `${year}年 ${month + 1}月`;
+
+      const firstDayIndex = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const prevDaysInMonth = new Date(year, month, 0).getDate();
+
+      const container = document.getElementById('calGridDays');
+      let html = '';
+      const filtered = getFilteredActivities();
+
+      for (let i = firstDayIndex - 1; i >= 0; i--) {
+        const d = prevDaysInMonth - i;
+        html += `<div class="cal-cell other-month"><div class="cal-cell-header"><span class="cal-date-num">${d}</span></div></div>`;
+      }
+
+      const today = new Date();
+      for (let day = 1; day <= daysInMonth; day++) {
+        const isToday = today.getFullYear() === year && today.getMonth() === month && today.getDate() === day;
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const dayEvents = filtered.filter(a => a.start_time.startsWith(dateStr));
+
+        html += `
+          <div class="cal-cell ${isToday ? 'today' : ''}">
+            <div class="cal-cell-header">
+              <span class="cal-date-num">${day}</span>
+              ${dayEvents.length > 0 ? `<span style="font-size:0.7rem; font-weight:700; color:var(--primary);">${dayEvents.length}場</span>` : ''}
+            </div>
+            <div class="cal-events-list">
+              ${dayEvents.map(ev => `
+                <div class="cal-event-pill" onclick="openModal('${ev.id}')" title="${ev.title}">
+                  ${ev.title}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      const totalCells = firstDayIndex + daysInMonth;
+      const nextDays = (7 - (totalCells % 7)) % 7;
+      for (let j = 1; j <= nextDays; j++) {
+        html += `<div class="cal-cell other-month"><div class="cal-cell-header"><span class="cal-date-num">${j}</span></div></div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function prevMonth() {
+      calDate.setMonth(calDate.getMonth() - 1);
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      calDate.setMonth(calDate.getMonth() + 1);
+      renderCalendar();
+    }
+
+    function goToToday() {
+      calDate = new Date();
+      renderCalendar();
+    }
+
+    function openModal(actId) {
+      const act = ACTIVITIES_DATA.find(a => a.id === actId);
+      if (!act) return;
+      selectedActivity = act;
+
+      document.getElementById('modalImg').src = act.cover_image || 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80';
+      document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${act.district})` : '');
+      document.getElementById('modalCategory').innerText = act.category;
+      document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
+      document.getElementById('modalTitle').innerText = act.title;
+      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time);
+      document.getElementById('modalVenue').innerText = `${act.venue} (${act.address})`;
+      document.getElementById('modalOrganizer').innerText = act.organizer;
+      document.getElementById('modalPrice').innerText = act.price_info;
+      document.getElementById('modalDesc').innerText = act.description;
+
+      document.getElementById('modalTicketLink').href = act.source_url;
+      document.getElementById('modalGCalLink').href = act.gcal_url;
+      document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(act.venue + ' ' + act.address)}`;
+
+      document.getElementById('eventModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('eventModal').classList.remove('active');
+      document.body.style.overflow = '';
+      selectedActivity = null;
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target.classList.contains('modal-overlay')) {
+        e.target.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function openSyncModal() {
+      document.getElementById('syncModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSyncModal() {
+      document.getElementById('syncModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function exportCalendarFile() {
+      let icsContent = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\r\nX-WR-CALNAME:北北桃台語活動行事曆\r\n";
+      
+      const filtered = getFilteredActivities();
+      filtered.forEach(act => {
+        const dt = act.start_time.replace(/[-:]/g, "").split(".")[0];
+        const formattedDt = dt.includes("T") ? dt : dt + "T140000";
+        icsContent += "BEGIN:VEVENT\r\n";
+        icsContent += `UID:${act.id}@taigiactivities.tw\r\n`;
+        icsContent += `DTSTART:${formattedDt}\r\n`;
+        icsContent += `DTEND:${formattedDt}\r\n`;
+        icsContent += `SUMMARY:[${act.category}] ${act.title.replace(/,/g, '\\,')}\r\n`;
+        icsContent += `DESCRIPTION:${act.description.replace(/\n/g, '\\n').replace(/,/g, '\\,')}\r\n`;
+        icsContent += `LOCATION:${act.venue.replace(/,/g, '\\,')}\r\n`;
+        icsContent += `URL:${act.source_url}\r\n`;
+        icsContent += "END:VEVENT\r\n";
+      });
+
+      icsContent += "END:VCALENDAR";
+
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'taigi_activities.ics';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function downloadSingleIcs() {
+      if (!selectedActivity) return;
+      const act = selectedActivity;
+      const dt = act.start_time.replace(/[-:]/g, "").split(".")[0];
+      const formattedDt = dt.includes("T") ? dt : dt + "T140000";
+
+      let icsContent = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\r\n";
+      icsContent += "BEGIN:VEVENT\r\n";
+      icsContent += `UID:${act.id}@taigiactivities.tw\r\n`;
+      icsContent += `DTSTART:${formattedDt}\r\n`;
+      icsContent += `DTEND:${formattedDt}\r\n`;
+      icsContent += `SUMMARY:[${act.category}] ${act.title.replace(/,/g, '\\,')}\r\n`;
+      icsContent += `DESCRIPTION:${act.description.replace(/\n/g, '\\n').replace(/,/g, '\\,')}\r\n`;
+      icsContent += `LOCATION:${act.venue.replace(/,/g, '\\,')}\r\n`;
+      icsContent += `URL:${act.source_url}\r\n`;
+      icsContent += "END:VEVENT\r\n";
+      icsContent += "END:VCALENDAR";
+
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `${act.title.substring(0, 20)}.ics`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
