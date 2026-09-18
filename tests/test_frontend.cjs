@@ -29,13 +29,13 @@ context.localStorage={getItem(){throw Error('blocked')},setItem(){throw Error('b
 run('initTheme()');assert.equal(theme,'dark');run('toggleTheme()');assert.equal(theme,'light');
 for(const [i,label] of ['拜一','拜二','拜三','拜四','拜五','拜六','禮拜'].entries()){
   const date=`2026-09-${14+i}T14:00:00+08:00`;
-  assert.ok(run(`formatDateDisplay('${date}')`).includes(`(${label})`));
+  assert.ok(run(`formatDateDisplay('${date}')`).includes(` ${label} `));
 }
-assert.equal(run("formatDateDisplay('2026-09-19T10:00:00+08:00')"),'2026∙09∙19 (拜六) 10:00');
-assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 (拜一) 00:05');
+assert.equal(run("formatDateDisplay('2026-09-19T10:00:00+08:00')"),'2026∙09∙19 拜六 10:00');
+assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 拜一 00:05');
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
 run(`renderAgenda([{...ACTIVITIES_DATA[0],start_time:'2026-09-20T16:30:00Z'}])`);
-assert.match(element('viewAgenda').innerHTML,/2026∙09∙21 \(拜一\)/);
+assert.match(element('viewAgenda').innerHTML,/2026∙09∙21 拜一/);
 assert.equal(run('getFilteredActivities().length'),data.length);
 run("currentPrice='free'");
 assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.is_free===true).length);
@@ -54,6 +54,7 @@ if (data.length) {
   assert.match(element('modalTime').innerText,/～/);
 }
 // Month selection is a union of year-months, intersected with all other filters.
+assert.equal(run("monthLabel('2026-09')"),'2026∙09');
 run('renderMonthFilters()');
 assert.match(element('monthFilterOptions').innerHTML, /攏總/);
 const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();

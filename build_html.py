@@ -385,7 +385,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     function monthLabel(key) {{
       const [year, month] = key.split('-');
-      return `${{year}}年${{Number(month)}}月`;
+      return `${{year}}∙${{month}}`;
     }}
 
     function renderMonthFilters() {{
@@ -486,7 +486,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function formatCalendarDate(dateKey, withWeekday = true) {{
       const label = dateKey.replace(/-/g, '∙');
       const days = ['禮拜', '拜一', '拜二', '拜三', '拜四', '拜五', '拜六'];
-      return withWeekday ? `${{label}} (${{days[new Date(dateKey + 'T00:00:00Z').getUTCDay()]}})` : label;
+      return withWeekday ? `${{label}} ${{days[new Date(dateKey + 'T00:00:00Z').getUTCDay()]}}` : label;
     }}
 
     function formatDateDisplay(isoStr) {{
