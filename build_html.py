@@ -26,12 +26,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     resource_cards = ''.join(
         '<article class="resource-card"><small>' + escape(r['city']) + ' · ' +
-        {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '展覽與台語語音導覽'}[r['kind']] +
+        {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '台語相關展覽', 'reading_resource': '台語閱讀推廣'}[r['kind']] +
         '</small><h3>' + escape(r['title']) + '</h3><p>' + escape(r['description']) +
         '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">查看官方資訊 ↗</a>' +
         '<small>核對：' + escape(r['checked_at'][:10]) + '</small></article>' for r in (resources or []))
-    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽與展覽資訊</h2>'
-                        '<p>常設語音、預約服務與展覽資訊；請依館方公告確認開館日、費用及預約。以下不列入場次數或日曆下載。</p>'
+    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽與閱讀資訊</h2>'
+                        '<p>語音導覽、預約服務、書展與閱讀推廣；請依館方公告確認開館日、費用及預約。以下不列入場次數或日曆下載。</p>'
                         '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
@@ -1221,7 +1221,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
 
-  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。 <a href="#guideResources" style="color:var(--primary)">台語導覽與展覽資訊 ↓</a></div>
+  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。 <a href="#guideResources" style="color:var(--primary)">台語導覽、展覽與閱讀資訊 ↓</a></div>
 
   <!-- CONTROLS & FILTERS -->
   <div class="controls-wrapper">

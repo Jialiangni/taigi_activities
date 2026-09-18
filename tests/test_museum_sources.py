@@ -34,9 +34,9 @@ class MuseumTests(unittest.TestCase):
 
     def test_resource_expiry_and_no_calendar_fields(self):
         rows = load_resources(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
-        self.assertEqual(len(rows), 5)
+        self.assertEqual(len(rows), 9)
         self.assertTrue(all('start_time' not in r for r in rows))
-        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 4)
+        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 7)
         with self.assertRaises(ValueError):
             check_source_content(rows[0], '<p>展覽已結束，原台語資訊已移除</p>')
 
@@ -47,9 +47,26 @@ class MuseumTests(unittest.TestCase):
             p = Path(tmp) / 'index.html'
             generate_single_html([], p, resources=rows)
             html = p.read_text()
-        self.assertIn('台語導覽與展覽資訊', html)
+        self.assertIn('台語導覽、展覽與閱讀資訊', html)
         self.assertIn('&lt;script&gt;', html)
         self.assertNotIn('<script>alert(1)</script>', html)
+
+    def test_library_resources_are_not_audio_guides_or_calendar_sessions(self):
+        rows = load_resources(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
+        libraries = [r for r in rows if r['id'].startswith('tpml_')]
+        self.assertEqual(len(libraries), 4)
+        self.assertEqual({r['kind'] for r in libraries}, {'exhibition_resource', 'reading_resource'})
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'index.html'
+            generate_single_html([], p, resources=libraries)
+            html = p.read_text()
+        self.assertIn('台語閱讀推廣', html)
+        self.assertIn('台語相關展覽', html)
+        self.assertNotIn('展覽與台語語音導覽', html)
+        at_october = load_resources(now=datetime.fromisoformat('2026-10-01T00:00:00+08:00'))
+        self.assertNotIn('tpml_xiyuan_reading', {r['id'] for r in at_october})
+        at_new_year = load_resources(now=datetime.fromisoformat('2027-01-01T00:00:00+08:00'))
+        self.assertFalse(any(r['id'].startswith('tpml_') for r in at_new_year))
 
     def test_taigiloo_story_uses_explicit_dates_not_week_rule(self):
         events = load_verified(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))

@@ -43,12 +43,12 @@ class VerifiedCalendarTests(unittest.TestCase):
 
     def test_expanded_public_catalog_has_reviewed_sessions(self):
         events = load_verified(now=NOW)
-        self.assertEqual(len(events), 63)
-        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 11)
+        self.assertEqual(len(events), 81)
+        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 27)
         self.assertEqual(sum(a.city.value == '新北市' for a in events), 10)
-        self.assertEqual(sum(a.city.value == '桃園市' for a in events), 42)
-        self.assertEqual(sum(a.is_free is True for a in events), 14)
-        self.assertEqual(sum(a.is_free is False for a in events), 12)
+        self.assertEqual(sum(a.city.value == '桃園市' for a in events), 44)
+        self.assertEqual(sum(a.is_free is True for a in events), 16)
+        self.assertEqual(sum(a.is_free is False for a in events), 28)
         self.assertFalse(any('後街人生' in a.title for a in events))
         # Human-rights series has five explicit sessions, not one multi-month event.
         series = [a for a in events if a.id.startswith('acc_2607280236031295663510')]
@@ -67,6 +67,25 @@ class VerifiedCalendarTests(unittest.TestCase):
         changed = copy.deepcopy(program)
         changed['eventVenues'][0]['events'].pop(0)
         with self.assertRaises(ValueError): check_opentix_sessions(source, {'result': changed})
+
+    def test_yongchun_course_matches_official_recurrence_and_copy_fee(self):
+        rows = [a for a in load_verified(now=NOW) if a.id.startswith('tpml_yongchun_')]
+        self.assertEqual(len(rows), 16)
+        self.assertEqual(rows[0].start_time, '2026-09-23T14:00:00+08:00')
+        self.assertEqual(rows[-1].end_time, '2027-01-06T16:00:00+08:00')
+        self.assertTrue(all(datetime.fromisoformat(a.start_time).weekday() == 2 for a in rows))
+        total = sum((datetime.fromisoformat(a.end_time) - datetime.fromisoformat(a.start_time)).total_seconds() for a in rows)
+        self.assertEqual(total, 32 * 3600)
+        self.assertTrue(all(a.is_free is False and '影印費' in a.price_info and '整期' in a.description for a in rows))
+
+    def test_district_audit_publishes_only_approved_ids(self):
+        audit = json.loads((DATA_PATH.parent / 'audit/2026-09-18-district-publication-review.json').read_text())
+        self.assertEqual(len(audit['records']), 14)
+        events = load_verified(now=NOW)
+        self.assertTrue(set(audit['new_session_ids']) <= {a.id for a in events})
+        urls = {a.source_url for a in events}
+        withheld = [r for r in audit['records'] if r['decision'] in ('excluded', 'expired', 'out_of_region', 'pending_language_evidence')]
+        self.assertTrue(all(r['url'] not in urls and not r['published_ids'] for r in withheld))
 
     def test_unreviewed_entry_fails(self):
         self.data['activities'][0]['verification']['status'] = 'pending'

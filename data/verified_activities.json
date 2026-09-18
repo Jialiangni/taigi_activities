@@ -495,6 +495,54 @@
         "活動免費，需購票入館",
         "全票 30元、優待票 15元"
       ]
+    },
+    "tpml_yongchun_2026": {
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "title": "永春分館「臺灣語初級研習班」",
+      "checked_at": "2026-09-18T21:36:26+08:00",
+      "snapshot_sha256": "0cf765be3695e3bb982c34dcf8bef74e7e7932f31a7b75f66bf292b2b8fa61ec",
+      "required_text": [
+        "臺灣語初級研習班",
+        "115年9月23日起至116年1月6日止，每週三下午2時至4時上課。",
+        "每次2小時，共計32小時",
+        "永春分館4樓多功能活動室",
+        "臺北市信義區松山路294號4樓",
+        "免學費(惟學員需自行負擔講義影印費)",
+        "臺北市台灣語協會",
+        "對臺語有興趣"
+      ]
+    },
+    "typl10102": {
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+      "title": "【總館活動】台語說故事：如果我有一隻恐龍",
+      "checked_at": "2026-09-18T21:36:32+08:00",
+      "snapshot_sha256": "91ce7c811153a6dffcc65e8f9d927a88b4c5a728b373d01e641fad82ce9fc581",
+      "required_text": [
+        "台語說故事",
+        "2026-10-03 10:00",
+        "2026-10-03 12:00",
+        "總館3樓親子小學堂",
+        "桃園市桃園區南平路303號",
+        "活動費用",
+        "免費",
+        "廖輝煌"
+      ]
+    },
+    "typl10135": {
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+      "title": "台語說故事：趣味手作摺紙",
+      "checked_at": "2026-09-18T21:36:32+08:00",
+      "snapshot_sha256": "1756fb3d75e1620dbf449716497886fefd0706dfa2c4e1668e2796996373be35",
+      "required_text": [
+        "台語說故事",
+        "2026-09-20 09:30",
+        "2026-09-20 11:30",
+        "會稽分館1F兒童室",
+        "桃園市桃園區青溪里自強路217號",
+        "活動費用",
+        "免費",
+        "張日東"
+      ]
     }
   },
   "activities": [
@@ -3034,6 +3082,744 @@
           "organizer": "國立臺灣博物館",
           "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
           "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20260923",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第1／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-09-23T14:00:00+08:00",
+        "end_time": "2026-09-23T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-09-23T14:00:00+08:00",
+          "end_time": "2026-09-23T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20260930",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第2／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-09-30T14:00:00+08:00",
+        "end_time": "2026-09-30T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-09-30T14:00:00+08:00",
+          "end_time": "2026-09-30T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261007",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第3／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-10-07T14:00:00+08:00",
+        "end_time": "2026-10-07T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-10-07T14:00:00+08:00",
+          "end_time": "2026-10-07T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261014",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第4／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-10-14T14:00:00+08:00",
+        "end_time": "2026-10-14T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-10-14T14:00:00+08:00",
+          "end_time": "2026-10-14T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261021",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第5／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-10-21T14:00:00+08:00",
+        "end_time": "2026-10-21T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-10-21T14:00:00+08:00",
+          "end_time": "2026-10-21T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261028",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第6／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-10-28T14:00:00+08:00",
+        "end_time": "2026-10-28T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-10-28T14:00:00+08:00",
+          "end_time": "2026-10-28T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261104",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第7／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-11-04T14:00:00+08:00",
+        "end_time": "2026-11-04T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-11-04T14:00:00+08:00",
+          "end_time": "2026-11-04T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261111",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第8／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-11-11T14:00:00+08:00",
+        "end_time": "2026-11-11T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-11-11T14:00:00+08:00",
+          "end_time": "2026-11-11T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261118",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第9／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-11-18T14:00:00+08:00",
+        "end_time": "2026-11-18T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-11-18T14:00:00+08:00",
+          "end_time": "2026-11-18T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261125",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第10／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-11-25T14:00:00+08:00",
+        "end_time": "2026-11-25T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-11-25T14:00:00+08:00",
+          "end_time": "2026-11-25T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261202",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第11／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-12-02T14:00:00+08:00",
+        "end_time": "2026-12-02T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-12-02T14:00:00+08:00",
+          "end_time": "2026-12-02T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261209",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第12／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-12-09T14:00:00+08:00",
+        "end_time": "2026-12-09T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-12-09T14:00:00+08:00",
+          "end_time": "2026-12-09T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261216",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第13／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-12-16T14:00:00+08:00",
+        "end_time": "2026-12-16T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-12-16T14:00:00+08:00",
+          "end_time": "2026-12-16T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261223",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第14／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-12-23T14:00:00+08:00",
+        "end_time": "2026-12-23T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-12-23T14:00:00+08:00",
+          "end_time": "2026-12-23T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20261230",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第15／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2026-12-30T14:00:00+08:00",
+        "end_time": "2026-12-30T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2026-12-30T14:00:00+08:00",
+          "end_time": "2026-12-30T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tpml_yongchun_20270106",
+        "title": "永春分館「臺灣語初級研習班」",
+        "description": "系列課程第16／16次。官方公告2026/9/23至2027/1/6每週三14:00–16:00，共32小時，依公告週期拆列。須線上報名整期課程，非單場自由入場；對象為略具臺語聽說能力的民眾。講義影印費自付，課程異動請以館方公告為準。",
+        "city": "臺北市",
+        "district": "信義區",
+        "category": "台語活動",
+        "start_time": "2027-01-06T14:00:00+08:00",
+        "end_time": "2027-01-06T16:00:00+08:00",
+        "venue": "永春分館4樓多功能活動室",
+        "address": "臺北市信義區松山路294號4樓",
+        "organizer": "臺北市立圖書館永春分館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "cover_image": "",
+        "price_info": "免學費；學員須自付講義影印費，金額未公告",
+        "is_free": false,
+        "tags": [
+          "臺語研習",
+          "系列課程",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tpml_yongchun_2026",
+        "language_evidence": "官方課程以臺語羅馬拼音與詞彙為內容，對象為對臺語有興趣且略具聽說能力的民眾。",
+        "method": "人工核對官方起訖日期、週三規則及總32小時，展開16次，每次2小時；未將整期誤作連續活動，免學費不等於全免。",
+        "confirmed_fields": {
+          "title": "永春分館「臺灣語初級研習班」",
+          "start_time": "2027-01-06T14:00:00+08:00",
+          "end_time": "2027-01-06T16:00:00+08:00",
+          "venue": "永春分館4樓多功能活動室",
+          "city": "臺北市",
+          "organizer": "臺北市立圖書館永春分館",
+          "price_info": "免學費；學員須自付講義影印費，金額未公告",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "typl10102_20261003",
+        "title": "【總館活動】台語說故事：如果我有一隻恐龍",
+        "description": "廖輝煌老師以台語帶讀《如果我有一隻恐龍》，結合繪本、互動及創意手作。免費，報名連結見官方公告。",
+        "city": "桃園市",
+        "district": "桃園區",
+        "category": "台語故事",
+        "start_time": "2026-10-03T10:00:00+08:00",
+        "end_time": "2026-10-03T12:00:00+08:00",
+        "venue": "桃園市立圖書館總館3樓親子小學堂",
+        "address": "桃園市桃園區南平路303號",
+        "organizer": "桃園市立圖書館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+        "cover_image": "",
+        "price_info": "免費；請依官方公告報名",
+        "is_free": true,
+        "tags": [
+          "親子",
+          "台語說故事",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "typl10102",
+        "language_evidence": "官方標題及正文均明列台語說故事。",
+        "method": "人工核對頁首活動欄與正文的日期、時間、場館、台語內容，費用欄明列免費；與既有63場比對無重複。",
+        "confirmed_fields": {
+          "title": "【總館活動】台語說故事：如果我有一隻恐龍",
+          "start_time": "2026-10-03T10:00:00+08:00",
+          "end_time": "2026-10-03T12:00:00+08:00",
+          "venue": "桃園市立圖書館總館3樓親子小學堂",
+          "city": "桃園市",
+          "organizer": "桃園市立圖書館",
+          "price_info": "免費；請依官方公告報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "typl10135_20260920",
+        "title": "台語說故事：趣味手作摺紙",
+        "description": "張日東老師以台語故事搭配趣味摺紙，歡迎親子及想學習台語的民眾；免費、名額有限，請由官方公告前往報名。",
+        "city": "桃園市",
+        "district": "桃園區",
+        "category": "台語故事",
+        "start_time": "2026-09-20T09:30:00+08:00",
+        "end_time": "2026-09-20T11:30:00+08:00",
+        "venue": "桃園市立圖書館會稽分館1F兒童室",
+        "address": "桃園市桃園區青溪里自強路217號",
+        "organizer": "桃園市立圖書館",
+        "source_platform": "北北桃市立圖書館",
+        "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+        "cover_image": "",
+        "price_info": "免費；請依官方公告報名",
+        "is_free": true,
+        "tags": [
+          "親子",
+          "台語說故事",
+          "需報名"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "typl10135",
+        "language_evidence": "官方標題及正文均明列台語說故事。",
+        "method": "人工核對頁首活動欄與正文的日期、時間、場館、台語內容，費用欄明列免費；與既有63場比對無重複。",
+        "confirmed_fields": {
+          "title": "台語說故事：趣味手作摺紙",
+          "start_time": "2026-09-20T09:30:00+08:00",
+          "end_time": "2026-09-20T11:30:00+08:00",
+          "venue": "桃園市立圖書館會稽分館1F兒童室",
+          "city": "桃園市",
+          "organizer": "桃園市立圖書館",
+          "price_info": "免費；請依官方公告報名",
+          "is_free": true
         }
       }
     }

@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-18T21:39:49+08:00",
+  "candidate_count": 14,
+  "new_session_count": 18,
+  "new_resource_count": 4,
+  "published_session_total": 81,
+  "published_resource_total": 9,
+  "new_session_ids": [
+    "tpml_yongchun_20260923",
+    "tpml_yongchun_20260930",
+    "tpml_yongchun_20261007",
+    "tpml_yongchun_20261014",
+    "tpml_yongchun_20261021",
+    "tpml_yongchun_20261028",
+    "tpml_yongchun_20261104",
+    "tpml_yongchun_20261111",
+    "tpml_yongchun_20261118",
+    "tpml_yongchun_20261125",
+    "tpml_yongchun_20261202",
+    "tpml_yongchun_20261209",
+    "tpml_yongchun_20261216",
+    "tpml_yongchun_20261223",
+    "tpml_yongchun_20261230",
+    "tpml_yongchun_20270106",
+    "typl10102_20261003",
+    "typl10135_20260920"
+  ],
+  "new_resource_ids": [
+    "tpml_xiyuan_reading",
+    "tpml_wanhua_books",
+    "tpml_liuxiang_reading",
+    "tpml_jiuzhuang_books"
+  ],
+  "records": [
+    {
+      "candidate_id": "d7c732aae15b836240e96d41",
+      "collector_id": "tp_center_nhdo",
+      "title": "臺北市內湖區公所",
+      "url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+      "evidence": {
+        "url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+        "final_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:24+08:00",
+        "sha256": "a264180ab4380b3fab6fa0e698f3605c7358fa22e4aab9e6c3beb112049beb9a"
+      },
+      "decision": "excluded",
+      "reason": "內湖地名沿革，正文提及閩南語地名並非活動；活動中心字樣來自導覽選單。",
+      "published_ids": []
+    },
+    {
+      "candidate_id": "afa44c408e05350163c1b5b0",
+      "collector_id": "tp_center_xydo",
+      "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
+      "url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "evidence": {
+        "url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+        "final_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:24+08:00",
+        "sha256": "1fbb29c2f3d55966322796febdc0c9a63c519bb508bbc5d8eb756ca393eec184"
+      },
+      "decision": "expired",
+      "reason": "民國114年7月12、19日的活動，已結束。",
+      "published_ids": []
+    },
+    {
+      "candidate_id": "5436e86cbbe7e6dc063f8095",
+      "collector_id": "ntpc_center_banqiao",
+      "title": "最新消息-2026「溪州提拔泥-泥巴野餐趣」-新北市板橋區公所",
+      "url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c&mserno=8b0143b0d38c5d7492a12258a3493b75",
+      "evidence": {
+        "url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c&mserno=8b0143b0d38c5d7492a12258a3493b75",
+        "final_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c&mserno=8b0143b0d38c5d7492a12258a3493b75",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:24+08:00",
+        "sha256": "e28615a359f0d4563b89ddede5d84e72af0d11d32b28339fb583f04b10c6fb5d"
+      },
+      "decision": "out_of_region",
+      "reason": "板橋轉貼彰化溪州活動，不能由刊登機關推定活動在新北。",
+      "published_ids": []
+    },
+    {
+      "candidate_id": "9e99e1e786f6a1a6349a2145",
+      "collector_id": "ntpc_center_ruifang",
+      "title": "新聞-新北市瑞芳區公所",
+      "url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+      "evidence": {
+        "url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+        "final_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:25+08:00",
+        "sha256": "a2b2a0d79e6eafa4b035d109706f067034a3ecd6e8af0c4298e5a19c892fb6c9"
+      },
+      "decision": "pending_language_evidence",
+      "reason": "區公所9/19唐美雲歌仔戲《消失的神樹》可由青雲殿主辦專頁補證17:30扮仙、18:20正式演出；目前所讀公告未明列演出語言，暫不將劇種推定為此場語言證據；其餘瓶燈節活動不能跟著推定台語。",
+      "published_ids": [],
+      "supplementary_evidence": {
+        "url": "https://www.qyt.tw/news-home/%E7%91%9E%E8%8A%B3%E9%9D%92%E9%9B%B2%E6%AE%BF-62-%E9%80%B1%E5%B9%B4%E5%AE%89%E5%BA%A7%E5%85%A5%E5%BB%9F%E7%B4%80%E5%BF%B5%E6%97%A5%EF%BD%9C9-19%EF%BC%88%E5%85%AD%EF%BC%89%E5%94%90%E7%BE%8E%E9%9B%B2%E6%AD%8C%E4%BB%94%E6%88%B2%E5%9C%98%E3%80%8A%E6%B6%88%E5%A4%B1%E7%9A%84%E7%A5%9E%E6%A8%B9%E3%80%8B",
+        "final_url": "https://www.qyt.tw/news-home/%E7%91%9E%E8%8A%B3%E9%9D%92%E9%9B%B2%E6%AE%BF-62-%E9%80%B1%E5%B9%B4%E5%AE%89%E5%BA%A7%E5%85%A5%E5%BB%9F%E7%B4%80%E5%BF%B5%E6%97%A5%EF%BD%9C9-19%EF%BC%88%E5%85%AD%EF%BC%89%E5%94%90%E7%BE%8E%E9%9B%B2%E6%AD%8C%E4%BB%94%E6%88%B2%E5%9C%98%E3%80%8A%E6%B6%88%E5%A4%B1%E7%9A%84%E7%A5%9E%E6%A8%B9%E3%80%8B",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:37:33+08:00",
+        "sha256": "800739de5d055dff8e624aa52222ec2c1386fd5d7e5b029f2ddceb40b65bcdbb"
+      }
+    },
+    {
+      "candidate_id": "aad5eefbd41c9217ff9390b4",
+      "collector_id": "ntpc_center_wanli",
+      "title": "公告-新北市萬里區公所",
+      "url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=ceb4c57b67737d35b562c005934b32bc&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
+      "evidence": {
+        "url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=ceb4c57b67737d35b562c005934b32bc&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
+        "final_url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=ceb4c57b67737d35b562c005934b32bc&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:25+08:00",
+        "sha256": "ddfbde0a2630849709819da9813dfa426513c48fadc8d704798d11dd3a0b2127"
+      },
+      "decision": "excluded",
+      "reason": "高速公路疏導宣導短片有台語版本，但不是可參加的台語藝文活動。",
+      "published_ids": []
+    },
+    {
+      "candidate_id": "9e57e3cab7f30e9de50b595c",
+      "collector_id": "tpml_district_b",
+      "title": "永春分館「臺灣語初級研習班」，歡迎報名參加!",
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "evidence": {
+        "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:26+08:00",
+        "sha256": "0cf765be3695e3bb982c34dcf8bef74e7e7932f31a7b75f66bf292b2b8fa61ec"
+      },
+      "decision": "published_sessions",
+      "reason": "官方明列起訖日期及每週三14:00–16:00，16次與32小時吻合；整期報名且影印費自付。",
+      "published_ids": [
+        "tpml_yongchun_20260923",
+        "tpml_yongchun_20260930",
+        "tpml_yongchun_20261007",
+        "tpml_yongchun_20261014",
+        "tpml_yongchun_20261021",
+        "tpml_yongchun_20261028",
+        "tpml_yongchun_20261104",
+        "tpml_yongchun_20261111",
+        "tpml_yongchun_20261118",
+        "tpml_yongchun_20261125",
+        "tpml_yongchun_20261202",
+        "tpml_yongchun_20261209",
+        "tpml_yongchun_20261216",
+        "tpml_yongchun_20261223",
+        "tpml_yongchun_20261230",
+        "tpml_yongchun_20270106"
+      ]
+    },
+    {
+      "candidate_id": "6de855abb7bd1ada8f5b9e8d",
+      "collector_id": "tpml_district_g",
+      "title": "西園分館「臺語來𨑨迌：翻翻日常味」",
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64&s=F992B94F4E146C70",
+      "evidence": {
+        "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64&s=F992B94F4E146C70",
+        "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64&s=F992B94F4E146C70",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:26+08:00",
+        "sha256": "c0cc3772106373cb7e255676343924c150ea270a23243529af50a1f6959ddefe"
+      },
+      "decision": "published_resource",
+      "reason": "官方期間及台語內容可核對；未列固定單場時刻，以資訊卡刊登，不虛構開閉館時間、不加入ICS。",
+      "published_ids": [
+        "tpml_xiyuan_reading"
+      ]
+    },
+    {
+      "candidate_id": "4166922a4bafe35b76954780",
+      "collector_id": "tpml_district_g",
+      "title": "萬華分館「輪轉台語冊在此」主題書展，歡迎一起來讓 「台語冊，轉起來！」",
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+      "evidence": {
+        "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+        "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:26+08:00",
+        "sha256": "e4e45fa6b642404e39e9888509ce69b035c732a8af7732008c12cd3565de72e5"
+      },
+      "decision": "published_resource",
+      "reason": "官方期間及台語內容可核對；未列固定單場時刻，以資訊卡刊登，不虛構開閉館時間、不加入ICS。",
+      "published_ids": [
+        "tpml_wanhua_books"
+      ]
+    },
+    {
+      "candidate_id": "867837fdc2d5bcee4aa2f552",
+      "collector_id": "tpml_district_g",
+      "title": "柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」鄉土語言暨電子資源閱讀推廣活動",
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+      "evidence": {
+        "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+        "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:26+08:00",
+        "sha256": "326090f2a5fe48524b044197f8cc190f5c4a277a3f8283cf2191483f49d588ed"
+      },
+      "decision": "published_resource",
+      "reason": "官方期間及台語內容可核對；未列固定單場時刻，以資訊卡刊登，不虛構開閉館時間、不加入ICS。",
+      "published_ids": [
+        "tpml_liuxiang_reading"
+      ]
+    },
+    {
+      "candidate_id": "f2088ecaf754ab4d1f8914c4",
+      "collector_id": "tpml_district_i",
+      "title": "舊莊分館—「臺語拉吉歐」主題書展",
+      "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+      "evidence": {
+        "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+        "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:26+08:00",
+        "sha256": "a4114e07c2d3855c8c0800016df8db4a92f9382a5a1c80e99ea3a06c402d87f3"
+      },
+      "decision": "published_resource",
+      "reason": "官方期間及台語內容可核對；未列固定單場時刻，以資訊卡刊登，不虛構開閉館時間、不加入ICS。",
+      "published_ids": [
+        "tpml_jiuzhuang_books"
+      ]
+    },
+    {
+      "candidate_id": "ee61d35971392d9630c8b372",
+      "collector_id": "typl_district_2",
+      "title": "【台語親子系列】聽囡仔歌踅世界，原來台語按呢跨界！",
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+      "evidence": {
+        "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+        "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:32+08:00",
+        "sha256": "d38d98698d49e20d876a2a009f1a2d4d221d2f0a63a9b7b1018fd603900766fe"
+      },
+      "decision": "already_published",
+      "reason": "三場已由typl10103來源刊登，不能重複計數。",
+      "published_ids": [
+        "typl_taigi_awareness_20261011",
+        "typl_taigi_poetry_20261011",
+        "typl_taigi_concert_20261114"
+      ]
+    },
+    {
+      "candidate_id": "05011e4dd18036d221913177",
+      "collector_id": "typl_district_2",
+      "title": "【總館活動】台語說故事：如果我有一隻恐龍",
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+      "evidence": {
+        "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+        "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:32+08:00",
+        "sha256": "91ce7c811153a6dffcc65e8f9d927a88b4c5a728b373d01e641fad82ce9fc581"
+      },
+      "decision": "published_sessions",
+      "reason": "官方頁首與正文一致，免費且尚未舉行；與既有正式場次無重複。",
+      "published_ids": [
+        "typl10102_20261003"
+      ]
+    },
+    {
+      "candidate_id": "60ea7a868afe61c3c098f280",
+      "collector_id": "typl_district_2",
+      "title": "[桃園活動]台語說故事：趣味手作摺紙",
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+      "evidence": {
+        "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+        "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:32+08:00",
+        "sha256": "1756fb3d75e1620dbf449716497886fefd0706dfa2c4e1668e2796996373be35"
+      },
+      "decision": "published_sessions",
+      "reason": "官方頁首與正文一致，免費且尚未舉行；與既有正式場次無重複。",
+      "published_ids": [
+        "typl10135_20260920"
+      ]
+    },
+    {
+      "candidate_id": "1f721acdad573c0d49064bca",
+      "collector_id": "typl_district_2",
+      "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
+      "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/9721",
+      "evidence": {
+        "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/9721",
+        "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/9721",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:36:34+08:00",
+        "sha256": "e584f63bee7549406ebacee4c75658057e6a089b8249570b05c4686914cdeb54"
+      },
+      "decision": "excluded",
+      "reason": "台語老歌出現在8/12節目簡介、民謠場在9/3，均已過；9/24與10/1剩餘直播未明列台語內容，不能套用整系列關鍵字。",
+      "published_ids": []
+    }
+  ]
+}
