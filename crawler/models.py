@@ -31,6 +31,8 @@ class SourcePlatformEnum(str, Enum):
     LI_KANG_KHIOK = "李江却基金會"
     LE_CHANG = "樂暢親子共學"
     LIBRARIES = "北北桃市立圖書館"
+    MUSEUMS = "美術館與博物館"
+    GOVERNMENT = "北北桃市府局處"
     FACEBOOK = "Facebook"
     INSTAGRAM = "Instagram"
     THREADS = "Threads"

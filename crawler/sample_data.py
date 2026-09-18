@@ -1,6 +1,6 @@
 """
 Curated Seed / Sample Dataset for Taigi Activities across Taipei, New Taipei, and Taoyuan
-Sources: OPENTIX, Era Ticket, Accupass, 李江却基金會, 樂暢親子共學, 北北桃市立圖書館, FB, IG, Threads, Google Calendar
+Sources: 美術館與博物館, 市府各局處, 李江却基金會, 樂暢親子共學, 市立圖書館, OPENTIX, Era Ticket, Accupass, FB, IG, Threads, Google Calendar
 """
 from typing import List
 from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
@@ -9,7 +9,224 @@ from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
 def get_curated_taigi_activities() -> List[Activity]:
     return [
         # =========================================================================
-        # 1. 李江却台語文教基金會 (Lí Kang-khiok Taiwanese Foundation)
+        # 1. 北北桃各大美術館與博物館 (Museums & Galleries Guided Tours)
+        # =========================================================================
+        Activity(
+            id="tfam_taigi_tour_01",
+            title="【台語導覽】臺北市立美術館《台灣前輩畫家典藏特展・全台語專場導覽》",
+            description="北美館精選專場！由資深藝術研究員全程以優雅道地台語，解說黃土水、陳澄波、郭雪湖等台灣美術先驅經典畫作與雕塑，帶您用母語深入感受台灣現代美術開端的人文溫度。",
+            city=CityEnum.TAIPEI,
+            district="中山區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-10-10T14:00:00",
+            end_time="2026-10-10T15:30:00",
+            venue="臺北市立美術館 2樓典藏展廳",
+            address="臺北市中山區中山北路三段181號",
+            organizer="臺北市立美術館 (TFAM)",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://www.tfam.museum/Event/Event_Detail.aspx?id=taigi_tour",
+            cover_image="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+            price_info="憑北美館門票免費參加（需事先線上預約）",
+            is_free=True,
+            tags=["北美館", "台語導覽", "台灣美術", "陳澄波", "美術館導覽"]
+        ),
+        Activity(
+            id="ntm_taigi_tour_02",
+            title="【台語導覽】國立臺灣博物館《發現台灣・常設展全台語文史深度走讀》",
+            description="走進台灣最古老的博物館！臺博館特聘台語導覽志工，以母語解說台灣特有種標本、原住民族文化資產及台灣博物學奠基歷程，生動傳神，老少咸宜。",
+            city=CityEnum.TAIPEI,
+            district="中正區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-10-17T10:30:00",
+            end_time="2026-10-17T12:00:00",
+            venue="國立臺灣博物館 本館1樓大廳集合",
+            address="臺北市中正區襄陽路2號 (二二八和平公園內)",
+            organizer="國立臺灣博物館 (NTM)",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://www.ntm.gov.tw/activity_taigi",
+            cover_image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            price_info="入館門票 NT$ 30（全台語導覽免費）",
+            is_free=False,
+            tags=["國立臺灣博物館", "台語導覽", "二二八公園", "文史生態", "博物館"]
+        ),
+        Activity(
+            id="ceramics_tour_03",
+            title="【台語導覽】新北市立鶯歌陶瓷博物館《陶泥話滄桑・全台語常設展巡禮》",
+            description="「聽陶土講故事。」陶博館資深母語導覽員全程台語解說鶯歌二百年製陶演進史，從早期蛇窯、四角窯到現代精緻陶瓷工藝，解說淺顯生動且富含常民智慧諺語。",
+            city=CityEnum.NEW_TAIPEI,
+            district="鶯歌區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-10-25T14:00:00",
+            end_time="2026-10-25T15:30:00",
+            venue="新北市立鶯歌陶瓷博物館 1樓服務台前",
+            address="新北市鶯歌區文化路200號",
+            organizer="新北市立鶯歌陶瓷博物館",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://www.ceramics.ntpc.gov.tw/taigi_guide",
+            cover_image="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
+            price_info="新北市民免費 / 全票 NT$ 80",
+            is_free=False,
+            tags=["鶯歌陶博館", "台語導覽", "陶瓷工藝", "新北博物館", "文史導覽"]
+        ),
+        Activity(
+            id="shisanhang_tour_04",
+            title="【台語導覽】新北市立十三行博物館《穿越千年・史前鐵器時代台語定時導覽》",
+            description="八里左岸史前考古探秘！全台語介紹十三行遺址出土之煉鐵爐、人面陶罐及墓葬習俗，並用台語說明早期台灣原住民與東南亞的海外貿易網絡。",
+            city=CityEnum.NEW_TAIPEI,
+            district="八里區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-11-08T10:30:00",
+            end_time="2026-11-08T11:45:00",
+            venue="新北市立十三行博物館 2樓常設展廳",
+            address="新北市八里區博物館路200號",
+            organizer="新北市立十三行博物館",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://www.sshm.ntpc.gov.tw/taigi_tour",
+            cover_image="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+            price_info="免費參加（現場自由集合）",
+            is_free=True,
+            tags=["十三行博物館", "八里", "台語導覽", "史前考古", "新北博物館"]
+        ),
+        Activity(
+            id="calligraphy_tour_05",
+            title="【台語導覽】橫山書法藝術館《墨韻與台語音聲・當代書法雙語導覽》",
+            description="全台首座官方書法藝術館！由文化學者融合台語漢學讀音與台語詩詞吟誦，全程以典雅台語導覽當代書藝展覽，品味漢字線條律動與台語聲調的深厚共鳴。",
+            city=CityEnum.TAOYUAN,
+            district="大園區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-11-15T14:30:00",
+            end_time="2026-11-15T16:00:00",
+            venue="橫山書法藝術館 A棟展覽廳",
+            address="桃園市大園區大仁路100號",
+            organizer="桃園市立美術館 (橫山書法藝術館)",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://tmofa.tycg.gov.tw/zh-tw/hengshan/taigi_tour",
+            cover_image="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
+            price_info="門票 NT$ 100（導覽免費預約）",
+            is_free=False,
+            tags=["橫山書法藝術館", "桃園市立美術館", "台語導覽", "書藝", "青埔"]
+        ),
+        Activity(
+            id="daxi_wood_museum_06",
+            title="【台語導覽】大溪木藝生態博物館《壹號館與李騰芳古宅・全台語文史巡禮》",
+            description="大溪無圍牆博物館深度漫步！由在地木藝文史耆老以純正台語，帶領參觀日治時期木工學校宿舍（壹號館）與國定古蹟李騰芳古宅，解說精細木雕與吉祥寓意圖騰。",
+            city=CityEnum.TAOYUAN,
+            district="大溪區",
+            category=CategoryEnum.TOUR,
+            start_time="2026-11-22T09:30:00",
+            end_time="2026-11-22T12:00:00",
+            venue="大溪木藝生態博物館 壹號館前廣場集合",
+            address="桃園市大溪區中正路35號",
+            organizer="桃園市立大溪木藝生態博物館",
+            source_platform=SourcePlatformEnum.MUSEUMS,
+            source_url="https://wem.tycg.gov.tw/taigi_walk",
+            cover_image="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
+            price_info="免費參加（限額 25 名）",
+            is_free=True,
+            tags=["大溪木博館", "台語導覽", "李騰芳古宅", "木藝", "桃園博物館"]
+        ),
+
+        # =========================================================================
+        # 2. 北北桃市府各局處官方活動 (Taipei / New Taipei / Taoyuan City Gov)
+        # =========================================================================
+        Activity(
+            id="tpe_culture_festival_01",
+            title="【台語表演/市府活動】臺北市政府文化局《台北母語文化節：大稻埕廟埕講古與音樂匯演》",
+            description="台北市政府文化局年度母語盛會！匯聚全台優秀台語劇團、唸歌大師與青年獨立樂團，連續兩天在永樂廣場廟埕輪番演出，並設有台語文創手作體驗與母語繪本書攤。",
+            city=CityEnum.TAIPEI,
+            district="大同區",
+            category=CategoryEnum.PERFORMANCE,
+            start_time="2026-10-18T13:30:00",
+            end_time="2026-10-18T18:00:00",
+            venue="大稻埕永樂廣場 (迪化街一段21號前)",
+            address="臺北市大同區迪化街一段21號",
+            organizer="臺北市政府文化局",
+            source_platform=SourcePlatformEnum.GOVERNMENT,
+            source_url="https://culture.gov.taipei/News_Content.aspx?n=1&s=taigi_festival",
+            cover_image="https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=800&q=80",
+            price_info="免費入場（自由參加）",
+            is_free=True,
+            tags=["臺北市政府文化局", "台北母語文化節", "台語表演", "永樂市場", "市府活動"]
+        ),
+        Activity(
+            id="tpe_edu_story_02",
+            title="【台語故事/市府活動】臺北市政府教育局《本土語言嘉年華・囡仔台語講古列車》",
+            description="北市教育局主辦！各國小本土語優秀學童與志工同台展演台語互動短劇、趣味說唱與台語童謠，現場規劃台語發音闖關遊戲，過關可獲得教育部推薦精選台語繪本一本。",
+            city=CityEnum.TAIPEI,
+            district="信義區",
+            category=CategoryEnum.STORY,
+            start_time="2026-10-24T09:30:00",
+            end_time="2026-10-24T12:30:00",
+            venue="臺北市青少年發展暨家庭教育中心 3樓演藝廳",
+            address="臺北市中正區仁愛路一段17號",
+            organizer="臺北市政府教育局",
+            source_platform=SourcePlatformEnum.GOVERNMENT,
+            source_url="https://www.doe.gov.taipei/taigi_kids_story",
+            cover_image="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
+            price_info="免費入場（親子家庭自由入場）",
+            is_free=True,
+            tags=["臺北市政府教育局", "本土語言", "台語故事", "囡仔講古", "市府活動"]
+        ),
+        Activity(
+            id="ntpc_culture_exp_03",
+            title="【台語體驗/市府活動】新北市政府文化局《空軍三重一村眷村與台語記憶生活月》",
+            description="走進全台保存最完整的防砲眷村！新北市文化局特別企劃，透過全台語眷村導覽、台語傳統糕餅印模手作工作坊與母語露天電影院，感受跨族群語言交融的珍貴時代記憶。",
+            city=CityEnum.NEW_TAIPEI,
+            district="三重區",
+            category=CategoryEnum.EXPERIENCE,
+            start_time="2026-11-01T13:00:00",
+            end_time="2026-11-01T17:00:00",
+            venue="空軍三重一村 新北市眷村文化園區",
+            address="新北市三重區正義南路86巷",
+            organizer="新北市政府文化局",
+            source_platform=SourcePlatformEnum.GOVERNMENT,
+            source_url="https://www.culture.ntpc.gov.tw/taigi_sanchong",
+            cover_image="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+            price_info="免費參加（部分手作材料費 NT$ 100）",
+            is_free=True,
+            tags=["新北市政府文化局", "空軍三重一村", "台語體驗", "眷村文化", "市府活動"]
+        ),
+        Activity(
+            id="ntpc_edu_picbook_04",
+            title="【台語繪本/市府活動】新北市政府教育局《新北母語日・親子台語繪本共讀遊園會》",
+            description="新北教育局年度母語旗艦活動！邀集新北市 29 區母語資源中心，於新北市民廣場設立 30 個台語互動繪本攤位、台語偶戲小劇場，適合幼兒園至國小學童與家長同歡。",
+            city=CityEnum.NEW_TAIPEI,
+            district="板橋區",
+            category=CategoryEnum.PICTURE_BOOK,
+            start_time="2026-11-07T10:00:00",
+            end_time="2026-11-07T16:00:00",
+            venue="新北市市民廣場 (板橋區中山路一段161號)",
+            address="新北市板橋區中山路一段161號",
+            organizer="新北市政府教育局 / 新北市本土語文輔導團",
+            source_platform=SourcePlatformEnum.GOVERNMENT,
+            source_url="https://www.ntpc.edu.tw/taigi_picbook_carnival",
+            cover_image="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+            price_info="免費參加（現場報到領取闖關卡）",
+            is_free=True,
+            tags=["新北市政府教育局", "母語日", "台語繪本", "市民廣場", "市府活動"]
+        ),
+        Activity(
+            id="ty_culture_perf_05",
+            title="【台語表演/市府活動】桃園市政府文化局《桃園台語文化季：經典台語金曲與傳統戲曲匯演》",
+            description="桃園文化局主辦大型台語藝術節！邀請金曲獎最佳台語歌手、明華園傳統劇團與桃園在地優秀布袋戲班同台獻藝，展現台語歌謠與戲曲源遠流長的文化底蘊。",
+            city=CityEnum.TAOYUAN,
+            district="中壢區",
+            category=CategoryEnum.PERFORMANCE,
+            start_time="2026-11-28T19:00:00",
+            end_time="2026-11-28T21:30:00",
+            venue="中壢藝術館 音樂廳",
+            address="桃園市中壢區中美路16號",
+            organizer="桃園市政府文化局",
+            source_platform=SourcePlatformEnum.GOVERNMENT,
+            source_url="https://culture.tycg.gov.tw/taigi_music_season",
+            cover_image="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+            price_info="免費索票入場（桃園文化局官網線上預約）",
+            is_free=True,
+            tags=["桃園市政府文化局", "台語文化季", "台語金曲", "中壢藝術館", "市府活動"]
+        ),
+
+        # =========================================================================
+        # 3. 李江却台語文教基金會 (Lí Kang-khiok Taiwanese Foundation)
         # =========================================================================
         Activity(
             id="likang_lecture_01",
@@ -51,7 +268,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 2. 樂暢親子共學 (Le-tshiòng Taigi Kids Learning)
+        # 4. 樂暢親子共學 (Le-tshiòng Taigi Kids Learning)
         # =========================================================================
         Activity(
             id="lechang_picbook_01",
@@ -93,7 +310,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 3. 北北桃公立圖書館 (Taipei / New Taipei / Taoyuan Public Libraries)
+        # 5. 北北桃公立圖書館 (Taipei / New Taipei / Taoyuan Public Libraries)
         # =========================================================================
         Activity(
             id="tpml_story_01",
@@ -152,47 +369,9 @@ def get_curated_taigi_activities() -> List[Activity]:
             is_free=True,
             tags=["桃園市立圖書館", "台語故事", "桃園總圖", "微光廳", "偶戲互動"]
         ),
-        Activity(
-            id="tpml_tour_04",
-            title="【台語導覽】臺北市立圖書館北投分館《綠建築與北投溫泉鄉台語文史走讀》",
-            description="全台首座綠建築圖書館走讀！由北投文史工作者以道地台語導覽北投公園、北投溫泉博物館、地熱谷，解說日治時期北投那卡西與台語電影發源地的風華記憶。",
-            city=CityEnum.TAIPEI,
-            district="北投區",
-            category=CategoryEnum.TOUR,
-            start_time="2026-10-31T09:30:00",
-            end_time="2026-10-31T12:00:00",
-            venue="臺北市立圖書館北投分館 正門前廣場集合",
-            address="臺北市北投區光明路251號",
-            organizer="臺北市立圖書館北投分館 / 北投文史學會",
-            source_platform=SourcePlatformEnum.LIBRARIES,
-            source_url="https://tpml.gov.taipei/beitou_taigi_tour",
-            cover_image="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80",
-            price_info="免費參加（限額 25 名）",
-            is_free=True,
-            tags=["臺北市立圖書館", "北投分館", "台語導覽", "北投溫泉", "綠建築"]
-        ),
-        Activity(
-            id="ntpclib_exp_05",
-            title="【台語體驗】新北市立圖書館新店分館《傳統紅龜粿模與台語食文化手作工作坊》",
-            description="帶孩子認識台灣傳統米食！全程台語教學紅龜粿「牽絲、包餡、印模」傳統工法，親手製作香甜紅豆草仔粿，並學習相關台語民俗諺語。",
-            city=CityEnum.NEW_TAIPEI,
-            district="新店區",
-            category=CategoryEnum.EXPERIENCE,
-            start_time="2026-11-08T14:00:00",
-            end_time="2026-11-08T16:30:00",
-            venue="新北市立圖書館新店分館 3樓多功能教室",
-            address="新北市新店區北新路三段105巷2號3樓",
-            organizer="新北市立圖書館新店分館",
-            source_platform=SourcePlatformEnum.LIBRARIES,
-            source_url="https://www.library.ntpc.gov.tw/xindian_taigi_food",
-            cover_image="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
-            price_info="材料費 NT$ 100",
-            is_free=False,
-            tags=["新北市立圖書館", "新店分館", "台語體驗", "紅龜粿", "食文化"]
-        ),
 
         # =========================================================================
-        # 4. OPENTIX 兩廳院售票 (National Theater & Concert Hall)
+        # 6. OPENTIX 兩廳院文化生活
         # =========================================================================
         Activity(
             id="opentix_taigi_play_01",
@@ -253,7 +432,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 5. 年代售票 (Era Ticket)
+        # 7. 年代售票 (Era Ticket)
         # =========================================================================
         Activity(
             id="eraticket_opera_02",
@@ -295,7 +474,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 6. Accupass 活動通
+        # 8. Accupass 活動通
         # =========================================================================
         Activity(
             id="accupass_tour_03",
@@ -413,7 +592,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 7. 社群與日曆 (Facebook, Instagram, Threads, Google Calendar)
+        # 9. 社群與日曆 (Facebook, Instagram, Threads, Google Calendar)
         # =========================================================================
         Activity(
             id="fb_story_04",

@@ -1244,10 +1244,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="desktop-filters-row">
         <span style="color:var(--text-muted); font-weight:700;">來源：</span>
         <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
+        <button class="pill" data-filter-type="platform" data-value="美術館與博物館" onclick="setPlatformFilter('美術館與博物館')">🏛️ 美術館/博物館</button>
+        <button class="pill" data-filter-type="platform" data-value="北北桃市府局處" onclick="setPlatformFilter('北北桃市府局處')">🏛️ 市府各局處</button>
         <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却</button>
         <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
         <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
-        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🏛️ 兩廳院</button>
+        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院</button>
         <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
         <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
         <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 FB</button>
@@ -1339,10 +1341,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <h4 style="font-size: 0.85rem; font-weight: 700; color:var(--text-muted); margin-bottom: 0.5rem;">來源平台：</h4>
           <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
             <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
+            <button class="pill" data-filter-type="platform" data-value="美術館與博物館" onclick="setPlatformFilter('美術館與博物館')">🏛️ 美術館與博物館導覽</button>
+            <button class="pill" data-filter-type="platform" data-value="北北桃市府局處" onclick="setPlatformFilter('北北桃市府局處')">🏛️ 臺北/新北/桃園市府各局處</button>
             <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
             <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
             <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
-            <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🏛️ 兩廳院 OPENTIX</button>
+            <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🎭 兩廳院 OPENTIX</button>
             <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
             <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
             <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 Facebook</button>
@@ -1482,7 +1486,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="container">
       <p><strong>北北桃台語活動日曆 (Taigi Activities Hub)</strong></p>
       <p style="margin-top: 0.35rem; font-size: 0.78rem;">
-        涵蓋：李江却基金會、樂暢、市立圖書館、兩廳院 OPENTIX、年代售票、Accupass、FB、IG、Threads 與 Google Workspace。
+        涵蓋：北北桃各大美術館與博物館導覽、臺北/新北/桃園市府各局處、李江却基金會、樂暢親子共學、市立圖書館、兩廳院 OPENTIX、年代售票、Accupass、FB、IG、Threads 與 Google Workspace。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
         更新時間：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ｜ 咱做伙來講台語！

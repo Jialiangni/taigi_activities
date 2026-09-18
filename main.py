@@ -14,6 +14,8 @@ from crawler.sources.eraticket import EraTicketCrawler
 from crawler.sources.li_kang_khiok import LiKangKhiokCrawler
 from crawler.sources.le_chang import LeChangCrawler
 from crawler.sources.public_libraries import PublicLibrariesCrawler
+from crawler.sources.museums import MuseumsCrawler
+from crawler.sources.government import GovernmentCrawler
 from crawler.sources.facebook import FacebookCrawler
 from crawler.sources.instagram import InstagramCrawler
 from crawler.sources.threads import ThreadsCrawler
@@ -65,7 +67,27 @@ def main():
     except Exception as e:
         logger.debug(f"   市立圖書館抓取通知: {e}")
 
-    # 5. 爬取 Accupass 活動通
+    # 5. 爬取 北北桃各大美術館與博物館 (全台語導覽與走讀)
+    logger.info("🏛️ 正在查詢 北北桃各大美術館與博物館 台語導覽...")
+    try:
+        museums_crawler = MuseumsCrawler()
+        museum_events = museums_crawler.fetch_activities()
+        all_activities.extend(museum_events)
+        logger.info(f"   美術館與博物館載入完成，取得 {len(museum_events)} 筆活動。")
+    except Exception as e:
+        logger.debug(f"   美術館與博物館抓取通知: {e}")
+
+    # 6. 爬取 臺北市政府、新北市政府、桃園市政府 各局處官方活動
+    logger.info("🏛️ 正在查詢 臺北/新北/桃園 市政府各局處官方台語活動...")
+    try:
+        gov_crawler = GovernmentCrawler()
+        gov_events = gov_crawler.fetch_activities()
+        all_activities.extend(gov_events)
+        logger.info(f"   市府各局處載入完成，取得 {len(gov_events)} 筆活動。")
+    except Exception as e:
+        logger.debug(f"   市府各局處抓取通知: {e}")
+
+    # 7. 爬取 Accupass 活動通
     logger.info("🎟️ 正在查詢 Accupass 活動通台語活動...")
     try:
         accupass_crawler = AccupassCrawler()
