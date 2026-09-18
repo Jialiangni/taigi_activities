@@ -44,7 +44,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                         '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
-<html lang="nan-Hant-TW">
+<html lang="nan-Hant-TW" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -61,6 +61,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="台語日曆">
   <meta name="format-detection" content="telephone=no">
+  <script>
+    // Apply an explicit saved preference before paint; otherwise start dark.
+    try {{
+      if (localStorage.getItem('taigi_theme') === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    }} catch (_) {{}}
+  </script>
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d1d1f'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>台</text></svg>">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d1d1f'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>台</text></svg>">
 
@@ -288,13 +294,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function initTheme() {{
-      let saved = 'light';
-      try {{ saved = localStorage.getItem('taigi_theme') || 'light'; }} catch (_) {{}}
+      let saved = 'dark';
+      try {{ if (localStorage.getItem('taigi_theme') === 'light') saved = 'light'; }} catch (_) {{}}
       document.documentElement.setAttribute('data-theme', saved);
     }}
 
     function toggleTheme() {{
-      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       try {{ localStorage.setItem('taigi_theme', next); }} catch (_) {{}}
@@ -447,7 +453,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     function formatDateDisplay(isoStr) {{
       if (!isoStr) return '時間未公告';
-      return new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }}).format(new Date(isoStr));
+      return new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }}).format(new Date(isoStr)).replace(/週([一二三四五六日])/g, (_, day) => day === '日' ? '禮拜' : '拜' + day);
     }}
 
     function sourceLabel(source) {{
@@ -460,7 +466,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛付錢' : '費用猶未公告';
     }}
     function taigiDate(iso) {{
-      return formatDateDisplay(iso).replace(/週([一二三四五六日])/g, '禮拜$1');
+      return formatDateDisplay(iso);
     }}
     function activityCard(act) {{
       const text = escapeCalendarText;
@@ -490,16 +496,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
       const groups = {{}};
       events.forEach(act => {{
-        const dateKey = act.start_time.substring(0, 10);
+        const dateKey = taipeiDateKey(new Date(act.start_time));
         if (!groups[dateKey]) groups[dateKey] = [];
         groups[dateKey].push(act);
       }});
 
       let html = '';
       Object.keys(groups).sort().forEach(dateKey => {{
-        const dt = new Date(dateKey);
-        const days = ['禮拜日', '禮拜一', '禮拜二', '禮拜三', '禮拜四', '禮拜五', '禮拜六'];
-        const groupLabel = `${{dt.getFullYear()}}年 ${{dt.getMonth() + 1}}月 ${{dt.getDate()}}日 (${{days[dt.getDay()]}})`;
+        const dt = new Date(dateKey + 'T00:00:00Z');
+        const days = ['禮拜', '拜一', '拜二', '拜三', '拜四', '拜五', '拜六'];
+        const groupLabel = `${{dt.getUTCFullYear()}}年 ${{dt.getUTCMonth() + 1}}月 ${{dt.getUTCDate()}}日 (${{days[dt.getUTCDay()]}})`;
 
         html += `
           <div>
@@ -514,8 +520,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                 return `
                   <div class="agenda-item" onclick="openModal('${{act.id}}')">
                     <div class="agenda-time-box">
-                      <div class="day-num">${{d.getDate()}}</div>
-                      <div class="month-name">${{d.getMonth()+1}}月</div>
+                      <div class="day-num">${{dt.getUTCDate()}}</div>
+                      <div class="month-name">${{dt.getUTCMonth()+1}}月</div>
                       <div class="time-str">${{timeStr}}</div>
                     </div>
                     <div class="agenda-content">
@@ -574,7 +580,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('calCurrentWeekLabel').innerText = `${{label(start)}} – ${{label(end)}}`;
       const filtered = getFilteredActivities().slice().sort((a, b) => new Date(a.start_time) - new Date(b.start_time) || a.id.localeCompare(b.id));
       const today = taipeiDateKey();
-      const weekdays = ['禮拜一', '禮拜二', '禮拜三', '禮拜四', '禮拜五', '禮拜六', '禮拜日'];
+      const weekdays = ['拜一', '拜二', '拜三', '拜四', '拜五', '拜六', '禮拜'];
       const time = iso => new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }}).format(new Date(iso));
       let html = '';
       let strip = '';

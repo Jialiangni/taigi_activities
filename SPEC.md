@@ -151,3 +151,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 data/ui_taigi.json 為編輯性台文翻譯，非核實來源：完整原始描述作為 key，僅匹配時提供 description_taigi。描述修訂而無對應翻譯時回退標明「簡介原文」，不得套用舊內容。官方標題、地點、description、活動詳情與 ICS 不被翻譯覆蓋。資源摘要同樣以原始描述精確匹配翻譯。
 
 assets/site.css 於建置時內嵌，使用系統字型而不載入遠端字型。main.py 在全部驗證成功後，產出 index.html、taigi_activities.ics 和相同內容的 taigi-activities-standalone.html；單檔副本為本機產物且加入 gitignore。GitHub Pages 繼續透過現有工作流程發布，未改變官方來源檢查或已核實資料門檻。
+
+## 16. 預設深色與星期用字（2026-09-18）
+
+HTML 初始 data-theme=dark，首次繪製前只在明確儲存 light 偏好時套用淺色，避免亮色閃爍。initTheme 與無效／受限 localStorage 均回退 dark；手動切換後保留偏好。PWA 啟動背景同步深色。日期介面統一「拜一、拜二、拜三、拜四、拜五、拜六、禮拜」；卡片、清單、週曆、詳情時間及分享時間共用臺灣時間語意，清單分組以 Asia/Taipei 日期鍵及 UTC 日期算術處理。台文摘要內的星期同步調整；官方描述、標題與 ICS 原文保留。

@@ -15,7 +15,25 @@ const context = vm.createContext({Intl, Date, Blob, setTimeout: fn=>fn(), URL:{c
 }});
 for (const [,script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) vm.runInContext(script,context);
 const run = code => vm.runInContext(code,context);
+// Fresh visits and unavailable/invalid storage start dark; explicit preferences persist.
+let theme, savedTheme=null;
+context.document.documentElement={setAttribute:(key,value)=>{theme=value},getAttribute:()=>theme};
+context.localStorage={getItem:()=>savedTheme,setItem:(key,value)=>{savedTheme=value}};
+assert.match(html, /<html[^>]+data-theme="dark"/);
+run('initTheme()');assert.equal(theme,'dark');
+run('toggleTheme()');assert.equal(theme,'light');assert.equal(savedTheme,'light');
+run('initTheme()');assert.equal(theme,'light');
+run('toggleTheme()');assert.equal(theme,'dark');assert.equal(savedTheme,'dark');
+savedTheme='invalid';run('initTheme()');assert.equal(theme,'dark');
+context.localStorage={getItem(){throw Error('blocked')},setItem(){throw Error('blocked')}};
+run('initTheme()');assert.equal(theme,'dark');run('toggleTheme()');assert.equal(theme,'light');
+for(const [i,label] of ['拜一','拜二','拜三','拜四','拜五','拜六','禮拜'].entries()){
+  const date=`2026-09-${14+i}T14:00:00+08:00`;
+  assert.ok(run(`formatDateDisplay('${date}')`).includes(`（${label}）`));
+}
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
+run(`renderAgenda([{...ACTIVITIES_DATA[0],start_time:'2026-09-20T16:30:00Z'}])`);
+assert.match(element('viewAgenda').innerHTML,/2026年 9月 21日 \(拜一\)/);
 assert.equal(run('getFilteredActivities().length'),data.length);
 run("currentPrice='free'");
 assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.is_free===true).length);
