@@ -177,3 +177,16 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 目前無Meta授權，實跑是 **needs_configuration / 0候選**，4個目標逐一列於 `facebook.json` 及 `report.json` 的 `page_status`，不是「四個粉專都沒有活動」。本輪74項測試通過（含11項留言／待查名單測試）；官方API仍待授權後實測。見[公開頁與待設定紀錄](data/audit/2026-09-18-facebook-watchlist-review.json)、[Meta官方Post SDK](https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py)及[留言介面文件](https://developers.facebook.com/docs/graph-api/reference/object/comments/)。
 
 原有artifact排除規則持續排除facebook.json，授權貼文及留言不公開、不自動寫入Git或網站。
+
+
+## 李江却基金會：公告正文與系列核實清單（2026-09-18）
+
+漏刊原因是已有文章候選卻未完成系列拆場核實，並非Feed頁數不足；舊候選ID與檔案指紋已保存在[核實紀錄](data/audit/2026-09-18-foundation-review.json)。本輪4個未來場次經逐場核實後進入正式清單。
+
+- 持續讀取官方Blogger Atom及核准的Blogger分頁；每輪重讀收集範圍內的舊文章，沒有以近期發文篩掉未來場次。
+- 從Feed本文保留超連結和純文字網址，擷取每個有效數字月日及鄰近文字。年份未明列時仍為null，發文年份僅作排序提示，不填入正式start_time。
+- `limits.foundation_details`預設30篇，與Feed的5頁上限分開。含未來日期線索的文章優先；直接重讀文章的post-body正文、post-title標題，排除側欄推薦文章，保存原Feed與文章兩份證據。正文失敗保留Feed候選並標不完整，超限文章也保留。
+- 每個 `li_kang_khiok.json` 額外輸出 `review_queue`，一篇文章內保留所有日期線索、報名與其他連結。Google表單單列為registration_links，其他報名平台仍在content_links，不能只看Google表單。report.json列review_item_count。
+- 清單全部仍為pending；日期可能是截止日或歷程，不能自動認作場次。共用時間、上午／下晡、地點、年份、圖片公告、取消與延期需人工核對；不自動打開或提交報名表。
+
+本次實跑5頁Feed＋30篇詳情，35個成功回應、0請求錯誤、246候選、182篇日期／報名核實項目；達兩項上限標partial，coverage_complete=false。`python3 -m crawler.collect --sources li_kang_khiok`可重跑。83項Python測試通過，新增回歸涵蓋三場公告、純文字報名、側欄隔離、共用時間、年份待核、上限、詳情失敗與未核實禁止刊登。

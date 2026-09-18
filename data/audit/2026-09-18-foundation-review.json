@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-18T22:08:24+08:00",
+  "root_cause": "原始Feed已收錄829.html（第1頁），但停在文章候選，未完成系列拆場與人工核實，造成網站漏刊；不是頁數不足。",
+  "previous_collection": {
+    "path": "feed-tmofa-final/li_kang_khiok.json",
+    "sha256": "42d488751bfb29c45ecfcf476dc1abbed458cb47be939b1f6b492e4394b3969f",
+    "candidate_id": "98d7616f80cd46c8e69bb09a",
+    "fetched_at": "2026-09-18T17:07:13+08:00"
+  },
+  "records": [
+    {
+      "source_id": "tgb_liamkua_2026",
+      "url": "https://www.tgb.org.tw/2026/07/829.html",
+      "evidence": {
+        "url": "https://www.tgb.org.tw/2026/07/829.html",
+        "final_url": "https://www.tgb.org.tw/2026/07/829.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T21:58:06+08:00",
+        "sha256": "402de5bbb05e8284260a361d852d4757488f3f0b4a867544e57dd8364ab37819"
+      },
+      "decision": "published",
+      "published_ids": [
+        "tgb_liamkua_2026_20260920",
+        "tgb_liamkua_2026_20261017"
+      ],
+      "year_basis": "官方公告發布時間為2026年，月日與星期核對相符；不是以發布月日當活動日。"
+    },
+    {
+      "source_id": "tgb_writing_2026",
+      "url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+      "evidence": {
+        "url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "final_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T22:02:19+08:00",
+        "sha256": "52b79d9efd7a37bae65247db13499b26668c1ca85d1661025f87db2abbedfa67"
+      },
+      "decision": "published",
+      "published_ids": [
+        "tgb_writing_2026_20260919",
+        "tgb_writing_2026_20261018"
+      ],
+      "year_basis": "官方公告發布時間為2026年，月日與星期核對相符；不是以發布月日當活動日。"
+    },
+    {
+      "url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+      "title": "「轉型正義kap不當黨產」講座 【高雄場】是按怎lán ài ē記--得",
+      "evidence": {
+        "url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+        "final_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T22:05:10+08:00",
+        "sha256": "abc34bafe34ae16d5029d10a6e92cff544d7c0e7ca7d212874c93de323fdda21"
+      },
+      "decision": "out_of_region",
+      "reason": "9/20講座在高雄，非北北桃。",
+      "published_ids": []
+    },
+    {
+      "url": "https://www.tgb.org.tw/2026/07/23.html",
+      "title": "報名第23期會輾轉台語文讀寫基礎班",
+      "evidence": {
+        "url": "https://www.tgb.org.tw/2026/07/23.html",
+        "final_url": "https://www.tgb.org.tw/2026/07/23.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T22:05:12+08:00",
+        "sha256": "62a4c6a143ab5f7658fd46a352a96fb2b4aaecdd1118bbaa7f6f1c8eca813ce1"
+      },
+      "decision": "pending_in_person_details",
+      "reason": "主要課程為線上；另提臺北實體走讀與結業課但無明確日期地點，不自行展開。",
+      "published_ids": []
+    },
+    {
+      "url": "https://www.tgb.org.tw/2024/06/e.html",
+      "title": "（連署） 台語就是台語",
+      "evidence": {
+        "url": "https://www.tgb.org.tw/2024/06/e.html",
+        "final_url": "https://www.tgb.org.tw/2024/06/e.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-18T22:05:13+08:00",
+        "sha256": "142265c8edfd6dae0b38905a178422673027588871200ba75ffedf7d00b9cdf1"
+      },
+      "decision": "not_event",
+      "reason": "台語名稱連署倡議與歷程日期，不是可刊登活動場次。",
+      "published_ids": []
+    }
+  ],
+  "new_session_ids": [
+    "tgb_liamkua_2026_20260920",
+    "tgb_liamkua_2026_20261017",
+    "tgb_writing_2026_20260919",
+    "tgb_writing_2026_20261018"
+  ],
+  "excluded_sessions": [
+    {
+      "url": "https://www.tgb.org.tw/2026/07/829.html",
+      "date": "2026-08-29",
+      "reason": "已過期"
+    }
+  ],
+  "registration_evidence": {
+    "url": "https://forms.gle/8EDj3suDUbHDphvj6",
+    "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSc3U0nwkMJJB9alJ5qpKv5xNFh5_Epw3PqIHf9-zDtE9h7cLQ/viewform?usp=send_form",
+    "http_status": 200,
+    "request_method": "GET",
+    "fetched_at": "2026-09-18T22:02:18+08:00",
+    "sha256": "97cd25cd3ff2599bf04e6c21b2efbd373c0f020a7ef924cd64041ddb2b55ad7f"
+  },
+  "publication_after": {
+    "sessions": 85,
+    "resources": 9,
+    "cities": {
+      "臺北市": 28,
+      "新北市": 13,
+      "桃園市": 44
+    },
+    "fees": {
+      "free": 20,
+      "paid": 28,
+      "unknown": 37
+    }
+  },
+  "limitations": [
+    "候選與日期線索不會自動刊登；仍需逐場核實。",
+    "Feed與詳情各有上限，不代表全站或最近三週完整覆蓋。"
+  ],
+  "collection_after": {
+    "method": "official_feed_and_article_review",
+    "status": "partial",
+    "notes": [
+      "feed_page_limit_reached",
+      "Feed coverage is limited to entries supplied by the publisher; publication dates are not event dates.",
+      "foundation_article_detail_limit_reached",
+      "Review queue retains each date clue and signup link, including old posts with future sessions. Publication year only affects priority; event years, shared times, venues and cancellation need manual review. Images and date formats without recognized numeric month/day still need manual review. No automatic publication."
+    ],
+    "errors": [],
+    "coverage_complete": false,
+    "started_at": "2026-09-18T22:04:58+08:00",
+    "completed_at": "2026-09-18T22:05:39+08:00",
+    "candidate_count": 246,
+    "article_detail_count": 30,
+    "successful_response_count": 35,
+    "review_item_count": 182,
+    "local_result_sha256": "cf3421417e2f62cfe1275b06c0fbe96afaf5fa67440c8da4ad3a2e1297ef94d4"
+  }
+}

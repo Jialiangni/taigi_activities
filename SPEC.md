@@ -116,3 +116,10 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 `data/facebook_pages.json` 為Facebook待查名單，包含ChhutGoaKongTaiGi、Guaayingla、taigiloo及既有taigilok；由Facebook收集器自動載入。以 `FACEBOOK_PAGE_ID_MAP` 明確綁定數字ID；未設定逐項標needs_configuration。名稱或網址相似不可直接合併。
 
 指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整；所有結果仍待人工核實，不直接刊登。詳見COLLECTORS.md。
+
+
+## 11. 李江却基金會系列場次核實
+
+基金會官方Feed候選需經文章正文重查與逐場核實。`foundation_details`預設30，與`feed_pages`分別計算；先處理可能仍有未來日期的文章，已過期或未解析文章不直接丟棄。正文僅取post-body，不混入側欄；失敗保留原候選並標partial。輸出review_queue及逐個session_hints，活動年份未明列時保持null，發文年份僅供排序提示。報名純文字URL和錨點均保存；Google Forms另列registration_links，不能排除content_links中其他平台。
+
+日期線索不是核實場次，尤其系列共用時間、地點變動、線上課程、截止日與活動日期需人工判讀。9/18補核唸歌9/20、10/17與台文寫作9/19、10/18共4個免費場次，正式資料85場、9項非場次資訊；原8/29唸歌場次已過期。核實證據、先前漏刊原因與執行上限見foundation-review審查檔。

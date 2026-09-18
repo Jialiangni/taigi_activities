@@ -543,6 +543,47 @@
         "免費",
         "張日東"
       ]
+    },
+    "tgb_liamkua_2026": {
+      "url": "https://www.tgb.org.tw/2026/07/829.html",
+      "title": "臺灣唸歌廳-楊秀卿篇 網站、講座",
+      "required_text": [
+        "臺灣唸歌廳-楊秀卿篇",
+        "8月 02, 2026",
+        "9/20 禮拜14:00-16:00",
+        "TCCC 松江館751教室",
+        "台北市中山區松江路131號7樓之1",
+        "10/17 拜六14:00-16:00",
+        "臺灣圖書館一樓簡報室",
+        "新北市中和區中安街85號",
+        "講座免費報名",
+        "https://forms.gle/8EDj3suDUbHDphvj6",
+        "台語使用比例100%",
+        "主辦單位：李江却台語文教基金會"
+      ],
+      "checked_at": "2026-09-18T21:58:06+08:00",
+      "snapshot_sha256": "402de5bbb05e8284260a361d852d4757488f3f0b4a867544e57dd8364ab37819"
+    },
+    "tgb_writing_2026": {
+      "url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+      "title": "台文寫作概念研習_ 講師：藍春瑞",
+      "required_text": [
+        "台文寫作概念研習",
+        "8月 24, 2026",
+        "9/19",
+        "台文寫作ê手路kah鋩角",
+        "10/18",
+        "寫作ê主題kah範例",
+        "時間下晡2:00-4:00",
+        "TCCC新北板橋館",
+        "新北市板橋區萬板路101號4樓教室B401",
+        "免費報名",
+        "https://forms.gle/UEsWzrtvss51aA3R8",
+        "台語使用比例100%",
+        "主辦單位：李江却台語文教基金會"
+      ],
+      "checked_at": "2026-09-18T22:02:19+08:00",
+      "snapshot_sha256": "52b79d9efd7a37bae65247db13499b26668c1ca85d1661025f87db2abbedfa67"
     }
   },
   "activities": [
@@ -3819,6 +3860,170 @@
           "city": "桃園市",
           "organizer": "桃園市立圖書館",
           "price_info": "免費；請依官方公告報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tgb_liamkua_2026_20260920",
+        "title": "臺灣唸歌廳－楊秀卿篇講座：臺北松江場",
+        "description": "邱文錫主講，介紹臺灣唸歌廳與楊秀卿的台語唸歌文化；台語使用比例100%，台語家庭認列2點／場。請由官方公告的免費報名表選擇場次。",
+        "city": "臺北市",
+        "district": "中山區",
+        "category": "台語活動",
+        "start_time": "2026-09-20T14:00:00+08:00",
+        "end_time": "2026-09-20T16:00:00+08:00",
+        "venue": "TCCC松江館751教室",
+        "address": "臺北市中山區松江路131號7樓之1",
+        "organizer": "李江却台語文教基金會",
+        "source_platform": "李江却基金會",
+        "source_url": "https://www.tgb.org.tw/2026/07/829.html",
+        "cover_image": "",
+        "price_info": "免費；請先報名",
+        "is_free": true,
+        "tags": [
+          "台語講座",
+          "需報名",
+          "唸歌"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tgb_liamkua_2026",
+        "language_evidence": "官方公告明列「台語使用比例100%」。",
+        "method": "人工核對官方公告正文與2026年發布時間，逐場月日與星期相符，並分開核對場地；未以文章發布日或網址829當活動日。另讀取公告直接連出的Google報名表，三個場次選项與公告一致；8/29已過期排除。",
+        "confirmed_fields": {
+          "title": "臺灣唸歌廳－楊秀卿篇講座：臺北松江場",
+          "start_time": "2026-09-20T14:00:00+08:00",
+          "end_time": "2026-09-20T16:00:00+08:00",
+          "venue": "TCCC松江館751教室",
+          "city": "臺北市",
+          "organizer": "李江却台語文教基金會",
+          "price_info": "免費；請先報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tgb_liamkua_2026_20261017",
+        "title": "臺灣唸歌廳－楊秀卿篇講座：國臺圖場",
+        "description": "邱文錫主講，介紹臺灣唸歌廳與楊秀卿的台語唸歌文化；台語使用比例100%，台語家庭認列2點／場。請由官方公告的免費報名表選擇場次。",
+        "city": "新北市",
+        "district": "中和區",
+        "category": "台語活動",
+        "start_time": "2026-10-17T14:00:00+08:00",
+        "end_time": "2026-10-17T16:00:00+08:00",
+        "venue": "國立臺灣圖書館一樓簡報室",
+        "address": "新北市中和區中安街85號",
+        "organizer": "李江却台語文教基金會",
+        "source_platform": "李江却基金會",
+        "source_url": "https://www.tgb.org.tw/2026/07/829.html",
+        "cover_image": "",
+        "price_info": "免費；請先報名",
+        "is_free": true,
+        "tags": [
+          "台語講座",
+          "需報名",
+          "唸歌"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tgb_liamkua_2026",
+        "language_evidence": "官方公告明列「台語使用比例100%」。",
+        "method": "人工核對官方公告正文與2026年發布時間，逐場月日與星期相符，並分開核對場地；未以文章發布日或網址829當活動日。另讀取公告直接連出的Google報名表，三個場次選项與公告一致；8/29已過期排除。",
+        "confirmed_fields": {
+          "title": "臺灣唸歌廳－楊秀卿篇講座：國臺圖場",
+          "start_time": "2026-10-17T14:00:00+08:00",
+          "end_time": "2026-10-17T16:00:00+08:00",
+          "venue": "國立臺灣圖書館一樓簡報室",
+          "city": "新北市",
+          "organizer": "李江却台語文教基金會",
+          "price_info": "免費；請先報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tgb_writing_2026_20260919",
+        "title": "台文寫作概念研習：台文寫作ê手路kah鋩角",
+        "description": "藍春瑞主講台文寫作；兩場均為下午14:00–16:00，台語使用比例100%，每場認列2點。限54人，請由官方公告的免費報名表報名。",
+        "city": "新北市",
+        "district": "板橋區",
+        "category": "台語活動",
+        "start_time": "2026-09-19T14:00:00+08:00",
+        "end_time": "2026-09-19T16:00:00+08:00",
+        "venue": "TCCC新北板橋館B401教室",
+        "address": "新北市板橋區萬板路101號4樓",
+        "organizer": "李江却台語文教基金會",
+        "source_platform": "李江却基金會",
+        "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "cover_image": "",
+        "price_info": "免費；請先報名",
+        "is_free": true,
+        "tags": [
+          "台語講座",
+          "需報名",
+          "台文寫作"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tgb_writing_2026",
+        "language_evidence": "官方公告明列「台語使用比例100%」。",
+        "method": "人工核對官方公告正文與2026年發布時間，逐場月日與星期相符，並分開核對場地；未以文章發布日或網址829當活動日。共用時間「下晡2:00-4:00」核為14:00–16:00，兩場各自刊登；依公告明列免費及100%台語。",
+        "confirmed_fields": {
+          "title": "台文寫作概念研習：台文寫作ê手路kah鋩角",
+          "start_time": "2026-09-19T14:00:00+08:00",
+          "end_time": "2026-09-19T16:00:00+08:00",
+          "venue": "TCCC新北板橋館B401教室",
+          "city": "新北市",
+          "organizer": "李江却台語文教基金會",
+          "price_info": "免費；請先報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "tgb_writing_2026_20261018",
+        "title": "台文寫作概念研習：寫作ê主題kah範例",
+        "description": "藍春瑞主講台文寫作；兩場均為下午14:00–16:00，台語使用比例100%，每場認列2點。限54人，請由官方公告的免費報名表報名。",
+        "city": "新北市",
+        "district": "板橋區",
+        "category": "台語活動",
+        "start_time": "2026-10-18T14:00:00+08:00",
+        "end_time": "2026-10-18T16:00:00+08:00",
+        "venue": "TCCC新北板橋館B401教室",
+        "address": "新北市板橋區萬板路101號4樓",
+        "organizer": "李江却台語文教基金會",
+        "source_platform": "李江却基金會",
+        "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "cover_image": "",
+        "price_info": "免費；請先報名",
+        "is_free": true,
+        "tags": [
+          "台語講座",
+          "需報名",
+          "台文寫作"
+        ]
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "tgb_writing_2026",
+        "language_evidence": "官方公告明列「台語使用比例100%」。",
+        "method": "人工核對官方公告正文與2026年發布時間，逐場月日與星期相符，並分開核對場地；未以文章發布日或網址829當活動日。共用時間「下晡2:00-4:00」核為14:00–16:00，兩場各自刊登；依公告明列免費及100%台語。",
+        "confirmed_fields": {
+          "title": "台文寫作概念研習：寫作ê主題kah範例",
+          "start_time": "2026-10-18T14:00:00+08:00",
+          "end_time": "2026-10-18T16:00:00+08:00",
+          "venue": "TCCC新北板橋館B401教室",
+          "city": "新北市",
+          "organizer": "李江却台語文教基金會",
+          "price_info": "免費；請先報名",
           "is_free": true
         }
       }

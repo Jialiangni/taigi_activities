@@ -78,6 +78,9 @@ class FeedCrawler(Collector):
         self.keywords, self.max_pages = keywords, max_pages
         self.feed_mirrors = tuple(feed_mirrors)
 
+    def parse_page(self, text, evidence):
+        return parse_feed(text, self.source_id, evidence, self.keywords)
+
     def collect(self, client):
         result = Result(self.source_id, 'official_feed')
         queue, seen = [self.feed_url], set()
@@ -88,7 +91,7 @@ class FeedCrawler(Collector):
             seen.add(url)
             try:
                 text, ev = client.get(url)
-                rows, more = parse_feed(text, self.source_id, ev, self.keywords)
+                rows, more = self.parse_page(text, ev)
                 result.candidates.extend(rows)
                 for target in more:
                     allowed = urlsplit(target).hostname == urlsplit(self.feed_url).hostname or any(

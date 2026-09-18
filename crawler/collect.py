@@ -36,7 +36,8 @@ def collectors(config, selected=None):
                                     max_posts=limits.get('facebook_posts_per_page', 200)),
         'instagram': InstagramCrawler(hashtags=config.get('instagram_hashtags'), keywords=keywords, max_pages=pages),
         'threads': ThreadsCrawler(keywords, pages),
-        'li_kang_khiok': LiKangKhiokCrawler(keywords, limits.get('feed_pages', 5)),
+        'li_kang_khiok': LiKangKhiokCrawler(keywords, limits.get('feed_pages', 5),
+                                             max_details=limits.get('foundation_details', 30)),
         'le_chang': LeChangCrawler(keywords, limits.get('feed_pages', 5)),
     }
     for spec in definitions:
@@ -104,6 +105,8 @@ def run(config, output, selected=None, client_factory=Client):
     for summary, result in zip(report['sources'], results):
         if 'page_status' in result:
             summary['page_status'] = result['page_status']
+        if 'review_queue' in result:
+            summary['review_item_count'] = len(result['review_queue'])
     # No tokens are accepted in config; only documented collection limits, keywords and tags.
     (output / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return report

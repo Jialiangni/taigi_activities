@@ -43,17 +43,27 @@ class VerifiedCalendarTests(unittest.TestCase):
 
     def test_expanded_public_catalog_has_reviewed_sessions(self):
         events = load_verified(now=NOW)
-        self.assertEqual(len(events), 81)
-        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 27)
-        self.assertEqual(sum(a.city.value == '新北市' for a in events), 10)
+        self.assertEqual(len(events), 85)
+        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 28)
+        self.assertEqual(sum(a.city.value == '新北市' for a in events), 13)
         self.assertEqual(sum(a.city.value == '桃園市' for a in events), 44)
-        self.assertEqual(sum(a.is_free is True for a in events), 16)
+        self.assertEqual(sum(a.is_free is True for a in events), 20)
         self.assertEqual(sum(a.is_free is False for a in events), 28)
         self.assertFalse(any('後街人生' in a.title for a in events))
         # Human-rights series has five explicit sessions, not one multi-month event.
         series = [a for a in events if a.id.startswith('acc_2607280236031295663510')]
         self.assertEqual(len(series), 5)
         self.assertTrue(all(a.start_time[:10] == a.end_time[:10] for a in series))
+
+    def test_foundation_series_preserve_distinct_dates_venues_and_shared_times(self):
+        rows = [a for a in load_verified(now=NOW) if a.id.startswith('tgb_')]
+        self.assertEqual([(a.start_time[:10], a.city.value) for a in rows],
+                         [('2026-09-19', '新北市'), ('2026-09-20', '臺北市'),
+                          ('2026-10-17', '新北市'), ('2026-10-18', '新北市')])
+        self.assertTrue(all(a.start_time[11:16] == '14:00' and a.end_time[11:16] == '16:00' and a.is_free for a in rows))
+        self.assertIn('松江', rows[1].venue)
+        self.assertIn('臺灣圖書館', rows[2].venue)
+        self.assertFalse(any('2026-08-29' in a.start_time for a in rows))
 
     def test_live_opentix_change_blocks_publication(self):
         program = json.loads((Path(__file__).parent / 'fixtures/opentix_program.json').read_text())
