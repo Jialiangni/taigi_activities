@@ -89,7 +89,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <section class="container intro">
     <h1>後一場，台語相見。</h1>
     <p>臺北、新北、桃園，做伙來講台語。</p>
-    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛付錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
+    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
     <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
   </section>
   <div class="controls-wrapper">
@@ -113,7 +113,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="select-filters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
-        <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛付錢</option></select></label>
+        <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
     </div>
   </div>
@@ -463,7 +463,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return {{'台語故事':'台語講古','台語導覽':'台語導覽'}}[category] || category;
     }}
     function feeLabel(act) {{
-      return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛付錢' : '費用猶未公告';
+      return act.is_free === true ? '毋免錢' : act.is_free === false ? '愛納錢' : '費用猶未公告';
     }}
     function taigiDate(iso) {{
       return formatDateDisplay(iso);
