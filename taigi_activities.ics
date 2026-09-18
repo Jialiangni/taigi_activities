@@ -6,6 +6,118 @@ METHOD:PUBLISH
 X-WR-CALNAME:北北桃台語活動行事曆
 X-WR-TIMEZONE:Asia/Taipei
 BEGIN:VEVENT
+UID:acc_2608051357275636349740_20260919_1000@taigiactivities.tw
+DTSTAMP:20260918T093134Z
+DTSTART:20260919T020000Z
+DTEND:20260919T040000Z
+SUMMARY:中正紀念堂歷史小旅行（台語場）
+DESCRIPTION:歷史小旅行工作隊以台語導覽中正紀念堂及常設
+ 展；請於09:50到捷運站5號出口外集合。\n費用未公告，請
+ 查看報名頁或洽主辦單位\nhttps://www.accupass.com/event/26080513
+ 57275636349740
+LOCATION:中正紀念堂（捷運站5號出口外集合） 台灣台北市
+ 中正區中山南路21號
+URL:https://www.accupass.com/event/2608051357275636349740
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260919_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260919T050000Z
+DTEND:20260919T080000Z
+SUMMARY:台語咱佮意｜台語漢詩吟唱與實作
+DESCRIPTION:「台語咱佮意」系列講座，第1場，由杜仲奇老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園
+ 市八德區大愛里重慶街36-1號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2608270744575474894310_20260920_1000@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260920T020000Z
+DTEND:20260920T043000Z
+SUMMARY:數念的厝—台語兒少讀劇工作坊（上午場）
+DESCRIPTION:許騎凱帶領國小中、高年級學童練習台語表演與
+ 短劇創作；兩場須依報名頁選擇。\n免費，須報名，額滿
+ 為止\nhttps://www.accupass.com/event/2608270744575474894310
+LOCATION:桃園市土地公文化館 台灣桃園市桃園區三民路一
+ 段100號
+URL:https://www.accupass.com/event/2608270744575474894310
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2607280236031295663510_20260920_1030@taigiactivities.tw
+DTSTAMP:20260918T093118Z
+DTSTART:20260920T023000Z
+DTEND:20260920T040000Z
+SUMMARY:用台語講故事｜從台文繪本出發（上午場）
+DESCRIPTION:親子台語繪本活動，建議孩童年齡3–6歲。成人
+ 與孩童須分別報名，家長需全程陪同。\n免費，成人與孩
+ 童須分別報名\nhttps://www.accupass.com/event/2607280236031295663510
+LOCATION:國家人權博物館（白色恐怖景美紀念園區），人權
+ 學習中心（兒童人權學習基地） 台灣新北市新店區復興
+ 路131號
+URL:https://www.accupass.com/event/2607280236031295663510
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260920_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260920T050000Z
+DTEND:20260920T080000Z
+SUMMARY:台語咱佮意｜歌仔冊故事：戶蠅蚊仔歌謠故事
+DESCRIPTION:「台語咱佮意」系列講座，第2場，由杜仲奇老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園
+ 市八德區大愛里重慶街36-1號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260920_1300_2@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260920T050000Z
+DTEND:20260920T080000Z
+SUMMARY:台語咱佮意｜歹勢歹勢！我閣寫一條歌矣——台語
+ 囡仔歌創作入門（作詞）
+DESCRIPTION:「台語咱佮意」系列講座，第3場，由楊晉淵老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:大忠市民活動中心 桃園市八德區大愛里重慶街36號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260920_1300_3@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260920T050000Z
+DTEND:20260920T080000Z
+SUMMARY:台語咱佮意｜台語文學與民俗生活
+DESCRIPTION:「台語咱佮意」系列講座，第4場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:中路三號社會住宅圖書室 桃園市桃園區中埔里崇
+ 法街81、83、85號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2607280236031295663510_20260920_1330@taigiactivities.tw
+DTSTAMP:20260918T093118Z
+DTSTART:20260920T053000Z
+DTEND:20260920T070000Z
+SUMMARY:用台語講故事｜從台文繪本出發（下午場）
+DESCRIPTION:親子台語繪本活動，建議孩童年齡7歲以上。成
+ 人與孩童須分別報名，家長需全程陪同。\n免費，成人與
+ 孩童須分別報名\nhttps://www.accupass.com/event/26072802360312956635
+ 10
+LOCATION:國家人權博物館（白色恐怖景美紀念園區），人權
+ 學習中心（兒童人權學習基地） 台灣新北市新店區復興
+ 路131號
+URL:https://www.accupass.com/event/2607280236031295663510
+END:VEVENT
+BEGIN:VEVENT
 UID:ntpc_xizhi_songs_20260920@taigiactivities.tw
 DTSTAMP:20260918T080658Z
 DTSTART:20260920T060000Z
@@ -21,6 +133,19 @@ URL:https://atpass.ntpclib.gov.tw/activities/detail?cntId=29767193099f495da
  c73976981fad8c4&svcId=8e109e8bb57a4b44b21e31c34db87dba
 END:VEVENT
 BEGIN:VEVENT
+UID:acc_2608270744575474894310_20260920_1400@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260920T060000Z
+DTEND:20260920T083000Z
+SUMMARY:數念的厝—台語兒少讀劇工作坊（下午場）
+DESCRIPTION:許騎凱帶領國小中、高年級學童練習台語表演與
+ 短劇創作；兩場須依報名頁選擇。\n免費，須報名，額滿
+ 為止\nhttps://www.accupass.com/event/2608270744575474894310
+LOCATION:桃園市土地公文化館 台灣桃園市桃園區三民路一
+ 段100號
+URL:https://www.accupass.com/event/2608270744575474894310
+END:VEVENT
+BEGIN:VEVENT
 UID:ntpc_xizhi_songs_20260926@taigiactivities.tw
 DTSTAMP:20260918T080658Z
 DTSTART:20260926T020000Z
@@ -33,6 +158,76 @@ DESCRIPTION:楊彩瑛老師帶領認識在地故事與台語歌謠。可於
 LOCATION:汐止分館5樓研習教室
 URL:https://atpass.ntpclib.gov.tw/activities/detail?cntId=29767193099f495da
  c73976981fad8c4&svcId=8e109e8bb57a4b44b21e31c34db87dba
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609030741412898282180_20260926_1000@taigiactivities.tw
+DTSTAMP:20260918T093133Z
+DTSTART:20260926T020000Z
+DTEND:20260926T090000Z
+SUMMARY:思念ê聲—台語作詞工作坊（第1日）
+DESCRIPTION:楊肅浩帶領台語歌詞賞析與創作。這是連續兩日
+ 課程，每日12:00–13:00午休；非兩個獨立報名活動。\n費
+ 用未公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.
+ com/event/2609030741412898282180
+LOCATION:桃園文學館 台灣桃園市桃園區忠孝街11號
+URL:https://www.accupass.com/event/2609030741412898282180
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260926_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260926T050000Z
+DTEND:20260926T080000Z
+SUMMARY:台語咱佮意｜快速上手台羅拼音：玩桌遊，學台羅
+ 拼音
+DESCRIPTION:「台語咱佮意」系列講座，第5場，由郭竹屏老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:平鎮一號社會住宅1樓大廳A 桃園市平鎮區平南里漢
+ 口街82巷6號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609030741412898282180_20260927_1000@taigiactivities.tw
+DTSTAMP:20260918T093133Z
+DTSTART:20260927T020000Z
+DTEND:20260927T090000Z
+SUMMARY:思念ê聲—台語作詞工作坊（第2日）
+DESCRIPTION:楊肅浩帶領台語歌詞賞析與創作。這是連續兩日
+ 課程，每日12:00–13:00午休；非兩個獨立報名活動。\n費
+ 用未公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.
+ com/event/2609030741412898282180
+LOCATION:桃園文學館 台灣桃園市桃園區忠孝街11號
+URL:https://www.accupass.com/event/2609030741412898282180
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260927_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260927T050000Z
+DTEND:20260927T080000Z
+SUMMARY:台語咱佮意｜探索臺灣自然生態
+DESCRIPTION:「台語咱佮意」系列講座，第6場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:中路三號社會住宅圖書室 桃園市桃園區中埔里崇
+ 法街81、83、85號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20260927_1300_6@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20260927T050000Z
+DTEND:20260927T080000Z
+SUMMARY:台語咱佮意｜台文解密特工隊！從火星文歌詞到台
+ 語桌遊大亂鬥
+DESCRIPTION:「台語咱佮意」系列講座，第7場，由郭竹屏老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:八德一號社會住宅1樓親子中心 桃園市八德區建德
+ 路103號
+URL:https://www.accupass.com/event/2609140211321902093902
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_minnan_talk_20261003@taigiactivities.tw
@@ -63,6 +258,114 @@ URL:https://typass.tycg.gov.tw/activity/view?list=true&uuid=386d00e4-4cd9-4
  deb-9eb1-b00ed4fb6b54
 END:VEVENT
 BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261003_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261003T050000Z
+DTEND:20261003T080000Z
+SUMMARY:台語咱佮意｜宗教工藝全全寶
+DESCRIPTION:「台語咱佮意」系列講座，第8場，由鄭家和老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:土地公文化館501教室 桃園市桃園區三民路一段100
+ 號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261003_1300_8@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261003T050000Z
+DTEND:20261003T080000Z
+SUMMARY:台語咱佮意｜寶可夢科學
+DESCRIPTION:「台語咱佮意」系列講座，第9場，由林雅熒老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:兒童玩具圖書館－木偶人的玩具工作室 桃園市八
+ 德區大愛里重慶街36號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2062085945916366848@taigiactivities.tw
+DTSTAMP:20260918T093137Z
+DTSTART:20261003T063000Z
+DTEND:20261003T083000Z
+SUMMARY:《咱兜lán tau》雙版本巡演
+DESCRIPTION:桃園米倉劇場演出祖母版，台語演出、華語字幕
+ 。演出約120分鐘，含中場休息；本次收錄桃園三場。\n票
+ 面價格：700／2000元；折扣、贊助票與購票條件依官方頁
+ 面\nhttps://www.opentix.life/event/2056657152138346497
+LOCATION:米倉劇場 桃園市桃園區新生路169號
+URL:https://www.opentix.life/event/2056657152138346497
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2057009592664137729@taigiactivities.tw
+DTSTAMP:20260918T093137Z
+DTSTART:20261003T113000Z
+DTEND:20261003T133000Z
+SUMMARY:《咱兜lán tau》雙版本巡演
+DESCRIPTION:桃園米倉劇場演出祖母版，台語演出、華語字幕
+ 。演出約120分鐘，含中場休息；本次收錄桃園三場。\n票
+ 面價格：700／2000元；折扣、贊助票與購票條件依官方頁
+ 面\nhttps://www.opentix.life/event/2056657152138346497
+LOCATION:米倉劇場 桃園市桃園區新生路169號
+URL:https://www.opentix.life/event/2056657152138346497
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2607280236031295663510_20261004_1030@taigiactivities.tw
+DTSTAMP:20260918T093118Z
+DTSTART:20261004T023000Z
+DTEND:20261004T040000Z
+SUMMARY:用台語講故事｜孩子心中最重要的事（上午場）
+DESCRIPTION:親子台語繪本活動，建議孩童年齡3–6歲。成人
+ 與孩童須分別報名，家長需全程陪同。\n免費，成人與孩
+ 童須分別報名\nhttps://www.accupass.com/event/2607280236031295663510
+LOCATION:國家人權博物館（白色恐怖景美紀念園區），人權
+ 學習中心（兒童人權學習基地） 台灣新北市新店區復興
+ 路131號
+URL:https://www.accupass.com/event/2607280236031295663510
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261004_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261004T050000Z
+DTEND:20261004T080000Z
+SUMMARY:台語咱佮意｜黑膠唱片與台語老歌
+DESCRIPTION:「台語咱佮意」系列講座，第10場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:中路三號社會住宅圖書室 桃園市桃園區中埔里崇
+ 法街81、83、85號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609080954292886555710_20261004_1300@taigiactivities.tw
+DTSTAMP:20260918T093134Z
+DTSTART:20261004T050000Z
+DTEND:20261004T093000Z
+SUMMARY:寫予你的批—台語讀詩創作工作坊｜寫予親人的批
+DESCRIPTION:温若喬帶領台語詩閱讀與創作，每場限25位；兩
+ 場可分別報名。\n免費，每場限25位，須報名\nhttps://www.ac
+ cupass.com/event/2609080954292886555710
+LOCATION:桃園文學館 台灣桃園市桃園區忠孝街11號
+URL:https://www.accupass.com/event/2609080954292886555710
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2062086080595501056@taigiactivities.tw
+DTSTAMP:20260918T093137Z
+DTSTART:20261004T063000Z
+DTEND:20261004T083000Z
+SUMMARY:《咱兜lán tau》雙版本巡演
+DESCRIPTION:桃園米倉劇場演出祖母版，台語演出、華語字幕
+ 。演出約120分鐘，含中場休息；本次收錄桃園三場。 本
+ 場註記：演出中同步錄影\n票面價格：700／2000元；折扣
+ 、贊助票與購票條件依官方頁面\nhttps://www.opentix.life/event
+ /2056657152138346497
+LOCATION:米倉劇場 桃園市桃園區新生路169號
+URL:https://www.opentix.life/event/2056657152138346497
+END:VEVENT
+BEGIN:VEVENT
 UID:ty_minnan_puppet_20261010@taigiactivities.tw
 DTSTAMP:20260918T080658Z
 DTSTART:20261010T020000Z
@@ -75,6 +378,47 @@ DESCRIPTION:傳統布袋戲搭配台語口白，適合親子觀賞。此筆
 LOCATION:八塊厝民俗藝術村-多功能展演廳
 URL:https://typass.tycg.gov.tw/activity/view?index=true&uuid=3a903631-c7c2-
  40ac-b04b-19a5c96f3e4e
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261010_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261010T050000Z
+DTEND:20261010T080000Z
+SUMMARY:台語咱佮意｜台語欲復興，家庭行代先
+DESCRIPTION:「台語咱佮意」系列講座，第11場，由陳豐惠老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:大忠市民活動中心 桃園市八德區大愛里重慶街36號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261010_1300_11@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261010T050000Z
+DTEND:20261010T080000Z
+SUMMARY:台語咱佮意｜寶可夢科學
+DESCRIPTION:「台語咱佮意」系列講座，第12場，由林雅熒老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園
+ 市八德區大愛里重慶街36-1號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2081616883683512321@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261010T063000Z
+DTEND:20261010T073000Z
+SUMMARY:台語光影戲《山神的餅店》劇場版
+DESCRIPTION:不貳偶劇的親子光影戲，台語發音比例98%，演出
+ 約60分鐘。票價及套票優惠依官方購票頁。\n票面價格：3
+ 00元；折扣、贊助票與購票條件依官方頁面\nhttps://www.open
+ tix.life/event/2081615616389365761
+LOCATION:華山1914文創園區東3B館 烏梅劇院 臺北市中正區八
+ 德路一段1號
+URL:https://www.opentix.life/event/2081615616389365761
 END:VEVENT
 BEGIN:VEVENT
 UID:typl_taigi_awareness_20261011@taigiactivities.tw
@@ -103,6 +447,260 @@ LOCATION:桃園市立圖書館總館6樓多功能活動室
 URL:https://www.typl.gov.tw/zh-tw/Activity/Content/10103
 END:VEVENT
 BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261011_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261011T050000Z
+DTEND:20261011T080000Z
+SUMMARY:台語咱佮意｜庶民生活與歌謠——台灣褒歌的考察
+DESCRIPTION:「台語咱佮意」系列講座，第13場，由林金城老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:平鎮一號社會住宅1樓大廳A 桃園市平鎮區平南里漢
+ 口街82巷6號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140211321902093902_20261011_1300_13@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261011T050000Z
+DTEND:20261011T080000Z
+SUMMARY:台語咱佮意｜黑膠唱片與台語老歌
+DESCRIPTION:「台語咱佮意」系列講座，第14場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140211321902093902
+LOCATION:龍潭分館1樓多功能展演空間 桃園市龍潭區中山里
+ 中興路680號
+URL:https://www.accupass.com/event/2609140211321902093902
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2081620242303524865@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261011T063000Z
+DTEND:20261011T073000Z
+SUMMARY:台語光影戲《山神的餅店》劇場版
+DESCRIPTION:不貳偶劇的親子光影戲，台語發音比例98%，演出
+ 約60分鐘。票價及套票優惠依官方購票頁。\n票面價格：3
+ 00元；折扣、贊助票與購票條件依官方頁面\nhttps://www.open
+ tix.life/event/2081615616389365761
+LOCATION:華山1914文創園區東3B館 烏梅劇院 臺北市中正區八
+ 德路一段1號
+URL:https://www.opentix.life/event/2081615616389365761
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2608051357275636349740_20261017_1000@taigiactivities.tw
+DTSTAMP:20260918T093134Z
+DTSTART:20261017T020000Z
+DTEND:20261017T040000Z
+SUMMARY:中正紀念堂歷史小旅行（台語場）
+DESCRIPTION:歷史小旅行工作隊以台語導覽中正紀念堂及常設
+ 展；請於09:50到捷運站5號出口外集合。\n費用未公告，請
+ 查看報名頁或洽主辦單位\nhttps://www.accupass.com/event/26080513
+ 57275636349740
+LOCATION:中正紀念堂（捷運站5號出口外集合） 台灣台北市
+ 中正區中山南路21號
+URL:https://www.accupass.com/event/2608051357275636349740
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261017_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261017T050000Z
+DTEND:20261017T080000Z
+SUMMARY:台語咱佮意｜歹勢歹勢！我閣寫一條歌矣——台語
+ 囡仔歌創作入門（作曲）
+DESCRIPTION:「台語咱佮意」系列講座，第15場，由楊晉淵老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:中路三號社會住宅圖書室 桃園市桃園區中埔里崇
+ 法街81、83、85號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261018_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261018T050000Z
+DTEND:20261018T080000Z
+SUMMARY:台語咱佮意｜探索臺灣自然生態
+DESCRIPTION:「台語咱佮意」系列講座，第16場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:蘆竹一號社會住宅1樓多功能教室 桃園市蘆竹區大
+ 新三街173號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261018_1300_16@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261018T050000Z
+DTEND:20261018T080000Z
+SUMMARY:台語咱佮意｜學做家己佮社會的「執行長」
+DESCRIPTION:「台語咱佮意」系列講座，第17場，由李建穎老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:中路三號社會住宅圖書室 桃園市桃園區中埔里崇
+ 法街81、83、85號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609080954292886555710_20261018_1300@taigiactivities.tw
+DTSTAMP:20260918T093134Z
+DTSTART:20261018T050000Z
+DTEND:20261018T093000Z
+SUMMARY:寫予你的批—台語讀詩創作工作坊｜寫予愛人的批
+DESCRIPTION:温若喬帶領台語詩閱讀與創作，每場限25位；兩
+ 場可分別報名。\n免費，每場限25位，須報名\nhttps://www.ac
+ cupass.com/event/2609080954292886555710
+LOCATION:桃園文學館 台灣桃園市桃園區忠孝街11號
+URL:https://www.accupass.com/event/2609080954292886555710
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261024_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261024T050000Z
+DTEND:20261024T080000Z
+SUMMARY:台語咱佮意｜影帝影后講台語
+DESCRIPTION:「台語咱佮意」系列講座，第18場，由陳豐惠老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:桃園市立圖書館總館711會議室 桃園市桃園區同德
+ 里南平路303號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261025_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261025T050000Z
+DTEND:20261025T080000Z
+SUMMARY:台語咱佮意｜聽在地的聲音——台灣褒歌的音韻
+DESCRIPTION:「台語咱佮意」系列講座，第19場，由林金城老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:大忠市民活動中心 桃園市八德區大愛里重慶街36號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2608120722439860768370_20261030_1900@taigiactivities.tw
+DTSTAMP:20260918T093133Z
+DTSTART:20261030T110000Z
+DTEND:20261030T123000Z
+SUMMARY:文學之夜｜聲音如何乘載記憶：流行音樂中的臺灣
+ 史
+DESCRIPTION:張嘉祥以台語談文學、流行音樂與歷史記憶。含
+ 三杯65ml飲品；無酒精需求須於報名時註記，未成年僅提
+ 供無酒精飲品。\n每人750元，飲品與退票條件依主辦公告
+ \nhttps://www.accupass.com/event/2608120722439860768370
+LOCATION:桃園文學館 閱食小屋 台灣桃園市330桃園區忠孝街1
+ 1號
+URL:https://www.accupass.com/event/2608120722439860768370
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261031_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261031T050000Z
+DTEND:20261031T080000Z
+SUMMARY:台語咱佮意｜台文解密特工隊！從火星文歌詞到台
+ 語桌遊大亂鬥
+DESCRIPTION:「台語咱佮意」系列講座，第20場，由郭竹屏老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:八德分館多功能活動區 桃園市八德區興中里豐德
+ 路452號2樓
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2607280236031295663510_20261101_1030@taigiactivities.tw
+DTSTAMP:20260918T093118Z
+DTSTART:20261101T023000Z
+DTEND:20261101T040000Z
+SUMMARY:用台語講故事｜帶著勇氣尋找光與自由（上午場）
+DESCRIPTION:親子台語繪本活動，建議孩童年齡3–6歲。成人
+ 與孩童須分別報名，家長需全程陪同。\n免費，成人與孩
+ 童須分別報名\nhttps://www.accupass.com/event/2607280236031295663510
+LOCATION:國家人權博物館（白色恐怖景美紀念園區），人權
+ 學習中心（兒童人權學習基地） 台灣新北市新店區復興
+ 路131號
+URL:https://www.accupass.com/event/2607280236031295663510
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261101_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261101T050000Z
+DTEND:20261101T080000Z
+SUMMARY:台語咱佮意｜對咱身軀邊的宗教文化，來看咱的生
+ 活
+DESCRIPTION:「台語咱佮意」系列講座，第21場，由鄭家和老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:蘆竹分館4樓研習教室 桃園市蘆竹區五福里五福一
+ 路255號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2607280236031295663510_20261101_1330@taigiactivities.tw
+DTSTAMP:20260918T093118Z
+DTSTART:20261101T053000Z
+DTEND:20261101T070000Z
+SUMMARY:用台語講故事｜帶著勇氣尋找光與自由（下午場）
+DESCRIPTION:親子台語繪本活動，建議孩童年齡7歲以上。成
+ 人與孩童須分別報名，家長需全程陪同。\n免費，成人與
+ 孩童須分別報名\nhttps://www.accupass.com/event/26072802360312956635
+ 10
+LOCATION:國家人權博物館（白色恐怖景美紀念園區），人權
+ 學習中心（兒童人權學習基地） 台灣新北市新店區復興
+ 路131號
+URL:https://www.accupass.com/event/2607280236031295663510
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261107_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261107T050000Z
+DTEND:20261107T080000Z
+SUMMARY:台語咱佮意｜熟似歌仔戲＋拍開戲籠的秘密
+DESCRIPTION:「台語咱佮意」系列講座，第22場，由鄭家和老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:土地公文化館501教室 桃園市桃園區三民路一段100
+ 號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261107_1300_22@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261107T050000Z
+DTEND:20261107T080000Z
+SUMMARY:台語咱佮意｜台語文學與民俗生活
+DESCRIPTION:「台語咱佮意」系列講座，第23場，由張日東老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園
+ 市八德區大愛里重慶街36-1號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261114_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261114T050000Z
+DTEND:20261114T080000Z
+SUMMARY:台語咱佮意｜跤步手路展工夫
+DESCRIPTION:「台語咱佮意」系列講座，第24場，由鄭家和老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:土地公文化館501教室 桃園市桃園區三民路一段100
+ 號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
 UID:typl_taigi_concert_20261114@taigiactivities.tw
 DTSTAMP:20260918T080658Z
 DTSTART:20261114T062000Z
@@ -114,5 +712,103 @@ DESCRIPTION:由台語路親子樂團與青虫aoi樂團演出，開放親子
  ttps://www.typl.gov.tw/zh-tw/Activity/Content/10103
 LOCATION:桃園市立圖書館總館1樓微光廳
 URL:https://www.typl.gov.tw/zh-tw/Activity/Content/10103
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261115_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261115T050000Z
+DTEND:20261115T080000Z
+SUMMARY:台語咱佮意｜咱ê土地，咱ê話——自圖中看見百年
+ 前ê台灣
+DESCRIPTION:「台語咱佮意」系列講座，第25場，由李孟珊老
+ 師授課。親子參加時，大人與孩子須分別報名。公告場
+ 地欄列5樓研習教室、地址欄列4樓；樓層請向主辦確認。
+ \n費用未公告，請查看報名頁或洽主辦單位\nhttps://www.accu
+ pass.com/event/2609140247402019682780
+LOCATION:大園分館 桃園市大園區田心里中正西路12之1號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2608051357275636349740_20261121_1000@taigiactivities.tw
+DTSTAMP:20260918T093134Z
+DTSTART:20261121T020000Z
+DTEND:20261121T040000Z
+SUMMARY:中正紀念堂歷史小旅行（台語場）
+DESCRIPTION:歷史小旅行工作隊以台語導覽中正紀念堂及常設
+ 展；請於09:50到捷運站5號出口外集合。\n費用未公告，請
+ 查看報名頁或洽主辦單位\nhttps://www.accupass.com/event/26080513
+ 57275636349740
+LOCATION:中正紀念堂（捷運站5號出口外集合） 台灣台北市
+ 中正區中山南路21號
+URL:https://www.accupass.com/event/2608051357275636349740
+END:VEVENT
+BEGIN:VEVENT
+UID:acc_2609140247402019682780_20261121_1300@taigiactivities.tw
+DTSTAMP:20260918T093117Z
+DTSTART:20261121T050000Z
+DTEND:20261121T080000Z
+SUMMARY:台語咱佮意｜咱ê土地，咱ê話——自圖中看見百年
+ 前ê台灣
+DESCRIPTION:「台語咱佮意」系列講座，第26場，由李孟珊老
+ 師授課。親子參加時，大人與孩子須分別報名。\n費用未
+ 公告，請查看報名頁或洽主辦單位\nhttps://www.accupass.com/ev
+ ent/2609140247402019682780
+LOCATION:八塊厝民俗藝術村－語言推廣館－語言教室 桃園
+ 市八德區大愛里重慶街36-1號
+URL:https://www.accupass.com/event/2609140247402019682780
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2089882441028116481@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261218T113000Z
+DTEND:20261218T124000Z
+SUMMARY:複象公場《洋基之子》臺文混血劇場
+DESCRIPTION:以臺文為核心的多語劇場，含台語、華語與英語
+ ，提供個人手機字幕。建議12歲以上觀賞，演出約70分鐘
+ 。\n票面價格：1000／2000元；折扣、贊助票與購票條件依
+ 官方頁面\nhttps://www.opentix.life/event/2089874937535913985
+LOCATION:國家兩廳院實驗劇場 臺北市中正區中山南路21-1號
+URL:https://www.opentix.life/event/2089874937535913985
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2089885361175105537@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261219T063000Z
+DTEND:20261219T074000Z
+SUMMARY:複象公場《洋基之子》臺文混血劇場
+DESCRIPTION:以臺文為核心的多語劇場，含台語、華語與英語
+ ，提供個人手機字幕。建議12歲以上觀賞，演出約70分鐘
+ 。 本場註記：本場次同步錄影\n票面價格：1000／2000元；
+ 折扣、贊助票與購票條件依官方頁面\nhttps://www.opentix.life
+ /event/2089874937535913985
+LOCATION:國家兩廳院實驗劇場 臺北市中正區中山南路21-1號
+URL:https://www.opentix.life/event/2089874937535913985
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2089885879014047745@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261219T113000Z
+DTEND:20261219T124000Z
+SUMMARY:複象公場《洋基之子》臺文混血劇場
+DESCRIPTION:以臺文為核心的多語劇場，含台語、華語與英語
+ ，提供個人手機字幕。建議12歲以上觀賞，演出約70分鐘
+ 。 本場註記：本場次同步錄影\n票面價格：1000／2000元；
+ 折扣、贊助票與購票條件依官方頁面\nhttps://www.opentix.life
+ /event/2089874937535913985
+LOCATION:國家兩廳院實驗劇場 臺北市中正區中山南路21-1號
+URL:https://www.opentix.life/event/2089874937535913985
+END:VEVENT
+BEGIN:VEVENT
+UID:opentix_2089886289327202305@taigiactivities.tw
+DTSTAMP:20260918T093136Z
+DTSTART:20261220T063000Z
+DTEND:20261220T074000Z
+SUMMARY:複象公場《洋基之子》臺文混血劇場
+DESCRIPTION:以臺文為核心的多語劇場，含台語、華語與英語
+ ，提供個人手機字幕。建議12歲以上觀賞，演出約70分鐘
+ 。\n票面價格：1000／2000元；折扣、贊助票與購票條件依
+ 官方頁面\nhttps://www.opentix.life/event/2089874937535913985
+LOCATION:國家兩廳院實驗劇場 臺北市中正區中山南路21-1號
+URL:https://www.opentix.life/event/2089874937535913985
 END:VEVENT
 END:VCALENDAR

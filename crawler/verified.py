@@ -5,8 +5,9 @@ from datetime import datetime, timezone, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
-from urllib.request import Request, urlopen
 from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
+from .collection import Client
+from .sources.opentix import parse_program
 
 TAIPEI = timezone(timedelta(hours=8))
 DATA_PATH = Path(__file__).resolve().parents[1] / 'data/verified_activities.json'
@@ -60,19 +61,32 @@ def check_source_content(source, html):
             raise ValueError(f"來源內容異動，需重新人工核對：{source['url']}；缺少 {expected!r}")
 
 
+def check_opentix_sessions(source, payload):
+    program_id = source['url'].rsplit('/', 1)[-1]
+    if not isinstance(payload, dict) or str((payload.get('result') or {}).get('id')) != program_id:
+        raise ValueError('OPENTIX 節目識別異動，需重新核對')
+    actual = {r['fields']['session_id']: r['fields'] for r in parse_program(payload['result'], {})}
+    for expected in source['opentix_sessions']:
+        session = actual.get(expected['session_id'])
+        if not session or any(session.get(k) != v for k, v in expected.items()):
+            raise ValueError('OPENTIX 場次時間、地點、票價或狀態異動，需重新核對：' + expected['session_id'])
+
+
 def check_live_sources(sources):
+    client = Client(timeout=30)
     for source in sources.values():
-        req = Request(source['url'], headers={'User-Agent': 'Mozilla/5.0 (TaigiActivities source verification)'})
-        with urlopen(req, timeout=30) as response:
-            if response.status != 200:
-                raise ValueError(f"來源 HTTP 狀態異常：{source['url']}")
-            detail_url(response.url)
-            if urlsplit(response.url).hostname != urlsplit(source['url']).hostname:
-                raise ValueError('來源轉址至不同網站，需重新核對')
-            html = response.read(4_000_001)
-            if len(html) > 4_000_000:
-                raise ValueError('來源回應超出限制')
-            check_source_content(source, html.decode('utf-8'))
+        html, evidence = client.get(source['url'])
+        detail_url(evidence['final_url'])
+        if urlsplit(evidence['final_url']).hostname != urlsplit(source['url']).hostname:
+            raise ValueError('來源轉址至不同網站，需重新核對')
+        if len(html.encode('utf-8')) > 4_000_000:
+            raise ValueError('來源回應超出限制')
+        check_source_content(source, html)
+        if 'opentix_sessions' in source:
+            if not re.fullmatch(r'https://www\.opentix\.life/event/\d+', source['url']):
+                raise ValueError('OPENTIX 場次查核來源不正確')
+            payload, _ = client.json('https://csm.api.opentix.life/programs/' + source['url'].rsplit('/', 1)[-1])
+            check_opentix_sessions(source, payload)
 
 
 def load_verified(path=DATA_PATH, now=None, check_sources=False):
@@ -91,12 +105,21 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
             raise ValueError('來源核對時間不可在未來')
         if not re.fullmatch(r'[a-f0-9]{64}', source.get('snapshot_sha256', '')):
             raise ValueError('來源缺少核查快照指紋')
+        if 'opentix_sessions' in source:
+            if not source['opentix_sessions'] or not re.fullmatch(r'[a-f0-9]{64}', source.get('api_snapshot_sha256', '')):
+                raise ValueError('OPENTIX 缺少已核對場次或 API 指紋')
+            if parse_time(source['api_checked_at']) > now:
+                raise ValueError('API 核對時間不可在未來')
     activities, seen_ids, seen_sessions = [], set(), set()
     for row in payload['activities']:
         data, review = row['activity'], row['verification']
         if review.get('status') != 'verified' or not review.get('language_evidence'):
             raise ValueError('未核實活動或缺少台語內容證據，不可發布')
         source = sources[review['source_id']]
+        if 'opentix_sessions' in source:
+            session = next((s for s in source['opentix_sessions'] if s['session_id'] == review.get('opentix_session_id')), None)
+            if not session or any(data[k] != session[k] for k in ('start_time', 'end_time', 'venue', 'address', 'city', 'is_free')):
+                raise ValueError('正式活動與已核對的 OPENTIX 場次不一致')
         if data['source_url'] != source['url']:
             raise ValueError('活動連結與核實來源不一致')
         for field in REVIEWED_FIELDS:

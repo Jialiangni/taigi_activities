@@ -9,7 +9,8 @@ from unittest.mock import patch
 from urllib.parse import parse_qs, urlsplit
 
 from build_html import generate_single_html
-from crawler.verified import DATA_PATH, check_source_content, load_verified
+from crawler.verified import DATA_PATH, check_source_content, check_opentix_sessions, load_verified
+from crawler.sources.opentix import parse_program
 from crawler.sources.google_workspace import GoogleWorkspaceSync, ics_text, fold_line
 from main import build
 
@@ -18,7 +19,7 @@ NOW = datetime.fromisoformat('2026-09-18T23:00:00+08:00')
 
 class VerifiedCalendarTests(unittest.TestCase):
     def setUp(self):
-        self.data = json.loads(DATA_PATH.read_text())
+        self.data = json.loads((Path(__file__).parent / 'fixtures/verified_catalog_base.json').read_text())
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.path = Path(self.tmp.name) / 'data.json'
@@ -31,7 +32,7 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.data['activities'][0]['activity'][key] = value
         self.data['activities'][0]['verification']['confirmed_fields'][key] = value
 
-    def test_current_catalog_and_original_exclusion(self):
+    def test_baseline_catalog_and_original_exclusion(self):
         events = self.load()
         old = json.loads((DATA_PATH.parent / 'audit/2026-09-18-legacy.json').read_text())
         self.assertEqual(len(old['records']), 64)
@@ -39,6 +40,33 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertFalse({a.id for a in events} & {r['activity']['id'] for r in old['records']})
         self.assertEqual(sum(a.is_free is True for a in events), 5)
         self.assertEqual(sum(a.is_free is None for a in events), 3)
+
+    def test_expanded_public_catalog_has_reviewed_sessions(self):
+        events = load_verified(now=NOW)
+        self.assertEqual(len(events), 58)
+        self.assertEqual(sum(a.city.value == '臺北市' for a in events), 9)
+        self.assertEqual(sum(a.city.value == '新北市' for a in events), 7)
+        self.assertEqual(sum(a.city.value == '桃園市' for a in events), 42)
+        self.assertEqual(sum(a.is_free is True for a in events), 14)
+        self.assertEqual(sum(a.is_free is False for a in events), 10)
+        self.assertFalse(any('後街人生' in a.title for a in events))
+        # Human-rights series has five explicit sessions, not one multi-month event.
+        series = [a for a in events if a.id.startswith('acc_2607280236031295663510')]
+        self.assertEqual(len(series), 5)
+        self.assertTrue(all(a.start_time[:10] == a.end_time[:10] for a in series))
+
+    def test_live_opentix_change_blocks_publication(self):
+        program = json.loads((Path(__file__).parent / 'fixtures/opentix_program.json').read_text())
+        source = {'url': 'https://www.opentix.life/event/' + str(program['id']),
+                  'opentix_sessions': [r['fields'] for r in parse_program(program, {})]}
+        check_opentix_sessions(source, {'result': program})
+        for key, value in [('startDateTime', 1), ('status', 999)]:
+            changed = copy.deepcopy(program)
+            changed['eventVenues'][0]['events'][0][key] = value
+            with self.assertRaises(ValueError): check_opentix_sessions(source, {'result': changed})
+        changed = copy.deepcopy(program)
+        changed['eventVenues'][0]['events'].pop(0)
+        with self.assertRaises(ValueError): check_opentix_sessions(source, {'result': changed})
 
     def test_unreviewed_entry_fails(self):
         self.data['activities'][0]['verification']['status'] = 'pending'
