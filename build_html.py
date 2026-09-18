@@ -1,6 +1,6 @@
 """
 Single-file HTML Builder for Taigi Activities Calendar
-Compiles activities into an iPhone-optimized, clutter-free standalone index.html
+Compiles activities into an iPhone & Android optimized, clutter-free standalone index.html
 """
 import json
 import os
@@ -29,23 +29,27 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <title>北北桃台語活動日曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
   <meta name="description" content="全台最完整的北北桃台語活動行事曆！彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
   
-  <!-- iOS iPhone Web App (PWA) 標籤 -->
+  <!-- Android Chrome & PWA 支援 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#C84C32">
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- iOS iPhone Web App (PWA) 支援 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="台語活動日曆">
+  <meta name="apple-mobile-web-app-title" content="台語日曆">
   <meta name="format-detection" content="telephone=no">
-  <meta name="theme-color" content="#C84C32">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   
   <style>
     :root {{
-      --font-main: -apple-system, BlinkMacSystemFont, 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', Roboto, sans-serif;
-      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Noto Sans TC', sans-serif;
+      --font-main: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', sans-serif;
+      --font-display: 'Outfit', 'Roboto', 'Noto Sans TC', sans-serif;
       
       /* Colors */
       --bg-main: #F8F9FA;
@@ -65,7 +69,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       --primary-light: #FDE8E4;
       --primary-glow: rgba(200, 76, 50, 0.18);
       
-      --secondary: #1D3557; /* 台灣青藍 */
+      --secondary: #1D3557;
       --secondary-light: #EBF2F7;
       
       --accent-tea: #0D9488;
@@ -135,9 +139,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       width: 100%;
     }}
 
-    /* =========================================================================
-       DESKTOP HEADER
-       ========================================================================= */
+    /* Desktop Header */
     header.hero-header {{
       background: linear-gradient(135deg, #1E293B 0%, #0F172A 60%, #1D3557 100%);
       color: #FFFFFF;
@@ -225,6 +227,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       box-shadow: 0 4px 12px var(--primary-glow);
     }}
 
+    .btn-share {{
+      background: #25D366; /* LINE / Share green */
+      color: #FFFFFF;
+    }}
+
     .btn-icon {{
       width: 38px;
       height: 38px;
@@ -235,7 +242,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       border-radius: 50%;
     }}
 
-    /* Desktop Hero Stats */
     .hero-stats {{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -264,9 +270,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       font-family: var(--font-display);
     }}
 
-    /* =========================================================================
-       COMPACT CONTROLS BAR (STAYS SLIM ON MOBILE)
-       ========================================================================= */
+    /* Compact Controls Bar (Slim on mobile) */
     .controls-wrapper {{
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border-color);
@@ -372,7 +376,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       box-shadow: var(--shadow-sm);
     }}
 
-    /* Single Horizontal Quick Strip for Mobile */
     .quick-strip-scroll {{
       display: flex;
       overflow-x: auto;
@@ -435,7 +438,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       background: rgba(255,255,255,0.25);
     }}
 
-    /* Desktop Additional Filter Rows (Hidden on Mobile) */
     .desktop-filters-row {{
       display: flex;
       flex-wrap: wrap;
@@ -444,9 +446,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       font-size: 0.8rem;
     }}
 
-    /* =========================================================================
-       MAIN EVENT CARDS & VIEWS
-       ========================================================================= */
+    /* Main Content Area */
     main.main-content {{
       padding: 1.25rem 1.25rem;
       flex: 1;
@@ -829,31 +829,29 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       border-left: 2px solid var(--primary);
     }}
 
-    /* =========================================================================
-       IPHONE NATIVE BOTTOM TAB BAR
-       ========================================================================= */
+    /* Mobile Bottom Navigation Bar */
     .ios-tab-bar {{
       display: none;
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-top: 0.5px solid rgba(0, 0, 0, 0.15);
       z-index: 99;
-      padding-bottom: var(--sab);
+      padding-bottom: max(6px, var(--sab));
     }}
 
     [data-theme="dark"] .ios-tab-bar {{
-      background: rgba(15, 23, 42, 0.9);
+      background: rgba(15, 23, 42, 0.92);
       border-top: 0.5px solid rgba(255, 255, 255, 0.15);
     }}
 
     .ios-tab-bar-items {{
       display: flex;
-      height: 50px;
+      height: 52px;
       justify-content: space-around;
       align-items: center;
     }}
@@ -885,7 +883,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       color: var(--primary);
     }}
 
-    /* Modal / Bottom Sheet */
+    /* Modals */
     .modal-overlay {{
       position: fixed;
       top: 0;
@@ -1034,10 +1032,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     /* =========================================================================
-       CRITICAL IPHONE MOBILE OVERRIDES (SOLVING THE 5/6 SCREEN ISSUE)
+       RESPONSIVE MOBILE VIEW (iPhone & Android)
        ========================================================================= */
     @media (max-width: 768px) {{
-      /* 1. Hide Desktop Hero, Keep Only Ultra-Slim iPhone Bar */
       header.hero-header {{
         padding: calc(var(--sat) + 0.5rem) 1rem 0.5rem;
         box-shadow: none;
@@ -1049,7 +1046,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         font-size: 1.15rem;
       }}
       .brand-titles p {{
-        display: none; /* 隱藏副標題，省下大量高度 */
+        display: none;
       }}
       .brand-icon {{
         width: 32px;
@@ -1057,21 +1054,19 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         font-size: 1rem;
       }}
       .hero-stats {{
-        display: none; /* 手機端完全隱藏佔位置的統計方塊 */
+        display: none;
       }}
       .header-actions {{
-        display: none; /* 隱藏頂部按鈕，收至底部 Tab 或設定 */
+        display: none;
       }}
 
-      /* 2. Hide Desktop Multi-row Filters */
       .desktop-filters-row {{
         display: none !important;
       }}
       .view-switchers {{
-        display: none; /* 改由底部 iOS Tab Bar 切換 */
+        display: none;
       }}
 
-      /* 3. Slim Down Sticky Controls Bar (< 88px total height) */
       .controls-container {{
         padding: 0.45rem 0.85rem;
         gap: 0.35rem;
@@ -1081,7 +1076,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         font-size: 0.85rem;
       }}
 
-      /* 4. Increase Content Area & Padding */
       body {{
         padding-bottom: calc(var(--sab) + 55px);
       }}
@@ -1125,12 +1119,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         font-size: 0.6rem;
       }}
 
-      /* 5. Show iOS Tab Bar */
       .ios-tab-bar {{
         display: block;
       }}
 
-      /* 6. iPhone Bottom Sheet Modal */
       .modal-overlay {{
         align-items: flex-end;
         padding: 0;
@@ -1156,7 +1148,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 </head>
 <body>
 
-  <!-- HERO HEADER (DESKTOP: Full / IPHONE: Ultra-compact navbar) -->
+  <!-- HEADER -->
   <header class="hero-header">
     <div class="container">
       <div class="header-top">
@@ -1174,7 +1166,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           </button>
           <button class="btn btn-light" onclick="openSyncModal()">
             <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
-            Google 日曆串接
+            手機/日曆串接
           </button>
           <button class="btn btn-light btn-icon" onclick="toggleTheme()" title="切換深淺模式">
             🌓
@@ -1182,7 +1174,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
       </div>
 
-      <!-- Desktop Hero Stats (Hidden on iPhone to free up 100% space) -->
+      <!-- Desktop Hero Stats (Hidden on mobile) -->
       <div class="hero-stats">
         <div class="stat-card">
           <span class="label">活動總數</span>
@@ -1208,18 +1200,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
 
-  <!-- CONTROLS & FILTERS (SLIM & CLEAN) -->
+  <!-- CONTROLS & FILTERS -->
   <div class="controls-wrapper">
     <div class="container controls-container">
       
-      <!-- Row 1: Search + Filter Sheet Trigger Button + Desktop View Switchers -->
       <div class="controls-row-1">
         <div class="search-box">
           <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line></svg>
           <input type="text" id="searchInput" placeholder="搜尋劇名、故事屋、導覽、圖書館..." oninput="handleSearch(this.value)">
         </div>
 
-        <!-- Filter Sheet Trigger Button (For iPhone to open full filter sheet) -->
         <button class="btn-filter-toggle" id="btnFilterSheet" onclick="openFilterSheet()">
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" stroke-width="2"/></svg>
           <span id="filterBtnLabel">進階篩選</span>
@@ -1232,9 +1222,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
       </div>
 
-      <!-- Row 2: ONLY ONE SINGLE Horizontal Scroll Quick Strip (takes ~30px height) -->
+      <!-- Quick Strip for Mobile & Desktop -->
       <div class="quick-strip-scroll">
-        <!-- City Filter -->
         <button class="pill active" data-filter-type="city" data-value="all" onclick="setCityFilter('all')">全部地區 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" onclick="setCityFilter('臺北市')">🏛️ 臺北 <span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" onclick="setCityFilter('新北市')">🌊 新北 <span class="pill-count" id="count-city-newtaipei"></span></button>
@@ -1242,7 +1231,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         
         <div class="strip-divider"></div>
 
-        <!-- Quick Categories -->
         <button class="pill active" data-filter-type="category" data-value="all" onclick="setCategoryFilter('all')">全部類別</button>
         <button class="pill" data-filter-type="category" data-value="台語舞台劇" onclick="setCategoryFilter('台語舞台劇')">🎭 舞台劇</button>
         <button class="pill" data-filter-type="category" data-value="台語表演" onclick="setCategoryFilter('台語表演')">🎪 表演</button>
@@ -1252,7 +1240,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 導覽</button>
       </div>
 
-      <!-- Desktop Only: Platform & Price filters (Hidden on mobile) -->
+      <!-- Desktop Only Filter Row -->
       <div class="desktop-filters-row">
         <span style="color:var(--text-muted); font-weight:700;">來源：</span>
         <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
@@ -1313,12 +1301,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </main>
 
-  <!-- IPHONE NATIVE BOTTOM TAB BAR -->
+  <!-- MOBILE NATIVE BOTTOM TAB BAR (Android & iPhone) -->
   <nav class="ios-tab-bar">
     <div class="ios-tab-bar-items">
       <button class="ios-tab-item active" data-tab="grid" onclick="switchViewMobile('grid')">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
-        <span>活動卡片</span>
+        <span>活動探索</span>
       </button>
       <button class="ios-tab-item" data-tab="agenda" onclick="switchViewMobile('agenda')">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
@@ -1330,16 +1318,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       </button>
       <button class="ios-tab-item" onclick="openFilterSheet()">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" stroke-width="2"/></svg>
-        <span>進階篩選</span>
+        <span>篩選</span>
       </button>
       <button class="ios-tab-item" onclick="openSyncModal()">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <span>設定/同步</span>
+        <span>同步/設定</span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE FILTER BOTTOM SHEET (Pops up cleanly when requested) -->
+  <!-- MOBILE FILTER BOTTOM SHEET -->
   <div class="modal-overlay" id="filterSheetModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog" style="max-width: 500px;">
       <div class="modal-sheet-handle"></div>
@@ -1347,7 +1335,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="modal-content">
         <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 1rem; color:var(--text-main);">🔍 進階活動篩選</h3>
 
-        <!-- Platform Section -->
         <div style="margin-bottom: 1.25rem;">
           <h4 style="font-size: 0.85rem; font-weight: 700; color:var(--text-muted); margin-bottom: 0.5rem;">來源平台：</h4>
           <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
@@ -1365,7 +1352,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           </div>
         </div>
 
-        <!-- Pricing Section -->
         <div style="margin-bottom: 1.5rem;">
           <h4 style="font-size: 0.85rem; font-weight: 700; color:var(--text-muted); margin-bottom: 0.5rem;">費用條件：</h4>
           <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
@@ -1376,13 +1362,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
 
         <button class="btn btn-primary" onclick="closeFilterSheet()" style="width: 100%; justify-content: center; padding: 0.75rem;">
-          套用篩選 (查看結果)
+          套用篩選
         </button>
       </div>
     </div>
   </div>
 
-  <!-- EVENT DETAIL MODAL (iPhone iOS Bottom Sheet) -->
+  <!-- EVENT DETAIL MODAL (Android & iPhone Bottom Sheet) -->
   <div class="modal-overlay" id="eventModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
@@ -1421,7 +1407,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             </div>
           </div>
           <div class="info-row">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 6.33 7 5.5 7z"/></svg>
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
             <div>
               <strong style="color:var(--text-main);">票價/收費：</strong>
               <div id="modalPrice" style="color:var(--text-muted);"></div>
@@ -1436,14 +1422,18 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <a id="modalTicketLink" href="#" target="_blank" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
             🎟️ 前往官方購票 / 報名頁面
           </a>
+          <!-- Dynamic Calendar CTA (Auto-adapted for Android Google Calendar vs iPhone Apple Calendar) -->
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
-            📅 加到 Google 日曆
+            📅 加到 Google 日曆 (Android 推薦)
           </a>
           <button id="modalSingleIcsBtn" onclick="downloadSingleIcs()" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             🍏 加到 Apple 日曆 (.ics)
           </button>
+          <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share" style="border:none;">
+            📤 分享到 LINE / 社群
+          </button>
           <a id="modalMapLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
-            🗺️ 地圖導航
+            🗺️ Google 地圖導航
           </a>
         </div>
       </div>
@@ -1456,20 +1446,27 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="modal-sheet-handle"></div>
       <button class="modal-close" onclick="closeSyncModal()">✕</button>
       <div class="modal-content">
-        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; color:var(--text-main);">📅 同步至手機行事曆</h2>
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; color:var(--text-main);">📱 同步至 Android / iPhone 行事曆</h2>
         <p style="font-size: 0.88rem; color:var(--text-muted); margin-bottom: 1rem;">
-          支援 iPhone 行事曆、Google Calendar、Mac 與 Outlook 自動同步：
+          無論使用 Android 手機或 iPhone，皆可無縫同步日曆與安裝 App：
         </p>
 
+        <!-- Android Section -->
         <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🍏 iPhone / Apple 日曆直接匯入</h4>
-          <p style="color:var(--text-muted); margin-bottom:0.65rem;">在 iPhone Safari 點擊下方按鈕，系統會自動彈出「將所有活動加入行事曆」確認窗。</p>
-          <button class="btn btn-primary" onclick="exportCalendarFile()">📥 下載 taigi_activities.ics</button>
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🤖 Android 手機 (Samsung / Pixel 等)</h4>
+          <p style="color:var(--text-muted); margin-bottom:0.5rem;">
+            1. <strong>加到 Google 日曆</strong>：任選活動點擊「加到 Google 日曆」，Android 系統會直接自動喚醒內建 Google Calendar App。<br>
+            2. <strong>安裝為手機 App</strong>：在 Chrome 瀏覽器點擊右上角三點選單 ➔ <strong>「安裝應用程式」</strong> 或 <strong>「新增至主螢幕」</strong>，即可全螢幕使用！
+          </p>
+          <button class="btn btn-primary" onclick="exportCalendarFile()">📥 下載日曆檔 taigi_activities.ics</button>
         </div>
 
+        <!-- iPhone Section -->
         <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">📅 Google 日曆單場一鍵加入</h4>
-          <p style="color:var(--text-muted);">任選一場活動點擊「加到 Google 日曆」，系統會自動填寫所有起訖時間、地點與購票連結。</p>
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🍏 iPhone 手機</h4>
+          <p style="color:var(--text-muted);">
+            在 Safari 點擊分享按鈕 ➔ <strong>「加入主畫面」</strong> 即可當作原生 App 使用。點擊「加到 Apple 日曆」可直接匯入 iPhone 行事曆。
+          </p>
         </div>
 
         <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; font-size:0.85rem;">
@@ -1511,9 +1508,23 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     document.addEventListener('DOMContentLoaded', () => {{
       initTheme();
+      adaptToDeviceOS();
       computeStats();
       renderAll();
     }});
+
+    function adaptToDeviceOS() {{
+      const isAndroid = /android/i.test(navigator.userAgent);
+      if (isAndroid) {{
+        // On Android, highlight Google Calendar as default
+        const gcalBtn = document.getElementById('modalGCalLink');
+        if (gcalBtn) {{
+          gcalBtn.classList.remove('btn-light');
+          gcalBtn.classList.add('btn-primary');
+          gcalBtn.innerText = '📅 一鍵加到 Google 日曆 (Android 推薦)';
+        }}
+      }}
+    }}
 
     function initTheme() {{
       const saved = localStorage.getItem('taigi_theme') || 'light';
@@ -1893,6 +1904,25 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function closeSyncModal() {{
       document.getElementById('syncModal').classList.remove('active');
       document.body.style.overflow = '';
+    }}
+
+    // Android & Mobile Share API
+    function shareCurrentActivity() {{
+      if (!selectedActivity) return;
+      const act = selectedActivity;
+      const shareData = {{
+        title: act.title,
+        text: `【${{act.category}}】${{act.title}}\\n時間：${{formatDateDisplay(act.start_time)}}\\n地點：${{act.venue}}\\n來做伙講台語！`,
+        url: window.location.href
+      }};
+
+      if (navigator.share) {{
+        navigator.share(shareData).catch(() => {{}});
+      }} else {{
+        // Fallback: Copy to clipboard
+        navigator.clipboard.writeText(`${{shareData.title}}\\n${{shareData.url}}`);
+        alert('活動資訊已複製到剪貼簿，可直接貼到 LINE 分享！');
+      }}
     }}
 
     function exportCalendarFile() {{

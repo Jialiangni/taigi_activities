@@ -1,0 +1,24 @@
+{
+  "name": "北北桃台語活動日曆",
+  "short_name": "台語日曆",
+  "description": "臺北市、新北市、桃園市台語舞台劇、表演、故事、繪本、體驗與導覽活動行事曆",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8F9FA",
+  "theme_color": "#C84C32",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='42' fill='%23C84C32'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='96'>🎭</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='112' fill='%23C84C32'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='256'>🎭</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
