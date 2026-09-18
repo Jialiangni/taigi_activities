@@ -31,11 +31,24 @@ class DistrictTests(unittest.TestCase):
             centers={r['district'] for r in rows if r.get('city')==city and r['group']=='community_centers'}
             self.assertEqual(len(libs),count);self.assertEqual(libs,centers)
         self.assertEqual(len(collectors({},['community_centers'])),54)
-        self.assertEqual(len(collectors({},['public_libraries'])),59)
+        self.assertEqual(len(collectors({},['public_libraries'])),60)
         for r in rows:
             if r.get('listing_type')=='taoyuan':
                 q=parse_qs(urlsplit(r['urls'][0]).query,keep_blank_values=True)
                 self.assertTrue(all('Filter[{}]'.format(i) in q for i in range(5)))
+
+    def test_three_main_libraries_in_default_collection(self):
+        sources=collectors({})
+        self.assertIsInstance(sources['tpml_main'],LibraryListingCrawler)
+        self.assertIn('n=C4252F536DF57EC4',sources['tpml_main'].spec['urls'][0])
+        ntpc=sources['ntpclib_district_220'].spec
+        self.assertEqual(ntpc['area_code'],'220')
+        self.assertNotIn('branch',parse_qs(urlsplit(ntpc['urls'][0]).query))
+        self.assertIn('新北市立圖書館總館',ntpc['aliases'])
+        typl=sources['typl_district_2'].spec
+        self.assertIn('1',typl['area_codes'])
+        self.assertEqual(parse_qs(urlsplit(typl['urls'][0]).query)['Filter[4]'],['2.1'])
+        self.assertIn('桃園市立圖書館總館',typl['aliases'])
 
     def test_ty_real_form_paging_and_no_invented_sessions(self):
         spec={'id':'test','listing_type':'taoyuan','city':'桃園市','district':'復興區','area_codes':['14'],'urls':['https://www.typl.gov.tw/zh-tw/Activity']}

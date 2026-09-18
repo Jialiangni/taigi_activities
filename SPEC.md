@@ -16,8 +16,8 @@
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
 - `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
-- `crawler/collect.py`：158 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
-- `data/source_registry.json`：149 個官方機構／團體與分區入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
+- `crawler/collect.py`：159 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
+- `data/source_registry.json`：150 個官方機構／團體與分區入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
 - `crawler/sources/`：已改為真實資料收集；不再回傳固定資料。舊 `fetch_activities()` 接口會明確拒絕未審核資料，請改用 `.collect(client)`。
 - `crawler/sample_data.py` 及 `processor.py`：保留的歷史實作；正式建置／候選收集均不使用。
 - `config.example.json`：現行候選收集設定；僅含公開搜尋條件和流量上限。全部 Python 程式只需標準庫。
@@ -131,3 +131,9 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 城市使用固定藍／綠／橘色（臺北／新北／桃園），週曆附圖例及城市文字；探索卡片、時間排程與詳情城市標籤一致。週曆活動按鈕支援鍵盤開啟詳情，保留原官方來源及日曆匯出功能。正式場次、核實證據與非場次資訊無異動。
 
 前端回歸涵蓋週末14場完整列出、排序、城市篩選與配色、HTML文字跳脫、跨月跨年及閏日、臺北日期、本週導覽與空週；既有Python、官方來源重查及ICS下載檢查仍為發布門檻。
+
+## 13. 月份複選與總館入口（2026-09-18）
+
+前端以全部正式場次的Asia/Taipei開始日期產生YYYY-MM月份選項，按年月排序，不受其他篩選隱藏選項。selectedMonths為空表示全部；多個月採聯集，再與城市、類別、來源、費用及文字篩選取交集。重按月份取消，全部月份清除。按鈕以aria-pressed呈現選取狀態，桌面與手機共用可水平捲動的列；維持按鈕DOM以保留鍵盤焦點。卡片、清單、週曆、計數及篩選後ICS使用同一組結果，非場次資訊不受活動月份篩選。若選月後目前週沒有符合活動，定位至篩選後首場活動所在週；沒有符合活動時定位至所選最早月份首日。週曆仍一次顯示一週。
+
+新增臺北總館專用LibraryListingCrawler（tpml_main），總數159收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。

@@ -190,3 +190,15 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 - 清單全部仍為pending；日期可能是截止日或歷程，不能自動認作場次。共用時間、上午／下晡、地點、年份、圖片公告、取消與延期需人工核對；不自動打開或提交報名表。
 
 本次實跑5頁Feed＋30篇詳情，35個成功回應、0請求錯誤、246候選、182篇日期／報名核實項目；達兩項上限標partial，coverage_complete=false。`python3 -m crawler.collect --sources li_kang_khiok`可重跑。83項Python測試通過，新增回歸涵蓋三場公告、純文字報名、側欄隔離、共用時間、年份待核、上限、詳情失敗與未核實禁止刊登。
+
+## 三市總館明確涵蓋（2026-09-18 最新）
+
+目前159個收集器、150個registry入口，public_libraries群組60個。
+
+| 總館 | 日常收集設定 | 本次限量6頁驗收 |
+|---|---|---|
+| 臺北市立圖書館總館 | 新增 `tpml_main`：[官方總館-全列表](https://reading.tpml.gov.taipei/News.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64)，使用數字分頁專用收集器 | 6次成功回應，0候選，詳情未讀完，partial；不代表沒有台語活動 |
+| 新北市立圖書館總館 | `ntpclib_district_220`：[板橋區全部館別](https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220)，不指定branch，包含位於板橋的總館 | HTTP502，failed；已設定但本次未完成連線驗收 |
+| 桃園市立圖書館總館 | `typl_district_2`：Filter[4]=2.1，包含桃園區2及總館1；[官方GetVenues](https://www.typl.gov.tw/zh-tw/Home/GetVenues)另列總館branch 52 | 6次成功回應，3筆待核實候選，達上限partial |
+
+[本次證據與請求摘要](data/audit/2026-09-18-main-libraries-check.json)保存名錄與回應指紋。日常仍預設30頁，本次6頁僅驗收設定。總館列表也可能刊登他館公告，必須逐筆核實場地；本輪不新增正式場次。

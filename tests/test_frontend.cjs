@@ -5,12 +5,12 @@ const vm = require('node:vm');
 const html = fs.readFileSync('index.html', 'utf8');
 const elements = new Map();
 const element = id => {
-  if (!elements.has(id)) elements.set(id, {innerHTML:'', innerText:'', textContent:'', style:{}, parentElement:{style:{}}, classList:{add(){},remove(){}}});
+  if (!elements.has(id)) elements.set(id, {innerHTML:'', innerText:'', textContent:'', style:{}, parentElement:{style:{}}, classList:{add(){},remove(){},toggle(){}}});
   return elements.get(id);
 };
 let download;
 const context = vm.createContext({Intl, Date, Blob, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
-  addEventListener(){},getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
+  addEventListener(){},querySelectorAll:()=>[],getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
   createElement:()=>({click(){}})
 }});
 for (const [,script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) vm.runInContext(script,context);
@@ -33,6 +33,29 @@ if (data.length) {
   assert.match(element('modalDesc').innerText,/官方資料核對/);
   assert.match(element('modalTime').innerText,/～/);
 }
+// Month selection is a union of year-months, intersected with all other filters.
+run('renderMonthFilters()');
+assert.match(element('monthFilterOptions').innerHTML, /全部月份/);
+const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();
+for (const key of monthKeys) assert.ok(element('monthFilterOptions').innerHTML.includes(key));
+if (monthKeys.length) {
+  run(`toggleMonth('${monthKeys[0]}')`);
+  assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.start_time.startsWith(monthKeys[0])).length);
+  if (monthKeys.length>1) {
+    run(`toggleMonth('${monthKeys[monthKeys.length-1]}')`);
+    assert.equal(run('getFilteredActivities().length'),data.filter(a=>[monthKeys[0],monthKeys[monthKeys.length-1]].includes(a.start_time.slice(0,7))).length);
+    run(`toggleMonth('${monthKeys[0]}')`);
+    assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.start_time.startsWith(monthKeys[monthKeys.length-1])).length);
+    assert.equal(run('calDate.toISOString().slice(0,7)'),monthKeys[monthKeys.length-1]);
+  }
+  run("currentCity='臺北市'");
+  assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.city==='臺北市' && JSON.parse(run('JSON.stringify([...selectedMonths])')).includes(a.start_time.slice(0,7))).length);
+  run("currentCity='all';toggleMonth('all')");
+  assert.equal(run('getFilteredActivities().length'),data.length);
+  run(`toggleMonth('${monthKeys[0]}');toggleMonth('${monthKeys[0]}')`);
+  assert.equal(run('selectedMonths.size'),0);
+}
+console.log('PASS: single/multiple month selection, year-month labels, city intersection, calendar alignment, clear and deselect');
 // A crowded weekend must retain every event, including long titles and all cities.
 run(`
   globalThis.originalActivities = ACTIVITIES_DATA.slice();
@@ -82,12 +105,27 @@ run('goToToday()');
 assert.equal(run('calDate.toISOString().slice(0,10)'), run('taipeiDateKey()'));
 assert.doesNotMatch(html, /max-height:\s*60px|prevMonth|nextMonth|月曆檢視/);
 assert.match(html, /white-space: normal/);
+run(`
+  ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length,
+    {id:'year-2026', start_time:'2026-01-01T10:00:00+08:00'},
+    {id:'year-2027', start_time:'2027-01-01T10:00:00+08:00'},
+    {id:'taipei-october', start_time:'2026-09-30T16:30:00Z'});
+  selectedMonths.add('2026-10');
+`);
+assert.equal(run("getFilteredActivities().map(a=>a.id).join(',')"),'taipei-october');
+run("selectedMonths.add('2027-01')");
+assert.equal(run('getFilteredActivities().length'),2);
+assert.ok(!run("getFilteredActivities().some(a=>a.id==='year-2026')"));
+run('selectedMonths.clear()');
 run('ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length, ...originalActivities)');
 console.log('PASS: crowded week (14 events), city colors/filter, full titles, week navigation, year/leap boundaries, Taipei dates, empty week');
 (async()=>{
   run('exportCalendarFile()');
   assert.equal(await download.text(),fs.readFileSync('taigi_activities.ics','utf8'));
   if(data.length){
+    run(`selectedMonths.add('${monthKeys[0]}');exportCalendarFile()`);
+    assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,data.filter(a=>a.start_time.startsWith(monthKeys[0])).length);
+    run('selectedMonths.clear()');
     run('downloadSingleIcs()');
     assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,1);
     assert.ok((await download.text()).includes(data[0].ics_event));

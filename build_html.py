@@ -475,6 +475,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     .filter-summary {{
       display: flex;
+      flex-wrap: wrap;
+      gap: .35rem .75rem;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 0.85rem;
@@ -738,6 +740,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       gap: 0.35rem;
       min-width: 110px;
     }}
+
+    .month-filter {{ display: flex; align-items: center; gap: .6rem; min-width: 0; }}
+    .month-filter-label {{ font-size: .8rem; color: var(--text-muted); flex-shrink: 0; }}
+    .month-options {{ display: flex; gap: .4rem; overflow-x: auto; padding: .25rem 0; }}
+    .month-options .pill {{ flex-shrink: 0; }}
 
     /* Weekly calendar: full-height event lists, no hidden overflow. */
     .city-taipei {{ --city-ink: #174ea6; --city-bg: #e8f0fe; }}
@@ -1215,6 +1222,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 導覽</button>
       </div>
 
+      <div class="month-filter" role="group" aria-label="活動月份（可複選）">
+        <span class="month-filter-label">月份<br><small>可複選</small></span>
+        <div class="month-options" id="monthFilterOptions"></div>
+      </div>
+
       <!-- Desktop Only Filter Row -->
       <div class="desktop-filters-row">
         <span style="color:var(--text-muted); font-weight:700;">來源：</span>
@@ -1484,6 +1496,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     let currentCategory = 'all';
     let currentPlatform = 'all';
     let currentPrice = 'all';
+    const selectedMonths = new Set();
     let searchQuery = '';
     let selectedActivity = null;
     let calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
@@ -1492,6 +1505,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       initTheme();
       adaptToDeviceOS();
       computeStats();
+      renderMonthFilters();
       renderAll();
     }});
 
@@ -1569,6 +1583,43 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       renderAll();
     }}
 
+    function monthLabel(key) {{
+      const [year, month] = key.split('-');
+      return `${{year}}年${{Number(month)}}月`;
+    }}
+
+    function renderMonthFilters() {{
+      const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
+      document.getElementById('monthFilterOptions').innerHTML =
+        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">全部月份</button>` +
+        months.map(month => `<button class="pill ${{selectedMonths.has(month) ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonths.has(month)}}" onclick="toggleMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
+    }}
+
+    function toggleMonth(month) {{
+      if (month === 'all') selectedMonths.clear();
+      else if (selectedMonths.has(month)) selectedMonths.delete(month);
+      else selectedMonths.add(month);
+      // Keep buttons in place so keyboard focus and mobile horizontal scroll survive toggling.
+      document.querySelectorAll('[data-month]').forEach(button => {{
+        const active = button.dataset.month === 'all' ? !selectedMonths.size : selectedMonths.has(button.dataset.month);
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      }});
+      if (selectedMonths.size) {{
+        const first = weekStart(calDate).toISOString().slice(0, 10);
+        const end = new Date(weekStart(calDate));
+        end.setUTCDate(end.getUTCDate() + 6);
+        const last = end.toISOString().slice(0, 10);
+        const filtered = getFilteredActivities().slice().sort((a,b) => new Date(a.start_time) - new Date(b.start_time));
+        const inWeek = filtered.some(a => {{
+          const key = taipeiDateKey(new Date(a.start_time));
+          return key >= first && key <= last;
+        }});
+        if (!inWeek) calDate = new Date((filtered.length ? taipeiDateKey(new Date(filtered[0].start_time)) : [...selectedMonths].sort()[0] + '-01') + 'T00:00:00Z');
+      }}
+      renderAll();
+    }}
+
     function updatePills(filterType, val) {{
       document.querySelectorAll(`button[data-filter-type="${{filterType}}"]`).forEach(p => {{
         p.classList.toggle('active', p.dataset.value === val);
@@ -1599,6 +1650,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     function getFilteredActivities() {{
       return ACTIVITIES_DATA.filter(act => {{
+        if (selectedMonths.size && !selectedMonths.has(taipeiDateKey(new Date(act.start_time)).slice(0, 7))) return false;
         if (currentCity !== 'all' && act.city !== currentCity) return false;
         if (currentCategory !== 'all' && act.category !== currentCategory) return false;
         if (currentPlatform !== 'all' && act.source_platform !== currentPlatform) return false;
@@ -1634,6 +1686,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderAll() {{
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
+      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '全部月份';
 
       renderGrid(filtered);
       renderAgenda(filtered);

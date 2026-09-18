@@ -1,10 +1,10 @@
 # 各區圖書館與活動中心來源
 
-新增54個圖書館分區來源與54個活動中心公告來源，臺北12、新北29、桃園13區均有入口。現有158個收集器，registry149個。這是來源範圍，不是158個已核實活動，也不是每一場館完整行程。
+新增54個圖書館分區來源與54個活動中心公告來源，臺北12、新北29、桃園13區均有入口。現有159個收集器，registry150個。這是來源範圍，不是158個已核實活動，也不是每一場館完整行程。
 
 ## 收集方式
 
-- 臺北圖書館：官方閱讀網53個分館／閱覽室活動列表，分成12區；沿同一分館數字頁碼翻頁。總館與其他特殊館別仍由原有tpml來源補充。
+- 臺北圖書館：官方閱讀網53個分館／閱覽室活動列表，分成12區；沿同一分館數字頁碼翻頁。總館另由tpml_main專用列表收集，其他特殊館別由原有tpml來源補充。
 - 新北圖書館：官方area選項對應29區，不指定branch以包含同區各館；跟隨原站pagechange表單，以同一Cookie及CSRF續頁。代碼採2026-09-18較早成功取得的官方HTML；此次新增驗收如遇HTTP502明確列failed，並不代表該區沒有活動。
 - 桃園圖書館：官方GetVenues行政區／館舍JSON，完整Filter[0]至Filter[4]查詢與CurrentPage表單翻頁；桃園區含總館，逐項檢查data-area，篩選未生效即報錯。
 - 活動中心：從各區公所公告、活動、研習及中心相關公開頁發現內容；需中心及台語相關證據，不將租借辦法與收費規則當作活動。沒有獨立官網、只在社群或圖片公布的課表仍可能漏收。
@@ -96,3 +96,15 @@
 | 桃園市 | 大溪區 | [typl_district_12](https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword=)（partial） | [ty_center_daxi](https://www.daxi.tycg.gov.tw/)（partial） |
 | 桃園市 | 新屋區 | [typl_district_13](https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword=)（ok） | [ty_center_xinwu](https://www.xinwu.tycg.gov.tw/)（partial） |
 | 桃園市 | 復興區 | [typl_district_14](https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=14&keyword=)（ok） | [ty_center_fuxing](https://www.fuxing.tycg.gov.tw/)（partial） |
+
+## 三市總館明確涵蓋（2026-09-18 最新）
+
+目前159個收集器、150個registry入口，public_libraries群組60個。
+
+| 總館 | 日常收集設定 | 本次限量6頁驗收 |
+|---|---|---|
+| 臺北市立圖書館總館 | 新增 `tpml_main`：[官方總館-全列表](https://reading.tpml.gov.taipei/News.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64)，使用數字分頁專用收集器 | 6次成功回應，0候選，詳情未讀完，partial；不代表沒有台語活動 |
+| 新北市立圖書館總館 | `ntpclib_district_220`：[板橋區全部館別](https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220)，不指定branch，包含位於板橋的總館 | HTTP502，failed；已設定但本次未完成連線驗收 |
+| 桃園市立圖書館總館 | `typl_district_2`：Filter[4]=2.1，包含桃園區2及總館1；[官方GetVenues](https://www.typl.gov.tw/zh-tw/Home/GetVenues)另列總館branch 52 | 6次成功回應，3筆待核實候選，達上限partial |
+
+[本次證據與請求摘要](data/audit/2026-09-18-main-libraries-check.json)保存名錄與回應指紋。日常仍預設30頁，本次6頁僅驗收設定。總館列表也可能刊登他館公告，必須逐筆核實場地；本輪不新增正式場次。

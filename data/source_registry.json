@@ -9,9 +9,11 @@
         "https://tpml.gov.taipei/"
       ],
       "aliases": [
-        "臺北市立圖書館"
+        "臺北市立圖書館",
+        "臺北市立圖書館總館"
       ],
-      "redirect_hosts": []
+      "redirect_hosts": [],
+      "coverage_note": "總館活動另由tpml_main專用列表收集；市圖首頁保留為補充探索。"
     },
     {
       "id": "ntpclib",
@@ -2437,7 +2439,8 @@
         "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220"
       ],
       "aliases": [
-        "新北市立圖書館板橋區"
+        "新北市立圖書館板橋區",
+        "新北市立圖書館總館"
       ],
       "redirect_hosts": [],
       "collector": "library_listing",
@@ -2445,7 +2448,7 @@
       "area_code": "220",
       "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
       "directory_checked_at": "2026-09-18",
-      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+      "coverage_note": "板橋區不指定branch，包含總館及該區各分館；2026-09-18重查仍HTTP502，設定涵蓋不等於成功抓取。"
     },
     {
       "id": "ntpclib_district_208",
@@ -2744,7 +2747,8 @@
         "文化局分館",
         "寶興閱覽室",
         "總館",
-        "全自動借書站"
+        "全自動借書站",
+        "桃園市立圖書館總館"
       ],
       "redirect_hosts": [],
       "collector": "library_listing",
@@ -2753,7 +2757,8 @@
         "2",
         "1"
       ],
-      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues",
+      "coverage_note": "Filter[4]=2.1及area_codes=[2,1]包含桃園區與總館；官方GetVenues的area 1為總館，branch 52為總館。"
     },
     {
       "id": "typl_district_3",
@@ -3020,6 +3025,24 @@
         "14"
       ],
       "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "tpml_main",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館總館活動",
+      "city": "臺北市",
+      "district": "大安區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "臺北市立圖書館總館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5",
+      "coverage_note": "官方總館-全列表；來源單位不等於活動地點，需逐筆核實。"
     }
   ]
 }

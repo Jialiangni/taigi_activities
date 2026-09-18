@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-18T22:29:37+08:00",
+  "publication_changed": false,
+  "config": {
+    "schema_version": 2,
+    "keywords": [
+      "台語",
+      "臺語",
+      "台灣話",
+      "臺灣話",
+      "閩南語",
+      "囡仔古",
+      "歌仔戲",
+      "布袋戲",
+      "唸歌",
+      "台文"
+    ],
+    "instagram_hashtags": [
+      "台語活動",
+      "台語繪本",
+      "台語故事",
+      "台語走讀",
+      "台語工作坊"
+    ],
+    "workers": 3,
+    "limits": {
+      "search_pages": 20,
+      "details": 200,
+      "feed_pages": 5,
+      "website_pages": 6,
+      "facebook_comment_pages": 20,
+      "facebook_posts_per_page": 200,
+      "foundation_details": 30
+    }
+  },
+  "sources": [
+    {
+      "source_id": "ntpclib_district_220",
+      "method": "district_library_listing",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "started_at": "2026-09-18T22:29:26+08:00",
+      "completed_at": "2026-09-18T22:29:28+08:00",
+      "request_evidence": [],
+      "candidate_urls": []
+    },
+    {
+      "source_id": "tpml_main",
+      "method": "district_library_listing",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=6",
+        "discovered_details=13",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 6,
+      "started_at": "2026-09-18T22:29:26+08:00",
+      "completed_at": "2026-09-18T22:29:37+08:00",
+      "request_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:29+08:00",
+          "sha256": "e3e7c34e4acad1412c3df217e4a75b1df02bdb8854987fe5e831ec64b53ba540"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=5AD64DB6FFAE12AE",
+          "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=5AD64DB6FFAE12AE",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:31+08:00",
+          "sha256": "56d49a3ab9bbb2e82fe11f67d44e73089e9679983f767302acc278cb57d2a61a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=63773D62580FBBCF",
+          "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=63773D62580FBBCF",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:32+08:00",
+          "sha256": "863881cb017c4752225ad5204b52bc79bab15a0a131e08eff7c2612543d0c5e2"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=FEF4841F95EA0845",
+          "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=FEF4841F95EA0845",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:34+08:00",
+          "sha256": "1ccf9940efaab0c8c0c21a0ee03df1e1cf45b910bbae340a9a0d0a9dbbc23a0f"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=7F18B7BC1D2D2D50",
+          "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=7F18B7BC1D2D2D50",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:35+08:00",
+          "sha256": "ef6fc5086f182abfe72a68746b1685e8b825dce1fb8c04adf5e2ddc141cc4542"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=E14D029FD67F7B51",
+          "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=C4252F536DF57EC4&sms=9D72E82EC16F3E64&s=E14D029FD67F7B51",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:37+08:00",
+          "sha256": "7cbfeb9c17e6ead217610b1964ec908714715ab73d122e9c17a9e9a2a90fd6da"
+        }
+      ],
+      "candidate_urls": []
+    },
+    {
+      "source_id": "typl_district_2",
+      "method": "district_library_listing",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_listing_page_limit_reached",
+        "library_detail_page_limit_reached",
+        "pages_read=6",
+        "discovered_details=36",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 3,
+      "successful_response_count": 6,
+      "started_at": "2026-09-18T22:29:26+08:00",
+      "completed_at": "2026-09-18T22:29:31+08:00",
+      "request_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:27+08:00",
+          "sha256": "3c436989468146e7ba102a46a3d34fac04c9685800beb81dd1bfcb2e9a36ae5d",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T22:29:28+08:00",
+          "sha256": "ad3a53939e4b81b4a87d934a8f6facee4e8cd4c6952caf85ffc1a7d8ab32782b",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T22:29:28+08:00",
+          "sha256": "5af18efad1ea309e9c47ce8acd45fcf5fd0478b59682683f355c498ab19567bc",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:29+08:00",
+          "sha256": "d38d98698d49e20d876a2a009f1a2d4d221d2f0a63a9b7b1018fd603900766fe"
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:30+08:00",
+          "sha256": "91ce7c811153a6dffcc65e8f9d927a88b4c5a728b373d01e641fad82ce9fc581"
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T22:29:31+08:00",
+          "sha256": "1756fb3d75e1620dbf449716497886fefd0706dfa2c4e1668e2796996373be35"
+        }
+      ],
+      "candidate_urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+        "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+        "https://www.typl.gov.tw/zh-tw/Activity/Content/10135"
+      ]
+    }
+  ],
+  "purpose": "Verify main-library coverage; bounded configuration acceptance, not full activity discovery.",
+  "registry_count": 150,
+  "collector_count": 159,
+  "main_library_mapping": [
+    {
+      "library": "臺北市立圖書館總館",
+      "source_id": "tpml_main",
+      "method": "Dedicated official total-main listing, numeric pagination."
+    },
+    {
+      "library": "新北市立圖書館總館",
+      "source_id": "ntpclib_district_220",
+      "method": "Banqiao area=220 with all branches. Endpoint failed HTTP502; live coverage not verified.",
+      "official_branch_url": "https://www.library.ntpc.gov.tw/branch/libraryBranch/detail/8aa9646575074db0a99c641a5f029ddb?branchId=dc88121272914791be0c19deef10053b"
+    },
+    {
+      "library": "桃園市立圖書館總館",
+      "source_id": "typl_district_2",
+      "method": "Filter[4]=2.1 includes official main area 1; GetVenues identifies main branch 52."
+    }
+  ],
+  "directory_evidence": [
+    {
+      "url": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5",
+      "final_url": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5",
+      "http_status": 200,
+      "request_method": "GET",
+      "fetched_at": "2026-09-18T22:28:00+08:00",
+      "sha256": "760595ac25f7f36afe3c64ba5c0fcb7f9a1a8c5e549067f7b420b238b47527e8"
+    },
+    {
+      "url": "https://www.typl.gov.tw/zh-tw/Home/GetVenues",
+      "final_url": "https://www.typl.gov.tw/zh-tw/Home/GetVenues",
+      "http_status": 200,
+      "request_method": "GET",
+      "fetched_at": "2026-09-18T22:28:04+08:00",
+      "sha256": "e6634bc8a097eb5cfdf50e0c8bb624d51a30ce44f27d74b269ad235eca0dfc31"
+    }
+  ]
+}
