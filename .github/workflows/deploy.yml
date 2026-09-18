@@ -34,27 +34,39 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run crawler & generate index.html
+      - name: Test publication gates and calendar exports
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Verify official sources and build calendar
         run: |
-          python3 main.py
+          python3 main.py --check-sources
+
+      - name: Verify browser logic and calendar download content
+        run: node tests/test_frontend.cjs
 
       - name: Commit updated files if changed
         if: github.event_name == 'schedule'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html taigi_activities.ics assets/
+          git add index.html taigi_activities.ics
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 自動更新台語活動資料庫 [skip ci]" && git push)
         continue-on-error: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Stage public files only
+        run: |
+          mkdir -p public
+          cp index.html taigi_activities.ics manifest.json public/
+          cp -R assets public/assets
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 上傳根目錄作為靜態網頁（包含 index.html 與 taigi_activities.ics）
-          path: '.'
+          # 核查紀錄及未核實舊資料留在 Git，不作為網站檔案發布。
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment

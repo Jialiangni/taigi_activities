@@ -1,0 +1,2 @@
+# iCalendar requires CRLF on disk and in published downloads.
+*.ics -text whitespace=cr-at-eol

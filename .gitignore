@@ -30,6 +30,7 @@ ENV/
 credentials.json
 token.json
 config.json
+public/
 
 # OS files
 .DS_Store

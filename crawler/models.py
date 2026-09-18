@@ -55,8 +55,8 @@ class Activity:
     source_platform: SourcePlatformEnum = SourcePlatformEnum.OPENTIX
     source_url: str = ""
     cover_image: str = ""
-    price_info: str = "免費"
-    is_free: bool = True
+    price_info: str = "費用未公告，請洽主辦單位"
+    is_free: Optional[bool] = None
     tags: List[str] = field(default_factory=list)
     raw_metadata: Dict[str, Any] = field(default_factory=dict)
 

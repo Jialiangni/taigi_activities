@@ -5,7 +5,7 @@ Compiles activities into an iPhone & Android optimized, clutter-free standalone 
 import json
 import os
 from typing import List
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
@@ -17,9 +17,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     for act in activities:
         d = act.to_dict()
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
+        d["ics_event"] = g_sync.event_content(act)
         activities_data.append(d)
 
-    activities_json = json.dumps(activities_data, ensure_ascii=False, indent=2)
+    activities_json = json.dumps(activities_data, ensure_ascii=False, indent=2).replace("<", "\\u003c")
+    calendar_header_json = json.dumps(g_sync.HEADER, ensure_ascii=False)
 
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -27,7 +29,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>北北桃台語活動日曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
-  <meta name="description" content="全台最完整的北北桃台語活動行事曆！彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
+  <meta name="description" content="北北桃台語活動行事曆：收錄有官方公告且經人工核對的場次。彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
   
   <!-- Android Chrome & PWA 支援 -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -1200,6 +1202,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
 
+  <div class="container" style="padding:0.75rem 1rem;color:var(--text-muted);font-size:0.85rem;">僅列已核對官方公告的場次；未核實資料暫不刊登。費用未公告時不列入免費或付費篩選。日期與時間均為臺灣時間。</div>
+
   <!-- CONTROLS & FILTERS -->
   <div class="controls-wrapper">
     <div class="container controls-container">
@@ -1489,10 +1493,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="container">
       <p><strong>北北桃台語活動日曆 (Taigi Activities Hub)</strong></p>
       <p style="margin-top: 0.35rem; font-size: 0.78rem;">
-        涵蓋：北北桃各大美術館與博物館導覽、臺北/新北/桃園市府各局處、李江却基金會、樂暢親子共學、市立圖書館、兩廳院 OPENTIX、年代售票、Accupass、FB、IG、Threads 與 Google Workspace。
+        本頁僅收錄已核對官方公告的場次，不代表完整活動清單。各地收錄數以已核實資料為準；出發前請再次查看官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        更新時間：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ｜ 咱做伙來講台語！
+        頁面建置：{datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')}（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -1627,8 +1631,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         if (currentCity !== 'all' && act.city !== currentCity) return false;
         if (currentCategory !== 'all' && act.category !== currentCategory) return false;
         if (currentPlatform !== 'all' && act.source_platform !== currentPlatform) return false;
-        if (currentPrice === 'free' && !act.is_free) return false;
-        if (currentPrice === 'paid' && act.is_free) return false;
+        if (currentPrice === 'free' && act.is_free !== true) return false;
+        if (currentPrice === 'paid' && act.is_free !== false) return false;
         if (searchQuery) {{
           const targetStr = `${{act.title}} ${{act.description}} ${{act.venue}} ${{act.address}} ${{act.organizer}} ${{act.tags.join(' ')}}`.toLowerCase();
           if (!targetStr.includes(searchQuery)) return false;
@@ -1642,7 +1646,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const taipei = ACTIVITIES_DATA.filter(a => a.city === '臺北市').length;
       const newTaipei = ACTIVITIES_DATA.filter(a => a.city === '新北市').length;
       const taoyuan = ACTIVITIES_DATA.filter(a => a.city === '桃園市').length;
-      const free = ACTIVITIES_DATA.filter(a => a.is_free).length;
+      const free = ACTIVITIES_DATA.filter(a => a.is_free === true).length;
 
       document.getElementById('statTotal').innerText = total;
       document.getElementById('statTaipei').innerText = taipei;
@@ -1668,16 +1672,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function formatDateDisplay(isoStr) {{
-      if (!isoStr) return '';
-      const dt = new Date(isoStr);
-      if (isNaN(dt)) return isoStr;
-      const y = dt.getFullYear();
-      const m = dt.getMonth() + 1;
-      const d = dt.getDate();
-      const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
-      const dayName = days[dt.getDay()];
-      const time = dt.toLocaleTimeString('zh-TW', {{ hour: '2-digit', minute: '2-digit', hour12: false }});
-      return `${{y}}/${{m}}/${{d}} (${{dayName}}) ${{time}}`;
+      if (!isoStr) return '時間未公告';
+      return new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }}).format(new Date(isoStr));
     }}
 
     function renderGrid(events) {{
@@ -1687,18 +1683,18 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <div class="empty-state" style="grid-column: 1/-1;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="44" height="44" style="margin-bottom:0.75rem;color:var(--text-light);"><circle cx="12" cy="12" r="10" stroke-width="2"/><line x1="8" y1="15" x2="16" y2="15" stroke-width="2"/><line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2"/><line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2"/></svg>
             <h3>查無符合條件的台語活動</h3>
-            <p style="font-size:0.85rem;">請嘗試清除篩選條件或縮小搜尋字詞</p>
+            <p style="font-size:0.85rem;">此條件目前沒有已核實場次，不代表當地沒有活動。可調整篩選條件。</p>
           </div>
         `;
         return;
       }}
 
       container.innerHTML = events.map(act => {{
-        const cover = act.cover_image || 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80';
+        const cover = act.cover_image;
         return `
           <div class="event-card" onclick="openModal('${{act.id}}')">
             <div class="card-cover">
-              <img src="${{cover}}" alt="${{act.title}}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80'">
+              ${{cover ? `<img src="${{cover}}" alt="官方活動圖片" loading="lazy">` : '<div style="height:100%;display:flex;align-items:center;justify-content:center;background:var(--secondary-light);color:var(--secondary);font-weight:700;">台語活動・官方公告</div>'}}
               <div class="card-badges-top">
                 <span class="badge badge-city">📍 ${{act.city}}</span>
                 <span class="badge badge-category">${{act.category}}</span>
@@ -1765,7 +1761,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.65rem;">
               ${{groups[dateKey].map(act => {{
                 const d = new Date(act.start_time);
-                const timeStr = d.toLocaleTimeString('zh-TW', {{ hour:'2-digit', minute:'2-digit', hour12:false }});
+                const timeStr = d.toLocaleTimeString('zh-TW', {{ hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Asia/Taipei' }});
                 return `
                   <div class="agenda-item" onclick="openModal('${{act.id}}')">
                     <div class="agenda-time-box">
@@ -1871,36 +1867,25 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (!act) return;
       selectedActivity = act;
 
-      document.getElementById('modalImg').src = act.cover_image || 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80';
+      document.getElementById('modalImg').src = act.cover_image || '';
+      document.getElementById('modalImg').parentElement.style.display = act.cover_image ? '' : 'none';
       document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${{act.district}})` : '');
       document.getElementById('modalCategory').innerText = act.category;
       document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
       document.getElementById('modalTitle').innerText = act.title;
-      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time);
-      document.getElementById('modalVenue').innerText = `${{act.venue}} (${{act.address}})`;
+      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time) + (act.end_time ? ' ～ ' + formatDateDisplay(act.end_time) : '（結束時間未公告）');
+      document.getElementById('modalVenue').innerText = act.venue + (act.address ? ` (${{act.address}})` : '');
       document.getElementById('modalOrganizer').innerText = act.organizer;
       document.getElementById('modalPrice').innerText = act.price_info;
-      document.getElementById('modalDesc').innerText = act.description;
+      document.getElementById('modalDesc').innerText = act.description + '\\n\\n官方資料核對：' + act.raw_metadata.verified_at.slice(0, 10) + '。出發前請再次確認官方最新公告。';
 
       const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
       const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語 報名 售票`);
       const googleSearchUrl = `https://www.google.com/search?q=${{searchQuery}}`;
 
       const ticketBtn = document.getElementById('modalTicketLink');
-      ticketBtn.href = act.source_url || googleSearchUrl;
-      if (act.source_platform.includes('兩廳院') || act.source_platform.includes('OPENTIX')) {{
-        ticketBtn.innerHTML = '🎟️ 前往 OPENTIX 兩廳院售票官網 ↗';
-      }} else if (act.source_platform.includes('年代')) {{
-        ticketBtn.innerHTML = '🎟️ 前往年代售票官網 ↗';
-      }} else if (act.source_platform.includes('美術館') || act.source_platform.includes('博物館')) {{
-        ticketBtn.innerHTML = '🏛️ 前往場館官方網站 ↗';
-      }} else if (act.source_platform.includes('市府')) {{
-        ticketBtn.innerHTML = '🏛️ 前往市府局處官方網站 ↗';
-      }} else if (act.source_platform.includes('圖書館')) {{
-        ticketBtn.innerHTML = '📖 前往市立圖書館官網 ↗';
-      }} else {{
-        ticketBtn.innerHTML = '🌐 前往主辦/官方網站 ↗';
-      }}
+      ticketBtn.href = act.source_url;
+      ticketBtn.textContent = '🌐 查看官方活動公告／報名 ↗';
 
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
       document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 Google 查詢本活動報名/購票 ↗';
@@ -1953,60 +1938,25 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       }}
     }}
 
-    function exportCalendarFile() {{
-      let icsContent = "BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\\r\\nX-WR-CALNAME:北北桃台語活動日曆\\r\\n";
-      
-      const filtered = getFilteredActivities();
-      filtered.forEach(act => {{
-        const dt = act.start_time.replace(/[-:]/g, "").split(".")[0];
-        const formattedDt = dt.includes("T") ? dt : dt + "T140000";
-        icsContent += "BEGIN:VEVENT\\r\\n";
-        icsContent += `UID:${{act.id}}@taigiactivities.tw\\r\\n`;
-        icsContent += `DTSTART:${{formattedDt}}\\r\\n`;
-        icsContent += `DTEND:${{formattedDt}}\\r\\n`;
-        icsContent += `SUMMARY:[${{act.category}}] ${{act.title.replace(/,/g, '\\\\,')}}\\r\\n`;
-        icsContent += `DESCRIPTION:${{act.description.replace(/\\n/g, '\\\\n').replace(/,/g, '\\\\,')}}\\r\\n`;
-        icsContent += `LOCATION:${{act.venue.replace(/,/g, '\\\\,')}}\\r\\n`;
-        icsContent += `URL:${{act.source_url}}\\r\\n`;
-        icsContent += "END:VEVENT\\r\\n";
-      }});
-
-      icsContent += "END:VCALENDAR";
-
-      const blob = new Blob([icsContent], {{ type: 'text/calendar;charset=utf-8' }});
+    function saveCalendar(events, filename) {{
+      const content = {calendar_header_json} + events.map(a => a.ics_event).join('') + 'END:VCALENDAR\\r\\n';
+      const blob = new Blob([content], {{ type: 'text/calendar;charset=utf-8' }});
       const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = 'taigi_activities.ics';
+      const url = URL.createObjectURL(blob);
+      link.href = url;
+      link.download = filename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }}
+
+    function exportCalendarFile() {{
+      saveCalendar(getFilteredActivities(), 'taigi_activities.ics');
     }}
 
     function downloadSingleIcs() {{
-      if (!selectedActivity) return;
-      const act = selectedActivity;
-      const dt = act.start_time.replace(/[-:]/g, "").split(".")[0];
-      const formattedDt = dt.includes("T") ? dt : dt + "T140000";
-
-      let icsContent = "BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\\r\\n";
-      icsContent += "BEGIN:VEVENT\\r\\n";
-      icsContent += `UID:${{act.id}}@taigiactivities.tw\\r\\n`;
-      icsContent += `DTSTART:${{formattedDt}}\\r\\n`;
-      icsContent += `DTEND:${{formattedDt}}\\r\\n`;
-      icsContent += `SUMMARY:[${{act.category}}] ${{act.title.replace(/,/g, '\\\\,')}}\\r\\n`;
-      icsContent += `DESCRIPTION:${{act.description.replace(/\\n/g, '\\\\n').replace(/,/g, '\\\\,')}}\\r\\n`;
-      icsContent += `LOCATION:${{act.venue.replace(/,/g, '\\\\,')}}\\r\\n`;
-      icsContent += `URL:${{act.source_url}}\\r\\n`;
-      icsContent += "END:VEVENT\\r\\n";
-      icsContent += "END:VCALENDAR";
-
-      const blob = new Blob([icsContent], {{ type: 'text/calendar;charset=utf-8' }});
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = `${{act.title.substring(0, 20)}}.ics`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      if (selectedActivity) saveCalendar([selectedActivity], selectedActivity.id + '.ics');
     }}
   </script>
 </body>

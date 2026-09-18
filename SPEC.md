@@ -1,181 +1,70 @@
-# 北北桃台語活動行事曆 (Taigi Activities) 系統規格書與維護交接指南 (SPEC.md)
+# 北北桃台語活動行事曆：系統規格與交接
 
-本文件旨在為任何接手本專案的 AI 工具、開發者或自動化管線提供完整、清晰、具體且無相依性黑箱的工程架構說明。
+本版更新於 2026-09-18，以實際程式與來源核查結果取代舊版「全部來源自動抓取」「100% 有效」等未經證實描述。
 
----
+## 1. 工作目的與範圍
 
-## 1. 專案目標與願景
-1. **業務目標**：聚合臺北市、新北市、桃園市三大都會區內所有「台語/母語」相關之藝文表演、美術館/博物館導覽、市府局處活動、親子繪本與文史走讀活動。
-2. **架構目標**：
-   - **完全自給自足 (Zero-backend at runtime)**：前端為單檔 `index.html`，所有活動資料直接內嵌為 JavaScript 常數物件 `ACTIVITIES_DATA`，免去執行時期 API 依賴。
-   - **100% 穩定連線**：嚴禁死連結或無效憑證，所有連結必須為現存活官方域名或自動帶入關鍵字之 Google 即時搜尋。
-   - **貼近現場之代表性圖片**：不使用 generic/無關插圖，優先使用爬蟲原圖，次之對應至內建之在地高清現場照片庫 (`assets/images/`)。
-   - **每日全自動部署**：透過 GitHub Actions 定時執行 `python3 main.py`，更新 `index.html` 與 `taigi_activities.ics` 並發布至 GitHub Pages。
+協助民眾找到臺北市、新北市、桃園市可實際參加的台語活動。正確的單場日期、時間、地點、語言內容與報名來源優先於活動數量。前端為靜態 HTML，資料內嵌，不依賴執行時 API。
 
----
+## 2. 資料與模組
 
-## 2. 系統架構圖 (Architecture Overview)
+- `data/verified_activities.json`：目前唯一正式資料入口。
+- `crawler/verified.py`：核實紀錄、時間、地區、費用、重複場次與來源內容檢查。
+- `main.py`：載入資料，移除已結束場次，暫存完整產物後替換 HTML / ICS。
+- `build_html.py`：前端模板；CSS / JavaScript 大括號須在 Python f-string 中寫成 `{{`、`}}`。
+- `crawler/sources/google_workspace.py`：ICS 與 Google 日曆加入連結；**沒有 Calendar API 同步功能**。
+- `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
+- `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
+- `crawler/sample_data.py`、舊 `crawler/sources/` 模組及 `processor.py`：保留的舊實作；正式建置不使用。
+- `config.example.json`、`requirements.txt`：舊爬蟲構想的參考，不是目前建置必需配置／依賴。
 
-```
-[排程觸發器]
-GitHub Actions (每日 04:00 台灣時間 / UTC 20:00)
-    │
-    ▼
-[資料收集層 (crawler/sources/)]
-├── museums.py           (北北桃各大公私立美術館與博物館)
-├── government.py        (北北桃市政府文化局、教育局、觀傳局、農業局、青年局)
-├── public_libraries.py (臺北市立圖書館、新北市立圖書館、桃園市立圖書館)
-├── sample_data.py       (李江却基金會、樂暢親子共學、OPENTIX、年代售票、Accupass)
-    │
-    ▼
-[資料處理與去重引擎 (crawler/processor.py)]
-├── ActivityProcessor.clean_and_normalize()
-│   ├── 同 ID 去重
-│   ├── 同一時間 (精確到分) + 同場館 去重
-│   ├── 同一日 + 核心標題關鍵字 去重
-│   ├── 縣市與行政區正規化 (TAIPEI / NEW_TAIPEI / TAOYUAN)
-│   ├── 六大分類推論 (舞台劇/表演/故事/繪本/體驗/導覽)
-│   └── 智慧真實場景圖片指派 (assign_representative_image)
-    │
-    ▼
-[發布建置層 (build_html.py & main.py)]
-├── 生成 taigi_activities.ics (iCal 通用行事曆訂閱檔)
-└── 生成 index.html (單檔響應式 PWA 視覺網頁，內嵌完整資料與樣式)
-    │
-    ▼
-[部署發布 (GitHub Pages)]
-https://jialiangni.github.io/taigi_activities/
-```
+## 3. 正式資料規則
 
----
+`schema_version: 1`；`sources` 按來源 ID 建立索引；`activities` 每筆包含 `activity` 與 `verification`。
 
-## 3. 資料結構規格 (`crawler/models.py`)
+來源需包含 HTTPS 活動／報名專頁 `url`、`title`、`checked_at`（含 +08:00）、核查當時原始 HTML 的 `snapshot_sha256`，以及可重查的 `required_text`。SHA-256 是本次讀取指紋，不是活動真實性的自動證明；未把整份第三方 HTML 納入 Git。
 
-所有活動資料均使用 Python 標準庫 `dataclasses` 定義，不依賴任何外部 ORM。
+每筆活動需具備：
 
-```python
-class CityEnum(str, Enum):
-    TAIPEI = "臺北市"
-    NEW_TAIPEI = "新北市"
-    TAOYUAN = "桃園市"
-    OTHER = "其他"
+1. 穩定 `id`，不能使用 Python 隨機 hash。
+2. 官方可支持的標題、主辦／活動計畫名稱、場館及北北桃城市。
+3. `start_time` 與可取得的 `end_time`，完整 ISO-8601 `+08:00`。不使用抓取時間、貼文時間或任意兩小時作為活動時間。結束時間未公告時可設 null。
+4. `source_url` 必須等於核實來源；不允許首頁或搜尋頁。
+5. 費用三態：`true` 確認免費、`false` 確認收費、`null` 未公告。未知不得歸為免費或付費。
+6. `verification.status=verified`、`language_evidence` 及 `confirmed_fields`。已核實欄位異動後必須重新核對，不得只機械複製欄位繞過審查。
+7. 系列活動逐場拆分，不能把首場至末場的總期間當成連續活動。
+8. 圖片必須有可靠來源及使用依據；目前 8 場未核實圖片，使用文字底圖，不將舊代表照片當作現場照。
 
-class CategoryEnum(str, Enum):
-    STAGE_PLAY = "台語舞台劇"
-    PERFORMANCE = "台語表演"
-    STORY = "台語故事"
-    PICTURE_BOOK = "台語繪本"
-    EXPERIENCE = "台語體驗"
-    TOUR = "台語導覽"
-    OTHER = "台語活動"
+人工核實是事實判讀步驟；程式只能驗證結構、一致性與必要字串，不能自動證明活動必然舉辦或永不異動。
 
-class SourcePlatformEnum(str, Enum):
-    OPENTIX = "OPENTIX 兩廳院"
-    ERATICKET = "年代售票"
-    ACCUPASS = "Accupass 活動通"
-    LI_KANG_KHIOK = "李江却基金會"
-    LE_CHANG = "樂暢親子共學"
-    LIBRARIES = "北北桃市立圖書館"
-    MUSEUMS = "美術館與博物館"
-    GOVERNMENT = "北北桃市府局處"
-    FACEBOOK = "Facebook"
-    INSTAGRAM = "Instagram"
-    THREADS = "Threads"
-    GOOGLE_CALENDAR = "Google 日曆"
+## 4. 建置與失敗處理
 
-@dataclass
-class Activity:
-    id: str
-    title: str
-    description: str = ""
-    city: CityEnum = CityEnum.TAIPEI
-    district: str = ""
-    category: CategoryEnum = CategoryEnum.STAGE_PLAY
-    start_time: str = ""         # ISO-8601: "YYYY-MM-DDTHH:MM:SS"
-    end_time: Optional[str] = None
-    venue: str = ""
-    address: str = ""
-    organizer: str = ""
-    source_platform: SourcePlatformEnum = SourcePlatformEnum.OPENTIX
-    source_url: str = ""         # 必須為有效可連通之官方網站或查詢入口
-    cover_image: str = ""        # 本地 assets/images/*.jpg 或官方原圖
-    price_info: str = "免費"
-    is_free: bool = True
-    tags: List[str] = field(default_factory=list)
-```
+`python3 main.py`：離線驗證已核實資料。`python3 main.py --check-sources`：額外連線讀取所有來源，驗證 HTTPS、HTTP 成功、未轉址至其他網域及必要文字存在。
 
----
+任何檢查失敗都在產物替換前拋出錯誤；不得回退示範資料、默默略過壞來源或標記整體成功。空清單是合法結果，頁面需說明「目前没有已核實場次」，不是認定當地沒有活動。
 
-## 4. 關鍵模組規範
+來源抓取時間與人工核實時間分開：建置不改寫 `checked_at`。來源文字仍存在不保證沒有新增取消通知；接近活動日期仍需人工重查。自動發現新活動尚待後續實作，不在本次完成範圍。
 
-### 4.1. 連結穩定性規範 (URL Health & Fallback)
-1. **不使用暫時性或無效憑證網址**：新北市政府部分內部子網域因憑證鏈問題對特定手機瀏覽器不相容，統一採用 `https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=...` 或官方入口。
-2. **社群平台無效連結處理**：嚴禁將 `source_url` 設為泛用首頁（例如 `threads.net`, `instagram.com`, `calendar.google.com`），若該活動源自社群發起，`source_url` 指向該活動舉辦場地之官方網站（例如剝皮寮、米倉劇場、信誼親子館）。
-3. **前端雙重保險**：
-   - 點擊「前往官方網站」直接開啟已校驗之官方場館/售票網頁。
-   - 點擊「Google 查詢本活動報名/購票」，前端自動組裝 `${title} ${organizer} 台語 報名 售票` 帶入 Google 搜尋，確保使用者 100% 找到確切購票與報名資訊。
+## 5. 前端與日曆
 
-### 4.2. 代表性圖片映射規格 (`assets/images/`)
-所有圖片皆位於本地 `assets/images/`，依活動主題自動配對，避免網路外連圖源失效：
-- `tfam_museum.jpg`：臺北市立美術館
-- `ntm_museum.jpg`：國立臺灣博物館本館
-- `railway_department.jpg`：臺博館鐵道部園區
-- `moca_contemporary.jpg`：台北當代藝術館
-- `beitou_hotspring.jpg`：北投溫泉博物館
-- `taipei_astronomy.jpg`：臺北市立天文科學教育館
-- `lin_antai_courtyard.jpg`：林安泰古厝
-- `confucian_temple.jpg`：臺北孔廟
-- `yingge_ceramics.jpg`：鶯歌陶瓷博物館 / 老街
-- `shisanhang_museum.jpg`：十三行博物館
-- `tamsui_fort_heritage.jpg`：淡水紅毛城 / 淡水古蹟博物館
-- `gold_museum_mining.jpg`：黃金博物館 / 金瓜石採金
-- `taiwan_tea_culture.jpg`：坪林茶業博物館
-- `ntcam_new_art_museum.jpg`：新北市立美術館
-- `lin_family_garden.jpg`：板橋林家花園
-- `sanchong_military_village.jpg`：空軍三重一村
-- `hengshan_calligraphy.jpg`：橫山書法藝術館
-- `taoyuan_children_art.jpg`：桃園市兒童美術館
-- `daxi_wood_museum.jpg`：大溪木藝生態博物館
-- `taiwanese_opera.jpg`：歌仔戲演出
-- `glove_puppetry.jpg`：布袋戲 / 掌中戲
-- `theater_stage_play.jpg`：現代台語舞台劇
-- `standup_comedy.jpg`：台語脫口秀 / 說唱
-- `taigi_picture_book.jpg`：親子繪本 / 幼兒共讀
-- `temple_storytelling.jpg`：廟埕講古 / 故事屋
-- `traditional_rice_cake.jpg`：米食手作 / 做粿體驗
-- `wanli_fishing_port.jpg`：萬里蟹 / 漁港文化
-- `dadaocheng_walk.jpg`：大稻埕 / 迪化街走讀
+- 顯示台灣時間；篩選支援地區、六類活動、來源、費用、文字。
+- 詳情直接連結官方活動／報名頁，顯示人工核對日期。
+- Google 搜尋只是輔助查找，不是資料證據或保證能報名。
+- Google Calendar 以 UTC 起迄時間搭配 `ctz=Asia/Taipei`。
+- ICS 使用 UTC 時間、CRLF、文字跳脫、UTF-8 每行不超過 75 octets，保留穩定 UID；未提供結束時間時不產生虛構 DTEND。
+- 單場下載、篩選下載與訂閱檔使用同一套後端序列化結果。
+- 已下載並手動匯入的舊活動不會由本網站自動刪除；這次只更正公開訂閱檔及網頁。
+- PWA manifest 保留；未實作 service worker，不宣稱離線快取可用。
 
----
+## 6. GitHub Actions 與部署
 
-## 5. 自動化部署管線規格 (`.github/workflows/deploy.yml`)
+`main` push、`workflow_dispatch`、UTC 20:00 排程觸發：單元測試 → 官方來源重查 → 建置 → `public/` 靜態檔案上傳 → Pages 部署。`public/` 僅包含 HTML、ICS、manifest、assets；不部署爬蟲、核查記錄、設定或測試。
 
-1. **觸發條件**：
-   - 每日定時：`cron: '0 20 * * *'` (台灣時間凌晨 04:00)。
-   - 手動觸發：`workflow_dispatch`。
-   - 代碼推送：`push` 到 `main` 分支。
-2. **建置步驟**：
-   ```bash
-   python3 main.py
-   git add index.html taigi_activities.ics assets/
-   # 若有變更則自動提交並部署至 GitHub Pages
-   ```
-3. **零依賴環境**：執行環境僅需標準 Python 3.x，無需安裝額外 pip 套件。
+新來源或網站改版造成檢查失敗時，需讀取原公告並修正檢查內容，不能關閉驗證。不要把字串檢查通過當成新增活動已完成事實核實。
 
----
+## 7. 接續事項
 
-## 6. 接手與擴充指南 (Handoff Instructions)
-
-若任何新工具或工程師欲擴充此專案：
-1. **新增資料來源**：
-   - 於 `crawler/sources/` 建立新的 crawler 類別（例如 `new_source.py`），實作 `fetch_activities() -> List[Activity]`。
-   - 在 `main.py` 中引入並將其活動加入 `all_activities`。
-2. **調整去重規則**：
-   - 修改 `crawler/processor.py` 中之 `clean_and_normalize`。
-3. **調整前端樣式與互動**：
-   - 編輯 `build_html.py`。注意該檔案為 Python f-string 模板，內部所有 JavaScript 與 CSS 雙大括號 `{}` 必須轉義為 `{{}}`。
-4. **驗證指令**：
-   ```bash
-   python3 main.py
-   python3 -c "import json, re; c = open('index.html').read(); print('Events count:', len(json.loads(re.search(r'const ACTIVITIES_DATA = (\[.*?\]);', c, re.S).group(1))))"
-   ```
+- 逐步增加臺北及其他北北桃來源；不為各城市配額加入無證據場次。
+- 舊李江却、樂暢、圖書館、年代、Threads 抓取函式為空；博物館及市府模組為固定資料。Accupass、OPENTIX 與社群解析亦未通過正式來源驗證，暫不啟用。
+- 後續新增爬蟲應先寫入候選區，通過場次核實後才進入正式清單。
+- 維護時先讀 README / SPEC / SOURCE_AUDIT、確認 Git 狀態，保留他人未提交修改。
