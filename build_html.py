@@ -110,13 +110,26 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
       </div>
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
-      <div class="select-filters">
+      <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
+      <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
         <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
     </div>
   </div>
+
+  <dialog class="modal-overlay filter-modal" id="filterModal" aria-labelledby="filterTitle" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog">
+      <div class="modal-sheet-handle" aria-hidden="true"></div>
+      <button class="modal-close" onclick="closeFilterModal()" aria-label="關起來" autofocus>×</button>
+      <div class="modal-content">
+        <h2 id="filterTitle">來源・種類・費用</h2>
+        <div id="mobileFilterHost"></div>
+        <div class="filter-sheet-actions"><button class="btn" onclick="resetExtraFilters()" aria-label="來源、種類、費用攏總">攏總</button><button class="btn btn-primary" onclick="closeFilterModal()">看活動 <span id="filterResultCount"></span></button></div>
+      </div>
+    </div>
+  </dialog>
 
   <!-- MAIN EVENT DISPLAY -->
   <main class="main-content">
@@ -156,10 +169,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   {resource_section}
 
   <!-- EVENT DETAIL MODAL (Android & iPhone Bottom Sheet) -->
-  <div class="modal-overlay" lang="zh-Hant" id="eventModal" onclick="closeModalOnBackdrop(event)">
+  <dialog class="modal-overlay" lang="zh-Hant" id="eventModal" aria-labelledby="modalTitle" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
-      <button class="modal-close" onclick="closeModal()">✕</button>
+      <button class="modal-close" onclick="closeModal()" aria-label="關閉活動詳情" autofocus>✕</button>
       <div class="modal-hero-img">
         <img id="modalImg" src="" alt="活動海報">
       </div>
@@ -228,19 +241,28 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
       </div>
     </div>
-  </div>
+  </dialog>
 
-  <div class="modal-overlay" id="syncModal" onclick="closeModalOnBackdrop(event)">
+  <dialog class="modal-overlay" id="syncModal" aria-labelledby="syncTitle" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog" style="max-width:550px">
-      <button class="modal-close" onclick="closeSyncModal()" aria-label="關起來">×</button>
+      <div class="modal-sheet-handle" aria-hidden="true"></div>
+      <button class="modal-close" onclick="closeSyncModal()" aria-label="關起來" autofocus>×</button>
       <div class="modal-content settings-options">
-        <h2>日曆佮設定</h2>
+        <h2 id="syncTitle">日曆佮設定</h2>
         <div><h3>共活動囥入日曆</h3><p>下載的日曆干焦有你揀的活動，會當匯入 Apple、Google 抑是其他支援 ICS 的日曆。若欲加一場，請開「活動詳情」。</p><button class="btn btn-primary" onclick="exportCalendarFile()">下載揀好的日曆</button></div>
         <div><h3>囥佇手機的主畫面</h3><p>iPhone 用 Safari 的分享選單揀「加入主畫面」；Android 用 Chrome 的選單揀「新增至主螢幕」。</p></div>
         <div><h3>畫面的色水</h3><button class="btn" onclick="toggleTheme()">換深色抑是淺色</button></div>
+        <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。</p></details>
       </div>
     </div>
-  </div>
+  </dialog>
+
+  <nav class="ios-tab-bar" aria-label="活動導覽">
+    <button class="ios-tab-item active" data-tab="grid" aria-pressed="true" onclick="switchViewMobile('grid')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>活動</span></button>
+    <button class="ios-tab-item" data-tab="agenda" aria-pressed="false" onclick="switchViewMobile('agenda')"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg><span>清單</span></button>
+    <button class="ios-tab-item" data-tab="calendar" aria-pressed="false" onclick="switchViewMobile('calendar')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 11h18M8 16h2M14 16h2"/></svg><span>看一禮拜</span></button>
+    <button class="ios-tab-item" aria-haspopup="dialog" aria-controls="syncModal" onclick="openSyncModal()"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span>日曆佮設定</span></button>
+  </nav>
 
   <!-- FOOTER -->
   <footer>
@@ -278,6 +300,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       computeStats();
       renderMonthFilters();
       renderAll();
+      document.querySelectorAll('dialog.modal-overlay').forEach(dialog => {{
+        dialog.addEventListener('cancel', event => {{ event.preventDefault(); closeOverlay(dialog.id); }});
+      }});
+      window.matchMedia('(max-width: 700px)').addEventListener('change', () => {{
+        if (document.getElementById('filterModal').open) closeFilterModal();
+      }});
     }});
 
     function adaptToDeviceOS() {{
@@ -312,8 +340,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         btn.classList.toggle('active', btn.dataset.view === viewName);
         btn.setAttribute('aria-pressed', String(btn.dataset.view === viewName));
       }});
-      document.querySelectorAll('.ios-tab-item').forEach(btn => {{
+      document.querySelectorAll('.ios-tab-item[data-tab]').forEach(btn => {{
         btn.classList.toggle('active', btn.dataset.tab === viewName);
+        btn.setAttribute('aria-pressed', String(btn.dataset.tab === viewName));
       }});
 
       document.getElementById('viewGrid').style.display = viewName === 'grid' ? 'grid' : 'none';
@@ -443,6 +472,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
       document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總';
+      const extraCount = [currentPlatform, currentCategory, currentPrice].filter(value => value !== 'all').length;
+      document.getElementById('mobileFilterCount').innerText = extraCount ? String(extraCount) : '';
+      document.getElementById('filterResultCount').innerText = `（${{filtered.length}}）`;
 
       renderGrid(filtered);
       renderAgenda(filtered);
@@ -655,31 +687,55 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalGCalLink').href = act.gcal_url;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
-      document.getElementById('eventModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
+      openOverlay('eventModal');
     }}
 
     function closeModal() {{
-      document.getElementById('eventModal').classList.remove('active');
-      document.body.style.overflow = '';
-      selectedActivity = null;
+      closeOverlay('eventModal');
     }}
 
     function closeModalOnBackdrop(e) {{
-      if (e.target.classList.contains('modal-overlay')) {{
-        e.target.classList.remove('active');
-        document.body.style.overflow = '';
-      }}
+      if (e.target.classList.contains('modal-overlay')) closeOverlay(e.target.id);
     }}
 
     function openSyncModal() {{
-      document.getElementById('syncModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
+      openOverlay('syncModal');
     }}
 
     function closeSyncModal() {{
-      document.getElementById('syncModal').classList.remove('active');
+      closeOverlay('syncModal');
+    }}
+
+    function openOverlay(id) {{
+      const dialog = document.getElementById(id);
+      dialog.showModal();
+      dialog.classList.add('active');
+      dialog.querySelector('.modal-dialog').scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+    }}
+
+    function closeOverlay(id) {{
+      const dialog = document.getElementById(id);
+      dialog.classList.remove('active');
+      dialog.close();
       document.body.style.overflow = '';
+      if (id === 'eventModal') selectedActivity = null;
+      if (id === 'filterModal') {{
+        document.querySelector('.controls-container').appendChild(document.getElementById('advancedFilters'));
+      }}
+    }}
+
+    function openFilterModal() {{
+      document.getElementById('mobileFilterHost').appendChild(document.getElementById('advancedFilters'));
+      openOverlay('filterModal');
+    }}
+
+    function closeFilterModal() {{ closeOverlay('filterModal'); }}
+
+    function resetExtraFilters() {{
+      currentPlatform = currentCategory = currentPrice = 'all';
+      for (const id of ['sourceFilter', 'categoryFilter', 'priceFilter']) document.getElementById(id).value = 'all';
+      renderAll();
     }}
 
     // Android & Mobile Share API

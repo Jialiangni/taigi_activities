@@ -5,12 +5,12 @@ const vm = require('node:vm');
 const html = fs.readFileSync('index.html', 'utf8');
 const elements = new Map();
 const element = id => {
-  if (!elements.has(id)) elements.set(id, {innerHTML:'', innerText:'', textContent:'', style:{}, parentElement:{style:{}}, classList:{add(){},remove(){},toggle(){}}});
+  if (!elements.has(id)) elements.set(id, {innerHTML:'', innerText:'', textContent:'', style:{}, parentElement:{style:{}}, classList:{add(){},remove(){},toggle(){}}, showModal(){this.open=true},close(){this.open=false},querySelector:()=>({scrollTop:0}),appendChild(child){child.parentElement=this}});
   return elements.get(id);
 };
 let download;
 const context = vm.createContext({Intl, Date, Blob, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
-  addEventListener(){},querySelectorAll:()=>[],getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
+  addEventListener(){},querySelectorAll:()=>[],querySelector:element,getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
   createElement:()=>({click(){}})
 }});
 for (const [,script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) vm.runInContext(script,context);

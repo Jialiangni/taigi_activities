@@ -41,6 +41,104 @@
 @media(pointer:coarse){button,.btn,select{min-height:44px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
+/* Shared native dialogs keep keyboard focus and background interaction contained. */
+.mobile-filter-button{display:none}
+dialog.modal-overlay{width:100%;height:100%;max-width:none;max-height:none;margin:0;border:0;color:var(--text-main);background:transparent;overflow:hidden}
+dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.modal-close{min-width:44px;min-height:44px}
+.modal-dialog{overscroll-behavior:contain}
+.filter-modal .modal-dialog{max-width:550px}
+.filter-modal h2{font-size:20px;margin-bottom:24px}
+.filter-modal .select-filters{border:0;padding:0}
+.filter-sheet-actions{display:flex;gap:12px;margin-top:28px}
+.filter-sheet-actions .btn{min-height:48px}
+.filter-sheet-actions .btn-primary{flex:1}
+.select-filters label{font-size:13px}
+
+/* Phone shell: compact header, quick filters and thumb-reachable navigation. */
+@media(max-width:700px){
+  body{padding-bottom:calc(80px + env(safe-area-inset-bottom));-webkit-text-size-adjust:100%}
+  .container{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+  .hero-header{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top);background:var(--bg-main);border-bottom:0}
+  .header-top{min-height:64px;padding-top:8px;padding-bottom:8px;align-items:center}
+  .brand{font-size:21px;font-weight:600;letter-spacing:-.035em;padding:0}
+  .header-actions .btn:not(.btn-icon){display:none}
+  .header-actions .btn-icon{width:44px;height:44px;border-radius:50%;font-size:22px;background:var(--bg-card);border:0}
+  .intro{display:none}
+  .controls-container{gap:12px;padding-top:4px}
+  .controls-row-1{display:block}
+  .search-box{max-width:none;min-width:0;min-height:46px;padding:8px 14px;border:0;border-radius:14px}
+  .search-box input{font-size:16px;min-height:30px}
+  .search-box>span{font-size:23px;line-height:1}
+  .view-switchers{display:none}
+  .filter-row{flex-wrap:nowrap;gap:6px}
+  .filter-label{display:none}
+  .filter-row .pill{flex:1;min-width:0;justify-content:center;padding:8px 4px;border-radius:12px;min-height:44px;background:var(--bg-card)}
+  .filter-row .pill.active{background:var(--primary);color:var(--inverse)}
+  .month-filter{gap:6px}
+  .month-filter-label{min-width:30px;padding:0}
+  .month-help{display:none}
+  .month-options{gap:6px;padding:2px;scrollbar-width:none}
+  .month-options::-webkit-scrollbar{display:none}
+  .month-options .pill{min-height:44px;padding:8px 12px;background:var(--bg-card);border-radius:12px}
+  .month-options .pill.active{background:var(--primary);color:var(--inverse)}
+  .mobile-filter-button{display:flex;align-items:center;gap:8px;min-height:44px;width:100%;padding:8px 13px;border:1px solid var(--border-color);border-radius:12px;background:transparent;font-size:13px;text-align:left}
+  .mobile-filter-button>span:last-child{margin-left:auto;font-size:20px;line-height:1}
+  #mobileFilterCount:not(:empty){display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:50%;background:var(--primary);color:var(--inverse);font-size:12px}
+  .controls-container>.select-filters{display:none}
+  .filter-summary{margin:22px 0 12px;gap:8px;font-size:15px}
+  .filter-summary>div:last-child{max-width:55%;font-size:11px}
+  .events-grid,.cal-events-list,.resource-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .event-card{display:flex;flex-direction:column;grid-row:auto;padding:18px;border-radius:20px;border:1px solid color-mix(in srgb,var(--border-color) 45%,transparent)}
+  .card-labels{margin-bottom:12px}
+  .card-date{color:var(--text-main);font-size:13px;margin-bottom:8px;font-variant-numeric:tabular-nums}
+  .card-title{font-size:18px;line-height:1.5;margin-bottom:8px}
+  .card-desc{font-size:13px;margin-bottom:14px}
+  .card-venue{margin-bottom:8px}
+  .card-footer{padding-top:4px;min-height:48px}
+  .card-detail{min-height:44px;padding:8px 0 8px 16px;font-size:13px}
+  .ios-tab-bar{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:8px max(10px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));border-top:1px solid var(--border-color);background:color-mix(in srgb,var(--bg-main) 92%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+  .ios-tab-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:54px;min-width:0;padding:5px 2px;background:transparent;border-radius:14px;color:var(--text-muted);font-size:11px}
+  .ios-tab-item svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .ios-tab-item.active{color:var(--text-main);background:var(--secondary-light)}
+  .ios-tab-item.active span{font-weight:600}
+  dialog.modal-overlay{padding:0;align-items:flex-end}
+  .modal-dialog,.filter-modal .modal-dialog{max-width:none!important;max-height:calc(100dvh - max(20px,env(safe-area-inset-top)));border-radius:26px 26px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -12px 60px #0004;animation:sheet-enter .2s ease-out}
+  .modal-sheet-handle{display:block;width:36px;height:4px;border-radius:10px;background:var(--text-muted);opacity:.45;position:absolute;top:10px;left:calc(50% - 18px)}
+  .modal-close{top:18px;margin:18px 14px 0 0;border-radius:50%;font-size:22px}
+  .modal-content{padding:16px 20px 24px}
+  .modal-title{font-size:23px;line-height:1.45}
+  .modal-actions-bar{flex-direction:column;gap:10px}
+  .modal-actions-bar .btn{min-height:48px;white-space:normal;text-align:center}
+  .modal-desc,.info-row{font-size:15px}
+  .filter-modal .select-filters{gap:8px}
+  .filter-modal .select-filters label{font-size:13px}
+  .filter-modal select{min-height:48px;padding-left:18px;padding-right:18px;font-size:13px}
+  .filter-modal .modal-content{padding-top:8px}
+  .settings-options{gap:24px}
+  .settings-options .btn{min-height:48px}
+  .cal-header{display:block}
+  .cal-title{font-size:18px;margin-bottom:12px}
+  .cal-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .cal-nav .btn{min-height:44px;padding:8px 4px;font-size:13px;border-radius:12px}
+  .cal-legend{gap:8px 12px;margin:14px 0}
+  .cal-summary{width:100%}
+  .week-strip{padding:10px 4px;border-radius:16px}
+  .cal-cell{grid-template-columns:minmax(0,1fr);gap:10px;scroll-margin-top:80px}
+  .cal-cell-header{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;padding:0 2px}
+  .agenda-list{gap:18px}
+  .agenda-item{gap:12px;padding:16px;border-radius:18px}
+  .agenda-time-box{width:48px}
+  .agenda-content h3{font-size:16px}
+  .guide-resources{margin-top:16px;padding-top:24px}
+  .guide-resources h2{font-size:18px}
+  .resource-card{padding:18px;border-radius:20px}
+  .resource-card a{display:inline-flex;align-items:center;min-height:44px}
+  footer{padding-bottom:20px}
+}
+@keyframes sheet-enter{from{transform:translateY(28px);opacity:.5}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.modal-dialog{animation:none}}
+
   </style>
 </head>
 <body>
@@ -79,13 +177,26 @@
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
       </div>
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个</span></div>
-      <div class="select-filters">
+      <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・費用 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
+      <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（41）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（9）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（4）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
         <label for="priceFilter">費用 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
     </div>
   </div>
+
+  <dialog class="modal-overlay filter-modal" id="filterModal" aria-labelledby="filterTitle" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog">
+      <div class="modal-sheet-handle" aria-hidden="true"></div>
+      <button class="modal-close" onclick="closeFilterModal()" aria-label="關起來" autofocus>×</button>
+      <div class="modal-content">
+        <h2 id="filterTitle">來源・種類・費用</h2>
+        <div id="mobileFilterHost"></div>
+        <div class="filter-sheet-actions"><button class="btn" onclick="resetExtraFilters()" aria-label="來源、種類、費用攏總">攏總</button><button class="btn btn-primary" onclick="closeFilterModal()">看活動 <span id="filterResultCount"></span></button></div>
+      </div>
+    </div>
+  </dialog>
 
   <!-- MAIN EVENT DISPLAY -->
   <main class="main-content">
@@ -125,10 +236,10 @@
   <section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽佮閱讀資訊</h2><p>語音導覽、預約服務、書展佮閱讀推廣；開館日、費用佮預約，請照館方公告。下跤這寡無算入活動場次，也無囥入下載的日曆。</p><div class="resource-grid"><article class="resource-card"><small>臺北市 · 台語相關展覽</small><h3 lang="zh-Hant">大稻埕戲苑《請戲—布袋戲一條街》</h3><p>展期到2026/12/6，拜二到禮拜9:00–17:00；拜一、端午節、中秋節無開館。地點是迪化街一段21號8樓。現場掃QR Code就會當聽台語導覽，請家己紮耳機。</p><a href="https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&amp;s=574623D4555EC568&amp;sms=9A0025CA3D7482D6" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>新北市 · 台語語音導覽</small><h3 lang="zh-Hant">鶯歌陶瓷博物館常設展與園區</h3><p>館方有提供台語語音，會當用家己的手機抑是平板連網路來聽。定時真人導覽的公告寫華語；台語語音導覽會當家己用。</p><a href="https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>新北市 · 台語語音導覽</small><h3 lang="zh-Hant">十三行博物館與新北考古公園</h3><p>網路的語音導覽會當揀台語；館內閣有台語導覽筆佮地圖通借，愛照規定提供證件抑是押金。定時真人導覽的公告寫華語。</p><a href="https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&amp;xsmsid=0G244539301206394658" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語導覽預約</small><h3 lang="zh-Hant">二二八國家紀念館團體導覽</h3><p>官方的團體預約服務有台語；愛先向館方申請，閣確認安排。這項是南海路的國家紀念館，佮二二八公園內底的台北二二八紀念館無仝。</p><a href="https://www.228.org.tw/visitbooking" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語語音導覽</small><h3 lang="zh-Hant">臺灣博物館多語導覽資訊</h3><p>館方2020年公布的服務頁有寫本館常設展的台語APP語音、台語真人導覽佮土銀展示館的台語影片。這份舊公告猶會當看；真人導覽的場次佮服務這馬的情形，請先問館方。</p><a href="https://www.ntm.gov.tw/News_Content.aspx?n=5651&amp;s=147688" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語閱讀推廣</small><h3 lang="zh-Hant">西園分館「臺語來𨑨迌：翻翻日常味」</h3><p>2026/9/1–9/30，西園分館4樓服務臺（萬華區興寧街6號）。用台語詞卡配對佮食材任務，來體驗日常的台語；抽獎集點卡愛用閱讀存摺5點換，無換卡嘛會當參加。逐工固定的場次佮費用猶未公告，請照館方開館佮活動的安排參加。</p><a href="https://reading.tpml.gov.taipei/News_Content.aspx?n=EC4E126F1D95DB7E&amp;sms=9D72E82EC16F3E64&amp;s=F992B94F4E146C70" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語相關展覽</small><h3 lang="zh-Hant">萬華分館「輪轉台語冊在此」主題書展</h3><p>2026/6/1–12/31，萬華分館館藏特色區（萬華區東園街19號5樓）。展出台語繪本、文學佮歷史等冊，推廣母語閱讀。逐工固定的導覽抑是活動費用猶未公告，請照館方開館的資料前往。</p><a href="https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&amp;sms=9D72E82EC16F3E64&amp;s=38B1B2747969B6BF" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語閱讀推廣</small><h3 lang="zh-Hant">柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」</h3><p>2026/7/1–12/31，柳鄉兒童圖書館（萬華區環河南路2段102號4樓）。逐禮拜紹介實用的台語詞，配冊佮雲端的語言學習資源，予囡仔佮家長做伙學。固定的教課時間抑是費用猶未公告，請照館方開館的資料參加。</p><a href="https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&amp;sms=9D72E82EC16F3E64&amp;s=DE3E88434F5F8762" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article><article class="resource-card"><small>臺北市 · 台語相關展覽</small><h3 lang="zh-Hant">舊莊分館「臺語拉吉歐」主題書展</h3><p>2026/5/1–12/31，舊莊分館3樓書展區（南港區舊莊街1段91巷11號3樓）。對台語主題的冊來熟似語言佮文化；固定的導覽場次抑是活動費用猶未公告，請照館方開館的資料前往。</p><a href="https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&amp;sms=9D72E82EC16F3E64&amp;s=7B9A90BA1BD4EA94" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a><small>核對：2026-09-18</small></article></div></section>
 
   <!-- EVENT DETAIL MODAL (Android & iPhone Bottom Sheet) -->
-  <div class="modal-overlay" lang="zh-Hant" id="eventModal" onclick="closeModalOnBackdrop(event)">
+  <dialog class="modal-overlay" lang="zh-Hant" id="eventModal" aria-labelledby="modalTitle" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
-      <button class="modal-close" onclick="closeModal()">✕</button>
+      <button class="modal-close" onclick="closeModal()" aria-label="關閉活動詳情" autofocus>✕</button>
       <div class="modal-hero-img">
         <img id="modalImg" src="" alt="活動海報">
       </div>
@@ -197,19 +308,28 @@
         </div>
       </div>
     </div>
-  </div>
+  </dialog>
 
-  <div class="modal-overlay" id="syncModal" onclick="closeModalOnBackdrop(event)">
+  <dialog class="modal-overlay" id="syncModal" aria-labelledby="syncTitle" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog" style="max-width:550px">
-      <button class="modal-close" onclick="closeSyncModal()" aria-label="關起來">×</button>
+      <div class="modal-sheet-handle" aria-hidden="true"></div>
+      <button class="modal-close" onclick="closeSyncModal()" aria-label="關起來" autofocus>×</button>
       <div class="modal-content settings-options">
-        <h2>日曆佮設定</h2>
+        <h2 id="syncTitle">日曆佮設定</h2>
         <div><h3>共活動囥入日曆</h3><p>下載的日曆干焦有你揀的活動，會當匯入 Apple、Google 抑是其他支援 ICS 的日曆。若欲加一場，請開「活動詳情」。</p><button class="btn btn-primary" onclick="exportCalendarFile()">下載揀好的日曆</button></div>
         <div><h3>囥佇手機的主畫面</h3><p>iPhone 用 Safari 的分享選單揀「加入主畫面」；Android 用 Chrome 的選單揀「新增至主螢幕」。</p></div>
         <div><h3>畫面的色水</h3><button class="btn" onclick="toggleTheme()">換深色抑是淺色</button></div>
+        <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。費用猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。</p></details>
       </div>
     </div>
-  </div>
+  </dialog>
+
+  <nav class="ios-tab-bar" aria-label="活動導覽">
+    <button class="ios-tab-item active" data-tab="grid" aria-pressed="true" onclick="switchViewMobile('grid')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>活動</span></button>
+    <button class="ios-tab-item" data-tab="agenda" aria-pressed="false" onclick="switchViewMobile('agenda')"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg><span>清單</span></button>
+    <button class="ios-tab-item" data-tab="calendar" aria-pressed="false" onclick="switchViewMobile('calendar')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 11h18M8 16h2M14 16h2"/></svg><span>看一禮拜</span></button>
+    <button class="ios-tab-item" aria-haspopup="dialog" aria-controls="syncModal" onclick="openSyncModal()"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span>日曆佮設定</span></button>
+  </nav>
 
   <!-- FOOTER -->
   <footer>
@@ -219,7 +339,7 @@
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 00:15:00（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 00:51:56（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -2745,6 +2865,12 @@
       computeStats();
       renderMonthFilters();
       renderAll();
+      document.querySelectorAll('dialog.modal-overlay').forEach(dialog => {
+        dialog.addEventListener('cancel', event => { event.preventDefault(); closeOverlay(dialog.id); });
+      });
+      window.matchMedia('(max-width: 700px)').addEventListener('change', () => {
+        if (document.getElementById('filterModal').open) closeFilterModal();
+      });
     });
 
     function adaptToDeviceOS() {
@@ -2779,8 +2905,9 @@
         btn.classList.toggle('active', btn.dataset.view === viewName);
         btn.setAttribute('aria-pressed', String(btn.dataset.view === viewName));
       });
-      document.querySelectorAll('.ios-tab-item').forEach(btn => {
+      document.querySelectorAll('.ios-tab-item[data-tab]').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === viewName);
+        btn.setAttribute('aria-pressed', String(btn.dataset.tab === viewName));
       });
 
       document.getElementById('viewGrid').style.display = viewName === 'grid' ? 'grid' : 'none';
@@ -2910,6 +3037,9 @@
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
       document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總';
+      const extraCount = [currentPlatform, currentCategory, currentPrice].filter(value => value !== 'all').length;
+      document.getElementById('mobileFilterCount').innerText = extraCount ? String(extraCount) : '';
+      document.getElementById('filterResultCount').innerText = `（${filtered.length}）`;
 
       renderGrid(filtered);
       renderAgenda(filtered);
@@ -3122,31 +3252,55 @@
       document.getElementById('modalGCalLink').href = act.gcal_url;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(act.venue + ' ' + act.address)}`;
 
-      document.getElementById('eventModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
+      openOverlay('eventModal');
     }
 
     function closeModal() {
-      document.getElementById('eventModal').classList.remove('active');
-      document.body.style.overflow = '';
-      selectedActivity = null;
+      closeOverlay('eventModal');
     }
 
     function closeModalOnBackdrop(e) {
-      if (e.target.classList.contains('modal-overlay')) {
-        e.target.classList.remove('active');
-        document.body.style.overflow = '';
-      }
+      if (e.target.classList.contains('modal-overlay')) closeOverlay(e.target.id);
     }
 
     function openSyncModal() {
-      document.getElementById('syncModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
+      openOverlay('syncModal');
     }
 
     function closeSyncModal() {
-      document.getElementById('syncModal').classList.remove('active');
+      closeOverlay('syncModal');
+    }
+
+    function openOverlay(id) {
+      const dialog = document.getElementById(id);
+      dialog.showModal();
+      dialog.classList.add('active');
+      dialog.querySelector('.modal-dialog').scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeOverlay(id) {
+      const dialog = document.getElementById(id);
+      dialog.classList.remove('active');
+      dialog.close();
       document.body.style.overflow = '';
+      if (id === 'eventModal') selectedActivity = null;
+      if (id === 'filterModal') {
+        document.querySelector('.controls-container').appendChild(document.getElementById('advancedFilters'));
+      }
+    }
+
+    function openFilterModal() {
+      document.getElementById('mobileFilterHost').appendChild(document.getElementById('advancedFilters'));
+      openOverlay('filterModal');
+    }
+
+    function closeFilterModal() { closeOverlay('filterModal'); }
+
+    function resetExtraFilters() {
+      currentPlatform = currentCategory = currentPrice = 'all';
+      for (const id of ['sourceFilter', 'categoryFilter', 'priceFilter']) document.getElementById(id).value = 'all';
+      renderAll();
     }
 
     // Android & Mobile Share API
