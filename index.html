@@ -703,7 +703,11 @@
       min-width: 110px;
     }
 
-    /* Calendar Grid View */
+    /* Weekly calendar: full-height event lists, no hidden overflow. */
+    .city-taipei { --city-ink: #174ea6; --city-bg: #e8f0fe; }
+    .city-newtaipei { --city-ink: #14633b; --city-bg: #e4f4ea; }
+    .city-taoyuan { --city-ink: #9a4600; --city-bg: #fff0da; }
+    .badge-city[class*="city-"] { background: var(--city-bg, #eef1f5); color: var(--city-ink, #334155); }
     .calendar-container {
       background: var(--bg-card);
       border-radius: var(--radius-lg);
@@ -711,107 +715,58 @@
       box-shadow: var(--shadow-sm);
       overflow: hidden;
     }
-
     .cal-header {
-      padding: 0.85rem 1.15rem;
+      padding: 1rem;
       display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid var(--border-color);
     }
-
-    .cal-title {
-      font-size: 1.15rem;
-      font-weight: 800;
-      font-family: var(--font-display);
-    }
-
-    .cal-nav {
-      display: flex;
-      gap: 0.35rem;
-    }
-
-    .cal-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-    }
-
-    .cal-day-header {
-      padding: 0.55rem;
-      text-align: center;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--text-muted);
-      background: var(--bg-main);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .cal-cell {
-      min-height: 85px;
-      padding: 0.35rem;
-      border-right: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      background: var(--bg-card);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .cal-cell:nth-child(7n) {
-      border-right: none;
-    }
-
-    .cal-cell.other-month {
-      background: var(--bg-main);
-      opacity: 0.4;
-    }
-
-    .cal-cell.today {
-      background: rgba(200, 76, 50, 0.05);
-    }
-
-    .cal-cell-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.25rem;
-    }
-
-    .cal-date-num {
-      font-size: 0.78rem;
-      font-weight: 700;
-      width: 20px;
-      height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-    }
-
-    .cal-cell.today .cal-date-num {
-      background: var(--primary);
-      color: #FFFFFF;
-    }
-
-    .cal-events-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-      overflow-y: auto;
-      max-height: 60px;
-    }
-
+    .cal-title { font-size: 1.1rem; font-weight: 800; font-family: var(--font-display); }
+    .cal-nav { display: flex; gap: .4rem; }
+    .cal-nav .btn { color: var(--text-main); border-color: var(--border-color); padding: .45rem .65rem; }
+    .cal-legend { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .75rem 1rem; }
+    .cal-summary { font-size: .8rem; color: var(--text-muted); }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: start; }
+    .cal-cell { min-width: 0; padding: .5rem; border-right: 1px solid var(--border-color); }
+    .cal-cell:last-child { border-right: none; }
+    .cal-cell.today { background: var(--primary-light); }
+    .cal-cell-header { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; margin-bottom: .65rem; }
+    .cal-date-num { font-size: .85rem; font-weight: 800; margin: 0; }
+    .cal-day-count { font-size: .72rem; color: var(--text-muted); }
+    .cal-today-label { font-size: .7rem; background: var(--primary); color: white; padding: .1rem .35rem; border-radius: 4px; }
+    .cal-events-list { display: flex; flex-direction: column; gap: .5rem; }
     .cal-event-pill {
-      font-size: 0.65rem;
-      font-weight: 600;
-      padding: 1px 4px;
-      border-radius: 3px;
-      background: var(--primary-light);
-      color: var(--primary);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+      width: 100%;
+      font: inherit;
+      font-size: .8rem;
+      line-height: 1.5;
+      text-align: left;
+      padding: .65rem .5rem;
+      border: 1px solid transparent;
+      border-left: 4px solid var(--city-ink, #334155);
+      border-radius: 6px;
+      background: var(--city-bg, #eef1f5);
+      color: var(--city-ink, #334155);
+      white-space: normal;
+      overflow-wrap: anywhere;
       cursor: pointer;
-      border-left: 2px solid var(--primary);
+    }
+    .cal-event-pill:hover { border-color: var(--city-ink, #334155); }
+    .cal-event-pill:focus-visible { outline: 3px solid var(--city-ink, #334155); outline-offset: 2px; }
+    .cal-event-time { font-weight: 800; }
+    .cal-event-title { font-size: .85rem; }
+    .cal-event-meta { font-size: .72rem; }
+    .cal-empty { font-size: .78rem; color: var(--text-muted); padding: .5rem 0; }
+    @media (max-width: 1000px) {
+      .cal-grid { grid-template-columns: 1fr; }
+      .cal-cell { border-right: none; border-bottom: 1px solid var(--border-color); padding: 1rem; }
+      .cal-events-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
     }
 
     /* Mobile Bottom Navigation Bar */
@@ -1096,13 +1051,10 @@
         flex: 1;
         justify-content: center;
       }
-      .cal-cell {
-        min-height: 55px;
-        padding: 0.15rem;
-      }
-      .cal-event-pill {
-        font-size: 0.6rem;
-      }
+      .cal-events-list { grid-template-columns: 1fr; }
+      .cal-event-pill { padding: .75rem; font-size: .9rem; }
+      .cal-event-title { font-size: .95rem; }
+      .cal-header { padding: .85rem; }
 
       .ios-tab-bar {
         display: block;
@@ -1205,7 +1157,7 @@
         <div class="view-switchers">
           <button class="view-btn active" data-view="grid" onclick="switchView('grid')">🗂️ 卡片</button>
           <button class="view-btn" data-view="agenda" onclick="switchView('agenda')">📋 清單</button>
-          <button class="view-btn" data-view="calendar" onclick="switchView('calendar')">📅 月曆</button>
+          <button class="view-btn" data-view="calendar" onclick="switchView('calendar')">📅 週曆</button>
         </div>
       </div>
 
@@ -1267,24 +1219,21 @@
       <!-- VIEW 2: Agenda List -->
       <div id="viewAgenda" class="agenda-list" style="display: none;"></div>
 
-      <!-- VIEW 3: Interactive Month Calendar -->
+      <!-- VIEW 3: Weekly calendar (Monday–Sunday, Asia/Taipei) -->
       <div id="viewCalendar" class="calendar-container" style="display: none;">
         <div class="cal-header">
-          <div class="cal-title" id="calCurrentMonthLabel">2026年 9月</div>
+          <div class="cal-title" id="calCurrentWeekLabel" aria-live="polite"></div>
           <div class="cal-nav">
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.3rem 0.6rem;" onclick="prevMonth()">◀</button>
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.3rem 0.7rem;" onclick="goToToday()">今天</button>
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.3rem 0.6rem;" onclick="nextMonth()">▶</button>
+            <button class="btn btn-light" onclick="prevWeek()" aria-label="上一週">◀ 上週</button>
+            <button class="btn btn-light" onclick="goToToday()">本週</button>
+            <button class="btn btn-light" onclick="nextWeek()" aria-label="下一週">下週 ▶</button>
           </div>
         </div>
-        <div class="cal-grid" id="calGridHeader">
-          <div class="cal-day-header">日</div>
-          <div class="cal-day-header">一</div>
-          <div class="cal-day-header">二</div>
-          <div class="cal-day-header">三</div>
-          <div class="cal-day-header">四</div>
-          <div class="cal-day-header">五</div>
-          <div class="cal-day-header">六</div>
+        <div class="cal-legend" aria-label="城市顏色圖例">
+          <span class="badge badge-city city-taipei">臺北市</span>
+          <span class="badge badge-city city-newtaipei">新北市</span>
+          <span class="badge badge-city city-taoyuan">桃園市</span>
+          <span class="cal-summary" id="calWeekSummary" aria-live="polite"></span>
         </div>
         <div class="cal-grid" id="calGridDays"></div>
       </div>
@@ -1305,7 +1254,7 @@
       </button>
       <button class="ios-tab-item" data-tab="calendar" onclick="switchViewMobile('calendar')">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <span>月曆檢視</span>
+        <span>週曆檢視</span>
       </button>
       <button class="ios-tab-item" onclick="openFilterSheet()">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" stroke-width="2"/></svg>
@@ -1482,7 +1431,7 @@
         本頁僅收錄已核對官方公告的場次，不代表完整活動清單。各地收錄數以已核實資料為準；出發前請再次查看官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面建置：2026-09-18 22:10:05（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
+        頁面建置：2026-09-18 22:23:03（臺北時間；不代表重新核實） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -3914,7 +3863,7 @@
     let currentPrice = 'all';
     let searchQuery = '';
     let selectedActivity = null;
-    let calDate = new Date();
+    let calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
 
     document.addEventListener('DOMContentLoaded', () => {
       initTheme();
@@ -4095,7 +4044,7 @@
             <div class="card-cover">
               ${cover ? `<img src="${cover}" alt="官方活動圖片" loading="lazy">` : '<div style="height:100%;display:flex;align-items:center;justify-content:center;background:var(--secondary-light);color:var(--secondary);font-weight:700;">台語活動・官方公告</div>'}
               <div class="card-badges-top">
-                <span class="badge badge-city">📍 ${act.city}</span>
+                <span class="badge badge-city ${cityClass(act.city)}">📍 ${act.city}</span>
                 <span class="badge badge-category">${act.category}</span>
               </div>
               <span class="badge badge-platform">${act.source_platform}</span>
@@ -4170,7 +4119,7 @@
                     </div>
                     <div class="agenda-content">
                       <div style="display:flex; gap:0.3rem; margin-bottom:0.25rem; flex-wrap:wrap;">
-                        <span class="badge badge-city">📍 ${act.city}</span>
+                        <span class="badge badge-city ${cityClass(act.city)}">📍 ${act.city}</span>
                         <span class="badge badge-category">${act.category}</span>
                         <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${act.source_platform}</span>
                       </div>
@@ -4196,68 +4145,78 @@
       container.innerHTML = html;
     }
 
-    function renderCalendar() {
-      const year = calDate.getFullYear();
-      const month = calDate.getMonth();
-      document.getElementById('calCurrentMonthLabel').innerText = `${year}年 ${month + 1}月`;
-
-      const firstDayIndex = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const prevDaysInMonth = new Date(year, month, 0).getDate();
-
-      const container = document.getElementById('calGridDays');
-      let html = '';
-      const filtered = getFilteredActivities();
-
-      for (let i = firstDayIndex - 1; i >= 0; i--) {
-        const d = prevDaysInMonth - i;
-        html += `<div class="cal-cell other-month"><div class="cal-cell-header"><span class="cal-date-num">${d}</span></div></div>`;
-      }
-
-      const today = new Date();
-      for (let day = 1; day <= daysInMonth; day++) {
-        const isToday = today.getFullYear() === year && today.getMonth() === month && today.getDate() === day;
-        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        const dayEvents = filtered.filter(a => a.start_time.startsWith(dateStr));
-
-        html += `
-          <div class="cal-cell ${isToday ? 'today' : ''}">
-            <div class="cal-cell-header">
-              <span class="cal-date-num">${day}</span>
-              ${dayEvents.length > 0 ? `<span style="font-size:0.65rem; font-weight:700; color:var(--primary);">${dayEvents.length}場</span>` : ''}
-            </div>
-            <div class="cal-events-list">
-              ${dayEvents.map(ev => `
-                <div class="cal-event-pill" onclick="openModal('${ev.id}')" title="${ev.title}">
-                  ${ev.title}
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `;
-      }
-
-      const totalCells = firstDayIndex + daysInMonth;
-      const nextDays = (7 - (totalCells % 7)) % 7;
-      for (let j = 1; j <= nextDays; j++) {
-        html += `<div class="cal-cell other-month"><div class="cal-cell-header"><span class="cal-date-num">${j}</span></div></div>`;
-      }
-
-      container.innerHTML = html;
+    function cityClass(city) {
+      return { '臺北市': 'city-taipei', '新北市': 'city-newtaipei', '桃園市': 'city-taoyuan' }[city] || '';
     }
 
-    function prevMonth() {
-      calDate.setMonth(calDate.getMonth() - 1);
+    function escapeCalendarText(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    }
+
+    function taipeiDateKey(date = new Date()) {
+      const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(date);
+      const part = type => parts.find(p => p.type === type).value;
+      return `${part('year')}-${part('month')}-${part('day')}`;
+    }
+
+    function weekStart(date) {
+      const start = new Date(date);
+      start.setUTCDate(start.getUTCDate() - (start.getUTCDay() + 6) % 7);
+      return start;
+    }
+
+    function renderCalendar() {
+      const start = weekStart(calDate);
+      const end = new Date(start);
+      end.setUTCDate(end.getUTCDate() + 6);
+      const label = date => `${date.getUTCFullYear()}/${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
+      document.getElementById('calCurrentWeekLabel').innerText = `${label(start)} – ${label(end)}`;
+      const filtered = getFilteredActivities().slice().sort((a, b) => new Date(a.start_time) - new Date(b.start_time) || a.id.localeCompare(b.id));
+      const today = taipeiDateKey();
+      const weekdays = ['週一', '週二', '週三', '週四', '週五', '週六', '週日'];
+      const time = iso => new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(iso));
+      let html = '';
+      let weekCount = 0;
+      for (let i = 0; i < 7; i++) {
+        const day = new Date(start);
+        day.setUTCDate(day.getUTCDate() + i);
+        const dateKey = day.toISOString().slice(0, 10);
+        const dayEvents = filtered.filter(a => taipeiDateKey(new Date(a.start_time)) === dateKey);
+        weekCount += dayEvents.length;
+        html += `
+          <section class="cal-cell ${dateKey === today ? 'today' : ''}" data-date="${dateKey}" aria-label="${dateKey} ${weekdays[i]}">
+            <div class="cal-cell-header">
+              <h3 class="cal-date-num">${day.getUTCMonth() + 1}/${day.getUTCDate()} ${weekdays[i]}</h3>
+              <span class="cal-day-count">${dayEvents.length} 場</span>
+              ${dateKey === today ? '<span class="cal-today-label">今天</span>' : ''}
+            </div>
+            <div class="cal-events-list">
+              ${dayEvents.length ? dayEvents.map(ev => `
+                <button type="button" class="cal-event-pill ${cityClass(ev.city)}" data-activity-id="${escapeCalendarText(ev.id)}" onclick="openModal(this.dataset.activityId)">
+                  <span class="cal-event-time">${time(ev.start_time)}${ev.end_time ? '–' + time(ev.end_time) : ' 起'}</span>
+                  <strong class="cal-event-title">${escapeCalendarText(ev.title)}</strong>
+                  <span class="cal-event-meta">${escapeCalendarText(ev.city)} · ${escapeCalendarText(ev.venue)}</span>
+                </button>
+              `).join('') : '<p class="cal-empty">此日無符合條件的已核實場次</p>'}
+            </div>
+          </section>`;
+      }
+      document.getElementById('calGridDays').innerHTML = html;
+      document.getElementById('calWeekSummary').innerText = weekCount ? `本週 ${weekCount} 場・臺北時間・依開始時間排序` : '本週無符合條件的已核實場次，可切換週次或調整篩選';
+    }
+
+    function prevWeek() {
+      calDate.setUTCDate(calDate.getUTCDate() - 7);
       renderCalendar();
     }
 
-    function nextMonth() {
-      calDate.setMonth(calDate.getMonth() + 1);
+    function nextWeek() {
+      calDate.setUTCDate(calDate.getUTCDate() + 7);
       renderCalendar();
     }
 
     function goToToday() {
-      calDate = new Date();
+      calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
       renderCalendar();
     }
 
@@ -4268,6 +4227,7 @@
 
       document.getElementById('modalImg').src = act.cover_image || '';
       document.getElementById('modalImg').parentElement.style.display = act.cover_image ? '' : 'none';
+      document.getElementById('modalCity').className = 'badge badge-city ' + cityClass(act.city);
       document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${act.district})` : '');
       document.getElementById('modalCategory').innerText = act.category;
       document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
