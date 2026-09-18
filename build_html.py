@@ -1883,11 +1883,27 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalDesc').innerText = act.description;
 
       const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
-      const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語`);
+      const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語 報名 售票`);
       const googleSearchUrl = `https://www.google.com/search?q=${{searchQuery}}`;
 
-      document.getElementById('modalTicketLink').href = act.source_url || googleSearchUrl;
+      const ticketBtn = document.getElementById('modalTicketLink');
+      ticketBtn.href = act.source_url || googleSearchUrl;
+      if (act.source_platform.includes('兩廳院') || act.source_platform.includes('OPENTIX')) {{
+        ticketBtn.innerHTML = '🎟️ 前往 OPENTIX 兩廳院售票官網 ↗';
+      }} else if (act.source_platform.includes('年代')) {{
+        ticketBtn.innerHTML = '🎟️ 前往年代售票官網 ↗';
+      }} else if (act.source_platform.includes('美術館') || act.source_platform.includes('博物館')) {{
+        ticketBtn.innerHTML = '🏛️ 前往場館官方網站 ↗';
+      }} else if (act.source_platform.includes('市府')) {{
+        ticketBtn.innerHTML = '🏛️ 前往市府局處官方網站 ↗';
+      }} else if (act.source_platform.includes('圖書館')) {{
+        ticketBtn.innerHTML = '📖 前往市立圖書館官網 ↗';
+      }} else {{
+        ticketBtn.innerHTML = '🌐 前往主辦/官方網站 ↗';
+      }}
+
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
+      document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 Google 查詢本活動報名/購票 ↗';
       document.getElementById('modalGCalLink').href = act.gcal_url;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 

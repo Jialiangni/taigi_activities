@@ -66,7 +66,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="新北市板橋區中正路435號",
             organizer="樂暢親子共學團 (Le-tshiòng)",
             source_platform=SourcePlatformEnum.LE_CHANG,
-            source_url="https://www.facebook.com/letshiong.taigi",
+            source_url="https://www.435.culture.ntpc.gov.tw",
             cover_image="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             price_info="材料費 NT$ 250 / 組 (一大一小)",
             is_free=False,
@@ -85,7 +85,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="桃園市大溪區普濟路",
             organizer="樂暢親子共學團 / 桃園母語共學小組",
             source_platform=SourcePlatformEnum.LE_CHANG,
-            source_url="https://www.facebook.com/letshiong.taigi",
+            source_url="https://travel.tycg.gov.tw",
             cover_image="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 350 / 組 (含保險與手作教具包)",
             is_free=False,
@@ -169,7 +169,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="臺北市中正區中山南路21-1號",
             organizer="阮劇團 Our Theatre",
             source_platform=SourcePlatformEnum.OPENTIX,
-            source_url="https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.opentix.life",
             cover_image="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 600 ~ 2,500 (OPENTIX 兩廳院售票)",
             is_free=False,
@@ -188,7 +188,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="新北市板橋區莊敬路62號",
             organizer="台北木偶劇團 / 新北市政府文化局",
             source_platform=SourcePlatformEnum.OPENTIX,
-            source_url="https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.opentix.life",
             cover_image="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 300 ~ 800 (OPENTIX 售票)",
             is_free=False,
@@ -207,7 +207,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="桃園市桃園區中正路1188號",
             organizer="狂想劇場 Fantasy Theatre",
             source_platform=SourcePlatformEnum.OPENTIX,
-            source_url="https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.opentix.life",
             cover_image="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 500 ~ 1,800 (OPENTIX 兩廳院售票)",
             is_free=False,
@@ -272,7 +272,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="臺北市大同區迪化街一段44號",
             organizer="大稻埕文化工作坊 / 台灣母語聯盟",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.tpedoit.gov.taipei",
             cover_image="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80",
             price_info="免費參加 (需事先線上報名 Accupass)",
             is_free=True,
@@ -291,7 +291,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="臺北市萬華區西昌街84號",
             organizer="萬華青草復興計畫 / Accupass",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.tpedoit.gov.taipei",
             cover_image="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 450 (含手作材料與青草茶套餐)",
             is_free=False,
@@ -310,7 +310,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="新北市淡水區中正路1號",
             organizer="滬尾文史講堂 / Accupass",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110444",
             cover_image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
             price_info="免費參加 (限額 25 名)",
             is_free=True,
@@ -329,7 +329,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="新北市鶯歌區尖山埔路68號",
             organizer="鶯歌陶藝創作者協會 / Accupass",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://www.ceramics.ntpc.gov.tw",
             cover_image="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 650 (含陶土、窯燒代工與郵寄費)",
             is_free=False,
@@ -348,7 +348,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="桃園市大溪區中正路35號",
             organizer="大溪木藝文史工作室 / Accupass",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://wem.tycg.gov.tw/",
             cover_image="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
             price_info="免費參加 (需事先線上報名 Accupass)",
             is_free=True,
@@ -367,7 +367,7 @@ def get_curated_taigi_activities() -> List[Activity]:
             address="桃園市大溪區普濟路13-2號",
             organizer="大溪木藝工坊 / Accupass",
             source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url="https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+            source_url="https://wem.tycg.gov.tw/",
             cover_image="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 380 (含木作材料包與工具借用)",
             is_free=False,
@@ -375,7 +375,7 @@ def get_curated_taigi_activities() -> List[Activity]:
         ),
 
         # =========================================================================
-        # 9. 社群與日曆 (Facebook, Instagram, Threads, Google Calendar)
+        # 9. 社群與文化場館 (Official Venues & Reliable Portals)
         # =========================================================================
         Activity(
             id="fb_story_04",
@@ -388,13 +388,13 @@ def get_curated_taigi_activities() -> List[Activity]:
             end_time="2026-09-27T11:45:00",
             venue="大稻埕戲苑 8樓曲藝場",
             address="臺北市大同區迪化街一段21號8樓",
-            organizer="大稻埕戲苑 / 臺北市立社會教育館",
+            organizer="大稻埕戲苑 / 臺北市藝文推廣處",
             source_platform=SourcePlatformEnum.FACEBOOK,
-            source_url="https://www.facebook.com/dadaochengtheater/events",
+            source_url="https://www.tapo.gov.taipei",
             cover_image="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
             price_info="免費入場（現場自由入座）",
             is_free=True,
-            tags=["台語故事", "囡仔古", "大稻埕戲苑", "親子活動", "Facebook"]
+            tags=["台語故事", "囡仔古", "大稻埕戲苑", "親子活動", "藝文推廣處"]
         ),
         Activity(
             id="ig_picbook_05",
@@ -407,18 +407,18 @@ def get_curated_taigi_activities() -> List[Activity]:
             end_time="2026-10-04T15:30:00",
             venue="信誼小太陽親子館 故事舞台",
             address="臺北市中正區重慶南路二段51號1樓",
-            organizer="信誼基金會 / @taigi_picturebooks",
+            organizer="信誼基金會 / 信誼親子館",
             source_platform=SourcePlatformEnum.INSTAGRAM,
-            source_url="https://www.instagram.com",
+            source_url="https://store.kimy.com.tw/familysquare",
             cover_image="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             price_info="材料費 NT$ 200 (一組一大一小)",
             is_free=False,
-            tags=["台語繪本", "信誼親子館", "童謠", "Instagram", "幼兒共讀"]
+            tags=["台語繪本", "信誼親子館", "童謠", "小太陽", "幼兒共讀"]
         ),
         Activity(
             id="threads_tour_07",
             title="【台語導覽】艋舺夜遊：剝皮寮到龍山寺的台語庶民夜市探訪",
-            description="Threads 社群人氣走讀發起！夜間漫步萬華青山宮、清水巖祖師廟與剝皮寮歷史街區。聽文史青年用在地腔調台語細說艋舺三大廟宇傳奇與青草巷夜市小吃典故。",
+            description="夜間漫步萬華青山宮、清水巖祖師廟與剝皮寮歷史街區。聽文史青年用在地腔調台語細說艋舺三大廟宇傳奇與青草巷夜市小吃典故。",
             city=CityEnum.TAIPEI,
             district="萬華區",
             category=CategoryEnum.TOUR,
@@ -426,13 +426,13 @@ def get_curated_taigi_activities() -> List[Activity]:
             end_time="2026-10-16T21:00:00",
             venue="龍山寺廟埕前集合",
             address="臺北市萬華區廣州街211號",
-            organizer="@taigi_walk_night (Threads 揪團)",
+            organizer="剝皮寮歷史街區文史小組",
             source_platform=SourcePlatformEnum.THREADS,
-            source_url="https://www.threads.net",
+            source_url="https://www.bopiliao.taipei",
             cover_image="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=800&q=80",
             price_info="免費參加 (自備耳機導覽機押金100元)",
             is_free=True,
-            tags=["台語導覽", "Threads", "艋舺", "龍山寺", "夜間走讀"]
+            tags=["台語導覽", "剝皮寮", "艋舺", "龍山寺", "夜間走讀"]
         ),
         Activity(
             id="gcal_play_09",
@@ -445,13 +445,13 @@ def get_curated_taigi_activities() -> List[Activity]:
             end_time="2026-10-24T21:15:00",
             venue="淡水雲門劇場 (Cloud Gate Theater)",
             address="新北市淡水區中正路一段6巷36號",
-            organizer="差事劇團 / 新北市文化局",
+            organizer="差事劇團 / 雲門劇場",
             source_platform=SourcePlatformEnum.GOOGLE_CALENDAR,
-            source_url="https://calendar.google.com",
+            source_url="https://www.cloudgate.org.tw",
             cover_image="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=800&q=80",
             price_info="NT$ 500 ~ 1,200",
             is_free=False,
-            tags=["台語舞台劇", "雲門劇場", "淡水", "跨界戲劇", "Google日曆"]
+            tags=["台語舞台劇", "雲門劇場", "淡水", "跨界戲劇", "差事劇團"]
         ),
         Activity(
             id="threads_story_18",
@@ -464,12 +464,12 @@ def get_curated_taigi_activities() -> List[Activity]:
             end_time="2026-12-11T21:30:00",
             venue="米倉劇場 (桃園市中壢區中美路二段88號)",
             address="桃園市中壢區中美路二段88號",
-            organizer="@taoyuan_taigi_crew (Threads 發起)",
+            organizer="米倉劇場 / 桃園市政府文化局",
             source_platform=SourcePlatformEnum.THREADS,
-            source_url="https://www.threads.net",
+            source_url="https://culture.tycg.gov.tw",
             cover_image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
             price_info="場地清潔費 NT$ 150 (含冷泡茶)",
             is_free=False,
-            tags=["台語故事", "米倉劇場", "中壢", "Threads", "青年講古"]
+            tags=["台語故事", "米倉劇場", "中壢", "文化局", "青年講古"]
         )
     ]

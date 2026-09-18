@@ -8,29 +8,29 @@ X-WR-TIMEZONE:Asia/Taipei
 X-WR-CALDESC:臺北市、新北市、桃園市台語舞台劇、表演、故事、繪本、體驗與導覽活動彙整
 BEGIN:VEVENT
 UID:opentix_taigi_play_01@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20260925T193000
 DTEND:20260925T214500
 SUMMARY:[台語舞台劇] 【台語舞台劇】阮劇團《熱天酣眠》經典巡演台北站
-DESCRIPTION:【類別】台語舞台劇\n【主辦】阮劇團 Our Theatre\n【票價】NT$ 600 ~ 2,500 (OPENTIX 兩廳院售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E\n\n改編自莎士比亞經典《仲夏夜之夢》，融入台灣常民信仰、廟會文化與生動流利的道地台語對白！全劇以台語發音，中英文字幕，笑料百出、情感真摯。
+DESCRIPTION:【類別】台語舞台劇\n【主辦】阮劇團 Our Theatre\n【票價】NT$ 600 ~ 2,500 (OPENTIX 兩廳院售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life\n\n改編自莎士比亞經典《仲夏夜之夢》，融入台灣常民信仰、廟會文化與生動流利的道地台語對白！全劇以台語發音，中英文字幕，笑料百出、情感真摯。
 LOCATION:國家戲劇院 (National Theater) 臺北市中正區中山南路21-1號
-URL:https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E
+URL:https://www.opentix.life
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_tour_03@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20260926T093000
 DTEND:20260926T120000
 SUMMARY:[台語導覽] 【台語導覽】大稻埕百年風華・全台語文史深度走讀
-DESCRIPTION:【類別】台語導覽\n【主辦】大稻埕文化工作坊 / 台灣母語聯盟\n【票價】免費參加 (需事先線上報名 Accupass)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n「行入大稻埕，聽阮講在地故事。」由資深文史學者全程以流利優美台語導覽迪化街百年商號、霞海城隍廟、李臨秋故居及大稻埕碼頭，體驗老台北的生活美學與母語魅力。
+DESCRIPTION:【類別】台語導覽\n【主辦】大稻埕文化工作坊 / 台灣母語聯盟\n【票價】免費參加 (需事先線上報名 Accupass)\n【來源】Accupass 活動通\n【網址】https://www.tpedoit.gov.taipei\n\n「行入大稻埕，聽阮講在地故事。」由資深文史學者全程以流利優美台語導覽迪化街百年商號、霞海城隍廟、李臨秋故居及大稻埕碼頭，體驗老台北的生活美學與母語魅力。
 LOCATION:大稻埕遊客中心集合 (迪化街一段44號) 臺北市大同區迪化街一段44號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://www.tpedoit.gov.taipei
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:likang_lecture_01@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20260926T140000
 DTEND:20260926T163000
 SUMMARY:[台語故事] 【台語故事/講座】李江却台語文教基金會《台灣母語文化講堂：台語文學佮民間講古》
@@ -41,29 +41,29 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:lechang_picbook_01@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20260927T103000
 DTEND:20260927T120000
 SUMMARY:[台語繪本] 【台語繪本】樂暢親子共學《囡仔來聽繪本・逐家歡喜講台語》新北板橋場
-DESCRIPTION:【類別】台語繪本\n【主辦】樂暢親子共學團 (Le-tshiòng)\n【票價】材料費 NT$ 250 / 組 (一大一小)\n【來源】樂暢親子共學\n【網址】https://www.facebook.com/letshiong.taigi\n\n樂暢台語共學招牌活動！針對 2-7 歲幼兒設計的沉浸式台語繪本共讀，搭配肢體律動、台語手指謠與手作遊戲，讓孩子在自然歡樂的環境中開口說台語。
+DESCRIPTION:【類別】台語繪本\n【主辦】樂暢親子共學團 (Le-tshiòng)\n【票價】材料費 NT$ 250 / 組 (一大一小)\n【來源】樂暢親子共學\n【網址】https://www.435.culture.ntpc.gov.tw\n\n樂暢台語共學招牌活動！針對 2-7 歲幼兒設計的沉浸式台語繪本共讀，搭配肢體律動、台語手指謠與手作遊戲，讓孩子在自然歡樂的環境中開口說台語。
 LOCATION:板橋 435 藝文特區 枋橋大劇院排練室 新北市板橋區中正路435號
-URL:https://www.facebook.com/letshiong.taigi
+URL:https://www.435.culture.ntpc.gov.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:fb_story_04@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20260927T103000
 DTEND:20260927T114500
 SUMMARY:[台語故事] 【台語故事】大稻埕戲苑《囡仔古講堂》：阿公的神秘藏寶圖
-DESCRIPTION:【類別】台語故事\n【主辦】大稻埕戲苑 / 臺北市立社會教育館\n【票價】免費入場（現場自由入座）\n【來源】Facebook\n【網址】https://www.facebook.com/dadaochengtheater/events\n\n專為 3-10 歲親子家庭設計的台語講古時間！專業台語故事老師結合掌中偶與互動道具，帶領小朋友邊聽故事邊學習生動實用的台語日常詞彙，現場備有精美母語繪本貼紙。
+DESCRIPTION:【類別】台語故事\n【主辦】大稻埕戲苑 / 臺北市藝文推廣處\n【票價】免費入場（現場自由入座）\n【來源】Facebook\n【網址】https://www.tapo.gov.taipei\n\n專為 3-10 歲親子家庭設計的台語講古時間！專業台語故事老師結合掌中偶與互動道具，帶領小朋友邊聽故事邊學習生動實用的台語日常詞彙，現場備有精美母語繪本貼紙。
 LOCATION:大稻埕戲苑 8樓曲藝場 臺北市大同區迪化街一段21號8樓
-URL:https://www.facebook.com/dadaochengtheater/events
+URL:https://www.tapo.gov.taipei
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:eraticket_opera_02@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261002T190000
 DTEND:20261002T220000
 SUMMARY:[台語表演] 【台語表演】明華園戲劇總團《大河彈劍》旗艦歌仔戲大作
@@ -74,7 +74,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpml_story_01@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261003T100000
 DTEND:20261003T110000
 SUMMARY:[台語故事] 【台語故事】臺北市立圖書館總館《台灣母語故事屋：阿公講古予你聽》
@@ -85,18 +85,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ig_picbook_05@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261004T140000
 DTEND:20261004T153000
 SUMMARY:[台語繪本] 【台語繪本】信誼親子館《咱來讀繪本》台語親子共讀工作坊
-DESCRIPTION:【類別】台語繪本\n【主辦】信誼基金會 / @taigi_picturebooks\n【票價】材料費 NT$ 200 (一組一大一小)\n【來源】Instagram\n【網址】https://www.instagram.com\n\n精選台灣在地原創台語繪本《點心擔》、《暗查查》，透過唱跳童謠、手指謠與台語繪本互動劇，讓家長與孩子在歡笑聲中自然開口講台語！
+DESCRIPTION:【類別】台語繪本\n【主辦】信誼基金會 / 信誼親子館\n【票價】材料費 NT$ 200 (一組一大一小)\n【來源】Instagram\n【網址】https://store.kimy.com.tw/familysquare\n\n精選台灣在地原創台語繪本《點心擔》、《暗查查》，透過唱跳童謠、手指謠與台語繪本互動劇，讓家長與孩子在歡笑聲中自然開口講台語！
 LOCATION:信誼小太陽親子館 故事舞台 臺北市中正區重慶南路二段51號1樓
-URL:https://www.instagram.com
+URL:https://store.kimy.com.tw/familysquare
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:likang_tour_02@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261010T090000
 DTEND:20261010T113000
 SUMMARY:[台語導覽] 【台語導覽】李江却基金會《台北城內台語地名與文史散策走讀》
@@ -107,7 +107,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tfam_collection_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261010T140000
 DTEND:20261010T153000
 SUMMARY:[台語導覽] 【台語導覽】臺北市立美術館《典藏常設展・全台語專場導覽》
@@ -118,29 +118,29 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_exp_06@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261010T143000
 DTEND:20261010T170000
 SUMMARY:[台語體驗] 【台語體驗】萬華青草巷・全台語調飲與香草球手作體驗
-DESCRIPTION:【類別】台語體驗\n【主辦】萬華青草復興計畫 / Accupass\n【票價】NT$ 450 (含手作材料與青草茶套餐)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n走進百年萬華青草巷，用台語認識薄荷、魚腥草、仙草等台灣土產藥草！由在地青草達人全台語教學，親手配製客製化養生茶飲與舒壓香草球包。
+DESCRIPTION:【類別】台語體驗\n【主辦】萬華青草復興計畫 / Accupass\n【票價】NT$ 450 (含手作材料與青草茶套餐)\n【來源】Accupass 活動通\n【網址】https://www.tpedoit.gov.taipei\n\n走進百年萬華青草巷，用台語認識薄荷、魚腥草、仙草等台灣土產藥草！由在地青草達人全台語教學，親手配製客製化養生茶飲與舒壓香草球包。
 LOCATION:老濟安 Healing Herbar (萬華西昌街84號) 臺北市萬華區西昌街84號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://www.tpedoit.gov.taipei
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:lechang_exp_02@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261011T133000
 DTEND:20261011T163000
 SUMMARY:[台語體驗] 【台語體驗】樂暢親子共學《大自然台語探險家：桃園大溪森林野趣手作》
-DESCRIPTION:【類別】台語體驗\n【主辦】樂暢親子共學團 / 桃園母語共學小組\n【票價】NT$ 350 / 組 (含保險與手作教具包)\n【來源】樂暢親子共學\n【網址】https://www.facebook.com/letshiong.taigi\n\n全台語戶外自然探索！帶領親子走進桃園大溪林道，用台語認識花草樹木與昆蟲鳥類，並就地取材採集落葉枯枝，親手製作台語植物拓印畫與自然曼陀羅。
+DESCRIPTION:【類別】台語體驗\n【主辦】樂暢親子共學團 / 桃園母語共學小組\n【票價】NT$ 350 / 組 (含保險與手作教具包)\n【來源】樂暢親子共學\n【網址】https://travel.tycg.gov.tw\n\n全台語戶外自然探索！帶領親子走進桃園大溪林道，用台語認識花草樹木與昆蟲鳥類，並就地取材採集落葉枯枝，親手製作台語植物拓印畫與自然曼陀羅。
 LOCATION:大溪中正公園與大溪生態步道 桃園市大溪區普濟路
-URL:https://www.facebook.com/letshiong.taigi
+URL:https://travel.tycg.gov.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_culture_minnan_festival_grand@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261011T160000
 DTEND:20261011T203000
 SUMMARY:[台語表演] 【台語表演/市府活動】桃園市政府文化局《桃園閩南文化節：總鋪師辦桌大賽與閩南答喙鼓大賽》
@@ -151,18 +151,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:threads_tour_07@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261016T190000
 DTEND:20261016T210000
 SUMMARY:[台語導覽] 【台語導覽】艋舺夜遊：剝皮寮到龍山寺的台語庶民夜市探訪
-DESCRIPTION:【類別】台語導覽\n【主辦】@taigi_walk_night (Threads 揪團)\n【票價】免費參加 (自備耳機導覽機押金100元)\n【來源】Threads\n【網址】https://www.threads.net\n\nThreads 社群人氣走讀發起！夜間漫步萬華青山宮、清水巖祖師廟與剝皮寮歷史街區。聽文史青年用在地腔調台語細說艋舺三大廟宇傳奇與青草巷夜市小吃典故。
+DESCRIPTION:【類別】台語導覽\n【主辦】剝皮寮歷史街區文史小組\n【票價】免費參加 (自備耳機導覽機押金100元)\n【來源】Threads\n【網址】https://www.bopiliao.taipei\n\n夜間漫步萬華青山宮、清水巖祖師廟與剝皮寮歷史街區。聽文史青年用在地腔調台語細說艋舺三大廟宇傳奇與青草巷夜市小吃典故。
 LOCATION:龍山寺廟埕前集合 臺北市萬華區廣州街211號
-URL:https://www.threads.net
+URL:https://www.bopiliao.taipei
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntm_main_discovery_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261017T103000
 DTEND:20261017T120000
 SUMMARY:[台語導覽] 【台語導覽】國立臺灣博物館《發現台灣・常設展全台語文史生態深度導覽》
@@ -173,29 +173,29 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:opentix_puppet_08@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261017T143000
 DTEND:20261017T160000
 SUMMARY:[台語表演] 【台語表演】台北木偶劇團《西遊記之借芭蕉扇》掌中戲大戲
-DESCRIPTION:【類別】台語表演\n【主辦】台北木偶劇團 / 新北市政府文化局\n【票價】NT$ 300 ~ 800 (OPENTIX 售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E\n\n國寶級掌中戲大師指導，台北木偶劇團精湛演繹！前後場鑼鼓絲竹現場伴奏，五音分明的台語說白、巧奪天工的木偶操演技巧，老少咸宜的台灣傳統偶戲極致之美。
+DESCRIPTION:【類別】台語表演\n【主辦】台北木偶劇團 / 新北市政府文化局\n【票價】NT$ 300 ~ 800 (OPENTIX 售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life\n\n國寶級掌中戲大師指導，台北木偶劇團精湛演繹！前後場鑼鼓絲竹現場伴奏，五音分明的台語說白、巧奪天工的木偶操演技巧，老少咸宜的台灣傳統偶戲極致之美。
 LOCATION:新北市藝文中心 演藝廳 新北市板橋區莊敬路62號
-URL:https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E
+URL:https://www.opentix.life
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_tour_10@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261018T090000
 DTEND:20261018T120000
 SUMMARY:[台語導覽] 【台語導覽】淡水滬尾河港百年風雲・台語古蹟歷史散策
-DESCRIPTION:【類別】台語導覽\n【主辦】滬尾文史講堂 / Accupass\n【票價】免費參加 (限額 25 名)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n跟著台語文史導覽員從淡水捷運站出發，走訪紅毛城、前清淡水關稅務司官邸（小白宮）、得忌利士洋行，全台語解說滬尾戰役與開港通商的故事。
+DESCRIPTION:【類別】台語導覽\n【主辦】滬尾文史講堂 / Accupass\n【票價】免費參加 (限額 25 名)\n【來源】Accupass 活動通\n【網址】https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110444\n\n跟著台語文史導覽員從淡水捷運站出發，走訪紅毛城、前清淡水關稅務司官邸（小白宮）、得忌利士洋行，全台語解說滬尾戰役與開港通商的故事。
 LOCATION:淡水捷運站 1號出口集合 新北市淡水區中正路1號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110444
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_culture_dadaocheng_festival@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261018T133000
 DTEND:20261018T180000
 SUMMARY:[台語表演] 【台語表演/市府活動】臺北市政府文化局《台北母語文化節：大稻埕廟埕講古與傳統音樂匯演》
@@ -206,18 +206,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:taoyuan_children_art_museum_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261018T140000
 DTEND:20261018T151500
 SUMMARY:[台語導覽] 【台語導覽/兒童】桃園市兒童美術館《藝術山丘上的冒險・兒童台語互動探索導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館 (桃園市兒童美術館)\n【票價】門票 NT$ 100 / 12歲以下兒童免費\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw\n\n斜屋頂山丘造型的童趣殿堂！專為親子規劃的台語藝術探索行程，透過互動裝置、感官材料與母語故事帶領，引導小朋友發揮無限創造力。
+DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館 (桃園市兒童美術館)\n【票價】門票 NT$ 100 / 12歲以下兒童免費\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw/ch\n\n斜屋頂山丘造型的童趣殿堂！專為親子規劃的台語藝術探索行程，透過互動裝置、感官材料與母語故事帶領，引導小朋友發揮無限創造力。
 LOCATION:桃園市兒童美術館 1樓展覽空間 桃園市中壢區高鐵南路二段90號
-URL:https://tmofa.tycg.gov.tw
+URL:https://tmofa.tycg.gov.tw/ch
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpclib_picbook_02@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261018T143000
 DTEND:20261018T154500
 SUMMARY:[台語繪本] 【台語繪本】新北市立圖書館總館《新北愛閱讀・台語繪本樂悠遊》
@@ -228,7 +228,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_edu_story_train_carnival@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261024T093000
 DTEND:20261024T123000
 SUMMARY:[台語故事] 【台語故事/市府活動】臺北市政府教育局《本土語言嘉年華・囡仔台語講古列車與闖關活動》
@@ -239,7 +239,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tylib_story_03@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261024T103000
 DTEND:20261024T114500
 SUMMARY:[台語故事] 【台語故事】桃園市立圖書館總館《桃林講古堂：台語童話巡演列車》
@@ -250,7 +250,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tfam_kids_taigi_interactive@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261024T103000
 DTEND:20261024T114500
 SUMMARY:[台語導覽] 【台語導覽/親子】臺北市立美術館 兒童藝術中心《看見聲音・親子台語互動走讀》
@@ -261,18 +261,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:gcal_play_09@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261024T193000
 DTEND:20261024T211500
 SUMMARY:[台語舞台劇] 【台語舞台劇】差事劇團《母語的河流》新北客家與台語跨界劇
-DESCRIPTION:【類別】台語舞台劇\n【主辦】差事劇團 / 新北市文化局\n【票價】NT$ 500 ~ 1,200\n【來源】Google 日曆\n【網址】https://calendar.google.com\n\n以淡水河流域為歷史背景，融合台語口述歷史、客語歌謠與當代劇場肢體語言，探討土地、移民與語言傳承的生命記憶。
+DESCRIPTION:【類別】台語舞台劇\n【主辦】差事劇團 / 雲門劇場\n【票價】NT$ 500 ~ 1,200\n【來源】Google 日曆\n【網址】https://www.cloudgate.org.tw\n\n以淡水河流域為歷史背景，融合台語口述歷史、客語歌謠與當代劇場肢體語言，探討土地、移民與語言傳承的生命記憶。
 LOCATION:淡水雲門劇場 (Cloud Gate Theater) 新北市淡水區中正路一段6巷36號
-URL:https://calendar.google.com
+URL:https://www.cloudgate.org.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_culture_heritage_bopiliao_walk@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261025T093000
 DTEND:20261025T120000
 SUMMARY:[台語導覽] 【台語導覽/市府活動】臺北市政府文化局《台北古蹟日：艋舺青山宮與剝皮寮歷史街區全台語走讀》
@@ -283,7 +283,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ceramics_tour_main_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261025T140000
 DTEND:20261025T153000
 SUMMARY:[台語導覽] 【台語導覽】新北市立鶯歌陶瓷博物館《陶泥話滄桑・全台語常設展巡禮》
@@ -294,7 +294,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:moca_taipei_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261031T143000
 DTEND:20261031T160000
 SUMMARY:[台語導覽] 【台語導覽】台北當代藝術館《當代前衛與母語碰撞・全台語假日專場導覽》
@@ -305,29 +305,29 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_culture_sanchong_village_exp@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261101T130000
 DTEND:20261101T170000
 SUMMARY:[台語體驗] 【台語體驗/市府活動】新北市政府文化局《空軍三重一村眷村與台語記憶生活月：傳統母語工作坊》
-DESCRIPTION:【類別】台語體驗\n【主辦】新北市政府文化局\n【票價】免費參加（部分手作材料費 NT$ 100）\n【來源】北北桃市府局處\n【網址】https://www.culture.ntpc.gov.tw\n\n走進全台保存最完整的防砲眷村！新北市文化局特別企劃，透過全台語眷村導覽、台語傳統糕餅印模手作工作坊與母語露天電影院，感受跨族群語言交融的珍貴時代記憶。
+DESCRIPTION:【類別】台語體驗\n【主辦】新北市政府文化局\n【票價】免費參加（部分手作材料費 NT$ 100）\n【來源】北北桃市府局處\n【網址】https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110502\n\n走進全台保存最完整的防砲眷村！新北市文化局特別企劃，透過全台語眷村導覽、台語傳統糕餅印模手作工作坊與母語露天電影院，感受跨族群語言交融的珍貴時代記憶。
 LOCATION:空軍三重一村 新北市眷村文化園區 新北市三重區正義南路86巷
-URL:https://www.culture.ntpc.gov.tw
+URL:https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110502
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_exp_12@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261101T133000
 DTEND:20261101T163000
 SUMMARY:[台語體驗] 【台語體驗】鶯歌陶瓷老街・台語手拉坯與陶藝釉彩手作工作坊
-DESCRIPTION:【類別】台語體驗\n【主辦】鶯歌陶藝創作者協會 / Accupass\n【票價】NT$ 650 (含陶土、窯燒代工與郵寄費)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n「用母語捏陶，感受泥土的溫度。」由三代陶藝傳人全台語指導拉坯技巧、造型修飾與傳統釉藥塗繪，親手做出獨一無二的台語刻字茶碗！
+DESCRIPTION:【類別】台語體驗\n【主辦】鶯歌陶藝創作者協會 / Accupass\n【票價】NT$ 650 (含陶土、窯燒代工與郵寄費)\n【來源】Accupass 活動通\n【網址】https://www.ceramics.ntpc.gov.tw\n\n「用母語捏陶，感受泥土的溫度。」由三代陶藝傳人全台語指導拉坯技巧、造型修飾與傳統釉藥塗繪，親手做出獨一無二的台語刻字茶碗！
 LOCATION:鶯歌老街陶藝工坊 (新北市鶯歌區尖山埔路) 新北市鶯歌區尖山埔路68號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://www.ceramics.ntpc.gov.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_edu_mother_tongue_carnival@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261107T100000
 DTEND:20261107T160000
 SUMMARY:[台語繪本] 【台語繪本/市府活動】新北市政府教育局《新北母語日・親子台語繪本共讀遊園會與本土語嘉年華》
@@ -338,7 +338,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntm_railway_heritage_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261107T140000
 DTEND:20261107T153000
 SUMMARY:[台語導覽] 【台語導覽】國立臺灣博物館 鐵道部園區《百年驛站風華・鐵道部全台語歷史建築巡禮》
@@ -349,18 +349,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:opentix_play_13@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261107T193000
 DTEND:20261107T214000
 SUMMARY:[台語舞台劇] 【台語舞台劇】狂想劇場《阿爸的皮箱》台語原創家庭劇 桃園場
-DESCRIPTION:【類別】台語舞台劇\n【主辦】狂想劇場 Fantasy Theatre\n【票價】NT$ 500 ~ 1,800 (OPENTIX 兩廳院售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E\n\n狂想劇場得獎原創舞台劇！深刻刻畫台灣戰後三代家庭的情感糾葛與語言斷層，全劇台語對話細緻入微，撼動人心，全台巡演壓軸桃園場！
+DESCRIPTION:【類別】台語舞台劇\n【主辦】狂想劇場 Fantasy Theatre\n【票價】NT$ 500 ~ 1,800 (OPENTIX 兩廳院售票)\n【來源】OPENTIX 兩廳院\n【網址】https://www.opentix.life\n\n狂想劇場得獎原創舞台劇！深刻刻畫台灣戰後三代家庭的情感糾葛與語言斷層，全劇台語對話細緻入微，撼動人心，全台巡演壓軸桃園場！
 LOCATION:桃園展演中心 展演廳 桃園市桃園區中正路1188號
-URL:https://www.opentix.life/search?keyword=%E5%8F%B0%E8%AA%9E
+URL:https://www.opentix.life
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:yingge_old_kiln_walk_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261108T093000
 DTEND:20261108T120000
 SUMMARY:[台語導覽] 【台語導覽/走讀】新北市立鶯歌陶瓷博物館《鶯歌陶藝老街與古窯文化台語走讀》
@@ -370,19 +370,19 @@ URL:https://www.ceramics.ntpc.gov.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:shisanhang_tour_prehistoric_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+UID:shihsanhang_archaeology_taigi_tour@taigiactivities.tw
+DTSTAMP:20260918T154721Z
 DTSTART:20261108T103000
 DTEND:20261108T114500
 SUMMARY:[台語導覽] 【台語導覽】新北市立十三行博物館《穿越千年・史前鐵器時代台語定時導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】新北市立十三行博物館\n【票價】免費參加（現場自由集合）\n【來源】美術館與博物館\n【網址】https://www.sshm.ntpc.gov.tw\n\n八里左岸史前考古探秘！全台語介紹十三行遺址出土之煉鐵爐、人面陶罐及墓葬習俗，並用台語說明早期台灣原住民與東南亞的海外貿易網絡。
+DESCRIPTION:【類別】台語導覽\n【主辦】新北市立十三行博物館\n【票價】免費參加（現場自由集合）\n【來源】美術館與博物館\n【網址】https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110464\n\n八里左岸史前考古探秘！全台語介紹十三行遺址出土之煉鐵爐、人面陶罐及墓葬習俗，並用台語說明早期台灣原住民與東南亞的海外貿易網絡。
 LOCATION:新北市立十三行博物館 2樓常設展廳 新北市八里區博物館路200號
-URL:https://www.sshm.ntpc.gov.tw
+URL:https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110464
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_tpediscovery_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261108T103000
 DTEND:20261108T114500
 SUMMARY:[台語導覽] 【台語導覽/市府活動】臺北市政府觀光傳播局《台北探索館：城市發展史與常設展台語定時導讀》
@@ -393,7 +393,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_edu_speech_contest_carnival@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261114T090000
 DTEND:20261114T120000
 SUMMARY:[台語故事] 【台語故事/市府活動】桃園市政府教育局《桃園市本土語文動態競賽・國中小台語說故事嘉年華》
@@ -404,7 +404,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:taipei_228_memorial_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261114T100000
 DTEND:20261114T113000
 SUMMARY:[台語導覽] 【台語導覽】台北二二八紀念館《走過歷史幽徑・常設展全台語史蹟導覽》
@@ -415,7 +415,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_edu_picture_book_exhibition@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261114T133000
 DTEND:20261114T160000
 SUMMARY:[台語繪本] 【台語繪本/市府活動】臺北市政府教育局《母語創作星光展：國中小學生台語原創繪本說書會》
@@ -426,18 +426,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tamsui_heritage_fort_san_domingo@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261114T140000
 DTEND:20261114T160000
 SUMMARY:[台語導覽] 【台語導覽】新北市立淡水古蹟博物館《紅毛城與淡水港洋樓群・全台語文史深度走讀》
-DESCRIPTION:【類別】台語導覽\n【主辦】新北市立淡水古蹟博物館\n【票價】全票 NT$ 80 / 新北市民出示身分證免費\n【來源】美術館與博物館\n【網址】https://www.tshs.ntpc.gov.tw\n\n俯瞰淡水河口四百年開埠史！走讀國定古蹟紅毛城、前清英國領事官邸與滬尾砲台，全程由在地資深文史老師以台語生動解說大航海時代與清法戰爭戰火風雲。
+DESCRIPTION:【類別】台語導覽\n【主辦】新北市立淡水古蹟博物館\n【票價】全票 NT$ 80 / 新北市民出示身分證免費\n【來源】美術館與博物館\n【網址】https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110444\n\n俯瞰淡水河口四百年開埠史！走讀國定古蹟紅毛城、前清英國領事官邸與滬尾砲台，全程由在地資深文史老師以台語生動解說大航海時代與清法戰爭戰火風雲。
 LOCATION:淡水紅毛城 售票處集合 新北市淡水區中正路28巷1號
-URL:https://www.tshs.ntpc.gov.tw
+URL:https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110444
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:eraticket_perf_14@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261114T143000
 DTEND:20261114T163000
 SUMMARY:[台語表演] 【台語表演】台灣念歌團《琴聲話當年》台語唸歌與月琴民謠音樂會
@@ -448,18 +448,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:calligraphy_tour_hengshan_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261115T143000
 DTEND:20261115T160000
 SUMMARY:[台語導覽] 【台語導覽】橫山書法藝術館《墨韻與台語音聲・當代書法藝術專場台語導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館 (橫山書法藝術館)\n【票價】門票 NT$ 100（導覽免費預約）\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw\n\n全台首座官方書法藝術館！由文化學者融合台語漢學讀音與台語詩詞吟誦，全程以典雅台語導覽當代書藝展覽，品味漢字線條律動與台語聲調的深厚共鳴。
+DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館 (橫山書法藝術館)\n【票價】門票 NT$ 100（導覽免費預約）\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw/ch\n\n全台首座官方書法藝術館！由文化學者融合台語漢學讀音與台語詩詞吟誦，全程以典雅台語導覽當代書藝展覽，品味漢字線條律動與台語聲調的深厚共鳴。
 LOCATION:橫山書法藝術館 A棟展覽廳 桃園市大園區大仁路100號
-URL:https://tmofa.tycg.gov.tw
+URL:https://tmofa.tycg.gov.tw/ch
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_culture_lin_family_garden_music@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261115T143000
 DTEND:20261115T163000
 SUMMARY:[台語表演] 【台語表演/市府活動】新北市政府文化局《新北母語推廣月・板橋林家花園傳統台語曲藝巡演》
@@ -470,18 +470,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_tour_15@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261121T093000
 DTEND:20261121T123000
 SUMMARY:[台語導覽] 【台語導覽】大溪老街木藝文化巡禮・全台語文史走讀
-DESCRIPTION:【類別】台語導覽\n【主辦】大溪木藝文史工作室 / Accupass\n【票價】免費參加 (需事先線上報名 Accupass)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n走訪大溪和平老街、普濟堂與木藝生態博物館，由在地大溪文史耆老全程台語解說巴洛克牌樓建築、傳統木器雕刻技藝與大溪豆干的百年傳承。
+DESCRIPTION:【類別】台語導覽\n【主辦】大溪木藝文史工作室 / Accupass\n【票價】免費參加 (需事先線上報名 Accupass)\n【來源】Accupass 活動通\n【網址】https://wem.tycg.gov.tw/\n\n走訪大溪和平老街、普濟堂與木藝生態博物館，由在地大溪文史耆老全程台語解說巴洛克牌樓建築、傳統木器雕刻技藝與大溪豆干的百年傳承。
 LOCATION:大溪木藝生態博物館 壹號館前 桃園市大溪區中正路35號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://wem.tycg.gov.tw/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_confucian_temple_six_arts@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261121T093000
 DTEND:20261121T120000
 SUMMARY:[台語體驗] 【台語體驗/市府活動】臺北市孔廟管理委員會《儒家禮樂文化季：孔廟六藝體驗與台語古風走讀》
@@ -492,18 +492,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:gold_museum_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261121T103000
 DTEND:20261121T120000
 SUMMARY:[台語導覽] 【台語導覽】新北市立黃金博物館《山城金夢・金瓜石採金歲月與本山五坑全台語導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】新北市立黃金博物館\n【票價】全票 NT$ 80 / 本山五坑體驗門票 NT$ 50\n【來源】美術館與博物館\n【網址】https://www.gep.ntpc.gov.tw\n\n深入地下礦坑坑道！由退休老礦工以親切台語帶路，解說九份與金瓜石採金淘金史、本山五坑工作日常與日治礦業神社遺址，重溫黃金山城昔日璀璨光輝。
+DESCRIPTION:【類別】台語導覽\n【主辦】新北市立黃金博物館\n【票價】全票 NT$ 80 / 本山五坑體驗門票 NT$ 50\n【來源】美術館與博物館\n【網址】https://www.facebook.com/goldmuseum\n\n深入地下礦坑坑道！由退休老礦工以親切台語帶路，解說九份與金瓜石採金淘金史、本山五坑工作日常與日治礦業神社遺址，重溫黃金山城昔日璀璨光輝。
 LOCATION:新北市立黃金博物館 遊客服務中心集合 新北市瑞芳區金光路8號
-URL:https://www.gep.ntpc.gov.tw
+URL:https://www.facebook.com/goldmuseum
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:beitou_hotspring_museum_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261121T140000
 DTEND:20261121T153000
 SUMMARY:[台語導覽] 【台語導覽】北投溫泉博物館《浴場風華與北投那卡西・全台語文史生活導覽》
@@ -514,7 +514,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_tourism_daxi_old_street_walk@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261121T140000
 DTEND:20261121T163000
 SUMMARY:[台語導覽] 【台語導覽/市府活動】桃園市政府觀光旅遊局《大溪老街生活節：百年街屋文史與台語散策走讀》
@@ -525,7 +525,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_edu_holiday_taigi_camp@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261122T090000
 DTEND:20261122T120000
 SUMMARY:[台語故事] 【台語故事/市府活動】新北市政府教育局《假日母語學校：生活台語趣味歌謠與戲劇研習營》
@@ -536,18 +536,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:daxi_wood_ecomuseum_main_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261122T093000
 DTEND:20261122T120000
 SUMMARY:[台語導覽] 【台語導覽】大溪木藝生態博物館《街角木工坊與李騰芳古宅・全台語無圍牆文史巡禮》
-DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立大溪木藝生態博物館\n【票價】免費參加（限額 25 名）\n【來源】美術館與博物館\n【網址】https://wem.tycg.gov.tw\n\n大溪無圍牆博物館深度漫步！由在地木藝文史耆老以純正台語，帶領參觀日治時期木工學校宿舍（壹號館）與國定古蹟李騰芳古宅，解說精細木雕與吉祥寓意圖騰。
+DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立大溪木藝生態博物館\n【票價】免費參加（限額 25 名）\n【來源】美術館與博物館\n【網址】https://wem.tycg.gov.tw/\n\n大溪無圍牆博物館深度漫步！由在地木藝文史耆老以純正台語，帶領參觀日治時期木工學校宿舍（壹號館）與國定古蹟李騰芳古宅，解說精細木雕與吉祥寓意圖騰。
 LOCATION:大溪木藝生態博物館 壹號館前廣場集合 桃園市大溪區中正路35號
-URL:https://wem.tycg.gov.tw
+URL:https://wem.tycg.gov.tw/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_agri_rice_food_culture_exp@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261128T100000
 DTEND:20261128T140000
 SUMMARY:[台語體驗] 【台語體驗/市府活動】桃園市政府農業局《休閒農業區米食文化季：台語做粿手作與農村走讀》
@@ -558,18 +558,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:pinglin_tea_museum_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261128T133000
 DTEND:20261128T153000
 SUMMARY:[台語導覽] 【台語導覽】新北市立坪林茶業博物館《茶香滿山城・文山包種茶文化全台語茶事導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】新北市立坪林茶業博物館\n【票價】全票 NT$ 80 / 新北市民免費（含茶席品茗）\n【來源】美術館與博物館\n【網址】https://www.tea.ntpc.gov.tw\n\n全台唯一茶文化公立博物館！由資深評茶師以台語解說採茶、炒茶、烘焙工藝與「工夫茶」茶道儀軌，現場品茗包種茶甘醇茶韻，深入理解北台灣茶葉外銷黃金時代。
+DESCRIPTION:【類別】台語導覽\n【主辦】新北市立坪林茶業博物館\n【票價】全票 NT$ 80 / 新北市民免費（含茶席品茗）\n【來源】美術館與博物館\n【網址】https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110565\n\n全台唯一茶文化公立博物館！由資深評茶師以台語解說採茶、炒茶、烘焙工藝與「工夫茶」茶道儀軌，現場品茗包種茶甘醇茶韻，深入理解北台灣茶葉外銷黃金時代。
 LOCATION:新北市立坪林茶業博物館 展示館大廳 新北市坪林區水聳淒坑19-1號
-URL:https://www.tea.ntpc.gov.tw
+URL:https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110565
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:taipei_astro_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261128T143000
 DTEND:20261128T160000
 SUMMARY:[台語導覽] 【台語導覽】臺北市立天文科學教育館《星空講古・全台語天文展示場解說》
@@ -580,7 +580,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_culture_music_season_perf@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261128T190000
 DTEND:20261128T213000
 SUMMARY:[台語表演] 【台語表演/市府活動】桃園市政府文化局《桃園台語文化季：經典台語金曲與傳統戲曲匯演》
@@ -591,18 +591,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:calligraphy_park_eco_walk_taigi@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261129T100000
 DTEND:20261129T113000
 SUMMARY:[台語導覽] 【台語導覽/走讀】橫山書法藝術館《青塘硯池漫步・橫山書藝公園地景與水墨台語導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館\n【票價】免費參加（自由集合）\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw\n\n將公園化為巨大墨池！戶外生態與書藝景觀全台語漫步導覽，結合埤塘水鳥生態觀察與五方印章石雕地景解說，體驗青埔自然與當代藝術的交融。
+DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立美術館\n【票價】免費參加（自由集合）\n【來源】美術館與博物館\n【網址】https://tmofa.tycg.gov.tw/ch\n\n將公園化為巨大墨池！戶外生態與書藝景觀全台語漫步導覽，結合埤塘水鳥生態觀察與五方印章石雕地景解說，體驗青埔自然與當代藝術的交融。
 LOCATION:橫山書法藝術公園 入口水岸平台集合 桃園市大園區大仁路100號
-URL:https://tmofa.tycg.gov.tw
+URL:https://tmofa.tycg.gov.tw/ch
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_tourism_pingxi_coalmine_walk@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261129T100000
 DTEND:20261129T133000
 SUMMARY:[台語導覽] 【台語導覽/市府活動】新北市政府觀光旅遊局《山城拾光・平溪鐵道與煤礦黑金文史台語慢遊》
@@ -613,7 +613,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:lin_antai_mansion_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261205T100000
 DTEND:20261205T113000
 SUMMARY:[台語導覽] 【台語導覽】林安泰古厝民俗文物館《閩南傳統建築之美・全台語宅院巡禮》
@@ -624,7 +624,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntpc_agri_wanli_crab_port_exp@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261205T110000
 DTEND:20261205T133000
 SUMMARY:[台語體驗] 【台語體驗/市府活動】新北市政府農業局《漁港叫賣與海味食育・萬里蟹漁港文化台語導覽體驗》
@@ -635,18 +635,18 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:accupass_exp_17@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261205T140000
 DTEND:20261205T163000
 SUMMARY:[台語體驗] 【台語體驗】大溪木作童玩手作體驗工作坊（台語教學）
-DESCRIPTION:【類別】台語體驗\n【主辦】大溪木藝工坊 / Accupass\n【票價】NT$ 380 (含木作材料包與工具借用)\n【來源】Accupass 活動通\n【網址】https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E\n\n親手打造傳統台語童玩「竹蜻蜓」與「陀螺（干樂）」！木工老師全程以生動台語介紹台灣木料特性與傳統榫接工藝，做完還能在中庭大玩打干樂競賽！
+DESCRIPTION:【類別】台語體驗\n【主辦】大溪木藝工坊 / Accupass\n【票價】NT$ 380 (含木作材料包與工具借用)\n【來源】Accupass 活動通\n【網址】https://wem.tycg.gov.tw/\n\n親手打造傳統台語童玩「竹蜻蜓」與「陀螺（干樂）」！木工老師全程以生動台語介紹台灣木料特性與傳統榫接工藝，做完還能在中庭大玩打干樂競賽！
 LOCATION:大溪工藝基地 (大溪區普濟路) 桃園市大溪區普濟路13-2號
-URL:https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E
+URL:https://wem.tycg.gov.tw/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ntcam_new_taipei_art_museum_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261205T143000
 DTEND:20261205T160000
 SUMMARY:[台語導覽] 【台語導覽】新北市立美術館《新地標美學・新美館戶外藝術園區建築全台語走讀》
@@ -657,7 +657,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:tpe_maokong_tea_taigi_walk@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261206T100000
 DTEND:20261206T143000
 SUMMARY:[台語體驗] 【台語體驗/市府活動】臺北市政府產業發展局《貓空茶山生活節：木柵鐵觀音茶文化全台語農事體驗》
@@ -668,29 +668,29 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:threads_story_18@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261211T193000
 DTEND:20261211T213000
 SUMMARY:[台語故事] 【台語故事】中壢米倉劇場《巷仔內的台語講古暗訪》
-DESCRIPTION:【類別】台語故事\n【主辦】@taoyuan_taigi_crew (Threads 發起)\n【票價】場地清潔費 NT$ 150 (含冷泡茶)\n【來源】Threads\n【網址】https://www.threads.net\n\n週五夜晚限定的青年台語講古茶會！在老倉庫改建的米倉劇場內，一邊品飲桃園在地東方美人茶，一邊聆聽桃園老火車站與中壢事件的庶民台語記憶。
+DESCRIPTION:【類別】台語故事\n【主辦】米倉劇場 / 桃園市政府文化局\n【票價】場地清潔費 NT$ 150 (含冷泡茶)\n【來源】Threads\n【網址】https://culture.tycg.gov.tw\n\n週五夜晚限定的青年台語講古茶會！在老倉庫改建的米倉劇場內，一邊品飲桃園在地東方美人茶，一邊聆聽桃園老火車站與中壢事件的庶民台語記憶。
 LOCATION:米倉劇場 (桃園市中壢區中美路二段88號) 桃園市中壢區中美路二段88號
-URL:https://www.threads.net
+URL:https://culture.tycg.gov.tw
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:daxi_wood_museum_june24_story@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261212T140000
 DTEND:20261212T153000
 SUMMARY:[台語導覽] 【台語導覽】大溪木藝生態博物館《六廿四故事館：大溪關聖帝君慶典民俗台語導覽》
-DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立大溪木藝生態博物館\n【票價】免費入場（導覽自由參加）\n【來源】美術館與博物館\n【網址】https://wem.tycg.gov.tw\n\n大溪人的第二個過年！全台語解說大溪農曆六月廿四日關聖帝君誕辰之遶境陣頭、社頭文化、大溪神將步法與神轎木雕工藝，深入體驗最熱鬧的民俗嘉年華。
+DESCRIPTION:【類別】台語導覽\n【主辦】桃園市立大溪木藝生態博物館\n【票價】免費入場（導覽自由參加）\n【來源】美術館與博物館\n【網址】https://wem.tycg.gov.tw/\n\n大溪人的第二個過年！全台語解說大溪農曆六月廿四日關聖帝君誕辰之遶境陣頭、社頭文化、大溪神將步法與神轎木雕工藝，深入體驗最熱鬧的民俗嘉年華。
 LOCATION:大溪木博館 六廿四故事館 (普濟路48號) 桃園市大溪區普濟路48號
-URL:https://wem.tycg.gov.tw
+URL:https://wem.tycg.gov.tw/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ty_youth_taigi_standup_show@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261212T190000
 DTEND:20261212T210000
 SUMMARY:[台語表演] 【台語表演/市府活動】桃園市政府青年事務局《青創基地母語週：台語脫口秀與青年母語創作分享會》
@@ -701,7 +701,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:matsu_new_village_taigi_tour@taigiactivities.tw
-DTSTAMP:20260918T150449Z
+DTSTAMP:20260918T154721Z
 DTSTART:20261219T143000
 DTEND:20261219T160000
 SUMMARY:[台語導覽] 【台語導覽】馬祖新村眷村文創園區《紅磚黑瓦歲月・將軍村建築史與多元族群台語走讀》

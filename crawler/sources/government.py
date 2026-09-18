@@ -180,7 +180,7 @@ class GovernmentCrawler:
                 address="新北市三重區正義南路86巷",
                 organizer="新北市政府文化局",
                 source_platform=SourcePlatformEnum.GOVERNMENT,
-                source_url="https://www.culture.ntpc.gov.tw",
+                source_url="https://tour.ntpc.gov.tw/zh-tw/Attraction/Detail?wnd_id=60&id=110502",
                 cover_image="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
                 price_info="免費參加（部分手作材料費 NT$ 100）",
                 is_free=True,

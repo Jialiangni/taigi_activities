@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html taigi_activities.ics
+          git add index.html taigi_activities.ics assets/
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 自動更新台語活動資料庫 [skip ci]" && git push)
         continue-on-error: true
 
