@@ -1,89 +1,114 @@
-"""
-Accupass 活動通 爬蟲與資料抓取模組 (支援 requests 與 urllib 雙重容錯)
-"""
-import json
-import urllib.request
-import urllib.parse
-import logging
-from typing import List, Dict, Any
-from datetime import datetime
-from ..models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
-from ..processor import ActivityProcessor
-
-logger = logging.getLogger(__name__)
+"""ACCUPASS public website search POST + event-page JSON-LD, pending review."""
+from ..collection import Collector, CollectionError, Result, Document, candidate, local_time, city_of, plain, KEYWORDS, relevant
 
 
-class AccupassCrawler:
-    SEARCH_API = "https://api.accupass.com/v3/search"
+def event_jsonld(doc):
+    def walk(obj):
+        if isinstance(obj, list):
+            for x in obj:
+                yield from walk(x)
+        elif isinstance(obj, dict):
+            types = obj.get('@type', [])
+            if types == 'Event' or (isinstance(types, list) and 'Event' in types):
+                yield obj
+            for key in ('@graph', 'subEvent'):
+                if key in obj:
+                    yield from walk(obj[key])
+    for obj in doc.jsonld():
+        yield from walk(obj)
 
-    def __init__(self, keywords: List[str] = None):
-        self.keywords = keywords or ["台語", "台灣話", "閩南語", "囡仔古", "台語故事", "台語繪本", "台語導覽", "台語體驗"]
 
-    def fetch_activities(self) -> List[Activity]:
-        activities: List[Activity] = []
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            "Accept": "application/json"
-        }
+def parse_event(html, url, evidence):
+    doc = Document(html)
+    rows = []
+    for i, event in enumerate(event_jsonld(doc)):
+        location = event.get('location') or {}
+        if not isinstance(location, dict):
+            location = {}
+        address = location.get('address', '')
+        if isinstance(address, dict):
+            address = ' '.join(str(address.get(k, '')) for k in ('addressRegion', 'addressLocality', 'streetAddress'))
+        organizer = event.get('organizer') or {}
+        offers = event.get('offers') or []
+        offers = offers if isinstance(offers, list) else [offers]
+        prices = [o.get('price') for o in offers if isinstance(o, dict) and o.get('price') is not None]
+        fields = {'start_time': local_time(event.get('startDate')), 'end_time': local_time(event.get('endDate')),
+                  'venue': location.get('name'), 'address': address, 'city': city_of(address),
+                  'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
+                  'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus')}
+        # Aggregate schema dates do not establish individual session dates or universal free admission.
+        rows.append(candidate('accupass', url, event.get('name') or doc.title(), doc.content(), evidence,
+                              fields, 'event_period', ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms'],
+                              url + ':' + str(i)))
+    if not rows:
+        raise CollectionError('event_jsonld_missing')
+    return rows
 
+
+class AccupassCrawler(Collector):
+    LEGACY_SEARCH_API = 'https://api.accupass.com/v3/search'
+    SEARCH_API = 'https://api.accupass.com/v3/search/SearchEvents'
+
+    def __init__(self, keywords=None, max_pages=20, max_details=200):
+        self.keywords = keywords or KEYWORDS
+        self.max_pages, self.max_details = max_pages, max_details
+
+    def collect(self, client):
+        result = Result('accupass', 'public_search_post_and_jsonld')
+        found, external = {}, set()
         for kw in self.keywords:
+            previous = set()
+            for page in range(self.max_pages):
+                body = {'keyword': kw, 'currentIndex': page, 'categoryTypeList': [],
+                        'simpleEventPlaceTypeList': [], 'cityLocationList': ['1', '2', '3'],
+                        'sortBy': '4', 'timeType': '0'}
+                try:
+                    data, ev = client.json(self.SEARCH_API, body)
+                    if not isinstance(data, dict) or not isinstance(data.get('items'), list) or not isinstance(data.get('total'), int):
+                        raise CollectionError('search_schema_changed')
+                    items = data['items']
+                    ids = {x.get('eventIdNumber') for x in items}
+                    if items and (None in ids or ids <= previous):
+                        raise CollectionError('invalid_or_repeated_search_page')
+                    previous |= ids
+                    for item in items:
+                        if not item.get('isExternalLink'):
+                            found[item['eventIdNumber']] = item
+                        else:
+                            external.add(item['eventIdNumber'])
+                    if len(previous) >= data['total']:
+                        break
+                    if not items:
+                        raise CollectionError('search_truncated_before_total')
+                except CollectionError as e:
+                    result.error(self.SEARCH_API, e)
+                    break
+            else:
+                result.status = 'partial'
+                result.notes.append('search_page_limit:' + kw)
+        unmatched_details = 0
+        for event_id in list(found)[:self.max_details]:
+            if not str(event_id).isdigit():
+                result.error(self.SEARCH_API, CollectionError('invalid_event_id'))
+                continue
+            url = 'https://www.accupass.com/event/' + str(event_id)
             try:
-                params = {
-                    "keyword": kw,
-                    "page": 1,
-                    "size": 20,
-                    "city": "all",
-                    "sort": "start_time"
-                }
-                url = f"{self.SEARCH_API}?{urllib.parse.urlencode(params)}"
-                req = urllib.request.Request(url, headers=headers)
-                with urllib.request.urlopen(req, timeout=5) as response:
-                    if response.status == 200:
-                        data = json.loads(response.read().decode("utf-8"))
-                        events = data.get("data", {}).get("events", []) or data.get("events", [])
-                        for ev in events:
-                            act = self._parse_event(ev)
-                            if act:
-                                activities.append(act)
-            except Exception as e:
-                logger.debug(f"Accupass fetch notice for '{kw}': {e}")
-
-        return activities
-
-    def _parse_event(self, item: Dict[str, Any]) -> Activity:
-        title = item.get("name", "") or item.get("title", "")
-        if not title:
-            return None
-
-        desc = item.get("summary", "") or item.get("description", "")
-        venue = item.get("address", "") or item.get("venue", "") or ""
-        address = item.get("fullAddress", "") or venue
-
-        city = ActivityProcessor.detect_city(title + " " + desc, venue, address)
-        category = ActivityProcessor.detect_category(title, desc)
-
-        start_time = item.get("startDateTime", "") or datetime.now().isoformat()
-        end_time = item.get("endDateTime", "")
-        event_id = str(item.get("id", item.get("eventId", "")))
-
-        price_info = "免費" if item.get("isFree", True) else f"NT$ {item.get('minPrice', '300')} 起"
-        cover_image = item.get("coverUrl", "") or item.get("photoUrl", "")
-
-        return Activity(
-            id=f"accupass_{event_id}",
-            title=title,
-            description=desc,
-            city=city,
-            category=category,
-            start_time=start_time,
-            end_time=end_time,
-            venue=venue,
-            address=address,
-            organizer=item.get("orgName", "Accupass 主辦單位"),
-            source_platform=SourcePlatformEnum.ACCUPASS,
-            source_url=f"https://www.accupass.com/event/{event_id}" if event_id else "https://www.accupass.com",
-            cover_image=cover_image,
-            price_info=price_info,
-            is_free=item.get("isFree", True),
-            tags=["Accupass", "台語活動", category.value, city.value]
-        )
+                html, ev = client.get(url)
+                rows = [r for r in parse_event(html, url, ev)
+                        if relevant(r['title'] + ' ' + r['text'], self.keywords)]
+                result.candidates.extend(rows)
+                if not rows:
+                    unmatched_details += 1
+            except CollectionError as e:
+                result.error(url, e)
+        result.notes.append('discovered_programs=' + str(len(found)))
+        result.notes.append('detail_pages_without_exact_keyword=' + str(unmatched_details))
+        if external:
+            result.status = 'partial'
+            result.notes.append('external_programs_require_separate_source_review=' + str(len(external)))
+        if len(found) > self.max_details:
+            result.status = 'partial'
+            result.notes.append('detail_limit_reached')
+        if result.errors and result.candidates:
+            result.status = 'partial'
+        return result

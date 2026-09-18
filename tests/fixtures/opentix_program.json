@@ -1,0 +1,48 @@
+{
+  "id": "1986704187991719937",
+  "name": "文山劇場2026年《親子玩藝》活動系列",
+  "programOrganizers": [
+    {
+      "type": "主辦單位",
+      "info": [
+        {
+          "name": "臺北市藝文推廣處.",
+          "logoUrl": "https://s3.resource.opentix.life/upload/organizer/1614161002362GJFYkuSczE.png",
+          "websiteUrl": "https://www.tapo.gov.taipei/Default.aspx",
+          "telephoneNumber": "02-2933-2199*505"
+        }
+      ]
+    }
+  ],
+  "description": "",
+  "eventVenues": [
+    {
+      "venue": {
+        "id": "1247469418242658305",
+        "name": "文山劇場",
+        "city": "臺北市",
+        "area": "文山區",
+        "address": "景文街32號，捷運景美站1號出口",
+        "lat": 24.9920754,
+        "lng": 121.5411678,
+        "showPerspectiveAreas": false
+      },
+      "events": [
+        {
+          "id": "2055173715453403137",
+          "description": "音樂類- 就想黏著你",
+          "status": 0,
+          "startDateTime": 1789783200,
+          "endDateTime": 1789789200
+        },
+        {
+          "id": "2055174791579578369",
+          "description": "舞蹈類-感知身體呼吸",
+          "status": 0,
+          "startDateTime": 1789783200,
+          "endDateTime": 1789789200
+        }
+      ]
+    }
+  ]
+}

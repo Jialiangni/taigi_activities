@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "tpml",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館",
+      "urls": [
+        "https://tpml.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市立圖書館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntpclib",
+      "group": "public_libraries",
+      "name": "新北市立圖書館",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市立圖書館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "typl",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity"
+      ],
+      "aliases": [
+        "桃園市立圖書館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "tfam",
+      "group": "museums",
+      "name": "臺北市立美術館",
+      "urls": [
+        "https://www.tfam.museum/"
+      ],
+      "aliases": [
+        "臺北市立美術館",
+        "北美館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntm",
+      "group": "museums",
+      "name": "國立臺灣博物館（本館／鐵道部）",
+      "urls": [
+        "https://www.ntm.gov.tw/"
+      ],
+      "aliases": [
+        "國立臺灣博物館",
+        "臺博館",
+        "鐵道部"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "moca",
+      "group": "museums",
+      "name": "台北當代藝術館",
+      "urls": [
+        "https://www.mocataipei.org.tw/"
+      ],
+      "aliases": [
+        "台北當代藝術館",
+        "臺北當代藝術館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "228",
+      "group": "museums",
+      "name": "台北二二八紀念館",
+      "urls": [
+        "https://228memorialmuseum.gov.taipei/"
+      ],
+      "aliases": [
+        "二二八紀念館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "hotspring",
+      "group": "museums",
+      "name": "北投溫泉博物館",
+      "urls": [
+        "https://hotspringmuseum.taipei/"
+      ],
+      "aliases": [
+        "北投溫泉博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "astronomy",
+      "group": "museums",
+      "name": "臺北市立天文科學教育館",
+      "urls": [
+        "https://tam.gov.taipei/"
+      ],
+      "aliases": [
+        "天文科學教育館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "linantai",
+      "group": "museums",
+      "name": "林安泰古厝",
+      "urls": [
+        "https://linantai.taipei/"
+      ],
+      "aliases": [
+        "林安泰古厝"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "confucius",
+      "group": "museums",
+      "name": "臺北孔廟",
+      "urls": [
+        "https://tct.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北孔廟",
+        "臺北市孔廟"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ceramics",
+      "group": "museums",
+      "name": "新北市立鶯歌陶瓷博物館",
+      "urls": [
+        "https://www.ceramics.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "鶯歌陶瓷博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "sshm",
+      "group": "museums",
+      "name": "新北市立十三行博物館",
+      "urls": [
+        "https://www.sshm.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "十三行博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "tshs",
+      "group": "museums",
+      "name": "新北市立淡水古蹟博物館",
+      "urls": [
+        "https://www.tshs.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "淡水古蹟博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "gold",
+      "group": "museums",
+      "name": "新北市立黃金博物館",
+      "urls": [
+        "https://www.gep.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "黃金博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "tea",
+      "group": "museums",
+      "name": "新北市坪林茶業博物館",
+      "urls": [
+        "https://www.tea.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "坪林茶業博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntcam",
+      "group": "museums",
+      "name": "新北市美術館",
+      "urls": [
+        "https://ntcart.museum/"
+      ],
+      "aliases": [
+        "新北市美術館",
+        "新北市立美術館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "linfamily",
+      "group": "museums",
+      "name": "林本源園邸",
+      "urls": [
+        "https://www.linfamily.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "林本源園邸",
+        "林家花園"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "sanchong",
+      "group": "museums",
+      "name": "空軍三重一村",
+      "urls": [
+        "https://www.culture.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "空軍三重一村"
+      ],
+      "redirect_hosts": [],
+      "require_alias": true
+    },
+    {
+      "id": "tmofa",
+      "group": "museums",
+      "name": "桃園市立美術館／橫山書法藝術館／兒童美術館",
+      "urls": [
+        "https://tmofa.tycg.gov.tw/ch"
+      ],
+      "aliases": [
+        "桃園市立美術館",
+        "橫山書法藝術館",
+        "桃園市兒童美術館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "daxi",
+      "group": "museums",
+      "name": "大溪木藝生態博物館",
+      "urls": [
+        "https://wem.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "大溪木藝生態博物館"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "mazu",
+      "group": "museums",
+      "name": "馬祖新村",
+      "urls": [
+        "https://culture.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "馬祖新村"
+      ],
+      "redirect_hosts": [],
+      "require_alias": true
+    },
+    {
+      "id": "taipei_culture",
+      "group": "government",
+      "name": "臺北市政府文化局",
+      "urls": [
+        "https://culture.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市政府文化局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "taipei_education",
+      "group": "government",
+      "name": "臺北市政府教育局",
+      "urls": [
+        "https://www.doe.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市政府教育局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "taipei_tourism",
+      "group": "government",
+      "name": "臺北市政府觀光傳播局",
+      "urls": [
+        "https://www.tpedoit.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市政府觀光傳播局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "taipei_industry",
+      "group": "government",
+      "name": "臺北市政府產業發展局",
+      "urls": [
+        "https://doed.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市政府產業發展局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "taipei_civil",
+      "group": "government",
+      "name": "臺北市政府民政局",
+      "urls": [
+        "https://ca.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市政府民政局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntpc_culture",
+      "group": "government",
+      "name": "新北市政府文化局",
+      "urls": [
+        "https://www.culture.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市政府文化局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntpc_education",
+      "group": "government",
+      "name": "新北市政府教育局",
+      "urls": [
+        "https://www.ntpc.edu.tw/"
+      ],
+      "aliases": [
+        "新北市政府教育局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntpc_tourism",
+      "group": "government",
+      "name": "新北市政府觀光旅遊局",
+      "urls": [
+        "https://newtaipei.travel/zh-tw"
+      ],
+      "aliases": [
+        "新北市政府觀光旅遊局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ntpc_agriculture",
+      "group": "government",
+      "name": "新北市政府農業局",
+      "urls": [
+        "https://www.agriculture.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市政府農業局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ty_culture",
+      "group": "government",
+      "name": "桃園市政府文化局",
+      "urls": [
+        "https://culture.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市政府文化局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ty_education",
+      "group": "government",
+      "name": "桃園市政府教育局",
+      "urls": [
+        "https://www.tyc.edu.tw/"
+      ],
+      "aliases": [
+        "桃園市政府教育局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ty_tourism",
+      "group": "government",
+      "name": "桃園市政府觀光旅遊局",
+      "urls": [
+        "https://travel.tycg.gov.tw/zh-tw"
+      ],
+      "aliases": [
+        "桃園市政府觀光旅遊局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ty_agriculture",
+      "group": "government",
+      "name": "桃園市政府農業局",
+      "urls": [
+        "https://agriculture.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市政府農業局"
+      ],
+      "redirect_hosts": []
+    },
+    {
+      "id": "ty_youth",
+      "group": "government",
+      "name": "桃園市政府青年事務局",
+      "urls": [
+        "https://youth.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市政府青年事務局"
+      ],
+      "redirect_hosts": []
+    }
+  ]
+}

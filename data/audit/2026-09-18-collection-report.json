@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "compiled_at": "2026-09-18T17:19:05+08:00",
+  "mode": "latest per-source results from full collection plus explicitly identified targeted rechecks",
+  "publication_changed": false,
+  "verified_catalog_count": 8,
+  "config": {
+    "schema_version": 2,
+    "keywords": [
+      "台語",
+      "臺語",
+      "台灣話",
+      "臺灣話",
+      "閩南語",
+      "囡仔古",
+      "歌仔戲",
+      "布袋戲",
+      "唸歌",
+      "台文"
+    ],
+    "instagram_hashtags": [
+      "台語活動",
+      "台語繪本",
+      "台語故事",
+      "台語走讀",
+      "台語工作坊"
+    ],
+    "workers": 3,
+    "limits": {
+      "search_pages": 20,
+      "details": 200,
+      "feed_pages": 5,
+      "website_pages": 8
+    }
+  },
+  "source_count": 45,
+  "candidate_count": 684,
+  "status_counts": {
+    "partial": 35,
+    "ok": 6,
+    "needs_configuration": 3,
+    "failed": 1
+  },
+  "validation": {
+    "python_tests_passed": 42,
+    "frontend_checks": "passed",
+    "published_official_pages_checked": 5,
+    "final_accupass_live_smoke": {
+      "completed_at": "2026-09-18T17:20:45+08:00",
+      "keywords": [
+        "台語"
+      ],
+      "detail_limit": 3,
+      "candidate_count": 3,
+      "status": "partial",
+      "errors": [],
+      "note": "Additional bounded live check of final code; not a replacement for the full-run detail replay."
+    }
+  },
+  "limitations": [
+    "Candidates are unreviewed documents or sessions, not a count of verified current events.",
+    "All coverage_complete values are false; website/feed/detail bounds remain explicit.",
+    "Social collectors have no credentials; only interfaces and fixtures were tested.",
+    "Culture category 4 returned HTTP 200 with empty content; both official alternate links also returned empty content.",
+    "TMofa latest run returned HTTP 428; an earlier successful public homepage parse is retained below, not substituted for the failure."
+  ],
+  "previous_observations": [
+    {
+      "source_id": "tmofa",
+      "status": "ok",
+      "candidate_count": 1,
+      "evidence": [
+        {
+          "url": "https://tmofa.tycg.gov.tw/ch",
+          "final_url": "https://tmofa.tycg.gov.tw/ch",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T17:00:55+08:00",
+          "sha256": "4306aa6292d6d1dbfb12c1d83992d6163039c2d6c3afe4b564312fa16e239a79"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "228",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:08+08:00",
+      "last_success_at": "2026-09-18T16:56:21+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "176ed40fea9cd2569230b0097a6a5f05646d94e3c6cd8c145f1062bdd53054e2"
+    },
+    {
+      "source_id": "accupass",
+      "method": "public_search_post_and_jsonld",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "search_page_limit:台灣話",
+        "search_page_limit:臺灣話",
+        "discovered_programs=942",
+        "detail_limit_reached",
+        "detail_pages_without_exact_keyword=151"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 49,
+      "successful_response_count": 249,
+      "candidate_kinds": {
+        "event_period": 49
+      },
+      "first_success_at": "2026-09-18T16:53:55+08:00",
+      "last_success_at": "2026-09-18T17:17:26+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "6d56c8acdf6f03a541c1ac95223168b2ebc79e8e5bb3e92c32318cb411a2380d",
+      "postprocessing": {
+        "operation": "Replayed exact-keyword filter on the freshly captured candidate title and full text; no source fields changed.",
+        "captured_detail_count": 200,
+        "retained_candidate_count": 49,
+        "processed_at": "2026-09-18T17:19:04+08:00"
+      }
+    },
+    {
+      "source_id": "astronomy",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:12+08:00",
+      "last_success_at": "2026-09-18T16:56:22+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "f3b0da967e345fd5d4235bdbeed32d77277989b2dba0731f4f22cac75d640487"
+    },
+    {
+      "source_id": "ceramics",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:32+08:00",
+      "last_success_at": "2026-09-18T16:56:39+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "eb5e8ac4a25ba05e2fbfadd3d540dfb5cfe6b3b3911e807b69b542da3279e77c"
+    },
+    {
+      "source_id": "confucius",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 8,
+      "candidate_kinds": {
+        "announcement": 1
+      },
+      "first_success_at": "2026-09-18T16:56:22+08:00",
+      "last_success_at": "2026-09-18T16:56:32+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "08f18c124d1e55590acf5e32b478848c0b0d2b54105e8e5b223f901707b05c38"
+    },
+    {
+      "source_id": "culture_open_data",
+      "method": "documented_open_data",
+      "status": "partial",
+      "errors": [
+        {
+          "url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=4",
+          "code": "empty_body"
+        }
+      ],
+      "notes": [
+        "Publisher-supplied coverage only; onSales=N does not establish free admission."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 49,
+      "successful_response_count": 13,
+      "candidate_kinds": {
+        "session": 49
+      },
+      "first_success_at": "2026-09-18T16:54:54+08:00",
+      "last_success_at": "2026-09-18T16:55:04+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "dc43d9e7235aa8eab4841377a0f034bdca2f19712491fdb722dba923cfc78582"
+    },
+    {
+      "source_id": "daxi",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:09+08:00",
+      "last_success_at": "2026-09-18T16:57:33+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "7052a2600a2fd4bbf5704c5fd00e0f433ef857ff88e8fd4fa857d7ea300b0a1b"
+    },
+    {
+      "source_id": "eraticket",
+      "method": "official_html_search_and_session_table",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "discovered_programs=81"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 12,
+      "successful_response_count": 92,
+      "candidate_kinds": {
+        "session": 12
+      },
+      "first_success_at": "2026-09-18T16:53:56+08:00",
+      "last_success_at": "2026-09-18T16:54:53+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "e16cbe42ca3bd2c3535c632ec1dbc1640d0d9a973b7840d067b043171b9f4048"
+    },
+    {
+      "source_id": "facebook",
+      "method": "authorized_meta_api",
+      "status": "needs_configuration",
+      "errors": [],
+      "notes": [
+        "Required environment variables: FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_IDS"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "candidate_kinds": {},
+      "first_success_at": null,
+      "last_success_at": null,
+      "run": "auth-final",
+      "run_completed_at": "2026-09-18T17:11:34+08:00",
+      "local_result_sha256": "a256da9d3221dc439d916534ec69e76a17d0267e259704944cfcf4d3b40cece8"
+    },
+    {
+      "source_id": "gold",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:43+08:00",
+      "last_success_at": "2026-09-18T16:56:51+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "6da6c620eb29e8de5b08e363437ed0923b20f6f388d5b471bf0fab71f95d541e"
+    },
+    {
+      "source_id": "hotspring",
+      "method": "official_website_discovery",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=3"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 3,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:10+08:00",
+      "last_success_at": "2026-09-18T16:56:12+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "6d90507af608a0649fac098e18dd3efda6467e8b5af23dff45ac05643102447e"
+    },
+    {
+      "source_id": "instagram",
+      "method": "authorized_meta_api",
+      "status": "needs_configuration",
+      "errors": [],
+      "notes": [
+        "Required environment variables: INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_USER_ID"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "candidate_kinds": {},
+      "first_success_at": null,
+      "last_success_at": null,
+      "run": "auth-final",
+      "run_completed_at": "2026-09-18T17:11:34+08:00",
+      "local_result_sha256": "aa9162627e09970d7023aa3f8a2f51ecbd2e8b2fe2b77f457bb919a9175bf738"
+    },
+    {
+      "source_id": "le_chang",
+      "method": "official_feed",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "Feed coverage is limited to entries supplied by the publisher; publication dates are not event dates."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 16,
+      "successful_response_count": 1,
+      "candidate_kinds": {
+        "post": 16
+      },
+      "first_success_at": "2026-09-18T16:55:06+08:00",
+      "last_success_at": "2026-09-18T16:55:06+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "949bd29f96030d97fb5ebd73c5519724ad108020241797058cc9c537383baef7"
+    },
+    {
+      "source_id": "li_kang_khiok",
+      "method": "official_feed",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "feed_page_limit_reached",
+        "Feed coverage is limited to entries supplied by the publisher; publication dates are not event dates."
+      ],
+      "coverage_complete": false,
+      "candidate_count": 246,
+      "successful_response_count": 5,
+      "candidate_kinds": {
+        "post": 246
+      },
+      "first_success_at": "2026-09-18T17:07:13+08:00",
+      "last_success_at": "2026-09-18T17:07:22+08:00",
+      "run": "feed-tmofa-final",
+      "run_completed_at": "2026-09-18T17:07:23+08:00",
+      "local_result_sha256": "42d488751bfb29c45ecfcf476dc1abbed458cb47be939b1f6b492e4394b3969f"
+    },
+    {
+      "source_id": "linantai",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:22+08:00",
+      "last_success_at": "2026-09-18T16:56:31+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "748a8e0b5cf834bfd4f8c35240e15c131f83f85b2c36327691b3ca2be8217a5b"
+    },
+    {
+      "source_id": "linfamily",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:57+08:00",
+      "last_success_at": "2026-09-18T16:57:06+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "bb8aec8c367a4da515b5c37b2f8a02a68c710b353cd5880f404f84d2cecaddd8"
+    },
+    {
+      "source_id": "mazu",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:10+08:00",
+      "last_success_at": "2026-09-18T16:57:26+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "2631df6c348f215a0fda2ddab80f042ee67511ea92970b03600a4691433809cd"
+    },
+    {
+      "source_id": "moca",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:04+08:00",
+      "last_success_at": "2026-09-18T16:56:08+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "ea2c3ef55c5473cbf32503793c6f194439e5d870b8c864403de6884952be557c"
+    },
+    {
+      "source_id": "ntcam",
+      "method": "official_website_discovery",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=3"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 3,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:53+08:00",
+      "last_success_at": "2026-09-18T16:56:54+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "b7b60407ba69d688cd429ff58fdfd66f2c5a6e919c8fa18d5475d0f2c8e4a4ca"
+    },
+    {
+      "source_id": "ntm",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:00+08:00",
+      "last_success_at": "2026-09-18T16:56:08+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "aa64eb87b9ddbe69b9940294ccc24e470473b0377d7ec88ecd30714c1a724d25"
+    },
+    {
+      "source_id": "ntpc_agriculture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:15+08:00",
+      "last_success_at": "2026-09-18T16:58:21+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "d7bb13511598b08e9458792aceb9dc62c698f6f89b44462f93deb6ad9ad2ff33"
+    },
+    {
+      "source_id": "ntpc_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 8,
+      "candidate_kinds": {
+        "announcement": 1
+      },
+      "first_success_at": "2026-09-18T16:58:02+08:00",
+      "last_success_at": "2026-09-18T16:58:09+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "277c38e8000245a9b995f0003ddb5367629007ed3662ec600f9daf2f6ffc0b3d"
+    },
+    {
+      "source_id": "ntpc_education",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:07+08:00",
+      "last_success_at": "2026-09-18T16:58:12+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "e83690496b360f8f887f78aba957bcaf0ee12ff30564154193f4abd78a7cbc92"
+    },
+    {
+      "source_id": "ntpc_tourism",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:11+08:00",
+      "last_success_at": "2026-09-18T16:58:19+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "952514e6199a8c4c73d14044e2d2804075e5cde4518987098fc6ec8bd834e51b"
+    },
+    {
+      "source_id": "ntpclib",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 8,
+      "candidate_kinds": {
+        "announcement": 1
+      },
+      "first_success_at": "2026-09-18T16:55:18+08:00",
+      "last_success_at": "2026-09-18T16:55:28+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "118f9ee60dd14244b7a2fa4b302106d488ad01c4532893ee39c567c4d6dcfa08"
+    },
+    {
+      "source_id": "opentix",
+      "method": "public_search_post_and_session_api",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "discovered_programs=98"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 306,
+      "successful_response_count": 147,
+      "candidate_kinds": {
+        "session": 306
+      },
+      "first_success_at": "2026-09-18T16:53:55+08:00",
+      "last_success_at": "2026-09-18T16:56:03+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "3c793686814bbbb6dd398241f1db498c949144c3687e9c32de32e8ad80292f4e"
+    },
+    {
+      "source_id": "sanchong",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:01+08:00",
+      "last_success_at": "2026-09-18T16:57:09+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "cf1160fab9fc15e837ae0e1f73c4d3e6bfddb480a83cf435949a32fa674d0460"
+    },
+    {
+      "source_id": "sshm",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 2,
+      "successful_response_count": 8,
+      "candidate_kinds": {
+        "announcement": 2
+      },
+      "first_success_at": "2026-09-18T16:56:33+08:00",
+      "last_success_at": "2026-09-18T16:56:41+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "f5864e4feda75cdd8cdd26cae5678bb7f1730c6755798dc15650583e47bda64e"
+    },
+    {
+      "source_id": "taipei_civil",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:53+08:00",
+      "last_success_at": "2026-09-18T16:58:06+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "69a9e97b220df77fe6ee44b9dc4a0999e5c8e00d345c296c39393e35d564bbf0"
+    },
+    {
+      "source_id": "taipei_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:26+08:00",
+      "last_success_at": "2026-09-18T16:57:42+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "2a6e1f3e89d992842b811947c6fca76bfa472d5b54b4c32580fc83bddbc9c77d"
+    },
+    {
+      "source_id": "taipei_education",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:36+08:00",
+      "last_success_at": "2026-09-18T16:57:44+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "eb7d43500e5cb0b347bced1b513929dfc244800bd91e5c46cc3f528450e9eaf7"
+    },
+    {
+      "source_id": "taipei_industry",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:46+08:00",
+      "last_success_at": "2026-09-18T16:57:53+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "d6898e84ded41f7cc5127dcfcf26d0f4bf3e06d68b84f8b2f2417511e0053eb6"
+    },
+    {
+      "source_id": "taipei_tourism",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:57:43+08:00",
+      "last_success_at": "2026-09-18T16:58:01+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "2a551307e4f499d92be26888963a3233efac6064442471ca3820f17ad160293b"
+    },
+    {
+      "source_id": "tea",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:51+08:00",
+      "last_success_at": "2026-09-18T16:56:59+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "89ace26f648cbc22cf50368fc068f224ce177bdffa6357564d10ace953f18163"
+    },
+    {
+      "source_id": "tfam",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:55:50+08:00",
+      "last_success_at": "2026-09-18T16:55:59+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "a791ae5bb6addaca22bd4dcc77835b057798b74dc91b27f2ba2e9b0576b2e518"
+    },
+    {
+      "source_id": "threads",
+      "method": "authorized_meta_api",
+      "status": "needs_configuration",
+      "errors": [],
+      "notes": [
+        "Required environment variables: THREADS_ACCESS_TOKEN"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "candidate_kinds": {},
+      "first_success_at": null,
+      "last_success_at": null,
+      "run": "auth-final",
+      "run_completed_at": "2026-09-18T17:11:34+08:00",
+      "local_result_sha256": "a3bbd20914934f0f2be9be26be83c06697b2ad82fe51ad0053495e1704b9a4c6"
+    },
+    {
+      "source_id": "tmofa",
+      "method": "official_home_embedded_datasets",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://tmofa.tycg.gov.tw/ch",
+          "code": "http_428"
+        }
+      ],
+      "notes": [],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "candidate_kinds": {},
+      "first_success_at": null,
+      "last_success_at": null,
+      "run": "feed-tmofa-final",
+      "run_completed_at": "2026-09-18T17:07:23+08:00",
+      "local_result_sha256": "f01dd368211de77895adf17d1630f0cab8765c2ebd774e2ca14eac1fac509628"
+    },
+    {
+      "source_id": "tpml",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:55:06+08:00",
+      "last_success_at": "2026-09-18T16:55:16+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "bf8e7fca9eec38800e220257565d08fb3e57fb98c1c5239d5529f25d8320b4d2"
+    },
+    {
+      "source_id": "tshs",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:56:40+08:00",
+      "last_success_at": "2026-09-18T16:56:50+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "913f0a8bdc3329ae948f3b047b93b03f87a1aa7848d9c2a696e195d920c0664a"
+    },
+    {
+      "source_id": "ty_agriculture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:35+08:00",
+      "last_success_at": "2026-09-18T16:59:00+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "401ea7814e2a652a2993ee3133097c7c664703d8f217912961989642aa7fb10a"
+    },
+    {
+      "source_id": "ty_culture",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:20+08:00",
+      "last_success_at": "2026-09-18T16:58:28+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "8fdf319b4c514c41cc46319299a175bda4bd58ca11ab0b1f61a934db8ae89e9f"
+    },
+    {
+      "source_id": "ty_education",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:23+08:00",
+      "last_success_at": "2026-09-18T16:58:38+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "aab482ed0190095fe87e99d40acf82c9399cf01bfe1827560967d085d7e68274"
+    },
+    {
+      "source_id": "ty_tourism",
+      "method": "official_website_discovery",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=1"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 1,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:29+08:00",
+      "last_success_at": "2026-09-18T16:58:29+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "f307a82ebb672466c725499abfaec0ea98717fd07ffb94b814651c12e1bd8e46"
+    },
+    {
+      "source_id": "ty_youth",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "candidate_kinds": {},
+      "first_success_at": "2026-09-18T16:58:39+08:00",
+      "last_success_at": "2026-09-18T16:59:01+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "0079e0a930d8a12da8fabe85856b8fe5f3f6800717b1b2585d663aed9bdc9b43"
+    },
+    {
+      "source_id": "typl",
+      "method": "official_website_discovery",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=8"
+      ],
+      "coverage_complete": false,
+      "candidate_count": 1,
+      "successful_response_count": 8,
+      "candidate_kinds": {
+        "announcement": 1
+      },
+      "first_success_at": "2026-09-18T16:55:34+08:00",
+      "last_success_at": "2026-09-18T16:55:49+08:00",
+      "run": "full-run",
+      "run_completed_at": "2026-09-18T17:17:27+08:00",
+      "local_result_sha256": "ce52ec8877fa1bb28516e87d3869b9287fbe80f6406338bac26ad8f6ab9a7096"
+    }
+  ]
+}

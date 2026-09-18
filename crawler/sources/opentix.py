@@ -1,93 +1,98 @@
-"""
-OPENTIX 兩廳院文化生活 爬蟲與活動抓取模組 (支援 requests 與 urllib 雙重容錯)
-"""
-import json
-import urllib.request
-import urllib.parse
-import logging
-from typing import List, Dict, Any
-from datetime import datetime
-from ..models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
-from ..processor import ActivityProcessor
-
-logger = logging.getLogger(__name__)
+"""OPENTIX current public search API and explicit per-venue performance sessions."""
+from ..collection import Collector, CollectionError, Result, candidate, local_time, city_of, plain, KEYWORDS, relevant
 
 
-class OpentixCrawler:
-    SEARCH_API = "https://www.opentix.life/oapi/v1/search/program"
+def parse_program(program, evidence):
+    if not isinstance(program, dict) or not program.get('id') or not isinstance(program.get('eventVenues'), list):
+        raise CollectionError('program_schema_changed')
+    rows = []
+    url = 'https://www.opentix.life/event/' + str(program['id'])
+    organizers = []
+    for group in program.get('programOrganizers', []):
+        if group.get('type') == '主辦單位':
+            organizers.extend(x.get('name') for x in group.get('info', []) if x.get('name'))
+    for group in program['eventVenues']:
+        venue = group.get('venue') or {}
+        city = city_of(venue.get('city', ''))
+        if venue.get('city') and not city:
+            continue
+        events = group.get('events')
+        if not isinstance(events, list):
+            raise CollectionError('session_schema_changed')
+        for event in events:
+            if not event.get('id'):
+                raise CollectionError('session_id_missing')
+            prices = sorted({s['price'] for sections in (event.get('groupSections') or {}).values()
+                             for s in sections if isinstance(s.get('price'), (int, float))})
+            fields = {'start_time': local_time(event.get('startDateTime')), 'end_time': local_time(event.get('endDateTime')),
+                      'venue': venue.get('name'), 'city': city,
+                      'address': ''.join(venue.get(k) or '' for k in ('city', 'area', 'address')),
+                      'organizer': organizers, 'price_info': prices or None,
+                      'is_free': True if prices and all(x == 0 for x in prices) else False if prices and all(x > 0 for x in prices) else None,
+                      'platform_session_status': event.get('status'), 'session_name': event.get('description'),
+                      'session_id': str(event['id']), 'change_notification': program.get('changeNotification')}
+            text = plain(program.get('description')) + '\n' + plain(group.get('eventNoteContent'))
+            issues = ['manual_event_verification_required', 'check_language_for_this_session', 'check_ticket_terms_and_changes']
+            if not fields['start_time']:
+                issues.append('missing_start_time')
+            rows.append(candidate('opentix', url, program.get('name', ''), text, evidence, fields,
+                                  'session', issues, str(program['id']) + ':' + str(event['id'])))
+    return rows
 
-    def __init__(self, keywords: List[str] = None):
-        self.keywords = keywords or ["台語", "臺灣話", "歌仔戲", "布袋戲", "台語音樂劇", "傳統戲曲"]
 
-    def fetch_activities(self) -> List[Activity]:
-        activities: List[Activity] = []
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            "Accept": "application/json"
-        }
+class OpentixCrawler(Collector):
+    LEGACY_SEARCH_API = 'https://www.opentix.life/oapi/v1/search/program'
+    SEARCH_API = 'https://search.opentix.life/search'
+    DETAIL_API = 'https://csm.api.opentix.life/programs/'
 
+    def __init__(self, keywords=None, max_pages=20, max_details=200):
+        self.keywords, self.max_pages, self.max_details = keywords or KEYWORDS, max_pages, max_details
+
+    def collect(self, client):
+        result = Result('opentix', 'public_search_post_and_session_api')
+        found = {}
         for kw in self.keywords:
+            offset, seen = None, set()
+            for page in range(self.max_pages):
+                # Values verified against /search/criteria/cities (the suffix 市 is invalid here).
+                body = {'queryString': kw, 'language': 'zh-CHT', 'cityFilter': ['臺北', '新北', '桃園']}
+                if offset is not None:
+                    body['offset'] = offset
+                try:
+                    data, ev = client.json(self.SEARCH_API, body)
+                    data = data.get('result') if isinstance(data, dict) else None
+                    if not isinstance(data, dict) or not isinstance(data.get('found'), list):
+                        raise CollectionError('search_schema_changed')
+                    for hit in data['found']:
+                        item = hit.get('source', {})
+                        if not str(item.get('id', '')).isdigit():
+                            raise CollectionError('invalid_program_id')
+                        if relevant(item.get('title', '') + ' ' + plain(item.get('description', '')), self.keywords):
+                            found[str(item['id'])] = item
+                    next_offset = data.get('nextOffset')
+                    if next_offset is None:
+                        break
+                    if next_offset in seen or not data['found']:
+                        raise CollectionError('repeated_search_cursor')
+                    seen.add(next_offset)
+                    offset = next_offset
+                except CollectionError as e:
+                    result.error(self.SEARCH_API, e)
+                    break
+            else:
+                result.status = 'partial'
+                result.notes.append('search_page_limit:' + kw)
+        for program_id in list(found)[:self.max_details]:
+            url = self.DETAIL_API + program_id
             try:
-                params = {
-                    "keyword": kw,
-                    "offset": 0,
-                    "limit": 20,
-                    "sort": "ON_SALE_DATE_ASC"
-                }
-                url = f"{self.SEARCH_API}?{urllib.parse.urlencode(params)}"
-                req = urllib.request.Request(url, headers=headers)
-                with urllib.request.urlopen(req, timeout=5) as response:
-                    if response.status == 200:
-                        data = json.loads(response.read().decode("utf-8"))
-                        programs = data.get("result", {}).get("programs", []) or data.get("programs", [])
-                        for prog in programs:
-                            act = self._parse_program(prog)
-                            if act:
-                                activities.append(act)
-            except Exception as e:
-                logger.debug(f"OPENTIX fetch notice for '{kw}': {e}")
-
-        return activities
-
-    def _parse_program(self, item: Dict[str, Any]) -> Activity:
-        title = item.get("title", "") or item.get("name", "")
-        if not title:
-            return None
-
-        desc = item.get("description", "") or item.get("summary", "")
-        venue = item.get("placeName", "") or item.get("venue", "國家兩廳院 / 臺灣戲曲中心")
-        address = item.get("address", "") or venue
-
-        city = ActivityProcessor.detect_city(title + " " + desc, venue, address)
-        category = ActivityProcessor.detect_category(title, desc)
-
-        if category not in [CategoryEnum.STAGE_PLAY, CategoryEnum.PERFORMANCE]:
-            category = CategoryEnum.STAGE_PLAY
-
-        start_time = item.get("startDateTime", "") or datetime.now().isoformat()
-        end_time = item.get("endDateTime", "")
-        prog_id = str(item.get("id", item.get("programId", "")))
-
-        min_price = item.get("minPrice", 300)
-        max_price = item.get("maxPrice", 1800)
-        price_info = f"NT$ {min_price} ~ {max_price}" if min_price else "售票演出"
-        cover_image = item.get("coverImage", "") or item.get("imageUrl", "")
-
-        return Activity(
-            id=f"opentix_{prog_id}",
-            title=title,
-            description=desc,
-            city=city,
-            category=category,
-            start_time=start_time,
-            end_time=end_time,
-            venue=venue,
-            address=address,
-            organizer=item.get("presenter", "兩廳院主辦/合辦團體"),
-            source_platform=SourcePlatformEnum.OPENTIX,
-            source_url=f"https://www.opentix.life/event/{prog_id}" if prog_id else "https://www.opentix.life",
-            cover_image=cover_image,
-            price_info=price_info,
-            is_free=False,
-            tags=["OPENTIX", "兩廳院", "台語舞台劇", category.value, city.value]
-        )
+                data, ev = client.json(url)
+                result.candidates.extend(parse_program(data.get('result'), ev))
+            except CollectionError as e:
+                result.error(url, e)
+        result.notes.append('discovered_programs=' + str(len(found)))
+        if len(found) > self.max_details:
+            result.status = 'partial'
+            result.notes.append('detail_limit_reached')
+        if result.errors and result.candidates:
+            result.status = 'partial'
+        return result

@@ -65,9 +65,9 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     targets = [
-        ('accupass', AccupassCrawler.SEARCH_API + '?' + urlencode(dict(
+        ('accupass', AccupassCrawler.LEGACY_SEARCH_API + '?' + urlencode(dict(
             keyword='台語', page=1, size=20, city='all', sort='start_time')), 'events'),
-        ('opentix', OpentixCrawler.SEARCH_API + '?' + urlencode(dict(
+        ('opentix', OpentixCrawler.LEGACY_SEARCH_API + '?' + urlencode(dict(
             keyword='台語', offset=0, limit=20, sort='ON_SALE_DATE_ASC')), 'programs'),
     ]
     results = [probe(*target) for target in targets]

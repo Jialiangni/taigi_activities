@@ -16,8 +16,11 @@
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
 - `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
-- `crawler/sample_data.py`、舊 `crawler/sources/` 模組及 `processor.py`：保留的舊實作；正式建置不使用。
-- `config.example.json`、`requirements.txt`：舊爬蟲構想的參考，不是目前建置必需配置／依賴。
+- `crawler/collect.py`：45 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
+- `data/source_registry.json`：36 個官方機構入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
+- `crawler/sources/`：已改為真實資料收集；不再回傳固定資料。舊 `fetch_activities()` 接口會明確拒絕未審核資料，請改用 `.collect(client)`。
+- `crawler/sample_data.py` 及 `processor.py`：保留的歷史實作；正式建置／候選收集均不使用。
+- `config.example.json`：現行候選收集設定；僅含公開搜尋條件和流量上限。全部 Python 程式只需標準庫。
 
 ## 3. 正式資料規則
 
@@ -44,7 +47,7 @@
 
 任何檢查失敗都在產物替換前拋出錯誤；不得回退示範資料、默默略過壞來源或標記整體成功。空清單是合法結果，頁面需說明「目前没有已核實場次」，不是認定當地沒有活動。
 
-來源抓取時間與人工核實時間分開：建置不改寫 `checked_at`。來源文字仍存在不保證沒有新增取消通知；接近活動日期仍需人工重查。自動發現新活動尚待後續實作，不在本次完成範圍。
+來源抓取時間與人工核實時間分開：建置不改寫 `checked_at`。來源文字仍存在不保證沒有新增取消通知；接近活動日期仍需人工重查。新活動由獨立候選收集器發現；需人工核查再寫入正式清單，不能把收集時間當成核實時間。
 
 ## 5. 前端與日曆
 
@@ -66,7 +69,7 @@
 ## 7. 接續事項
 
 - 逐步增加臺北及其他北北桃來源；不為各城市配額加入無證據場次。
-- 舊李江却、樂暢、圖書館、年代、Threads 抓取函式為空；博物館及市府模組為固定資料。Accupass、OPENTIX 與社群解析亦未通過正式來源驗證，暫不啟用。
-- 後續新增爬蟲應先寫入候選區，通過場次核實後才進入正式清單。
-- 全來源驗收仍未完成；見 `CRAWLER_AUDIT.md`。ACCUPASS／OPENTIX 舊搜尋 API 實測 404，社群缺授權成功證據，其他多為空函式或固定資料。範例設定已停用全部未驗收收集器，不能以 enabled 或空清單宣稱成功。
+- 已重建公開 API、RSS、機構網站與 Meta 授權讀取接口；執行結果與剩餘限制見 `COLLECTORS.md`、`data/audit/2026-09-18-collection-report.json`。
+- 社群缺 App／帳號授權，尚待真實 API 驗收；動態網站、防護頁、圖片公告及未連出的舊活動仍可能需要人工或瀏覽器補查。
+- 新增來源先寫入候選區，通過場次核實後才進入正式清單。
 - 維護時先讀 README / SPEC / SOURCE_AUDIT、確認 Git 狀態，保留他人未提交修改。

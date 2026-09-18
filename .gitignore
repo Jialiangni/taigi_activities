@@ -31,6 +31,8 @@ credentials.json
 token.json
 config.json
 public/
+data/candidates/
+.env
 
 # OS files
 .DS_Store
