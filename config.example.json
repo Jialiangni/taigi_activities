@@ -1,5 +1,9 @@
 {
-  "cities": ["臺北市", "新北市", "桃園市"],
+  "cities": [
+    "臺北市",
+    "新北市",
+    "桃園市"
+  ],
   "categories": [
     "台語舞台劇",
     "台語表演",
@@ -10,42 +14,98 @@
   ],
   "sources": {
     "accupass": {
-      "enabled": true,
-      "keywords": ["台語", "台灣話", "閩南語", "囡仔古", "台語故事", "台語繪本", "台語導覽"]
+      "enabled": false,
+      "keywords": [
+        "台語",
+        "台灣話",
+        "閩南語",
+        "囡仔古",
+        "台語故事",
+        "台語繪本",
+        "台語導覽"
+      ],
+      "audit_status": "search_endpoint_http_404"
     },
     "opentix": {
-      "enabled": true,
-      "keywords": ["台語", "臺灣話", "歌仔戲", "布袋戲", "台語音樂劇", "台語舞台劇"]
+      "enabled": false,
+      "keywords": [
+        "台語",
+        "臺灣話",
+        "歌仔戲",
+        "布袋戲",
+        "台語音樂劇",
+        "台語舞台劇"
+      ],
+      "audit_status": "search_endpoint_http_404"
     },
     "eraticket": {
-      "enabled": true,
-      "keywords": ["台語", "閩南語", "傳統戲曲"]
+      "enabled": false,
+      "keywords": [
+        "台語",
+        "閩南語",
+        "傳統戲曲"
+      ],
+      "audit_status": "not_implemented"
     },
     "facebook": {
-      "enabled": true,
+      "enabled": false,
       "access_token": "",
       "target_pages": [
         "taigitv",
         "twlangcenter",
         "dadaochengtheater"
-      ]
+      ],
+      "audit_status": "authorization_and_results_unverified"
     },
     "instagram": {
-      "enabled": true,
+      "enabled": false,
       "access_token": "",
-      "hashtags": ["台語活動", "台語繪本", "台語故事", "台語走讀"]
+      "hashtags": [
+        "台語活動",
+        "台語繪本",
+        "台語故事",
+        "台語走讀"
+      ],
+      "audit_status": "authorization_and_event_parser_unverified"
     },
     "threads": {
-      "enabled": true,
-      "keywords": ["台語活動", "台語導覽", "台語舞台劇"]
+      "enabled": false,
+      "keywords": [
+        "台語活動",
+        "台語導覽",
+        "台語舞台劇"
+      ],
+      "audit_status": "not_implemented"
     },
     "google_workspace": {
-      "enabled": true,
+      "enabled": false,
       "calendar_id": "primary",
       "credentials_path": "credentials.json",
       "token_path": "token.json",
       "export_ics": true,
-      "ics_output_path": "taigi_activities.ics"
+      "ics_output_path": "taigi_activities.ics",
+      "audit_status": "ics_export_only_no_api_sync"
+    },
+    "public_libraries": {
+      "enabled": false,
+      "audit_status": "not_implemented"
+    },
+    "li_kang_khiok": {
+      "enabled": false,
+      "audit_status": "not_implemented"
+    },
+    "le_chang": {
+      "enabled": false,
+      "audit_status": "not_implemented"
+    },
+    "museums": {
+      "enabled": false,
+      "audit_status": "hardcoded_data_only"
+    },
+    "government": {
+      "enabled": false,
+      "audit_status": "hardcoded_data_only"
     }
-  }
+  },
+  "_note": "Historical crawler configuration only; main.py does not load it. All unverified collectors are disabled. See CRAWLER_AUDIT.md."
 }

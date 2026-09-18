@@ -15,6 +15,7 @@
 - `crawler/sources/google_workspace.py`：ICS 與 Google 日曆加入連結；**沒有 Calendar API 同步功能**。
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
+- `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
 - `crawler/sample_data.py`、舊 `crawler/sources/` 模組及 `processor.py`：保留的舊實作；正式建置不使用。
 - `config.example.json`、`requirements.txt`：舊爬蟲構想的參考，不是目前建置必需配置／依賴。
 
@@ -67,4 +68,5 @@
 - 逐步增加臺北及其他北北桃來源；不為各城市配額加入無證據場次。
 - 舊李江却、樂暢、圖書館、年代、Threads 抓取函式為空；博物館及市府模組為固定資料。Accupass、OPENTIX 與社群解析亦未通過正式來源驗證，暫不啟用。
 - 後續新增爬蟲應先寫入候選區，通過場次核實後才進入正式清單。
+- 全來源驗收仍未完成；見 `CRAWLER_AUDIT.md`。ACCUPASS／OPENTIX 舊搜尋 API 實測 404，社群缺授權成功證據，其他多為空函式或固定資料。範例設定已停用全部未驗收收集器，不能以 enabled 或空清單宣稱成功。
 - 維護時先讀 README / SPEC / SOURCE_AUDIT、確認 Git 狀態，保留他人未提交修改。

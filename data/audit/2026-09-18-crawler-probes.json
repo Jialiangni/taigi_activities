@@ -1,0 +1,38 @@
+[
+  {
+    "id": "accupass_legacy_search",
+    "url": "https://api.accupass.com/v3/search?keyword=%E5%8F%B0%E8%AA%9E&page=1&size=20&city=all&sort=start_time",
+    "checked_at": "2026-09-18T16:23:18+08:00",
+    "error_type": "HTTPError",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "opentix_legacy_search",
+    "url": "https://www.opentix.life/oapi/v1/search/program?keyword=%E5%8F%B0%E8%AA%9E&offset=0&limit=20&sort=ON_SALE_DATE_ASC",
+    "checked_at": "2026-09-18T16:23:18+08:00",
+    "error_type": "HTTPError",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "accupass_public_search",
+    "url": "https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+    "checked_at": "2026-09-18T16:23:18+08:00",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.accupass.com/search?q=%E5%8F%B0%E8%AA%9E",
+    "bytes": 186564,
+    "sha256": "4a823d56c1256809095c07885a4b08f1f15e5e5add3c7a44d2c1563cb10e634b",
+    "json_type": null
+  },
+  {
+    "id": "opentix_public_list",
+    "url": "https://www.opentix.life/event",
+    "checked_at": "2026-09-18T16:23:18+08:00",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.opentix.life/event",
+    "bytes": 1350826,
+    "sha256": "e1146233defbb774cae91fd5a2c2b2682221d4ecf17c2f043f5952d2415a3312",
+    "json_type": null
+  }
+]

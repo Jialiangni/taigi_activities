@@ -6,6 +6,7 @@
 - ICS：https://jialiangni.github.io/taigi_activities/taigi_activities.ics
 - 系統規格：[SPEC.md](SPEC.md)
 - 本次核查：[SOURCE_AUDIT.md](SOURCE_AUDIT.md)
+- 全來源爬蟲驗收：[CRAWLER_AUDIT.md](CRAWLER_AUDIT.md)（ACCUPASS／OPENTIX 舊 API 實測 404；社群與其他來源尚未通過驗收）
 
 ## 資料現況（2026-09-18）
 
