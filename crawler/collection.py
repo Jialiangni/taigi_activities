@@ -55,17 +55,22 @@ class Client:
         self.cache, self.requests = {}, []
         self.progress = None
 
-    def get(self, url, payload=None, token=None):
+    def get(self, url, payload=None, token=None, form=None, ajax=False):
         url = canonical(url)
         if urlsplit(url).scheme != 'https':
             raise CollectionError('https_required')
-        body = json.dumps(payload).encode() if payload is not None else None
-        key = (url, body, bool(token))
+        if form is not None and (payload is not None or token):
+            raise CollectionError('mixed_request_encoding')
+        from urllib.parse import urlencode
+        body = urlencode(form).encode() if form is not None else json.dumps(payload).encode() if payload is not None else None
+        key = (url, body, bool(token), ajax)
         if not token and key in self.cache:
             return self.cache[key]
         headers = {'User-Agent': 'TaigiActivities/1.0 (public event research)', 'Accept': '*/*'}
+        if ajax:
+            headers['X-Requested-With'] = 'SW'
         if body is not None:
-            headers['Content-Type'] = 'application/json'
+            headers['Content-Type'] = 'application/x-www-form-urlencoded' if form is not None else 'application/json'
         if token:
             headers['Authorization'] = 'Bearer ' + token
         for attempt in range(2):
@@ -93,6 +98,10 @@ class Client:
                                 'sha256': hashlib.sha256(raw).hexdigest()}
                     if payload is not None and not token:
                         evidence['request_body'] = payload
+                    if form is not None:
+                        evidence['request_form'] = {k: v for k, v in form.items() if not re.search(r'token|password|secret', k, re.I)}
+                    if ajax:
+                        evidence['request_headers'] = {'X-Requested-With': 'SW'}
                     self.requests.append(evidence)
                     if self.progress and len(self.requests) % 25 == 0:
                         self.progress(len(self.requests))
@@ -122,16 +131,26 @@ class Node:
         self.children = []
 
     def text(self):
-        if self.tag in ('script', 'style', 'noscript', 'nav', 'footer'):
-            return ''
-        return ' '.join(c.text() if isinstance(c, Node) else c for c in self.children).strip()
+        # Government pages may contain thousands of nested/unclosed layout tags.
+        # Traverse iteratively so a valid response cannot exhaust Python's stack.
+        stack, parts = [self], []
+        while stack:
+            item = stack.pop()
+            if isinstance(item, Node):
+                if item.tag not in ('script', 'style', 'noscript', 'nav', 'footer'):
+                    stack.extend(reversed(item.children))
+            else:
+                parts.append(item)
+        return ' '.join(parts).strip()
 
     def all(self, tag=None):
-        for child in self.children:
+        stack = list(reversed(self.children))
+        while stack:
+            child = stack.pop()
             if isinstance(child, Node):
                 if tag is None or child.tag == tag:
                     yield child
-                yield from child.all(tag)
+                stack.extend(reversed(child.children))
 
     def has_class(self, value):
         return value in self.attrs.get('class', '').split()

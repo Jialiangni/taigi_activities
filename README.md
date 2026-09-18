@@ -49,3 +49,8 @@ GitHub Actions 每日台灣時間 04:00、推送 `main` 或手動觸發時：執
 `main.py` 只讀 `data/verified_activities.json`，不再載入示範資料、固定博物館／市府活動或未驗證的 API 結果。各來源已重建為候選收集器；使用 `python3 -m crawler.collect` 執行，結果寫入 `data/candidates/`。
 
 新增活動前，請依 `SPEC.md` 核對活動名稱、單場日期時間、地點、台語內容及費用，留下活動專頁與核查紀錄。不用官方首頁、搜尋結果或一般景點頁替代活動證據。
+
+
+## 各區圖書館與活動中心爬蟲
+
+已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有158個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。

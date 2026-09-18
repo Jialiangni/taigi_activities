@@ -1,0 +1,4036 @@
+{
+  "schema_version": 1,
+  "compiled_at": "2026-09-18T21:25:36+08:00",
+  "scope": "新增108個分區入口逐一以10頁驗收；針對指定來源另以30頁重測，逐來源採最新結果，並非同時完成的快照。新北圖書館失敗如實保留；未更動正式活動清單。",
+  "default_website_pages": 30,
+  "tested_sources": 108,
+  "status_counts": {
+    "partial": 69,
+    "failed": 30,
+    "ok": 9
+  },
+  "candidate_count": 14,
+  "sources": [
+    {
+      "id": "tp_center_btdo",
+      "name": "臺北市北投區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "北投區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:11+08:00",
+      "completed_at": "2026-09-18T21:17:24+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://btdo.gov.taipei/",
+          "final_url": "https://btdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:14+08:00",
+          "sha256": "014c24e86ece9bd86bfb632a2b261eb0bf92781bcd7f204a4b2969995808ccfe"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_sldo",
+      "name": "臺北市士林區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "士林區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:11+08:00",
+      "completed_at": "2026-09-18T21:17:21+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://sldo.gov.taipei/",
+          "final_url": "https://sldo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:12+08:00",
+          "sha256": "ef0bf0c781996ab465f287203920ed29938d645f8b0533b3787fc3d5676c5122"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_zsdo",
+      "name": "臺北市中山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "中山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:11+08:00",
+      "completed_at": "2026-09-18T21:17:28+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://zsdo.gov.taipei/",
+          "final_url": "https://zsdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:12+08:00",
+          "sha256": "f1344b7dfb67a40464265154d7b3031d08b48bd8fa73054d82979bfb7f4dc971"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_nhdo",
+      "name": "臺北市內湖區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "內湖區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:21+08:00",
+      "completed_at": "2026-09-18T21:17:32+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://nhdo.gov.taipei/",
+          "final_url": "https://nhdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:23+08:00",
+          "sha256": "15a02980587a824399916924265c167e4a5f2be3926217bc8e2fef581af08b0e"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "d7c732aae15b836240e96d41",
+          "title": "臺北市內湖區公所",
+          "url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E"
+        }
+      ]
+    },
+    {
+      "id": "tp_center_dtdo",
+      "name": "臺北市大同區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "大同區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:24+08:00",
+      "completed_at": "2026-09-18T21:17:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://dtdo.gov.taipei/",
+          "final_url": "https://dtdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:24+08:00",
+          "sha256": "13477e5adc6989d677c3b75d94a0fe2ef50214b793880eeb2b0bb97005268606"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_ssdo",
+      "name": "臺北市松山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "松山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:28+08:00",
+      "completed_at": "2026-09-18T21:17:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://ssdo.gov.taipei/",
+          "final_url": "https://ssdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:31+08:00",
+          "sha256": "758acb6945a15f17aee09701a85e42a0b4d04295db7d86e456e677fa673e9488"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_whdo",
+      "name": "臺北市萬華區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "萬華區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:32+08:00",
+      "completed_at": "2026-09-18T21:17:49+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://whdo.gov.taipei/",
+          "final_url": "https://whdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:38+08:00",
+          "sha256": "13db919a638ce14f7426193e9cc446bd2893d76d6aabf90114efc11f79013890"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_zzdo",
+      "name": "臺北市中正區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "中正區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:39+08:00",
+      "completed_at": "2026-09-18T21:17:55+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://zzdo.gov.taipei/",
+          "final_url": "https://zzdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:39+08:00",
+          "sha256": "2aff7e23973d4e82c06982f66abe7e15f900efdba96538e1cc22a992fc2ea3c5"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_dado",
+      "name": "臺北市大安區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "大安區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:39+08:00",
+      "completed_at": "2026-09-18T21:17:52+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://dado.gov.taipei/",
+          "final_url": "https://dado.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:40+08:00",
+          "sha256": "36a2635b9dcdfab9d41e47b2d6e45414903c091c623254279f4731a5dab8add4"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_xydo",
+      "name": "臺北市信義區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "信義區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:49+08:00",
+      "completed_at": "2026-09-18T21:18:03+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://xydo.gov.taipei/",
+          "final_url": "https://xydo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:49+08:00",
+          "sha256": "5163c89eb485d059ed83ee0bc5cefc5b6d9aea1dac02f8678d3401dcf4cb255c"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "afa44c408e05350163c1b5b0",
+          "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
+          "url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180"
+        }
+      ]
+    },
+    {
+      "id": "tp_center_ngdo",
+      "name": "臺北市南港區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "南港區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:52+08:00",
+      "completed_at": "2026-09-18T21:18:06+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://ngdo.gov.taipei/",
+          "final_url": "https://ngdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:56+08:00",
+          "sha256": "09d9b2ac03ef3496ca04a7df3872b4413e6f4ac859e2a6bd9776c9fb39944571"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tp_center_wsdo",
+      "name": "臺北市文山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "文山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:17:55+08:00",
+      "completed_at": "2026-09-18T21:18:08+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://wsdo.gov.taipei/",
+          "final_url": "https://wsdo.gov.taipei/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:17:55+08:00",
+          "sha256": "d897c6d9278e05fa343eb5eefc722658bd234d6ca4eb262f3004c5488d76cb44"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_banqiao",
+      "name": "新北市板橋區公所／活動中心公告",
+      "city": "新北市",
+      "district": "板橋區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:03+08:00",
+      "completed_at": "2026-09-18T21:18:11+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.banqiao.ntpc.gov.tw/",
+          "final_url": "https://www.banqiao.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:04+08:00",
+          "sha256": "7673de1a3855cd093014504a086c40969bb3f28619dfee295334e005dccb0f44"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "5436e86cbbe7e6dc063f8095",
+          "title": "最新消息-2026「溪州提拔泥-泥巴野餐趣」-新北市板橋區公所",
+          "url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c&mserno=8b0143b0d38c5d7492a12258a3493b75"
+        }
+      ]
+    },
+    {
+      "id": "ntpc_center_sanchong",
+      "name": "新北市三重區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三重區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:06+08:00",
+      "completed_at": "2026-09-18T21:18:14+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.sanchong.ntpc.gov.tw/",
+          "final_url": "https://www.sanchong.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:07+08:00",
+          "sha256": "858bad0efd922263c2fac25cc1ec9298119920b0c4356b208d2ced8863dcdf47"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_zhonghe",
+      "name": "新北市中和區公所／活動中心公告",
+      "city": "新北市",
+      "district": "中和區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:08+08:00",
+      "completed_at": "2026-09-18T21:18:17+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.zhonghe.ntpc.gov.tw/",
+          "final_url": "https://www.zhonghe.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:10+08:00",
+          "sha256": "d53435533dd3644f58430e312c8ba7605ac1f7705509aa48360c7c9defd26542"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_yonghe",
+      "name": "新北市永和區公所／活動中心公告",
+      "city": "新北市",
+      "district": "永和區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:11+08:00",
+      "completed_at": "2026-09-18T21:18:23+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.yonghe.ntpc.gov.tw/",
+          "final_url": "https://www.yonghe.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:12+08:00",
+          "sha256": "4c14ae81291741c111002b9245810aafaf988af1a932c780441b4a6b663e2ff6"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_xinzhuang",
+      "name": "新北市新莊區公所／活動中心公告",
+      "city": "新北市",
+      "district": "新莊區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:14+08:00",
+      "completed_at": "2026-09-18T21:18:24+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.xinzhuang.ntpc.gov.tw/",
+          "final_url": "https://www.xinzhuang.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:15+08:00",
+          "sha256": "84439bf08fb135d333ead657b12a08d806893299661e1309b2e91bc7c4596d49"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_xindian",
+      "name": "新北市新店區公所／活動中心公告",
+      "city": "新北市",
+      "district": "新店區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:17+08:00",
+      "completed_at": "2026-09-18T21:18:25+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.xindian.ntpc.gov.tw/",
+          "final_url": "https://www.xindian.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:18+08:00",
+          "sha256": "6b8b02eaadc01bd13fe08546ef226660b5a2b9fe53562e495e7cda033d84a723"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_tucheng",
+      "name": "新北市土城區公所／活動中心公告",
+      "city": "新北市",
+      "district": "土城區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:23+08:00",
+      "completed_at": "2026-09-18T21:18:31+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.tucheng.ntpc.gov.tw/",
+          "final_url": "https://www.tucheng.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:24+08:00",
+          "sha256": "f8b907ebe8bc9567644986b2e95cc95a0565a6e949dc70b6035c32c775471adf"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_luzhou",
+      "name": "新北市蘆洲區公所／活動中心公告",
+      "city": "新北市",
+      "district": "蘆洲區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:24+08:00",
+      "completed_at": "2026-09-18T21:20:33+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.luzhou.ntpc.gov.tw/",
+          "final_url": "https://www.luzhou.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:36+08:00",
+          "sha256": "cf0ed8b11b613112a3c720aba9305b66c8162eb76ba7ffbe0846331e4933b7b4"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_xizhi",
+      "name": "新北市汐止區公所／活動中心公告",
+      "city": "新北市",
+      "district": "汐止區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:25+08:00",
+      "completed_at": "2026-09-18T21:18:32+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.xizhi.ntpc.gov.tw/",
+          "final_url": "https://www.xizhi.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:25+08:00",
+          "sha256": "d92c3b5e6617d0b4b7aa1d59d94e0677c73c555a19508e3cdad1ba63e2f5ec48"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_shulin",
+      "name": "新北市樹林區公所／活動中心公告",
+      "city": "新北市",
+      "district": "樹林區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:31+08:00",
+      "completed_at": "2026-09-18T21:18:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.shulin.ntpc.gov.tw/",
+          "final_url": "https://www.shulin.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:32+08:00",
+          "sha256": "486caad9b3acfefe29aa080018f60852252a03777245a9714eff5fc791c8723e"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_yingge",
+      "name": "新北市鶯歌區公所／活動中心公告",
+      "city": "新北市",
+      "district": "鶯歌區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:32+08:00",
+      "completed_at": "2026-09-18T21:18:41+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.yingge.ntpc.gov.tw/",
+          "final_url": "https://www.yingge.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:33+08:00",
+          "sha256": "2d4f27021bc07930ba3515e9e668814d2d00bb0af188c3aaf03631e26226d778"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_sanxia",
+      "name": "新北市三峽區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三峽區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:39+08:00",
+      "completed_at": "2026-09-18T21:18:47+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.sanxia.ntpc.gov.tw/",
+          "final_url": "https://www.sanxia.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:40+08:00",
+          "sha256": "2f83d12533671b30377c595cb764a0695a57453f3652ade53d70643d8f1b5dda"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_tamsui",
+      "name": "新北市淡水區公所／活動中心公告",
+      "city": "新北市",
+      "district": "淡水區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:41+08:00",
+      "completed_at": "2026-09-18T21:18:49+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.tamsui.ntpc.gov.tw/",
+          "final_url": "https://www.tamsui.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:42+08:00",
+          "sha256": "8c38ef010ca92d655b8ce2d1455a2bcabe9988237c93d20cd1bcbbc6062c0476"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_ruifang",
+      "name": "新北市瑞芳區公所／活動中心公告",
+      "city": "新北市",
+      "district": "瑞芳區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:47+08:00",
+      "completed_at": "2026-09-18T21:18:54+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.ruifang.ntpc.gov.tw/",
+          "final_url": "https://www.ruifang.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:47+08:00",
+          "sha256": "ebb7a4b72748dcb7b1d5e720cbfc23efdf2c4188495381b17c9a829169c1020f"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "9e99e1e786f6a1a6349a2145",
+          "title": "新聞-新北市瑞芳區公所",
+          "url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea"
+        }
+      ]
+    },
+    {
+      "id": "ntpc_center_wugu",
+      "name": "新北市五股區公所／活動中心公告",
+      "city": "新北市",
+      "district": "五股區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:49+08:00",
+      "completed_at": "2026-09-18T21:20:58+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.wugu.ntpc.gov.tw/",
+          "final_url": "https://www.wugu.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:02+08:00",
+          "sha256": "bf5b1e257780a02c790a19a44ee4ce19a6b7df2eb2663aafecf434b3b0c4075f"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_taishan",
+      "name": "新北市泰山區公所／活動中心公告",
+      "city": "新北市",
+      "district": "泰山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:18:54+08:00",
+      "completed_at": "2026-09-18T21:19:04+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.taishan.ntpc.gov.tw/",
+          "final_url": "https://www.taishan.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:18:56+08:00",
+          "sha256": "b08e4c3cb3c28e3a1d2f61eedb1195ce9ae6cda785bd966336dee94103ef1e65"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_linkou",
+      "name": "新北市林口區公所／活動中心公告",
+      "city": "新北市",
+      "district": "林口區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:04+08:00",
+      "completed_at": "2026-09-18T21:19:09+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.linkou.ntpc.gov.tw/",
+          "final_url": "https://www.linkou.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:05+08:00",
+          "sha256": "6a27c4d251e40a9fad7acf0af714785060600a20ac024966b14065967d781ed0"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_bali",
+      "name": "新北市八里區公所／活動中心公告",
+      "city": "新北市",
+      "district": "八里區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:27+08:00",
+      "completed_at": "2026-09-18T21:22:54+08:00",
+      "tested_page_limit": 30,
+      "candidate_count": 0,
+      "successful_response_count": 30,
+      "entry_evidence": [
+        {
+          "url": "https://www.bali.ntpc.gov.tw/",
+          "final_url": "https://www.bali.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:28+08:00",
+          "sha256": "4e9e763e3c55d1b2055aece42d5a41210f7d2b931f1a7f2923f1cba18c6f0233"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_shenkeng",
+      "name": "新北市深坑區公所／活動中心公告",
+      "city": "新北市",
+      "district": "深坑區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:13+08:00",
+      "completed_at": "2026-09-18T21:19:24+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.shenkeng.ntpc.gov.tw/",
+          "final_url": "https://www.shenkeng.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:14+08:00",
+          "sha256": "a221c5cc17664a6238c00edc95636972ba4e938c3ec344ff3867660fc9a81185"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_shiding",
+      "name": "新北市石碇區公所／活動中心公告",
+      "city": "新北市",
+      "district": "石碇區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:24+08:00",
+      "completed_at": "2026-09-18T21:19:31+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.shiding.ntpc.gov.tw/",
+          "final_url": "https://www.shiding.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:25+08:00",
+          "sha256": "04a5183b2a636f539b8643ced97da0a6efd01c3782ace5b9d08af2a42f8e770a"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_pinglin",
+      "name": "新北市坪林區公所／活動中心公告",
+      "city": "新北市",
+      "district": "坪林區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:31+08:00",
+      "completed_at": "2026-09-18T21:19:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.pinglin.ntpc.gov.tw/",
+          "final_url": "https://www.pinglin.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:32+08:00",
+          "sha256": "5cddc10961ac6834464ee576719f0bca91d7d077b57cae5a44b26cb9e5f5889e"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_sanzhi",
+      "name": "新北市三芝區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三芝區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:39+08:00",
+      "completed_at": "2026-09-18T21:19:45+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.sanzhi.ntpc.gov.tw/",
+          "final_url": "https://www.sanzhi.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:40+08:00",
+          "sha256": "7bd03b0e3b450dab7caa0015176ef0ce335ede4104b3717558a09f3b2a949b3b"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_shimen",
+      "name": "新北市石門區公所／活動中心公告",
+      "city": "新北市",
+      "district": "石門區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:19:45+08:00",
+      "completed_at": "2026-09-18T21:21:54+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.shimen.ntpc.gov.tw/",
+          "final_url": "https://www.shimen.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:19:58+08:00",
+          "sha256": "8bdeb3691c9c51d310e2f040d65215c06eb9885bda85174cdbc80dbfbe1e3b12"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_jinshan",
+      "name": "新北市金山區公所／活動中心公告",
+      "city": "新北市",
+      "district": "金山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:33+08:00",
+      "completed_at": "2026-09-18T21:20:41+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.jinshan.ntpc.gov.tw/",
+          "final_url": "https://www.jinshan.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:35+08:00",
+          "sha256": "59d119b3cfabf901f1ad42a97ad68178fb38aadfc1ba973988851404402150d8"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_wanli",
+      "name": "新北市萬里區公所／活動中心公告",
+      "city": "新北市",
+      "district": "萬里區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:41+08:00",
+      "completed_at": "2026-09-18T21:20:48+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.wanli.ntpc.gov.tw/",
+          "final_url": "https://www.wanli.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:42+08:00",
+          "sha256": "3b6197583c5aa90b511f46dfedaaee06efeb1289f0cd2b3366bc7414b6ea2381"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "aad5eefbd41c9217ff9390b4",
+          "title": "公告-新北市萬里區公所",
+          "url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=ceb4c57b67737d35b562c005934b32bc&mserno=be3fddfc5a7df5b3468e71e3fa13c49f"
+        }
+      ]
+    },
+    {
+      "id": "ntpc_center_pingxi",
+      "name": "新北市平溪區公所／活動中心公告",
+      "city": "新北市",
+      "district": "平溪區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:48+08:00",
+      "completed_at": "2026-09-18T21:20:57+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.pingxi.ntpc.gov.tw/",
+          "final_url": "https://www.pingxi.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:49+08:00",
+          "sha256": "88163944e102589f1ede96dd161006066aeb8cafca764d38af8597d01ba6154c"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_shuangxi",
+      "name": "新北市雙溪區公所／活動中心公告",
+      "city": "新北市",
+      "district": "雙溪區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:57+08:00",
+      "completed_at": "2026-09-18T21:21:04+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.shuangxi.ntpc.gov.tw/",
+          "final_url": "https://www.shuangxi.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:58+08:00",
+          "sha256": "47b7140f83f74ce56f42d5528f86657090f57588b6758aa64ffec551426bed98"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_gongliao",
+      "name": "新北市貢寮區公所／活動中心公告",
+      "city": "新北市",
+      "district": "貢寮區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:58+08:00",
+      "completed_at": "2026-09-18T21:21:05+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.gongliao.ntpc.gov.tw/",
+          "final_url": "https://www.gongliao.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:59+08:00",
+          "sha256": "e8bdffb4fbf8f3fa1c40e624287644bbf64dad65124871f36b644fdbdb5c39f5"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpc_center_wulai",
+      "name": "新北市烏來區公所／活動中心公告",
+      "city": "新北市",
+      "district": "烏來區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:04+08:00",
+      "completed_at": "2026-09-18T21:21:11+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.wulai.ntpc.gov.tw/",
+          "final_url": "https://www.wulai.ntpc.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:05+08:00",
+          "sha256": "0bf25eaebb38e2d3f4ccab57fef1af311076ca294ce0b3fe5ccb60068139d0c2"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_tao",
+      "name": "桃園市桃園區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "桃園區",
+      "group": "community_centers",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.tao.tycg.gov.tw/News_Video_Content.aspx?n=6334&sms=11375&s=1312138",
+          "code": "network_or_tls_error"
+        }
+      ],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=30"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:27+08:00",
+      "completed_at": "2026-09-18T21:23:29+08:00",
+      "tested_page_limit": 30,
+      "candidate_count": 0,
+      "successful_response_count": 29,
+      "entry_evidence": [
+        {
+          "url": "https://www.tao.tycg.gov.tw/",
+          "final_url": "https://www.tao.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:27+08:00",
+          "sha256": "ac4ec8cc45435eefc68d14f632f7a3cde5795b2ed89cdc152f6b224e8fe47407"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_zhongli",
+      "name": "桃園市中壢區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "中壢區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:11+08:00",
+      "completed_at": "2026-09-18T21:21:34+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.zhongli.tycg.gov.tw/",
+          "final_url": "https://www.zhongli.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:15+08:00",
+          "sha256": "71a24693fcc826ed6b7b17ae7728ea6c4d2d5fd4c9eb5925668e86e61764821d"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_pingzhen",
+      "name": "桃園市平鎮區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "平鎮區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:28+08:00",
+      "completed_at": "2026-09-18T21:21:46+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.pingzhen.tycg.gov.tw/",
+          "final_url": "https://www.pingzhen.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:29+08:00",
+          "sha256": "c81db51843ff2eb8dd8ed778080f8f639916fa233d5b900123ef2e39dc1b195b"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_bade",
+      "name": "桃園市八德區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "八德區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:34+08:00",
+      "completed_at": "2026-09-18T21:21:52+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.bade.tycg.gov.tw/",
+          "final_url": "https://www.bade.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:34+08:00",
+          "sha256": "1c8893ea18fa9b9a57656eb45e9c3e47769e1567b5f7ea80e64748b01ea594f6"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_yangmei",
+      "name": "桃園市楊梅區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "楊梅區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:46+08:00",
+      "completed_at": "2026-09-18T21:22:06+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.yangmei.tycg.gov.tw/",
+          "final_url": "https://www.yangmei.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:47+08:00",
+          "sha256": "6bee1b76febf927f2e1b529ef48feeacd5a59daa8bb1675488572ee102082d25"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_luzhu",
+      "name": "桃園市蘆竹區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "蘆竹區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:52+08:00",
+      "completed_at": "2026-09-18T21:22:19+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.luzhu.tycg.gov.tw/",
+          "final_url": "https://www.luzhu.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:53+08:00",
+          "sha256": "837e51e9c1576c614f07a670c42deb22008e3162b7517b008a12ddb1f03866ab"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_daxi",
+      "name": "桃園市大溪區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "大溪區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:21:54+08:00",
+      "completed_at": "2026-09-18T21:22:11+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.daxi.tycg.gov.tw/",
+          "final_url": "https://www.daxi.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:21:55+08:00",
+          "sha256": "13bc7afa239c886eb78be9eba47d2acfaa5a426cd7b2a8bc1eb20d14ee022035"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_dayuan",
+      "name": "桃園市大園區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "大園區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:06+08:00",
+      "completed_at": "2026-09-18T21:22:26+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.dayuan.tycg.gov.tw/",
+          "final_url": "https://www.dayuan.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:07+08:00",
+          "sha256": "ee5e74742a0ac8197a1619fae6f293bc47e9232d4c29aa71358c240d3830dd2a"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_guishan",
+      "name": "桃園市龜山區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "龜山區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:11+08:00",
+      "completed_at": "2026-09-18T21:22:30+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.guishan.tycg.gov.tw/",
+          "final_url": "https://www.guishan.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:13+08:00",
+          "sha256": "3f1e1c26c94336f66626fca811b6d11425050ea409f73804b3c084a8beb5f247"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_longtan",
+      "name": "桃園市龍潭區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "龍潭區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:19+08:00",
+      "completed_at": "2026-09-18T21:22:43+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.longtan.tycg.gov.tw/",
+          "final_url": "https://www.longtan.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:23+08:00",
+          "sha256": "e79824b60bf21784a1bd433d39d086b5dc6ac178f9c66b13cabb57c818d77a21"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_xinwu",
+      "name": "桃園市新屋區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "新屋區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:26+08:00",
+      "completed_at": "2026-09-18T21:22:44+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.xinwu.tycg.gov.tw/",
+          "final_url": "https://www.xinwu.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:26+08:00",
+          "sha256": "4271d73cd73ae2ceae60312e0fbb4853574b8c931b91dc75250e126030a38d21"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_guanyin",
+      "name": "桃園市觀音區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "觀音區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:30+08:00",
+      "completed_at": "2026-09-18T21:22:50+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.guanyin.tycg.gov.tw/",
+          "final_url": "https://www.guanyin.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:31+08:00",
+          "sha256": "5d104c7e1b93fe71a922bd8375b4da4d9757111aed947b3c014b211273717aa6"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ty_center_fuxing",
+      "name": "桃園市復興區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "復興區",
+      "group": "community_centers",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "website_page_limit_reached",
+        "Bounded official-site discovery; not an exhaustive full-site search. PDF/image-only notices need manual review.",
+        "pages_read=10"
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:43+08:00",
+      "completed_at": "2026-09-18T21:23:05+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.fuxing.tycg.gov.tw/",
+          "final_url": "https://www.fuxing.tycg.gov.tw/",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:44+08:00",
+          "sha256": "519cde2101ebe1e3780e104576cd280751ca620788b67729b39b647537e07a70"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_a",
+      "name": "臺北市立圖書館松山區各館活動",
+      "city": "臺北市",
+      "district": "松山區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=13",
+        "discovered_details=8",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:09+08:00",
+      "completed_at": "2026-09-18T21:20:35+08:00",
+      "tested_page_limit": 30,
+      "candidate_count": 0,
+      "successful_response_count": 13,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=0CDA599F03495502&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=0CDA599F03495502&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:11+08:00",
+          "sha256": "cb008db1de8e940c49945d1c2d7d1d95dcb115500c7448e1eec6c665dbb0f0e6"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C19DB4301462C858&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C19DB4301462C858&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:14+08:00",
+          "sha256": "37af7ed57a2a9e10fea613b5565195f37356c9c5a9d6d4ee6208a2e44756cee1"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=13F919E0D70A5C1C&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=13F919E0D70A5C1C&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:17+08:00",
+          "sha256": "fe7f325c83df72482ecfa2807f490119b3d1b48c4b304678ef996178bd476f16"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=A537217CFAB72E93&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=A537217CFAB72E93&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:19+08:00",
+          "sha256": "6d9e23cdbe953befbcb865510517519ace1b495e61f1d08c74047ffe3a9cd86b"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=13701AD9036A3C8D&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=13701AD9036A3C8D&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:22+08:00",
+          "sha256": "532cda5dbd75b66653f757c939521aa338adb6fc06eb67d9c4562dea1fda3fd7"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_b",
+      "name": "臺北市立圖書館信義區各館活動",
+      "city": "臺北市",
+      "district": "信義區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=14",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:50+08:00",
+      "completed_at": "2026-09-18T21:23:09+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:52+08:00",
+          "sha256": "7b9fe8d8a5f4d96eb05155541b675464aebe8aefdf405d7ad9f673016d2142d3"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=89C7BECD693BB570&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=89C7BECD693BB570&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:55+08:00",
+          "sha256": "f5024443eb66c899ecf2884d49cdba5607c678a1e1da750528c5f24e983a5a35"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=0FF09D322846DC24&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=0FF09D322846DC24&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:58+08:00",
+          "sha256": "c59aafe5423990ca873121b1a6b412df45d20b0b9c97e4b4efd2fbbd3f711a63"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "9e57e3cab7f30e9de50b595c",
+          "title": "永春分館「臺灣語初級研習班」，歡迎報名參加!",
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717"
+        }
+      ]
+    },
+    {
+      "id": "tpml_district_c",
+      "name": "臺北市立圖書館大安區各館活動",
+      "city": "臺北市",
+      "district": "大安區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=7",
+        "discovered_details=2",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:22:50+08:00",
+      "completed_at": "2026-09-18T21:23:05+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 7,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=8A26D7A84A1698A8&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=8A26D7A84A1698A8&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:53+08:00",
+          "sha256": "c43ec7a1f4295aca3816de25625b169cd97bf8f311fb325c45de635ae3f99427"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=4C68B9ECFDB5DE09&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=4C68B9ECFDB5DE09&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:55+08:00",
+          "sha256": "d5ffde3c7afae6269561430078e9890e50ab84c20d84e7de6d546dbc236dc86a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=423807B68ED600E7&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=423807B68ED600E7&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:57+08:00",
+          "sha256": "fdfc646ffabfae16cc2b64e1b882a850824b06c1bba5485ba685477af336384a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=DA30A23CCB4BE5A4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=DA30A23CCB4BE5A4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:22:59+08:00",
+          "sha256": "8a7510e52d3db0c9e3b14df3ec6c946f36261ade6127d1db042c45ad020ce13b"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=DEFCB170BD97C47A&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=DEFCB170BD97C47A&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:02+08:00",
+          "sha256": "8f28a702ed15ebffdb0fbaf613045f0f144691a7c0f0e3f3a61396764c5d8aa1"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_d",
+      "name": "臺北市立圖書館中山區各館活動",
+      "city": "臺北市",
+      "district": "中山區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=7",
+        "discovered_details=3",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:05+08:00",
+      "completed_at": "2026-09-18T21:23:20+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 7,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C191E73568BAB51E&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C191E73568BAB51E&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:07+08:00",
+          "sha256": "bc0c05aef1270067796e0654f3d5f0e0d6d50c45b4fc43f8e53cd76a38aa061a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=90A6E585CDE385C4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=90A6E585CDE385C4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:10+08:00",
+          "sha256": "feb8259397866d6a3adb88de7b2c05352156fd99bc9ee04dc1c34c7e66357ca6"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=DFA5DC9F97ED4BD1&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=DFA5DC9F97ED4BD1&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:13+08:00",
+          "sha256": "4535a1112c622729655c19cb2de007003cb20351c5a9ec3a58d4e75b50c61281"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=11E5E29DBA592951&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=11E5E29DBA592951&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:15+08:00",
+          "sha256": "75365891be1072aeade9b38d1136b70ca52ba0639e012d6b57fb500e7318d080"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_e",
+      "name": "臺北市立圖書館中正區各館活動",
+      "city": "臺北市",
+      "district": "中正區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=13",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:05+08:00",
+      "completed_at": "2026-09-18T21:23:21+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=3DFF12E5683E55F4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=3DFF12E5683E55F4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:07+08:00",
+          "sha256": "d324062e51db620e69e8333299315417e8d9b9ad7de424cc6acc2fbb3fa87360"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=25B715AEF0ADC5A8&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=25B715AEF0ADC5A8&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:09+08:00",
+          "sha256": "b1b496bd78fdd0d769a8e8a372cff3db4cfe3a24006cc2b6d2121d50276d60fa"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_f",
+      "name": "臺北市立圖書館大同區各館活動",
+      "city": "臺北市",
+      "district": "大同區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=17",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:09+08:00",
+      "completed_at": "2026-09-18T21:23:25+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=08A9B80C1E219522&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=08A9B80C1E219522&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:12+08:00",
+          "sha256": "b3d19ae8e255c1a6676bd608763fade3590daede75922a85fe0577c4edc8a377"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=4461C457DB177A4F&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=4461C457DB177A4F&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:12+08:00",
+          "sha256": "253205c642d47bc9a910e032ea83aa4e7c0d6c77e2969123cdd9901182f522f9"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=EECE4969E4C64CA4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=EECE4969E4C64CA4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:13+08:00",
+          "sha256": "7d46afd1ab7794628d069bf03db3d1de56eea3fc49dc1f3a1ba5f5d0b78e769a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C214715F03C5BD30&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C214715F03C5BD30&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:15+08:00",
+          "sha256": "95917c3b81f6cf7404b9c8b7f3c6b7ec6f927eef256dca330786c83a6e8e72c6"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_g",
+      "name": "臺北市立圖書館萬華區各館活動",
+      "city": "臺北市",
+      "district": "萬華區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=10",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:20+08:00",
+      "completed_at": "2026-09-18T21:23:41+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 3,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=5631EFDABC442986&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=5631EFDABC442986&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:23+08:00",
+          "sha256": "9af9b1260ea1aac9f33d365580ec13a5d721de4f8f65dd2b2eaf718ca1ac0df5"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=5B8197AA5783E7B9&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=5B8197AA5783E7B9&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:25+08:00",
+          "sha256": "b22ba90f2867dee3fae916207f9deb61f890373aaa3e0afb399f1db168ce6eba"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:28+08:00",
+          "sha256": "5e74009a96f21d8d482747a57ded007f6f3239b133bfe47f70959aee453f1101"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:31+08:00",
+          "sha256": "ce5e3a40f3a6550ffff7bc256a9ab2a69dc0e1e4b88ac8b121ddb10c6ec54693"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:33+08:00",
+          "sha256": "2de9026191be6bb48f6e45bf930cc69dce1e270f0c676d29aade4817c0078233"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "6de855abb7bd1ada8f5b9e8d",
+          "title": "西園分館「臺語來𨑨迌：翻翻日常味」",
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64&s=F992B94F4E146C70"
+        },
+        {
+          "id": "4166922a4bafe35b76954780",
+          "title": "萬華分館「輪轉台語冊在此」主題書展，歡迎一起來讓 「台語冊，轉起來！」",
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF"
+        },
+        {
+          "id": "867837fdc2d5bcee4aa2f552",
+          "title": "柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」鄉土語言暨電子資源閱讀推廣活動",
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762"
+        }
+      ]
+    },
+    {
+      "id": "tpml_district_h",
+      "name": "臺北市立圖書館文山區各館活動",
+      "city": "臺北市",
+      "district": "文山區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=33",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:21+08:00",
+      "completed_at": "2026-09-18T21:23:43+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=4355269DAFEEF2F8&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=4355269DAFEEF2F8&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:22+08:00",
+          "sha256": "4af47c1ccd6246a62a1a05c7be2b98ae33ff2cbc6372b798173f2cad79a5beb7"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=A5732C996BC96A91&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=A5732C996BC96A91&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:24+08:00",
+          "sha256": "6c0a5d02c69bb4f9d92d005d55eec59ec4e3ccac3200d9be7d9442472f41162f"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=B1FC0BC83B6BAB32&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=B1FC0BC83B6BAB32&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:27+08:00",
+          "sha256": "d4a1714b070b921bb0122d97100a896e8515cdb7c47f6f1c516d2a3034f39227"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=7CCBBE8FD8196948&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=7CCBBE8FD8196948&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:30+08:00",
+          "sha256": "241aaaa65194b1592a830f5c9dc6130c163f29f33a931f3faed2363fe81afac1"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=EE2B70F225B6B765&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=EE2B70F225B6B765&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:32+08:00",
+          "sha256": "6ec39b5070718a434d51a437bbf77da518ba49ab424ffd794a9860cf859c9381"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=9CBC8F595576EF9A&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=9CBC8F595576EF9A&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:35+08:00",
+          "sha256": "3ec5ef4a6a17407538674ae831d9f89f340af8721b3b76ae6b39de81a2d9ee06"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=9556DB07F3E18FB3&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=9556DB07F3E18FB3&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:38+08:00",
+          "sha256": "5d5258261c87728d1284eb74cb790bd67be7f9671856662e1df3e43622b27f2d"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=B3AEBB9570E25492&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=B3AEBB9570E25492&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:40+08:00",
+          "sha256": "2f87e6529290870bc56fe4059d215baff63018f5f785538ea52f93a71c5c07b6"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=8360C07124C8D764&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=8360C07124C8D764&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:43+08:00",
+          "sha256": "76824f7d38219e4af18515f030addabdd1a4b7092585ea389c2f9d071bb82e47"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_i",
+      "name": "臺北市立圖書館南港區各館活動",
+      "city": "臺北市",
+      "district": "南港區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=9",
+        "discovered_details=6",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:25+08:00",
+      "completed_at": "2026-09-18T21:23:42+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 1,
+      "successful_response_count": 9,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=0CD52449194E7CAA&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=0CD52449194E7CAA&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:27+08:00",
+          "sha256": "8b8375fba7f9fd5f0efd18bb7060d76d03c0a67a83218f79f9f52589e1915b88"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:30+08:00",
+          "sha256": "83016acfd7eec461232c345524f6629315400a89e087f5a7b94d22fef361a7a6"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=21A321E81E1AD983&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=21A321E81E1AD983&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:32+08:00",
+          "sha256": "9b3a9ed92338859d1f656b756349fc1677fe1793fa6c6510b6320fc50c004f89"
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "f2088ecaf754ab4d1f8914c4",
+          "title": "舊莊分館—「臺語拉吉歐」主題書展",
+          "url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94"
+        }
+      ]
+    },
+    {
+      "id": "tpml_district_j",
+      "name": "臺北市立圖書館內湖區各館活動",
+      "city": "臺北市",
+      "district": "內湖區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=9",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:41+08:00",
+      "completed_at": "2026-09-18T21:23:58+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=3703DABE8D817F11&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=3703DABE8D817F11&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:41+08:00",
+          "sha256": "d4f8bb08c95fb0d23a46de4fa11a597520d917af909ae42560bdbbcfcdc1d035"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=8272E4F08602E26B&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=8272E4F08602E26B&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:44+08:00",
+          "sha256": "a09a37954ef4992c7b14f68e7c6fe2ae053b2212a3ec4e5e3de357e1973cbfb9"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=A518747EFB971FC7&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=A518747EFB971FC7&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:46+08:00",
+          "sha256": "8d7ca142afff717199187e4fcca298bd783afb3696f0dcfdf7634e2c73d275e5"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_k",
+      "name": "臺北市立圖書館士林區各館活動",
+      "city": "臺北市",
+      "district": "士林區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=14",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:42+08:00",
+      "completed_at": "2026-09-18T21:24:01+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=B892A2F0FA7E99E5&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=B892A2F0FA7E99E5&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:45+08:00",
+          "sha256": "3343c2ddbc7929c73861bbc55f77124217c60cf57ce84691225f44f2510e48d5"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=87BC96321BA95EF4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=87BC96321BA95EF4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:47+08:00",
+          "sha256": "93356dcd66c56c8553f94fd6b760366f83415e3d542734777e747817ae6834b2"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=6F5191773AA948C4&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=6F5191773AA948C4&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:50+08:00",
+          "sha256": "b7651857d5f41b381d4dae13a28adba42a126f53b5829f46bdaf21dd65274ff0"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "tpml_district_l",
+      "name": "臺北市立圖書館北投區各館活動",
+      "city": "臺北市",
+      "district": "北投區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=38",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:43+08:00",
+      "completed_at": "2026-09-18T21:24:05+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=DAD93C3C71996A94&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=DAD93C3C71996A94&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:46+08:00",
+          "sha256": "78fe3e36c75e6d1be8a1445e618a1f732edc63cb6bc37ec4149ac5bade5e5fe7"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=140CAC4196B3B518&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=140CAC4196B3B518&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:48+08:00",
+          "sha256": "78c731361d6ae2b41ec46e048482b3e25512a883517a13f2e13f5f939af66853"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:49+08:00",
+          "sha256": "7dcf9edfafba64dc4a5dc5cb72d2fc08c781f41db058e14382c44258cf336937"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=9B89660A10708D3D&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=9B89660A10708D3D&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:52+08:00",
+          "sha256": "945f35472160ef91b155798f4cd84ca6c4e47c632a10af5edaf5058146bbc809"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C43A67D69269FE4B&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C43A67D69269FE4B&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:54+08:00",
+          "sha256": "ee9fd15f71845a793812b08267022ac7c81640bab6a87aa46e32b6d959b6684a"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=C4099636485E36B3&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=C4099636485E36B3&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:57+08:00",
+          "sha256": "f83421eabb2adb52748f9e062b991aaa8bd75e325f7ab94d50887c5af07fb16f"
+        },
+        {
+          "url": "https://reading.tpml.gov.taipei/News.aspx?n=7E41DA7FC8DE07FF&sms=9D72E82EC16F3E64",
+          "final_url": "https://reading.tpml.gov.taipei/News.aspx?n=7E41DA7FC8DE07FF&sms=9D72E82EC16F3E64",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:23:59+08:00",
+          "sha256": "5131aa5f8a7a54f11d42618c64723296669ee5ee83412944238ec38e9d1c6922"
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_249",
+      "name": "新北市立圖書館八里區各館活動",
+      "city": "新北市",
+      "district": "八里區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=249",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:23:58+08:00",
+      "completed_at": "2026-09-18T21:24:00+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_252",
+      "name": "新北市立圖書館三芝區各館活動",
+      "city": "新北市",
+      "district": "三芝區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=252",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:00+08:00",
+      "completed_at": "2026-09-18T21:24:02+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_241",
+      "name": "新北市立圖書館三重區各館活動",
+      "city": "新北市",
+      "district": "三重區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=241",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:01+08:00",
+      "completed_at": "2026-09-18T21:24:03+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_237",
+      "name": "新北市立圖書館三峽區各館活動",
+      "city": "新北市",
+      "district": "三峽區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=237",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:02+08:00",
+      "completed_at": "2026-09-18T21:24:04+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_236",
+      "name": "新北市立圖書館土城區各館活動",
+      "city": "新北市",
+      "district": "土城區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=236",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:03+08:00",
+      "completed_at": "2026-09-18T21:24:04+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_235",
+      "name": "新北市立圖書館中和區各館活動",
+      "city": "新北市",
+      "district": "中和區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=235",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:04+08:00",
+      "completed_at": "2026-09-18T21:24:06+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_248",
+      "name": "新北市立圖書館五股區各館活動",
+      "city": "新北市",
+      "district": "五股區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=248",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:04+08:00",
+      "completed_at": "2026-09-18T21:24:07+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_226",
+      "name": "新北市立圖書館平溪區各館活動",
+      "city": "新北市",
+      "district": "平溪區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=226",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:05+08:00",
+      "completed_at": "2026-09-18T21:24:07+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_234",
+      "name": "新北市立圖書館永和區各館活動",
+      "city": "新北市",
+      "district": "永和區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=234",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:06+08:00",
+      "completed_at": "2026-09-18T21:24:08+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_253",
+      "name": "新北市立圖書館石門區各館活動",
+      "city": "新北市",
+      "district": "石門區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=253",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:07+08:00",
+      "completed_at": "2026-09-18T21:24:08+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_223",
+      "name": "新北市立圖書館石碇區各館活動",
+      "city": "新北市",
+      "district": "石碇區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=223",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:07+08:00",
+      "completed_at": "2026-09-18T21:24:08+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_221",
+      "name": "新北市立圖書館汐止區各館活動",
+      "city": "新北市",
+      "district": "汐止區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=221",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:08+08:00",
+      "completed_at": "2026-09-18T21:24:09+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_232",
+      "name": "新北市立圖書館坪林區各館活動",
+      "city": "新北市",
+      "district": "坪林區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=232",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:08+08:00",
+      "completed_at": "2026-09-18T21:24:10+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_244",
+      "name": "新北市立圖書館林口區各館活動",
+      "city": "新北市",
+      "district": "林口區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=244",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:08+08:00",
+      "completed_at": "2026-09-18T21:24:10+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_220",
+      "name": "新北市立圖書館板橋區各館活動",
+      "city": "新北市",
+      "district": "板橋區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:09+08:00",
+      "completed_at": "2026-09-18T21:24:11+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_208",
+      "name": "新北市立圖書館金山區各館活動",
+      "city": "新北市",
+      "district": "金山區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=208",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:10+08:00",
+      "completed_at": "2026-09-18T21:24:12+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_243",
+      "name": "新北市立圖書館泰山區各館活動",
+      "city": "新北市",
+      "district": "泰山區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=243",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:10+08:00",
+      "completed_at": "2026-09-18T21:24:12+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_233",
+      "name": "新北市立圖書館烏來區各館活動",
+      "city": "新北市",
+      "district": "烏來區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=233",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:11+08:00",
+      "completed_at": "2026-09-18T21:24:13+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_228",
+      "name": "新北市立圖書館貢寮區各館活動",
+      "city": "新北市",
+      "district": "貢寮區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=228",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:12+08:00",
+      "completed_at": "2026-09-18T21:24:14+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_251",
+      "name": "新北市立圖書館淡水區各館活動",
+      "city": "新北市",
+      "district": "淡水區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=251",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:12+08:00",
+      "completed_at": "2026-09-18T21:24:14+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_222",
+      "name": "新北市立圖書館深坑區各館活動",
+      "city": "新北市",
+      "district": "深坑區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=222",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:13+08:00",
+      "completed_at": "2026-09-18T21:24:15+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_231",
+      "name": "新北市立圖書館新店區各館活動",
+      "city": "新北市",
+      "district": "新店區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=231",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:14+08:00",
+      "completed_at": "2026-09-18T21:24:16+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_242",
+      "name": "新北市立圖書館新莊區各館活動",
+      "city": "新北市",
+      "district": "新莊區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=242",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:14+08:00",
+      "completed_at": "2026-09-18T21:24:15+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_224",
+      "name": "新北市立圖書館瑞芳區各館活動",
+      "city": "新北市",
+      "district": "瑞芳區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=224",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:15+08:00",
+      "completed_at": "2026-09-18T21:24:17+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_207",
+      "name": "新北市立圖書館萬里區各館活動",
+      "city": "新北市",
+      "district": "萬里區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=207",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:15+08:00",
+      "completed_at": "2026-09-18T21:24:17+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_238",
+      "name": "新北市立圖書館樹林區各館活動",
+      "city": "新北市",
+      "district": "樹林區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=238",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:16+08:00",
+      "completed_at": "2026-09-18T21:24:18+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_227",
+      "name": "新北市立圖書館雙溪區各館活動",
+      "city": "新北市",
+      "district": "雙溪區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=227",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:17+08:00",
+      "completed_at": "2026-09-18T21:24:19+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_247",
+      "name": "新北市立圖書館蘆洲區各館活動",
+      "city": "新北市",
+      "district": "蘆洲區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=247",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:17+08:00",
+      "completed_at": "2026-09-18T21:24:19+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "ntpclib_district_239",
+      "name": "新北市立圖書館鶯歌區各館活動",
+      "city": "新北市",
+      "district": "鶯歌區",
+      "group": "public_libraries",
+      "status": "failed",
+      "errors": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=239",
+          "code": "http_502"
+        }
+      ],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:18+08:00",
+      "completed_at": "2026-09-18T21:24:19+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 0,
+      "entry_evidence": [],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_2",
+      "name": "桃園市立圖書館桃園區各館活動",
+      "city": "桃園市",
+      "district": "桃園區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=30",
+        "discovered_details=58",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:09+08:00",
+      "completed_at": "2026-09-18T21:20:39+08:00",
+      "tested_page_limit": 30,
+      "candidate_count": 4,
+      "successful_response_count": 30,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:10+08:00",
+          "sha256": "3c436989468146e7ba102a46a3d34fac04c9685800beb81dd1bfcb2e9a36ae5d",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:20:10+08:00",
+          "sha256": "ad3a53939e4b81b4a87d934a8f6facee4e8cd4c6952caf85ffc1a7d8ab32782b",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:20:11+08:00",
+          "sha256": "5af18efad1ea309e9c47ce8acd45fcf5fd0478b59682683f355c498ab19567bc",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:20:17+08:00",
+          "sha256": "e70090d5dddcf8f4da6234080f5c8579f607cbadb63c4411e1ccf67d188b6ac3",
+          "request_form": {
+            "CurrentPage": 4
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:20:17+08:00",
+          "sha256": "b5f3acf3d676681177f4907fc60ab30bda434213690c254ff07990b4b1a5bb24",
+          "request_form": {
+            "CurrentPage": 5
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:20:18+08:00",
+          "sha256": "5a3fced2b799d350020d6da8dac4965421bdc1d0db26980c27f785037730a1b7",
+          "request_form": {
+            "CurrentPage": 6
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": [
+        {
+          "id": "ee61d35971392d9630c8b372",
+          "title": "【台語親子系列】聽囡仔歌踅世界，原來台語按呢跨界！",
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103"
+        },
+        {
+          "id": "05011e4dd18036d221913177",
+          "title": "【總館活動】台語說故事：如果我有一隻恐龍",
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102"
+        },
+        {
+          "id": "60ea7a868afe61c3c098f280",
+          "title": "[桃園活動]台語說故事：趣味手作摺紙",
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135"
+        },
+        {
+          "id": "1f721acdad573c0d49064bca",
+          "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
+          "url": "https://www.typl.gov.tw/zh-tw/Activity/Content/9721"
+        }
+      ]
+    },
+    {
+      "id": "typl_district_3",
+      "name": "桃園市立圖書館中壢區各館活動",
+      "city": "桃園市",
+      "district": "中壢區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=22",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:19+08:00",
+      "completed_at": "2026-09-18T21:24:26+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:21+08:00",
+          "sha256": "23260d9369024be125a4460c7ca8e765da5147a3105b07dd196205de1b2aeabe",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:21+08:00",
+          "sha256": "1965e84b74b31c397b539a00c627215e50100a0c0f3417abe033eed590897255",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:21+08:00",
+          "sha256": "fb60c7734d574fa401108957b9697a50e84c7eb6c124b0773525150832ee6eca",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_4",
+      "name": "桃園市立圖書館蘆竹區各館活動",
+      "city": "桃園市",
+      "district": "蘆竹區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=8",
+        "discovered_details=6",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:19+08:00",
+      "completed_at": "2026-09-18T21:24:25+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 8,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=4&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=4&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:21+08:00",
+          "sha256": "80f35e72be2ac7f0ba5c261320b7d88cbe99d922a966ba77de2a9cf8beb14ca2",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=4&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=4&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:21+08:00",
+          "sha256": "12d128b98b293af90485a07546382f83cdce93ff780616cf366b8acc9f47ead9",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_5",
+      "name": "桃園市立圖書館龍潭區各館活動",
+      "city": "桃園市",
+      "district": "龍潭區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=10",
+        "discovered_details=8",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:25+08:00",
+      "completed_at": "2026-09-18T21:24:32+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=5&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=5&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:26+08:00",
+          "sha256": "6ac5c51c791fcaefcaf677a6dcbb0a150e820490cb941dfb0f60532ee120090b",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=5&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=5&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:26+08:00",
+          "sha256": "ae7dc51c77c7e9ec79cd5d56e6992b0a502ca0d38ea23cff99425310823e583e",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_6",
+      "name": "桃園市立圖書館龜山區各館活動",
+      "city": "桃園市",
+      "district": "龜山區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=12",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:26+08:00",
+      "completed_at": "2026-09-18T21:24:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=6&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=6&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:26+08:00",
+          "sha256": "2c922c90cb56cdbd1cdd07b274dbe9ef1e41d76064852c3e25f521359803710a",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=6&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=6&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:27+08:00",
+          "sha256": "ab8f80516e65f9eb5737946dbdc813dcabe9d5317cbf9dd5f5fb5a1131ce56a0",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_7",
+      "name": "桃園市立圖書館平鎮區各館活動",
+      "city": "桃園市",
+      "district": "平鎮區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=9",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:26+08:00",
+      "completed_at": "2026-09-18T21:24:39+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=7&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=7&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:26+08:00",
+          "sha256": "31d6ec0ab03155e10c4827ef14733c9a897ccfbde3ea9e04cbfa606535d2d9aa",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=7&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=7&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:27+08:00",
+          "sha256": "a2458b0ce0a7921a5f21c1ce537c9a988112cedd5f95f2430f82989a081be624",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_8",
+      "name": "桃園市立圖書館八德區各館活動",
+      "city": "桃園市",
+      "district": "八德區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=39",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:32+08:00",
+      "completed_at": "2026-09-18T21:24:48+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:38+08:00",
+          "sha256": "9efe1edc6027f9c1962adf84fc2c997c9a32e1269981af1879be985d37cb9c87",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:39+08:00",
+          "sha256": "a1ddfc935ecc4cd8c2ec74c0a286864d8e6eb679b34cf7659c9b92fc2d8f9d1a",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:39+08:00",
+          "sha256": "c975efb47a2c9fb48a4c58dfe113f8d19b1544f70418f641551d6c51b5276f76",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:40+08:00",
+          "sha256": "413c0b6573c7bfbf31b140f6ef6d97b367c1163848551255ab38a8789de0d0f4",
+          "request_form": {
+            "CurrentPage": 4
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:40+08:00",
+          "sha256": "ec78ba20b771ce9632b83dda062de2beead7126b872fab2fc1d3da98877388a2",
+          "request_form": {
+            "CurrentPage": 5
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_9",
+      "name": "桃園市立圖書館楊梅區各館活動",
+      "city": "桃園市",
+      "district": "楊梅區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=26",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:39+08:00",
+      "completed_at": "2026-09-18T21:24:56+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:39+08:00",
+          "sha256": "44a7d56d9b33e05bb804c7dd68861391488fe945b816a9a926023f19d0227007",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:40+08:00",
+          "sha256": "4d45ad6b34631157b6a6b4d30a3f63bfdff18c1e460bde725af9b2e1ba6f7be9",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:40+08:00",
+          "sha256": "b17389ef2b60646d42dcce8ed871d643fe7b3456fe6e33525623c881fa646d0b",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:41+08:00",
+          "sha256": "7aa812c0e51603531cc6576b8b3b0506a7693c473004946f40c2ebd5ea5fba3a",
+          "request_form": {
+            "CurrentPage": 4
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_10",
+      "name": "桃園市立圖書館大園區各館活動",
+      "city": "桃園市",
+      "district": "大園區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=3",
+        "discovered_details=1",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:39+08:00",
+      "completed_at": "2026-09-18T21:24:40+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 3,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=10&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=10&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:39+08:00",
+          "sha256": "14ad0fc43b0533d4fd02fe62e21b64801398caca16d1593f2772c5023cda922c",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=10&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=10&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:40+08:00",
+          "sha256": "486945e5c16268dd6979b2e6028354ddc167335f4a5a8f4bc7c20cd122f15498",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_11",
+      "name": "桃園市立圖書館觀音區各館活動",
+      "city": "桃園市",
+      "district": "觀音區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=14",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:40+08:00",
+      "completed_at": "2026-09-18T21:24:58+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:41+08:00",
+          "sha256": "877cfda68029f2cceb13454429d710262b8016407de30ec7d01943c5ffac0d02",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:41+08:00",
+          "sha256": "1159f45bab0c74ab868cc9e5d76caeed4fa735f9eecae89228b1ee6e4167dd1c",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:42+08:00",
+          "sha256": "4ebe76f89dd55862a0a7d5e19f18f482287f0f8186d37b55f280807ccd276aa7",
+          "request_form": {
+            "CurrentPage": 3
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_12",
+      "name": "桃園市立圖書館大溪區各館活動",
+      "city": "桃園市",
+      "district": "大溪區",
+      "group": "public_libraries",
+      "status": "partial",
+      "errors": [],
+      "notes": [
+        "library_detail_page_limit_reached",
+        "pages_read=10",
+        "discovered_details=9",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:48+08:00",
+      "completed_at": "2026-09-18T21:25:00+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 10,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:49+08:00",
+          "sha256": "751fe66298aaa1608e98aa052624a05bd3f52ea5cc10f147d35e2c8fc4ecdddc",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:55+08:00",
+          "sha256": "3e9e022d4a49cd4921f943b8f4bb599128ab5135dfba23249eee119b98f3b258",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_13",
+      "name": "桃園市立圖書館新屋區各館活動",
+      "city": "桃園市",
+      "district": "新屋區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=5",
+        "discovered_details=3",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:24:56+08:00",
+      "completed_at": "2026-09-18T21:24:59+08:00",
+      "tested_page_limit": 10,
+      "candidate_count": 0,
+      "successful_response_count": 5,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:24:57+08:00",
+          "sha256": "d507b91ee6f9245dc9defe6f123470e180099ce1a3ea87ea69910ef72bbfc0ae",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        },
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword=",
+          "http_status": 200,
+          "request_method": "POST",
+          "fetched_at": "2026-09-18T21:24:57+08:00",
+          "sha256": "9a00f0368bd5ab340509d3ca5c56b1686853db8619db2bb2d0603332e0630c84",
+          "request_form": {
+            "CurrentPage": 2
+          },
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    },
+    {
+      "id": "typl_district_14",
+      "name": "桃園市立圖書館復興區各館活動",
+      "city": "桃園市",
+      "district": "復興區",
+      "group": "public_libraries",
+      "status": "ok",
+      "errors": [],
+      "notes": [
+        "pages_read=1",
+        "discovered_details=0",
+        "District listing scope is not a verified event location; publisher-only bounded coverage."
+      ],
+      "coverage_complete": false,
+      "started_at": "2026-09-18T21:20:35+08:00",
+      "completed_at": "2026-09-18T21:20:35+08:00",
+      "tested_page_limit": 30,
+      "candidate_count": 0,
+      "successful_response_count": 1,
+      "entry_evidence": [
+        {
+          "url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=14&keyword=",
+          "final_url": "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=14&keyword=",
+          "http_status": 200,
+          "request_method": "GET",
+          "fetched_at": "2026-09-18T21:20:35+08:00",
+          "sha256": "1f0f2307848bc36cea935e826045ac194d943c8e2fde257c45e4504da362b317",
+          "request_headers": {
+            "X-Requested-With": "SW"
+          }
+        }
+      ],
+      "candidate_index": []
+    }
+  ]
+}

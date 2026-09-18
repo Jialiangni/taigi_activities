@@ -17,7 +17,7 @@
 | 年代售票 | 官方關鍵字搜尋頁＋完整節目索引，讀每個節目內文及場次表格 | 關鍵字搜尋偏向標題，因此索引詳情補足內文提到台語的節目；沒有結束時間就留空 |
 | 李江却基金會 | 官方 Blogger Atom feed，支援 `rel=next` 及 OpenSearch 分頁資訊 | 文章發表日期與活動日期分開；依出版者 feed 提供範圍收集 |
 | 樂暢親子共學 | 官方 Wix `blog-feed.xml` | 同上；RSS 未列出的舊文不推論已完整覆蓋 |
-| 圖書館、館舍、市府局處、民間團體 | `data/source_registry.json` 的 41 個入口；官方站內活動／消息連結發現與專頁讀取 | 通用網站收集器預設每站 30 頁、導航深度 3，翻頁不耗導航深度；PDF、圖片公告與未連出的舊資料需要另行核對 |
+| 圖書館、館舍、市府局處、民間團體 | `data/source_registry.json` 的 149 個入口；官方站內活動／消息連結發現與專頁讀取 | 通用網站收集器預設每站 30 頁、導航深度 3，翻頁不耗導航深度；PDF、圖片公告與未連出的舊資料需要另行核對 |
 | 桃園市立美術館所屬館群 | 官網首頁 `__NEXT_DATA__` 的公開 news／info 資料集，保留公告內文 | 取代只會讀到防護頁的內頁爬取；實測可解析，但首頁亦可能間歇回傳 HTTP 428，屆時標失敗並需正常瀏覽器補查 |
 | 文化部開放資料 | 依[官方介接文件](https://opendata.culture.tw/upload/dataSource/2021-02-18/9bee99c4-0732-4abd-b8c6-1a4bd0b62e64/db83c7223217e1d9947778256768153f.pdf)讀取各類別，保留 `showInfo` 各場次，依地址篩選北北桃，記錄命中的機構 | 補充上述機構與售票平台，不能保證各機構都有提供資料。`onSales=N` 不等於免費 |
 | Facebook | 授權的粉專 Graph `/feed`＋游標分頁，再依貼文文字篩選 | 指定粉專範圍；沒有全 Facebook 搜尋承諾 |
@@ -26,7 +26,7 @@
 
 票務搜尋 API 是本次從網站公開前端觀察並實測成功的網站介面，不是承諾永久穩定的第三方服務合約。格式改變、HTTP 失敗、重複頁面、缺少欄位均需處理為錯誤。
 
-41 個入口包含三市圖書館、指定館舍、局處與台語路；部分同主管機關入口涵蓋多個館舍，原機構名保留於 aliases。文化部結果的 `matched_sources` 是來源映射，不保證該機構全部活動已取得。
+149 個入口包含三市圖書館、指定館舍、局處與台語路，以及54個圖書館分區和54個活動中心公告來源；部分同主管機關入口涵蓋多個館舍，原機構名保留於 aliases。文化部結果的 `matched_sources` 是來源映射，不保證該機構全部活動已取得。
 
 ## 執行方式
 
@@ -103,7 +103,7 @@ Facebook 讀取範圍依[官方 Page feed 文件](https://developers.facebook.co
 
 ## 指定館舍與台語路補強（2026-09-18 第二輪）
 
-目前共 **50 個收集器**，registry 共 41 個入口。新增 `ntl`（國立臺灣圖書館／四號公園）、`yingge_library`、`228_national`、`dadaocheng`、`taigiloo`。`organizations` 群組可選取台語路。
+第二輪當時共 **50 個收集器**，registry 共 41 個入口。新增 `ntl`（國立臺灣圖書館／四號公園）、`yingge_library`、`228_national`、`dadaocheng`、`taigiloo`。`organizations` 群組可選取台語路。
 
 - **北美館**：使用官網 JavaScript 的公開 `POST /ashx/Event.ashx?ddlLang=zh-tw`，JSON `State=Now, JJMethod=GetEv`。檢查 Status/Data 結構，逐筆篩選完整活動內容；本次 12 筆當期公告沒有台語關鍵字，不把手語當台語。
 - **臺博館**：直接從本館、古生物館、南門館、鐵道部活動列表，跟隨官方連出的 `event.culture.tw/mocweb/reg/NTM/Detail.init.ctr` 報名頁。解析真正標題、排除「相關系列活動」污染，讀取 `viewDetail('id')` 連結但不執行網頁程式。個別場次仍需核對，不用系列首末日生成連續活動。
@@ -127,3 +127,18 @@ python3 -m crawler.collect --sources tfam,ntm,228,228_national,ceramics,sshm,ntl
 使用新預設實際重跑 MOCA、臺北文化局、新北文化局、桃園文化局，各成功讀取 30 頁且無請求錯誤；待核實候選分別為 0、1、1、0 筆。四站均達頁數上限而標 partial，沒有宣稱全站或最近三週已完整涵蓋。臺北文化局較先前 8 頁實測多取得 1 筆候選；候選仍需人工核對，不直接新增正式場次。詳見 [30 頁實測摘要](data/audit/2026-09-18-30-page-collection-report.json)。
 
 後續已完成這兩筆候選核實：臺北公告已過期，新北系列剩餘場次缺少個別台語演出證據，新增 0 場；正式清單維持 63 場與 5 項導覽／展覽資訊。[逐筆核實紀錄](data/audit/2026-09-18-30-page-review.json)獨立保存，不改寫原始收集快照。
+
+
+## 各區圖書館與活動中心擴充
+
+新增108個分區來源後，現共有158個收集器（registry149個）。名錄、方法及驗收範圍見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)。每入口預設30頁；日常排程會自動納入，無須逐一勾選。
+
+```bash
+python3 -m crawler.collect --sources public_libraries
+python3 -m crawler.collect --sources community_centers
+python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_district_14
+```
+
+臺北使用官方閱讀網的分館活動列表及數字分頁；新北使用官方行政區代碼及原表單分頁；桃園使用完整Filter欄位及CurrentPage表單。列表、詳情共用每入口30頁上限，優先讀含台語關鍵字的詳情。HTTP成功之外還會檢查桃園回傳行政區、重複列表與格式異動，避免把全市第一頁重複當作各區資料。
+
+活動中心沿各區公所公開公告收集，需同時含中心及台語相關內容；不把場地租借、管理或收費辦法認作活動，不表示該區每一場館的未公開課表都有取得。候選收集不改變公開63場活動及5項導覽資訊。

@@ -592,6 +592,2432 @@
         "官方粉專由使用者指定且官網關於頁連結確認；尚無 Meta 授權，不宣稱已取得粉專貼文。",
         "官網 RSS 未必持續更新；另以合作館舍與售票平台的官方活動公告交叉收集。"
       ]
+    },
+    {
+      "id": "tp_center_btdo",
+      "group": "community_centers",
+      "name": "臺北市北投區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "北投區",
+      "urls": [
+        "https://btdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市北投區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_sldo",
+      "group": "community_centers",
+      "name": "臺北市士林區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "士林區",
+      "urls": [
+        "https://sldo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市士林區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_zsdo",
+      "group": "community_centers",
+      "name": "臺北市中山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "中山區",
+      "urls": [
+        "https://zsdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市中山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_nhdo",
+      "group": "community_centers",
+      "name": "臺北市內湖區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "內湖區",
+      "urls": [
+        "https://nhdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市內湖區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_dtdo",
+      "group": "community_centers",
+      "name": "臺北市大同區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "大同區",
+      "urls": [
+        "https://dtdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市大同區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_ssdo",
+      "group": "community_centers",
+      "name": "臺北市松山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "松山區",
+      "urls": [
+        "https://ssdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市松山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_whdo",
+      "group": "community_centers",
+      "name": "臺北市萬華區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "萬華區",
+      "urls": [
+        "https://whdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市萬華區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_zzdo",
+      "group": "community_centers",
+      "name": "臺北市中正區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "中正區",
+      "urls": [
+        "https://zzdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市中正區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_dado",
+      "group": "community_centers",
+      "name": "臺北市大安區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "大安區",
+      "urls": [
+        "https://dado.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市大安區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_xydo",
+      "group": "community_centers",
+      "name": "臺北市信義區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "信義區",
+      "urls": [
+        "https://xydo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市信義區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_ngdo",
+      "group": "community_centers",
+      "name": "臺北市南港區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "南港區",
+      "urls": [
+        "https://ngdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市南港區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tp_center_wsdo",
+      "group": "community_centers",
+      "name": "臺北市文山區公所／活動中心公告",
+      "city": "臺北市",
+      "district": "文山區",
+      "urls": [
+        "https://wsdo.gov.taipei/"
+      ],
+      "aliases": [
+        "臺北市文山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.gov.taipei/cp.aspx?n=1F076481DD9E556B",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_banqiao",
+      "group": "community_centers",
+      "name": "新北市板橋區公所／活動中心公告",
+      "city": "新北市",
+      "district": "板橋區",
+      "urls": [
+        "https://www.banqiao.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市板橋區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_sanchong",
+      "group": "community_centers",
+      "name": "新北市三重區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三重區",
+      "urls": [
+        "https://www.sanchong.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市三重區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_zhonghe",
+      "group": "community_centers",
+      "name": "新北市中和區公所／活動中心公告",
+      "city": "新北市",
+      "district": "中和區",
+      "urls": [
+        "https://www.zhonghe.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市中和區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_yonghe",
+      "group": "community_centers",
+      "name": "新北市永和區公所／活動中心公告",
+      "city": "新北市",
+      "district": "永和區",
+      "urls": [
+        "https://www.yonghe.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市永和區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_xinzhuang",
+      "group": "community_centers",
+      "name": "新北市新莊區公所／活動中心公告",
+      "city": "新北市",
+      "district": "新莊區",
+      "urls": [
+        "https://www.xinzhuang.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市新莊區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_xindian",
+      "group": "community_centers",
+      "name": "新北市新店區公所／活動中心公告",
+      "city": "新北市",
+      "district": "新店區",
+      "urls": [
+        "https://www.xindian.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市新店區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_tucheng",
+      "group": "community_centers",
+      "name": "新北市土城區公所／活動中心公告",
+      "city": "新北市",
+      "district": "土城區",
+      "urls": [
+        "https://www.tucheng.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市土城區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_luzhou",
+      "group": "community_centers",
+      "name": "新北市蘆洲區公所／活動中心公告",
+      "city": "新北市",
+      "district": "蘆洲區",
+      "urls": [
+        "https://www.luzhou.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市蘆洲區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_xizhi",
+      "group": "community_centers",
+      "name": "新北市汐止區公所／活動中心公告",
+      "city": "新北市",
+      "district": "汐止區",
+      "urls": [
+        "https://www.xizhi.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市汐止區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_shulin",
+      "group": "community_centers",
+      "name": "新北市樹林區公所／活動中心公告",
+      "city": "新北市",
+      "district": "樹林區",
+      "urls": [
+        "https://www.shulin.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市樹林區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_yingge",
+      "group": "community_centers",
+      "name": "新北市鶯歌區公所／活動中心公告",
+      "city": "新北市",
+      "district": "鶯歌區",
+      "urls": [
+        "https://www.yingge.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市鶯歌區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_sanxia",
+      "group": "community_centers",
+      "name": "新北市三峽區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三峽區",
+      "urls": [
+        "https://www.sanxia.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市三峽區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_tamsui",
+      "group": "community_centers",
+      "name": "新北市淡水區公所／活動中心公告",
+      "city": "新北市",
+      "district": "淡水區",
+      "urls": [
+        "https://www.tamsui.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市淡水區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_ruifang",
+      "group": "community_centers",
+      "name": "新北市瑞芳區公所／活動中心公告",
+      "city": "新北市",
+      "district": "瑞芳區",
+      "urls": [
+        "https://www.ruifang.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市瑞芳區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_wugu",
+      "group": "community_centers",
+      "name": "新北市五股區公所／活動中心公告",
+      "city": "新北市",
+      "district": "五股區",
+      "urls": [
+        "https://www.wugu.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市五股區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_taishan",
+      "group": "community_centers",
+      "name": "新北市泰山區公所／活動中心公告",
+      "city": "新北市",
+      "district": "泰山區",
+      "urls": [
+        "https://www.taishan.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市泰山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_linkou",
+      "group": "community_centers",
+      "name": "新北市林口區公所／活動中心公告",
+      "city": "新北市",
+      "district": "林口區",
+      "urls": [
+        "https://www.linkou.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市林口區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_bali",
+      "group": "community_centers",
+      "name": "新北市八里區公所／活動中心公告",
+      "city": "新北市",
+      "district": "八里區",
+      "urls": [
+        "https://www.bali.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市八里區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_shenkeng",
+      "group": "community_centers",
+      "name": "新北市深坑區公所／活動中心公告",
+      "city": "新北市",
+      "district": "深坑區",
+      "urls": [
+        "https://www.shenkeng.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市深坑區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_shiding",
+      "group": "community_centers",
+      "name": "新北市石碇區公所／活動中心公告",
+      "city": "新北市",
+      "district": "石碇區",
+      "urls": [
+        "https://www.shiding.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市石碇區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_pinglin",
+      "group": "community_centers",
+      "name": "新北市坪林區公所／活動中心公告",
+      "city": "新北市",
+      "district": "坪林區",
+      "urls": [
+        "https://www.pinglin.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市坪林區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_sanzhi",
+      "group": "community_centers",
+      "name": "新北市三芝區公所／活動中心公告",
+      "city": "新北市",
+      "district": "三芝區",
+      "urls": [
+        "https://www.sanzhi.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市三芝區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_shimen",
+      "group": "community_centers",
+      "name": "新北市石門區公所／活動中心公告",
+      "city": "新北市",
+      "district": "石門區",
+      "urls": [
+        "https://www.shimen.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市石門區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_jinshan",
+      "group": "community_centers",
+      "name": "新北市金山區公所／活動中心公告",
+      "city": "新北市",
+      "district": "金山區",
+      "urls": [
+        "https://www.jinshan.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市金山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_wanli",
+      "group": "community_centers",
+      "name": "新北市萬里區公所／活動中心公告",
+      "city": "新北市",
+      "district": "萬里區",
+      "urls": [
+        "https://www.wanli.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市萬里區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_pingxi",
+      "group": "community_centers",
+      "name": "新北市平溪區公所／活動中心公告",
+      "city": "新北市",
+      "district": "平溪區",
+      "urls": [
+        "https://www.pingxi.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市平溪區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_shuangxi",
+      "group": "community_centers",
+      "name": "新北市雙溪區公所／活動中心公告",
+      "city": "新北市",
+      "district": "雙溪區",
+      "urls": [
+        "https://www.shuangxi.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市雙溪區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_gongliao",
+      "group": "community_centers",
+      "name": "新北市貢寮區公所／活動中心公告",
+      "city": "新北市",
+      "district": "貢寮區",
+      "urls": [
+        "https://www.gongliao.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市貢寮區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ntpc_center_wulai",
+      "group": "community_centers",
+      "name": "新北市烏來區公所／活動中心公告",
+      "city": "新北市",
+      "district": "烏來區",
+      "urls": [
+        "https://www.wulai.ntpc.gov.tw/"
+      ],
+      "aliases": [
+        "新北市烏來區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://www.ca.ntpc.gov.tw/home.jsp?id=98",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_tao",
+      "group": "community_centers",
+      "name": "桃園市桃園區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "桃園區",
+      "urls": [
+        "https://www.tao.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市桃園區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_zhongli",
+      "group": "community_centers",
+      "name": "桃園市中壢區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "中壢區",
+      "urls": [
+        "https://www.zhongli.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市中壢區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_pingzhen",
+      "group": "community_centers",
+      "name": "桃園市平鎮區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "平鎮區",
+      "urls": [
+        "https://www.pingzhen.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市平鎮區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_bade",
+      "group": "community_centers",
+      "name": "桃園市八德區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "八德區",
+      "urls": [
+        "https://www.bade.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市八德區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_yangmei",
+      "group": "community_centers",
+      "name": "桃園市楊梅區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "楊梅區",
+      "urls": [
+        "https://www.yangmei.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市楊梅區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_luzhu",
+      "group": "community_centers",
+      "name": "桃園市蘆竹區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "蘆竹區",
+      "urls": [
+        "https://www.luzhu.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市蘆竹區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_daxi",
+      "group": "community_centers",
+      "name": "桃園市大溪區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "大溪區",
+      "urls": [
+        "https://www.daxi.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市大溪區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_dayuan",
+      "group": "community_centers",
+      "name": "桃園市大園區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "大園區",
+      "urls": [
+        "https://www.dayuan.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市大園區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_guishan",
+      "group": "community_centers",
+      "name": "桃園市龜山區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "龜山區",
+      "urls": [
+        "https://www.guishan.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市龜山區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_longtan",
+      "group": "community_centers",
+      "name": "桃園市龍潭區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "龍潭區",
+      "urls": [
+        "https://www.longtan.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市龍潭區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_xinwu",
+      "group": "community_centers",
+      "name": "桃園市新屋區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "新屋區",
+      "urls": [
+        "https://www.xinwu.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市新屋區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_guanyin",
+      "group": "community_centers",
+      "name": "桃園市觀音區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "觀音區",
+      "urls": [
+        "https://www.guanyin.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市觀音區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "ty_center_fuxing",
+      "group": "community_centers",
+      "name": "桃園市復興區公所／活動中心公告",
+      "city": "桃園市",
+      "district": "復興區",
+      "urls": [
+        "https://www.fuxing.tycg.gov.tw/"
+      ],
+      "aliases": [
+        "桃園市復興區公所"
+      ],
+      "redirect_hosts": [],
+      "priority_terms": [
+        "活動中心",
+        "市民中心",
+        "里民中心",
+        "區民中心",
+        "社區中心"
+      ],
+      "directory_source": "https://land.tycg.gov.tw/News_Link.aspx?n=4143&sms=10099",
+      "coverage_note": "區公所公告與活動中心相關公開頁；不是每一活動中心的完整行程，租借狀態不作為活動證據。"
+    },
+    {
+      "id": "tpml_district_a",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館松山區各館活動",
+      "city": "臺北市",
+      "district": "松山區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=0CDA599F03495502&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=C19DB4301462C858&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=13F919E0D70A5C1C&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=A537217CFAB72E93&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=13701AD9036A3C8D&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "松山分館",
+        "民生分館",
+        "三民分館",
+        "中崙分館",
+        "啟明分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_b",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館信義區各館活動",
+      "city": "臺北市",
+      "district": "信義區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=89C7BECD693BB570&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=0FF09D322846DC24&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "永春分館",
+        "三興分館",
+        "六合分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_c",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館大安區各館活動",
+      "city": "臺北市",
+      "district": "大安區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=8A26D7A84A1698A8&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=4C68B9ECFDB5DE09&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=423807B68ED600E7&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=DA30A23CCB4BE5A4&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=DEFCB170BD97C47A&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "道藩分館",
+        "大安分館",
+        "延吉分館",
+        "成功分館",
+        "龍安分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_d",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館中山區各館活動",
+      "city": "臺北市",
+      "district": "中山區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=C191E73568BAB51E&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=90A6E585CDE385C4&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=DFA5DC9F97ED4BD1&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=11E5E29DBA592951&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "中山分館",
+        "長安分館",
+        "大直分館",
+        "恆安民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_e",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館中正區各館活動",
+      "city": "臺北市",
+      "district": "中正區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=3DFF12E5683E55F4&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=25B715AEF0ADC5A8&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "王貫英分館",
+        "城中分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_f",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館大同區各館活動",
+      "city": "臺北市",
+      "district": "大同區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=08A9B80C1E219522&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=4461C457DB177A4F&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=EECE4969E4C64CA4&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=C214715F03C5BD30&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "延平分館",
+        "大同分館",
+        "建成分館",
+        "蘭州民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_g",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館萬華區各館活動",
+      "city": "臺北市",
+      "district": "萬華區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=5631EFDABC442986&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=5B8197AA5783E7B9&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=EC4E126F1D95DB7E&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "龍山分館",
+        "東園分館",
+        "西園分館",
+        "萬華分館",
+        "柳鄉民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_h",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館文山區各館活動",
+      "city": "臺北市",
+      "district": "文山區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=4355269DAFEEF2F8&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=A5732C996BC96A91&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=B1FC0BC83B6BAB32&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=7CCBBE8FD8196948&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=EE2B70F225B6B765&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=9CBC8F595576EF9A&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=9556DB07F3E18FB3&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=B3AEBB9570E25492&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=8360C07124C8D764&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "景美分館",
+        "木柵分館",
+        "永建分館",
+        "萬興分館",
+        "文山分館",
+        "力行分館",
+        "景新分館",
+        "安康民眾閱覽室",
+        "萬芳民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_i",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館南港區各館活動",
+      "city": "臺北市",
+      "district": "南港區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=0CD52449194E7CAA&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=21A321E81E1AD983&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "南港分館",
+        "舊莊分館",
+        "龍華民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_j",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館內湖區各館活動",
+      "city": "臺北市",
+      "district": "內湖區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=3703DABE8D817F11&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=8272E4F08602E26B&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=A518747EFB971FC7&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "內湖分館",
+        "東湖分館",
+        "西湖分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_k",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館士林區各館活動",
+      "city": "臺北市",
+      "district": "士林區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=B892A2F0FA7E99E5&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=87BC96321BA95EF4&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=6F5191773AA948C4&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "葫蘆堵分館",
+        "天母分館",
+        "士林分館"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "tpml_district_l",
+      "group": "public_libraries",
+      "name": "臺北市立圖書館北投區各館活動",
+      "city": "臺北市",
+      "district": "北投區",
+      "urls": [
+        "https://reading.tpml.gov.taipei/News.aspx?n=DAD93C3C71996A94&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=140CAC4196B3B518&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=9B89660A10708D3D&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=C43A67D69269FE4B&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=C4099636485E36B3&sms=9D72E82EC16F3E64",
+        "https://reading.tpml.gov.taipei/News.aspx?n=7E41DA7FC8DE07FF&sms=9D72E82EC16F3E64"
+      ],
+      "aliases": [
+        "北投分館",
+        "稻香分館",
+        "石牌分館",
+        "清江分館",
+        "吉利分館",
+        "永明民眾閱覽室",
+        "秀山民眾閱覽室"
+      ],
+      "redirect_hosts": [
+        "tpml.gov.taipei"
+      ],
+      "collector": "library_listing",
+      "listing_type": "taipei",
+      "directory_source": "https://reading.tpml.gov.taipei/Content_List.aspx?n=99FE082EB4C0BDA5"
+    },
+    {
+      "id": "ntpclib_district_249",
+      "group": "public_libraries",
+      "name": "新北市立圖書館八里區各館活動",
+      "city": "新北市",
+      "district": "八里區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=249"
+      ],
+      "aliases": [
+        "新北市立圖書館八里區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "249",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_252",
+      "group": "public_libraries",
+      "name": "新北市立圖書館三芝區各館活動",
+      "city": "新北市",
+      "district": "三芝區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=252"
+      ],
+      "aliases": [
+        "新北市立圖書館三芝區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "252",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_241",
+      "group": "public_libraries",
+      "name": "新北市立圖書館三重區各館活動",
+      "city": "新北市",
+      "district": "三重區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=241"
+      ],
+      "aliases": [
+        "新北市立圖書館三重區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "241",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_237",
+      "group": "public_libraries",
+      "name": "新北市立圖書館三峽區各館活動",
+      "city": "新北市",
+      "district": "三峽區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=237"
+      ],
+      "aliases": [
+        "新北市立圖書館三峽區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "237",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_236",
+      "group": "public_libraries",
+      "name": "新北市立圖書館土城區各館活動",
+      "city": "新北市",
+      "district": "土城區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=236"
+      ],
+      "aliases": [
+        "新北市立圖書館土城區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "236",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_235",
+      "group": "public_libraries",
+      "name": "新北市立圖書館中和區各館活動",
+      "city": "新北市",
+      "district": "中和區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=235"
+      ],
+      "aliases": [
+        "新北市立圖書館中和區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "235",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_248",
+      "group": "public_libraries",
+      "name": "新北市立圖書館五股區各館活動",
+      "city": "新北市",
+      "district": "五股區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=248"
+      ],
+      "aliases": [
+        "新北市立圖書館五股區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "248",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_226",
+      "group": "public_libraries",
+      "name": "新北市立圖書館平溪區各館活動",
+      "city": "新北市",
+      "district": "平溪區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=226"
+      ],
+      "aliases": [
+        "新北市立圖書館平溪區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "226",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_234",
+      "group": "public_libraries",
+      "name": "新北市立圖書館永和區各館活動",
+      "city": "新北市",
+      "district": "永和區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=234"
+      ],
+      "aliases": [
+        "新北市立圖書館永和區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "234",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_253",
+      "group": "public_libraries",
+      "name": "新北市立圖書館石門區各館活動",
+      "city": "新北市",
+      "district": "石門區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=253"
+      ],
+      "aliases": [
+        "新北市立圖書館石門區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "253",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_223",
+      "group": "public_libraries",
+      "name": "新北市立圖書館石碇區各館活動",
+      "city": "新北市",
+      "district": "石碇區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=223"
+      ],
+      "aliases": [
+        "新北市立圖書館石碇區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "223",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_221",
+      "group": "public_libraries",
+      "name": "新北市立圖書館汐止區各館活動",
+      "city": "新北市",
+      "district": "汐止區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=221"
+      ],
+      "aliases": [
+        "新北市立圖書館汐止區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "221",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_232",
+      "group": "public_libraries",
+      "name": "新北市立圖書館坪林區各館活動",
+      "city": "新北市",
+      "district": "坪林區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=232"
+      ],
+      "aliases": [
+        "新北市立圖書館坪林區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "232",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_244",
+      "group": "public_libraries",
+      "name": "新北市立圖書館林口區各館活動",
+      "city": "新北市",
+      "district": "林口區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=244"
+      ],
+      "aliases": [
+        "新北市立圖書館林口區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "244",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_220",
+      "group": "public_libraries",
+      "name": "新北市立圖書館板橋區各館活動",
+      "city": "新北市",
+      "district": "板橋區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=220"
+      ],
+      "aliases": [
+        "新北市立圖書館板橋區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "220",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_208",
+      "group": "public_libraries",
+      "name": "新北市立圖書館金山區各館活動",
+      "city": "新北市",
+      "district": "金山區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=208"
+      ],
+      "aliases": [
+        "新北市立圖書館金山區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "208",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_243",
+      "group": "public_libraries",
+      "name": "新北市立圖書館泰山區各館活動",
+      "city": "新北市",
+      "district": "泰山區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=243"
+      ],
+      "aliases": [
+        "新北市立圖書館泰山區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "243",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_233",
+      "group": "public_libraries",
+      "name": "新北市立圖書館烏來區各館活動",
+      "city": "新北市",
+      "district": "烏來區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=233"
+      ],
+      "aliases": [
+        "新北市立圖書館烏來區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "233",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_228",
+      "group": "public_libraries",
+      "name": "新北市立圖書館貢寮區各館活動",
+      "city": "新北市",
+      "district": "貢寮區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=228"
+      ],
+      "aliases": [
+        "新北市立圖書館貢寮區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "228",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_251",
+      "group": "public_libraries",
+      "name": "新北市立圖書館淡水區各館活動",
+      "city": "新北市",
+      "district": "淡水區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=251"
+      ],
+      "aliases": [
+        "新北市立圖書館淡水區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "251",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_222",
+      "group": "public_libraries",
+      "name": "新北市立圖書館深坑區各館活動",
+      "city": "新北市",
+      "district": "深坑區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=222"
+      ],
+      "aliases": [
+        "新北市立圖書館深坑區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "222",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_231",
+      "group": "public_libraries",
+      "name": "新北市立圖書館新店區各館活動",
+      "city": "新北市",
+      "district": "新店區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=231"
+      ],
+      "aliases": [
+        "新北市立圖書館新店區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "231",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_242",
+      "group": "public_libraries",
+      "name": "新北市立圖書館新莊區各館活動",
+      "city": "新北市",
+      "district": "新莊區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=242"
+      ],
+      "aliases": [
+        "新北市立圖書館新莊區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "242",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_224",
+      "group": "public_libraries",
+      "name": "新北市立圖書館瑞芳區各館活動",
+      "city": "新北市",
+      "district": "瑞芳區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=224"
+      ],
+      "aliases": [
+        "新北市立圖書館瑞芳區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "224",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_207",
+      "group": "public_libraries",
+      "name": "新北市立圖書館萬里區各館活動",
+      "city": "新北市",
+      "district": "萬里區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=207"
+      ],
+      "aliases": [
+        "新北市立圖書館萬里區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "207",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_238",
+      "group": "public_libraries",
+      "name": "新北市立圖書館樹林區各館活動",
+      "city": "新北市",
+      "district": "樹林區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=238"
+      ],
+      "aliases": [
+        "新北市立圖書館樹林區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "238",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_227",
+      "group": "public_libraries",
+      "name": "新北市立圖書館雙溪區各館活動",
+      "city": "新北市",
+      "district": "雙溪區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=227"
+      ],
+      "aliases": [
+        "新北市立圖書館雙溪區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "227",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_247",
+      "group": "public_libraries",
+      "name": "新北市立圖書館蘆洲區各館活動",
+      "city": "新北市",
+      "district": "蘆洲區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=247"
+      ],
+      "aliases": [
+        "新北市立圖書館蘆洲區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "247",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "ntpclib_district_239",
+      "group": "public_libraries",
+      "name": "新北市立圖書館鶯歌區各館活動",
+      "city": "新北市",
+      "district": "鶯歌區",
+      "urls": [
+        "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo?area=239"
+      ],
+      "aliases": [
+        "新北市立圖書館鶯歌區"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "new_taipei",
+      "area_code": "239",
+      "directory_source": "https://www.library.ntpc.gov.tw/multiplehtml/ActvInfo",
+      "directory_checked_at": "2026-09-18",
+      "coverage_note": "區域篩選包含該區所有館別；資料取自同日較早成功回應，新增時端點HTTP502，需保留失敗狀態。"
+    },
+    {
+      "id": "typl_district_2",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館桃園區各館活動",
+      "city": "桃園市",
+      "district": "桃園區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=2.1&keyword="
+      ],
+      "aliases": [
+        "大林分館",
+        "會稽分館",
+        "埔子分館",
+        "中路分館",
+        "文化局分館",
+        "寶興閱覽室",
+        "總館",
+        "全自動借書站"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "2",
+        "1"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_3",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館中壢區各館活動",
+      "city": "桃園市",
+      "district": "中壢區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=3&keyword="
+      ],
+      "aliases": [
+        "青埔智慧科技分館",
+        "中壢分館",
+        "內壢分館",
+        "龍岡分館",
+        "自強分館",
+        "中華閱覽室"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "3"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_4",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館蘆竹區各館活動",
+      "city": "桃園市",
+      "district": "蘆竹區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=4&keyword="
+      ],
+      "aliases": [
+        "蘆竹分館",
+        "大竹分館",
+        "南崁分館",
+        "山腳分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "4"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_5",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館龍潭區各館活動",
+      "city": "桃園市",
+      "district": "龍潭區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=5&keyword="
+      ],
+      "aliases": [
+        "龍潭分館",
+        "龍潭閱覽室"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "5"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_6",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館龜山區各館活動",
+      "city": "桃園市",
+      "district": "龜山區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=6&keyword="
+      ],
+      "aliases": [
+        "龜山分館",
+        "迴龍分館",
+        "大崗分館",
+        "山德分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "6"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_7",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館平鎮區各館活動",
+      "city": "桃園市",
+      "district": "平鎮區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=7&keyword="
+      ],
+      "aliases": [
+        "平鎮分館",
+        "東勢分館",
+        "山仔頂分館",
+        "義民分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "7"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_8",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館八德區各館活動",
+      "city": "桃園市",
+      "district": "八德區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=8&keyword="
+      ],
+      "aliases": [
+        "大湳分館",
+        "兒童玩具圖書館",
+        "景雲分館",
+        "八德分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "8"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_9",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館楊梅區各館活動",
+      "city": "桃園市",
+      "district": "楊梅區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=9&keyword="
+      ],
+      "aliases": [
+        "楊梅分館",
+        "埔心分館",
+        "富岡分館",
+        "紅梅分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "9"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_10",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館大園區各館活動",
+      "city": "桃園市",
+      "district": "大園區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=10&keyword="
+      ],
+      "aliases": [
+        "大園分館",
+        "三和分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "10"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_11",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館觀音區各館活動",
+      "city": "桃園市",
+      "district": "觀音區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=11&keyword="
+      ],
+      "aliases": [
+        "觀音分館",
+        "草漯分館",
+        "新坡分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "11"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_12",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館大溪區各館活動",
+      "city": "桃園市",
+      "district": "大溪區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=12&keyword="
+      ],
+      "aliases": [
+        "大溪分館",
+        "崎頂分館(閉館中)",
+        "康莊分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "12"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_13",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館新屋區各館活動",
+      "city": "桃園市",
+      "district": "新屋區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=13&keyword="
+      ],
+      "aliases": [
+        "新屋分館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "13"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
+    },
+    {
+      "id": "typl_district_14",
+      "group": "public_libraries",
+      "name": "桃園市立圖書館復興區各館活動",
+      "city": "桃園市",
+      "district": "復興區",
+      "urls": [
+        "https://www.typl.gov.tw/zh-tw/Activity?Filter%5B0%5D=&Filter%5B1%5D=&Filter%5B2%5D=&Filter%5B3%5D=&Filter%5B4%5D=14&keyword="
+      ],
+      "aliases": [
+        "復興區立圖書館"
+      ],
+      "redirect_hosts": [],
+      "collector": "library_listing",
+      "listing_type": "taoyuan",
+      "area_codes": [
+        "14"
+      ],
+      "directory_source": "https://www.typl.gov.tw/zh-tw/Home/GetVenues"
     }
   ]
 }

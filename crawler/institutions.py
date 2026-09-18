@@ -18,7 +18,8 @@ class InstitutionCrawler(Collector):
         self.keywords, self.max_pages = keywords or KEYWORDS, max_pages
 
     def collect(self, client):
+        from .library_sources import LibraryListingCrawler
         from .sources.tmofa import TmofaCrawler
         from .sources.tfam import TfamCrawler
-        return [(TfamCrawler(self.keywords) if spec['id'] == 'tfam' else TmofaCrawler(self.keywords) if spec['id'] == 'tmofa' else WebsiteCrawler(spec, self.keywords, self.max_pages)).collect(client)
+        return [(TfamCrawler(self.keywords) if spec['id'] == 'tfam' else TmofaCrawler(self.keywords) if spec['id'] == 'tmofa' else (LibraryListingCrawler if spec.get('collector') == 'library_listing' else WebsiteCrawler)(spec, self.keywords, self.max_pages)).collect(client)
                 for spec in registry() if spec['group'] == self.group]

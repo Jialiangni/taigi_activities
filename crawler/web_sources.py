@@ -5,12 +5,12 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlsplit, urljoin, parse_qs, urlencode, urlunsplit
 from .collection import Collector, CollectionError, Document, Result, candidate, relevant, plain, canonical
 
-NAV = re.compile(r'活動|導覽|語音|展覽|特展|最新消息|新聞|藝文|展演|教育推廣|故事|訊息|消息|公告|下一頁|下頁|更多|next|news|event|activity', re.I)
+NAV = re.compile(r'活動|課程|研習|導覽|語音|展覽|特展|最新消息|新聞|藝文|展演|教育推廣|故事|訊息|消息|公告|下一頁|下頁|更多|next|news|event|activity', re.I)
 BAD = re.compile(r'登入|註冊|隱私|採購|招標|徵才|決算|預算|人事|無障礙|列印|網站導覽|網站連結')
 
 DETAIL = re.compile(r'News_Content|/(?:Event|News)_page\.aspx|/Exhibition_(?:page|Special)\.aspx|'
                     r'/ExhibitionAndEvent/Info/|/Content/\d|/post/|/\d{4}/\d{2}/|'
-                    r'/mocweb/reg/[^/]+/Detail\.init\.ctr|/blog/articles/|/wSite/ct\?|/x(?:mdoc|ceventsnews)/cont\?|[?&](?:sid|s|cntId|xItem)=', re.I)
+                    r'/mocweb/reg/[^/]+/Detail\.init\.ctr|/blog/articles/|/wSite/ct\?|/x(?:mdoc|ceventsnews)/cont\?|[?&](?:sid|s|cntId|xItem|dataserno)=', re.I)
 
 
 def culture_portal_detail(doc, url):
@@ -142,7 +142,7 @@ class WebsiteCrawler(Collector):
                 if is_portal:
                     title, body, extra_links = culture_portal_detail(doc, ev['final_url'])
                 # Many government templates use h1 for the agency logo; retain the actual listing headline.
-                if not is_portal and link_title and relevant(link_title, self.keywords):
+                if not is_portal and link_title and (relevant(link_title, self.keywords) or self.spec.get('group') == 'community_centers'):
                     title = link_title
                 if re.search(r'Just a moment|Access Denied|驗證您是人類', title, re.I):
                     raise CollectionError('blocked_page')
@@ -155,7 +155,12 @@ class WebsiteCrawler(Collector):
                     title = page['title']
                 alias_text = title if self.spec.get('alias_in_title') else title + ' ' + body
                 alias_ok = not self.spec.get('require_alias') or any(a in alias_text for a in self.spec['aliases'])
-                if is_detail and alias_ok and relevant(title + ' ' + body, self.keywords):
+                center_ok = True
+                if self.spec.get('group') == 'community_centers':
+                    center_ok = any(term in body + title for term in ('活動中心', '市民中心', '區民中心', '里民中心', '社區中心'))
+                    if re.search(r'租借辦法|使用管理|收費標準|場地租借|場地借用|開放時間', title) and not relevant(title, self.keywords):
+                        center_ok = False
+                if is_detail and alias_ok and center_ok and relevant(title + ' ' + body, self.keywords):
                     result.candidates.append(candidate(self.spec['id'], ev['final_url'], title, body[:30000], ev,
                         {'start_time': None, 'end_time': None, 'is_free': None},
                         kind=page.get('kind', 'announcement'),
@@ -163,12 +168,13 @@ class WebsiteCrawler(Collector):
                 if depth >= 3:
                     continue
                 for target, label, node in list(doc.links(ev['final_url'])) + extra_links:
+                    label = label or node.attrs.get('title', '') or node.attrs.get('aria-label', '')
                     # Some official pages still publish HTTP links to their own HTTPS host.
                     if target.startswith('http://') and urlsplit(target).hostname in allowed:
                         target = 'https://' + target[len('http://'):]
                     if target in scheduled or urlsplit(target).hostname not in allowed or BAD.search(label):
                         continue
-                    if re.search(r'/pageutil/download|\.(?:pdf|jpg|png|zip|docx?|xlsx?|mp4|css|js)(?:\?|$)', target, re.I):
+                    if re.search(r'/pageutil/download|/uploaddowndoc|\.(?:pdf|jpg|png|zip|docx?|xlsx?|mp4|css|js)(?:[?&]|$)', target, re.I):
                         continue
                     match = relevant(label, self.keywords)
                     nav = NAV.search(label)

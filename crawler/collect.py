@@ -8,6 +8,7 @@ from .collection import Client, CollectionError, Result, KEYWORDS, TAIPEI
 from .culture import CultureCrawler
 from .institutions import registry
 from .web_sources import WebsiteCrawler
+from .library_sources import LibraryListingCrawler
 from .sources.accupass import AccupassCrawler
 from .sources.opentix import OpentixCrawler
 from .sources.eraticket import EraTicketCrawler
@@ -37,11 +38,12 @@ def collectors(config, selected=None):
         'le_chang': LeChangCrawler(keywords, limits.get('feed_pages', 5)),
     }
     for spec in definitions:
-        sources[spec['id']] = WebsiteCrawler(spec, keywords, limits.get('website_pages', 30))
+        cls = LibraryListingCrawler if spec.get('collector') == 'library_listing' else WebsiteCrawler
+        sources[spec['id']] = cls(spec, keywords, limits.get('website_pages', 30))
     sources['tmofa'] = TmofaCrawler(keywords)
     sources['tfam'] = TfamCrawler(keywords)
     requested = set(selected or sources)
-    for group in ('public_libraries', 'museums', 'government', 'organizations'):
+    for group in ('public_libraries', 'museums', 'government', 'organizations', 'community_centers'):
         if group in requested:
             requested.remove(group)
             requested.update(s['id'] for s in definitions if s['group'] == group)
