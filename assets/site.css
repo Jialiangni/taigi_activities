@@ -28,6 +28,9 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 .select-filters label{font-size:13px}
 .filter-row .pill .badge-city{background:transparent;padding:0}
 @media(min-width:701px){
+  .filter-label,.month-filter-label{flex:0 0 42px}
+  .month-options{padding:3px 0}
+  .filter-row .pill[data-value=all],.month-options .pill[data-month=all]{width:52px;flex:0 0 52px;justify-content:center}
   .controls-container>.select-filters{grid-template-columns:repeat(3,max-content);gap:16px;justify-content:start}
   .controls-container>.select-filters label{flex-direction:row;align-items:center;gap:8px;white-space:nowrap}
   .controls-container>.select-filters select{width:112px;flex:0 0 112px}
@@ -51,17 +54,14 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
   .view-switchers{display:none}
   .filter-row{display:grid;grid-template-columns:30px 52px repeat(3,minmax(0,1fr));gap:6px;padding:2px 0}
   .filter-label{display:block;min-width:0;padding:0}
-  .filter-row .pill{flex:1;min-width:0;justify-content:center;padding:8px 4px;border-radius:12px;min-height:44px;background:var(--bg-card)}
-  .filter-row .pill[aria-pressed=true]{background:var(--primary);color:var(--inverse)}
-  .filter-row .pill[aria-pressed=true] .badge-city{background:transparent;color:inherit}
+  .filter-row .pill{flex:1;min-width:0;justify-content:center;padding:8px 4px;border-radius:12px;min-height:44px;background:transparent}
   .month-filter{gap:6px}
   .month-filter-label{min-width:30px;flex:0 0 30px;padding:0}
   .month-help{display:none}
   .month-options{gap:6px;padding:2px 0;scrollbar-width:none}
   .month-options::-webkit-scrollbar{display:none}
-  .month-options .pill{min-height:44px;padding:8px 12px;background:var(--bg-card);border-radius:12px}
+  .month-options .pill{min-height:44px;padding:8px 12px;background:transparent;border-radius:12px}
   .month-options .pill[data-month=all]{flex:0 0 52px;justify-content:center}
-  .month-options .pill[aria-pressed=true]{background:var(--primary);color:var(--inverse)}
   .mobile-filter-button{display:flex;align-items:center;gap:8px;min-height:44px;width:100%;padding:8px 13px;border:1px solid var(--border-color);border-radius:12px;background:transparent;font-size:13px;text-align:left}
   .mobile-filter-button>span:last-child{margin-left:auto;font-size:20px;line-height:1}
   #mobileFilterCount:not(:empty){display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:50%;background:var(--primary);color:var(--inverse);font-size:12px}
@@ -93,7 +93,6 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
   .modal-desc,.info-row{font-size:15px}
   .filter-modal .select-filters{gap:8px}
   .filter-modal .select-filters label{font-size:13px}
-.filter-row .pill .badge-city{background:transparent;padding:0}
   .filter-modal select{min-height:48px;padding-left:18px;padding-right:18px;font-size:13px}
   .filter-modal .modal-content{padding-top:8px}
   .settings-options{gap:24px}
@@ -119,3 +118,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 }
 @keyframes sheet-enter{from{transform:translateY(28px);opacity:.5}to{transform:translateY(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.modal-dialog{animation:none}}
+
+/* Share the persistent selected state across desktop and touch layouts. */
+.filter-row .pill[aria-pressed=true],.month-options .pill[aria-pressed=true]{background:var(--primary);color:var(--inverse)}
+.filter-row .pill[aria-pressed=true] .badge-city{background:transparent;color:inherit}
