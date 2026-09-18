@@ -53,7 +53,7 @@ if (data.length) {
 }
 // Month selection is a union of year-months, intersected with all other filters.
 run('renderMonthFilters()');
-assert.match(element('monthFilterOptions').innerHTML, /攏總月份/);
+assert.match(element('monthFilterOptions').innerHTML, /攏總/);
 const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();
 for (const key of monthKeys) assert.ok(element('monthFilterOptions').innerHTML.includes(key));
 if (monthKeys.length) {

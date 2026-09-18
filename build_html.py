@@ -362,7 +362,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderMonthFilters() {{
       const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
       document.getElementById('monthFilterOptions').innerHTML =
-        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">攏總月份</button>` +
+        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">攏總</button>` +
         months.map(month => `<button class="pill ${{selectedMonths.has(month) ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonths.has(month)}}" onclick="toggleMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
     }}
 
@@ -442,7 +442,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderAll() {{
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
-      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總月份';
+      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總';
 
       renderGrid(filtered);
       renderAgenda(filtered);
