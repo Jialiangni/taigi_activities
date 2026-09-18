@@ -54,7 +54,11 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 .filter-sheet-actions .btn{min-height:48px}
 .filter-sheet-actions .btn-primary{flex:1}
 .select-filters label{font-size:13px}
-@media(min-width:701px){.controls-container>.select-filters{grid-template-columns:repeat(3,minmax(0,112px));gap:8px;justify-content:start}}
+@media(min-width:701px){
+  .controls-container>.select-filters{grid-template-columns:repeat(3,max-content);gap:16px;justify-content:start}
+  .controls-container>.select-filters label{flex-direction:row;align-items:center;gap:8px;white-space:nowrap}
+  .controls-container>.select-filters select{width:112px;flex:0 0 112px}
+}
 
 /* Phone shell: compact header, quick filters and thumb-reachable navigation. */
 @media(max-width:700px){
@@ -340,7 +344,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 01:09:48（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 01:13:13（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
