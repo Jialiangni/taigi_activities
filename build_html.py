@@ -1,6 +1,6 @@
 """
 Single-file HTML Builder for Taigi Activities Calendar
-Compiles activities into a self-contained index.html with ultra-rich UI
+Compiles activities into an iPhone-optimized and responsive standalone index.html
 """
 import json
 import os
@@ -25,17 +25,27 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>北北桃台語活動行事曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
   <meta name="description" content="全台最完整的北北桃台語活動行事曆！彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。整合李江却基金會、樂暢、市立圖書館、OPENTIX 兩廳院、年代售票、Accupass、FB、IG、Threads 與 Google 日曆。">
+  
+  <!-- iOS iPhone Web App (PWA) 專用優化標籤 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="台語活動日曆">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#C84C32">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23C84C32'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🎭</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {{
-      --font-main: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-display: 'Outfit', 'Noto Sans TC', sans-serif;
+      --font-main: -apple-system, BlinkMacSystemFont, 'Noto Sans TC', 'SF Pro Text', 'PingFang TC', Roboto, sans-serif;
+      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Noto Sans TC', sans-serif;
       
       /* Colors */
       --bg-main: #F8F9FA;
@@ -64,30 +74,33 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       --accent-amber: #D97706; /* 陽光金橙 */
       --accent-amber-light: #FEF3C7;
       
-      --accent-violet: #7C3AED; /* 藝文紫 */
+      --accent-violet: #7C3AED;
       --accent-violet-light: #EDE9FE;
 
-      --accent-blue: #2563EB;
-      --accent-blue-light: #DBEAFE;
-      
       --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
       --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 20px;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
       --radius-full: 9999px;
+      
+      /* Safe area insets for iPhone */
+      --sat: env(safe-area-inset-top, 0px);
+      --sab: env(safe-area-inset-bottom, 0px);
+      --sal: env(safe-area-inset-left, 0px);
+      --sar: env(safe-area-inset-right, 0px);
     }}
 
     [data-theme="dark"] {{
-      --bg-main: #0F172A;
+      --bg-main: #0B1120;
       --bg-card: #1E293B;
       --bg-surface: #1E293B;
       --bg-hover: #334155;
       --border-color: #334155;
       --border-focus: #E05A47;
       
-      --text-main: #F1F5F9;
+      --text-main: #F8FAFC;
       --text-muted: #94A3B8;
       --text-light: #64748B;
       
@@ -104,12 +117,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       --accent-amber: #FBBF24;
       --accent-amber-light: rgba(251, 191, 36, 0.15);
       
-      --accent-violet: #A78BFA;
-      --accent-violet-light: rgba(167, 139, 250, 0.15);
-      
-      --accent-blue: #60A5FA;
-      --accent-blue-light: rgba(96, 165, 250, 0.15);
-      
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
       --shadow-md: 0 4px 14px rgba(0,0,0,0.4);
       --shadow-lg: 0 12px 36px rgba(0,0,0,0.6);
@@ -119,37 +126,61 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }}
 
     body {{
       font-family: var(--font-main);
       background-color: var(--bg-main);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.5;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      padding-bottom: calc(var(--sab) + 70px);
       transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
     }}
 
+    /* iOS PWA Install Banner */
+    .ios-install-banner {{
+      display: none;
+      background: linear-gradient(135deg, #1E293B, #0F172A);
+      color: #FFFFFF;
+      padding: 0.65rem 1rem;
+      font-size: 0.82rem;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }}
+
+    .ios-install-banner.show {{
+      display: flex;
+    }}
+
+    .ios-banner-text {{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }}
+
+    .ios-banner-close {{
+      background: none;
+      border: none;
+      color: #94A3B8;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 0 0.5rem;
+    }}
+
+    /* Header & Hero */
     header.hero-header {{
       background: linear-gradient(135deg, #1E293B 0%, #0F172A 60%, #1D3557 100%);
       color: #FFFFFF;
-      padding: 2.5rem 1.5rem 2rem;
+      padding: calc(var(--sat) + 1.25rem) 1.25rem 1.5rem;
       position: relative;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }}
-
-    header.hero-header::before {{
-      content: "";
-      position: absolute;
-      top: -50%;
-      right: -10%;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(200, 76, 50, 0.25) 0%, transparent 70%);
-      pointer-events: none;
     }}
 
     .container {{
@@ -162,40 +193,41 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.75rem;
     }}
 
     .brand {{
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 0.75rem;
     }}
 
     .brand-icon {{
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
       background: var(--primary);
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       box-shadow: 0 4px 12px var(--primary-glow);
+      flex-shrink: 0;
     }}
 
     .brand-titles h1 {{
-      font-size: 1.65rem;
+      font-size: 1.45rem;
       font-weight: 800;
       letter-spacing: -0.5px;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.4rem;
     }}
 
     .brand-titles p {{
-      font-size: 0.92rem;
+      font-size: 0.82rem;
       color: #CBD5E1;
       font-weight: 500;
     }}
@@ -203,33 +235,34 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .header-actions {{
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      gap: 0.5rem;
     }}
 
     .btn {{
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.55rem 1.1rem;
-      font-size: 0.88rem;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
       font-weight: 600;
       border-radius: var(--radius-full);
       border: 1px solid transparent;
       cursor: pointer;
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       text-decoration: none;
+      user-select: none;
+    }}
+
+    .btn:active {{
+      transform: scale(0.96);
     }}
 
     .btn-light {{
       background: rgba(255, 255, 255, 0.12);
       color: #FFFFFF;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-color: rgba(255, 255, 255, 0.2);
-    }}
-    .btn-light:hover {{
-      background: rgba(255, 255, 255, 0.22);
-      transform: translateY(-1px);
     }}
 
     .btn-primary {{
@@ -237,14 +270,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       color: #FFFFFF;
       box-shadow: 0 4px 12px var(--primary-glow);
     }}
-    .btn-primary:hover {{
-      background: var(--primary-hover);
-      transform: translateY(-1px);
-    }}
 
     .btn-icon {{
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       padding: 0;
       display: flex;
       align-items: center;
@@ -255,30 +284,30 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     /* Stat Badges */
     .hero-stats {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 0.75rem;
-      margin-top: 1.25rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.5rem;
+      margin-top: 0.85rem;
     }}
 
     .stat-card {{
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-md);
-      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      padding: 0.55rem 0.65rem;
       display: flex;
       flex-direction: column;
+      text-align: center;
     }}
 
     .stat-card .label {{
-      font-size: 0.75rem;
+      font-size: 0.68rem;
       color: #94A3B8;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      white-space: nowrap;
     }}
 
     .stat-card .val {{
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       font-weight: 800;
       color: #FFFFFF;
       font-family: var(--font-display);
@@ -295,31 +324,29 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .controls-container {{
-      padding: 1rem 1.5rem;
+      padding: 0.75rem 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
+      gap: 0.65rem;
     }}
 
     .controls-row-1 {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.75rem;
     }}
 
     .search-box {{
       position: relative;
       flex: 1;
-      min-width: 280px;
-      max-width: 500px;
+      width: 100%;
     }}
 
     .search-box input {{
       width: 100%;
-      padding: 0.65rem 1rem 0.65rem 2.6rem;
-      font-size: 0.92rem;
+      padding: 0.6rem 1rem 0.6rem 2.4rem;
+      font-size: 0.9rem;
       border: 1.5px solid var(--border-color);
       border-radius: var(--radius-full);
       background: var(--bg-main);
@@ -335,7 +362,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     .search-box svg {{
       position: absolute;
-      left: 0.9rem;
+      left: 0.85rem;
       top: 50%;
       transform: translateY(-50%);
       color: var(--text-muted);
@@ -345,15 +372,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .view-switchers {{
       display: flex;
       background: var(--bg-main);
-      padding: 4px;
+      padding: 3px;
       border-radius: var(--radius-full);
       border: 1px solid var(--border-color);
       gap: 2px;
+      flex-shrink: 0;
     }}
 
     .view-btn {{
-      padding: 0.4rem 0.9rem;
-      font-size: 0.85rem;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.82rem;
       font-weight: 600;
       border: none;
       background: transparent;
@@ -362,7 +390,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.3rem;
       transition: all 0.2s;
     }}
 
@@ -372,24 +400,24 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       box-shadow: var(--shadow-sm);
     }}
 
-    /* Filters Pill Group */
-    .filter-pills-row {{
+    /* Scrollable Filter Pill Rows for iPhone */
+    .filter-pills-scroll {{
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      overflow-x: auto;
+      gap: 0.45rem;
       align-items: center;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
     }}
 
-    .filter-label {{
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--text-muted);
-      margin-right: 0.25rem;
+    .filter-pills-scroll::-webkit-scrollbar {{
+      display: none;
     }}
 
     .pill {{
-      padding: 0.35rem 0.8rem;
-      font-size: 0.82rem;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.8rem;
       font-weight: 600;
       border-radius: var(--radius-full);
       border: 1px solid var(--border-color);
@@ -400,12 +428,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       user-select: none;
       display: inline-flex;
       align-items: center;
-      gap: 0.3rem;
+      gap: 0.25rem;
+      white-space: nowrap;
+      flex-shrink: 0;
     }}
 
-    .pill:hover {{
-      border-color: var(--primary);
-      color: var(--primary);
+    .pill:active {{
+      transform: scale(0.95);
     }}
 
     .pill.active {{
@@ -416,10 +445,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .pill-count {{
-      background: rgba(0,0,0,0.1);
-      padding: 1px 6px;
+      background: rgba(0,0,0,0.08);
+      padding: 1px 5px;
       border-radius: 10px;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       margin-left: 2px;
     }}
 
@@ -429,7 +458,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     /* Main Content Area */
     main.main-content {{
-      padding: 2rem 1.5rem;
+      padding: 1.25rem 1.25rem;
       flex: 1;
     }}
 
@@ -437,9 +466,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }}
 
     .filter-summary strong {{
@@ -450,8 +479,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     /* Card Grid View */
     .events-grid {{
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
     }}
 
     .event-card {{
@@ -466,14 +495,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       cursor: pointer;
     }}
 
-    .event-card:hover {{
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary);
+    .event-card:active {{
+      transform: scale(0.985);
     }}
 
     .card-cover {{
-      height: 180px;
+      height: 170px;
       width: 100%;
       background: #E2E8F0;
       position: relative;
@@ -484,36 +511,30 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.4s ease;
-    }}
-
-    .event-card:hover .card-cover img {{
-      transform: scale(1.05);
     }}
 
     .card-badges-top {{
       position: absolute;
-      top: 0.75rem;
-      left: 0.75rem;
+      top: 0.65rem;
+      left: 0.65rem;
       display: flex;
-      gap: 0.4rem;
+      gap: 0.35rem;
       flex-wrap: wrap;
     }}
 
     .badge {{
-      padding: 0.25rem 0.65rem;
+      padding: 0.2rem 0.6rem;
       border-radius: var(--radius-full);
       font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 0.3px;
       backdrop-filter: blur(8px);
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
+      gap: 0.2rem;
     }}
 
     .badge-city {{
-      background: rgba(30, 41, 59, 0.85);
+      background: rgba(30, 41, 59, 0.88);
       color: #FFFFFF;
     }}
 
@@ -524,16 +545,16 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     .badge-platform {{
       position: absolute;
-      top: 0.75rem;
-      right: 0.75rem;
+      top: 0.65rem;
+      right: 0.65rem;
       background: rgba(255, 255, 255, 0.95);
       color: #1E293B;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       box-shadow: var(--shadow-sm);
     }}
 
     .card-body {{
-      padding: 1.25rem;
+      padding: 1.1rem;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -543,17 +564,17 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       font-size: 0.82rem;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
       display: flex;
       align-items: center;
       gap: 0.35rem;
     }}
 
     .card-title {{
-      font-size: 1.12rem;
+      font-size: 1.08rem;
       font-weight: 700;
-      line-height: 1.4;
-      margin-bottom: 0.6rem;
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
       color: var(--text-main);
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -562,10 +583,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .card-desc {{
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 1rem;
+      line-height: 1.45;
+      margin-bottom: 0.85rem;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -575,10 +596,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .card-meta {{
       margin-top: auto;
       border-top: 1px solid var(--border-color);
-      padding-top: 0.85rem;
+      padding-top: 0.75rem;
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
+      gap: 0.35rem;
       font-size: 0.82rem;
       color: var(--text-muted);
     }}
@@ -598,7 +619,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .card-footer {{
-      padding: 0.85rem 1.25rem;
+      padding: 0.75rem 1.1rem;
       background: var(--bg-main);
       border-top: 1px solid var(--border-color);
       display: flex;
@@ -608,7 +629,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     .card-price {{
       font-weight: 700;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text-main);
     }}
 
@@ -620,17 +641,17 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .agenda-list {{
       display: flex;
       flex-direction: column;
-      gap: 1.75rem;
+      gap: 1.5rem;
     }}
 
     .agenda-group-header {{
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      font-size: 1.15rem;
+      justify-content: space-between;
+      font-size: 1.05rem;
       font-weight: 800;
       color: var(--text-main);
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.4rem;
       border-bottom: 2px solid var(--primary);
     }}
 
@@ -638,20 +659,17 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
-      padding: 1.25rem;
+      padding: 1rem;
       display: grid;
-      grid-template-columns: 140px 1fr auto;
-      gap: 1.5rem;
+      grid-template-columns: 120px 1fr auto;
+      gap: 1.25rem;
       align-items: center;
       box-shadow: var(--shadow-sm);
-      transition: all 0.2s;
       cursor: pointer;
     }}
 
-    .agenda-item:hover {{
-      border-color: var(--primary);
-      box-shadow: var(--shadow-md);
-      transform: translateX(4px);
+    .agenda-item:active {{
+      transform: scale(0.985);
     }}
 
     .agenda-time-box {{
@@ -662,49 +680,49 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       background: var(--primary-light);
       color: var(--primary);
       border-radius: var(--radius-sm);
-      padding: 0.75rem 0.5rem;
+      padding: 0.65rem 0.4rem;
       text-align: center;
     }}
 
     .agenda-time-box .day-num {{
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: 800;
       line-height: 1;
       font-family: var(--font-display);
     }}
 
     .agenda-time-box .month-name {{
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 700;
     }}
 
     .agenda-time-box .time-str {{
-      font-size: 0.75rem;
-      margin-top: 0.25rem;
+      font-size: 0.72rem;
+      margin-top: 0.2rem;
       font-weight: 600;
     }}
 
     .agenda-content h3 {{
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.3rem;
       color: var(--text-main);
     }}
 
     .agenda-content-meta {{
       display: flex;
       flex-wrap: wrap;
-      gap: 0.85rem;
-      font-size: 0.84rem;
+      gap: 0.75rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.35rem;
     }}
 
     .agenda-actions {{
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
-      min-width: 140px;
+      gap: 0.45rem;
+      min-width: 120px;
     }}
 
     /* Calendar Grid View */
@@ -717,7 +735,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .cal-header {{
-      padding: 1.25rem 1.5rem;
+      padding: 1rem 1.25rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -725,14 +743,14 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .cal-title {{
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 800;
       font-family: var(--font-display);
     }}
 
     .cal-nav {{
       display: flex;
-      gap: 0.5rem;
+      gap: 0.4rem;
     }}
 
     .cal-grid {{
@@ -741,9 +759,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .cal-day-header {{
-      padding: 0.75rem;
+      padding: 0.65rem;
       text-align: center;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 700;
       color: var(--text-muted);
       background: var(--bg-main);
@@ -751,12 +769,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .cal-cell {{
-      min-height: 110px;
-      padding: 0.5rem;
+      min-height: 95px;
+      padding: 0.4rem;
       border-right: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
       background: var(--bg-card);
-      transition: background-color 0.15s;
       display: flex;
       flex-direction: column;
     }}
@@ -767,25 +784,25 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     .cal-cell.other-month {{
       background: var(--bg-main);
-      opacity: 0.45;
+      opacity: 0.4;
     }}
 
     .cal-cell.today {{
-      background: rgba(200, 76, 50, 0.04);
+      background: rgba(200, 76, 50, 0.05);
     }}
 
     .cal-cell-header {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }}
 
     .cal-date-num {{
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -800,15 +817,15 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .cal-events-list {{
       display: flex;
       flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.2rem;
       overflow-y: auto;
-      max-height: 85px;
+      max-height: 70px;
     }}
 
     .cal-event-pill {{
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 600;
-      padding: 2px 6px;
+      padding: 2px 5px;
       border-radius: 4px;
       background: var(--primary-light);
       color: var(--primary);
@@ -816,16 +833,64 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       overflow: hidden;
       text-overflow: ellipsis;
       cursor: pointer;
-      border-left: 3px solid var(--primary);
-      transition: transform 0.1s;
+      border-left: 2.5px solid var(--primary);
     }}
 
-    .cal-event-pill:hover {{
-      transform: scale(1.02);
-      box-shadow: var(--shadow-sm);
+    /* iOS Bottom Navigation Bar for iPhone */
+    .ios-tab-bar {{
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+      z-index: 99;
+      padding-bottom: var(--sab);
     }}
 
-    /* Modal */
+    [data-theme="dark"] .ios-tab-bar {{
+      background: rgba(15, 23, 42, 0.88);
+      border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+    }}
+
+    .ios-tab-bar-items {{
+      display: flex;
+      height: 54px;
+      justify-content: space-around;
+      align-items: center;
+    }}
+
+    .ios-tab-item {{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      height: 100%;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      gap: 3px;
+    }}
+
+    .ios-tab-item svg {{
+      width: 22px;
+      height: 22px;
+      stroke-width: 2;
+    }}
+
+    .ios-tab-item.active {{
+      color: var(--primary);
+    }}
+
+    /* Modal / iPhone Bottom Sheet */
     .modal-overlay {{
       position: fixed;
       top: 0;
@@ -834,11 +899,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       bottom: 0;
       background: rgba(15, 23, 42, 0.7);
       backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       z-index: 1000;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem;
+      padding: 1rem;
       opacity: 0;
       visibility: hidden;
       transition: all 0.25s ease;
@@ -852,7 +918,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     .modal-dialog {{
       background: var(--bg-card);
       border-radius: var(--radius-lg);
-      max-width: 680px;
+      max-width: 650px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
@@ -866,12 +932,21 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       transform: translateY(0);
     }}
 
+    .modal-sheet-handle {{
+      display: none;
+      width: 36px;
+      height: 5px;
+      background: #CBD5E1;
+      border-radius: 3px;
+      margin: 8px auto 0;
+    }}
+
     .modal-close {{
       position: absolute;
       top: 1rem;
       right: 1rem;
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       background: rgba(0,0,0,0.5);
       color: #FFFFFF;
@@ -881,15 +956,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       justify-content: center;
       cursor: pointer;
       z-index: 10;
-      transition: background 0.2s;
-    }}
-
-    .modal-close:hover {{
-      background: rgba(0,0,0,0.8);
     }}
 
     .modal-hero-img {{
-      height: 240px;
+      height: 220px;
       width: 100%;
       background: #1E293B;
       position: relative;
@@ -902,32 +972,32 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .modal-content {{
-      padding: 1.75rem;
+      padding: 1.5rem;
     }}
 
     .modal-title {{
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       font-weight: 800;
       line-height: 1.35;
-      margin: 0.85rem 0 1rem;
+      margin: 0.75rem 0 0.85rem;
       color: var(--text-main);
     }}
 
     .modal-info-grid {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 0.85rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem;
       background: var(--bg-main);
-      padding: 1.2rem;
+      padding: 1rem;
       border-radius: var(--radius-md);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.1rem;
     }}
 
     .info-row {{
       display: flex;
       align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.88rem;
+      gap: 0.5rem;
+      font-size: 0.85rem;
     }}
 
     .info-row svg {{
@@ -937,64 +1007,136 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     .modal-desc {{
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: var(--text-main);
-      line-height: 1.7;
-      margin-bottom: 1.75rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
       white-space: pre-wrap;
     }}
 
     .modal-actions-bar {{
       display: flex;
-      gap: 0.75rem;
+      gap: 0.65rem;
       flex-wrap: wrap;
       border-top: 1px solid var(--border-color);
-      padding-top: 1.25rem;
+      padding-top: 1.1rem;
     }}
 
     .empty-state {{
       text-align: center;
-      padding: 4rem 1.5rem;
+      padding: 3.5rem 1.25rem;
       color: var(--text-muted);
     }}
 
     footer {{
       background: var(--bg-card);
       border-top: 1px solid var(--border-color);
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.25rem;
       text-align: center;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
       margin-top: auto;
     }}
 
+    /* =========================================================================
+       IPHONE & MOBILE OPTIMIZATIONS
+       ========================================================================= */
     @media (max-width: 768px) {{
+      .ios-tab-bar {{
+        display: block;
+      }}
+      .view-switchers {{
+        display: none; /* 使用底部 Tab 切換 */
+      }}
       header.hero-header {{
-        padding: 1.5rem 1rem;
+        padding: calc(var(--sat) + 1rem) 1rem 1.25rem;
       }}
       .brand-titles h1 {{
-        font-size: 1.3rem;
+        font-size: 1.25rem;
       }}
-      .agenda-item {{
+      .header-actions {{
+        display: none; /* 移動端收攏到頂部或設定彈窗 */
+      }}
+      .hero-stats {{
+        grid-template-columns: repeat(3, 1fr);
+      }}
+      .hero-stats .stat-card:nth-child(n+4) {{
+        display: none;
+      }}
+      .controls-container {{
+        padding: 0.65rem 1rem;
+      }}
+      main.main-content {{
+        padding: 1rem 1rem;
+      }}
+      .events-grid {{
         grid-template-columns: 1fr;
         gap: 1rem;
       }}
+      .agenda-item {{
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 0.85rem;
+      }}
       .agenda-time-box {{
         flex-direction: row;
-        gap: 0.75rem;
-        padding: 0.5rem 1rem;
+        justify-content: flex-start;
+        gap: 0.65rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: var(--radius-sm);
+      }}
+      .agenda-time-box .day-num {{
+        font-size: 1.35rem;
+      }}
+      .agenda-actions {{
+        flex-direction: row;
+        width: 100%;
+      }}
+      .agenda-actions .btn {{
+        flex: 1;
       }}
       .cal-cell {{
-        min-height: 70px;
-        padding: 0.25rem;
+        min-height: 60px;
+        padding: 0.2rem;
       }}
       .cal-event-pill {{
-        font-size: 0.65rem;
+        font-size: 0.62rem;
+        padding: 1px 3px;
+      }}
+
+      /* iPhone Bottom Sheet Modal Transformation */
+      .modal-overlay {{
+        align-items: flex-end;
+        padding: 0;
+      }}
+      .modal-dialog {{
+        border-radius: 24px 24px 0 0;
+        max-height: 88vh;
+        transform: translateY(100%);
+        padding-bottom: var(--sab);
+      }}
+      .modal-sheet-handle {{
+        display: block;
+      }}
+      .modal-actions-bar {{
+        flex-direction: column;
+      }}
+      .modal-actions-bar .btn {{
+        width: 100%;
+        justify-content: center;
       }}
     }}
   </style>
 </head>
 <body>
+
+  <!-- iPhone PWA 提示條 (在 iOS Safari 顯示) -->
+  <div class="ios-install-banner" id="iosBanner">
+    <div class="ios-banner-text">
+      <span>📱 點擊下方「分享」按鈕 ➔ <strong>加入主畫面</strong>，即可像 App 一樣隨時開啟！</span>
+    </div>
+    <button class="ios-banner-close" onclick="closeIosBanner()">✕</button>
+  </div>
 
   <!-- HERO HEADER -->
   <header class="hero-header">
@@ -1003,20 +1145,20 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="brand">
           <div class="brand-icon">🎭</div>
           <div class="brand-titles">
-            <h1>北北桃台語活動行事曆</h1>
+            <h1>北北桃台語活動日曆</h1>
             <p>臺北市・新北市・桃園市 ｜ 舞台劇・表演・故事・繪本・體驗・導覽</p>
           </div>
         </div>
         <div class="header-actions">
-          <button class="btn btn-light" id="btnExportIcs" onclick="exportCalendarFile()">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            下載 iCal 行事曆 (.ics)
+          <button class="btn btn-light" onclick="exportCalendarFile()">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            下載 iCal (.ics)
           </button>
-          <button class="btn btn-light" id="btnSyncModal" onclick="openSyncModal()">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
-            Google 行事曆串接
+          <button class="btn btn-light" onclick="openSyncModal()">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+            Google 日曆串接
           </button>
-          <button class="btn btn-light btn-icon" id="themeToggleBtn" onclick="toggleTheme()" title="切換深淺模式">
+          <button class="btn btn-light btn-icon" onclick="toggleTheme()" title="切換深淺模式">
             🌓
           </button>
         </div>
@@ -1024,23 +1166,23 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
       <div class="hero-stats">
         <div class="stat-card">
-          <span class="label">未來活動總數</span>
+          <span class="label">活動總數</span>
           <span class="val" id="statTotal">--</span>
         </div>
         <div class="stat-card">
-          <span class="label">臺北市活動</span>
+          <span class="label">臺北市</span>
           <span class="val" id="statTaipei">--</span>
         </div>
         <div class="stat-card">
-          <span class="label">新北市活動</span>
+          <span class="label">新北市</span>
           <span class="val" id="statNewTaipei">--</span>
         </div>
         <div class="stat-card">
-          <span class="label">桃園市活動</span>
+          <span class="label">桃園市</span>
           <span class="val" id="statTaoyuan">--</span>
         </div>
         <div class="stat-card">
-          <span class="label">免費入場</span>
+          <span class="label">免費活動</span>
           <span class="val" id="statFree">--</span>
         </div>
       </div>
@@ -1052,66 +1194,55 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="container controls-container">
       <div class="controls-row-1">
         <div class="search-box">
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line></svg>
-          <input type="text" id="searchInput" placeholder="搜尋劇名、故事屋、文史導覽、圖書館、李江却、樂暢、劇團..." oninput="handleSearch(this.value)">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line></svg>
+          <input type="text" id="searchInput" placeholder="搜尋劇名、故事屋、導覽、圖書館、劇團..." oninput="handleSearch(this.value)">
         </div>
 
         <div class="view-switchers">
           <button class="view-btn active" data-view="grid" onclick="switchView('grid')">
-            🗂️ 圖文卡片
+            🗂️ 卡片
           </button>
           <button class="view-btn" data-view="agenda" onclick="switchView('agenda')">
-            📋 清單時間軸
+            📋 清單
           </button>
           <button class="view-btn" data-view="calendar" onclick="switchView('calendar')">
-            📅 月曆檢視
+            📅 月曆
           </button>
         </div>
       </div>
 
-      <!-- City Filters -->
-      <div class="filter-pills-row">
-        <span class="filter-label">📍 地區：</span>
+      <!-- City Filters (iPhone 滑動標籤) -->
+      <div class="filter-pills-scroll">
         <button class="pill active" data-filter-type="city" data-value="all" onclick="setCityFilter('all')">全部地區 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" onclick="setCityFilter('臺北市')">🏛️ 臺北市 <span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" onclick="setCityFilter('新北市')">🌊 新北市 <span class="pill-count" id="count-city-newtaipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="桃園市" onclick="setCityFilter('桃園市')">✈️ 桃園市 <span class="pill-count" id="count-city-taoyuan"></span></button>
       </div>
 
-      <!-- Category Filters -->
-      <div class="filter-pills-row">
-        <span class="filter-label">🏷️ 類別：</span>
+      <!-- Category Filters (iPhone 滑動標籤) -->
+      <div class="filter-pills-scroll">
         <button class="pill active" data-filter-type="category" data-value="all" onclick="setCategoryFilter('all')">全部類別</button>
-        <button class="pill" data-filter-type="category" data-value="台語舞台劇" onclick="setCategoryFilter('台語舞台劇')">🎭 台語舞台劇</button>
-        <button class="pill" data-filter-type="category" data-value="台語表演" onclick="setCategoryFilter('台語表演')">🎪 台語表演</button>
-        <button class="pill" data-filter-type="category" data-value="台語故事" onclick="setCategoryFilter('台語故事')">📖 台語故事</button>
-        <button class="pill" data-filter-type="category" data-value="台語繪本" onclick="setCategoryFilter('台語繪本')">📚 台語繪本</button>
-        <button class="pill" data-filter-type="category" data-value="台語體驗" onclick="setCategoryFilter('台語體驗')">🎨 台語體驗</button>
-        <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 台語導覽</button>
+        <button class="pill" data-filter-type="category" data-value="台語舞台劇" onclick="setCategoryFilter('台語舞台劇')">🎭 舞台劇</button>
+        <button class="pill" data-filter-type="category" data-value="台語表演" onclick="setCategoryFilter('台語表演')">🎪 表演/戲曲</button>
+        <button class="pill" data-filter-type="category" data-value="台語故事" onclick="setCategoryFilter('台語故事')">📖 故事屋</button>
+        <button class="pill" data-filter-type="category" data-value="台語繪本" onclick="setCategoryFilter('台語繪本')">📚 繪本共讀</button>
+        <button class="pill" data-filter-type="category" data-value="台語體驗" onclick="setCategoryFilter('台語體驗')">🎨 文化體驗</button>
+        <button class="pill" data-filter-type="category" data-value="台語導覽" onclick="setCategoryFilter('台語導覽')">🚶 走讀導覽</button>
       </div>
 
-      <!-- Platform Filters -->
-      <div class="filter-pills-row">
-        <span class="filter-label">🌐 來源：</span>
+      <!-- Platform Filters (iPhone 滑動標籤) -->
+      <div class="filter-pills-scroll">
         <button class="pill active" data-filter-type="platform" data-value="all" onclick="setPlatformFilter('all')">全部來源</button>
-        <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却基金會</button>
+        <button class="pill" data-filter-type="platform" data-value="李江却基金會" onclick="setPlatformFilter('李江却基金會')">📜 李江却</button>
         <button class="pill" data-filter-type="platform" data-value="樂暢親子共學" onclick="setPlatformFilter('樂暢親子共學')">🎈 樂暢共學</button>
         <button class="pill" data-filter-type="platform" data-value="北北桃市立圖書館" onclick="setPlatformFilter('北北桃市立圖書館')">📖 市立圖書館</button>
-        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🏛️ OPENTIX 兩廳院</button>
+        <button class="pill" data-filter-type="platform" data-value="OPENTIX 兩廳院" onclick="setPlatformFilter('OPENTIX 兩廳院')">🏛️ 兩廳院</button>
         <button class="pill" data-filter-type="platform" data-value="年代售票" onclick="setPlatformFilter('年代售票')">🎫 年代售票</button>
         <button class="pill" data-filter-type="platform" data-value="Accupass 活動通" onclick="setPlatformFilter('Accupass 活動通')">🎟️ Accupass</button>
-        <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 Facebook</button>
-        <button class="pill" data-filter-type="platform" data-value="Instagram" onclick="setPlatformFilter('Instagram')">📸 Instagram</button>
+        <button class="pill" data-filter-type="platform" data-value="Facebook" onclick="setPlatformFilter('Facebook')">📘 FB</button>
+        <button class="pill" data-filter-type="platform" data-value="Instagram" onclick="setPlatformFilter('Instagram')">📸 IG</button>
         <button class="pill" data-filter-type="platform" data-value="Threads" onclick="setPlatformFilter('Threads')">🧵 Threads</button>
-        <button class="pill" data-filter-type="platform" data-value="Google 日曆" onclick="setPlatformFilter('Google 日曆')">📅 Google 日曆</button>
-      </div>
-
-      <!-- Price Filters -->
-      <div class="filter-pills-row">
-        <span class="filter-label">💰 費用：</span>
-        <button class="pill active" data-filter-type="price" data-value="all" onclick="setPriceFilter('all')">全部費用</button>
-        <button class="pill" data-filter-type="price" data-value="free" onclick="setPriceFilter('free')">免費活動</button>
-        <button class="pill" data-filter-type="price" data-value="paid" onclick="setPriceFilter('paid')">售票/付費活動</button>
+        <button class="pill" data-filter-type="platform" data-value="Google 日曆" onclick="setPlatformFilter('Google 日曆')">📅 Google日曆</button>
       </div>
     </div>
   </div>
@@ -1120,7 +1251,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <main class="main-content">
     <div class="container">
       <div class="filter-summary">
-        <div>目前顯示 <strong id="visibleCount">0</strong> 場台語活動</div>
+        <div>顯示 <strong id="visibleCount">0</strong> 場台語活動</div>
         <div id="activeFiltersSummary"></div>
       </div>
 
@@ -1135,34 +1266,57 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="cal-header">
           <div class="cal-title" id="calCurrentMonthLabel">2026年 9月</div>
           <div class="cal-nav">
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="prevMonth()">◀ 上個月</button>
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="goToToday()">今天</button>
-            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);" onclick="nextMonth()">下個月 ▶</button>
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.35rem 0.65rem;" onclick="prevMonth()">◀</button>
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.35rem 0.75rem;" onclick="goToToday()">今天</button>
+            <button class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); padding:0.35rem 0.65rem;" onclick="nextMonth()">▶</button>
           </div>
         </div>
         <div class="cal-grid" id="calGridHeader">
-          <div class="cal-day-header">週日</div>
-          <div class="cal-day-header">週一</div>
-          <div class="cal-day-header">週二</div>
-          <div class="cal-day-header">週三</div>
-          <div class="cal-day-header">週四</div>
-          <div class="cal-day-header">週五</div>
-          <div class="cal-day-header">週六</div>
+          <div class="cal-day-header">日</div>
+          <div class="cal-day-header">一</div>
+          <div class="cal-day-header">二</div>
+          <div class="cal-day-header">三</div>
+          <div class="cal-day-header">四</div>
+          <div class="cal-day-header">五</div>
+          <div class="cal-day-header">六</div>
         </div>
         <div class="cal-grid" id="calGridDays"></div>
       </div>
     </div>
   </main>
 
-  <!-- EVENT DETAIL MODAL -->
+  <!-- IPHONE NATIVE BOTTOM TAB BAR -->
+  <nav class="ios-tab-bar">
+    <div class="ios-tab-bar-items">
+      <button class="ios-tab-item active" data-tab="grid" onclick="switchViewMobile('grid')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+        <span>活動卡片</span>
+      </button>
+      <button class="ios-tab-item" data-tab="agenda" onclick="switchViewMobile('agenda')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>時間排程</span>
+      </button>
+      <button class="ios-tab-item" data-tab="calendar" onclick="switchViewMobile('calendar')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>月曆檢視</span>
+      </button>
+      <button class="ios-tab-item" onclick="openSyncModal()">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <span>加入日曆</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- EVENT DETAIL MODAL (iPhone iOS Bottom Sheet) -->
   <div class="modal-overlay" id="eventModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
+      <div class="modal-sheet-handle"></div>
       <button class="modal-close" onclick="closeModal()">✕</button>
       <div class="modal-hero-img">
         <img id="modalImg" src="" alt="活動海報">
       </div>
       <div class="modal-content">
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
           <span class="badge badge-city" id="modalCity"></span>
           <span class="badge badge-category" id="modalCategory"></span>
           <span class="badge" style="background:var(--secondary); color:#fff;" id="modalPlatform"></span>
@@ -1192,7 +1346,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             </div>
           </div>
           <div class="info-row">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 6.33 7 5.5 7z"/></svg>
             <div>
               <strong style="color:var(--text-main);">票價/收費：</strong>
               <div id="modalPrice" style="color:var(--text-muted);"></div>
@@ -1200,51 +1354,52 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           </div>
         </div>
 
-        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color:var(--text-main);">活動內容介紹</h4>
+        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; color:var(--text-main);">活動內容介紹</h4>
         <div class="modal-desc" id="modalDesc"></div>
 
         <div class="modal-actions-bar">
-          <a id="modalTicketLink" href="#" target="_blank" class="btn btn-primary" style="flex:1; justify-content:center; padding:0.75rem 1.5rem; font-size:0.95rem;">
-            🎟️ 前往官方購票 / 活動頁面
+          <a id="modalTicketLink" href="#" target="_blank" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
+            🎟️ 前往官方購票 / 報名頁面
           </a>
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
-            📅 加入 Google 行事曆
+            📅 加到 Google 日曆
           </a>
           <button id="modalSingleIcsBtn" onclick="downloadSingleIcs()" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
-            💾 匯出 .ics
+            🍏 加到 Apple 日曆 (.ics)
           </button>
           <a id="modalMapLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
-            🗺️ Google 地圖
+            🗺️ 地圖導航
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SYNC & GOOGLE WORKSPACE MODAL -->
+  <!-- SYNC & IPHONE CALENDAR MODAL -->
   <div class="modal-overlay" id="syncModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog" style="max-width: 550px;">
+      <div class="modal-sheet-handle"></div>
       <button class="modal-close" onclick="closeSyncModal()">✕</button>
       <div class="modal-content">
-        <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.75rem; color:var(--text-main);">📅 串接 Google Workspace 行事曆</h2>
-        <p style="font-size: 0.9rem; color:var(--text-muted); margin-bottom: 1.25rem;">
-          您可以透過以下方式將北北桃台語活動同步至您的 Google 行事曆、Apple 日曆或 Outlook：
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; color:var(--text-main);">📅 同步至手機行事曆</h2>
+        <p style="font-size: 0.88rem; color:var(--text-muted); margin-bottom: 1rem;">
+          支援 iPhone 行事曆、Google Calendar、Mac 與 Outlook 自動同步：
         </p>
 
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; margin-bottom:1.25rem; font-size:0.88rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 1：一鍵下載 iCalendar (.ics) 檔案</h4>
-          <p style="color:var(--text-muted); margin-bottom:0.75rem;">點擊下方按鈕下載完整日曆檔，可直接拖入 Google Calendar、Mac 日曆或手機中自動匯入。</p>
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🍏 iPhone / Apple 日曆直接匯入</h4>
+          <p style="color:var(--text-muted); margin-bottom:0.65rem;">在 iPhone Safari 點擊下方按鈕，系統會自動彈出「將所有活動加入行事曆」確認窗。</p>
           <button class="btn btn-primary" onclick="exportCalendarFile()">📥 下載 taigi_activities.ics</button>
         </div>
 
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; margin-bottom:1.25rem; font-size:0.88rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 2：單場活動一鍵加入</h4>
-          <p style="color:var(--text-muted);">在任一活動卡片或彈窗中，點擊「加入 Google 行事曆」，系統會自動帶入活動主題、時間、地址與購票資訊。</p>
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; margin-bottom:1rem; font-size:0.85rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">📅 Google 日曆單場一鍵加入</h4>
+          <p style="color:var(--text-muted);">任選一場活動點擊「加到 Google 日曆」，系統會自動填寫所有起訖時間、地點與購票連結。</p>
         </div>
 
-        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:1rem; font-size:0.88rem;">
-          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">方法 3：Python 後端自動同步</h4>
-          <p style="color:var(--text-muted);">使用專案內建的 <code>crawler/sources/google_workspace.py</code> 與 <code>credentials.json</code>，即可設定定時 Cron 自動將最新活動同步至指定 Google 日曆 ID。</p>
+        <div style="background:var(--bg-main); border-radius:var(--radius-md); padding:0.9rem; font-size:0.85rem;">
+          <h4 style="font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">🌓 主題模式</h4>
+          <button class="btn btn-light" onclick="toggleTheme();" style="color:var(--text-main); border-color:var(--border-color); margin-top:0.25rem;">切換 深色 / 淺色 模式</button>
         </div>
       </div>
     </div>
@@ -1253,11 +1408,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p><strong>北北桃台語活動行事曆 (Taigi Activities Hub)</strong></p>
+      <p><strong>北北桃台語活動日曆 (Taigi Activities Hub)</strong></p>
       <p style="margin-top: 0.35rem; font-size: 0.8rem;">
-        資料來源涵蓋：李江却台語文教基金會、樂暢親子共學、臺北市立圖書館、新北市立圖書館、桃園市立圖書館、OPENTIX 兩廳院、年代售票、Accupass、Facebook、Instagram、Threads 與 Google Workspace。
+        涵蓋：李江却基金會、樂暢、市立圖書館、兩廳院 OPENTIX、年代售票、Accupass、FB、IG、Threads 與 Google Workspace。
       </p>
-      <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-light);">
+      <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
         更新時間：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ｜ 咱做伙來講台語！
       </p>
     </div>
@@ -1281,9 +1436,23 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     document.addEventListener('DOMContentLoaded', () => {{
       initTheme();
+      checkIosPrompt();
       computeStats();
       renderAll();
     }});
+
+    function checkIosPrompt() {{
+      const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+      if (isIos && !isStandalone && !localStorage.getItem('hide_ios_banner')) {{
+        document.getElementById('iosBanner').classList.add('show');
+      }}
+    }}
+
+    function closeIosBanner() {{
+      document.getElementById('iosBanner').classList.remove('show');
+      localStorage.setItem('hide_ios_banner', '1');
+    }}
 
     function initTheme() {{
       const saved = localStorage.getItem('taigi_theme') || 'light';
@@ -1302,6 +1471,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.querySelectorAll('.view-btn').forEach(btn => {{
         btn.classList.toggle('active', btn.dataset.view === viewName);
       }});
+      document.querySelectorAll('.ios-tab-item').forEach(btn => {{
+        btn.classList.toggle('active', btn.dataset.tab === viewName);
+      }});
 
       document.getElementById('viewGrid').style.display = viewName === 'grid' ? 'grid' : 'none';
       document.getElementById('viewAgenda').style.display = viewName === 'agenda' ? 'flex' : 'none';
@@ -1310,6 +1482,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (viewName === 'calendar') {{
         renderCalendar();
       }}
+      window.scrollTo({{ top: 0, behavior: 'smooth' }});
+    }}
+
+    function switchViewMobile(viewName) {{
+      switchView(viewName);
     }}
 
     function setCityFilter(city) {{
@@ -1485,9 +1662,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <div>
             <div class="agenda-group-header">
               <span>📅 ${{groupLabel}}</span>
-              <span style="font-size:0.82rem; font-weight:600; color:var(--text-muted);">${{groups[dateKey].length}} 場活動</span>
+              <span style="font-size:0.8rem; font-weight:600; color:var(--text-muted);">${{groups[dateKey].length}} 場活動</span>
             </div>
-            <div style="display:flex; flex-direction:column; gap:1rem; margin-top:0.85rem;">
+            <div style="display:flex; flex-direction:column; gap:0.85rem; margin-top:0.75rem;">
               ${{groups[dateKey].map(act => {{
                 const d = new Date(act.start_time);
                 const timeStr = d.toLocaleTimeString('zh-TW', {{ hour:'2-digit', minute:'2-digit', hour12:false }});
@@ -1499,7 +1676,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                       <div class="time-str">${{timeStr}}</div>
                     </div>
                     <div class="agenda-content">
-                      <div style="display:flex; gap:0.4rem; margin-bottom:0.35rem; flex-wrap:wrap;">
+                      <div style="display:flex; gap:0.35rem; margin-bottom:0.3rem; flex-wrap:wrap;">
                         <span class="badge badge-city">📍 ${{act.city}}</span>
                         <span class="badge badge-category">${{act.category}}</span>
                         <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${{act.source_platform}}</span>
@@ -1507,14 +1684,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                       <h3>${{act.title}}</h3>
                       <div class="agenda-content-meta">
                         <span>🏛️ ${{act.venue}}</span>
-                        <span>👥 ${{act.organizer}}</span>
                         <span>🏷️ <strong style="color:var(--primary);">${{act.price_info}}</strong></span>
                       </div>
-                      <p style="font-size:0.85rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{act.description}}</p>
+                      <p style="font-size:0.82rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{act.description}}</p>
                     </div>
                     <div class="agenda-actions">
-                      <button class="btn btn-primary" style="font-size:0.82rem; justify-content:center;">活動詳情</button>
-                      <a href="${{act.gcal_url}}" target="_blank" class="btn btn-light" style="font-size:0.8rem; justify-content:center; color:var(--text-main); border-color:var(--border-color);" onclick="event.stopPropagation();">📅 加日曆</a>
+                      <button class="btn btn-primary" style="font-size:0.8rem; justify-content:center;">活動詳情</button>
+                      <a href="${{act.gcal_url}}" target="_blank" class="btn btn-light" style="font-size:0.78rem; justify-content:center; color:var(--text-main); border-color:var(--border-color);" onclick="event.stopPropagation();">📅 加日曆</a>
                     </div>
                   </div>
                 `;
@@ -1555,7 +1731,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <div class="cal-cell ${{isToday ? 'today' : ''}}">
             <div class="cal-cell-header">
               <span class="cal-date-num">${{day}}</span>
-              ${{dayEvents.length > 0 ? `<span style="font-size:0.7rem; font-weight:700; color:var(--primary);">${{dayEvents.length}}場</span>` : ''}}
+              ${{dayEvents.length > 0 ? `<span style="font-size:0.68rem; font-weight:700; color:var(--primary);">${{dayEvents.length}}場</span>` : ''}}
             </div>
             <div class="cal-events-list">
               ${{dayEvents.map(ev => `
@@ -1640,7 +1816,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     }}
 
     function exportCalendarFile() {{
-      let icsContent = "BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\\r\\nX-WR-CALNAME:北北桃台語活動行事曆\\r\\n";
+      let icsContent = "BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//Antigravity//Taigi Calendar//ZH_TW\\r\\nX-WR-CALNAME:北北桃台語活動日曆\\r\\n";
       
       const filtered = getFilteredActivities();
       filtered.forEach(act => {{
