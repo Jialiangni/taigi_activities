@@ -239,7 +239,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <a id="modalSingleIcsBtn" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             🍏 加到 Apple 日曆 (.ics)
           </a>
-          <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share" style="border:none;">
+          <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share">
             📤 分享到 LINE / 社群
           </button>
           <a id="modalMapLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
