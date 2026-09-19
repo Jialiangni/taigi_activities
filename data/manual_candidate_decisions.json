@@ -19,6 +19,42 @@
       "reason": "owner_feedback_published_as_non_session_resource",
       "resource_id": "taipeieye_traditional_performance_2026",
       "reviewed_at": "2026-09-19T10:52:28+08:00"
+    },
+    {
+      "candidate_id": "21e96be8bdccea17935c0eba",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2057004988266651648",
+      "title": "明華園戲劇總團《貓．阿修羅》",
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
+    },
+    {
+      "candidate_id": "65bf0a26ed564d46921e9c04",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2057004988266651648",
+      "title": "明華園戲劇總團《貓．阿修羅》",
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
+    },
+    {
+      "candidate_id": "99542236f6b6073508bdd24e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2057004988266651648",
+      "title": "明華園戲劇總團《貓．阿修羅》",
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
+    },
+    {
+      "candidate_id": "30f5d25de95c261bfbf77034",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2064223639747211265",
+      "title": "2026新莊有好戲《劉廷英賣身》",
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
     }
   ]
 }
