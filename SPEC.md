@@ -154,7 +154,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 卡片緊湊調整：內距 18px，標題下方 8px、簡介下方 12px；取消標題、簡介及場地的最低高度，僅由同列最長內容決定共用欄位高度。保留兩行簡介、完整標題／地點與場地下方 8px 的分隔線距離，活動及週曆共用此版面。
 
-data/ui_taigi.json 為編輯性台文翻譯，非核實來源：完整原始描述作為 key，僅匹配時提供 description_taigi。描述修訂而無對應翻譯時回退標明「簡介原文」，不得套用舊內容。官方標題、地點、description、活動詳情與 ICS 不被翻譯覆蓋。資源摘要同樣以原始描述精確匹配翻譯。
+data/ui_taigi.json 與 data/ui_price_taigi.json 為編輯性台文翻譯，非核實來源：完整原始描述及所費文字作為 key，僅精確匹配時提供 description_taigi 與 price_info_taigi，不得把舊譯套用至已修改的官方文字。原始 title、venue、description、price_info 與 ICS 內容保留供核實；活動詳情顯示台文活動紹介及所費說明。資源摘要同樣以原始描述精確匹配翻譯。
 
 assets/site.css 於建置時內嵌，使用系統字型而不載入遠端字型。main.py 在全部驗證成功後，產出 index.html、taigi_activities.ics 和相同內容的 taigi-activities-standalone.html；單檔副本為本機產物且加入 gitignore。GitHub Pages 繼續透過現有工作流程發布，未改變官方來源檢查或已核實資料門檻。
 

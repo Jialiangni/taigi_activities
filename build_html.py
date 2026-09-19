@@ -15,6 +15,7 @@ from crawler.sources.google_workspace import GoogleWorkspaceSync
 def generate_single_html(activities: List[Activity], output_path: str = "index.html", resources=None) -> str:
     root = Path(__file__).resolve().parent
     translations = json.loads((root / 'data/ui_taigi.json').read_text(encoding='utf-8'))
+    price_translations = json.loads((root / 'data/ui_price_taigi.json').read_text(encoding='utf-8'))
     styles = (root / 'assets/site.css').read_text(encoding='utf-8')
     activities_data = []
     g_sync = GoogleWorkspaceSync()
@@ -23,6 +24,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         d = act.to_dict()
         # Exact source-text keys prevent stale translations after an official correction.
         d['description_taigi'] = translations.get(d['description'], '')
+        d['price_info_taigi'] = price_translations.get(d['price_info'], '')
         d['title_taigi'] = session_title(d['title'])
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
         d["ics_event"] = g_sync.event_content(act)
@@ -177,7 +179,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <dialog class="modal-overlay" lang="zh-Hant" id="eventModal" aria-labelledby="modalTitle" onclick="closeModalOnBackdrop(event)">
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
-      <button class="modal-close" onclick="closeModal()" aria-label="關閉活動詳情" autofocus>✕</button>
+      <button class="modal-close" onclick="closeModal()" aria-label="關起活動詳情" autofocus>✕</button>
       <div class="modal-hero-img">
         <img id="modalImg" src="" alt="活動海報">
       </div>
@@ -200,35 +202,35 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <div class="info-row">
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             <div>
-              <strong style="color:var(--text-main);">場地/地址：</strong>
+              <strong style="color:var(--text-main);">所在：</strong>
               <div id="modalVenue" style="color:var(--text-muted);"></div>
             </div>
           </div>
           <div class="info-row">
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
             <div>
-              <strong style="color:var(--text-main);">主辦單位：</strong>
+              <strong style="color:var(--text-main);">主辦：</strong>
               <div id="modalOrganizer" style="color:var(--text-muted);"></div>
             </div>
           </div>
           <div class="info-row">
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
             <div>
-              <strong style="color:var(--text-main);">票價/收費：</strong>
+              <strong style="color:var(--text-main);">所費：</strong>
               <div id="modalPrice" style="color:var(--text-muted);"></div>
             </div>
           </div>
         </div>
 
-        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; color:var(--text-main);">活動內容介紹</h4>
+        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; color:var(--text-main);">活動紹介</h4>
         <div class="modal-desc" id="modalDesc"></div>
 
         <div class="modal-actions-bar">
           <a id="modalTicketLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
-            🌐 看主辦單位／官方網站 ↗
+            🌐 活動公告／報名 ↗
           </a>
           <a id="modalGoogleSearchLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); font-weight:600;">
-            🔍 用 Google 揣活動詳情 ↗
+            🔍 Google 揣報名／買票 ↗
           </a>
           <!-- Dynamic Calendar CTA (Auto-adapted for Android Google Calendar vs iPhone Apple Calendar) -->
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
@@ -501,6 +503,15 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return `${{formatCalendarDate(taipeiDateKey(date))}} ${{time}}`;
     }}
 
+    function formatEventTime(startIso, endIso) {{
+      const start = formatDateDisplay(startIso);
+      if (!endIso) return start + '（結束時間猶未公告）';
+      const end = new Date(endIso);
+      if (taipeiDateKey(new Date(startIso)) !== taipeiDateKey(end)) return start + ' - ' + formatDateDisplay(endIso);
+      const endTime = new Intl.DateTimeFormat('zh-TW', {{ timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }}).format(end);
+      return start + ' - ' + endTime;
+    }}
+
     function sourceLabel(source) {{
       return {{'Accupass 活動通':'Accupass','北北桃市立圖書館':'市立圖書館','OPENTIX 兩廳院':'OPENTIX'}}[source] || source;
     }}
@@ -677,14 +688,14 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalImg').parentElement.style.display = act.cover_image ? '' : 'none';
       document.getElementById('modalCity').className = 'badge badge-city ' + cityClass(act.city);
       document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${{act.district}})` : '');
-      document.getElementById('modalCategory').innerText = act.category;
+      document.getElementById('modalCategory').innerText = categoryLabel(act.category);
       document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
       document.getElementById('modalTitle').innerText = act.title_taigi || act.title;
-      document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time) + (act.end_time ? ' ～ ' + formatDateDisplay(act.end_time) : '（結束時間猶未公告）');
+      document.getElementById('modalTime').innerText = formatEventTime(act.start_time, act.end_time);
       document.getElementById('modalVenue').innerText = act.venue + (act.address ? ` (${{act.address}})` : '');
       document.getElementById('modalOrganizer').innerText = act.organizer;
-      document.getElementById('modalPrice').innerText = act.price_info;
-      document.getElementById('modalDesc').innerText = act.description + '\\n\\n官方資料核對：' + act.raw_metadata.verified_at.slice(0, 10) + '。出門進前請閣看一擺官方最新公告。';
+      document.getElementById('modalPrice').innerText = act.price_info_taigi || '所費說明猶待整理';
+      document.getElementById('modalDesc').innerText = (act.description_taigi || '活動紹介猶待整理') + '\\n\\n官方資料確認：' + act.raw_metadata.verified_at.slice(0, 10) + '。欲出門進前，請閣看一擺官方最新公告。';
 
       const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
       const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語 報名 售票`);
@@ -692,10 +703,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
       const ticketBtn = document.getElementById('modalTicketLink');
       ticketBtn.href = act.source_url;
-      ticketBtn.textContent = '🌐 看官方活動公告／報名 ↗';
+      ticketBtn.textContent = '🌐 活動公告／報名 ↗';
 
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
-      document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 用 Google 揣報名／買票資訊 ↗';
+      document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 Google 揣報名／買票 ↗';
       document.getElementById('modalGCalLink').href = act.gcal_url;
       // A real calendar URL lets iPhone Safari hand off to Calendar instead of
       // trying to download a temporary blob. The standalone HTML uses the live site.
@@ -760,7 +771,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const act = selectedActivity;
       const shareData = {{
         title: act.title_taigi || act.title,
-        text: `【${{act.category}}】${{act.title_taigi || act.title}}\\n時間：${{formatDateDisplay(act.start_time)}}\\n地點：${{act.venue}}\\n來做伙講台語！`,
+        text: `【${{categoryLabel(act.category)}}】${{act.title_taigi || act.title}}\\n時間：${{formatDateDisplay(act.start_time)}}\\n所在：${{act.venue}}\\n來做伙講台語！`,
         url: window.location.href
       }};
 

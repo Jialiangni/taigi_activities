@@ -241,6 +241,7 @@ class VerifiedCalendarTests(unittest.TestCase):
         rows = json.loads(re.search(r'const ACTIVITIES_DATA = (\[.*?\]);', html, re.S).group(1))
         for row, event in zip(rows, events):
             self.assertTrue(row['description_taigi'])
+            self.assertTrue(row['price_info_taigi'])
             self.assertEqual(row['description'], event.description)
             self.assertEqual(row['title'], event.title)
             self.assertEqual(row['venue'], event.venue)

@@ -33,6 +33,8 @@ for(const [i,label] of ['拜一','拜二','拜三','拜四','拜五','拜六','�
 }
 assert.equal(run("formatDateDisplay('2026-09-19T10:00:00+08:00')"),'2026∙09∙19 拜六 10:00');
 assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 拜一 00:05');
+assert.equal(run("formatEventTime('2026-10-04T13:00:00+08:00','2026-10-04T17:30:00+08:00')"),'2026∙10∙04 禮拜 13:00 - 17:30');
+assert.equal(run("formatEventTime('2026-10-04T23:00:00+08:00','2026-10-05T01:00:00+08:00')"),'2026∙10∙04 禮拜 23:00 - 2026∙10∙05 拜一 01:00');
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
 for(const event of data.filter(a=>a.title_taigi!==a.title)){
   run(`renderGrid([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);renderAgenda([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);openModal(${JSON.stringify(event.id)})`);
@@ -61,8 +63,12 @@ assert.match(run("formatDateDisplay('2026-09-20T14:00:00+08:00')"),/14:00/);
 if (data.length) {
   run('openModal(ACTIVITIES_DATA[0].id)');
   assert.equal(element('modalTicketLink').href,data[0].source_url);
-  assert.match(element('modalDesc').innerText,/官方資料核對/);
-  assert.match(element('modalTime').innerText,/～/);
+  assert.equal(element('modalPrice').innerText,data[0].price_info_taigi);
+  assert.ok(element('modalDesc').innerText.startsWith(data[0].description_taigi));
+  assert.match(element('modalDesc').innerText,/官方資料確認/);
+  assert.doesNotMatch(element('modalTime').innerText,/～/);
+  assert.equal(element('modalTicketLink').textContent,'🌐 活動公告／報名 ↗');
+  assert.equal(element('modalGoogleSearchLink').innerHTML,'🔍 Google 揣報名／買票 ↗');
 }
 // Month selection is a union of year-months, intersected with all other filters.
 assert.equal(run("monthLabel('2026-09')"),'2026∙09');
