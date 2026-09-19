@@ -1,0 +1,195 @@
+{
+  "source_evidence": {
+    "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+    "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+    "http_status": 200,
+    "request_method": "GET",
+    "fetched_at": "2026-09-19T21:17:06+08:00",
+    "sha256": "4cb0ae68c14720d0c35d19fc6c3040bd32641388138baf62dbc30c0b143d2746"
+  },
+  "registration_evidence": {
+    "url": "https://ppt.cc/fblvqx",
+    "final_url": "https://docs.google.com/forms/d/1wDbRxYgap7mSzDz3DbEKrtTvoe4-Ka920X7WYt9nFNk/viewform?edit_requested=true",
+    "checked_at": "2026-09-19T21:17:08+08:00",
+    "snapshot_sha256": "ff35f3381bb3426c6eec881990525555f67cbfd47454754fb7c2578bbd407dc9",
+    "title": "2026.09.20古錐ê講古｜免費台語繪本活動報名表",
+    "choices": [
+      "第一場10:30-11:20",
+      "第二場11:30-12:20"
+    ],
+    "hops": [
+      {
+        "url": "https://ppt.cc/fblvqx",
+        "final_url": "https://docs.google.com/forms/d/1wDbRxYgap7mSzDz3DbEKrtTvoe4-Ka920X7WYt9nFNk/viewform?edit_requested=true",
+        "snapshot_sha256": "ff35f3381bb3426c6eec881990525555f67cbfd47454754fb7c2578bbd407dc9"
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "start_time": "2026-09-20T10:30:00+08:00",
+      "end_time": null,
+      "registration_choice": "第一場10:30-11:20",
+      "end_time_variants": [
+        "2026-09-20T11:20:00+08:00",
+        "2026-09-20T11:30:00+08:00"
+      ]
+    },
+    {
+      "start_time": "2026-09-20T11:30:00+08:00",
+      "end_time": "2026-09-20T12:20:00+08:00",
+      "registration_choice": "第二場11:30-12:20",
+      "end_time_variants": [
+        "2026-09-20T12:20:00+08:00"
+      ]
+    }
+  ],
+  "ocr_used_for_resolution": false,
+  "poster_smoke": {
+    "engine": "apple-vision",
+    "lines": [
+      {
+        "box": [
+          0.022485798302712096,
+          0.8883324684752257,
+          0.3200473712877629,
+          0.07884840004344407
+        ],
+        "confidence": 50,
+        "text": "9月20日"
+      },
+      {
+        "box": [
+          0.03802281368821293,
+          0.8288973384030418,
+          0.376425855513308,
+          0.03802281368821292
+        ],
+        "confidence": 50,
+        "text": "喜憨兒桃圆南門公園"
+      },
+      {
+        "box": [
+          0.03795107417233543,
+          0.7867542165313837,
+          0.1674438302507872,
+          0.038658896326565495
+        ],
+        "confidence": 30.000001192092896,
+        "text": "庇䛵商店"
+      },
+      {
+        "box": [
+          0.03802281368821293,
+          0.7414448669201521,
+          0.08745247148288973,
+          0.034220532319391594
+        ],
+        "confidence": 30.000001192092896,
+        "text": "主題"
+      },
+      {
+        "box": [
+          0.034220532319391636,
+          0.7034220532319392,
+          0.2509505703422053,
+          0.03802281368821292
+        ],
+        "confidence": 50,
+        "text": "10:30-水母巴士"
+      },
+      {
+        "box": [
+          0.034220532319391636,
+          0.6539923954372624,
+          0.31558933910761494,
+          0.03802281368821281
+        ],
+        "confidence": 50,
+        "text": "11:30-果子牛臆謎猜"
+      },
+      {
+        "box": [
+          0.5245733913813254,
+          0.8699851670645942,
+          0.27404711545646865,
+          0.05470641393625242
+        ],
+        "confidence": 30.000001192092896,
+        "text": "台語繪本活動"
+      },
+      {
+        "box": [
+          0.8250950570342205,
+          0.7984790874524714,
+          0.06083650190114076,
+          0.03802281368821303
+        ],
+        "confidence": 30.000001192092896,
+        "text": "免費"
+      },
+      {
+        "box": [
+          0.3726235741444867,
+          0.45627376425855515,
+          0.25855513307984784,
+          0.13307984790874527
+        ],
+        "confidence": 50,
+        "text": "古錐"
+      },
+      {
+        "box": [
+          0.39163498824086934,
+          0.3992395437262357,
+          0.3041825022534272,
+          0.06463878326996197
+        ],
+        "confidence": 30.000001192092896,
+        "text": "koo-tsui仓"
+      },
+      {
+        "box": [
+          0.44486692377822934,
+          0.2623574144486692,
+          0.27756653629781625,
+          0.1368821292775665
+        ],
+        "confidence": 50,
+        "text": "講古"
+      },
+      {
+        "box": [
+          0.4714828897338403,
+          0.20912547528517111,
+          0.23954372623574144,
+          0.05323193916349811
+        ],
+        "confidence": 30.000001192092896,
+        "text": "kong-koo"
+      },
+      {
+        "box": [
+          0.34600760456273766,
+          0.049429657794676785,
+          0.3498098859315589,
+          0.041825095057034245
+        ],
+        "confidence": 30.000001192092896,
+        "text": "②大1数 S Tai-gi-1 o"
+      }
+    ],
+    "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+    "final_url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+    "checked_at": "2026-09-19T21:15:20+08:00",
+    "image_sha256": "9c5ccbf2d3dc5b2f45502888e9f23a61a46667c603287d4eb6fad5d392fa16aa"
+  },
+  "poster_smoke_decision": "poster_identity_uncertain",
+  "validation": {
+    "python_test_count": 164,
+    "local_tesseract_test": "deferred_to_linux_ci",
+    "local_real_poster_engine": "apple-vision",
+    "priority": "announcement_then_registration_then_poster",
+    "new_activities_added": 0
+  }
+}

@@ -216,10 +216,21 @@ def validate_auto_source(source, program, html=None, client=None):
     if proof.get('source_type') == 'gameislearning':
         require(isinstance(html, str), 'gameislearning_page_missing')
         live = parse_gameislearning_detail(html, source['url'], {}, now=datetime.now(TAIPEI))
-        if proof.get('registration_evidence'):
+        if proof.get('registration_evidence') or proof.get('poster_ocr_evidence'):
             live = supplement_registration(live, client or Client())
+        if proof.get('registration_evidence'):
             require(live.get('registration_evidence', {}).get('final_url') ==
                     proof['registration_evidence']['final_url'], 'registration_destination_changed')
+            expected_hops = proof['registration_evidence'].get('hops')
+            if expected_hops:
+                paths = lambda hops: [(h['url'], h['final_url']) for h in hops]
+                require(paths(live.get('registration_evidence', {}).get('hops', [])) == paths(expected_hops),
+                        'registration_route_changed')
+        if proof.get('poster_ocr_evidence'):
+            expected = proof['poster_ocr_evidence']
+            actual = live.get('poster_ocr_evidence', {})
+            require(all(actual.get(k) == expected.get(k) for k in ('url','image_sha256')),
+                    'poster_ocr_source_changed')
         require(normalize(live['title']) == normalize(source['title']), 'gameislearning_title_changed')
         require(proof.get('trusted_language_source') is True, 'trusted_language_source_missing')
         require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
@@ -417,6 +428,8 @@ def verify_gameislearning(candidate, client, now):
         source['automated_review']['registration_evidence'] = live['registration_evidence']
         proof_session['registration_choice'] = session['registration_choice']
         proof_session['end_time_variants'] = session['end_time_variants']
+    if live.get('poster_ocr_evidence'):
+        source['automated_review']['poster_ocr_evidence'] = live['poster_ocr_evidence']
     row = {'activity': act, 'verification': {'status': 'verified', 'source_id': key,
            'mode': MODE,
            'method': '台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。',

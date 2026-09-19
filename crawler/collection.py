@@ -34,7 +34,16 @@ def canonical(url):
 
 
 class SafeRedirect(HTTPRedirectHandler):
+    def __init__(self, allowed_hosts=None, url_filter=None):
+        super().__init__()
+        self.allowed_hosts = allowed_hosts
+        self.url_filter = url_filter
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if self.url_filter is not None and not self.url_filter(newurl):
+            raise CollectionError('redirect_url_not_allowed')
+        if self.allowed_hosts is not None and urlsplit(newurl).netloc not in self.allowed_hosts:
+            raise CollectionError('redirect_host_not_allowed')
         if urlsplit(newurl).hostname != urlsplit(req.full_url).hostname:
             # Public website redirects are recorded; never forward API authorization.
             if req.has_header('Authorization'):
@@ -45,18 +54,33 @@ class SafeRedirect(HTTPRedirectHandler):
 
 
 class Client:
-    def __init__(self, timeout=20, delay=0.25):
+    def __init__(self, timeout=20, delay=0.25, allowed_hosts=None, url_filter=None):
         ctx = ssl.create_default_context()
         # macOS's system trust store is additional trusted CA material, not verify=False.
         if Path('/etc/ssl/cert.pem').exists():
             ctx.load_verify_locations('/etc/ssl/cert.pem')
-        self.opener = build_opener(HTTPSHandler(context=ctx), SafeRedirect(), HTTPCookieProcessor(CookieJar()))
+        self.opener = build_opener(HTTPSHandler(context=ctx), SafeRedirect(allowed_hosts, url_filter), HTTPCookieProcessor(CookieJar()))
+        self.allowed_hosts = allowed_hosts
+        self.url_filter = url_filter
+        self.scoped_clients = {}
         self.timeout, self.delay = timeout, delay
         self.cache, self.requests = {}, []
         self.progress = None
 
+    def scoped(self, allowed_hosts, url_filter=None):
+        key = (tuple(sorted(allowed_hosts)), url_filter)
+        if key not in self.scoped_clients:
+            self.scoped_clients[key] = Client(self.timeout, self.delay, frozenset(allowed_hosts), url_filter)
+            self.scoped_clients[key].requests = self.requests
+            self.scoped_clients[key].progress = self.progress
+        return self.scoped_clients[key]
+
     def get(self, url, payload=None, token=None, form=None, ajax=False):
         url = canonical(url)
+        if self.url_filter is not None and not self.url_filter(url):
+            raise CollectionError('request_url_not_allowed')
+        if self.allowed_hosts is not None and urlsplit(url).netloc not in self.allowed_hosts:
+            raise CollectionError('request_host_not_allowed')
         if urlsplit(url).scheme != 'https':
             raise CollectionError('https_required')
         if form is not None and (payload is not None or token):

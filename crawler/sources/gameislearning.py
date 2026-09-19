@@ -72,7 +72,7 @@ def parse_detail(page, url, evidence, card=None, now=None):
     address = text_lines(_first(r'活動地址.*?<a[^>]+href=["\'][^"\']+["\'][^>]*>(.*?)</a>', page))
     source_href = _first(r'<td[^>]+id=["\']titleTD["\'][^>]*>.*?<a[^>]+href=["\']([^"\']+)', page)
     links = []
-    for raw in [source_href] + URL_RE.findall(body):
+    for raw in [source_href] + [u for u,_,_ in Document(body_html).links(url)] + URL_RE.findall(body):
         link = clean_url(urljoin(url, raw))
         if link and link not in links and urlsplit(link).scheme == 'https':
             links.append(link)
@@ -90,7 +90,7 @@ def parse_detail(page, url, evidence, card=None, now=None):
             'category': category_of(card.get('type', ''), title + ' ' + body),
             'is_free': card.get('is_free'), 'registration_url': registration,
             'content_links': links, 'sessions': sessions, 'evidence': evidence,
-            'source_url': url, 'cover_image': poster_url(page, url)}
+            'source_url': url, 'published_at':card.get('published_at'), 'cover_image': poster_url(page, url)}
 
 
 def choose_registration_url(links):
@@ -172,13 +172,9 @@ def registration_sessions(parsed, page, evidence):
 
 
 def supplement_registration(parsed, client):
-    if parsed['sessions'] or not parsed.get('registration_url'):
-        return parsed
-    url = parsed['registration_url']
-    if urlsplit(url).hostname not in ('docs.google.com', 'forms.gle', 'ppt.cc', 'reurl.cc'):
-        return parsed
-    page, evidence = client.get(url)
-    return registration_sessions(parsed, page, evidence)
+    # Compatibility entry point used by collection, review, and live revalidation.
+    from ..poster_ocr import supplement_activity
+    return supplement_activity(parsed, client)
 
 
 def venue_of(body, address):
@@ -238,7 +234,7 @@ def _range_clocks(match):
     return sh, sm, eh, em
 
 
-DATE_RE = re.compile(r'(?:(20\d{2}|1\d{2})\s*[/.年]\s*)?(\d{1,2})\s*(?:[/.月])\s*(\d{1,2})\s*日?')
+DATE_RE = re.compile(r'(?:(20\d{2}|1\d{2})\s*[/.年\-]\s*)?(\d{1,2})\s*(?(1)[/.月\-]|[/.月])\s*(\d{1,2})\s*日?')
 TIME_RE = re.compile(r'(?:(AM|PM|上午|下午|下晡|暗時|早起)\s*)?(\d{1,2})\s*[:：]\s*(\d{2})\s*(?:[~～－—–-]|至|到)\s*(?:(AM|PM|上午|下午|下晡|暗時|早起)\s*)?(\d{1,2})\s*[:：]\s*(\d{2})', re.I)
 START_TIME_RE = re.compile(r'(?:(AM|PM|上午|下午|下晡|暗時|早起)\s*)?(\d{1,2})\s*[:：]\s*(\d{2})', re.I)
 
@@ -283,8 +279,8 @@ def sessions_of(body, published_at=None, now=None):
             pass
 
     recurring = re.search(
-        r'(?:(20\d{2}|1\d{2})\s*[/.年]\s*)?(\d{1,2})\s*[/.月]\s*(\d{1,2})\s*日?\s*[~～－—–-]\s*'
-        r'(?:(20\d{2}|1\d{2})\s*[/.年]\s*)?(\d{1,2})\s*[/.月]\s*(\d{1,2})\s*日?[^\n]{0,50}'
+        r'(?:(20\d{2}|1\d{2})\s*[/.年\-]\s*)?(\d{1,2})\s*[/.月]\s*(\d{1,2})\s*日?\s*[~～－—–-]\s*'
+        r'(?:(20\d{2}|1\d{2})\s*[/.年\-]\s*)?(\d{1,2})\s*[/.月]\s*(\d{1,2})\s*日?[^\n]{0,50}'
         r'(?:每週|每星期|逐週)[^\n]{0,20}', body)
     if recurring:
         y1 = _year(recurring.group(1), fallback_year)
@@ -426,7 +422,7 @@ class GameIsLearningCrawler(Collector):
                     fields = dict(parsed, **session)
                     fields.pop('sessions', None)
                     row = candidate('gameislearning', url, parsed['title'], parsed['text'], evidence,
-                                    fields=fields, kind='session', issues=['trusted_taigi_directory'],
+                                    fields=fields, kind='session', issues=['trusted_taigi_directory'] + ([parsed['enrichment_issue']] if parsed.get('enrichment_issue') else []),
                                     key=url + ':' + session['start_time'])
                     row['trusted_language_source'] = True
                     result.candidates.append(row)

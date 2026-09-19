@@ -64,7 +64,7 @@ class RegistrationSessionTests(unittest.TestCase):
                      FORM.replace('2026.09.20', '2027.09.20'),
                      FORM.replace('2026.09.20', '09.20'),
                      FORM.replace('喜憨兒南門公園商店', '另一個地點'),
-                     FORM.replace('參加的場次', '其他問題')):
+                     FORM.replace('古錐ê講古', '完全不同的活動')):
             with self.subTest(form=form), self.assertRaises(CollectionError):
                 supplement_registration(self.parsed(), Client(form))
         for final in ('https://docs.google.com.evil.test/forms/d/example/viewform',
@@ -73,6 +73,11 @@ class RegistrationSessionTests(unittest.TestCase):
             client.final = final
             with self.assertRaises(CollectionError):
                 supplement_registration(self.parsed(), client)
+
+    def test_visible_description_also_supports_sessions_without_choice_question(self):
+        parsed = supplement_registration(self.parsed(), Client(FORM.replace('參加的場次','其他問題')))
+        self.assertEqual([s['start_time'][11:16] for s in parsed['sessions']], ['10:30','11:30'])
+        self.assertEqual(parsed['registration_evidence']['method'], 'public_text_v2')
 
     def test_collector_failure_preserves_candidate_and_success_splits_two(self):
         collector = GameIsLearningCrawler(max_pages=1, now=NOW)
