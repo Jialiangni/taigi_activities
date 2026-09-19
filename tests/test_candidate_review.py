@@ -142,6 +142,38 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(result['decisions'][0]['review_mode'], 'owner_feedback')
         self.assertEqual(self.client.calls, [])
 
+    def test_facebook_snapshot_stays_pending_and_official_link_deduplicates(self):
+        context = {'discovered_links': [{'url': URL, 'origin': 'comment', 'is_page_author': True}],
+                   'draft': {'title': '粉專公告', 'description': '候選摘要',
+                             'unverified_fields': ['start_time']}}
+        candidate = {'id': 'fb-safe', 'source_id': 'facebook_review',
+                     'source_url': 'https://www.facebook.com/example/posts/1', 'title': '粉專公告',
+                     'text': '候選摘要', 'kind': 'social_snapshot', 'review_status': 'pending',
+                     'fields': {}, 'review_context': context}
+        self.write('candidates/facebook_review.json',
+                   {'source_id': 'facebook_review', 'candidates': [candidate]})
+        self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
+            {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
+        result = self.run_review()
+        self.assertEqual(result['counts'], {'pending': 1})
+        self.assertEqual(result['decisions'][0]['reason'], 'facebook_snapshot_needs_manual_review')
+        self.assertEqual(result['decisions'][0]['review_context'], context)
+        self.assertEqual(self.client.calls, [])
+        self.assertEqual(json.loads((self.root/'data/verified_activities.json').read_text())['activities'], [])
+
+        self.save_candidates()
+        self.run_review()
+        self.client.calls.clear()
+        self.write('candidates/facebook_review.json',
+                   {'source_id': 'facebook_review', 'candidates': [candidate]})
+        self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
+            {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
+        result = self.run_review()
+        self.assertEqual(result['counts'], {'duplicate': 1})
+        self.assertEqual(result['decisions'][0]['reason'], 'official_link_already_published')
+        self.assertEqual(result['decisions'][0]['activity_id'], 'opentix_789')
+        self.assertEqual(self.client.calls, [])
+
     def test_cross_platform_session_duplicate(self):
         self.run_review()
         path = self.root/'data/verified_activities.json'

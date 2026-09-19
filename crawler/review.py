@@ -237,6 +237,21 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if manual_row.get('resource_id'):
                     item['resource_id'] = manual_row['resource_id']
                 continue
+            if c['source_id'] == 'facebook_review':
+                context = c.get('review_context')
+                require(isinstance(context, dict) and isinstance(context.get('discovered_links'), list)
+                        and isinstance(context.get('draft'), dict), 'invalid_facebook_review_snapshot')
+                item['review_context'] = context
+                published_urls = {source_url(row['activity'].get('source_url', '')): row['activity']['id']
+                                  for row in catalog['activities']}
+                matched = next((published_urls.get(source_url(link.get('url', '')))
+                                for link in context['discovered_links'] if isinstance(link, dict)
+                                and link.get('is_page_author') is True
+                                and published_urls.get(source_url(link.get('url', '')))), None)
+                if matched:
+                    item.update(decision='duplicate', reason='official_link_already_published', activity_id=matched)
+                    continue
+                raise Pending('facebook_snapshot_needs_manual_review')
             hint = dict(c['fields'], title=c['title'], source_url=c['source_url'])
             existing = duplicate(hint, catalog, str(c['fields'].get('session_id', '')) if c['source_id']=='opentix' else None)
             if existing:

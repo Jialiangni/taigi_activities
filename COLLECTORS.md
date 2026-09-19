@@ -57,7 +57,7 @@ python3 -m unittest discover -s tests -v
 
 報告記錄各來源候選數、成功回應數、時間、來源 URL、成功回應 SHA-256（解壓後內容）、失敗碼與截斷原因。API POST 的公開搜尋條件一併留存，不儲存授權標頭。候選全文是本機待審資料，已排除於 Git 與 GitHub Pages；Git 只保存精簡測試樣本與驗證摘要。
 
-GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Facebook／Instagram／Threads 的授權內容不放進 artifact。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
+GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Facebook原始授權內容與Instagram／Threads授權內容不放進 artifact。Facebook另輸出去識別 `facebook_review.json`：保留粉專公開貼文短摘錄、找到的公開網址、粉專留言身分判斷、抓取時間及內容雜湊，排除一般留言文字與身分、Graph API請求網址及權杖。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
 
 任何來源的請求／格式錯誤會令 CLI 回傳非零碼，但仍完成其他獨立來源並保存報告；單純到達已設定上限會標 partial。設定缺漏的社群屬明確待設定狀態，無法以此視為已驗證。
 
@@ -174,9 +174,9 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 
 將實際對照設為 `FACEBOOK_PAGE_ID_MAP` 環境變數／GitHub Secret；token仍使用 `FACEBOOK_ACCESS_TOKEN`。需確認對每個Page及留言都具讀取資格；能讀本文不保證能讀留言，尤其非自己管理的粉專。不能將任意登入token當作通用粉專讀取權限。
 
-目前無Meta授權，實跑是 **needs_configuration / 0候選**，4個目標逐一列於 `facebook.json` 及 `report.json` 的 `page_status`，不是「四個粉專都沒有活動」。本輪74項測試通過（含11項留言／待查名單測試）；官方API仍待授權後實測。見[公開頁與待設定紀錄](data/audit/2026-09-18-facebook-watchlist-review.json)、[Meta官方Post SDK](https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py)及[留言介面文件](https://developers.facebook.com/docs/graph-api/reference/object/comments/)。
+目前無Meta授權，實跑是 **needs_configuration / 0候選**，4個目標逐一列於 `facebook.json` 及 `report.json` 的 `page_status`，不是「四個粉專都沒有活動」。目前106項測試通過（含11項留言／待查名單測試、2項去識別快照測試及人工核實／去重串接）；官方API仍待授權後實測。見[公開頁與待設定紀錄](data/audit/2026-09-18-facebook-watchlist-review.json)、[Meta官方Post SDK](https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py)及[留言介面文件](https://developers.facebook.com/docs/graph-api/reference/object/comments/)。
 
-原有artifact排除規則持續排除facebook.json，授權貼文及留言不公開、不自動寫入Git或網站。
+原有artifact排除規則持續排除 `facebook.json`；只有 `facebook_review.json` 去識別快照交給後續核實。候選文案只概述粉專公開內容及連結狀態，缺少的活動欄位逐項標示未核實；Facebook快照固定為pending，不自動寫入正式活動或網站。
 
 
 ## 李江却基金會：公告正文與系列核實清單（2026-09-18）

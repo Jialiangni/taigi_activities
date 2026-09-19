@@ -117,7 +117,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 `data/facebook_pages.json` 為Facebook待查名單，包含ChhutGoaKongTaiGi、Guaayingla、taigiloo及既有taigilok；由Facebook收集器自動載入。以 `FACEBOOK_PAGE_ID_MAP` 明確綁定數字ID；未設定逐項標needs_configuration。名稱或網址相似不可直接合併。
 
-指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整；所有結果仍待人工核實，不直接刊登。詳見COLLECTORS.md。
+指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整。原始 `facebook.json` 留在收集執行器；後續只接收 `facebook_review.json` 去識別快照，內容限粉專公開貼文短摘錄、公開連結、作者可信度及回應雜湊。依此產生的候選摘要必須明列未核實欄位，固定pending，不直接刊登。詳見COLLECTORS.md。
 
 
 ## 11. 李江却基金會系列場次核實
@@ -228,6 +228,6 @@ iPhone 的 LINE 內建瀏覽器不直接交接 `.ics` 時，網站辨識 LINE us
 
 去重以既有全部歷史紀錄與本輪已通過結果為基準：官方 session ID優先，其次官方頁＋起迄時間，再比對跨站正規化標題／城市／地點／時間。相同城市時間但標題或場地疑似重複時保留 pending。同一官方系列的不同日期可分別通過；同一報告反覆執行不重複新增。過期活動只從輸出排除，核實歷史仍保留。
 
-`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；社群授權內容不下載。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
+`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Facebook僅下載上述去識別快照。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
 
 所有正式檢查通過才提交核實資料、翻譯對照、審查紀錄及 HTML/ICS。提交推送失敗會停止部署，沒有 continue-on-error 或強制覆蓋 main。候選核實報告保留 Git 及14天 artifact，全文候選不進 Git／Pages。Python 測試保存9/18的85場固定樣本；當前正式清單另通過結構、來源與日曆一致性檢查，沒有85場數量上限。
