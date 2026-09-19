@@ -39,8 +39,8 @@ assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 �
 assert.equal(run("formatEventTime('2026-10-04T13:00:00+08:00','2026-10-04T17:30:00+08:00')"),'2026∙10∙04 禮拜 13:00 - 17:30');
 assert.equal(run("formatEventTime('2026-10-04T23:00:00+08:00','2026-10-05T01:00:00+08:00')"),'2026∙10∙04 禮拜 23:00 - 2026∙10∙05 拜一 01:00');
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
-const accupassEditions=JSON.parse(fs.readFileSync('data/accupass_editorial.json','utf8'));
-for (const edition of accupassEditions) {
+const sessionEditions=['accupass','opentix'].flatMap(source=>JSON.parse(fs.readFileSync(`data/${source}_editorial.json`,'utf8')));
+for (const edition of sessionEditions) {
   const activity=data.find(a=>a.id===edition.activity_id);
   if (!activity) continue;
   assert.equal(activity.summary_taigi,edition.summary_taigi);

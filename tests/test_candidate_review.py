@@ -88,6 +88,35 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(self.client.calls, [])
         self.assertEqual(original, (self.root/'data/verified_activities.json').read_bytes())
 
+    def test_opentix_retains_full_content_without_boilerplate_translation(self):
+        self.program['description'] += '<p>' + '家庭故事與戲偶演出。' * 50 + '</p><p>演員：甲、乙；導演：丙。</p>'
+        self.program['eventVenues'][0]['eventNoteContent'] = '<p>本場館演前導聆。</p>'
+        other = copy.deepcopy(self.program['eventVenues'][0])
+        other['events'][0]['id'] = '790'
+        other['eventNoteContent'] = '<p>另一場館限定的活動。</p>'
+        self.program['eventVenues'].append(other)
+        self.candidates = parse_program(self.program, {})[:1]
+        self.save_candidates()
+        original_get = self.client.get
+        def get_with_note(url):
+            html, evidence = original_get(url)
+            return html + '<p>本場館演前導聆。</p>', evidence
+        self.client.get = get_with_note
+        self.assertEqual(self.run_review()['counts'], {'approved': 1})
+        catalog = json.loads((self.root/'data/verified_activities.json').read_text())
+        description = catalog['activities'][0]['activity']['description']
+        self.assertIn('家庭故事與戲偶演出。' * 50, description)
+        self.assertIn('演員：甲、乙；導演：丙。', description)
+        self.assertIn('本場館演前導聆。', description)
+        self.assertNotIn('另一場館', description)
+        self.assertNotIn(description, json.loads((self.root/'data/ui_taigi.json').read_text()))
+        from crawler.verified import check_source_content
+        source = next(iter(catalog['sources'].values()))
+        html = self.client.get(URL)[0]
+        check_source_content(source, html)
+        with self.assertRaises(ValueError):
+            check_source_content(source, html.replace('演員：甲、乙；導演：丙。', '演員：丁。'))
+
     def test_dry_run_and_network_failure_preserve_catalog(self):
         original = (self.root/'data/verified_activities.json').read_bytes()
         self.assertEqual(self.run_review(False)['counts'], {'approved': 1})

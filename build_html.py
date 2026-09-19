@@ -9,7 +9,7 @@ from typing import List
 from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
 from crawler.presentation import session_title
-from crawler.editorial import display_summary, accupass_editions, accupass_edition
+from crawler.editorial import display_summary, session_editions, session_edition
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
@@ -19,7 +19,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     price_translations = json.loads((root / 'data/ui_price_taigi.json').read_text(encoding='utf-8'))
     styles = (root / 'assets/site.css').read_text(encoding='utf-8')
     activities_data = []
-    accupass_copy = accupass_editions()
+    editorial_copy = session_editions()
     g_sync = GoogleWorkspaceSync()
 
     for act in activities:
@@ -31,7 +31,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         primary_text = translations.get(d['description'], '')
         if display_description != d['description'] and primary_text and primary_text != d['description_taigi']:
             d['description_taigi'] += '\n\n' + primary_text
-        edition = accupass_edition(d, accupass_copy)
+        edition = session_edition(d, editorial_copy)
         if edition:
             d['description_taigi'] = edition['description_taigi']
             d['summary_taigi'] = edition['summary_taigi']

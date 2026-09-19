@@ -500,11 +500,15 @@ def verify_opentix(candidate, client, now):
     html, page = client.get(url)
     require(page['final_url'] == url, 'official_page_redirected')
     quote = claims[0]['quote']
-    required = [program['name'], f['venue'], quote]
+    # Retain the complete official introduction and only this venue's notes.
+    # Never substitute a language-proof boilerplate for actual program content.
+    introduction = [part for part in (plain(program.get('description')),
+                                      plain(group.get('eventNoteContent'))) if part]
+    required = list(dict.fromkeys([program['name'], f['venue'], quote] + introduction))
     require(all(normalized_text(x) in normalized_text(html) for x in required), 'page_api_disagree')
     prices = '、'.join(format(p, 'g') for p in f['price_info'])
     price = ('票面價格：' + prices + '元；折扣、贊助票與購票條件依官方頁面')
-    description = '官方語言說明：' + quote + '\n入場規定、購票條件及節目詳情請查閱官方活動公告。'
+    description = '\n\n'.join(introduction)
     act = Activity(id='opentix_' + sid, title=program['name'], description=description,
                    city=f['city'], category=CategoryEnum.PERFORMANCE,
                    start_time=f['start_time'], end_time=f['end_time'], venue=f['venue'], address=f['address'],
@@ -718,7 +722,6 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             if a['description'] == '官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。':
                 translations[a['description']] = '這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。'
             if c['source_id'] == 'opentix':
-                translations[a['description']] = '這場有台語內容。詳細節目紹介、入場規定佮報名狀況，請看活動公告。'
                 amounts = '、'.join(format(p, 'g') for p in source['opentix_sessions'][-1]['price_info'])
                 prices[a['price_info']] = '票價：' + amounts + '元；折扣佮買票規定請看官方公告。'
             elif c['source_id'] == 'accupass':
