@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T20:40:06+08:00",
+  "reviewed_at": "2026-09-19T20:59:30+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T13:09:25+08:00",
   "candidate_count": 745,
@@ -31,7 +31,7 @@
       "source_url": "https://www.accupass.com/event/2609170647181226219267",
       "title": "【台語親子共學】原來台語按呢跨界！從台語到英語，讀冊聽音韻，一工探索母語的趣味",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "ead485f15a3fea710295f336",
@@ -63,7 +63,7 @@
       "source_url": "https://www.accupass.com/event/2609030741412898282180",
       "title": "思念ê聲—台語作詞工作坊／楊肅浩老師",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "922de7ea9931d58bc3ba5728",
@@ -103,7 +103,7 @@
       "source_url": "https://www.accupass.com/event/2606300741301758195196",
       "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "1382ccbc229df183c3b0dbfd",
@@ -186,7 +186,7 @@
       "source_url": "https://www.accupass.com/event/2609100905344368537350",
       "title": "2026華文朗讀節 一粒米．好土台灣【朗讀沙龍】10/25週日場",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "0cfe4e1372425d37ac9069c0",
@@ -258,7 +258,7 @@
       "source_url": "https://www.accupass.com/event/2609040825101995339640",
       "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "73528f998efb61e509603ca3",
@@ -330,7 +330,7 @@
       "source_url": "https://www.accupass.com/event/2608290544597291528600",
       "title": "2026淡水福爾摩莎國際詩歌節",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "cb9c2067b642ccc8f1322847",
@@ -378,7 +378,7 @@
       "source_url": "https://www.accupass.com/event/2303130833491195750522",
       "title": "【線上課程】Ferrandi 主廚不藏私｜系統化零基礎法式甜點課",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "c6692dcf6aae8096178db0dd",
@@ -402,7 +402,7 @@
       "source_url": "https://www.accupass.com/event/2210201514359591824600",
       "title": "桃園八塊厝民俗藝術村 \\\\藝術好戲登場囉//",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "reason": "accupass_series_needs_review"
     },
     {
       "candidate_id": "f60c0f3b60a943b8dd82b360",
