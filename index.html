@@ -196,7 +196,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个月"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个月</span></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
-        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（41）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（40）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
+        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（42）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（40）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
         <label for="priceFilter">所費 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
@@ -359,7 +359,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 19:13:46（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 19:19:19（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -3074,6 +3074,38 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E8%88%8A%E6%83%85%E7%B6%BF%E7%B6%BF%EF%BC%88%E6%95%B8%E4%BD%8D%E4%BF%AE%E5%BE%A9%E7%89%88%EF%BC%89&dates=20261107T080000Z%2F20261107T094200Z&ctz=Asia%2FTaipei&details=%E5%AE%98%E6%96%B9%E8%AA%9E%E8%A8%80%E8%AA%AA%E6%98%8E%EF%BC%9A%E7%99%BC%E9%9F%B3%EF%BC%9A%E5%8F%B0%E8%AA%9E%0A%E5%85%A5%E5%A0%B4%E8%A6%8F%E5%AE%9A%E3%80%81%E8%B3%BC%E7%A5%A8%E6%A2%9D%E4%BB%B6%E5%8F%8A%E7%AF%80%E7%9B%AE%E8%A9%B3%E6%83%85%E8%AB%8B%E6%9F%A5%E9%96%B1%E5%AE%98%E6%96%B9%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%E3%80%82%0A%E7%A5%A8%E9%9D%A2%E5%83%B9%E6%A0%BC%EF%BC%9A220%E5%85%83%EF%BC%9B%E6%8A%98%E6%89%A3%E3%80%81%E8%B4%8A%E5%8A%A9%E7%A5%A8%E8%88%87%E8%B3%BC%E7%A5%A8%E6%A2%9D%E4%BB%B6%E4%BE%9D%E5%AE%98%E6%96%B9%E9%A0%81%E9%9D%A2%0Ahttps%3A%2F%2Fwww.opentix.life%2Fevent%2F2095392638782611457&location=%E5%9C%8B%E5%AE%B6%E9%9B%BB%E5%BD%B1%E5%8F%8A%E8%A6%96%E8%81%BD%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83-%E5%A4%A7%E5%BD%B1%E6%A0%BC+%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%B0%E8%8E%8A%E5%8D%80%E6%96%87%E8%97%9D%E8%B7%AF2%E8%99%9F",
     "ics_event": "BEGIN:VEVENT\r\nUID:opentix_2095392639959638017@taigiactivities.tw\r\nDTSTAMP:20260919T022225Z\r\nDTSTART:20261107T080000Z\r\nDTEND:20261107T094200Z\r\nSUMMARY:舊情綿綿（數位修復版）\r\nDESCRIPTION:官方語言說明：發音：台語\\n入場規定、購票條\r\n 件及節目詳情請查閱官方活動公告。\\n票面價格：220元；\r\n 折扣、贊助票與購票條件依官方頁面\\nhttps://www.opentix.life\r\n /event/2095392638782611457\r\nLOCATION:國家電影及視聽文化中心-大影格 新北市新莊區文\r\n 藝路2號\r\nURL:https://www.opentix.life/event/2095392638782611457\r\nEND:VEVENT\r\n",
     "ics_path": "calendar-events/9056d38fb6d77f05e5cbf2bac0a73dfc7f0a33deb3528385e81b7e9c15915bd5.ics"
+  },
+  {
+    "id": "acc_2609181101568312033380_20261108_1000",
+    "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+    "description": "官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。",
+    "city": "臺北市",
+    "district": "",
+    "category": "台語導覽",
+    "start_time": "2026-11-08T10:00:00+08:00",
+    "end_time": "2026-11-08T12:00:00+08:00",
+    "venue": "捷運六張犁站",
+    "address": "台灣台北市捷運六張犁站",
+    "organizer": "故事 StoryStudio",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2609181101568312033380",
+    "cover_image": "",
+    "price_info": "免費，需事先報名",
+    "is_free": true,
+    "tags": [
+      "台語",
+      "官方資料自動核實"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-19T19:14:43+08:00",
+      "source_title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】"
+    },
+    "description_taigi": "這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。",
+    "price_info_taigi": "毋免錢，愛事先報名",
+    "title_taigi": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E4%BE%86%E8%87%AA%E4%B8%8D%E5%90%8C%E6%99%82%E7%A9%BA%E7%9A%84%E8%81%B2%E9%9F%BF%EF%BC%9A%E5%85%AD%E5%BC%B5%E7%8A%81%E6%A5%B5%E6%A8%82%E5%85%AC%E5%A2%93%E8%B5%B0%E8%AE%80%E3%80%90%E5%8F%B0%E8%AA%9E%E5%A0%B4%EF%BC%9A11%E6%9C%8808%E6%97%A5%EF%BC%88%E6%97%A5%EF%BC%89%E3%80%91&dates=20261108T020000Z%2F20261108T040000Z&ctz=Asia%2FTaipei&details=%E5%AE%98%E6%96%B9%E5%85%AC%E5%91%8A%E6%98%8E%E5%88%97%E7%82%BA%E5%8F%B0%E8%AA%9E%E5%A0%B4%EF%BC%9B%E6%B4%BB%E5%8B%95%E5%85%A7%E5%AE%B9%E3%80%81%E5%A0%B1%E5%88%B0%E6%96%B9%E5%BC%8F%E8%88%87%E5%8F%83%E5%8A%A0%E8%A6%8F%E5%AE%9A%E8%AB%8B%E7%9C%8B%E5%AE%98%E6%96%B9%E6%B4%BB%E5%8B%95%E9%A0%81%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E9%9C%80%E4%BA%8B%E5%85%88%E5%A0%B1%E5%90%8D%0Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2609181101568312033380&location=%E6%8D%B7%E9%81%8B%E5%85%AD%E5%BC%B5%E7%8A%81%E7%AB%99+%E5%8F%B0%E7%81%A3%E5%8F%B0%E5%8C%97%E5%B8%82%E6%8D%B7%E9%81%8B%E5%85%AD%E5%BC%B5%E7%8A%81%E7%AB%99",
+    "ics_event": "BEGIN:VEVENT\r\nUID:acc_2609181101568312033380_20261108_1000@taigiactivities.tw\r\nDTSTAMP:20260919T111443Z\r\nDTSTART:20261108T020000Z\r\nDTEND:20261108T040000Z\r\nSUMMARY:來自不同時空的聲響：六張犁極樂公墓走讀【台語\r\n 場：11月08日（日）】\r\nDESCRIPTION:官方公告明列為台語場；活動內容、報到方式與\r\n 參加規定請看官方活動頁。\\n免費，需事先報名\\nhttps://ww\r\n w.accupass.com/event/2609181101568312033380\r\nLOCATION:捷運六張犁站 台灣台北市捷運六張犁站\r\nURL:https://www.accupass.com/event/2609181101568312033380\r\nEND:VEVENT\r\n",
+    "ics_path": "calendar-events/70c1f014c168098eb8509594fcda198bf0fbdd9b54e368c59f710c48d49c754b.ics"
   },
   {
     "id": "tpml_yongchun_20261111",

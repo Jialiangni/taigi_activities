@@ -1722,6 +1722,38 @@
           "event_status": "https://schema.org/EventScheduled"
         }
       }
+    },
+    "auto_acc_2609181101568312033380": {
+      "url": "https://www.accupass.com/event/2609181101568312033380",
+      "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+      "required_text": [
+        "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+        "捷運六張犁站",
+        "【台語場：11月08日（日）】",
+        "本活動報名資格不限，免費報名"
+      ],
+      "checked_at": "2026-09-19T19:14:43+08:00",
+      "snapshot_sha256": "d62ddeadfd4325ae925ea5f86bc8e39645105205dec7d3c7070f56ee739fa6fa",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "accupass",
+        "language_claims": [
+          {
+            "origin": "official_page",
+            "quote": "【台語場：11月08日（日）】"
+          }
+        ],
+        "free_evidence": "本活動報名資格不限，免費報名",
+        "session": {
+          "start_time": "2026-11-08T10:00:00+08:00",
+          "end_time": "2026-11-08T12:00:00+08:00",
+          "venue": "捷運六張犁站",
+          "address": "台灣台北市捷運六張犁站",
+          "city": "臺北市",
+          "organizer": "故事 StoryStudio",
+          "event_status": "https://schema.org/EventScheduled"
+        }
+      }
     }
   },
   "activities": [
@@ -6662,6 +6694,48 @@
           "start_time": "2026-11-07T10:00:00+08:00",
           "end_time": "2026-11-07T12:00:00+08:00",
           "venue": "捷運公館站",
+          "city": "臺北市",
+          "organizer": "故事 StoryStudio",
+          "price_info": "免費，需事先報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "acc_2609181101568312033380_20261108_1000",
+        "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+        "description": "官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。",
+        "city": "臺北市",
+        "district": "",
+        "category": "台語導覽",
+        "start_time": "2026-11-08T10:00:00+08:00",
+        "end_time": "2026-11-08T12:00:00+08:00",
+        "venue": "捷運六張犁站",
+        "address": "台灣台北市捷運六張犁站",
+        "organizer": "故事 StoryStudio",
+        "source_platform": "Accupass 活動通",
+        "source_url": "https://www.accupass.com/event/2609181101568312033380",
+        "cover_image": "",
+        "price_info": "免費，需事先報名",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "官方資料自動核實"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_acc_2609181101568312033380",
+        "mode": "official_rules_v1",
+        "method": "ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。",
+        "language_evidence": "【台語場：11月08日（日）】",
+        "confirmed_fields": {
+          "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+          "start_time": "2026-11-08T10:00:00+08:00",
+          "end_time": "2026-11-08T12:00:00+08:00",
+          "venue": "捷運六張犁站",
           "city": "臺北市",
           "organizer": "故事 StoryStudio",
           "price_info": "免費，需事先報名",

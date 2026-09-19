@@ -1,14 +1,15 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T19:02:05+08:00",
+  "reviewed_at": "2026-09-19T19:14:15+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T13:09:25+08:00",
   "candidate_count": 745,
   "counts": {
-    "pending": 689,
-    "duplicate": 50,
-    "excluded": 6
+    "pending": 686,
+    "duplicate": 51,
+    "excluded": 7,
+    "approved": 1
   },
   "collection_status_counts": {
     "ok": 57,
@@ -31,7 +32,7 @@
       "source_url": "https://www.accupass.com/event/2609170647181226219267",
       "title": "【台語親子共學】原來台語按呢跨界！從台語到英語，讀冊聽音韻，一工探索母語的趣味",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "ead485f15a3fea710295f336",
@@ -39,7 +40,7 @@
       "source_url": "https://www.accupass.com/event/2608270744575474894310",
       "title": "台語兒少讀劇工作坊—數念的厝",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "4823f23854bb8b94c3482615",
@@ -47,7 +48,7 @@
       "source_url": "https://www.accupass.com/event/2609140247402019682780",
       "title": "台語咱佮意！台語主題系列講座 (10/17-11/21)",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "cd897e6b5bed2112f45e8671",
@@ -55,7 +56,7 @@
       "source_url": "https://www.accupass.com/event/2609140211321902093902",
       "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "c87c2b9bf43e88fe44b5272b",
@@ -63,7 +64,7 @@
       "source_url": "https://www.accupass.com/event/2609030741412898282180",
       "title": "思念ê聲—台語作詞工作坊／楊肅浩老師",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "922de7ea9931d58bc3ba5728",
@@ -71,7 +72,7 @@
       "source_url": "https://www.accupass.com/event/2607280236031295663510",
       "title": "用台語講故事：講予囡仔聽的人權繪本",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "b528489d175e10cdd6c0ea17",
@@ -79,7 +80,7 @@
       "source_url": "https://www.accupass.com/event/2609110733451525240428",
       "title": "台語咱佮意！台語說故事系列課程",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "1bcfc3a7c9e4c1e2559c82d8",
@@ -87,7 +88,7 @@
       "source_url": "https://www.accupass.com/event/2609140256552197197330",
       "title": "台語咱佮意！說故事培訓班",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "ea63b67a5d7b39257caf3c6e",
@@ -95,7 +96,7 @@
       "source_url": "https://www.accupass.com/event/2609140313052076422556",
       "title": "台語咱佮意！親子生活會話基礎班",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "d3eedfd4de4c5064668c9ade",
@@ -103,7 +104,7 @@
       "source_url": "https://www.accupass.com/event/2606300741301758195196",
       "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "1382ccbc229df183c3b0dbfd",
@@ -120,15 +121,15 @@
       "source_url": "https://www.accupass.com/event/2608050814251209029129",
       "title": "TFAI × 阮劇團 佚失台語電影《後街人生》讀劇工作坊",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "12ac72124817346241746824",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608250621202113229361",
       "title": "讀冊練仙《日花閃爍》",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "decision": "excluded",
+      "reason": "expired"
     },
     {
       "candidate_id": "96b159170cd63596db200251",
@@ -136,7 +137,7 @@
       "source_url": "https://www.accupass.com/event/2609160027461330894040",
       "title": "2026/9/23 (禮拜三) 青企與大象國台語~線上例會",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "22e8f62015f9e0ff24ab8f08",
@@ -144,7 +145,7 @@
       "source_url": "https://www.accupass.com/event/2609100854024528725810",
       "title": "【一本書，變成一整季的行銷素材】AI內容行銷實戰工作坊",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "eb39465c415c5dfde5345256",
@@ -152,7 +153,7 @@
       "source_url": "https://www.accupass.com/event/2608051357275636349740",
       "title": "中正紀念堂歷史小旅行【2026年台語場次】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "a8a6b958ba960f29ee32f50b",
@@ -160,23 +161,25 @@
       "source_url": "https://www.accupass.com/event/2609140340221048585938",
       "title": "華麗島的文學少女「黃鳳姿的寫作之路」／Re: 民俗、生活與文學．新書分享講座Ⅱ（aka街道散步）",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "8c6099a53378b65a45691903",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609181101568312033380",
       "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "decision": "approved",
+      "reason": "official_page_single_session_verified",
+      "activity_id": "acc_2609181101568312033380_20261108_1000"
     },
     {
       "candidate_id": "f9225dbce70896a1f621a008",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609180900251903050199",
       "title": "城南留聲：不義遺址與消失的時代私語【台語場：11月07日（六）】",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2609180900251903050199_20261107_1000"
     },
     {
       "candidate_id": "597fc44a92e289810584cc67",
@@ -184,7 +187,7 @@
       "source_url": "https://www.accupass.com/event/2609100905344368537350",
       "title": "2026華文朗讀節 一粒米．好土台灣【朗讀沙龍】10/25週日場",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "0cfe4e1372425d37ac9069c0",
@@ -192,7 +195,7 @@
       "source_url": "https://www.accupass.com/event/2608131014032349915110",
       "title": "2026人權主題歷史解謎遊戲——【五個被洪水沖走的手提箱】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "f69d7feb3b428b33608fa8a6",
@@ -200,7 +203,7 @@
       "source_url": "https://www.accupass.com/event/2609080954292886555710",
       "title": "寫予你的批—台語讀詩創作工作坊／温若喬老師",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "4f38ce0416695fa9cbe0addb",
@@ -208,7 +211,7 @@
       "source_url": "https://www.accupass.com/event/2608280931051921581250",
       "title": "115年臺北市推動培育台語家庭計畫｜課程一覽",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "fd185109957360e48156efa3",
@@ -216,7 +219,7 @@
       "source_url": "https://www.accupass.com/event/2608170923234871848230",
       "title": "2026人權主題情境體驗遊戲——【超時空副本】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "41b0413d0260d2d5b9f2c42f",
@@ -224,7 +227,7 @@
       "source_url": "https://www.accupass.com/event/2609161113091287619822",
       "title": "Slap&Pop 兩週年活動 —— 法克遊專輯暖身派對🎢",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "b19fd9580d13c6ea33ed3540",
@@ -232,7 +235,7 @@
       "source_url": "https://www.accupass.com/event/2607230625546733134960",
       "title": "【專業訓練】進階香水調製萃取與解讀(含測驗)",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "6b20340b818b267b0b3b5265",
@@ -240,7 +243,7 @@
       "source_url": "https://www.accupass.com/event/2608260253319103461970",
       "title": "NEW 2027寒假營隊⭐【ITS國際證照：Python核心能力】Python是近年最受歡迎的程式語言，簡潔易懂，應用多元，初學者首選推薦！(1/21~1/29，平日19:00~21:15，共7堂)",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "b007654cd8d19ec0eb441747",
@@ -248,7 +251,7 @@
       "source_url": "https://www.accupass.com/event/2609171337331414810900",
       "title": "《春雨の喜劇力開發研究部》11、12月號",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "13203120beb12917dddddbd4",
@@ -256,7 +259,7 @@
       "source_url": "https://www.accupass.com/event/2609040825101995339640",
       "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "73528f998efb61e509603ca3",
@@ -264,7 +267,7 @@
       "source_url": "https://www.accupass.com/event/2609091313429433024630",
       "title": "萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "562123e4be4937bbc3ebd8cb",
@@ -272,7 +275,7 @@
       "source_url": "https://www.accupass.com/event/2604081121391029506053",
       "title": "中正紀念堂歷史小旅行【2026年粵語場次】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "c9e935674bdd5b0030aa5e73",
@@ -280,7 +283,7 @@
       "source_url": "https://www.accupass.com/event/2512201025032586653690",
       "title": "中正紀念堂歷史小旅行【2026年華語場次】",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "14185c70d1549d8be401d4cb",
@@ -288,7 +291,7 @@
       "source_url": "https://www.accupass.com/event/2607300832291084195877",
       "title": "2026 連翹自由節─",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "b4a1bfffa2c530beff61e80f",
@@ -296,7 +299,7 @@
       "source_url": "https://www.accupass.com/event/2609160343451609851912",
       "title": "《撕掉「傳承」的標籤：母語創作的當代實踐與審美重塑》張淦勛 × 黃宇寒 × 張嘉祥",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "8f8cec47edc8254a5d05d028",
@@ -304,7 +307,7 @@
       "source_url": "https://www.accupass.com/event/2609160315472065630577",
       "title": "《佢兜个世界：女性如何書寫自身》張芳慈 × 王品渝",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "3cbbd348bb088887384eba06",
@@ -312,7 +315,7 @@
       "source_url": "https://www.accupass.com/event/2609101057492017162755",
       "title": "輕鬆學韓文發音．四十音前導講座",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "c016a6a21d790ac305e954d7",
@@ -320,7 +323,7 @@
       "source_url": "https://www.accupass.com/event/2609131004461460784403",
       "title": "持續發酵中＿御鼎興柴燒醬油",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "e6d69815741b5f5fd6caca20",
@@ -328,7 +331,7 @@
       "source_url": "https://www.accupass.com/event/2608290544597291528600",
       "title": "2026淡水福爾摩莎國際詩歌節",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "cb9c2067b642ccc8f1322847",
@@ -336,7 +339,7 @@
       "source_url": "https://www.accupass.com/event/2609060903511999822157",
       "title": "《歡迎入住！我的新村生活》角色創造 × 劇場遊戲工作坊",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "0d49d4429364a5944b61441d",
@@ -344,7 +347,7 @@
       "source_url": "https://www.accupass.com/event/2608271301091809341624",
       "title": "第九屆板橋文昌街生活學堂-- 小城故事多",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "d1ed050e8a192ff316e8b94d",
@@ -352,7 +355,7 @@
       "source_url": "https://www.accupass.com/event/2609070903474249441720",
       "title": "講袂出喙的情話—影集《再見1987》特展",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "b29026bacc3be46d8e3d7b46",
@@ -360,7 +363,7 @@
       "source_url": "https://www.accupass.com/event/2609110329471979179839",
       "title": "9/27（日）《再見1987》特展導覽＋講座｜被波及者的理想與平凡辯證",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "8242490de27dc5d82c8cb284",
@@ -368,7 +371,7 @@
       "source_url": "https://www.accupass.com/event/2605111405516075205330",
       "title": "2026 歌舞劇全方位專班6月：GLEE x High School Musical",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "def2157d8519e4535d760385",
@@ -376,7 +379,7 @@
       "source_url": "https://www.accupass.com/event/2303130833491195750522",
       "title": "【線上課程】Ferrandi 主廚不藏私｜系統化零基礎法式甜點課",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "c6692dcf6aae8096178db0dd",
@@ -384,7 +387,7 @@
       "source_url": "https://www.accupass.com/event/2608200326361362764597",
       "title": "【府中15】10月〈乘著光影的篇章〉｜福爾摩沙國際電影節巡迴放映《以愛致父（劉維崇教授傳記紀錄片）》、《打開花園的門》、《關於遺留之物》",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "1ee0ff563b40785cac705b00",
@@ -392,7 +395,7 @@
       "source_url": "https://www.accupass.com/event/2607090342386709957160",
       "title": "【新月．音樂欣賞】台灣心．音樂情：日治時期台灣的流行音樂",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "06fa995c0e5a066eb70fa7c0",
@@ -400,7 +403,7 @@
       "source_url": "https://www.accupass.com/event/2210201514359591824600",
       "title": "桃園八塊厝民俗藝術村 \\\\藝術好戲登場囉//",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "f60c0f3b60a943b8dd82b360",
@@ -408,7 +411,7 @@
       "source_url": "https://www.accupass.com/event/2609110511001151318561",
       "title": "霎霎仔雨，一霎仔久",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "dc4753baf9da390fc1e583ed",
@@ -416,7 +419,7 @@
       "source_url": "https://www.accupass.com/event/2609150126476971150670",
       "title": "漫遊老臺北─新公園時空解碼戰",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "6fda38d5409852ba9302b29a",
@@ -424,7 +427,7 @@
       "source_url": "https://www.accupass.com/event/2609111619151438027223",
       "title": "共時的星叢系列座談一：殖民時期流行唱片音樂的藝術性再探",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "4ead70926d45d5235b6c7602",
@@ -432,7 +435,7 @@
       "source_url": "https://www.accupass.com/event/2608171126451455988314",
       "title": "茶商筆記：找茶｜大正十二年，大稻埕一盞茶的商戰（古蹟裡的推理實境遊戲）",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "49b55809ecfe407f47bdd939",
@@ -440,7 +443,7 @@
       "source_url": "https://www.accupass.com/event/2604161917471542799416",
       "title": "2026童演童語-霹靂電影日《奇人密碼—古羅布之謎》 ",
       "decision": "pending",
-      "reason": "unstructured_source_needs_review"
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "d39854f471edb0ebc66a88d8",
