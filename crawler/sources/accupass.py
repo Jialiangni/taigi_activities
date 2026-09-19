@@ -1,4 +1,6 @@
 """ACCUPASS public website search POST + event-page JSON-LD, pending review."""
+import re
+
 from ..collection import Collector, CollectionError, Result, Document, candidate, local_time, city_of, plain, KEYWORDS, relevant
 
 
@@ -18,6 +20,29 @@ def event_jsonld(doc):
         yield from walk(obj)
 
 
+def parse_schedule(html, event):
+    """Read explicit MM月DD日 + HH:MM-HH:MM rows without treating a series span as sessions."""
+    start, end = local_time(event.get('startDate')), local_time(event.get('endDate'))
+    if not start or not end or start[:4] != end[:4]:
+        return []
+    year = start[:4]
+    text = Document(html).content()
+    pattern = re.compile(
+        r'(?P<month>\d{1,2})月(?P<day>\d{1,2})日[（(][一二三四五六日天][）)]\s*'
+        r'(?P<start>\d{1,2}:\d{2})\s*[-–－~～]\s*(?P<end>\d{1,2}:\d{2})')
+    rows = []
+    for matched in pattern.finditer(text):
+        date = '{}-{:02d}-{:02d}'.format(year, int(matched['month']), int(matched['day']))
+        session_start = local_time(date + 'T' + matched['start'] + ':00+08:00')
+        session_end = local_time(date + 'T' + matched['end'] + ':00+08:00')
+        if not session_start or not session_end or not (start[:10] <= date <= end[:10]):
+            continue
+        row = {'start_time': session_start, 'end_time': session_end}
+        if row not in rows:
+            rows.append(row)
+    return rows
+
+
 def parse_event(html, url, evidence):
     doc = Document(html)
     rows = []
@@ -32,13 +57,18 @@ def parse_event(html, url, evidence):
         offers = event.get('offers') or []
         offers = offers if isinstance(offers, list) else [offers]
         prices = [o.get('price') for o in offers if isinstance(o, dict) and o.get('price') is not None]
+        sessions = parse_schedule(html, event)
         fields = {'start_time': local_time(event.get('startDate')), 'end_time': local_time(event.get('endDate')),
                   'venue': location.get('name'), 'address': address, 'city': city_of(address),
                   'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
-                  'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus')}
+                  'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus'),
+                  'sessions': sessions}
         # Aggregate schema dates do not establish individual session dates or universal free admission.
+        issues = ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms']
+        if sessions:
+            issues.append('explicit_session_rows_extracted_but_not_verified')
         rows.append(candidate('accupass', url, event.get('name') or doc.title(), doc.content(), evidence,
-                              fields, 'event_period', ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms'],
+                              fields, 'event_series' if sessions else 'event_period', issues,
                               url + ':' + str(i)))
     if not rows:
         raise CollectionError('event_jsonld_missing')

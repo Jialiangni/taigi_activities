@@ -113,7 +113,7 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
                 raise ValueError('OPENTIX 缺少已核對場次或 API 指紋')
             if parse_time(source['api_checked_at']) > now:
                 raise ValueError('API 核對時間不可在未來')
-    activities, seen_ids, seen_sessions = [], set(), set()
+    activities, seen_ids, seen_sessions, active_source_ids = [], set(), set(), set()
     for row in payload['activities']:
         data, review = row['activity'], row['verification']
         if review.get('status') != 'verified' or not review.get('language_evidence'):
@@ -159,6 +159,9 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
         act.source_platform = SourcePlatformEnum(act.source_platform)
         act.raw_metadata = {'verified_at': source['checked_at'], 'source_title': source['title']}
         activities.append(act)
+        active_source_ids.add(review['source_id'])
     if check_sources:
-        check_live_sources(sources)
+        # Historical records remain immutable, but an ended activity must not
+        # block today's publication when its retired detail page changes.
+        check_live_sources({key: sources[key] for key in active_source_ids})
     return sorted(activities, key=lambda a: a.start_time)

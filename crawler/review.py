@@ -72,6 +72,24 @@ def duplicate(activity, catalog, session_id=None):
     return None
 
 
+def published_accupass_series(candidate, catalog, now):
+    """Return published IDs only when every still-live explicit ACCUPASS session is present."""
+    if candidate.get('source_id') != 'accupass':
+        return []
+    sessions = candidate.get('fields', {}).get('sessions')
+    if not isinstance(sessions, list):
+        return []
+    future = [row for row in sessions if isinstance(row, dict) and row.get('start_time')
+              and row.get('end_time') and parse_time(row['end_time']) > now]
+    if not future:
+        return []
+    by_time = {(source_url(row['activity'].get('source_url', '')), row['activity'].get('start_time'),
+                row['activity'].get('end_time')): row['activity']['id'] for row in catalog['activities']}
+    ids = [by_time.get((source_url(candidate['source_url']), row['start_time'], row['end_time']))
+           for row in future]
+    return ids if all(ids) else []
+
+
 def language_claims(program, group):
     """Match labelled language declarations, not biographies, subtitles or keywords."""
     claims = []
@@ -333,11 +351,18 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if context['discovered_links']:
                     raise Pending('comment_link_authorship_needs_review')
                 raise Pending('official_event_link_missing')
+            published_series = published_accupass_series(c, catalog, now)
+            if published_series:
+                item.update(decision='duplicate', reason='all_future_sessions_already_published',
+                            activity_ids=published_series)
+                continue
             hint = dict(c['fields'], title=c['title'], source_url=c['source_url'])
             existing = duplicate(hint, catalog, str(c['fields'].get('session_id', '')) if c['source_id']=='opentix' else None)
             if existing:
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
+            if c['source_id'] == 'accupass' and c.get('fields', {}).get('sessions'):
+                raise Pending('structured_sessions_need_review')
             require(c['source_id'] == 'opentix' and c['kind'] == 'session', 'unstructured_source_needs_review')
             key, source, row = verify_opentix(c, client, now)
             a = row['activity']

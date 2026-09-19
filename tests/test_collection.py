@@ -53,7 +53,22 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(r['fields']['city'], '桃園市')
         self.assertEqual(r['kind'], 'event_period')
         self.assertIsNone(r['fields']['is_free'])
+        self.assertEqual(r['fields']['sessions'], [])
         self.assertEqual(r['review_status'], 'pending')
+
+    def test_accupass_explicit_schedule_rows_are_preserved_without_auto_publication(self):
+        html = '''<script type="application/ld+json">{
+        "@type":"Event","name":"台語戲劇導覽","startDate":"2026-07-18T15:00:00+08:00",
+        "endDate":"2026-09-20T16:00:00+08:00","location":{"name":"紀念館",
+        "address":"臺北市大同區寧夏路87號"},"organizer":{"name":"主辦單位"}}</script>
+        <main>活動場次<table><tr><td>07月18日（六）</td><td>15:00-16:00</td></tr>
+        <tr><td>09月20日（日）</td><td>15:00–16:00</td></tr></table>本活動全程以台語演出為主</main>'''
+        row = parse_event(html, 'https://www.accupass.com/event/1', EV)[0]
+        self.assertEqual(row['kind'], 'event_series')
+        self.assertEqual(row['fields']['sessions'], [
+            {'start_time': '2026-07-18T15:00:00+08:00', 'end_time': '2026-07-18T16:00:00+08:00'},
+            {'start_time': '2026-09-20T15:00:00+08:00', 'end_time': '2026-09-20T16:00:00+08:00'}])
+        self.assertEqual(row['review_status'], 'pending')
 
     def test_live_opentix_fixture_keeps_distinct_session_ids(self):
         program = json.loads((FIX / 'opentix_program.json').read_text())

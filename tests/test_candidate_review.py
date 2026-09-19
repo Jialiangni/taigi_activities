@@ -10,7 +10,7 @@ from unittest.mock import patch
 
 from crawler.collection import CollectionError
 from crawler.review import (review, Pending, language_claims, validate_auto_source, source_url, duplicate,
-                            trusted_registration_link)
+                            trusted_registration_link, published_accupass_series)
 from crawler.sources.opentix import parse_program
 from crawler.verified import load_verified
 from scripts.fetch_review_candidates import extract, trusted_run
@@ -220,6 +220,19 @@ class CandidateReviewTests(unittest.TestCase):
         catalog['activities'][0]['activity']['source_url'] = 'https://example.org/events/1'
         self.write('data/verified_activities.json', catalog)
         self.assertEqual(self.run_review()['counts'], {'duplicate': 1})
+
+    def test_accupass_series_is_closed_only_when_every_future_session_is_published(self):
+        candidate = {'source_id': 'accupass', 'source_url': 'https://www.accupass.com/event/1',
+                     'fields': {'sessions': [
+                         {'start_time': '2026-09-18T15:00:00+08:00', 'end_time': '2026-09-18T16:00:00+08:00'},
+                         {'start_time': '2026-09-20T15:00:00+08:00', 'end_time': '2026-09-20T16:00:00+08:00'}]}}
+        catalog = {'activities': [{'activity': {
+            'id': 'acc_1_20260920_1500', 'source_url': 'https://www.accupass.com/event/1',
+            'start_time': '2026-09-20T15:00:00+08:00', 'end_time': '2026-09-20T16:00:00+08:00'}}]}
+        self.assertEqual(published_accupass_series(candidate, catalog, NOW), ['acc_1_20260920_1500'])
+        candidate['fields']['sessions'].append(
+            {'start_time': '2026-09-21T15:00:00+08:00', 'end_time': '2026-09-21T16:00:00+08:00'})
+        self.assertEqual(published_accupass_series(candidate, catalog, NOW), [])
 
     def test_missing_or_stale_candidate_report_stops_before_writing(self):
         self.save_candidates(NOW-timedelta(days=2))

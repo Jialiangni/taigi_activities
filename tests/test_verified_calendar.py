@@ -180,6 +180,13 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertNotIn('ntpc_xizhi_songs_20260920', [a.id for a in events])
         self.assertEqual(self.load(now=datetime.fromisoformat('2027-01-01T00:00:00+08:00')), [])
 
+    def test_live_source_checks_ignore_sources_with_only_ended_sessions(self):
+        self.path.write_text(json.dumps(self.data))
+        with patch('crawler.verified.check_live_sources') as check:
+            load_verified(self.path, now=datetime.fromisoformat('2027-01-01T00:00:00+08:00'),
+                          check_sources=True)
+        check.assert_called_once_with({})
+
     def test_source_change_or_block_page_fails(self):
         source = {'url': 'https://example.org/event/1', 'required_text': ['2026/10/03 10:00', '台語']}
         check_source_content(source, '<p>2026/10/03 10:00</p><b>台語</b>')
