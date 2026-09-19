@@ -150,8 +150,28 @@ const {chromium,webkit} = require(process.env.PLAYWRIGHT_MODULE || 'playwright')
     const monthAll = await page.locator('[data-month="all"]').boundingBox();
     assert.ok(Math.abs(cityAll.x-monthAll.x)<1 && Math.abs(cityAll.width-monthAll.width)<1,'Desktop all buttons align');
     await noOverflow();
+
+    // An external-browser handoff keeps the selected activity and reopens its details.
+    const activityId = await page.evaluate(() => ACTIVITIES_DATA[0].id);
+    await page.goto(pathToFileURL(path.resolve('index.html')).href+'?activity='+encodeURIComponent(activityId));
+    assert.ok(await page.locator('#eventModal').evaluate(el => el.open && el.matches(':modal')));
+    assert.equal(await page.locator('#modalTitle').innerText(),await page.evaluate(id => {
+      const act=ACTIVITIES_DATA.find(item => item.id===id); return act.title_taigi || act.title;
+    },activityId));
+
+    // LINE on iPhone gets a Safari handoff link and an exact fallback instruction.
+    const lineContext = await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true,
+      userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148 Line/15.15.0'});
+    const linePage = await lineContext.newPage();
+    await linePage.goto(pathToFileURL(path.resolve('index.html')).href);
+    await linePage.locator('#viewGrid .card-detail').first().tap();
+    assert.equal(await linePage.locator('#modalSingleIcsBtn').innerText(),'🍏 用 Safari 加到 Apple 日曆');
+    assert.match(await linePage.locator('#modalSingleIcsBtn').getAttribute('href'),/^https:\/\/jialiangni\.github\.io\/taigi_activities\/\?activity=.*&openExternalBrowser=1$/);
+    assert.ok(await linePage.locator('#lineCalendarHelp').isVisible());
+    assert.match(await linePage.locator('#lineCalendarHelp').innerText(),/右上角「⋯」→「用預設瀏覽器開啟」/);
+    await lineContext.close();
     assert.deepEqual(errors,[]);
-    console.log('PASS: 320/390/700px alignment, city/month touch selection and inversion in both themes, filter sheet, tabs, modal focus/Escape, scroll restoration, theme persistence, desktop resize, no JS errors');
+    console.log('PASS: mobile layout, LINE iPhone Safari handoff, activity deep link, dialogs, theme persistence and no JS errors');
   } finally {
     await browser.close();
   }

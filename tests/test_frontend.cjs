@@ -9,7 +9,7 @@ const element = id => {
   return elements.get(id);
 };
 let download;
-const context = vm.createContext({Intl, Date, Blob, location:{protocol:'https:'}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
+const context = vm.createContext({Intl, Date, Blob, URLSearchParams, navigator:{userAgent:'Mozilla/5.0 (iPhone) Version/18.0 Mobile Safari/604.1'}, location:{protocol:'https:',origin:'https://example.test',pathname:'/taigi_activities/',search:''}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
   addEventListener(){},querySelectorAll:()=>[],querySelector:element,getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
   createElement:()=>({click(){}})
 }});
@@ -186,6 +186,12 @@ console.log('PASS: crowded week (14 events), city colors/filter, full titles, we
       assert.ok(raw.includes(event.ics_event));
       assert.ok(!raw.replace(/\r\n /g,'').includes('第一步：先看預覽'));
     }
+    context.navigator.userAgent='Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148 Line/15.15.0';
+    run(`openModal(${JSON.stringify(data[0].id)})`);
+    assert.equal(element('modalSingleIcsBtn').href,'https://example.test/taigi_activities/?activity='+encodeURIComponent(data[0].id)+'&openExternalBrowser=1');
+    assert.equal(element('modalSingleIcsBtn').textContent,'🍏 用 Safari 加到 Apple 日曆');
+    assert.equal(element('lineCalendarHelp').hidden,false);
+    context.navigator.userAgent='Mozilla/5.0 (iPhone) Version/18.0 Mobile Safari/604.1';
     context.location.protocol='file:';
     run(`openModal(${JSON.stringify(data[0].id)})`);
     assert.equal(element('modalSingleIcsBtn').href,'https://jialiangni.github.io/taigi_activities/'+data[0].ics_path+'?v=plain-notes-2');

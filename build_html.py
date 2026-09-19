@@ -239,6 +239,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <a id="modalSingleIcsBtn" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             🍏 加到 Apple 日曆 (.ics)
           </a>
+          <p id="lineCalendarHelp" class="line-calendar-help" hidden>
+            LINE 內建瀏覽器無法直接開 Apple 日曆。請點右上角「⋯」→「用預設瀏覽器開啟」，轉去 Safari 了後閣點一擺。
+          </p>
           <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share">
             📤 分享到 LINE / 社群
           </button>
@@ -307,6 +310,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       computeStats();
       renderMonthFilters();
       renderAll();
+      const requestedActivity = new URLSearchParams(location.search).get('activity');
+      if (requestedActivity) openModal(requestedActivity);
       document.querySelectorAll('dialog.modal-overlay').forEach(dialog => {{
         dialog.addEventListener('cancel', event => {{ event.preventDefault(); closeOverlay(dialog.id); }});
       }});
@@ -326,6 +331,17 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           gcalBtn.innerText = '📅 一鍵加到 Google 日曆 (Android 推薦)';
         }}
       }}
+    }}
+
+    function isLineIOSBrowser() {{
+      return /iPhone|iPad|iPod/i.test(navigator.userAgent) && /Line\//i.test(navigator.userAgent);
+    }}
+
+    function externalPageForActivity(actId) {{
+      const pageUrl = location.protocol === 'file:'
+        ? 'https://jialiangni.github.io/taigi_activities/'
+        : location.origin + location.pathname;
+      return pageUrl + '?activity=' + encodeURIComponent(actId) + '&openExternalBrowser=1';
     }}
 
     function initTheme() {{
@@ -710,8 +726,18 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalGCalLink').href = act.gcal_url;
       // A real calendar URL lets iPhone Safari hand off to Calendar instead of
       // trying to download a temporary blob. The standalone HTML uses the live site.
-      document.getElementById('modalSingleIcsBtn').href =
-        (location.protocol === 'file:' ? 'https://jialiangni.github.io/taigi_activities/' : '') + act.ics_path + '?v=plain-notes-2';
+      const appleBtn = document.getElementById('modalSingleIcsBtn');
+      const lineCalendarHelp = document.getElementById('lineCalendarHelp');
+      if (isLineIOSBrowser()) {{
+        appleBtn.href = externalPageForActivity(act.id);
+        appleBtn.textContent = '🍏 用 Safari 加到 Apple 日曆';
+        lineCalendarHelp.hidden = false;
+      }} else {{
+        appleBtn.href =
+          (location.protocol === 'file:' ? 'https://jialiangni.github.io/taigi_activities/' : '') + act.ics_path + '?v=plain-notes-2';
+        appleBtn.textContent = '🍏 加到 Apple 日曆 (.ics)';
+        lineCalendarHelp.hidden = true;
+      }}
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
       openOverlay('eventModal');
