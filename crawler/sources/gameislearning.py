@@ -168,6 +168,34 @@ TIME_RE = re.compile(r'(?:(AM|PM|上午|下午|下晡|暗時|早起)\s*)?(\d{1,2
 START_TIME_RE = re.compile(r'(?:(AM|PM|上午|下午|下晡|暗時|早起)\s*)?(\d{1,2})\s*[:：]\s*(\d{2})', re.I)
 
 
+def date_list_clocks(body):
+    """Bind a shared time only to its contiguous date list, not later deadlines."""
+    lines = body.splitlines(keepends=True)
+    clocks, offset = {}, 0
+    declared = list(TIME_RE.finditer(body)) if '時間都是' in body else []
+    common = declared[0] if declared and len({_range_clocks(c) for c in declared}) == 1 else None
+    for index, line in enumerate(lines):
+        dates = list(DATE_RE.finditer(line))
+        if (common and len(dates) == 1 and not line[:dates[0].start()].strip(' \t＊*・•')
+                and not re.search(r'報名|截止|優惠|開賣', line)):
+            clocks[offset + dates[0].start()] = common
+        if len(dates) >= 2 and re.search(r'[、，,]', line):
+            between = line[dates[0].start():dates[-1].end()]
+            between = DATE_RE.sub('', between)
+            between = re.sub(r'[（(](?:星期|禮拜|週)?[一二三四五六日天][）)]', '', between)
+            if not re.sub(r'[\s、，,]', '', between):
+                clock = TIME_RE.search(line, dates[-1].end())
+                if not clock and index + 1 < len(lines):
+                    following = re.sub(r'^\s*(?:時間|上課時間)\s*[：:]\s*', '', lines[index+1])
+                    clock = TIME_RE.match(following.strip())
+                if not clock and index and re.search(r'每月一次|時間都是', lines[index-1]):
+                    clock = TIME_RE.search(lines[index-1])
+                if clock:
+                    clocks.update({offset + d.start(): clock for d in dates})
+        offset += len(line)
+    return clocks
+
+
 def sessions_of(body, published_at=None, now=None):
     now = now or datetime.now(TAIPEI)
     fallback_year = now.year
@@ -206,12 +234,12 @@ def sessions_of(body, published_at=None, now=None):
         return result
 
     matches = list(DATE_RE.finditer(body))
-    shared_clock = TIME_RE.search(body) if re.search(r'時間都是|每月一次|日期[：:].{0,80}(?:、|，)', body, re.S) else None
+    shared_clocks = date_list_clocks(body)
     result = []
     for index, matched in enumerate(matches):
         boundary = matches[index+1].start() if index+1 < len(matches) else min(len(body), matched.end()+180)
         clock = TIME_RE.search(body, matched.end(), boundary)
-        clock = clock or shared_clock
+        clock = clock or shared_clocks.get(matched.start())
         year = _year(matched.group(1), fallback_year)
         try:
             day = date(year, int(matched.group(2)), int(matched.group(3)))

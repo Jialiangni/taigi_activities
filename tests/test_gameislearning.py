@@ -73,6 +73,29 @@ class GameIsLearningTests(unittest.TestCase):
             with self.subTest(url=invalid):
                 self.assertEqual(parse_detail(page.replace(image, invalid), URL, {}, now=NOW)['cover_image'], '')
 
+    def test_date_list_uses_following_shared_clock_and_excludes_discount_deadline(self):
+        body = ('時間：2026/11/07（六）、2026/11/22（日）、2026/12/12（六）、'
+                '2026/12/20（日）、2027/01/09（六）\n'
+                '10:00 - 12:00（共 5 堂，合計 10 小時）\n'
+                '限時優惠價：$9,000（即日起至 2026/10/30 止）')
+        rows = sessions_of(body, '2026-09-08', NOW)
+        self.assertEqual([r['start_time'][:10] for r in rows],
+                         ['2026-11-07', '2026-11-22', '2026-12-12', '2026-12-20', '2027-01-09'])
+        self.assertTrue(all(r['start_time'][11:] == '10:00:00+08:00' and
+                            r['end_time'][11:] == '12:00:00+08:00' for r in rows))
+
+    def test_separate_date_groups_keep_their_own_shared_times(self):
+        rows = sessions_of('日期：2026/11/7、2026/11/8\n10:00-12:00\n'
+                           '日期：2026/11/14、2026/11/15\n14:00-16:00', now=NOW)
+        self.assertEqual([r['start_time'][11:16] for r in rows], ['10:00','10:00','14:00','14:00'])
+
+    def test_explicit_all_sessions_time_still_applies_to_date_led_lines(self):
+        rows = sessions_of('時間都是10:30\n＊時間：10:30-11:30\n'
+                           '地點：書房有光\n9/21（一）故事一\n10/19（一）故事二\n'
+                           '報名截止：2026/10/01', now=NOW)
+        self.assertEqual([r['start_time'] for r in rows],
+                         ['2026-09-21T10:30:00+08:00', '2026-10-19T10:30:00+08:00'])
+
     def test_city_posts_are_collected_as_trusted_session_candidates(self):
         result = GameIsLearningCrawler(max_pages=1, max_details=20, now=NOW).collect(FakeClient())
         self.assertEqual(result.status, 'ok')

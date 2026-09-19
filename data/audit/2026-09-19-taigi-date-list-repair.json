@@ -1,0 +1,23 @@
+{
+  "reviewed_at": "2026-09-19T20:03:15+08:00",
+  "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+  "reason": "Shared time below an enumerated date list was attached only to the last date.",
+  "previous_activity_ids": [
+    "gameislearning_1603hq0qi94_20270109_1000"
+  ],
+  "corrected_activity_ids": [
+    "gameislearning_1603hq0qi94_20261107_1000",
+    "gameislearning_1603hq0qi94_20261122_1000",
+    "gameislearning_1603hq0qi94_20261212_1000",
+    "gameislearning_1603hq0qi94_20261220_1000",
+    "gameislearning_1603hq0qi94_20270109_1000"
+  ],
+  "added_sessions": 4,
+  "price_quotes": [
+    "原價：$13,000（五次連續課程）",
+    "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+    "舊生特別優惠：舊生報名折抵 $500",
+    "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+  ],
+  "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+}

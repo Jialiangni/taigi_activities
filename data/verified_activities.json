@@ -1854,9 +1854,18 @@
       "title": "👍 笑咍咍台羅字母好料班第三期",
       "required_text": [
         "👍 笑咍咍台羅字母好料班第三期",
-        "樂暢親子共學空間"
+        "樂暢親子共學空間",
+        "原價：$13,000（五次連續課程）",
+        "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+        "舊生特別優惠：舊生報名折抵 $500",
+        "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "2026/11/07",
+        "2026/11/22",
+        "2026/12/12",
+        "2026/12/20",
+        "2027/01/09"
       ],
-      "checked_at": "2026-09-19T19:29:36+08:00",
+      "checked_at": "2026-09-19T20:03:15+08:00",
       "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d",
       "automated_review": {
         "mode": "official_rules_v1",
@@ -1870,6 +1879,34 @@
         ],
         "registration_url": "https://lin.ee/jqY7HN9j",
         "sessions": [
+          {
+            "start_time": "2026-11-07T10:00:00+08:00",
+            "end_time": "2026-11-07T12:00:00+08:00",
+            "venue": "樂暢親子共學空間",
+            "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-22T10:00:00+08:00",
+            "end_time": "2026-11-22T12:00:00+08:00",
+            "venue": "樂暢親子共學空間",
+            "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-12-12T10:00:00+08:00",
+            "end_time": "2026-12-12T12:00:00+08:00",
+            "venue": "樂暢親子共學空間",
+            "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-12-20T10:00:00+08:00",
+            "end_time": "2026-12-20T12:00:00+08:00",
+            "venue": "樂暢親子共學空間",
+            "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+            "city": "臺北市"
+          },
           {
             "start_time": "2027-01-09T10:00:00+08:00",
             "end_time": "2027-01-09T12:00:00+08:00",
@@ -7601,57 +7638,6 @@
     },
     {
       "activity": {
-        "id": "gameislearning_1603hq0qi94_20270109_1000",
-        "title": "👍 笑咍咍台羅字母好料班第三期",
-        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
-        "city": "臺北市",
-        "district": "大同區",
-        "category": "台語繪本",
-        "start_time": "2027-01-09T10:00:00+08:00",
-        "end_time": "2027-01-09T12:00:00+08:00",
-        "venue": "樂暢親子共學空間",
-        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
-        "organizer": "主辦單位請見活動公告",
-        "source_platform": "台語站",
-        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
-        "registration_url": "https://lin.ee/jqY7HN9j",
-        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
-        "price_info": "費用未公告，請查看活動公告",
-        "is_free": null,
-        "tags": [
-          "台語",
-          "台語站信任來源",
-          "自動核實場次"
-        ],
-        "raw_metadata": {}
-      },
-      "verification": {
-        "status": "verified",
-        "source_id": "auto_gameislearning_1603hq0qi94",
-        "mode": "official_rules_v1",
-        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
-        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
-        "gameislearning_session_key": "2027-01-09T10:00:00+08:00",
-        "confirmed_fields": {
-          "title": "👍 笑咍咍台羅字母好料班第三期",
-          "start_time": "2027-01-09T10:00:00+08:00",
-          "end_time": "2027-01-09T12:00:00+08:00",
-          "venue": "樂暢親子共學空間",
-          "city": "臺北市",
-          "organizer": "主辦單位請見活動公告",
-          "price_info": "費用未公告，請查看活動公告",
-          "is_free": null
-        },
-        "poster_evidence": {
-          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
-          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
-          "checked_at": "2026-09-19T19:48:01+08:00",
-          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
-        }
-      }
-    },
-    {
-      "activity": {
         "id": "gameislearning_1594rl4yi94_20261030_1930",
         "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
         "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
@@ -8190,6 +8176,316 @@
           "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1581w9d4i94",
           "checked_at": "2026-09-19T19:48:04+08:00",
           "snapshot_sha256": "ada096f11951738489c5a04e973dcca9fd84c3e5532ac800927dff93474c9d14"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20261107_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "系列課程共5堂，每堂10:00–12:00。須整期報名；成班後依剩餘名額開放單堂體驗，請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語體驗",
+        "start_time": "2026-11-07T10:00:00+08:00",
+        "end_time": "2026-11-07T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+        "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-07T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2026-11-07T10:00:00+08:00",
+          "end_time": "2026-11-07T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+          "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        },
+        "price_evidence": {
+          "quotes": [
+            "原價：$13,000（五次連續課程）",
+            "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+            "舊生特別優惠：舊生報名折抵 $500",
+            "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+          ],
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20261122_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "系列課程共5堂，每堂10:00–12:00。須整期報名；成班後依剩餘名額開放單堂體驗，請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語體驗",
+        "start_time": "2026-11-22T10:00:00+08:00",
+        "end_time": "2026-11-22T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+        "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-22T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2026-11-22T10:00:00+08:00",
+          "end_time": "2026-11-22T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+          "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        },
+        "price_evidence": {
+          "quotes": [
+            "原價：$13,000（五次連續課程）",
+            "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+            "舊生特別優惠：舊生報名折抵 $500",
+            "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+          ],
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20261212_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "系列課程共5堂，每堂10:00–12:00。須整期報名；成班後依剩餘名額開放單堂體驗，請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語體驗",
+        "start_time": "2026-12-12T10:00:00+08:00",
+        "end_time": "2026-12-12T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+        "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-12-12T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2026-12-12T10:00:00+08:00",
+          "end_time": "2026-12-12T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+          "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        },
+        "price_evidence": {
+          "quotes": [
+            "原價：$13,000（五次連續課程）",
+            "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+            "舊生特別優惠：舊生報名折抵 $500",
+            "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+          ],
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20261220_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "系列課程共5堂，每堂10:00–12:00。須整期報名；成班後依剩餘名額開放單堂體驗，請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語體驗",
+        "start_time": "2026-12-20T10:00:00+08:00",
+        "end_time": "2026-12-20T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+        "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-12-20T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2026-12-20T10:00:00+08:00",
+          "end_time": "2026-12-20T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+          "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        },
+        "price_evidence": {
+          "quotes": [
+            "原價：$13,000（五次連續課程）",
+            "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+            "舊生特別優惠：舊生報名折抵 $500",
+            "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+          ],
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20270109_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "系列課程共5堂，每堂10:00–12:00。須整期報名；成班後依剩餘名額開放單堂體驗，請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語體驗",
+        "start_time": "2027-01-09T10:00:00+08:00",
+        "end_time": "2027-01-09T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+        "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2027-01-09T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2027-01-09T10:00:00+08:00",
+          "end_time": "2027-01-09T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "原價：$13,000（五次連續課程）；限時優惠價：$9,000（即日起至 2026/10/30 止）；舊生特別優惠：舊生報名折抵 $500；成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）",
+          "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908bpd22v.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        },
+        "price_evidence": {
+          "quotes": [
+            "原價：$13,000（五次連續課程）",
+            "限時優惠價：$9,000（即日起至 2026/10/30 止）",
+            "舊生特別優惠：舊生報名折抵 $500",
+            "成班後將視剩餘名額開放單堂體驗 （單堂體驗價 $2,000 / 次）"
+          ],
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+          "checked_at": "2026-09-19T20:03:15+08:00",
+          "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
         }
       }
     }
