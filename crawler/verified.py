@@ -10,6 +10,7 @@ from .collection import Client
 from .sources.opentix import parse_program
 from .posters import poster_url
 from .source_priority import publication_priority
+from .editorial import accupass_editions, accupass_edition
 
 TAIPEI = timezone(timedelta(hours=8))
 DATA_PATH = Path(__file__).resolve().parents[1] / 'data/verified_activities.json'
@@ -118,6 +119,14 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
     if now.tzinfo is None:
         raise ValueError('建置時間必須包含時區')
     payload = json.loads(Path(path).read_text(encoding='utf-8'))
+    # Current editorial copy must not be applied to historical catalog fixtures.
+    editorial_entries = accupass_editions() if Path(path).resolve() == DATA_PATH.resolve() else []
+    for row in payload['activities']:
+        edition = accupass_edition(row['activity'], editorial_entries, strict=True)
+        if edition:
+            required = payload['sources'][row['verification']['source_id']]['required_text']
+            if not edition['source_quotes'] or any(q not in required for q in edition['source_quotes']):
+                raise ValueError('ACCUPASS 活動介紹缺少來源重查證據：' + row['activity']['id'])
     if payload.get('schema_version') != 1:
         raise ValueError('不支援的核實資料格式')
     sources = payload['sources']

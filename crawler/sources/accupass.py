@@ -113,18 +113,19 @@ def table_schedule(html, event):
     return rows, ''
 
 
-def activity_intro(event):
-    """Keep a bounded publisher introduction, not navigation or ticket boilerplate."""
-    value = plain(event.get('description') or '')
-    # Do not use whole-page text: it can include navigation, ads and ticket terms.
-    if not value:
-        return ''
-    sentences = re.split(r'(?<=[。！？!?])\s*',value)
-    result = ''
-    for sentence in sentences[:3]:
-        if len(result+sentence)>160: break
-        result += sentence
-    return result or value[:160]
+def activity_intro(event, doc=None):
+    """Retain the publisher's event article, including late speaker/cast credits.
+
+    Only the known event-content article is eligible; generic main/article text
+    may contain recommendations. Schema description is the safe fallback.
+    """
+    if doc is not None:
+        articles = [node for node in doc.root.all('article')
+                    if any(c.startswith('EventContent_event-content__')
+                           for c in node.attrs.get('class', '').split())]
+        if len(articles) == 1 and articles[0].text().strip():
+            return articles[0].text().strip()
+    return plain(event.get('description') or '')
 
 
 def parse_event(html, url, evidence):
@@ -150,7 +151,7 @@ def parse_event(html, url, evidence):
                   'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
                   'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus'),
                   'sessions': sessions, 'schedule_rows':schedule_rows,
-                  'schedule_issue':schedule_issue, 'official_summary':activity_intro(event),
+                  'schedule_issue':schedule_issue, 'official_summary':activity_intro(event, doc),
                   **poster_fields(html, url)}
         # Aggregate schema dates do not establish individual session dates or universal free admission.
         issues = ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms']

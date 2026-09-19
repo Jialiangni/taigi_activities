@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 PATH = Path(__file__).resolve().parents[1] / 'data/directory_editorial.json'
+ACCUPASS_PATH = PATH.with_name('accupass_editorial.json')
 CONFLICT_ZH = '報名表的結束時間有不同記載，僅列確定的開始時間，結束時間請向主辦確認。'
 CONFLICT_TAIGI = '報名表的結束時間有無仝的記載，這頁干焦列確定的開始時間；結束時間請問主辦單位。'
 
@@ -15,6 +16,23 @@ def text_hash(text):
 
 def editions():
     return json.loads(PATH.read_text(encoding='utf-8')) if PATH.exists() else []
+
+
+def accupass_editions():
+    return json.loads(ACCUPASS_PATH.read_text(encoding='utf-8')) if ACCUPASS_PATH.exists() else []
+
+
+def accupass_edition(activity, entries=None, strict=False):
+    """An edition belongs to one reviewed session, never an entire series."""
+    for entry in accupass_editions() if entries is None else entries:
+        if entry['activity_id'] != activity['id']:
+            continue
+        if any(activity.get(key) != value for key, value in entry['binding'].items()):
+            if strict:
+                raise ValueError('ACCUPASS 活動介紹需重新核對：' + activity['id'])
+            return None
+        return entry
+    return None
 
 
 def official_introduction(body, title=''):
