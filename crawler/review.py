@@ -20,6 +20,7 @@ from .verified import REVIEWED_FIELDS, load_verified, normalized_text, parse_tim
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = {'facebook', 'instagram', 'threads'}
+SOCIAL_REVIEW = {'facebook_review', 'threads_review'}
 MODE = 'official_rules_v1'
 
 
@@ -124,8 +125,8 @@ class Pending(Exception):
     pass
 
 
-def facebook_official_candidates(candidate, client):
-    """Route trusted OPENTIX links from a Page snapshot into the strict verifier."""
+def social_official_candidates(candidate, client):
+    """Route trusted OPENTIX links from a social snapshot into the strict verifier."""
     context = candidate.get('review_context') or {}
     links = context.get('discovered_links') or []
     program_ids = []
@@ -140,16 +141,16 @@ def facebook_official_candidates(candidate, client):
         data, evidence = client.json('https://csm.api.opentix.life/programs/' + program_id)
         program = data.get('result') if isinstance(data, dict) else None
         require(isinstance(program, dict) and str(program.get('id')) == program_id,
-                'facebook_official_program_identity_changed')
+                'social_official_program_identity_changed')
         for row in parse_program(program, evidence):
-            row['issues'].append('discovered_from_facebook_page_official_link')
-            row['facebook_parent_candidate_id'] = candidate['id']
+            row['issues'].append('discovered_from_social_account_official_link')
+            row['social_parent_candidate_id'] = candidate['id']
             rows.append(row)
     return rows
 
 
 def trusted_registration_link(value):
-    """Page-authored Google Forms and Linktree URLs are accepted registration routes."""
+    """Account-authored Google Forms and Linktree URLs are accepted registration routes."""
     try:
         parsed = urlsplit(value or '')
     except ValueError:
@@ -259,7 +260,7 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
     expanded = []
     for candidate_row in candidates:
         expanded.append(candidate_row)
-        if candidate_row['source_id'] != 'facebook_review':
+        if candidate_row['source_id'] not in SOCIAL_REVIEW:
             continue
         context = candidate_row.get('review_context') or {}
         if any(isinstance(link, dict) and link.get('is_page_author') is True
@@ -267,11 +268,11 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                for link in context.get('discovered_links', [])):
             continue
         try:
-            routed = facebook_official_candidates(candidate_row, client)
-            candidate_row['_facebook_routed_count'] = len(routed)
+            routed = social_official_candidates(candidate_row, client)
+            candidate_row['_social_routed_count'] = len(routed)
             expanded.extend(routed)
         except (CollectionError, Pending, ValueError, KeyError, TypeError) as error:
-            candidate_row['_facebook_automation_error'] = (
+            candidate_row['_social_automation_error'] = (
                 error.code if isinstance(error, CollectionError) else str(error) if isinstance(error, Pending)
                 else type(error).__name__)
     candidates = expanded
@@ -297,10 +298,10 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if manual_row.get('resource_id'):
                     item['resource_id'] = manual_row['resource_id']
                 continue
-            if c['source_id'] == 'facebook_review':
+            if c['source_id'] in SOCIAL_REVIEW:
                 context = c.get('review_context')
                 require(isinstance(context, dict) and isinstance(context.get('discovered_links'), list)
-                        and isinstance(context.get('draft'), dict), 'invalid_facebook_review_snapshot')
+                        and isinstance(context.get('draft'), dict), 'invalid_social_review_snapshot')
                 item['review_context'] = context
                 published_urls = {source_url(row['activity'].get('source_url', '')): row['activity']['id']
                                   for row in catalog['activities']}
@@ -311,9 +312,9 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if matched:
                     item.update(decision='duplicate', reason='official_link_already_published', activity_id=matched)
                     continue
-                if c.get('_facebook_routed_count'):
+                if c.get('_social_routed_count'):
                     item.update(decision='routed', reason='official_opentix_link_routed_to_automatic_verification',
-                                routed_session_count=c['_facebook_routed_count'])
+                                routed_session_count=c['_social_routed_count'])
                     continue
                 registration = [link['url'] for link in context['discovered_links']
                                 if isinstance(link, dict) and link.get('is_page_author') is True
@@ -323,8 +324,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                                 reason='page_authored_registration_link_accepted_for_automatic_followup',
                                 accepted_registration_links=registration)
                     continue
-                if c.get('_facebook_automation_error'):
-                    raise Pending('official_link_verification_failed:' + c['_facebook_automation_error'])
+                if c.get('_social_automation_error'):
+                    raise Pending('official_link_verification_failed:' + c['_social_automation_error'])
                 trusted = [link for link in context['discovered_links'] if isinstance(link, dict)
                            and link.get('is_page_author') is True]
                 if trusted:

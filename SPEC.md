@@ -16,7 +16,7 @@
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
 - `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
-- `crawler/collect.py`：159 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
+- `crawler/collect.py`：158 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
 - `data/source_registry.json`：150 個官方機構／團體與分區入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
 - `crawler/sources/`：已改為真實資料收集；不再回傳固定資料。舊 `fetch_activities()` 接口會明確拒絕未審核資料，請改用 `.collect(client)`。
 - `crawler/sample_data.py` 及 `processor.py`：保留的歷史實作；正式建置／候選收集均不使用。
@@ -113,11 +113,11 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 非場次類型增加 `reading_resource`，呈現臺語閱讀推廣；`exhibition_resource` 標籤為「台語相關展覽」，避免一般書展被誤稱為語音導覽。日期範圍但沒有固定時刻的活動以資源卡呈現，沒有日曆事件；日期到期界線使用結束日的次日零時，並非推定館方營業時間。全部資源仍須通過相同官方來源檢查。
 
 
-## 11. Facebook 粉專留言收集
+## 11. Threads 指定帳號與回覆收集
 
-`data/facebook_pages.json` 為Facebook待查名單，包含ChhutGoaKongTaiGi、Guaayingla、taigiloo及既有taigilok；由Facebook收集器自動載入。以 `FACEBOOK_PAGE_ID_MAP` 明確綁定數字ID；未設定逐項標needs_configuration。名稱或網址相似不可直接合併。
+`data/threads_accounts.json` 是實際追蹤名單，包含 `chhut_goa_kong_tai_gi`、`taigiloo`、`lesecondfloor`、`lekhiantang`。Facebook 不再列入預設收集器。Threads 收集器逐帳號、逐關鍵字呼叫官方 Keyword Search，以 `author_username` 精確限制帳號，拒絕回應中帳號不符、轉貼或回覆型結果；找到貼文後再讀 conversation 的可見回覆。
 
-指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整。原始 `facebook.json` 留在收集執行器；後續只接收 `facebook_review.json` 去識別快照，內容限粉專公開貼文短摘錄、公開連結、作者可信度及回應雜湊。分級判讀先排除已刊登官方連結，再將粉專本人提供的OPENTIX連結轉為單場候選並套用第23節完整核實；粉專本人提供且HTTPS主機名完全符合Google Forms或Linktree正式網域的報名連結標記為可信自動接手，不進人工Issue。其餘不能完整核實者依缺連結、作者不明、不支援平台或驗證失敗分類為pending。pending Facebook候選由部署工作更新一張固定GitHub Issue，內容不得包含一般留言者身份或留言文字。詳見COLLECTORS.md。
+原始 `threads.json` 留在收集執行器；後續只接收 `threads_review.json` 去識別快照，內容限原帳號公開貼文短摘錄、公開連結、連結是否由原帳號提供及回應雜湊。其他回覆者身份及文字、Graph API 網址與 token 不得進入 artifact。分級判讀先排除已刊登官方連結，再將原帳號提供的 OPENTIX 連結轉為單場候選並套用第23節完整核實；原帳號提供且 HTTPS 主機名完全符合 Google Forms 或 Linktree 正式網域的報名連結標記為可信自動接手，不進人工 Issue。其餘不能完整核實者依缺連結、作者不明、不支援平台或驗證失敗分類為 pending，由部署工作更新一張固定 Threads GitHub Issue。未設定 token 逐帳號標 `needs_configuration`；不能解讀為帳號沒有活動。詳見 COLLECTORS.md。
 
 
 ## 11. 李江却基金會系列場次核實
@@ -138,7 +138,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 前端以全部正式場次的Asia/Taipei開始日期產生YYYY-MM月份選項，按年月排序，不受其他篩選隱藏選項。selectedMonths為空表示全部；多個月採聯集，再與城市、類別、來源、費用及文字篩選取交集。重按月份取消，全部月份清除。按鈕以aria-pressed呈現選取狀態，桌面與手機共用可水平捲動的列；維持按鈕DOM以保留鍵盤焦點。卡片、清單、週曆、計數及篩選後ICS使用同一組結果，非場次資訊不受活動月份篩選。若選月後目前週沒有符合活動，定位至篩選後首場活動所在週；沒有符合活動時定位至所選最早月份首日。週曆仍一次顯示一週。
 
-新增臺北總館專用LibraryListingCrawler（tpml_main），總數159收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
+新增臺北總館專用LibraryListingCrawler（tpml_main），總數158收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
 
 ## 14. 活動卡片精簡（2026-09-18）
 
@@ -228,6 +228,6 @@ iPhone 的 LINE 內建瀏覽器不直接交接 `.ics` 時，網站辨識 LINE us
 
 去重以既有全部歷史紀錄與本輪已通過結果為基準：官方 session ID優先，其次官方頁＋起迄時間，再比對跨站正規化標題／城市／地點／時間。相同城市時間但標題或場地疑似重複時保留 pending。同一官方系列的不同日期可分別通過；同一報告反覆執行不重複新增。過期活動只從輸出排除，核實歷史仍保留。
 
-`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Facebook僅下載上述去識別快照。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
+`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Threads僅下載上述去識別快照。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
 
 所有正式檢查通過才提交核實資料、翻譯對照、審查紀錄及 HTML/ICS。提交推送失敗會停止部署，沒有 continue-on-error 或強制覆蓋 main。候選核實報告保留 Git 及14天 artifact，全文候選不進 Git／Pages。Python 測試保存9/18的85場固定樣本；當前正式清單另通過結構、來源與日曆一致性檢查，沒有85場數量上限。

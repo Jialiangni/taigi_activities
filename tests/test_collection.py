@@ -220,16 +220,20 @@ class CollectionTests(unittest.TestCase):
 
     def test_threads_current_documented_host_and_parameters(self):
         fake = MockClient(jsons=[{'data': []}])
-        r = ThreadsCrawler(['台語'], env={'THREADS_ACCESS_TOKEN': 'SECRET'}).collect(fake)
+        accounts = [{'username': 'example', 'url': 'https://www.threads.com/@example'}]
+        r = ThreadsCrawler(['台語'], env={'THREADS_ACCESS_TOKEN': 'SECRET'}, accounts=accounts).collect(fake)
         self.assertEqual(r.status, 'ok')
         self.assertTrue(fake.calls[0][0].startswith('https://graph.threads.com/v1.0/keyword_search?'))
         self.assertIn('search_type=RECENT', fake.calls[0][0])
+        self.assertIn('search_mode=KEYWORD', fake.calls[0][0])
+        self.assertIn('author_username=example', fake.calls[0][0])
 
     def test_registry_covers_every_group_and_no_legacy_activity_fallback(self):
         all_sources = collectors({})
-        self.assertEqual(len(all_sources), 159)
-        for required in ['accupass', 'opentix', 'eraticket', 'li_kang_khiok', 'le_chang', 'facebook', 'instagram', 'threads', 'tpml', 'ntpclib', 'typl', 'tfam', 'gold', 'ty_youth', 'ntl', 'yingge_library', 'taigiloo', 'dadaocheng', '228_national']:
+        self.assertEqual(len(all_sources), 158)
+        for required in ['accupass', 'opentix', 'eraticket', 'li_kang_khiok', 'le_chang', 'instagram', 'threads', 'tpml', 'ntpclib', 'typl', 'tfam', 'gold', 'ty_youth', 'ntl', 'yingge_library', 'taigiloo', 'dadaocheng', '228_national']:
             self.assertIn(required, all_sources)
+        self.assertNotIn('facebook', all_sources)
         with self.assertRaises(CollectionError):
             all_sources['accupass'].fetch_activities()
 

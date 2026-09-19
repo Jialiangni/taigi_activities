@@ -1,4 +1,4 @@
-"""Create or update one GitHub Issue containing Facebook candidates needing a person."""
+"""Create or update one GitHub Issue containing Threads candidates needing a person."""
 import json
 import os
 import re
@@ -7,7 +7,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-TITLE = '待判讀：Facebook 活動候選'
+TITLE = '待判讀：Threads 活動候選'
+LEGACY_TITLE = '待判讀：Facebook 活動候選'
 
 
 def clean(value, limit=180):
@@ -17,14 +18,14 @@ def clean(value, limit=180):
 
 def pending_rows(audit):
     return [row for row in audit.get('decisions', [])
-            if row.get('source_id') == 'facebook_review' and row.get('decision') == 'pending']
+            if row.get('source_id') == 'threads_review' and row.get('decision') == 'pending']
 
 
 def build_body(audit, run_url=''):
     rows = pending_rows(audit)
     lines = [
-        '<!-- taigi-facebook-manual-review -->',
-        'Facebook 分級判讀後，以下候選仍缺少足以自動刊登的官方證據。',
+        '<!-- taigi-threads-manual-review -->',
+        'Threads 分級判讀後，以下候選仍缺少足以自動刊登的官方證據。',
         '',
         '- 待判讀：**{} 筆**'.format(len(rows)),
         '- 自動產生時間：{}'.format(clean(audit.get('reviewed_at'))),
@@ -38,15 +39,15 @@ def build_body(audit, run_url=''):
         lines.extend([
             '### {}. {}'.format(number, clean(row.get('title'))),
             '- 候選 ID：`{}`'.format(clean(row.get('candidate_id'), 64)),
-            '- 粉專：{}'.format(clean(context.get('page_handle')) or '未識別'),
-            '- [Facebook 原貼文]({})'.format(row.get('source_url')),
+            '- Threads 帳號：{}'.format(clean(context.get('page_handle')) or '未識別'),
+            '- [Threads 原貼文]({})'.format(row.get('source_url')),
             '- 需要人工原因：`{}`'.format(clean(row.get('reason'))),
         ])
         links = context.get('discovered_links') or []
         if links:
             lines.append('- 找到的連結：')
             for link in links[:10]:
-                trust = '粉專本人' if link.get('is_page_author') is True else '作者未確認'
+                trust = '原貼文帳號' if link.get('is_page_author') is True else '回覆者／作者未確認'
                 lines.append('  - [{}]({})（{}）'.format(clean(link.get('url'), 120), link.get('url'), trust))
         else:
             lines.append('- 找到的連結：無')
@@ -76,7 +77,10 @@ def main():
     if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository):
         raise ValueError('Invalid repository')
     issues = api(repository, token, 'GET', 'issues?state=open&per_page=100')
-    issue = next((row for row in issues if row.get('title') == TITLE and 'pull_request' not in row), None)
+    # Reuse the former Facebook reminder so switching sources does not leave a
+    # stale open issue beside the new Threads reminder.
+    issue = next((row for row in issues
+                  if row.get('title') in (TITLE, LEGACY_TITLE) and 'pull_request' not in row), None)
     rows = pending_rows(audit)
     if rows:
         payload = {'title': TITLE, 'body': build_body(audit, os.environ.get('GITHUB_RUN_URL', ''))}
@@ -89,10 +93,10 @@ def main():
     elif issue:
         api(repository, token, 'PATCH', 'issues/' + str(issue['number']), {
             'state': 'closed', 'state_reason': 'completed',
-            'body': build_body(audit, os.environ.get('GITHUB_RUN_URL', '')) + '\n目前沒有待人工判讀的 Facebook 候選。\n'})
+            'body': build_body(audit, os.environ.get('GITHUB_RUN_URL', '')) + '\n目前沒有待人工判讀的 Threads 候選。\n'})
         print('Closed manual review issue #{}'.format(issue['number']))
     else:
-        print('No Facebook candidates need manual review')
+        print('No Threads candidates need manual review')
 
 
 if __name__ == '__main__':

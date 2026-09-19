@@ -20,9 +20,8 @@
 | 圖書館、館舍、市府局處、民間團體 | `data/source_registry.json` 的 149 個入口；官方站內活動／消息連結發現與專頁讀取 | 通用網站收集器預設每站 30 頁、導航深度 3，翻頁不耗導航深度；PDF、圖片公告與未連出的舊資料需要另行核對 |
 | 桃園市立美術館所屬館群 | 官網首頁 `__NEXT_DATA__` 的公開 news／info 資料集，保留公告內文 | 取代只會讀到防護頁的內頁爬取；實測可解析，但首頁亦可能間歇回傳 HTTP 428，屆時標失敗並需正常瀏覽器補查 |
 | 文化部開放資料 | 依[官方介接文件](https://opendata.culture.tw/upload/dataSource/2021-02-18/9bee99c4-0732-4abd-b8c6-1a4bd0b62e64/db83c7223217e1d9947778256768153f.pdf)讀取各類別，保留 `showInfo` 各場次，依地址篩選北北桃，記錄命中的機構 | 補充上述機構與售票平台，不能保證各機構都有提供資料。`onSales=N` 不等於免費 |
-| Facebook | 授權粉專 `/feed` 及逐篇 `/comments?filter=stream` 游標分頁，保留留言／回覆報名連結 | 指定名單的貼文先讀留言，不因本文無關鍵字排除；無完整留言可見性承諾 |
 | Instagram | `ig_hashtag_search` → `/{hashtag-id}/recent_media`，兩次均帶真實 `user_id`，支援平台的同值 after 游標 | 專業帳號、Facebook Login、Public Content Access；近期 24 小時公開媒體，非全站歷史搜尋 |
-| Threads | `https://graph.threads.com/v1.0/keyword_search`，RECENT／KEYWORD，游標分頁 | 需要 `threads_keyword_search` 才能搜尋公開貼文；缺該權限可能僅搜尋自己的貼文 |
+| Threads | 對四個指定帳號逐一呼叫 `https://graph.threads.com/v1.0/keyword_search`，以 `author_username` 精確篩選；再以 `/{media-id}/conversation` 讀取可見回覆與其中連結 | 只取得符合設定關鍵字的貼文；公開搜尋需要 `threads_keyword_search` 核准，且 API 可見回覆不等於完整留言歷史 |
 
 票務搜尋 API 是本次從網站公開前端觀察並實測成功的網站介面，不是承諾永久穩定的第三方服務合約。格式改變、HTTP 失敗、重複頁面、缺少欄位均需處理為錯誤。
 
@@ -37,7 +36,7 @@ python3 -m crawler.collect
 python3 -m crawler.collect --sources accupass,opentix,eraticket
 python3 -m crawler.collect --sources public_libraries,museums,government
 python3 -m crawler.collect --sources li_kang_khiok,le_chang
-python3 -m crawler.collect --sources facebook,instagram,threads
+python3 -m crawler.collect --sources instagram,threads
 # 小量連線檢查（報告會明確標示截斷，不能宣稱全量）
 python3 -m crawler.collect --max-details 5 --website-pages 3 --output /tmp/taigi-smoke
 python3 -m unittest discover -s tests -v
@@ -57,7 +56,7 @@ python3 -m unittest discover -s tests -v
 
 報告記錄各來源候選數、成功回應數、時間、來源 URL、成功回應 SHA-256（解壓後內容）、失敗碼與截斷原因。API POST 的公開搜尋條件一併留存，不儲存授權標頭。候選全文是本機待審資料，已排除於 Git 與 GitHub Pages；Git 只保存精簡測試樣本與驗證摘要。
 
-GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Facebook原始授權內容與Instagram／Threads授權內容不放進 artifact。Facebook另輸出去識別 `facebook_review.json`：保留粉專公開貼文短摘錄、找到的公開網址、粉專留言身分判斷、抓取時間及內容雜湊，排除一般留言文字與身分、Graph API請求網址及權杖。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
+GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Instagram／Threads 原始授權內容不放進 artifact。Threads 另輸出去識別 `threads_review.json`：保留指定帳號公開貼文短摘錄、本文或回覆找到的公開網址、連結是否由原帳號提供、抓取時間及內容雜湊，排除其他回覆者文字與身分、Graph API 請求網址及權杖。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
 
 任何來源的請求／格式錯誤會令 CLI 回傳非零碼，但仍完成其他獨立來源並保存報告；單純到達已設定上限會標 partial。設定缺漏的社群屬明確待設定狀態，無法以此視為已驗證。
 
@@ -65,13 +64,10 @@ GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘�
 
 ## 社群授權接入口
 
-使用者已確認目前沒有 Meta App／授權，因此這三個來源目前只能完成介面與模擬回應測試，不能宣稱授權後實際回傳已驗證。
+使用者已確認目前沒有 Meta App／授權，因此 Instagram 與 Threads 目前只能完成介面與模擬回應測試，不能宣稱授權後實際回傳已驗證。Facebook 已依使用者要求退出每日收集流程。
 
 | 環境變數／GitHub Secret 名稱 | 用途 |
 |---|---|
-| `FACEBOOK_ACCESS_TOKEN` | 可讀取指定粉專的 token；不屬於自己的粉專需另外具備公開內容存取資格 |
-| `FACEBOOK_PAGE_ID_MAP` | 指定粉專 handle 到已確認數字 Page ID 的 JSON 對照；四個待查粉專須逐一設定 |
-| `FACEBOOK_PAGE_IDS` | 額外數字粉專 ID，以逗號分隔；仍相容，但無法用來證明指定 handle 已涵蓋 |
 | `INSTAGRAM_ACCESS_TOKEN` | Facebook Login 對應的使用者 token |
 | `INSTAGRAM_USER_ID` | Instagram Business／Creator 帳號的數字 ID，不是 `me` |
 | `THREADS_ACCESS_TOKEN` | 具 `threads_basic`、`threads_keyword_search` 的 Threads token |
@@ -79,7 +75,7 @@ GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘�
 
 將值設在執行環境或 GitHub Actions Secrets，不要貼進聊天、Git、設定 JSON 或候選資料。專案不會自行建立 Meta App、申請擴大權限或代為完成授權同意。
 
-Facebook 讀取範圍依[官方 Page feed 文件](https://developers.facebook.com/docs/graph-api/reference/page/feed/)的權限與角色要求；Instagram 依[官方 hashtag search](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag-search/)及[recent media 文件](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag/recent-media/)，7 天最多 30 個不同標籤，請維持固定標籤避免累積超額；Threads 依[官方 keyword search 文件](https://developers.facebook.com/docs/threads/keyword-search/)。
+Instagram 依[官方 hashtag search](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag-search/)及[recent media 文件](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag/recent-media/)，7 天最多 30 個不同標籤，請維持固定標籤避免累積超額；Threads 依官方 [Keyword Search](https://developers.facebook.com/documentation/threads/keyword-search) 與 [Replies and Conversations](https://developers.facebook.com/documentation/threads/retrieve-and-manage-replies/replies-and-conversations) 介面。
 
 設定後先跑對應來源，檢查實際 token 權限、成功回應、分頁和候選內容，才能將社群來源標成已連線驗收。
 
@@ -96,7 +92,7 @@ Facebook 讀取範圍依[官方 Page feed 文件](https://developers.facebook.co
 | 李江却基金會 | 246 篇 | 正確跟隨官方 Blogger 分頁；到達 5 頁上限 |
 | 樂暢 | 16 篇 | 官方 RSS 回應與解析完成 |
 | 36 個機構入口 | 6 篇 | 多數到達 8 頁上限；桃園美術館 17:00 曾取得 1 篇，但 17:07 重查 HTTP 428，最新結果保留失敗，未以舊成功掩蓋 |
-| Facebook／Instagram／Threads | 0 | 均為 needs_configuration；使用者尚未設定 App／授權 |
+| Instagram／Threads | 0 | 均為 needs_configuration；使用者尚未設定 App／授權；Facebook 已於 2026-09-19 停用 |
 
 合計 684 筆候選，包含文章、公告、節目期間及場次，也可能含過期內容或尚未確認地區的資料；不是 684 場已核實活動。ACCUPASS 的最終關鍵字過濾以這輪剛取得的完整文字重算，原始來源欄位及回應指紋保留於本機，摘要另記錄重算時間。
 
@@ -113,7 +109,7 @@ Facebook 讀取範圍依[官方 Page feed 文件](https://developers.facebook.co
 - **鶯歌分館**：使用新北市圖 `area=239&branch=EA` 活動清單，EA 由官方 `getBranch?area=239` 回傳；分館介紹頁的 UUID 不能拿來當查詢代碼。候選標題須對應鶯歌，排除全市公告中其他分館的台語活動。
 - **四號公園圖書館**：是國立臺灣圖書館，不是新北市圖；新增官網、官方最新消息 RSS 與台語路合作故事專頁。
 - **迪化街**：先依大稻埕戲苑加入藝文處官方列表、已知《請戲—布袋戲一條街》特展；尚待確認使用者是否另指原林柳新／台原亞洲偶戲博物館，未宣稱兩館同一處。
-- **台語路**：官方 `taigiloo.tw` RSS、最新消息及活動文章；aliases 包含台語路／台語鹿／台語路親子樂團／taigilok。官方粉專 `https://www.facebook.com/taigilok` 已登記，仍需 Meta 授權及正式 Page ID 才能透過既有 Facebook API 取得貼文。官網 RSS 內容可能較舊，合作圖書館／售票平台仍是目前新活動的重要來源，不能說已完整取得粉專。
+- **台語路**：官方 `taigiloo.tw` RSS、最新消息及活動文章；aliases 包含台語路／台語鹿／台語路親子樂團／taigilok。另追蹤 Threads 帳號 `@taigiloo`，仍需 Threads token 與公開搜尋權限才能取得貼文。官網 RSS 內容可能較舊，合作圖書館／售票平台仍是目前新活動的重要來源，不能說已完整取得社群貼文。
 
 本輪指定網站驗收採每站 20 頁，當時日常預設為 8 頁（後續已提高至 30 頁）；到達上限如實列 partial，沒有全站完整涵蓋承諾。詳見 `data/audit/2026-09-18-museum-collection-report.json`。
 
@@ -145,38 +141,27 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 活動中心沿各區公所公開公告收集，需同時含中心及台語相關內容；不把場地租借、管理或收費辦法認作活動，不表示該區每一場館的未公開課表都有取得。候選收集不改變公開63場活動及5項導覽資訊。
 
 
-## Facebook 指定粉專與留言報名連結（2026-09-18）
+## Threads 指定帳號與回覆連結（2026-09-19）
 
-`data/facebook_pages.json` 是 Facebook 收集器實際載入的待查名單，與機構官網 registry 分開。排程仍有158個收集器，Facebook這一個收集器內含4個粉專目標：
+`data/threads_accounts.json` 是 Threads 收集器實際載入的名單，與機構官網 registry 分開。Facebook 收集器已退出排程；目前追蹤4個 Threads 帳號：
 
-- [出外講台語 Chhut-gōa kóng Tâi-gí](https://www.facebook.com/ChhutGoaKongTaiGi)
-- [阿熒的教室](https://www.facebook.com/Guaayingla)
-- [牽囡仔ê手 行台語ê路－台灣台語路協會](https://www.facebook.com/taigiloo)
-- 先前指定的 [taigilok](https://www.facebook.com/taigilok)
-
-前三個公開網址本次皆回HTTP200並取得上述頁面標題，僅證明公開頁可讀，不代表貼文、留言或數字Page ID已驗收。不同handle先獨立保留；經確認對應相同數字ID後才去重請求。
+- [出外講台語](https://www.threads.com/@chhut_goa_kong_tai_gi) `@chhut_goa_kong_tai_gi`
+- [牽囡仔ê手 行台語ê路－台灣台語路協會](https://www.threads.com/@taigiloo) `@taigiloo`
+- [二樓有人](https://www.threads.com/@lesecondfloor) `@lesecondfloor`
+- [樂暢親子共學](https://www.threads.com/@lekhiantang) `@lekhiantang`
 
 讀取方法：
 
-1. 從授權的Page feed逐頁取得貼文，包含附件連結。指定名單內的貼文即使本文沒有台語關鍵字、沒有報名網址或只是一張圖片，仍保留候選並嘗試留言查詢。
-2. 每篇貼文查 `/POST_ID/comments`，設定 `filter=stream`、`order=chronological`，追蹤after游標取得API可見的各層留言（含回覆）。不是只看預設精選留言，也不只取第一頁。
-3. 擷取本文、留言與附件URL；Facebook `l.php?u=`包裝還原目的網址，短網址原樣保留，**不自動開啟或提交報名表**。保存貼文／留言出處、父留言ID、核對指紋及是否由粉專留言；若作者欄位不可見則標未知，不推定為主辦。一般留言者姓名／作者ID不保存。
-4. 缺少comment ID時仍保留文字與連結，改用內容指紋辨識重複分頁。留言讀取失敗或超頁數保留已讀貼文及連結，標 `comments_incomplete`，不中止後續貼文。空回應只標「沒有可見留言」，不代表沒有留言或報名資訊。
-5. 連結及留言只是核實線索，不自動視為官方報名頁；需核對主辦、活動日期、場地、語言、費用及是否取消後才刊登。圖片文字仍需人工核對。
+1. 對每個帳號及每個設定關鍵字呼叫官方 `keyword_search`，使用 `search_type=KEYWORD`、`search_mode=RECENT` 與不含 `@` 的 `author_username`。回應的 username 必須再次精確相符；回覆型及引用型結果不當作原帳號貼文。
+2. 保留貼文本文與 permalink，擷取其中公開網址。若貼文標示有回覆，再讀 `/{media-id}/conversation` 的游標分頁；只把回覆中的網址及其作者是否為原帳號交給後續，不把其他回覆者的文字或身分放進 artifact。
+3. 同一貼文可能命中多個關鍵字，以 media ID 去重。每個搜尋預設最多 `search_pages` 頁，每篇 conversation 最多 `limits.threads_reply_pages` 頁；到達上限或個別回覆讀取失敗會保留已取得內容並標 partial。
+4. 連結只是核實線索，不自動視為已確認活動。仍需核對主辦、活動日期、場地、語言、費用及狀態；圖片內未結構化文字仍可能需要人工判讀。
 
-預設每粉專最多200篇貼文（`limits.facebook_posts_per_page`），每篇留言最多20頁（`limits.facebook_comment_pages`），feed頁數仍為 `search_pages`。達上限明列未完成；每輪會重查讀取範圍內舊貼文的留言，不因貼文ID曾出現就跳過。沒有承諾完整歷史或近三週覆蓋。
+官方 API 需要 `THREADS_ACCESS_TOKEN`，至少具 `threads_basic` 與 `threads_keyword_search`。未經 App Review 核准公開搜尋時，Keyword Search 只能搜尋授權使用者自己的貼文，無法完成這四個外部帳號的監測。公開 Threads 個人頁 HTML 沒有穩定提供完整貼文與回覆資料，因此不拿頁面抓取假裝成 API 的替代方案。介面依官方 [Keyword Search](https://developers.facebook.com/documentation/threads/keyword-search) 與 [Replies and Conversations](https://developers.facebook.com/documentation/threads/retrieve-and-manage-replies/replies-and-conversations) 文件實作。
 
-授權設定範例（以下只是格式，數字是占位示例，不是真實Page ID）：
+目前無 Threads token，實跑會是 **needs_configuration / 0候選**，四個目標逐一列於 `threads.json` 及 `report.json` 的 `account_status`，不能解讀成「四個帳號都沒有活動」。設定並通過權限後，仍需先以實際成功回應驗證搜尋、分頁與 conversation 可見範圍，才可標示已連線。
 
-```json
-{"ChhutGoaKongTaiGi":"123","Guaayingla":"456","taigiloo":"789","taigilok":"012"}
-```
-
-將實際對照設為 `FACEBOOK_PAGE_ID_MAP` 環境變數／GitHub Secret；token仍使用 `FACEBOOK_ACCESS_TOKEN`。需確認對每個Page及留言都具讀取資格；能讀本文不保證能讀留言，尤其非自己管理的粉專。不能將任意登入token當作通用粉專讀取權限。
-
-目前無Meta授權，實跑是 **needs_configuration / 0候選**，4個目標逐一列於 `facebook.json` 及 `report.json` 的 `page_status`，不是「四個粉專都沒有活動」。目前106項測試通過（含11項留言／待查名單測試、2項去識別快照測試及人工核實／去重串接）；官方API仍待授權後實測。見[公開頁與待設定紀錄](data/audit/2026-09-18-facebook-watchlist-review.json)、[Meta官方Post SDK](https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py)及[留言介面文件](https://developers.facebook.com/docs/graph-api/reference/object/comments/)。
-
-原有artifact排除規則持續排除 `facebook.json`；只有 `facebook_review.json` 去識別快照交給後續核實。候選文案只概述粉專公開內容及連結狀態，缺少的活動欄位逐項標示未核實。粉專本人提供的OPENTIX活動連結會轉入相同的官方API／HTML嚴格核實；粉專本人貼出的 `forms.gle`、`docs.google.com/forms`、`forms.google.com/forms`、Linktree正式網域視為可信報名入口，標記自動接手，不列人工清單。網址必須是HTTPS且主機名完全相符，相似惡意網域不接受。過期與已刊登連結自動排除；留言作者不明、缺連結、圖片或其他驗證失敗者保持pending。pending項目每日更新同一張「待判讀：Facebook 活動候選」GitHub Issue，列出貼文、連結、缺少欄位及候選ID；清空後自動關閉。
+原始 `threads.json` 持續排除於 artifact；只有 `threads_review.json` 去識別快照交給後續核實。原帳號提供的 OPENTIX 活動連結會進入相同的官方 API／HTML 嚴格核實；原帳號提供的 `forms.gle`、`docs.google.com/forms`、`forms.google.com/forms` 或 Linktree 正式網域視為可信報名入口，標記自動接手。網址必須是 HTTPS 且主機名完全相符。過期與已刊登連結自動排除；回覆作者不明、缺連結、圖片或其他驗證失敗者保持 pending。pending 項目每日更新同一張「待判讀：Threads 活動候選」GitHub Issue；清空後自動關閉。
 
 
 ## 李江却基金會：公告正文與系列核實清單（2026-09-18）
@@ -193,7 +178,7 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 
 ## 三市總館明確涵蓋（2026-09-18 最新）
 
-目前159個收集器、150個registry入口，public_libraries群組60個。
+目前158個收集器、150個registry入口，public_libraries群組60個。
 
 | 總館 | 日常收集設定 | 本次限量6頁驗收 |
 |---|---|---|

@@ -183,23 +183,23 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(result['decisions'][0]['activity_id'], 'opentix_789')
         self.assertEqual(self.client.calls, [])
 
-    def test_page_authored_google_forms_and_linktree_skip_manual_review(self):
+    def test_account_authored_google_forms_and_linktree_skip_manual_review(self):
         self.assertTrue(trusted_registration_link('https://forms.gle/abc'))
         self.assertTrue(trusted_registration_link('https://docs.google.com/forms/d/e/abc/viewform'))
         self.assertTrue(trusted_registration_link('https://linktr.ee/example'))
         self.assertFalse(trusted_registration_link('https://forms.gle.evil.example/abc'))
         self.assertFalse(trusted_registration_link('http://forms.gle/abc'))
         for number, url in enumerate(('https://forms.gle/abc', 'https://linktr.ee/example'), 1):
-            candidate = {'id': 'fb-registration-' + str(number), 'source_id': 'facebook_review',
-                         'source_url': 'https://www.facebook.com/example/posts/' + str(number),
-                         'title': '粉專活動', 'text': '候選摘要', 'kind': 'social_snapshot',
+            candidate = {'id': 'threads-registration-' + str(number), 'source_id': 'threads_review',
+                         'source_url': 'https://www.threads.com/@example/post/' + str(number),
+                         'title': 'Threads 活動', 'text': '候選摘要', 'kind': 'social_snapshot',
                          'review_status': 'pending', 'fields': {}, 'review_context': {
                              'discovered_links': [{'url': url, 'origin': 'comment', 'is_page_author': True}],
                              'draft': {'unverified_fields': ['start_time']}}}
-            self.write('candidates/facebook_review.json',
-                       {'source_id': 'facebook_review', 'candidates': [candidate]})
+            self.write('candidates/threads_review.json',
+                       {'source_id': 'threads_review', 'candidates': [candidate]})
             self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
-                {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
+                {'source_id': 'threads_review', 'status': 'ok', 'candidate_count': 1}]})
             result = self.run_review()
             self.assertEqual(result['counts'], {'routed': 1})
             self.assertEqual(result['decisions'][0]['reason'],

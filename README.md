@@ -57,12 +57,12 @@ GitHub Actions 每日台灣時間 03:15 啟動候選收集，完成後以 `workf
 
 ## 各區圖書館與活動中心爬蟲
 
-已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有159個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。
+已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有158個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。
 
 
-## Facebook 粉專與留言
+## Threads 帳號與回覆
 
-已將出外講台語、阿熒的教室及 `facebook.com/taigiloo` 加入[粉專待查名單](data/facebook_pages.json)，保留既有 `taigilok`。Facebook收集器已支援逐篇留言與回覆分頁、報名連結及來源證據；指定粉專不因本文沒台語關鍵字而跳過。收集後另產生 `facebook_review.json` 去識別快照，只保留粉專公開貼文短摘錄、留言找到的網址、是否由粉專本人留言及回應雜湊；一般留言文字、姓名、ID、Graph API網址與權杖不會交給後續工作。判讀分三級：粉專本人提供的OPENTIX連結交給既有官方API／HTML規則自動核實；粉專本人提供的Google Forms或Linktree視為可信報名入口，轉入自動補查而不送人工；過期或重複者排除，其餘證據不足者集中更新同一張GitHub Issue。**目前仍未設定Meta授權與Page ID對照，實際貼文／留言尚未完成連線驗收**，不會把待設定說成已抓取。設定、頁數限制與測試紀錄見[COLLECTORS.md](COLLECTORS.md#facebook-指定粉專與留言報名連結2026-09-18)。
+Facebook 已退出每日收集流程；目前追蹤[四個 Threads 帳號](data/threads_accounts.json)：`chhut_goa_kong_tai_gi`、`taigiloo`、`lesecondfloor`、`lekhiantang`。收集器以官方 Keyword Search 的 `author_username` 精確限制帳號，再讀每篇貼文的 conversation，尋找本文及可見回覆中的活動連結。原始授權內容只留在執行器，後續僅接收 `threads_review.json` 去識別快照；其他回覆者的姓名與文字不會進入核實工作。原帳號提供的 OPENTIX、Google Forms 或 Linktree 連結沿用分級自動判讀，其餘證據不足者集中更新同一張 GitHub Issue。**目前仍未設定 Threads token，且公開帳號搜尋需要 Meta 核准 `threads_keyword_search`，所以尚未完成實際貼文／回覆連線驗收**。設定、限制與官方介面見 [COLLECTORS.md](COLLECTORS.md#threads-指定帳號與回覆連結2026-09-19)。
 
 ## 李江却基金會系列場次補核（2026-09-18）
 
@@ -78,7 +78,7 @@ GitHub Actions 每日台灣時間 03:15 啟動候選收集，完成後以 `workf
 
 月份按鈕支援單選或同時選擇多個月份，再按一次取消；「全部月份」清除月份限制。月份包含年份，以臺北時間的活動開始日期篩選，套用至卡片、清單、週曆及篩選後ICS下載。選月後若目前週沒有符合活動，週曆會定位至選取範圍第一場活動所在週。
 
-三市總館均列入日常收集設定：臺北新增 `tpml_main` 官方「總館-全」專用列表；新北由 `ntpclib_district_220` 板橋區全部館別涵蓋；桃園由 `typl_district_2` 的總館area 1涵蓋。現為159個收集器、150個registry入口。限量6頁驗收臺北及桃園成功取得回應但達上限（partial）；新北仍HTTP502（failed），不能宣稱本次已取得其活動。詳見[總館核對紀錄](data/audit/2026-09-18-main-libraries-check.json)。
+三市總館均列入日常收集設定：臺北新增 `tpml_main` 官方「總館-全」專用列表；新北由 `ntpclib_district_220` 板橋區全部館別涵蓋；桃園由 `typl_district_2` 的總館area 1涵蓋。現為158個收集器、150個registry入口。限量6頁驗收臺北及桃園成功取得回應但達上限（partial）；新北仍HTTP502（failed），不能宣稱本次已取得其活動。詳見[總館核對紀錄](data/audit/2026-09-18-main-libraries-check.json)。
 
 活動探索卡片已改為精簡排版：沒有核實圖片時不留封面空間，直接呈現日期、完整標題、城市、場地與費用；主辦與完整說明可於詳情查看。
 

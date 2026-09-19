@@ -21,9 +21,6 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Collect review candidates
         env:
-          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
-          FACEBOOK_PAGE_IDS: ${{ secrets.FACEBOOK_PAGE_IDS }}
-          FACEBOOK_PAGE_ID_MAP: ${{ secrets.FACEBOOK_PAGE_ID_MAP }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
@@ -36,12 +33,11 @@ jobs:
           name: event-review-candidates
           path: |
             data/candidates/*.json
-            !data/candidates/facebook.json
             !data/candidates/instagram.json
             !data/candidates/threads.json
           if-no-files-found: warn
           retention-days: 14
-      # Preserve public-source candidates plus the redacted Facebook review snapshot.
+      # Preserve public-source candidates plus the redacted Threads review snapshot.
       # Raw authorized social responses stay on the runner.
       # Completion triggers deploy.yml, which reviews public candidates before publishing.
       # No Pages upload of unreviewed event or social data.
