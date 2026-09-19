@@ -13,11 +13,31 @@ from crawler.verified import DATA_PATH, check_source_content, check_opentix_sess
 from crawler.sources.opentix import parse_program
 from crawler.sources.google_workspace import GoogleWorkspaceSync, ics_text, fold_line
 from main import build
+from crawler.presentation import session_title
 
 NOW = datetime.fromisoformat('2026-09-18T23:00:00+08:00')
 
 
 class VerifiedCalendarTests(unittest.TestCase):
+    def test_session_title_translation_is_scoped_and_shared_with_calendars(self):
+        cases = {
+            '活動（上午場）': '活動（早起場）',
+            '活動(下午場)': '活動(下晝場)',
+            '工作坊（第1日）': '工作坊（第一工）',
+            '工作坊（第二日）': '工作坊（第二工）',
+            '工作坊( 第１２日 )': '工作坊( 第十二工 )',
+            '上午場介紹（作詞）（台語場）（9月1日）': '上午場介紹（作詞）（台語場）（9月1日）',
+            '第一日的故事（首演紀念日）': '第一日的故事（首演紀念日）',
+        }
+        for original, expected in cases.items():
+            self.assertEqual(session_title(original), expected)
+        event = self.load()[0]
+        event.title = '工作坊（第2日）'
+        sync = GoogleWorkspaceSync()
+        self.assertIn('SUMMARY:工作坊（第二工）', sync.event_content(event).replace('\r\n ', ''))
+        self.assertEqual(parse_qs(urlsplit(sync.generate_google_calendar_url(event)).query)['text'], ['工作坊（第二工）'])
+        self.assertEqual(event.title, '工作坊（第2日）')
+
     def setUp(self):
         self.data = json.loads((Path(__file__).parent / 'fixtures/verified_catalog_base.json').read_text())
         self.tmp = tempfile.TemporaryDirectory()

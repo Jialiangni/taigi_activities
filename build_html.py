@@ -8,6 +8,7 @@ from html import escape
 from typing import List
 from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
+from crawler.presentation import session_title
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
@@ -22,6 +23,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         d = act.to_dict()
         # Exact source-text keys prevent stale translations after an official correction.
         d['description_taigi'] = translations.get(d['description'], '')
+        d['title_taigi'] = session_title(d['title'])
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
         d["ics_event"] = g_sync.event_content(act)
         d["ics_path"] = 'calendar-events/' + g_sync.single_event_filename(act)
@@ -448,7 +450,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         if (currentPrice === 'free' && act.is_free !== true) return false;
         if (currentPrice === 'paid' && act.is_free !== false) return false;
         if (searchQuery) {{
-          const targetStr = `${{act.title}} ${{act.description_taigi || ''}} ${{act.source_platform}} ${{act.description}} ${{act.venue}} ${{act.address}} ${{act.organizer}} ${{act.tags.join(' ')}}`.toLowerCase();
+          const targetStr = `${{act.title}} ${{act.title_taigi || ''}} ${{act.description_taigi || ''}} ${{act.source_platform}} ${{act.description}} ${{act.venue}} ${{act.address}} ${{act.organizer}} ${{act.tags.join(' ')}}`.toLowerCase();
           if (!targetStr.includes(searchQuery)) return false;
         }}
         return true;
@@ -519,7 +521,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       return `<article class="event-card" data-event-id="${{text(act.id)}}">
         <div class="card-labels"><span class="badge badge-city ${{cityClass(act.city)}}">${{text(act.city)}}</span><span class="badge badge-category">${{text(categoryLabel(act.category))}}</span><span class="badge badge-platform">${{text(sourceLabel(act.source_platform))}}</span></div>
         <div class="card-date">${{taigiDate(act.start_time)}}</div>
-        <h3 class="card-title" lang="zh-Hant">${{text(act.title)}}</h3>
+        <h3 class="card-title" lang="zh-Hant">${{text(act.title_taigi || act.title)}}</h3>
         <p class="card-desc">${{text(act.description_taigi || ('簡介原文：' + act.description))}}</p>
         <p class="card-venue" lang="zh-Hant">${{text(act.venue)}}</p>
         <div class="card-footer"><span class="card-price">${{feeLabel(act)}}</span><button class="card-detail" lang="zh-Hant" data-activity-id="${{text(act.id)}}" onclick="openModal(this.dataset.activityId)">活動詳情 ›</button></div>
@@ -575,7 +577,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                         <span class="badge badge-category">${{categoryLabel(act.category)}}</span>
                         <span class="badge" style="background:var(--secondary-light); color:var(--secondary);">${{sourceLabel(act.source_platform)}}</span>
                       </div>
-                      <h3>${{act.title}}</h3>
+                      <h3>${{escapeCalendarText(act.title_taigi || act.title)}}</h3>
                       <div class="agenda-content-meta">
                         <span>${{act.venue}}</span>
                         <span><strong style="color:var(--primary);">${{feeLabel(act)}}</strong></span>
@@ -680,7 +682,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${{act.district}})` : '');
       document.getElementById('modalCategory').innerText = act.category;
       document.getElementById('modalPlatform').innerText = '🌐 ' + act.source_platform;
-      document.getElementById('modalTitle').innerText = act.title;
+      document.getElementById('modalTitle').innerText = act.title_taigi || act.title;
       document.getElementById('modalTime').innerText = formatDateDisplay(act.start_time) + (act.end_time ? ' ～ ' + formatDateDisplay(act.end_time) : '（結束時間猶未公告）');
       document.getElementById('modalVenue').innerText = act.venue + (act.address ? ` (${{act.address}})` : '');
       document.getElementById('modalOrganizer').innerText = act.organizer;
@@ -760,8 +762,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (!selectedActivity) return;
       const act = selectedActivity;
       const shareData = {{
-        title: act.title,
-        text: `【${{act.category}}】${{act.title}}\\n時間：${{formatDateDisplay(act.start_time)}}\\n地點：${{act.venue}}\\n來做伙講台語！`,
+        title: act.title_taigi || act.title,
+        text: `【${{act.category}}】${{act.title_taigi || act.title}}\\n時間：${{formatDateDisplay(act.start_time)}}\\n地點：${{act.venue}}\\n來做伙講台語！`,
         url: window.location.href
       }};
 

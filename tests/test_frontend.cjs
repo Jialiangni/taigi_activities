@@ -34,6 +34,17 @@ for(const [i,label] of ['拜一','拜二','拜三','拜四','拜五','拜六','�
 assert.equal(run("formatDateDisplay('2026-09-19T10:00:00+08:00')"),'2026∙09∙19 拜六 10:00');
 assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 拜一 00:05');
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
+for(const event of data.filter(a=>a.title_taigi!==a.title)){
+  run(`renderGrid([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);renderAgenda([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);openModal(${JSON.stringify(event.id)})`);
+  assert.ok(element('viewGrid').innerHTML.includes(event.title_taigi));
+  assert.ok(element('viewAgenda').innerHTML.includes(event.title_taigi));
+  assert.equal(element('modalTitle').innerText,event.title_taigi);
+  for(const title of [event.title,event.title_taigi]){
+    run(`searchQuery=${JSON.stringify(title.toLowerCase())}`);
+    assert.ok(run('getFilteredActivities()').some(a=>a.id===event.id));
+  }
+}
+run("searchQuery=''");
 run(`renderAgenda([{...ACTIVITIES_DATA[0],start_time:'2026-09-20T16:30:00Z'}])`);
 assert.match(element('viewAgenda').innerHTML,/2026∙09∙21 拜一/);
 assert.equal(run('getFilteredActivities().length'),data.length);
@@ -82,7 +93,7 @@ run(`
   globalThis.originalActivities = ACTIVITIES_DATA.slice();
   const base = ACTIVITIES_DATA[0];
   const crowded = Array.from({length: 14}, (_, i) => ({...base,
-    id: 'week-test-' + i, title: '週末活動 ' + i + ' 完整長標題 <不可當作標籤>',
+    id: 'week-test-' + i, title: '週末活動 ' + i + ' 完整長標題 <不可當作標籤>', title_taigi: '',
     city: ['臺北市', '新北市', '桃園市'][i % 3],
     start_time: '2026-09-20T' + String(8 + Math.floor(i / 2)).padStart(2, '0') + ':00:00+08:00',
     end_time: null

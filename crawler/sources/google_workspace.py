@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from hashlib import sha256
 from pathlib import Path
 from urllib.parse import urlencode
+from crawler.presentation import session_title
 
 
 def utc_stamp(value):
@@ -44,7 +45,7 @@ class GoogleWorkspaceSync:
         start = utc_stamp(act.start_time)
         end = utc_stamp(act.end_time) if act.end_time else start
         return 'https://calendar.google.com/calendar/render?' + urlencode({
-            'action': 'TEMPLATE', 'text': act.title, 'dates': f'{start}/{end}',
+            'action': 'TEMPLATE', 'text': session_title(act.title), 'dates': f'{start}/{end}',
             'ctz': 'Asia/Taipei', 'details': f'{act.description}\n{act.price_info}\n{act.source_url}',
             'location': ' '.join(filter(None, [act.venue, act.address]))
         })
@@ -64,7 +65,7 @@ class GoogleWorkspaceSync:
         if preview_help:
             description = self.APPLE_IMPORT_GUIDE + '\n\n' + description
         lines.extend([
-            f'SUMMARY:{ics_text(act.title)}',
+            f'SUMMARY:{ics_text(session_title(act.title))}',
             f'DESCRIPTION:{ics_text(description)}',
             f'LOCATION:{ics_text(" ".join(filter(None, [act.venue, act.address])))}',
             f'URL:{act.source_url}', 'END:VEVENT'
