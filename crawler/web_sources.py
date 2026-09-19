@@ -4,6 +4,7 @@ import re
 import xml.etree.ElementTree as ET
 from urllib.parse import urlsplit, urljoin, parse_qs, urlencode, urlunsplit
 from .collection import Collector, CollectionError, Document, Result, candidate, relevant, plain, canonical
+from .posters import poster_fields
 
 NAV = re.compile(r'活動|課程|研習|導覽|語音|展覽|特展|最新消息|新聞|藝文|展演|教育推廣|故事|訊息|消息|公告|下一頁|下頁|更多|next|news|event|activity', re.I)
 BAD = re.compile(r'登入|註冊|隱私|採購|招標|徵才|決算|預算|人事|無障礙|列印|網站導覽|網站連結')
@@ -165,7 +166,8 @@ class WebsiteCrawler(Collector):
                         center_ok = False
                 if is_detail and alias_ok and center_ok and relevant(title + ' ' + body, self.keywords):
                     result.candidates.append(candidate(self.spec['id'], ev['final_url'], title, body[:30000], ev,
-                        {'start_time': None, 'end_time': None, 'is_free': None},
+                        {'start_time': None, 'end_time': None, 'is_free': None,
+                         **poster_fields(html, ev['final_url'])},
                         kind=page.get('kind', 'announcement'),
                         issues=['manual_event_verification_required'] + (['text_truncated'] if len(body) > 30000 else [])))
                 if depth >= 3:

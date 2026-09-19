@@ -2,6 +2,7 @@
 import re
 from urllib.parse import parse_qs, urlsplit
 from .collection import Collector, CollectionError, Document, Result, candidate, relevant
+from .posters import poster_fields
 
 
 def listing_page(html, url, spec):
@@ -118,7 +119,8 @@ class LibraryListingCrawler(Collector):
                     raise CollectionError('blocked_page')
                 if relevant(title + ' ' + body, self.keywords):
                     row = candidate(self.spec['id'], ev['final_url'], title or doc.title(), body[:30000], ev,
-                                    {'start_time': None, 'end_time': None, 'is_free': None},
+                                    {'start_time': None, 'end_time': None, 'is_free': None,
+                                     **poster_fields(html, ev['final_url'])},
                                     issues=['manual_event_verification_required'] + (['text_truncated'] if len(body) > 30000 else []))
                     row['collection_scope'] = {'city': self.spec['city'], 'district': self.spec['district']}
                     result.candidates.append(row)

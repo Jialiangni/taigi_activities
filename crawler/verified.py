@@ -8,6 +8,7 @@ from urllib.parse import urlsplit
 from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
 from .collection import Client
 from .sources.opentix import parse_program
+from .posters import poster_url
 
 TAIPEI = timezone(timedelta(hours=8))
 DATA_PATH = Path(__file__).resolve().parents[1] / 'data/verified_activities.json'
@@ -83,6 +84,7 @@ def check_opentix_sessions(source, payload):
 
 def check_live_sources(sources):
     client = Client(timeout=30)
+    posters = {}
     for source in sources.values():
         html, evidence = client.get(source['url'])
         detail_url(evidence['final_url'])
@@ -102,6 +104,12 @@ def check_live_sources(sources):
         elif source.get('automated_review', {}).get('source_type') in ('accupass', 'gameislearning'):
             from .review import validate_auto_source
             validate_auto_source(source, None, html, client=client)
+        if urlsplit(source['url']).hostname != 'www.opentix.life':
+            posters[source['url']] = {'url': poster_url(html, source['url']),
+                                      'source_url': source['url'],
+                                      'checked_at': evidence['fetched_at'],
+                                      'snapshot_sha256': evidence['sha256']}
+    return posters
 
 
 def load_verified(path=DATA_PATH, now=None, check_sources=False):
@@ -182,5 +190,10 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
     if check_sources:
         # Historical records remain immutable, but an ended activity must not
         # block today's publication when its retired detail page changes.
-        check_live_sources({key: sources[key] for key in active_source_ids})
+        posters = check_live_sources({key: sources[key] for key in active_source_ids})
+        for act in activities:
+            if act.source_url in posters:
+                proof = posters[act.source_url]
+                act.cover_image = proof['url']
+                act.raw_metadata['poster_evidence'] = proof
     return sorted(activities, key=lambda a: a.start_time)

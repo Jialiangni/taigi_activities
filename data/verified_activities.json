@@ -2293,7 +2293,7 @@
         "organizer": "桃園閩南書院（活動計畫）",
         "source_platform": "北北桃市府局處",
         "source_url": "https://typass.tycg.gov.tw/activity/view?list=true&uuid=386d00e4-4cd9-4deb-9eb1-b00ed4fb6b54",
-        "cover_image": "",
+        "cover_image": "https://typass.tycg.gov.tw/files/view/753511098023415808",
         "price_info": "費用未公告，請洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2315,6 +2315,12 @@
           "organizer": "桃園閩南書院（活動計畫）",
           "price_info": "費用未公告，請洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://typass.tycg.gov.tw/files/view/753511098023415808",
+          "source_url": "https://typass.tycg.gov.tw/activity/view?list=true&uuid=386d00e4-4cd9-4deb-9eb1-b00ed4fb6b54",
+          "checked_at": "2026-09-19T20:30:56+08:00",
+          "snapshot_sha256": "8d240a3b10823d9d1eece6d97b66ff49942d07b280d47b6d9e48400dde68d855"
         }
       }
     },
@@ -2333,7 +2339,7 @@
         "organizer": "桃園閩南書院（活動計畫）",
         "source_platform": "北北桃市府局處",
         "source_url": "https://typass.tycg.gov.tw/activity/view?index=true&uuid=3a903631-c7c2-40ac-b04b-19a5c96f3e4e",
-        "cover_image": "",
+        "cover_image": "https://typass.tycg.gov.tw/files/view/753458918495096832",
         "price_info": "費用未公告，請洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2355,6 +2361,12 @@
           "organizer": "桃園閩南書院（活動計畫）",
           "price_info": "費用未公告，請洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://typass.tycg.gov.tw/files/view/753458918495096832",
+          "source_url": "https://typass.tycg.gov.tw/activity/view?index=true&uuid=3a903631-c7c2-40ac-b04b-19a5c96f3e4e",
+          "checked_at": "2026-09-19T20:30:56+08:00",
+          "snapshot_sha256": "11e972ba650a53477c436b69a9bcca45a4660e3882adbb0eb59915a29db7c4c3"
         }
       }
     },
@@ -2373,7 +2385,7 @@
         "organizer": "桃園閩南書院（活動計畫）",
         "source_platform": "北北桃市府局處",
         "source_url": "https://typass.tycg.gov.tw/activity/view?list=true&uuid=6e8fbeee-5406-4ab5-b49c-de4247917586",
-        "cover_image": "",
+        "cover_image": "https://typass.tycg.gov.tw/files/view/754974809527422976",
         "price_info": "費用未公告，請洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2395,6 +2407,12 @@
           "organizer": "桃園閩南書院（活動計畫）",
           "price_info": "費用未公告，請洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://typass.tycg.gov.tw/files/view/754974809527422976",
+          "source_url": "https://typass.tycg.gov.tw/activity/view?list=true&uuid=6e8fbeee-5406-4ab5-b49c-de4247917586",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "7938bbb63723ce5378e5d0ed5f80641278cf8ba69b4b6f11cacc92e5bdb14b33"
         }
       }
     },
@@ -2413,7 +2431,7 @@
         "organizer": "桃園市立圖書館",
         "source_platform": "北北桃市立圖書館",
         "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
-        "cover_image": "",
+        "cover_image": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
         "price_info": "免費，報名方式以官方公告為準",
         "is_free": true,
         "tags": [
@@ -2435,6 +2453,12 @@
           "organizer": "桃園市立圖書館",
           "price_info": "免費，報名方式以官方公告為準",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
+          "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "d38d98698d49e20d876a2a009f1a2d4d221d2f0a63a9b7b1018fd603900766fe"
         }
       }
     },
@@ -2453,7 +2477,7 @@
         "organizer": "桃園市立圖書館",
         "source_platform": "北北桃市立圖書館",
         "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
-        "cover_image": "",
+        "cover_image": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
         "price_info": "免費，報名方式以官方公告為準",
         "is_free": true,
         "tags": [
@@ -2475,6 +2499,12 @@
           "organizer": "桃園市立圖書館",
           "price_info": "免費，報名方式以官方公告為準",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
+          "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "d38d98698d49e20d876a2a009f1a2d4d221d2f0a63a9b7b1018fd603900766fe"
         }
       }
     },
@@ -2493,7 +2523,7 @@
         "organizer": "桃園市立圖書館",
         "source_platform": "北北桃市立圖書館",
         "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
-        "cover_image": "",
+        "cover_image": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
         "price_info": "免費，報名方式以官方公告為準",
         "is_free": true,
         "tags": [
@@ -2515,6 +2545,12 @@
           "organizer": "桃園市立圖書館",
           "price_info": "免費，報名方式以官方公告為準",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
+          "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "d38d98698d49e20d876a2a009f1a2d4d221d2f0a63a9b7b1018fd603900766fe"
         }
       }
     },
@@ -2573,7 +2609,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2595,6 +2631,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2613,7 +2655,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2635,6 +2677,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2653,7 +2701,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2675,6 +2723,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2693,7 +2747,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2715,6 +2769,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2733,7 +2793,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2755,6 +2815,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2773,7 +2839,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2795,6 +2861,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2813,7 +2885,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2835,6 +2907,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2853,7 +2931,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2875,6 +2953,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2893,7 +2977,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2915,6 +2999,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2933,7 +3023,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2955,6 +3045,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -2973,7 +3069,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -2995,6 +3091,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -3013,7 +3115,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3035,6 +3137,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -3053,7 +3161,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140211321902093902",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3075,6 +3183,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+          "source_url": "https://www.accupass.com/event/2609140211321902093902",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "5aeaa1e12b0913b4dbb0dd493b0265eea6c3377c0001e697d0df61ee1ce820d9"
         }
       }
     },
@@ -3093,7 +3207,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3115,6 +3229,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3133,7 +3253,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3155,6 +3275,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3173,7 +3299,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3195,6 +3321,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3213,7 +3345,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3235,6 +3367,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3253,7 +3391,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3275,6 +3413,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3293,7 +3437,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3315,6 +3459,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3333,7 +3483,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3355,6 +3505,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3373,7 +3529,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3395,6 +3551,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3413,7 +3575,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3435,6 +3597,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3453,7 +3621,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3475,6 +3643,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3493,7 +3667,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3515,6 +3689,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3533,7 +3713,7 @@
         "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609140247402019682780",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3555,6 +3735,12 @@
           "organizer": "桃園市政府文化局（執行：星玉文創有限公司）",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+          "source_url": "https://www.accupass.com/event/2609140247402019682780",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "99b093e8f0569a01c476df9915742084efe9908c5aa5056ddb641efadaf2b7ce"
         }
       }
     },
@@ -3573,7 +3759,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2608270744575474894310",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2608310959171301421977.jpg",
         "price_info": "免費，須報名，額滿為止",
         "is_free": true,
         "tags": [
@@ -3595,6 +3781,12 @@
           "organizer": "聚場文化",
           "price_info": "免費，須報名，額滿為止",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2608310959171301421977.jpg",
+          "source_url": "https://www.accupass.com/event/2608270744575474894310",
+          "checked_at": "2026-09-19T20:31:19+08:00",
+          "snapshot_sha256": "53cf43e872134082fe2297eeecd8160aaf23d5d04d98aaab225beb4fe8329c38"
         }
       }
     },
@@ -3613,7 +3805,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2608270744575474894310",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2608310959171301421977.jpg",
         "price_info": "免費，須報名，額滿為止",
         "is_free": true,
         "tags": [
@@ -3635,6 +3827,12 @@
           "organizer": "聚場文化",
           "price_info": "免費，須報名，額滿為止",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2608310959171301421977.jpg",
+          "source_url": "https://www.accupass.com/event/2608270744575474894310",
+          "checked_at": "2026-09-19T20:31:19+08:00",
+          "snapshot_sha256": "53cf43e872134082fe2297eeecd8160aaf23d5d04d98aaab225beb4fe8329c38"
         }
       }
     },
@@ -3653,7 +3851,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609030741412898282180",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609040602109118269000.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3675,6 +3873,12 @@
           "organizer": "聚場文化",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609040602109118269000.jpg",
+          "source_url": "https://www.accupass.com/event/2609030741412898282180",
+          "checked_at": "2026-09-19T20:31:00+08:00",
+          "snapshot_sha256": "d991e40b7e9652135ab748da5760bba588e5b0715e6e425f9e1e8f9ff655c9d7"
         }
       }
     },
@@ -3693,7 +3897,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609030741412898282180",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609040602109118269000.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -3715,6 +3919,12 @@
           "organizer": "聚場文化",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609040602109118269000.jpg",
+          "source_url": "https://www.accupass.com/event/2609030741412898282180",
+          "checked_at": "2026-09-19T20:31:00+08:00",
+          "snapshot_sha256": "d991e40b7e9652135ab748da5760bba588e5b0715e6e425f9e1e8f9ff655c9d7"
         }
       }
     },
@@ -3733,7 +3943,7 @@
         "organizer": "國家人權博物館 兒童人權學習基地",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2607280236031295663510",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
         "price_info": "免費，成人與孩童須分別報名",
         "is_free": true,
         "tags": [
@@ -3755,6 +3965,12 @@
           "organizer": "國家人權博物館 兒童人權學習基地",
           "price_info": "免費，成人與孩童須分別報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+          "source_url": "https://www.accupass.com/event/2607280236031295663510",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "67ce61cfcb40937cce450568980f777b765fa1d0b530f7cd8ce07a2d5f47b6ca"
         }
       }
     },
@@ -3773,7 +3989,7 @@
         "organizer": "國家人權博物館 兒童人權學習基地",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2607280236031295663510",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
         "price_info": "免費，成人與孩童須分別報名",
         "is_free": true,
         "tags": [
@@ -3795,6 +4011,12 @@
           "organizer": "國家人權博物館 兒童人權學習基地",
           "price_info": "免費，成人與孩童須分別報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+          "source_url": "https://www.accupass.com/event/2607280236031295663510",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "67ce61cfcb40937cce450568980f777b765fa1d0b530f7cd8ce07a2d5f47b6ca"
         }
       }
     },
@@ -3813,7 +4035,7 @@
         "organizer": "國家人權博物館 兒童人權學習基地",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2607280236031295663510",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
         "price_info": "免費，成人與孩童須分別報名",
         "is_free": true,
         "tags": [
@@ -3835,6 +4057,12 @@
           "organizer": "國家人權博物館 兒童人權學習基地",
           "price_info": "免費，成人與孩童須分別報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+          "source_url": "https://www.accupass.com/event/2607280236031295663510",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "67ce61cfcb40937cce450568980f777b765fa1d0b530f7cd8ce07a2d5f47b6ca"
         }
       }
     },
@@ -3853,7 +4081,7 @@
         "organizer": "國家人權博物館 兒童人權學習基地",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2607280236031295663510",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
         "price_info": "免費，成人與孩童須分別報名",
         "is_free": true,
         "tags": [
@@ -3875,6 +4103,12 @@
           "organizer": "國家人權博物館 兒童人權學習基地",
           "price_info": "免費，成人與孩童須分別報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+          "source_url": "https://www.accupass.com/event/2607280236031295663510",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "67ce61cfcb40937cce450568980f777b765fa1d0b530f7cd8ce07a2d5f47b6ca"
         }
       }
     },
@@ -3893,7 +4127,7 @@
         "organizer": "國家人權博物館 兒童人權學習基地",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2607280236031295663510",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
         "price_info": "免費，成人與孩童須分別報名",
         "is_free": true,
         "tags": [
@@ -3915,6 +4149,12 @@
           "organizer": "國家人權博物館 兒童人權學習基地",
           "price_info": "免費，成人與孩童須分別報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+          "source_url": "https://www.accupass.com/event/2607280236031295663510",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "67ce61cfcb40937cce450568980f777b765fa1d0b530f7cd8ce07a2d5f47b6ca"
         }
       }
     },
@@ -3933,7 +4173,7 @@
         "organizer": "桃園文學館",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2608120722439860768370",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609060453391641515399.jpg",
         "price_info": "每人750元，飲品與退票條件依主辦公告",
         "is_free": false,
         "tags": [
@@ -3955,6 +4195,12 @@
           "organizer": "桃園文學館",
           "price_info": "每人750元，飲品與退票條件依主辦公告",
           "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609060453391641515399.jpg",
+          "source_url": "https://www.accupass.com/event/2608120722439860768370",
+          "checked_at": "2026-09-19T20:30:59+08:00",
+          "snapshot_sha256": "a69af29ea5ffbe6430db8e36234aee0429c3049012fb777eaec0341d705570e6"
         }
       }
     },
@@ -4013,7 +4259,7 @@
         "organizer": "中正紀念堂歷史小旅行",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2608051357275636349740",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2608051352126478590940.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -4035,6 +4281,12 @@
           "organizer": "中正紀念堂歷史小旅行",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2608051352126478590940.jpg",
+          "source_url": "https://www.accupass.com/event/2608051357275636349740",
+          "checked_at": "2026-09-19T20:31:18+08:00",
+          "snapshot_sha256": "3f6ff8d1cb3217c84152319cfe96c45777d1278caad70f57550bd41fa31f0005"
         }
       }
     },
@@ -4053,7 +4305,7 @@
         "organizer": "中正紀念堂歷史小旅行",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2608051357275636349740",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2608051352126478590940.jpg",
         "price_info": "費用未公告，請查看報名頁或洽主辦單位",
         "is_free": null,
         "tags": [
@@ -4075,6 +4327,12 @@
           "organizer": "中正紀念堂歷史小旅行",
           "price_info": "費用未公告，請查看報名頁或洽主辦單位",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2608051352126478590940.jpg",
+          "source_url": "https://www.accupass.com/event/2608051357275636349740",
+          "checked_at": "2026-09-19T20:31:18+08:00",
+          "snapshot_sha256": "3f6ff8d1cb3217c84152319cfe96c45777d1278caad70f57550bd41fa31f0005"
         }
       }
     },
@@ -4093,7 +4351,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609080954292886555710",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609121459126633405100.jpg",
         "price_info": "免費，每場限25位，須報名",
         "is_free": true,
         "tags": [
@@ -4115,6 +4373,12 @@
           "organizer": "聚場文化",
           "price_info": "免費，每場限25位，須報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609121459126633405100.jpg",
+          "source_url": "https://www.accupass.com/event/2609080954292886555710",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "ecbaa32fab0aa0b4a39a663ce0f1ec698dd830e0d3d15bdf31efb7c3c4a8bc6c"
         }
       }
     },
@@ -4133,7 +4397,7 @@
         "organizer": "聚場文化",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609080954292886555710",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609121459126633405100.jpg",
         "price_info": "免費，每場限25位，須報名",
         "is_free": true,
         "tags": [
@@ -4155,6 +4419,12 @@
           "organizer": "聚場文化",
           "price_info": "免費，每場限25位，須報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609121459126633405100.jpg",
+          "source_url": "https://www.accupass.com/event/2609080954292886555710",
+          "checked_at": "2026-09-19T20:31:20+08:00",
+          "snapshot_sha256": "ecbaa32fab0aa0b4a39a663ce0f1ec698dd830e0d3d15bdf31efb7c3c4a8bc6c"
         }
       }
     },
@@ -4542,7 +4812,7 @@
         "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
         "source_platform": "國立臺灣圖書館",
         "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
-        "cover_image": "",
+        "cover_image": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
         "price_info": "費用未公告；官方標示歡迎自由入場參加",
         "is_free": null,
         "tags": [
@@ -4566,6 +4836,12 @@
           "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
           "price_info": "費用未公告；官方標示歡迎自由入場參加",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "7af536338a0e59f61185399194d5e547720b838867102e1c23c078e34c21c56b"
         }
       }
     },
@@ -4584,7 +4860,7 @@
         "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
         "source_platform": "國立臺灣圖書館",
         "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
-        "cover_image": "",
+        "cover_image": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
         "price_info": "費用未公告；官方標示歡迎自由入場參加",
         "is_free": null,
         "tags": [
@@ -4608,6 +4884,12 @@
           "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
           "price_info": "費用未公告；官方標示歡迎自由入場參加",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "7af536338a0e59f61185399194d5e547720b838867102e1c23c078e34c21c56b"
         }
       }
     },
@@ -4626,7 +4908,7 @@
         "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
         "source_platform": "國立臺灣圖書館",
         "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
-        "cover_image": "",
+        "cover_image": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
         "price_info": "費用未公告；官方標示歡迎自由入場參加",
         "is_free": null,
         "tags": [
@@ -4650,6 +4932,12 @@
           "organizer": "國立臺灣圖書館、台灣台語路協會台語路共學團",
           "price_info": "費用未公告；官方標示歡迎自由入場參加",
           "is_free": null
+        },
+        "poster_evidence": {
+          "url": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
+          "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "7af536338a0e59f61185399194d5e547720b838867102e1c23c078e34c21c56b"
         }
       }
     },
@@ -4668,7 +4956,7 @@
         "organizer": "國立臺灣博物館",
         "source_platform": "美術館與博物館",
         "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
-        "cover_image": "",
+        "cover_image": "https://event.culture.tw/userFiles/NTM/JpgFile/01/60185/AD/60185_0_0_752354_276_175.jpg?20260919",
         "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
         "is_free": false,
         "tags": [
@@ -4692,6 +4980,12 @@
           "organizer": "國立臺灣博物館",
           "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
           "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://event.culture.tw/userFiles/NTM/JpgFile/01/60185/AD/60185_0_0_752354_276_175.jpg?20260919",
+          "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+          "checked_at": "2026-09-19T20:30:56+08:00",
+          "snapshot_sha256": "31afbe679ebbf05f0ab7beac647665a38a7d3107a8e3f62215a911a4565ba260"
         }
       }
     },
@@ -4710,7 +5004,7 @@
         "organizer": "國立臺灣博物館",
         "source_platform": "美術館與博物館",
         "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
-        "cover_image": "",
+        "cover_image": "https://event.culture.tw/userFiles/NTM/JpgFile/01/60185/AD/60185_0_0_752354_276_175.jpg?20260919",
         "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
         "is_free": false,
         "tags": [
@@ -4734,6 +5028,12 @@
           "organizer": "國立臺灣博物館",
           "price_info": "活動免費，但需購票入館：全票30元、優待票15元；免票資格依館方規定",
           "is_free": false
+        },
+        "poster_evidence": {
+          "url": "https://event.culture.tw/userFiles/NTM/JpgFile/01/60185/AD/60185_0_0_752354_276_175.jpg?20260919",
+          "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+          "checked_at": "2026-09-19T20:30:56+08:00",
+          "snapshot_sha256": "31afbe679ebbf05f0ab7beac647665a38a7d3107a8e3f62215a911a4565ba260"
         }
       }
     },
@@ -5408,7 +5708,7 @@
         "organizer": "桃園市立圖書館",
         "source_platform": "北北桃市立圖書館",
         "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
-        "cover_image": "",
+        "cover_image": "https://www.typl.gov.tw/FileUploads/Activity/10102.JPG",
         "price_info": "免費；請依官方公告報名",
         "is_free": true,
         "tags": [
@@ -5431,6 +5731,12 @@
           "organizer": "桃園市立圖書館",
           "price_info": "免費；請依官方公告報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://www.typl.gov.tw/FileUploads/Activity/10102.JPG",
+          "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10102",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "91ce7c811153a6dffcc65e8f9d927a88b4c5a728b373d01e641fad82ce9fc581"
         }
       }
     },
@@ -5449,7 +5755,7 @@
         "organizer": "桃園市立圖書館",
         "source_platform": "北北桃市立圖書館",
         "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
-        "cover_image": "",
+        "cover_image": "https://www.typl.gov.tw/FileUploads/Activity/10135.JPG",
         "price_info": "免費；請依官方公告報名",
         "is_free": true,
         "tags": [
@@ -5472,6 +5778,12 @@
           "organizer": "桃園市立圖書館",
           "price_info": "免費；請依官方公告報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://www.typl.gov.tw/FileUploads/Activity/10135.JPG",
+          "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "1756fb3d75e1620dbf449716497886fefd0706dfa2c4e1668e2796996373be35"
         }
       }
     },
@@ -5490,7 +5802,7 @@
         "organizer": "李江却台語文教基金會",
         "source_platform": "李江却基金會",
         "source_url": "https://www.tgb.org.tw/2026/07/829.html",
-        "cover_image": "",
+        "cover_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQasjGeBMyuDa5n1dH7uIk2ifwkoojHMT6D0j6afVqJAf0LH4QlylTDFIkP62_MHRvCG2ibD0ZDFiNMIIFb2oSQu0PD0x86KGgTKSX5ayQl9ceoJHv05iZDSl6CiDiuBpuL4oeuzl5go-25Zhh03xTPVgLwZPiSQuClGBucFNDFqtDViFoAZQFyN7tv8/s1032/%E5%94%B8%E6%AD%8C%E5%BB%B3%E6%B5%B7%E5%A0%B1.jpg",
         "price_info": "免費；請先報名",
         "is_free": true,
         "tags": [
@@ -5513,6 +5825,12 @@
           "organizer": "李江却台語文教基金會",
           "price_info": "免費；請先報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQasjGeBMyuDa5n1dH7uIk2ifwkoojHMT6D0j6afVqJAf0LH4QlylTDFIkP62_MHRvCG2ibD0ZDFiNMIIFb2oSQu0PD0x86KGgTKSX5ayQl9ceoJHv05iZDSl6CiDiuBpuL4oeuzl5go-25Zhh03xTPVgLwZPiSQuClGBucFNDFqtDViFoAZQFyN7tv8/s1032/%E5%94%B8%E6%AD%8C%E5%BB%B3%E6%B5%B7%E5%A0%B1.jpg",
+          "source_url": "https://www.tgb.org.tw/2026/07/829.html",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "10e314698630349b522ee136b700a34faebfd60685f62d6cc4aca0636db2c672"
         }
       }
     },
@@ -5531,7 +5849,7 @@
         "organizer": "李江却台語文教基金會",
         "source_platform": "李江却基金會",
         "source_url": "https://www.tgb.org.tw/2026/07/829.html",
-        "cover_image": "",
+        "cover_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQasjGeBMyuDa5n1dH7uIk2ifwkoojHMT6D0j6afVqJAf0LH4QlylTDFIkP62_MHRvCG2ibD0ZDFiNMIIFb2oSQu0PD0x86KGgTKSX5ayQl9ceoJHv05iZDSl6CiDiuBpuL4oeuzl5go-25Zhh03xTPVgLwZPiSQuClGBucFNDFqtDViFoAZQFyN7tv8/s1032/%E5%94%B8%E6%AD%8C%E5%BB%B3%E6%B5%B7%E5%A0%B1.jpg",
         "price_info": "免費；請先報名",
         "is_free": true,
         "tags": [
@@ -5554,6 +5872,12 @@
           "organizer": "李江却台語文教基金會",
           "price_info": "免費；請先報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQasjGeBMyuDa5n1dH7uIk2ifwkoojHMT6D0j6afVqJAf0LH4QlylTDFIkP62_MHRvCG2ibD0ZDFiNMIIFb2oSQu0PD0x86KGgTKSX5ayQl9ceoJHv05iZDSl6CiDiuBpuL4oeuzl5go-25Zhh03xTPVgLwZPiSQuClGBucFNDFqtDViFoAZQFyN7tv8/s1032/%E5%94%B8%E6%AD%8C%E5%BB%B3%E6%B5%B7%E5%A0%B1.jpg",
+          "source_url": "https://www.tgb.org.tw/2026/07/829.html",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "10e314698630349b522ee136b700a34faebfd60685f62d6cc4aca0636db2c672"
         }
       }
     },
@@ -5613,7 +5937,7 @@
         "organizer": "李江却台語文教基金會",
         "source_platform": "李江却基金會",
         "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
-        "cover_image": "",
+        "cover_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEJKErMG_U9e93IB-yHtcIAGb8x7Au_UbbXIEd8Ut3CWZEpQb2PE1jHSybI4Mjzyr3cCj_LHdty_y0HAmu9tOxesjrnRFNnGblG7101rOMpHKR3zqaknTYWL-4e8gBviLrUozoiMdWncNtiqV7CPzS6fMvi7P6e2d_iT9mJQOQCFA5EiHaSH9p9Qlxe5Y/s1195/%E5%8F%B0%E6%96%87%E5%AF%AB%E4%BD%9C%E6%A6%82%E5%BF%B5%E7%A0%94%E7%BF%92_%E8%97%8D%E6%98%A5%E7%91%9E%E6%B5%B7%E5%A0%B1.jpg",
         "price_info": "免費；請先報名",
         "is_free": true,
         "tags": [
@@ -5636,6 +5960,12 @@
           "organizer": "李江却台語文教基金會",
           "price_info": "免費；請先報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEJKErMG_U9e93IB-yHtcIAGb8x7Au_UbbXIEd8Ut3CWZEpQb2PE1jHSybI4Mjzyr3cCj_LHdty_y0HAmu9tOxesjrnRFNnGblG7101rOMpHKR3zqaknTYWL-4e8gBviLrUozoiMdWncNtiqV7CPzS6fMvi7P6e2d_iT9mJQOQCFA5EiHaSH9p9Qlxe5Y/s1195/%E5%8F%B0%E6%96%87%E5%AF%AB%E4%BD%9C%E6%A6%82%E5%BF%B5%E7%A0%94%E7%BF%92_%E8%97%8D%E6%98%A5%E7%91%9E%E6%B5%B7%E5%A0%B1.jpg",
+          "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+          "checked_at": "2026-09-19T20:31:22+08:00",
+          "snapshot_sha256": "d4734929449ebe6a05ae118d0aa94e5a8544fe18b3eb88c7ceb292ccbc48a1ed"
         }
       }
     },
@@ -7073,7 +7403,7 @@
         "organizer": "臺北市政府文化局（執行：移動故事屋）",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2606300741301758195196",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2607060908081701378953.jpg",
         "price_info": "免費，需事先報名；每場60人",
         "is_free": true,
         "tags": [
@@ -7097,6 +7427,12 @@
           "organizer": "臺北市政府文化局（執行：移動故事屋）",
           "price_info": "免費，需事先報名；每場60人",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2607060908081701378953.jpg",
+          "source_url": "https://www.accupass.com/event/2606300741301758195196",
+          "checked_at": "2026-09-19T20:30:57+08:00",
+          "snapshot_sha256": "55bca117f5e97d08c64c6fd75a3ee17b36dd1eafc87acd83e39174475e96a1bf"
         }
       }
     },
@@ -7115,7 +7451,7 @@
         "organizer": "故事 StoryStudio",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609180900251903050199",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609180937451058512126.jpg",
         "price_info": "免費，需事先報名",
         "is_free": true,
         "tags": [
@@ -7139,6 +7475,12 @@
           "organizer": "故事 StoryStudio",
           "price_info": "免費，需事先報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609180937451058512126.jpg",
+          "source_url": "https://www.accupass.com/event/2609180900251903050199",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "ceb0a13ad6654753b93454e51f9ba07252c034f910977e8123368e4e33cd6d44"
         }
       }
     },
@@ -7157,7 +7499,7 @@
         "organizer": "故事 StoryStudio",
         "source_platform": "Accupass 活動通",
         "source_url": "https://www.accupass.com/event/2609181101568312033380",
-        "cover_image": "",
+        "cover_image": "https://static.accupass.com/eventbanner/2609181102471386030265.jpg",
         "price_info": "免費，需事先報名",
         "is_free": true,
         "tags": [
@@ -7181,6 +7523,12 @@
           "organizer": "故事 StoryStudio",
           "price_info": "免費，需事先報名",
           "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://static.accupass.com/eventbanner/2609181102471386030265.jpg",
+          "source_url": "https://www.accupass.com/event/2609181101568312033380",
+          "checked_at": "2026-09-19T20:31:21+08:00",
+          "snapshot_sha256": "548c667da6b7c2e621b46bf53b189124ea749d3199edbb621138ffd4d002b142"
         }
       }
     },

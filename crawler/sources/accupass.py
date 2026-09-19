@@ -1,5 +1,6 @@
 """ACCUPASS public website search POST + event-page JSON-LD, pending review."""
 import re
+from ..posters import poster_fields
 
 from ..collection import Collector, CollectionError, Result, Document, candidate, local_time, city_of, plain, KEYWORDS, relevant
 
@@ -62,7 +63,7 @@ def parse_event(html, url, evidence):
                   'venue': location.get('name'), 'address': address, 'city': city_of(address),
                   'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
                   'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus'),
-                  'sessions': sessions}
+                  'sessions': sessions, **poster_fields(html, url)}
         # Aggregate schema dates do not establish individual session dates or universal free admission.
         issues = ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms']
         if sessions:

@@ -271,6 +271,7 @@ def verify_accupass(candidate, client, now):
                    city=f['city'], category=category, start_time=f['start_time'], end_time=f['end_time'],
                    venue=f['venue'], address=f['address'], organizer=f['organizer'],
                    source_platform=SourcePlatformEnum.ACCUPASS, source_url=url,
+                   cover_image=f['cover_image'],
                    price_info='免費，需事先報名', is_free=True,
                    tags=['台語', '官方資料自動核實']).to_dict()
     session = {k: f[k] for k in

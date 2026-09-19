@@ -1,0 +1,185 @@
+{
+  "activity_ids": [
+    "ty_minnan_story_20261003",
+    "ty_minnan_puppet_20261010",
+    "ty_minnan_talk_20261003",
+    "typl_taigi_awareness_20261011",
+    "typl_taigi_poetry_20261011",
+    "typl_taigi_concert_20261114",
+    "acc_2609140211321902093902_20260920_1300",
+    "acc_2609140211321902093902_20260920_1300_2",
+    "acc_2609140211321902093902_20260920_1300_3",
+    "acc_2609140211321902093902_20260926_1300",
+    "acc_2609140211321902093902_20260927_1300",
+    "acc_2609140211321902093902_20260927_1300_6",
+    "acc_2609140211321902093902_20261003_1300",
+    "acc_2609140211321902093902_20261003_1300_8",
+    "acc_2609140211321902093902_20261004_1300",
+    "acc_2609140211321902093902_20261010_1300",
+    "acc_2609140211321902093902_20261010_1300_11",
+    "acc_2609140211321902093902_20261011_1300",
+    "acc_2609140211321902093902_20261011_1300_13",
+    "acc_2609140247402019682780_20261017_1300",
+    "acc_2609140247402019682780_20261018_1300",
+    "acc_2609140247402019682780_20261018_1300_16",
+    "acc_2609140247402019682780_20261024_1300",
+    "acc_2609140247402019682780_20261025_1300",
+    "acc_2609140247402019682780_20261031_1300",
+    "acc_2609140247402019682780_20261101_1300",
+    "acc_2609140247402019682780_20261107_1300",
+    "acc_2609140247402019682780_20261107_1300_22",
+    "acc_2609140247402019682780_20261114_1300",
+    "acc_2609140247402019682780_20261115_1300",
+    "acc_2609140247402019682780_20261121_1300",
+    "acc_2608270744575474894310_20260920_1000",
+    "acc_2608270744575474894310_20260920_1400",
+    "acc_2609030741412898282180_20260926_1000",
+    "acc_2609030741412898282180_20260927_1000",
+    "acc_2607280236031295663510_20260920_1030",
+    "acc_2607280236031295663510_20260920_1330",
+    "acc_2607280236031295663510_20261004_1030",
+    "acc_2607280236031295663510_20261101_1030",
+    "acc_2607280236031295663510_20261101_1330",
+    "acc_2608120722439860768370_20261030_1900",
+    "acc_2608051357275636349740_20261017_1000",
+    "acc_2608051357275636349740_20261121_1000",
+    "acc_2609080954292886555710_20261004_1300",
+    "acc_2609080954292886555710_20261018_1300",
+    "ntl_taigiloo_20261015",
+    "ntl_taigiloo_20261119",
+    "ntl_taigiloo_20261217",
+    "ntm_rhino_20260920",
+    "ntm_rhino_20261018",
+    "typl10102_20261003",
+    "typl10135_20260920",
+    "tgb_liamkua_2026_20260920",
+    "tgb_liamkua_2026_20261017",
+    "tgb_writing_2026_20261018",
+    "acc_2606300741301758195196_20260920_1500",
+    "acc_2609180900251903050199_20261107_1000",
+    "acc_2609181101568312033380_20261108_1000"
+  ],
+  "counts_by_platform": {
+    "北北桃市府局處": 3,
+    "北北桃市立圖書館": 5,
+    "Accupass 活動通": 42,
+    "國立臺灣圖書館": 3,
+    "美術館與博物館": 2,
+    "李江却基金會": 3
+  },
+  "source_count": 23,
+  "image_count": 21,
+  "method": "Use only event JSON-LD image, official event main image, scoped article image or image attachment; never site logos or related event thumbnails.",
+  "checked_at": "2026-09-19T20:37:24+08:00",
+  "image_header_checks": [
+    {
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEJKErMG_U9e93IB-yHtcIAGb8x7Au_UbbXIEd8Ut3CWZEpQb2PE1jHSybI4Mjzyr3cCj_LHdty_y0HAmu9tOxesjrnRFNnGblG7101rOMpHKR3zqaknTYWL-4e8gBviLrUozoiMdWncNtiqV7CPzS6fMvi7P6e2d_iT9mJQOQCFA5EiHaSH9p9Qlxe5Y/s1195/%E5%8F%B0%E6%96%87%E5%AF%AB%E4%BD%9C%E6%A6%82%E5%BF%B5%E7%A0%94%E7%BF%92_%E8%97%8D%E6%98%A5%E7%91%9E%E6%B5%B7%E5%A0%B1.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQasjGeBMyuDa5n1dH7uIk2ifwkoojHMT6D0j6afVqJAf0LH4QlylTDFIkP62_MHRvCG2ibD0ZDFiNMIIFb2oSQu0PD0x86KGgTKSX5ayQl9ceoJHv05iZDSl6CiDiuBpuL4oeuzl5go-25Zhh03xTPVgLwZPiSQuClGBucFNDFqtDViFoAZQFyN7tv8/s1032/%E5%94%B8%E6%AD%8C%E5%BB%B3%E6%B5%B7%E5%A0%B1.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://event.culture.tw/userFiles/NTM/JpgFile/01/60185/AD/60185_0_0_752354_276_175.jpg?20260919",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2607060908081701378953.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2607280249301941896119.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2608051352126478590940.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2608310959171301421977.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609040602109118269000.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609060453391641515399.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609121459126633405100.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609140631333690768220.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609140632011464170549.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609180937451058512126.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://static.accupass.com/eventbanner/2609181102471386030265.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://typass.tycg.gov.tw/files/view/753458918495096832",
+      "status": 200,
+      "content_type": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://typass.tycg.gov.tw/files/view/753511098023415808",
+      "status": 200,
+      "content_type": "image/jpeg;charset=UTF-8"
+    },
+    {
+      "url": "https://typass.tycg.gov.tw/files/view/754974809527422976",
+      "status": 200,
+      "content_type": "image/png;charset=UTF-8"
+    },
+    {
+      "url": "https://www.ntl.edu.tw/wSite/public/Img/691813243871.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://www.typl.gov.tw/FileUploads/Activity/10102.JPG",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://www.typl.gov.tw/FileUploads/Activity/10103.JPG",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://www.typl.gov.tw/FileUploads/Activity/10135.JPG",
+      "status": 200,
+      "content_type": "image/jpeg"
+    }
+  ],
+  "art_museum_check": {
+    "tfam": "Public event JSON and detail-image container verified; no current published TFAM sessions to backfill.",
+    "tmofa": "HTTP428 on public homepage; existing embedded content-image adapter covered by fixture tests only."
+  }
+}

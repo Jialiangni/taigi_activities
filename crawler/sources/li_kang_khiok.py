@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from urllib.parse import urljoin, urlsplit
 from ..web_sources import FeedCrawler
+from ..posters import poster_fields
 from ..collection import KEYWORDS, TAIPEI, Document, Result, CollectionError, canonical
 
 URL = re.compile(r'https?://[^\s<>"\u3000]+')
@@ -72,15 +73,18 @@ class LiKangKhiokCrawler(FeedCrawler):
 
     def parse_page(self, text, evidence):
         rows, more = super().parse_page(text, evidence)  # validates XML before parsing below
-        links_by_url = {}
+        links_by_url, images_by_url = {}, {}
         for entry in ET.fromstring(text).findall('{http://www.w3.org/2005/Atom}entry'):
             body = entry.find('{http://www.w3.org/2005/Atom}content')
+            fragment = (body.text or '') if body is not None else ''
             for link in entry.findall('{http://www.w3.org/2005/Atom}link'):
                 if link.get('rel', 'alternate') == 'alternate' and link.get('href'):
                     url = canonical(link.get('href'))
-                    links_by_url[url] = content_links(body.text if body is not None else '', url)
+                    links_by_url[url] = content_links(fragment, url)
+                    images_by_url[url] = poster_fields('<div class="post-body">' + fragment + '</div>', url)
         for row in rows:
             row['fields']['content_links'] = links_by_url.get(row['source_url'], [])
+            row['fields'].update(images_by_url.get(row['source_url'], {}))
             review_hints(row)
         return rows, more
 
@@ -130,6 +134,7 @@ class LiKangKhiokCrawler(FeedCrawler):
                 links.extend(content_links(row['text'], url))
                 row['fields']['content_links'] = list(dict.fromkeys(links))
                 row['feed_evidence'], row['evidence'] = row['evidence'], evidence
+                row['fields'].update(poster_fields(html, url))
                 row['language_hits'] = [k for k in KEYWORDS if k in row['title'] + ' ' + row['text']]
                 review_hints(row)
             except CollectionError as error:

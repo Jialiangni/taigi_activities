@@ -26,7 +26,15 @@ class VerifiedCalendarTests(unittest.TestCase):
         history = json.loads(HISTORICAL.read_text())
         by_id = {row['activity']['id']: row for row in current['activities']}
         for row in history['activities']:
-            self.assertEqual(by_id[row['activity']['id']], row)
+            comparable = copy.deepcopy(by_id[row['activity']['id']])
+            # Official artwork may be added without altering frozen event facts.
+            if comparable['activity'].get('cover_image') != row['activity'].get('cover_image'):
+                proof = comparable['verification'].pop('poster_evidence')
+                self.assertEqual(proof['url'], comparable['activity']['cover_image'])
+                self.assertEqual(proof['source_url'], comparable['activity']['source_url'])
+                self.assertRegex(proof['snapshot_sha256'], r'^[a-f0-9]{64}$')
+                comparable['activity']['cover_image'] = row['activity']['cover_image']
+            self.assertEqual(comparable, row)
         translations = json.loads((DATA_PATH.parent/'ui_taigi.json').read_text())
         prices = json.loads((DATA_PATH.parent/'ui_price_taigi.json').read_text())
         for row in current['activities']:

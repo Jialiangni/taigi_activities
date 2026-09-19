@@ -2,6 +2,8 @@
 
 彙整臺北、新北、桃園的台語表演、故事、繪本、體驗與導覽場次，提供搜尋、篩選、週曆，以及 Google / Apple 日曆加入與 ICS 訂閱。
 
+活動詳情海報已擴充至 ACCUPASS、李江却基金會、圖書館、博物館與美術館：使用官方活動主圖、公告正文或圖片附件，排除站台標誌和推薦活動縮圖；有原圖連結就直接使用，不猜測圖片網址。2026/9/19 補齊21張官方圖片、對應58個已刊登場次。每日 `main.py --check-sources` 在來源核實通過後重新擷取圖片並套用至當次網站；無圖不補示意圖，載入失敗不留空白。圖片僅補充詳情，不能作為新增／修改活動時間的依據。
+
 - 網站：https://jialiangni.github.io/taigi_activities/
 - ICS：https://jialiangni.github.io/taigi_activities/taigi_activities.ics
 - 系統規格：[SPEC.md](SPEC.md)

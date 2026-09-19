@@ -85,6 +85,12 @@ run(`openModal(${JSON.stringify(posterEvent.id)})`);
 assert.equal(element('modalImg').src,posterEvent.cover_image);
 assert.equal(element('modalPosterLink').href,posterEvent.cover_image);
 assert.equal(element('modalPosterLink').style.display,'block');
+for (const event of data.filter(a=>a.cover_image)) {
+  run(`openModal(${JSON.stringify(event.id)})`);
+  assert.equal(element('modalImg').src,event.cover_image);
+  assert.equal(element('modalPosterLink').href,event.cover_image);
+  assert.equal(element('modalPosterLink').style.display,'block');
+}
 element('modalImg').onerror();
 assert.equal(element('modalPosterLink').style.display,'none');
 run(`openModal(${JSON.stringify(posterEvent.id)})`);

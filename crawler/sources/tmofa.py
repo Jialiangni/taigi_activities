@@ -1,6 +1,7 @@
 """Taoyuan Museum's publicly embedded Next.js datasets (no challenge bypass)."""
 import json
 from ..collection import Collector, CollectionError, Result, Document, candidate, relevant, plain, KEYWORDS
+from ..posters import poster_fields
 
 
 def parse_home(html, evidence, keywords):
@@ -28,7 +29,8 @@ def parse_home(html, evidence, keywords):
                 continue
             rows.append(candidate('tmofa', url, title, body, evidence,
                                   {'start_time': None, 'end_time': None, 'is_free': None,
-                                   'published_at': item.get('publish_up'), 'museum_id': item.get('museum_id')},
+                                   'published_at': item.get('publish_up'), 'museum_id': item.get('museum_id'),
+                                   **poster_fields('<article>' + (item.get('content') or '') + '</article>', url)},
                                   'announcement', key=kind + ':' + str(item['id'])))
     return rows, {k: len(data[k]) for k in ('news', 'info')}
 
