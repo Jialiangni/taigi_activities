@@ -95,7 +95,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
   <header class="hero-header">
     <div class="container header-top">
-      <div class="brand">北北桃台語活動</div>
+      <div class="brand">北北桃講Tâigí</div>
       <div class="header-actions">
         <button class="btn download-top" onclick="exportCalendarFile()">下載日曆</button>
         <button class="btn" onclick="openSyncModal()">日曆佮設定</button>
