@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T13:09:39+08:00",
+  "reviewed_at": "2026-09-19T19:02:05+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T13:09:25+08:00",
   "candidate_count": 745,
@@ -3350,7 +3350,7 @@
       "source_url": "https://www.opentix.life/event/2085270384891490304",
       "title": "白日之銀翼",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "session_missing"
     },
     {
       "candidate_id": "b2a1ddbcb8647780e628b641",
@@ -4135,7 +4135,7 @@
       "source_url": "https://www.opentix.life/event/2052573679595487233",
       "title": "果陀劇場《三個傻瓜》2026熱血回歸",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "session_missing"
     },
     {
       "candidate_id": "e305002323bdfc10b84a546a",
@@ -5669,7 +5669,7 @@
       "source_url": "https://www.opentix.life/event/2077306277751111680",
       "title": "《遊牧時空經緯的中東樂舞》Hamnavâ中東樂舞團",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "verification_failed:http_400"
     },
     {
       "candidate_id": "c73cdd3082a71a39f3444120",
