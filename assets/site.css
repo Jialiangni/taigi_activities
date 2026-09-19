@@ -125,3 +125,11 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 :root[data-theme=dark]{--filter-selected-bg:#fff;--filter-selected-text:#000}
 .filter-row .pill[aria-pressed="true"],.month-options .pill[aria-pressed="true"]{background-color:var(--filter-selected-bg);color:var(--filter-selected-text);background-image:none}
 .filter-row .pill[aria-pressed=true] .badge-city{background:transparent;color:inherit}
+
+/* Date buttons keep the whole week reachable while showing one selected day. */
+.week-strip .week-date{min-width:0;min-height:48px;padding:6px 2px;margin:0 2px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--text-muted);font:inherit;cursor:pointer}
+.week-strip .week-date:hover{background:var(--secondary-light)}
+.week-strip .week-date.selected{background:var(--primary);color:var(--inverse)}
+.week-strip .week-date.selected strong{color:inherit}
+.week-strip .week-date:focus-visible{outline:2px solid var(--text-main);outline-offset:2px}
+.cal-cell.selected-day:has(.cal-empty){display:grid}

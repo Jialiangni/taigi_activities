@@ -175,7 +175,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <span class="badge badge-city city-taoyuan">桃園市</span>
           <span class="cal-summary" id="calWeekSummary" aria-live="polite"></span>
         </div>
-        <div class="week-strip" id="calWeekDays"></div>
+        <div class="week-strip" id="calWeekDays" role="group" aria-label="日期"></div>
         <div class="cal-grid" id="calGridDays"></div>
       </div>
     </div>
@@ -313,6 +313,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     let searchQuery = '';
     let selectedActivity = null;
     let calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
+    let selectedCalendarDay = '';
 
     document.addEventListener('DOMContentLoaded', () => {{
       initTheme();
@@ -657,6 +658,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       const start = weekStart(calDate);
       const end = new Date(start);
       end.setUTCDate(end.getUTCDate() + 6);
+      if (selectedCalendarDay < start.toISOString().slice(0, 10) || selectedCalendarDay > end.toISOString().slice(0, 10)) selectedCalendarDay = '';
       const label = date => formatCalendarDate(date.toISOString().slice(0, 10), false);
       document.getElementById('calCurrentWeekLabel').innerText = `${{label(start)}} – ${{label(end)}}`;
       const filtered = getFilteredActivities().slice().sort((a, b) => new Date(a.start_time) - new Date(b.start_time) || a.id.localeCompare(b.id));
@@ -666,15 +668,19 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       let html = '';
       let strip = '';
       let weekCount = 0;
+      let selectedCount = 0;
       for (let i = 0; i < 7; i++) {{
         const day = new Date(start);
         day.setUTCDate(day.getUTCDate() + i);
         const dateKey = day.toISOString().slice(0, 10);
-        strip += `<div>${{weekdays[i]}}<strong>${{day.getUTCDate()}}</strong></div>`;
         const dayEvents = filtered.filter(a => taipeiDateKey(new Date(a.start_time)) === dateKey);
+        const selected = selectedCalendarDay === dateKey;
+        strip += `<button type="button" class="week-date${{selected ? ' selected' : ''}}" id="cal-pick-${{dateKey}}" aria-pressed="${{selected}}" aria-controls="calGridDays" aria-label="${{dateKey}} ${{weekdays[i]}}・${{dayEvents.length}} 場" onclick="selectCalendarDay('${{dateKey}}')">${{weekdays[i]}}<strong>${{day.getUTCDate()}}</strong></button>`;
         weekCount += dayEvents.length;
+        if (selected) selectedCount = dayEvents.length;
+        if (selectedCalendarDay && !selected) continue;
         html += `
-          <section class="cal-cell ${{dateKey === today ? 'today' : ''}}" data-date="${{dateKey}}" aria-label="${{dateKey}} ${{weekdays[i]}}">
+          <section class="cal-cell ${{dateKey === today ? 'today' : ''}}${{selected ? ' selected-day' : ''}}" data-date="${{dateKey}}" aria-label="${{dateKey}} ${{weekdays[i]}}">
             <div class="cal-cell-header">
               <h3 class="cal-date-num">${{formatCalendarDate(dateKey)}}</h3>
               <span class="cal-day-count">${{dayEvents.length}} 場</span>
@@ -687,20 +693,33 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       }}
       document.getElementById('calWeekDays').innerHTML = strip;
       document.getElementById('calGridDays').innerHTML = html;
-      document.getElementById('calWeekSummary').innerText = weekCount ? `這禮拜 ${{weekCount}} 場・臺北時間` : '這禮拜猶無合條件的核實場次，會當換禮拜抑是改揀條件';
+      document.getElementById('calWeekSummary').innerText = selectedCalendarDay ? `${{formatCalendarDate(selectedCalendarDay)}}・${{selectedCount}} 場・臺北時間` : (weekCount ? `這禮拜 ${{weekCount}} 場・臺北時間` : '這禮拜猶無合條件的核實場次，會當換禮拜抑是改揀條件');
+    }}
+
+    function selectCalendarDay(dateKey) {{
+      const first = weekStart(calDate);
+      const last = new Date(first);
+      last.setUTCDate(last.getUTCDate() + 6);
+      if (!/^\d{{4}}-\d{{2}}-\d{{2}}$/.test(dateKey) || dateKey < first.toISOString().slice(0, 10) || dateKey > last.toISOString().slice(0, 10)) return;
+      selectedCalendarDay = selectedCalendarDay === dateKey ? '' : dateKey;
+      renderCalendar();
+      document.getElementById('cal-pick-' + dateKey)?.focus({{preventScroll:true}});
     }}
 
     function prevWeek() {{
+      selectedCalendarDay = '';
       calDate.setUTCDate(calDate.getUTCDate() - 7);
       renderCalendar();
     }}
 
     function nextWeek() {{
+      selectedCalendarDay = '';
       calDate.setUTCDate(calDate.getUTCDate() + 7);
       renderCalendar();
     }}
 
     function goToToday() {{
+      selectedCalendarDay = '';
       calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
       renderCalendar();
     }}
