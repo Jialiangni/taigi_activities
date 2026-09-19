@@ -12,7 +12,7 @@ const element = id => {
   return result;
 };
 let download;
-const context = vm.createContext({Intl, Date, Blob, URLSearchParams, navigator:{userAgent:'Mozilla/5.0 (iPhone) Version/18.0 Mobile Safari/604.1'}, location:{protocol:'https:',origin:'https://example.test',pathname:'/taigi_activities/',search:''}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
+const context = vm.createContext({window:{scrollTo(){}},Intl, Date, Blob, URLSearchParams, navigator:{userAgent:'Mozilla/5.0 (iPhone) Version/18.0 Mobile Safari/604.1'}, location:{protocol:'https:',origin:'https://example.test',pathname:'/taigi_activities/',search:''}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
   addEventListener(){},querySelectorAll:()=>[],querySelector:element,getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
   createElement:()=>({click(){}})
 }});
@@ -138,30 +138,38 @@ run(`openModal(${JSON.stringify(noPosterEvent.id)})`);
 assert.equal(element('modalPosterLink').style.display,'none');
 assert.equal(element('modalImg').src,undefined);
 assert.equal(element('modalPosterLink').href,undefined);
-// Month selection is a union of year-months, intersected with all other filters.
+// Month selection is exclusive; selecting the same month keeps it selected.
 assert.equal(run("monthLabel('2026-09')"),'2026∙09');
 run('renderMonthFilters()');
 assert.match(element('monthFilterOptions').innerHTML, /攏總/);
 const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();
 for (const key of monthKeys) assert.ok(element('monthFilterOptions').innerHTML.includes(key));
 if (monthKeys.length) {
-  run(`toggleMonth('${monthKeys[0]}')`);
+  run(`setMonth('${monthKeys[0]}')`);
   assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.start_time.startsWith(monthKeys[0])).length);
   if (monthKeys.length>1) {
-    run(`toggleMonth('${monthKeys[monthKeys.length-1]}')`);
-    assert.equal(run('getFilteredActivities().length'),data.filter(a=>[monthKeys[0],monthKeys[monthKeys.length-1]].includes(a.start_time.slice(0,7))).length);
-    run(`toggleMonth('${monthKeys[0]}')`);
-    assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.start_time.startsWith(monthKeys[monthKeys.length-1])).length);
-    assert.equal(run('calDate.toISOString().slice(0,7)'),monthKeys[monthKeys.length-1]);
+    const last=monthKeys[monthKeys.length-1];
+    run(`setMonth('${last}')`);
+    assert.equal(run('selectedMonth'),last);
+    assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.start_time.startsWith(last)).length);
+    assert.equal(run('calDate.toISOString().slice(0,7)'),last);
+    run(`setMonth('${last}')`);
+    assert.equal(run('selectedMonth'),last);
   }
   run("currentCity='臺北市'");
-  assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.city==='臺北市' && JSON.parse(run('JSON.stringify([...selectedMonths])')).includes(a.start_time.slice(0,7))).length);
-  run("currentCity='all';toggleMonth('all')");
+  assert.equal(run('getFilteredActivities().length'),data.filter(a=>a.city==='臺北市' && a.start_time.startsWith(run('selectedMonth'))).length);
+  run("currentCity='all';setMonth('all')");
+  assert.equal(run('selectedMonth'),'');
   assert.equal(run('getFilteredActivities().length'),data.length);
-  run(`toggleMonth('${monthKeys[0]}');toggleMonth('${monthKeys[0]}')`);
-  assert.equal(run('selectedMonths.size'),0);
 }
-console.log('PASS: single/multiple month selection, year-month labels, city intersection, calendar alignment, clear and deselect');
+for (const view of ['calendar','grid','calendar','agenda']) {
+  run(`switchView('${view}')`);
+  assert.equal(element('filterSummary').style.display,view==='calendar'?'none':'flex');
+}
+assert.doesNotMatch(element('calWeekSummary').innerText,/臺北時間/);
+assert.doesNotMatch(html,/aria-label="城市顏色圖例"|會當揀幾若个月/);
+assert.match(html,/<span class="filter-label">城市<\/span>/);
+console.log('PASS: exclusive month selection, repeat selection, city intersection, calendar alignment, clear and view-specific summary');
 // A crowded weekend must retain every event, including long titles and all cities.
 run(`
   globalThis.originalActivities = ACTIVITIES_DATA.slice();
@@ -232,13 +240,13 @@ run(`
     {id:'year-2026', start_time:'2026-01-01T10:00:00+08:00'},
     {id:'year-2027', start_time:'2027-01-01T10:00:00+08:00'},
     {id:'taipei-october', start_time:'2026-09-30T16:30:00Z'});
-  selectedMonths.add('2026-10');
+  selectedMonth='2026-10';
 `);
 assert.equal(run("getFilteredActivities().map(a=>a.id).join(',')"),'taipei-october');
-run("selectedMonths.add('2027-01')");
-assert.equal(run('getFilteredActivities().length'),2);
+run("selectedMonth='2027-01'");
+assert.equal(run('getFilteredActivities().length'),1);
 assert.ok(!run("getFilteredActivities().some(a=>a.id==='year-2026')"));
-run('selectedMonths.clear()');
+run("selectedMonth=''");
 run('ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length, ...originalActivities)');
 console.log('PASS: crowded week (14 events), city colors/filter, full titles, week navigation, year/leap boundaries, Taipei dates, empty week');
 (async()=>{
@@ -255,9 +263,9 @@ console.log('PASS: crowded week (14 events), city colors/filter, full titles, we
   run('exportCalendarFile()');
   assert.equal(await download.text(),fs.readFileSync('taigi_activities.ics','utf8'));
   if(data.length){
-    run(`selectedMonths.add('${monthKeys[0]}');exportCalendarFile()`);
+    run(`setMonth('${monthKeys[0]}');exportCalendarFile()`);
     assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,data.filter(a=>a.start_time.startsWith(monthKeys[0])).length);
-    run('selectedMonths.clear()');
+    run("selectedMonth=''");
     // Every details link opens its own hosted ICS; no blob or forced download.
     const anchor = html.match(/<a id="modalSingleIcsBtn"[^>]*>/)[0];
     assert.doesNotMatch(anchor,/\bdownload\b|\bonclick\b|\btarget\b/);

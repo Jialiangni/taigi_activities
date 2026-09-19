@@ -95,7 +95,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
   <header class="hero-header">
     <div class="container header-top">
-      <div class="brand">北北桃講Tâigí</div>
+      <div class="brand">北北桃 • 講Tâigí</div>
       <div class="header-actions">
         <button class="btn download-top" onclick="exportCalendarFile()">下載日曆</button>
         <button class="btn" onclick="openSyncModal()">日曆佮設定</button>
@@ -104,7 +104,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
   <section class="container intro">
-    <h1>講Tâigí 真歡喜</h1>
+    <h1>講Tâigí • 真歡喜</h1>
     <p>臺北、新北、桃園，做伙來講台語。</p>
     <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">導覽、展覽、閱讀佮傳統表演資訊 ↓</a></p></details>
     <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
@@ -120,7 +120,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         </div>
       </div>
       <div class="filter-row" role="group" aria-label="揀地區">
-        <span class="filter-label">佗位</span>
+        <span class="filter-label">城市</span>
         <div class="city-options">
         <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
@@ -128,7 +128,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
         </div>
       </div>
-      <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个月"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个月</span></div>
+      <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
@@ -153,7 +153,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <!-- MAIN EVENT DISPLAY -->
   <main class="main-content">
     <div class="container">
-      <div class="filter-summary">
+      <div class="filter-summary" id="filterSummary">
         <div>攏總 <strong id="visibleCount">0</strong> 場活動</div>
         <div id="activeFiltersSummary"></div>
       </div>
@@ -174,12 +174,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
             <button class="btn btn-light" onclick="nextWeek()" aria-label="後禮拜">後禮拜 ›</button>
           </div>
         </div>
-        <div class="cal-legend" aria-label="城市顏色圖例">
-          <span class="badge badge-city city-taipei">臺北市</span>
-          <span class="badge badge-city city-newtaipei">新北市</span>
-          <span class="badge badge-city city-taoyuan">桃園市</span>
-          <span class="cal-summary" id="calWeekSummary" aria-live="polite"></span>
-        </div>
+        <p class="cal-summary" id="calWeekSummary" aria-live="polite"></p>
         <div class="week-strip" id="calWeekDays" role="group" aria-label="日期"></div>
         <div class="cal-grid" id="calGridDays"></div>
       </div>
@@ -314,7 +309,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     let currentCategory = 'all';
     let currentPlatform = 'all';
     let currentPrice = 'all';
-    const selectedMonths = new Set();
+    let selectedMonth = '';
     let searchQuery = '';
     let selectedActivity = null;
     let calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
@@ -388,6 +383,8 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('viewAgenda').style.display = viewName === 'agenda' ? 'flex' : 'none';
       document.getElementById('viewCalendar').style.display = viewName === 'calendar' ? 'block' : 'none';
 
+      document.getElementById('filterSummary').style.display = viewName === 'calendar' ? 'none' : 'flex';
+
       if (viewName === 'calendar') {{
         renderCalendar();
       }}
@@ -430,21 +427,19 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderMonthFilters() {{
       const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
       document.getElementById('monthFilterOptions').innerHTML =
-        `<button class="pill ${{selectedMonths.size ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonths.size}}" onclick="toggleMonth('all')">攏總</button>` +
-        months.map(month => `<button class="pill ${{selectedMonths.has(month) ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonths.has(month)}}" onclick="toggleMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
+        `<button class="pill ${{selectedMonth ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonth}}" onclick="setMonth('all')">攏總</button>` +
+        months.map(month => `<button class="pill ${{selectedMonth === month ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonth === month}}" onclick="setMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
     }}
 
-    function toggleMonth(month) {{
-      if (month === 'all') selectedMonths.clear();
-      else if (selectedMonths.has(month)) selectedMonths.delete(month);
-      else selectedMonths.add(month);
-      // Keep buttons in place so keyboard focus and mobile horizontal scroll survive toggling.
+    function setMonth(month) {{
+      selectedMonth = month === 'all' ? '' : month;
+      // Keep buttons in place so keyboard focus and mobile horizontal scroll survive selection.
       document.querySelectorAll('[data-month]').forEach(button => {{
-        const active = button.dataset.month === 'all' ? !selectedMonths.size : selectedMonths.has(button.dataset.month);
+        const active = button.dataset.month === 'all' ? !selectedMonth : selectedMonth === button.dataset.month;
         button.classList.toggle('active', active);
         button.setAttribute('aria-pressed', String(active));
       }});
-      if (selectedMonths.size) {{
+      if (selectedMonth) {{
         const first = weekStart(calDate).toISOString().slice(0, 10);
         const end = new Date(weekStart(calDate));
         end.setUTCDate(end.getUTCDate() + 6);
@@ -454,7 +449,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           const key = taipeiDateKey(new Date(a.start_time));
           return key >= first && key <= last;
         }});
-        if (!inWeek) calDate = new Date((filtered.length ? taipeiDateKey(new Date(filtered[0].start_time)) : [...selectedMonths].sort()[0] + '-01') + 'T00:00:00Z');
+        if (!inWeek) calDate = new Date((filtered.length ? taipeiDateKey(new Date(filtered[0].start_time)) : selectedMonth + '-01') + 'T00:00:00Z');
       }}
       renderAll();
     }}
@@ -474,7 +469,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     function getFilteredActivities() {{
       return ACTIVITIES_DATA.filter(act => {{
-        if (selectedMonths.size && !selectedMonths.has(taipeiDateKey(new Date(act.start_time)).slice(0, 7))) return false;
+        if (selectedMonth && selectedMonth !== taipeiDateKey(new Date(act.start_time)).slice(0, 7)) return false;
         if (currentCity !== 'all' && act.city !== currentCity) return false;
         if (currentCategory !== 'all' && act.category !== currentCategory) return false;
         if (currentPlatform !== 'all' && act.source_platform !== currentPlatform) return false;
@@ -510,7 +505,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderAll() {{
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
-      document.getElementById('activeFiltersSummary').innerText = selectedMonths.size ? [...selectedMonths].sort().map(monthLabel).join('、') : '攏總';
+      document.getElementById('activeFiltersSummary').innerText = selectedMonth ? monthLabel(selectedMonth) : '攏總';
       const extraCount = [currentPlatform, currentCategory, currentPrice].filter(value => value !== 'all').length;
       document.getElementById('mobileFilterCount').innerText = extraCount ? String(extraCount) : '';
       document.getElementById('filterResultCount').innerText = `（${{filtered.length}}）`;
@@ -698,7 +693,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       }}
       document.getElementById('calWeekDays').innerHTML = strip;
       document.getElementById('calGridDays').innerHTML = html;
-      document.getElementById('calWeekSummary').innerText = selectedCalendarDay ? `${{formatCalendarDate(selectedCalendarDay)}}・${{selectedCount}} 場・臺北時間` : (weekCount ? `這禮拜 ${{weekCount}} 場・臺北時間` : '這禮拜猶無合條件的核實場次，會當換禮拜抑是改揀條件');
+      document.getElementById('calWeekSummary').innerText = selectedCalendarDay ? `${{formatCalendarDate(selectedCalendarDay)}}・${{selectedCount}} 場` : (weekCount ? `這禮拜 ${{weekCount}} 場` : '這禮拜猶無合條件的核實場次，會當換禮拜抑是改揀條件');
     }}
 
     function selectCalendarDay(dateKey) {{
