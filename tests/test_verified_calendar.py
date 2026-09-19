@@ -16,9 +16,24 @@ from main import build
 from crawler.presentation import session_title
 
 NOW = datetime.fromisoformat('2026-09-18T23:00:00+08:00')
+HISTORICAL = Path(__file__).parent / 'fixtures/verified_catalog_20260918.json'
 
 
 class VerifiedCalendarTests(unittest.TestCase):
+    def test_current_catalog_stays_valid_and_preserves_historical_records(self):
+        load_verified()  # Uses today's time; new source checks must never be backdated.
+        current = json.loads(DATA_PATH.read_text())
+        history = json.loads(HISTORICAL.read_text())
+        by_id = {row['activity']['id']: row for row in current['activities']}
+        for row in history['activities']:
+            self.assertEqual(by_id[row['activity']['id']], row)
+        translations = json.loads((DATA_PATH.parent/'ui_taigi.json').read_text())
+        prices = json.loads((DATA_PATH.parent/'ui_price_taigi.json').read_text())
+        for row in current['activities']:
+            if row['verification'].get('mode') == 'official_rules_v1':
+                self.assertTrue(translations.get(row['activity']['description']))
+                self.assertTrue(prices.get(row['activity']['price_info']))
+
     def test_session_title_translation_is_scoped_and_shared_with_calendars(self):
         cases = {
             '活動（上午場）': '活動（早起場）',
@@ -62,7 +77,8 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertEqual(sum(a.is_free is None for a in events), 3)
 
     def test_expanded_public_catalog_has_reviewed_sessions(self):
-        events = load_verified(now=NOW)
+        # Historical expansion counts are a fixed fixture, not a cap on daily additions.
+        events = load_verified(HISTORICAL, now=NOW)
         self.assertEqual(len(events), 85)
         self.assertEqual(sum(a.city.value == '臺北市' for a in events), 28)
         self.assertEqual(sum(a.city.value == '新北市' for a in events), 13)
@@ -76,7 +92,7 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertTrue(all(a.start_time[:10] == a.end_time[:10] for a in series))
 
     def test_foundation_series_preserve_distinct_dates_venues_and_shared_times(self):
-        rows = [a for a in load_verified(now=NOW) if a.id.startswith('tgb_')]
+        rows = [a for a in load_verified(HISTORICAL, now=NOW) if a.id.startswith('tgb_')]
         self.assertEqual([(a.start_time[:10], a.city.value) for a in rows],
                          [('2026-09-19', '新北市'), ('2026-09-20', '臺北市'),
                           ('2026-10-17', '新北市'), ('2026-10-18', '新北市')])
@@ -99,7 +115,7 @@ class VerifiedCalendarTests(unittest.TestCase):
         with self.assertRaises(ValueError): check_opentix_sessions(source, {'result': changed})
 
     def test_yongchun_course_matches_official_recurrence_and_copy_fee(self):
-        rows = [a for a in load_verified(now=NOW) if a.id.startswith('tpml_yongchun_')]
+        rows = [a for a in load_verified(HISTORICAL, now=NOW) if a.id.startswith('tpml_yongchun_')]
         self.assertEqual(len(rows), 16)
         self.assertEqual(rows[0].start_time, '2026-09-23T14:00:00+08:00')
         self.assertEqual(rows[-1].end_time, '2027-01-06T16:00:00+08:00')
@@ -111,7 +127,7 @@ class VerifiedCalendarTests(unittest.TestCase):
     def test_district_audit_publishes_only_approved_ids(self):
         audit = json.loads((DATA_PATH.parent / 'audit/2026-09-18-district-publication-review.json').read_text())
         self.assertEqual(len(audit['records']), 14)
-        events = load_verified(now=NOW)
+        events = load_verified(HISTORICAL, now=NOW)
         self.assertTrue(set(audit['new_session_ids']) <= {a.id for a in events})
         urls = {a.source_url for a in events}
         withheld = [r for r in audit['records'] if r['decision'] in ('excluded', 'expired', 'out_of_region', 'pending_language_evidence')]
@@ -234,7 +250,7 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertIn('const ACTIVITIES_DATA = [];', empty.read_text())
 
     def test_taigi_summaries_do_not_replace_official_content(self):
-        events = load_verified(now=NOW)
+        events = load_verified(HISTORICAL, now=NOW)
         output = Path(self.tmp.name) / 'index.html'
         generate_single_html(events, output)
         html = output.read_text()

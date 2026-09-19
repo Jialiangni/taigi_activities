@@ -1,9 +1,10 @@
 name: Deploy Taigi Calendar to GitHub Pages
 
 on:
-  schedule:
-    # 每天台灣時間凌晨 04:00 自動更新活動資料 (UTC 20:00)
-    - cron: '0 20 * * *'
+  workflow_run:
+    workflows: [Collect event review candidates]
+    types: [completed]
+    branches: [main]
   workflow_dispatch: # 支援在 GitHub 網頁上手動點擊立即執行
   push:
     branches:
@@ -12,6 +13,7 @@ on:
 # 設定 GitHub Pages 部屬權限
 permissions:
   contents: write
+  actions: read
   pages: write
   id-token: write
 
@@ -21,13 +23,21 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       (github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure')) ||
+      (github.event_name != 'workflow_run' && github.ref == 'refs/heads/main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,6 +47,24 @@ jobs:
       - name: Test publication gates and calendar exports
         run: python3 -m unittest discover -s tests -v
 
+      - name: Download recent public candidates from trusted collection
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          COLLECTION_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+        run: python3 scripts/fetch_review_candidates.py --output "$RUNNER_TEMP/review-candidates"
+
+      - name: Verify candidates and exclude published sessions
+        run: python3 -u -m crawler.review --candidates "$RUNNER_TEMP/review-candidates" --apply
+
+      - name: Preserve review decisions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidate-review-decisions
+          path: data/audit/latest-candidate-review.json
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Verify official sources and build calendar
         run: |
           python3 main.py --check-sources
@@ -45,13 +73,14 @@ jobs:
         run: node tests/test_frontend.cjs
 
       - name: Commit updated files if changed
-        if: github.event_name == 'schedule'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html taigi_activities.ics
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 自動更新台語活動資料庫 [skip ci]" && git push)
-        continue-on-error: true
+          git add data/verified_activities.json data/ui_taigi.json data/ui_price_taigi.json data/audit/latest-candidate-review.json index.html taigi_activities.ics
+          if ! git diff --staged --quiet; then
+            git commit -m "Review candidates and update verified calendar [skip ci]"
+            git push origin HEAD:main
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

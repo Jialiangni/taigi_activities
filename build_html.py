@@ -54,7 +54,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>北北桃台語活動日曆 | 臺北・新北・桃園 台語舞台劇/表演/故事/繪本/體驗/導覽</title>
-  <meta name="description" content="北北桃台語活動行事曆：收錄有官方公告且經人工核對的場次。彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
+  <meta name="description" content="北北桃台語活動行事曆：收錄有官方公告且經核實的場次。彙整臺北市、新北市、桃園市的台語舞台劇、表演、故事屋、台語繪本共讀、文化體驗、文史走讀導覽活動。">
   
   <!-- Android Chrome & PWA 支援 -->
   <meta name="mobile-web-app-capable" content="yes">

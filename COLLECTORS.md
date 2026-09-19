@@ -57,7 +57,7 @@ python3 -m unittest discover -s tests -v
 
 報告記錄各來源候選數、成功回應數、時間、來源 URL、成功回應 SHA-256（解壓後內容）、失敗碼與截斷原因。API POST 的公開搜尋條件一併留存，不儲存授權標頭。候選全文是本機待審資料，已排除於 Git 與 GitHub Pages；Git 只保存精簡測試樣本與驗證摘要。
 
-GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Facebook／Instagram／Threads 的授權內容不放進 artifact。收集失敗仍上傳已完成來源。此工作不自動提交候選或修改公開行事曆。
+GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Facebook／Instagram／Threads 的授權內容不放進 artifact。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
 
 任何來源的請求／格式錯誤會令 CLI 回傳非零碼，但仍完成其他獨立來源並保存報告；單純到達已設定上限會標 partial。設定缺漏的社群屬明確待設定狀態，無法以此視為已驗證。
 
@@ -202,3 +202,7 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 | 桃園市立圖書館總館 | `typl_district_2`：Filter[4]=2.1，包含桃園區2及總館1；[官方GetVenues](https://www.typl.gov.tw/zh-tw/Home/GetVenues)另列總館branch 52 | 6次成功回應，3筆待核實候選，達上限partial |
 
 [本次證據與請求摘要](data/audit/2026-09-18-main-libraries-check.json)保存名錄與回應指紋。日常仍預設30頁，本次6頁僅驗收設定。總館列表也可能刊登他館公告，必須逐筆核實場地；本輪不新增正式場次。
+
+## 收集後核實與去重（2026-09-19）
+
+每日03:15收集完成後觸發網站工作，不再以04:00獨立排程搶先建置。來源失敗但完整報告已保存時，其他成功候選仍進入核實。每筆決策記錄於 `data/audit/latest-candidate-review.json`；核實來源、保守限制、去重方法及36小時新鮮度門檻見 SPEC 第23節。OPENTIX結構化單場及明列語言證據符合嚴格條件時可自動通過；其餘資料不會因這一步已執行就被當作核實成功。

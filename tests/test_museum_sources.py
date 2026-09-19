@@ -69,7 +69,7 @@ class MuseumTests(unittest.TestCase):
         self.assertFalse(any(r['id'].startswith('tpml_') for r in at_new_year))
 
     def test_taigiloo_story_uses_explicit_dates_not_week_rule(self):
-        events = load_verified(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
+        events = load_verified(Path(__file__).parent / 'fixtures/verified_catalog_20260918.json', now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
         rows = [a for a in events if a.id.startswith('ntl_taigiloo_')]
         self.assertEqual([a.start_time[:10] for a in rows], ['2026-10-15', '2026-11-19', '2026-12-17'])
         self.assertTrue(all(a.end_time[11:16] == '11:50' and a.is_free is None for a in rows))

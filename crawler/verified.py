@@ -87,6 +87,9 @@ def check_live_sources(sources):
                 raise ValueError('OPENTIX 場次查核來源不正確')
             payload, _ = client.json('https://csm.api.opentix.life/programs/' + source['url'].rsplit('/', 1)[-1])
             check_opentix_sessions(source, payload)
+            if 'automated_review' in source:
+                from .review import validate_auto_source
+                validate_auto_source(source, payload['result'])
 
 
 def load_verified(path=DATA_PATH, now=None, check_sources=False):
@@ -116,6 +119,10 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
         if review.get('status') != 'verified' or not review.get('language_evidence'):
             raise ValueError('未核實活動或缺少台語內容證據，不可發布')
         source = sources[review['source_id']]
+        if review.get('mode') == 'official_rules_v1':
+            proof = source.get('automated_review', {})
+            if proof.get('mode') != 'official_rules_v1' or not proof.get('language_claims') or 'opentix_sessions' not in source:
+                raise ValueError('自動核實活動缺少可重查的官方證據')
         if 'opentix_sessions' in source:
             session = next((s for s in source['opentix_sessions'] if s['session_id'] == review.get('opentix_session_id')), None)
             if not session or any(data[k] != session[k] for k in ('start_time', 'end_time', 'venue', 'address', 'city', 'is_free')):
