@@ -40,12 +40,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
     resource_cards = ''.join(
         '<article class="resource-card"><small>' + escape(r['city']) + ' · ' +
-        {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '台語相關展覽', 'reading_resource': '台語閱讀推廣'}[r['kind']] +
+        {'audio_guide': '台語語音導覽', 'reservation_guide': '台語導覽預約', 'exhibition_resource': '台語相關展覽',
+         'reading_resource': '台語閱讀推廣', 'traditional_performance_resource': '傳統表演資訊（語言依當日節目）'}[r['kind']] +
         '</small><h3 lang="zh-Hant">' + escape(r['title']) + '</h3><p>' + escape(translations.get(r['description'], r['description'])) +
         '</p><a href="' + escape(r['url'], quote=True) + '" target="_blank" rel="noopener noreferrer">看官方的資料 ↗</a>' +
         '<small>核對：' + escape(r['checked_at'][:10]) + '</small></article>' for r in (resources or []))
-    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽佮閱讀資訊</h2>'
-                        '<p>語音導覽、預約服務、書展佮閱讀推廣；開館日、所費佮預約，請照館方公告。下跤這寡無算入活動場次，也無囥入下載的日曆。</p>'
+    resource_section = ('<section id="guideResources" class="container guide-resources"><h2>台語導覽、展覽、閱讀佮傳統表演資訊</h2>'
+                        '<p>語音導覽、預約服務、書展、閱讀推廣佮相關傳統表演；開館日、節目語言、所費佮預約，請照主辦公告。下跤這寡無算入已核實的台語活動場次，也無囥入下載的日曆。</p>'
                         '<div class="resource-grid">' + resource_cards + '</div></section>') if resources else ''
 
     html_content = f"""<!DOCTYPE html>
@@ -94,7 +95,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
   <section class="container intro">
     <h1>後一場，台語相見。</h1>
     <p>臺北、新北、桃園，做伙來講台語。</p>
-    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">台語導覽、展覽佮閱讀資訊 ↓</a></p></details>
+    <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">導覽、展覽、閱讀佮傳統表演資訊 ↓</a></p></details>
     <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
   </section>
   <div class="controls-wrapper">

@@ -131,6 +131,17 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(result['counts'], {'pending': 1})
         self.assertTrue(all('attacker' not in url for url in self.client.calls))
 
+    def test_owner_feedback_excludes_matching_candidate_without_network(self):
+        c = self.candidates[0]
+        self.write('data/manual_candidate_decisions.json', {'schema_version': 1, 'decisions': [{
+            'candidate_id': c['id'], 'source_id': c['source_id'], 'source_url': c['source_url'],
+            'title': c['title'], 'decision': 'excluded', 'reason': 'owner_feedback_not_event',
+            'reviewed_at': NOW.isoformat()}]})
+        result = self.run_review()
+        self.assertEqual(result['counts'], {'excluded': 1})
+        self.assertEqual(result['decisions'][0]['review_mode'], 'owner_feedback')
+        self.assertEqual(self.client.calls, [])
+
     def test_cross_platform_session_duplicate(self):
         self.run_review()
         path = self.root/'data/verified_activities.json'

@@ -84,6 +84,8 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 `data/verified_resources.json` 與 `crawler/resources.py` 管理非單場資訊：台語語音、預約導覽、展期資訊。必須有語言證據、核對時間、來源 SHA-256 與 required_text；`--check-sources` 同樣重查內容，失敗不覆寫。含 expires_at 的展覽到期後排除；不產生 ICS、不計入場次數。正式 UI 提供獨立資訊區及頁首跳轉入口，資料經 HTML escape。
 
+使用者人工判讀保存在 `data/manual_candidate_decisions.json`，只對候選 ID、來源、網址及標題完全相符的項目生效；來源身分改變時回到 pending，不沿用舊決定。非活動商品可永久排除；與台語文化相關但缺少單場台語證據者，可另列 `traditional_performance_resource`，介面明示語言依當日節目，不計入活動或 ICS。
+
 臺博館2020年導覽公告明示為舊頁，目前可讀取不代表真人導覽時間已確定。國臺圖故事每月日期採公告明列值，不能從「第3或4週」自行展開；系列總述11:00–12:00與單場11:00–11:50差異已向使用者顯示，採單場時間。臺博館活動需購票入館，is_free=false，說明活動本身免費。
 
 第二輪當時收集入口共50個／registry41個；北美館改用官網實際 JSON 活動API，其餘指定館舍方法與限制詳見COLLECTORS.md。候選與正式刊登持續分離，相關推薦文字不可作為該展覽的台語證據。

@@ -19,7 +19,8 @@ def load_resources(path=PATH, now=None, check_sources=False):
         if row['id'] in ids or row['city'] not in ('臺北市', '新北市', '桃園市'):
             raise ValueError('重複資訊或地區錯誤')
         ids.add(row['id'])
-        if row['kind'] not in ('audio_guide', 'reservation_guide', 'exhibition_resource', 'reading_resource'):
+        if row['kind'] not in ('audio_guide', 'reservation_guide', 'exhibition_resource', 'reading_resource',
+                               'traditional_performance_resource'):
             raise ValueError('導覽資訊類型錯誤')
         if row.get('status') != 'verified' or not all(row.get(k) for k in ('title', 'description', 'language_evidence', 'required_text')):
             raise ValueError('導覽資訊未核實')

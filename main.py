@@ -39,7 +39,7 @@ def build(output_dir=Path('.'), check_sources=False):
         for name in ('index.html', 'taigi_activities.ics', 'taigi-activities-standalone.html'):
             (stage / name).replace(output_dir / name)
     print(f'已產生 {len(activities)} 筆經核實、尚未結束的場次。')
-    print(f'另列 {len(resources)} 項導覽／展覽／閱讀資訊，不計入場次或 ICS。')
+    print(f'另列 {len(resources)} 項導覽／展覽／閱讀／傳統表演資訊，不計入場次或 ICS。')
     print('核實日期見個別活動；建置不會自動新增或認證活動。')
     return activities
 

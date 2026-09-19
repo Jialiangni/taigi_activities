@@ -33,26 +33,27 @@ class MuseumTests(unittest.TestCase):
             self.assertEqual(WebsiteCrawler({'id': 'museum', 'urls': ['https://example.org/']}, ['台語']).collect(fake).candidates, [])
 
     def test_resource_expiry_and_no_calendar_fields(self):
-        rows = load_resources(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
-        self.assertEqual(len(rows), 9)
+        rows = load_resources(now=datetime.fromisoformat('2026-09-19T23:59:59+08:00'))
+        self.assertEqual(len(rows), 10)
         self.assertTrue(all('start_time' not in r for r in rows))
-        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 7)
+        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 8)
         with self.assertRaises(ValueError):
             check_source_content(rows[0], '<p>展覽已結束，原台語資訊已移除</p>')
 
     def test_resources_are_visible_and_html_escaped(self):
-        rows = load_resources(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
+        rows = load_resources(now=datetime.fromisoformat('2026-09-19T23:59:59+08:00'))
         rows[0]['title'] = '<script>alert(1)</script>'
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / 'index.html'
             generate_single_html([], p, resources=rows)
             html = p.read_text()
-        self.assertIn('台語導覽、展覽佮閱讀資訊', html)
+        self.assertIn('台語導覽、展覽、閱讀佮傳統表演資訊', html)
+        self.assertIn('傳統表演資訊（語言依當日節目）', html)
         self.assertIn('&lt;script&gt;', html)
         self.assertNotIn('<script>alert(1)</script>', html)
 
     def test_library_resources_are_not_audio_guides_or_calendar_sessions(self):
-        rows = load_resources(now=datetime.fromisoformat('2026-09-18T23:59:59+08:00'))
+        rows = load_resources(now=datetime.fromisoformat('2026-09-19T23:59:59+08:00'))
         libraries = [r for r in rows if r['id'].startswith('tpml_')]
         self.assertEqual(len(libraries), 4)
         self.assertEqual({r['kind'] for r in libraries}, {'exhibition_resource', 'reading_resource'})

@@ -23,6 +23,24 @@ PRIVATE = {'facebook', 'instagram', 'threads'}
 MODE = 'official_rules_v1'
 
 
+def load_manual_decisions(root):
+    path = Path(root) / 'data/manual_candidate_decisions.json'
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text())
+    if data.get('schema_version') != 1 or not isinstance(data.get('decisions'), list):
+        raise ValueError('人工候選判讀格式錯誤')
+    rows = {}
+    for row in data['decisions']:
+        required = ('candidate_id', 'source_id', 'source_url', 'title', 'decision', 'reason', 'reviewed_at')
+        if not all(row.get(k) for k in required) or row['decision'] != 'excluded':
+            raise ValueError('人工候選判讀缺少必要欄位')
+        if row['candidate_id'] in rows:
+            raise ValueError('人工候選判讀 ID 重複')
+        rows[row['candidate_id']] = row
+    return rows
+
+
 def normalize(value):
     return re.sub(r'[^\w]', '', unicodedata.normalize('NFKC', value or '').replace('台', '臺')).lower()
 
@@ -199,6 +217,7 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
     catalog = json.loads(catalog_path.read_text())
     translations = json.loads((root / 'data/ui_taigi.json').read_text())
     prices = json.loads((root / 'data/ui_price_taigi.json').read_text())
+    manual = load_manual_decisions(root)
     decisions, seen = [], set()
     for number, c in enumerate(candidates, 1):
         item = {'candidate_id': c['id'], 'source_id': c['source_id'], 'source_url': c['source_url'],
@@ -209,6 +228,15 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item.update(decision='duplicate', reason='duplicate_candidate')
                 continue
             seen.add(identity)
+            manual_row = manual.get(c['id'])
+            if manual_row:
+                require(all(c[k] == manual_row[k] for k in ('source_id', 'source_url', 'title')),
+                        'manual_decision_identity_changed')
+                item.update(decision='excluded', reason=manual_row['reason'],
+                            review_mode='owner_feedback', reviewed_at=manual_row['reviewed_at'])
+                if manual_row.get('resource_id'):
+                    item['resource_id'] = manual_row['resource_id']
+                continue
             hint = dict(c['fields'], title=c['title'], source_url=c['source_url'])
             existing = duplicate(hint, catalog, str(c['fields'].get('session_id', '')) if c['source_id']=='opentix' else None)
             if existing:
