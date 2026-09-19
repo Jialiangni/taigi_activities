@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T19:38:10+08:00",
+  "reviewed_at": "2026-09-19T19:53:21+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T13:09:25+08:00",
   "candidate_count": 745,
@@ -3300,7 +3300,7 @@
       "source_url": "https://www.opentix.life/event/2085263749562839041",
       "title": "懷念的人 + 台語版預告",
       "decision": "pending",
-      "reason": "session_status_needs_review"
+      "reason": "session_missing"
     },
     {
       "candidate_id": "ba86950167fe61a6acf7abf2",
