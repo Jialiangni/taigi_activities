@@ -176,7 +176,7 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 
 目前無Meta授權，實跑是 **needs_configuration / 0候選**，4個目標逐一列於 `facebook.json` 及 `report.json` 的 `page_status`，不是「四個粉專都沒有活動」。目前106項測試通過（含11項留言／待查名單測試、2項去識別快照測試及人工核實／去重串接）；官方API仍待授權後實測。見[公開頁與待設定紀錄](data/audit/2026-09-18-facebook-watchlist-review.json)、[Meta官方Post SDK](https://github.com/facebook/facebook-python-business-sdk/blob/main/facebook_business/adobjects/post.py)及[留言介面文件](https://developers.facebook.com/docs/graph-api/reference/object/comments/)。
 
-原有artifact排除規則持續排除 `facebook.json`；只有 `facebook_review.json` 去識別快照交給後續核實。候選文案只概述粉專公開內容及連結狀態，缺少的活動欄位逐項標示未核實；Facebook快照固定為pending，不自動寫入正式活動或網站。
+原有artifact排除規則持續排除 `facebook.json`；只有 `facebook_review.json` 去識別快照交給後續核實。候選文案只概述粉專公開內容及連結狀態，缺少的活動欄位逐項標示未核實。粉專本人提供的OPENTIX活動連結會轉入相同的官方API／HTML嚴格核實：完整且仍有效者才自動刊登，過期與已刊登連結自動排除；其他平台連結、留言作者不明、缺連結、圖片或驗證失敗者保持pending。pending項目每日更新同一張「待判讀：Facebook 活動候選」GitHub Issue，列出貼文、連結、缺少欄位及候選ID；清空後自動關閉。
 
 
 ## 李江却基金會：公告正文與系列核實清單（2026-09-18）

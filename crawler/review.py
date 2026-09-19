@@ -124,6 +124,30 @@ class Pending(Exception):
     pass
 
 
+def facebook_official_candidates(candidate, client):
+    """Route trusted OPENTIX links from a Page snapshot into the strict verifier."""
+    context = candidate.get('review_context') or {}
+    links = context.get('discovered_links') or []
+    program_ids = []
+    for link in links:
+        if not isinstance(link, dict) or link.get('is_page_author') is not True:
+            continue
+        matched = re.fullmatch(r'https://www\.opentix\.life/event/(\d+)', source_url(link.get('url', '')))
+        if matched and matched.group(1) not in program_ids:
+            program_ids.append(matched.group(1))
+    rows = []
+    for program_id in program_ids:
+        data, evidence = client.json('https://csm.api.opentix.life/programs/' + program_id)
+        program = data.get('result') if isinstance(data, dict) else None
+        require(isinstance(program, dict) and str(program.get('id')) == program_id,
+                'facebook_official_program_identity_changed')
+        for row in parse_program(program, evidence):
+            row['issues'].append('discovered_from_facebook_page_official_link')
+            row['facebook_parent_candidate_id'] = candidate['id']
+            rows.append(row)
+    return rows
+
+
 def verify_opentix(candidate, client, now):
     url = candidate['source_url']
     require(re.fullmatch(r'https://www\.opentix\.life/event/\d+', url), 'unsupported_official_url')
@@ -215,6 +239,26 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
     catalog_path = root / 'data/verified_activities.json'
     load_verified(catalog_path, now=now)  # Never repair/bypass an invalid existing catalog.
     catalog = json.loads(catalog_path.read_text())
+    published_urls = {source_url(row['activity'].get('source_url', '')) for row in catalog['activities']}
+    expanded = []
+    for candidate_row in candidates:
+        expanded.append(candidate_row)
+        if candidate_row['source_id'] != 'facebook_review':
+            continue
+        context = candidate_row.get('review_context') or {}
+        if any(isinstance(link, dict) and link.get('is_page_author') is True
+               and source_url(link.get('url', '')) in published_urls
+               for link in context.get('discovered_links', [])):
+            continue
+        try:
+            routed = facebook_official_candidates(candidate_row, client)
+            candidate_row['_facebook_routed_count'] = len(routed)
+            expanded.extend(routed)
+        except (CollectionError, Pending, ValueError, KeyError, TypeError) as error:
+            candidate_row['_facebook_automation_error'] = (
+                error.code if isinstance(error, CollectionError) else str(error) if isinstance(error, Pending)
+                else type(error).__name__)
+    candidates = expanded
     translations = json.loads((root / 'data/ui_taigi.json').read_text())
     prices = json.loads((root / 'data/ui_price_taigi.json').read_text())
     manual = load_manual_decisions(root)
@@ -251,7 +295,19 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if matched:
                     item.update(decision='duplicate', reason='official_link_already_published', activity_id=matched)
                     continue
-                raise Pending('facebook_snapshot_needs_manual_review')
+                if c.get('_facebook_routed_count'):
+                    item.update(decision='routed', reason='official_opentix_link_routed_to_automatic_verification',
+                                routed_session_count=c['_facebook_routed_count'])
+                    continue
+                if c.get('_facebook_automation_error'):
+                    raise Pending('official_link_verification_failed:' + c['_facebook_automation_error'])
+                trusted = [link for link in context['discovered_links'] if isinstance(link, dict)
+                           and link.get('is_page_author') is True]
+                if trusted:
+                    raise Pending('official_link_adapter_not_available')
+                if context['discovered_links']:
+                    raise Pending('comment_link_authorship_needs_review')
+                raise Pending('official_event_link_missing')
             hint = dict(c['fields'], title=c['title'], source_url=c['source_url'])
             existing = duplicate(hint, catalog, str(c['fields'].get('session_id', '')) if c['source_id']=='opentix' else None)
             if existing:

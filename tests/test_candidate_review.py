@@ -143,7 +143,8 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(self.client.calls, [])
 
     def test_facebook_snapshot_stays_pending_and_official_link_deduplicates(self):
-        context = {'discovered_links': [{'url': URL, 'origin': 'comment', 'is_page_author': True}],
+        context = {'discovered_links': [{'url': 'https://example.org/clue', 'origin': 'comment',
+                                         'is_page_author': None}],
                    'draft': {'title': '粉專公告', 'description': '候選摘要',
                              'unverified_fields': ['start_time']}}
         candidate = {'id': 'fb-safe', 'source_id': 'facebook_review',
@@ -156,13 +157,20 @@ class CandidateReviewTests(unittest.TestCase):
             {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
         result = self.run_review()
         self.assertEqual(result['counts'], {'pending': 1})
-        self.assertEqual(result['decisions'][0]['reason'], 'facebook_snapshot_needs_manual_review')
+        self.assertEqual(result['decisions'][0]['reason'], 'comment_link_authorship_needs_review')
         self.assertEqual(result['decisions'][0]['review_context'], context)
         self.assertEqual(self.client.calls, [])
         self.assertEqual(json.loads((self.root/'data/verified_activities.json').read_text())['activities'], [])
 
-        self.save_candidates()
-        self.run_review()
+        context['discovered_links'] = [{'url': URL, 'origin': 'comment', 'is_page_author': True}]
+        self.write('candidates/facebook_review.json',
+                   {'source_id': 'facebook_review', 'candidates': [candidate]})
+        result = self.run_review()
+        self.assertEqual(result['counts'], {'routed': 1, 'approved': 1})
+        self.assertEqual(result['decisions'][0]['reason'],
+                         'official_opentix_link_routed_to_automatic_verification')
+        self.assertEqual(len(json.loads((self.root/'data/verified_activities.json').read_text())['activities']), 1)
+
         self.client.calls.clear()
         self.write('candidates/facebook_review.json',
                    {'source_id': 'facebook_review', 'candidates': [candidate]})
