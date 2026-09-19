@@ -104,7 +104,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     </div>
   </header>
   <section class="container intro">
-    <h1>後一場，台語相見。</h1>
+    <h1>講Tâigí 真歡喜</h1>
     <p>臺北、新北、桃園，做伙來講台語。</p>
     <details class="source-note"><summary>活動資料按怎收錄</summary><p>干焦列有核對官方公告的場次；猶未核實的資料暫時無刊。所費猶未公告的，無算入毋免錢抑是愛納錢的篩選。日期佮時間攏是臺灣時間，出門進前請閣看一擺官方公告。 <a href="#guideResources">導覽、展覽、閱讀佮傳統表演資訊 ↓</a></p></details>
     <div hidden><span id="statTotal"></span><span id="statTaipei"></span><span id="statNewTaipei"></span><span id="statTaoyuan"></span><span id="statFree"></span></div>
