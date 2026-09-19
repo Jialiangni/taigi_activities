@@ -125,5 +125,3 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
 :root[data-theme=dark]{--filter-selected-bg:#fff;--filter-selected-text:#000}
 .filter-row .pill[aria-pressed="true"],.month-options .pill[aria-pressed="true"]{background-color:var(--filter-selected-bg);color:var(--filter-selected-text);background-image:none}
 .filter-row .pill[aria-pressed=true] .badge-city{background:transparent;color:inherit}
-.apple-calendar-action{display:flex;flex-direction:column;gap:8px;flex:1 1 100%;min-width:0}
-.apple-calendar-help{font-size:13px;line-height:1.6;color:var(--text-muted);white-space:pre-line}

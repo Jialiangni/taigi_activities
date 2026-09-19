@@ -29,13 +29,6 @@ def fold_line(line):
 
 
 class GoogleWorkspaceSync:
-    APPLE_IMPORT_GUIDE = (
-        '【加入 Apple 日曆：兩步驟】\n'
-        '第一步：先看預覽，猶未加入日曆。右上角 ✓ 干焦關閉預覽。\n'
-        '請按下跤的「Add to Calendar」，進入第二步。\n'
-        '第二步：確認日曆，閣按「Add／加入」才完成。\n'
-        '這段操作說明會保留佇活動備註。'
-    )
     HEADER = ('BEGIN:VCALENDAR\r\nVERSION:2.0\r\n'
               'PRODID:-//Taigi Activities//Verified Calendar//ZH_TW\r\n'
               'CALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n'
@@ -55,15 +48,13 @@ class GoogleWorkspaceSync:
         # Stable, URL-safe names never interpret source IDs as filesystem paths.
         return sha256(act.id.encode('utf-8')).hexdigest() + '.ics'
 
-    def event_content(self, act, preview_help=False):
+    def event_content(self, act):
         stamp = act.raw_metadata.get('verified_at') or datetime.now(timezone.utc).isoformat()
         lines = ['BEGIN:VEVENT', f'UID:{act.id}@taigiactivities.tw',
                  f'DTSTAMP:{utc_stamp(stamp)}', f'DTSTART:{utc_stamp(act.start_time)}']
         if act.end_time:
             lines.append(f'DTEND:{utc_stamp(act.end_time)}')
         description = act.description + chr(10) + act.price_info + chr(10) + act.source_url
-        if preview_help:
-            description = self.APPLE_IMPORT_GUIDE + '\n\n' + description
         lines.extend([
             f'SUMMARY:{ics_text(session_title(act.title))}',
             f'DESCRIPTION:{ics_text(description)}',
@@ -72,8 +63,8 @@ class GoogleWorkspaceSync:
         ])
         return '\r\n'.join(fold_line(line) for line in lines) + '\r\n'
 
-    def export_ics(self, activities, output_path='taigi_activities.ics', preview_help=False):
-        content = self.HEADER + ''.join(self.event_content(a, preview_help=preview_help) for a in activities) + 'END:VCALENDAR\r\n'
+    def export_ics(self, activities, output_path='taigi_activities.ics'):
+        content = self.HEADER + ''.join(self.event_content(a) for a in activities) + 'END:VCALENDAR\r\n'
         Path(output_path).write_bytes(content.encode('utf-8'))
         return str(output_path)
 

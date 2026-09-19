@@ -234,12 +234,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             📅 加到 Google 日曆 (Android 推薦)
           </a>
-          <div class="apple-calendar-action">
-            <a id="modalSingleIcsBtn" class="btn btn-light" aria-describedby="appleCalendarHelp" style="color:var(--text-main); border-color:var(--border-color);">
-              🍏 Apple 日曆：先看預覽
-            </a>
-            <p id="appleCalendarHelp" class="apple-calendar-help">{escape(g_sync.APPLE_IMPORT_GUIDE)}</p>
-          </div>
+          <a id="modalSingleIcsBtn" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
+            🍏 加到 Apple 日曆 (.ics)
+          </a>
           <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share" style="border:none;">
             📤 分享到 LINE / 社群
           </button>
@@ -703,7 +700,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       // A real calendar URL lets iPhone Safari hand off to Calendar instead of
       // trying to download a temporary blob. The standalone HTML uses the live site.
       document.getElementById('modalSingleIcsBtn').href =
-        (location.protocol === 'file:' ? 'https://jialiangni.github.io/taigi_activities/' : '') + act.ics_path + '?preview=1';
+        (location.protocol === 'file:' ? 'https://jialiangni.github.io/taigi_activities/' : '') + act.ics_path + '?v=plain-notes-2';
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
       openOverlay('eventModal');

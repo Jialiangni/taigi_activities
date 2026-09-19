@@ -191,19 +191,9 @@ class VerifiedCalendarTests(unittest.TestCase):
         self.assertEqual(len(list((out / 'calendar-events').glob('*.ics'))), len(events))
         for event, row in zip(events, rows):
             raw = (out / row['ics_path']).read_bytes()
-            self.assertEqual(raw, (sync.HEADER + sync.event_content(event, preview_help=True) + 'END:VCALENDAR\r\n').encode())
+            self.assertEqual(raw, (sync.HEADER + sync.event_content(event) + 'END:VCALENDAR\r\n').encode())
             self.assertEqual(raw.count(b'BEGIN:VEVENT'), 1)
             self.assertNotIn(b'\n', raw.replace(b'\r\n', b''))
-            original_lines = sync.event_content(event).replace('\r\n ', '').split('\r\n')
-            guided_lines = raw.decode().replace('\r\n ', '').split('\r\n')
-            original_description = next(line for line in original_lines if line.startswith('DESCRIPTION:'))
-            guided_description = next(line for line in guided_lines if line.startswith('DESCRIPTION:'))
-            self.assertTrue(guided_description.endswith(original_description[len('DESCRIPTION:'):]))
-            self.assertIn(ics_text(sync.APPLE_IMPORT_GUIDE), guided_description)
-            for line in original_lines:
-                if not line.startswith('DESCRIPTION:'):
-                    self.assertIn(line, guided_lines)
-        self.assertNotIn(ics_text(sync.APPLE_IMPORT_GUIDE), (out / 'taigi_activities.ics').read_text().replace('\n ', ''))
         with patch('main.load_verified', return_value=events[:1]), patch('main.load_resources', return_value=[]):
             build(out)
         self.assertEqual([p.name for p in (out / 'calendar-events').iterdir()], [sync.single_event_filename(events[0])])
