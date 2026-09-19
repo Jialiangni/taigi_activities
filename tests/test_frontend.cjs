@@ -72,6 +72,16 @@ if (data.length) {
   assert.equal(element('modalTicketLink').textContent,'🌐 活動公告 ↗');
   assert.equal(element('modalGoogleSearchLink').innerHTML,'🔍 Google 揣報名／買票 ↗');
 }
+// Missing translation must retain the supplied description, including literal markup.
+run(`
+  const fallbackBase = ACTIVITIES_DATA[0];
+  ACTIVITIES_DATA.push({...fallbackBase, id:'intro-fallback-test', description_taigi:'',
+    description:'官方提供的活動介紹 <不可變成 HTML>'});
+  openModal('intro-fallback-test');
+`);
+assert.ok(element('modalDesc').innerText.startsWith('簡介原文：官方提供的活動介紹 <不可變成 HTML>'));
+assert.doesNotMatch(element('modalDesc').innerText,/猶待整理/);
+run("ACTIVITIES_DATA.pop()");
 const registrationEvent=data.find(a=>a.source_platform==='台語站' && a.registration_url);
 assert.ok(registrationEvent);
 run(`openModal(${JSON.stringify(registrationEvent.id)})`);

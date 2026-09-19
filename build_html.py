@@ -725,7 +725,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalVenue').innerText = act.venue + (act.address ? ` (${{act.address}})` : '');
       document.getElementById('modalOrganizer').innerText = act.organizer;
       document.getElementById('modalPrice').innerText = act.price_info_taigi || '所費說明猶待整理';
-      document.getElementById('modalDesc').innerText = (act.description_taigi || '活動紹介猶待整理') + '\\n\\n官方資料確認：' + act.raw_metadata.verified_at.slice(0, 10) + '。欲出門進前，請閣看一擺官方最新公告。';
+      document.getElementById('modalDesc').innerText = (act.description_taigi || (act.description ? '簡介原文：' + act.description : '活動紹介猶待整理')) + '\\n\\n官方資料確認：' + act.raw_metadata.verified_at.slice(0, 10) + '。欲出門進前，請閣看一擺官方最新公告。';
 
       const cleanTitle = act.title.replace(/[【】《》「」]/g, ' ').trim();
       const searchQuery = encodeURIComponent(`${{cleanTitle}} ${{act.organizer}} 台語 報名 售票`);

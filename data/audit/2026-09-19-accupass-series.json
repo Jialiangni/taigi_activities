@@ -1,0 +1,94 @@
+{
+  "source_evidence": {
+    "url": "https://www.accupass.com/event/2606300741301758195196",
+    "final_url": "https://www.accupass.com/event/2606300741301758195196",
+    "http_status": 200,
+    "request_method": "GET",
+    "fetched_at": "2026-09-19T20:46:40+08:00",
+    "sha256": "8556bf81ae601b6202424e2da2b0ea4c63dfe5d7cf05eeb22ce9195f7477022a"
+  },
+  "activity_id": "acc_2606300741301758195196_20260920_1500",
+  "sessions": [
+    {
+      "start_time": "2026-07-18T15:00:00+08:00",
+      "end_time": "2026-07-18T16:00:00+08:00",
+      "date_text": "07月18日（六）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-07-19T15:00:00+08:00",
+      "end_time": "2026-07-19T16:00:00+08:00",
+      "date_text": "07月19日（日）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-08-09T15:00:00+08:00",
+      "end_time": "2026-08-09T16:00:00+08:00",
+      "date_text": "08月09日（日）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-08-22T15:00:00+08:00",
+      "end_time": "2026-08-22T16:00:00+08:00",
+      "date_text": "08月22日（六）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-08-23T15:00:00+08:00",
+      "end_time": "2026-08-23T16:00:00+08:00",
+      "date_text": "08月23日（日）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-09-05T15:00:00+08:00",
+      "end_time": "2026-09-05T16:00:00+08:00",
+      "date_text": "09月05日（六）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-09-19T15:00:00+08:00",
+      "end_time": "2026-09-19T16:00:00+08:00",
+      "date_text": "09月19日（六）",
+      "time_text": "15:00-16:00"
+    },
+    {
+      "start_time": "2026-09-20T15:00:00+08:00",
+      "end_time": "2026-09-20T16:00:00+08:00",
+      "date_text": "09月20日（日）",
+      "time_text": "15:00-16:00"
+    }
+  ],
+  "session_count": 8,
+  "expired_count": 7,
+  "future_count": 1,
+  "published_session_ids": [
+    "acc_2606300741301758195196_20260920_1500"
+  ],
+  "new_activities_added": 0,
+  "description": "在臺灣新文化運動紀念館內進行的沉浸式台語戲劇導覽，跟隨博士走進1920年代臺灣新文化運動的歷史故事。適合國小中高年級以上，歡迎親子同行。每場60人，免費，採線上報名優先；每位觀眾皆需持票入場，請提前10分鐘報到。",
+  "description_taigi": "這場佇臺灣新文化運動紀念館內底演出，全程用台語。觀眾會綴博士的跤步，行入1920年代臺灣新文化運動的故事。適合國小中高年級以上參加，歡迎親子做伙來。每場60人，毋免錢，網路報名優先；每一个人攏愛持票入場，請提早10分鐘報到。",
+  "cause": [
+    "all series previously sent to manual review",
+    "modal hid original description when translation absent"
+  ],
+  "dictionary_checks": [
+    {
+      "word": "綴",
+      "reading": "tuè/tè",
+      "meaning": "跟、隨",
+      "url": "https://www.moedict.tw/t/%E7%B6%B4.json"
+    },
+    {
+      "word": "跤步",
+      "reading": "kha-pōo",
+      "meaning": "腳步；步伐",
+      "url": "https://www.moedict.tw/t/%E8%B7%A4%E6%AD%A5.json"
+    },
+    {
+      "word": "網路",
+      "reading": "bāng-lōo",
+      "meaning": "電腦網路",
+      "url": "https://www.moedict.tw/t/%E7%B6%B2%E8%B7%AF.json"
+    }
+  ]
+}

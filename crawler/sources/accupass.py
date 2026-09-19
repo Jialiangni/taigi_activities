@@ -1,5 +1,6 @@
 """ACCUPASS public website search POST + event-page JSON-LD, pending review."""
 import re
+from datetime import datetime
 from ..posters import poster_fields
 
 from ..collection import Collector, CollectionError, Result, Document, candidate, local_time, city_of, plain, KEYWORDS, relevant
@@ -44,6 +45,88 @@ def parse_schedule(html, event):
     return rows
 
 
+def table_schedule(html, event):
+    """Certify only complete date/time tables sharing one event location.
+
+    Discovery can retain other formats; those must not silently become verified
+    sessions. Explicit row/column spans are expanded before interpreting cells.
+    """
+    start, end = local_time(event.get('startDate')), local_time(event.get('endDate'))
+    if not start or not end:
+        return [], 'period_missing'
+    if not (0 <= int(end[:4]) - int(start[:4]) <= 2):
+        return [], 'period_too_long_or_reversed'
+    rows = []
+    for table in Document(html).root.all('table'):
+        pending, grid = {}, []
+        for tr in table.all('tr'):
+            cells = {col:text for col,(text,_) in pending.items()}
+            pending = {col:(text,count-1) for col,(text,count) in pending.items() if count>1}
+            col = 0
+            for cell in (n for n in tr.children if hasattr(n,'tag') and n.tag in ('td','th')):
+                while col in cells: col += 1
+                try:
+                    height, width = int(cell.attrs.get('rowspan',1)), int(cell.attrs.get('colspan',1))
+                except ValueError:
+                    return [], 'invalid_table_span'
+                if not (1 <= height <= 100 and 1 <= width <= 10):
+                    return [], 'invalid_table_span'
+                for c in range(col,col+width):
+                    cells[c] = cell.text().strip()
+                    if height>1: pending[c]=(cells[c],height-1)
+                col += width
+            grid.append([cells.get(c,'') for c in range(max(cells,default=-1)+1)])
+        if not grid: continue
+        headers = grid[0]
+        if not ('日期' in headers and '時間' in headers): continue
+        if pending: return [], 'incomplete_schedule_row'
+        if len(headers) != len(set(headers)): return [], 'ambiguous_schedule_headers'
+        if any(h not in ('月份','日期','時間','場次') for h in headers):
+            return [], 'per_session_fields_need_review'
+        di, ti = headers.index('日期'), headers.index('時間')
+        for values in grid[1:]:
+            if values == headers: continue
+            if len(values) != len(headers): return [], 'incomplete_schedule_row'
+            d = re.fullmatch(r'(?:(20\d{2})[年/.\-])?(\d{1,2})[月/.\-](\d{1,2})日?\s*(?:[（(](?:星期|週)?([一二三四五六日天])[）)])?', values[di])
+            t = re.fullmatch(r'(\d{1,2}):(\d{2})\s*[-–－~～]\s*(\d{1,2}):(\d{2})',values[ti])
+            if not d or not t: return [], 'incomplete_schedule_row'
+            possible = []
+            for year in range(int(start[:4]),int(end[:4])+1):
+                if d[1] and int(d[1]) != year: continue
+                try:
+                    day = datetime(year,int(d[2]),int(d[3]))
+                    date = day.strftime('%Y-%m-%d')
+                    a = local_time(date+'T'+t[1].zfill(2)+':'+t[2]+':00+08:00')
+                    b = local_time(date+'T'+t[3].zfill(2)+':'+t[4]+':00+08:00')
+                    if a and b and start <= a < b <= end:
+                        if d[4] and '一二三四五六日'[day.weekday()] != d[4].replace('天','日'):
+                            return [], 'weekday_mismatch'
+                        possible.append({'start_time':a,'end_time':b,'date_text':values[di], 'time_text':values[ti]})
+                except ValueError: pass
+            if len(possible)!=1: return [], 'ambiguous_or_outside_period'
+            if any(r['start_time']==possible[0]['start_time'] for r in rows):
+                return [], 'duplicate_schedule_start'
+            rows.extend(possible)
+    if not rows: return [], 'explicit_date_time_table_missing'
+    if min(r['start_time'] for r in rows)[:10]!=start[:10] or max(r['end_time'] for r in rows)[:10]!=end[:10]:
+        return [], 'schedule_does_not_cover_period'
+    return rows, ''
+
+
+def activity_intro(event):
+    """Keep a bounded publisher introduction, not navigation or ticket boilerplate."""
+    value = plain(event.get('description') or '')
+    # Do not use whole-page text: it can include navigation, ads and ticket terms.
+    if not value:
+        return ''
+    sentences = re.split(r'(?<=[。！？!?])\s*',value)
+    result = ''
+    for sentence in sentences[:3]:
+        if len(result+sentence)>160: break
+        result += sentence
+    return result or value[:160]
+
+
 def parse_event(html, url, evidence):
     doc = Document(html)
     rows = []
@@ -59,11 +142,16 @@ def parse_event(html, url, evidence):
         offers = offers if isinstance(offers, list) else [offers]
         prices = [o.get('price') for o in offers if isinstance(o, dict) and o.get('price') is not None]
         sessions = parse_schedule(html, event)
+        schedule_rows, schedule_issue = table_schedule(html, event)
+        if schedule_rows:
+            sessions = [{k: r[k] for k in ('start_time','end_time')} for r in schedule_rows]
         fields = {'start_time': local_time(event.get('startDate')), 'end_time': local_time(event.get('endDate')),
                   'venue': location.get('name'), 'address': address, 'city': city_of(address),
                   'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
                   'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus'),
-                  'sessions': sessions, **poster_fields(html, url)}
+                  'sessions': sessions, 'schedule_rows':schedule_rows,
+                  'schedule_issue':schedule_issue, 'official_summary':activity_intro(event),
+                  **poster_fields(html, url)}
         # Aggregate schema dates do not establish individual session dates or universal free admission.
         issues = ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms']
         if sessions:

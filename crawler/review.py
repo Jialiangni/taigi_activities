@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
-from .collection import Client, CollectionError, TAIPEI, plain
+from .collection import Client, CollectionError, TAIPEI, plain, candidate as make_candidate
 from .models import Activity, CategoryEnum, SourcePlatformEnum
 from .sources.accupass import parse_event as parse_accupass_event
 from .sources.opentix import parse_program
@@ -135,6 +135,63 @@ def accupass_language_claim(title, text):
     return None
 
 
+def accupass_series_claims(live):
+    """Require declarations applying to the whole series, not a title keyword."""
+    text = live['text']
+    require(not re.search(r'已取消|取消場次|活動已延期|延期至|改期至|部分場次|限定場次|非[台臺]語|華語場|英語場', text),
+            'series_status_or_language_needs_review')
+    language = re.search(r'(?:本活動|所有場次|各場次)(?:皆|均)?全程(?:以|使用|用)(?:臺灣)?[台臺]語(?:演出|進行|導覽|講述)(?:為主)?', text)
+    require(language, 'explicit_series_language_missing')
+    free = re.search(r'活動費用\s*[｜|：:]\s*免費(?:[，,；;。]|$)', text)
+    require(free and not re.search(r'(?:材料費|報名費|入場費|票價)\s*[｜|：:]?\s*(?:NT\$|[＄$])?\s*[1-9]\d*', text),
+            'series_ticket_terms_need_review')
+    require(not re.search(r'(?:材料|報名|入場)(?:費)?(?:另計|另收|自付)|(?:語言|發音)\s*[：:]\s*(?:華語|英語|日語)', text),
+            'series_terms_conflict')
+    require(all(str(price) in ('0', '0.0', '0.00') for price in live['fields'].get('price_info') or []),
+            'series_offer_price_conflict')
+    return language.group(0), free.group(0)
+
+
+def accupass_series_candidates(parent, client):
+    url = source_url(parent['source_url'])
+    require(re.fullmatch(r'https://www\.accupass\.com/event/\d+', url), 'unsupported_official_url')
+    html, evidence = client.get(url)
+    require(evidence['final_url'] == url, 'official_page_redirected')
+    rows = parse_accupass_event(html, url, evidence)
+    require(len(rows) == 1, 'program_identity_changed')
+    live = rows[0]
+    require(normalize(live['title']) == normalize(parent['title']), 'candidate_title_changed')
+    fields = live['fields']
+    require(fields.get('schedule_rows') and not fields.get('schedule_issue'),
+            'series_schedule:' + fields.get('schedule_issue', 'missing'))
+    accupass_series_claims(live)
+    children = []
+    for session in fields['schedule_rows']:
+        child_fields = dict(fields, start_time=session['start_time'], end_time=session['end_time'],
+                            series_session=True)
+        child_fields.pop('sessions', None)
+        child = make_candidate('accupass', url, live['title'], live['text'], evidence,
+                               child_fields, 'session', key=url + ':' + session['start_time'])
+        child['series_parent_candidate_id'] = parent['id']
+        children.append(child)
+    return children
+
+
+def accupass_session_fields(live, expected, series):
+    fields = dict(live['fields'])
+    if series:
+        require(fields.get('schedule_rows') and not fields.get('schedule_issue'), 'series_schedule_needs_review')
+        session = next((row for row in fields['schedule_rows']
+                        if all(row.get(k) == expected.get(k) for k in ('start_time', 'end_time'))), None)
+        require(session, 'accupass_session_changed')
+        fields.update({k: session[k] for k in ('start_time', 'end_time')})
+    else:
+        require(live['kind'] == 'event_period' and not fields.get('sessions')
+                and fields.get('schedule_issue') == 'explicit_date_time_table_missing',
+                'accupass_series_needs_review')
+    return fields
+
+
 def validate_auto_source(source, program, html=None, client=None):
     """Recheck frozen language/status evidence on every future public build."""
     proof = source.get('automated_review', {})
@@ -143,13 +200,16 @@ def validate_auto_source(source, program, html=None, client=None):
         rows = parse_accupass_event(html, source['url'], {})
         require(len(rows) == 1, 'accupass_identity_changed')
         live = rows[0]
-        require(live['kind'] == 'event_period' and not live['fields'].get('sessions'),
-                'accupass_series_needs_review')
-        require(all(live['fields'].get(k) == proof['session'].get(k) for k in
+        series = bool(proof.get('series_schedule'))
+        fields = accupass_session_fields(live, proof['session'], series)
+        if series:
+            require(fields['schedule_rows'] == proof['series_schedule'], 'accupass_schedule_changed')
+        require(all(fields.get(k) == proof['session'].get(k) for k in
                     ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')),
                 'accupass_session_changed')
         require(normalize(live['title']) == normalize(source['title']), 'accupass_title_changed')
-        quote = accupass_language_claim(live['title'], live['text'])
+        quote = (accupass_series_claims(live)[0] if series else
+                 accupass_language_claim(live['title'], live['text']))
         require(quote == proof['language_claims'][0]['quote'], 'accupass_language_changed')
         require(proof['free_evidence'] in live['text'], 'accupass_price_changed')
         return
@@ -235,7 +295,7 @@ def trusted_registration_link(value):
 
 
 def verify_accupass(candidate, client, now):
-    """Auto-verify only a single, explicitly labelled Taigi session with explicit free admission."""
+    """Verify an explicit single session or one certified row in an all-Taigi series."""
     url = source_url(candidate['source_url'])
     matched = re.fullmatch(r'https://www\.accupass\.com/event/(\d+)', url)
     require(matched, 'unsupported_official_url')
@@ -244,9 +304,8 @@ def verify_accupass(candidate, client, now):
     rows = parse_accupass_event(html, url, page)
     require(len(rows) == 1, 'program_identity_changed')
     live = rows[0]
-    require(live['kind'] == 'event_period' and not live['fields'].get('sessions'),
-            'series_or_duration_needs_review')
-    f = live['fields']
+    series = candidate['fields'].get('series_session') is True
+    f = accupass_session_fields(live, candidate['fields'], series)
     require(f['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
     require(f['start_time'] and f['end_time'], 'missing_session_times')
     start, end = parse_time(f['start_time']), parse_time(f['end_time'])
@@ -258,16 +317,19 @@ def verify_accupass(candidate, client, now):
     require(all(candidate['fields'].get(k) == f.get(k) for k in
                 ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')),
             'candidate_session_changed')
-    quote = accupass_language_claim(live['title'], live['text'])
-    require(quote, 'explicit_session_language_missing')
-    free = re.search(r'(?:本活動[^。\n]{0,40})?免費報名', live['text'])
-    require(free, 'ticket_terms_need_review')
-    free_evidence = free.group(0)
+    if series:
+        quote, free_evidence = accupass_series_claims(live)
+    else:
+        quote = accupass_language_claim(live['title'], live['text'])
+        require(quote, 'explicit_session_language_missing')
+        free = re.search(r'(?:本活動[^。\n]{0,40})?免費報名', live['text'])
+        require(free, 'ticket_terms_need_review')
+        free_evidence = free.group(0)
     title = live['title']
     category = CategoryEnum.TOUR if re.search(r'導覽|走讀', title + live['text'][:500]) else CategoryEnum.OTHER
     event_id = matched.group(1)
     act = Activity(id='acc_' + event_id + '_' + start.strftime('%Y%m%d_%H%M'), title=title,
-                   description='官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。',
+                   description=f.get('official_summary') or '官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。',
                    city=f['city'], category=category, start_time=f['start_time'], end_time=f['end_time'],
                    venue=f['venue'], address=f['address'], organizer=f['organizer'],
                    source_platform=SourcePlatformEnum.ACCUPASS, source_url=url,
@@ -276,15 +338,18 @@ def verify_accupass(candidate, client, now):
                    tags=['台語', '官方資料自動核實']).to_dict()
     session = {k: f[k] for k in
                ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')}
-    key = 'auto_acc_' + event_id
+    key = 'auto_acc_' + event_id + ('_series_' + start.strftime('%Y%m%d_%H%M') if series else '')
     source = {'url': url, 'title': title, 'required_text': [title, f['venue'], quote, free_evidence],
               'checked_at': page['fetched_at'], 'snapshot_sha256': page['sha256'],
               'automated_review': {'mode': MODE, 'source_type': 'accupass',
                                    'language_claims': [{'origin': 'official_page', 'quote': quote}],
                                    'free_evidence': free_evidence, 'session': session}}
+    if series:
+        source['automated_review']['series_schedule'] = f['schedule_rows']
     row = {'activity': act, 'verification': {'status': 'verified', 'source_id': key,
            'mode': MODE,
-           'method': 'ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。',
+           'method': ('ACCUPASS 官方完整場次表逐場核對；全程台語、日期、時間、地點、主辦及免費。' if series else
+                      'ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。'),
            'language_evidence': quote,
            'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
     return key, source, row
@@ -545,7 +610,12 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 continue
             if c['source_id'] == 'accupass':
                 if c.get('fields', {}).get('sessions'):
-                    raise Pending('structured_sessions_need_review')
+                    children = accupass_series_candidates(c, client)
+                    require(len(candidates) + len(children) <= 20000, 'too_many_candidates')
+                    candidates.extend(children)
+                    item.update(decision='routed', reason='explicit_series_table_split',
+                                routed_session_count=len(children))
+                    continue
                 key, source, row = verify_accupass(c, client, now)
             elif c['source_id'] == 'gameislearning':
                 key, source, row = verify_gameislearning(c, client, now)
@@ -576,7 +646,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 source['automated_review']['sessions'] = old['automated_review']['sessions'] + source['automated_review']['sessions']
             catalog['sources'][key] = source
             catalog['activities'].append(row)
-            translations[a['description']] = '這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。'
+            if a['description'] == '官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。':
+                translations[a['description']] = '這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。'
             if c['source_id'] == 'opentix':
                 translations[a['description']] = '這場有台語內容。詳細節目紹介、入場規定佮報名狀況，請看活動公告。'
                 amounts = '、'.join(format(p, 'g') for p in source['opentix_sessions'][-1]['price_info'])
@@ -591,7 +662,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                                            '愛納錢，金額佮報名方式請看活動公告' if a['is_free'] is False else
                                            '所費猶未公告，請看活動公告')
             item.update(decision='approved',
-                        reason=('official_page_single_session_verified' if c['source_id'] == 'accupass'
+                        reason=(('official_page_series_session_verified' if c['fields'].get('series_session') else
+                                 'official_page_single_session_verified') if c['source_id'] == 'accupass'
                                 else 'trusted_taigi_directory_session_verified' if c['source_id'] == 'gameislearning'
                                 else 'official_page_and_session_api_verified'), activity_id=a['id'])
         except Pending as e:
