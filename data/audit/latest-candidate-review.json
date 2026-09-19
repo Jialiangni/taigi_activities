@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T10:57:04+08:00",
+  "reviewed_at": "2026-09-19T11:07:59+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T06:19:37+08:00",
   "candidate_count": 688,
   "counts": {
-    "pending": 643,
+    "pending": 639,
     "duplicate": 43,
-    "excluded": 2
+    "excluded": 6
   },
   "collection_status_counts": {
     "ok": 32,
@@ -4894,24 +4894,30 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2057004988266651648",
       "title": "明華園戲劇總團《貓．阿修羅》",
-      "decision": "pending",
-      "reason": "change_notice_needs_review"
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "review_mode": "owner_feedback",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
     },
     {
       "candidate_id": "65bf0a26ed564d46921e9c04",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2057004988266651648",
       "title": "明華園戲劇總團《貓．阿修羅》",
-      "decision": "pending",
-      "reason": "change_notice_needs_review"
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "review_mode": "owner_feedback",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
     },
     {
       "candidate_id": "99542236f6b6073508bdd24e",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2057004988266651648",
       "title": "明華園戲劇總團《貓．阿修羅》",
-      "decision": "pending",
-      "reason": "change_notice_needs_review"
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "review_mode": "owner_feedback",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
     },
     {
       "candidate_id": "1ed312c294d17e93c0ac8f72",
@@ -5190,8 +5196,10 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2064223639747211265",
       "title": "2026新莊有好戲《劉廷英賣身》",
-      "decision": "pending",
-      "reason": "change_notice_needs_review"
+      "decision": "excluded",
+      "reason": "owner_feedback_taigi_but_too_near_to_publish",
+      "review_mode": "owner_feedback",
+      "reviewed_at": "2026-09-19T11:07:23+08:00"
     },
     {
       "candidate_id": "cd9d2ca95717a36377f45b46",
