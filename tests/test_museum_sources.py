@@ -34,9 +34,10 @@ class MuseumTests(unittest.TestCase):
 
     def test_resource_expiry_and_no_calendar_fields(self):
         rows = load_resources(now=datetime.fromisoformat('2026-09-19T23:59:59+08:00'))
-        self.assertEqual(len(rows), 10)
+        self.assertEqual(len(rows), 9)
+        self.assertNotIn('taipeieye_traditional_performance_2026', {r['id'] for r in rows})
         self.assertTrue(all('start_time' not in r for r in rows))
-        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 8)
+        self.assertEqual(len(load_resources(now=datetime.fromisoformat('2026-12-07T00:00:00+08:00'))), 7)
         with self.assertRaises(ValueError):
             check_source_content(rows[0], '<p>展覽已結束，原台語資訊已移除</p>')
 
@@ -48,7 +49,7 @@ class MuseumTests(unittest.TestCase):
             generate_single_html([], p, resources=rows)
             html = p.read_text()
         self.assertIn('台語導覽、展覽、閱讀佮傳統表演資訊', html)
-        self.assertIn('傳統表演資訊（語言依當日節目）', html)
+        self.assertNotIn('臺北戲棚', html)
         self.assertIn('&lt;script&gt;', html)
         self.assertNotIn('<script>alert(1)</script>', html)
 
