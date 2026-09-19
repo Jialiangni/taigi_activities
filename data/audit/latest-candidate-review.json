@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T11:17:10+08:00",
+  "reviewed_at": "2026-09-19T11:23:39+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T06:19:37+08:00",
   "candidate_count": 688,
@@ -4668,10 +4668,9 @@
       "source_url": "https://www.opentix.life/event/1863403624657735681",
       "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
       "decision": "excluded",
-      "reason": "owner_feedback_published_as_non_session_resource",
+      "reason": "owner_feedback_primarily_beijing_opera_not_taigi_resource",
       "review_mode": "owner_feedback",
-      "reviewed_at": "2026-09-19T10:52:28+08:00",
-      "resource_id": "taipeieye_traditional_performance_2026"
+      "reviewed_at": "2026-09-19T11:21:49+08:00"
     },
     {
       "candidate_id": "c5e710f098608c6e71021d4e",
