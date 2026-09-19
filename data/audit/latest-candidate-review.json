@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T10:22:09+08:00",
+  "reviewed_at": "2026-09-19T10:28:14+08:00",
+  "applied_to_catalog": true,
   "collected_at": "2026-09-19T06:19:37+08:00",
   "candidate_count": 688,
   "counts": {
-    "pending": 641,
-    "duplicate": 14,
-    "approved": 33
+    "pending": 645,
+    "duplicate": 43
   },
   "collection_status_counts": {
     "ok": 32,
@@ -37,9 +37,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608270744575474894310",
       "title": "台語兒少讀劇工作坊—數念的厝",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2608270744575474894310_20260920_1000"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
     },
     {
       "candidate_id": "cd897e6b5bed2112f45e8671",
@@ -62,9 +61,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609030741412898282180",
       "title": "思念ê聲—台語作詞工作坊／楊肅浩老師",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2609030741412898282180_20260926_1000"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
     },
     {
       "candidate_id": "922de7ea9931d58bc3ba5728",
@@ -152,9 +150,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608051357275636349740",
       "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2608051357275636349740_20260919_1000"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
     },
     {
       "candidate_id": "a8a6b958ba960f29ee32f50b",
@@ -201,9 +198,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609080954292886555710",
       "title": "寫予你的批—台語讀詩創作工作坊／温若喬老師",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2609080954292886555710_20261004_1300"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
     },
     {
       "candidate_id": "4f38ce0416695fa9cbe0addb",
@@ -2869,8 +2865,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085269650239729664",
       "title": "裝配台語：從農宣片到《飛天三輪車》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085270043361689600"
     },
     {
@@ -2878,8 +2874,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085287665547493377",
       "title": "黑白講・鬥嘴鼓： 我們為何還要看台語片？",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085287666840485889"
     },
     {
@@ -2887,8 +2883,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085276147423625217",
       "title": "風流的胡老爺",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085276531202465792"
     },
     {
@@ -2896,8 +2892,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085288430420439040",
       "title": "再望春風，再唱桃花鄉：殘片、歌謠與電影記憶",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085288431705374720"
     },
     {
@@ -2913,8 +2909,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085262325448065024",
       "title": "再會十七歲（數位修復版）",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085262634663813121"
     },
     {
@@ -2940,8 +2936,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085288862221320193",
       "title": "特別放映：《丁蘭廿四孝》+映前導讀",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085288863274115073"
     },
     {
@@ -2949,8 +2945,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085261207307104256",
       "title": "鴉片戰爭",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085261583923527681"
     },
     {
@@ -2966,8 +2962,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085262816860184577",
       "title": "流浪補雨傘",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085263061757206529"
     },
     {
@@ -2975,8 +2971,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085261755653632001",
       "title": "見君一面",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2085262078443405313"
     },
     {
@@ -2984,8 +2980,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2095392638782611457",
       "title": "舊情綿綿（數位修復版）",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2095392639959638017"
     },
     {
@@ -2993,8 +2989,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2095392638782611457",
       "title": "舊情綿綿（數位修復版）",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2095392982081806337"
     },
     {
@@ -3166,8 +3162,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2075129131158446080",
       "title": "狂想劇場《島上的最後晚餐》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2075132078315433985"
     },
     {
@@ -3175,8 +3171,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2075129131158446080",
       "title": "狂想劇場《島上的最後晚餐》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2075152117302697985"
     },
     {
@@ -3184,8 +3180,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2075129131158446080",
       "title": "狂想劇場《島上的最後晚餐》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2075152279245320193"
     },
     {
@@ -3193,8 +3189,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2075129131158446080",
       "title": "狂想劇場《島上的最後晚餐》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2075152510482968577"
     },
     {
@@ -3466,8 +3462,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2037519395154640897",
       "title": "2026同黨劇團《父親母親》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2037522701486735361"
     },
     {
@@ -3475,8 +3471,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2037519395154640897",
       "title": "2026同黨劇團《父親母親》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2038901677539012609"
     },
     {
@@ -3484,8 +3480,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2037519395154640897",
       "title": "2026同黨劇團《父親母親》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2038903364299452417"
     },
     {
@@ -3493,8 +3489,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2037519395154640897",
       "title": "2026同黨劇團《父親母親》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2038903989607149569"
     },
     {
@@ -3502,8 +3498,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2037519395154640897",
       "title": "2026同黨劇團《父親母親》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2038904360534003713"
     },
     {
@@ -3559,8 +3555,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2049746347755511809",
       "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2049748445126623233"
     },
     {
@@ -3568,8 +3564,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2049746347755511809",
       "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2049747309313294337"
     },
     {
@@ -3577,8 +3573,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2049746347755511809",
       "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2049747355484192769"
     },
     {
@@ -4002,8 +3998,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099342143523733504"
     },
     {
@@ -4011,8 +4007,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099349115142684673"
     },
     {
@@ -4020,8 +4016,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099346270003847169"
     },
     {
@@ -4029,8 +4025,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099349288653836289"
     },
     {
@@ -4038,8 +4034,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099346275657596928"
     },
     {
@@ -4047,8 +4043,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099349292293480449"
     },
     {
@@ -4056,8 +4052,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099346278547644417"
     },
     {
@@ -4065,8 +4061,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2099337927309197313",
       "title": "烏貓戲出《燈殼樓的委託-小戲蟲拜先生》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2099349295319052289"
     },
     {
@@ -4154,8 +4150,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2094320381557530624",
       "title": "《戲頭2》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2094320382703509505"
     },
     {
@@ -4163,8 +4159,8 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2094320381557530624",
       "title": "《戲頭2》",
-      "decision": "approved",
-      "reason": "official_page_and_session_api_verified",
+      "decision": "duplicate",
+      "reason": "already_published",
       "activity_id": "opentix_2094364330123534337"
     },
     {
@@ -5568,7 +5564,6 @@
       "reason": "unstructured_source_needs_review"
     }
   ],
-  "applied_to_catalog": true,
   "collection_run": {
     "id": 35397735423,
     "head_sha": "9d826c963248246a8a8e8873e6d9e6f3c897f47c",
