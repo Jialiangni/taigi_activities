@@ -1690,6 +1690,38 @@
           }
         ]
       }
+    },
+    "auto_acc_2609180900251903050199": {
+      "url": "https://www.accupass.com/event/2609180900251903050199",
+      "title": "城南留聲：不義遺址與消失的時代私語【台語場：11月07日（六）】",
+      "required_text": [
+        "城南留聲：不義遺址與消失的時代私語【台語場：11月07日（六）】",
+        "捷運公館站",
+        "【台語場：11月07日（六）】",
+        "本活動報名資格不限，免費報名"
+      ],
+      "checked_at": "2026-09-19T19:09:06+08:00",
+      "snapshot_sha256": "3469cc995b14e184f81abf1e5d44302fbe885dd6af51e6ca71d347590e0bd243",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "accupass",
+        "language_claims": [
+          {
+            "origin": "official_page",
+            "quote": "【台語場：11月07日（六）】"
+          }
+        ],
+        "free_evidence": "本活動報名資格不限，免費報名",
+        "session": {
+          "start_time": "2026-11-07T10:00:00+08:00",
+          "end_time": "2026-11-07T12:00:00+08:00",
+          "venue": "捷運公館站",
+          "address": "台灣台北市捷運公館站",
+          "city": "臺北市",
+          "organizer": "故事 StoryStudio",
+          "event_status": "https://schema.org/EventScheduled"
+        }
+      }
     }
   },
   "activities": [
@@ -6591,6 +6623,48 @@
           "city": "臺北市",
           "organizer": "臺北市政府文化局（執行：移動故事屋）",
           "price_info": "免費，需事先報名；每場60人",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "acc_2609180900251903050199_20261107_1000",
+        "title": "城南留聲：不義遺址與消失的時代私語【台語場：11月07日（六）】",
+        "description": "官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。",
+        "city": "臺北市",
+        "district": "",
+        "category": "台語導覽",
+        "start_time": "2026-11-07T10:00:00+08:00",
+        "end_time": "2026-11-07T12:00:00+08:00",
+        "venue": "捷運公館站",
+        "address": "台灣台北市捷運公館站",
+        "organizer": "故事 StoryStudio",
+        "source_platform": "Accupass 活動通",
+        "source_url": "https://www.accupass.com/event/2609180900251903050199",
+        "cover_image": "",
+        "price_info": "免費，需事先報名",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "官方資料自動核實"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_acc_2609180900251903050199",
+        "mode": "official_rules_v1",
+        "method": "ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。",
+        "language_evidence": "【台語場：11月07日（六）】",
+        "confirmed_fields": {
+          "title": "城南留聲：不義遺址與消失的時代私語【台語場：11月07日（六）】",
+          "start_time": "2026-11-07T10:00:00+08:00",
+          "end_time": "2026-11-07T12:00:00+08:00",
+          "venue": "捷運公館站",
+          "city": "臺北市",
+          "organizer": "故事 StoryStudio",
+          "price_info": "免費，需事先報名",
           "is_free": true
         }
       }

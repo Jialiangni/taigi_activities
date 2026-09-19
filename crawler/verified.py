@@ -90,6 +90,9 @@ def check_live_sources(sources):
             if 'automated_review' in source:
                 from .review import validate_auto_source
                 validate_auto_source(source, payload['result'])
+        elif source.get('automated_review', {}).get('source_type') == 'accupass':
+            from .review import validate_auto_source
+            validate_auto_source(source, None, html)
 
 
 def load_verified(path=DATA_PATH, now=None, check_sources=False):
@@ -121,7 +124,11 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
         source = sources[review['source_id']]
         if review.get('mode') == 'official_rules_v1':
             proof = source.get('automated_review', {})
-            if proof.get('mode') != 'official_rules_v1' or not proof.get('language_claims') or 'opentix_sessions' not in source:
+            valid_proof = (proof.get('mode') == 'official_rules_v1' and proof.get('language_claims') and
+                           (('opentix_sessions' in source and proof.get('source_type') in (None, 'opentix')) or
+                            (proof.get('source_type') == 'accupass' and proof.get('session') and
+                             proof.get('free_evidence'))))
+            if not valid_proof:
                 raise ValueError('自動核實活動缺少可重查的官方證據')
         if 'opentix_sessions' in source:
             session = next((s for s in source['opentix_sessions'] if s['session_id'] == review.get('opentix_session_id')), None)

@@ -15,6 +15,7 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 from .collection import Client, CollectionError, TAIPEI, plain
 from .models import Activity, CategoryEnum, SourcePlatformEnum
+from .sources.accupass import parse_event as parse_accupass_event
 from .sources.opentix import parse_program
 from .verified import REVIEWED_FIELDS, load_verified, normalized_text, parse_time
 
@@ -123,8 +124,33 @@ def language_claims(program, group):
     return claims
 
 
-def validate_auto_source(source, program):
+def accupass_language_claim(title, text):
+    """Accept an explicitly labelled Taigi session, never a loose keyword hit."""
+    for value in (title or '', text or ''):
+        matched = re.search(r'【(?:臺灣)?[台臺]語場(?:：[^】]{1,40})?】', value)
+        if matched:
+            return matched.group(0)
+    return None
+
+
+def validate_auto_source(source, program, html=None):
     """Recheck frozen language/status evidence on every future public build."""
+    proof = source.get('automated_review', {})
+    if proof.get('source_type') == 'accupass':
+        require(isinstance(html, str), 'accupass_page_missing')
+        rows = parse_accupass_event(html, source['url'], {})
+        require(len(rows) == 1, 'accupass_identity_changed')
+        live = rows[0]
+        require(live['kind'] == 'event_period' and not live['fields'].get('sessions'),
+                'accupass_series_needs_review')
+        require(all(live['fields'].get(k) == proof['session'].get(k) for k in
+                    ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')),
+                'accupass_session_changed')
+        require(normalize(live['title']) == normalize(source['title']), 'accupass_title_changed')
+        quote = accupass_language_claim(live['title'], live['text'])
+        require(quote == proof['language_claims'][0]['quote'], 'accupass_language_changed')
+        require(proof['free_evidence'] in live['text'], 'accupass_price_changed')
+        return
     if program.get('status') != 3 or plain(program.get('changeNotification')):
         raise ValueError('自動核實節目狀態或異動公告改變，停止發布')
     groups = {str(g['id']): g for g in program['eventVenues']}
@@ -181,6 +207,61 @@ def trusted_registration_link(value):
     if host in ('docs.google.com', 'forms.google.com'):
         return parsed.path == '/forms' or parsed.path.startswith('/forms/')
     return host in ('linktr.ee', 'www.linktr.ee', 'linktree.com', 'www.linktree.com')
+
+
+def verify_accupass(candidate, client, now):
+    """Auto-verify only a single, explicitly labelled Taigi session with explicit free admission."""
+    url = source_url(candidate['source_url'])
+    matched = re.fullmatch(r'https://www\.accupass\.com/event/(\d+)', url)
+    require(matched, 'unsupported_official_url')
+    html, page = client.get(url)
+    require(page['final_url'] == url, 'official_page_redirected')
+    rows = parse_accupass_event(html, url, page)
+    require(len(rows) == 1, 'program_identity_changed')
+    live = rows[0]
+    require(live['kind'] == 'event_period' and not live['fields'].get('sessions'),
+            'series_or_duration_needs_review')
+    f = live['fields']
+    require(f['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
+    require(f['start_time'] and f['end_time'], 'missing_session_times')
+    start, end = parse_time(f['start_time']), parse_time(f['end_time'])
+    require(end > now, 'expired')
+    require(timedelta(0) < end - start <= timedelta(hours=12), 'series_or_duration_needs_review')
+    require(f['event_status'] == 'https://schema.org/EventScheduled', 'event_status_needs_review')
+    require(f['venue'] and f['address'] and f['organizer'] and live['title'], 'missing_identity_fields')
+    require(normalize(candidate['title']) == normalize(live['title']), 'candidate_title_changed')
+    require(all(candidate['fields'].get(k) == f.get(k) for k in
+                ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')),
+            'candidate_session_changed')
+    quote = accupass_language_claim(live['title'], live['text'])
+    require(quote, 'explicit_session_language_missing')
+    free = re.search(r'(?:本活動[^。\n]{0,40})?免費報名', live['text'])
+    require(free, 'ticket_terms_need_review')
+    free_evidence = free.group(0)
+    title = live['title']
+    category = CategoryEnum.TOUR if re.search(r'導覽|走讀', title + live['text'][:500]) else CategoryEnum.OTHER
+    event_id = matched.group(1)
+    act = Activity(id='acc_' + event_id + '_' + start.strftime('%Y%m%d_%H%M'), title=title,
+                   description='官方公告明列為台語場；活動內容、報到方式與參加規定請看官方活動頁。',
+                   city=f['city'], category=category, start_time=f['start_time'], end_time=f['end_time'],
+                   venue=f['venue'], address=f['address'], organizer=f['organizer'],
+                   source_platform=SourcePlatformEnum.ACCUPASS, source_url=url,
+                   price_info='免費，需事先報名', is_free=True,
+                   tags=['台語', '官方資料自動核實']).to_dict()
+    session = {k: f[k] for k in
+               ('start_time', 'end_time', 'venue', 'address', 'city', 'organizer', 'event_status')}
+    key = 'auto_acc_' + event_id
+    source = {'url': url, 'title': title, 'required_text': [title, f['venue'], quote, free_evidence],
+              'checked_at': page['fetched_at'], 'snapshot_sha256': page['sha256'],
+              'automated_review': {'mode': MODE, 'source_type': 'accupass',
+                                   'language_claims': [{'origin': 'official_page', 'quote': quote}],
+                                   'free_evidence': free_evidence, 'session': session}}
+    row = {'activity': act, 'verification': {'status': 'verified', 'source_id': key,
+           'mode': MODE,
+           'method': 'ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。',
+           'language_evidence': quote,
+           'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
+    return key, source, row
 
 
 def verify_opentix(candidate, client, now):
@@ -361,12 +442,16 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             if existing:
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
-            if c['source_id'] == 'accupass' and c.get('fields', {}).get('sessions'):
-                raise Pending('structured_sessions_need_review')
-            require(c['source_id'] == 'opentix' and c['kind'] == 'session', 'unstructured_source_needs_review')
-            key, source, row = verify_opentix(c, client, now)
+            if c['source_id'] == 'accupass':
+                if c.get('fields', {}).get('sessions'):
+                    raise Pending('structured_sessions_need_review')
+                key, source, row = verify_accupass(c, client, now)
+            else:
+                require(c['source_id'] == 'opentix' and c['kind'] == 'session',
+                        'unstructured_source_needs_review')
+                key, source, row = verify_opentix(c, client, now)
             a = row['activity']
-            existing = duplicate(a, catalog, row['verification']['opentix_session_id'])
+            existing = duplicate(a, catalog, row['verification'].get('opentix_session_id'))
             if existing:
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
@@ -377,17 +462,23 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                     require(normalize(a['venue']) != normalize(b['venue']) and
                             normalize(a['title']) not in normalize(b['title']) and
                             normalize(b['title']) not in normalize(a['title']), 'possible_cross_source_duplicate')
-            if key in catalog['sources']:
+            if key in catalog['sources'] and c['source_id'] == 'opentix':
                 old = catalog['sources'][key]
                 source['opentix_sessions'] = old['opentix_sessions'] + source['opentix_sessions']
                 source['required_text'] = list(dict.fromkeys(old['required_text'] + source['required_text']))
                 source['automated_review']['language_claims'] = old['automated_review']['language_claims'] + source['automated_review']['language_claims']
             catalog['sources'][key] = source
             catalog['activities'].append(row)
-            translations[a['description']] = '這場有台語內容。詳細節目紹介、入場規定佮報名狀況，請看活動公告。'
-            amounts = '、'.join(format(p, 'g') for p in source['opentix_sessions'][-1]['price_info'])
-            prices[a['price_info']] = '票價：' + amounts + '元；折扣佮買票規定請看官方公告。'
-            item.update(decision='approved', reason='official_page_and_session_api_verified', activity_id=a['id'])
+            translations[a['description']] = '這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。'
+            if c['source_id'] == 'opentix':
+                translations[a['description']] = '這場有台語內容。詳細節目紹介、入場規定佮報名狀況，請看活動公告。'
+                amounts = '、'.join(format(p, 'g') for p in source['opentix_sessions'][-1]['price_info'])
+                prices[a['price_info']] = '票價：' + amounts + '元；折扣佮買票規定請看官方公告。'
+            else:
+                prices[a['price_info']] = '毋免錢，愛事先報名'
+            item.update(decision='approved',
+                        reason=('official_page_single_session_verified' if c['source_id'] == 'accupass'
+                                else 'official_page_and_session_api_verified'), activity_id=a['id'])
         except Pending as e:
             item['reason'] = str(e)
             if str(e) in ('expired', 'outside_region'):

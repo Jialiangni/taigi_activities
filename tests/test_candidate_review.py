@@ -10,7 +10,8 @@ from unittest.mock import patch
 
 from crawler.collection import CollectionError
 from crawler.review import (review, Pending, language_claims, validate_auto_source, source_url, duplicate,
-                            trusted_registration_link, published_accupass_series)
+                            trusted_registration_link, published_accupass_series, verify_accupass)
+from crawler.sources.accupass import parse_event as parse_accupass_event
 from crawler.sources.opentix import parse_program
 from crawler.verified import load_verified
 from scripts.fetch_review_candidates import extract, trusted_run
@@ -233,6 +234,32 @@ class CandidateReviewTests(unittest.TestCase):
         candidate['fields']['sessions'].append(
             {'start_time': '2026-09-21T15:00:00+08:00', 'end_time': '2026-09-21T16:00:00+08:00'})
         self.assertEqual(published_accupass_series(candidate, catalog, NOW), [])
+
+    def test_accupass_explicit_single_taigi_session_can_be_auto_verified(self):
+        url = 'https://www.accupass.com/event/2609180900251903050199'
+        html = '''<script type="application/ld+json">{
+        "@type":"Event","name":"城南留聲【台語場：11月07日（六）】",
+        "startDate":"2026-11-07T10:00:00+08:00","endDate":"2026-11-07T12:00:00+08:00",
+        "eventStatus":"https://schema.org/EventScheduled","location":{"name":"捷運公館站",
+        "address":"台灣台北市捷運公館站"},"organizer":{"name":"故事 StoryStudio"}}</script>
+        <main>走讀時間【台語場】2026.11.07（六）10:00-12:00 本活動報名資格不限，免費報名。</main>'''
+        evidence = {'final_url': url, 'sha256': 'c'*64, 'fetched_at': NOW.isoformat()}
+        candidate = parse_accupass_event(html, url, evidence)[0]
+
+        class AccupassClient:
+            def get(self, requested):
+                self.requested = requested
+                return html, evidence
+
+        key, source, row = verify_accupass(candidate, AccupassClient(), NOW)
+        self.assertEqual(key, 'auto_acc_2609180900251903050199')
+        self.assertEqual(row['activity']['id'], 'acc_2609180900251903050199_20261107_1000')
+        self.assertEqual(row['activity']['category'], '台語導覽')
+        self.assertTrue(row['activity']['is_free'])
+        validate_auto_source(source, None, html)
+        with self.assertRaises(Pending):
+            verify_accupass(candidate, type('C', (), {'get': lambda self, u:
+                (html.replace('免費報名', '費用另洽'), evidence)})(), NOW)
 
     def test_missing_or_stale_candidate_report_stops_before_writing(self):
         self.save_candidates(NOW-timedelta(days=2))

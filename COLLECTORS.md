@@ -12,7 +12,7 @@
 
 | 來源 | 現行收集方式 | 邊界 |
 |---|---|---|
-| ACCUPASS | 網站實際使用的 `POST https://api.accupass.com/v3/search/SearchEvents`，`currentIndex` 分頁與 `total` 校驗；逐筆讀活動專頁 JSON-LD 及內文，再確認實際關鍵字；另保留公告表格中明列的月日與起迄時間 | 搜尋有廣泛相關結果，不能照單全收；JSON-LD 可能是系列總期間。明列場次會保存為 `event_series` 候選，仍須逐場核對語言、地點、費用及狀態後刊登 |
+| ACCUPASS | 網站實際使用的 `POST https://api.accupass.com/v3/search/SearchEvents`，逐一搜尋設定中的台語關鍵字，並同時限制城市代碼 `1、2、3`（臺北、新北、桃園）；`currentIndex` 分頁與 `total` 校驗，逐筆讀活動專頁 JSON-LD 及內文，再確認實際關鍵字；另保留公告表格中明列的月日與起迄時間 | 搜尋有廣泛相關結果，不能照單全收；JSON-LD 可能是系列總期間。單一場次若明列「台語場」、完整起迄、北北桃地點、主辦、正常狀態與免費報名，可重新讀頁後自動核實；系列、多場次、費用不明或欄位矛盾仍保留待判讀 |
 | OPENTIX | 網站實際使用的 `POST https://search.opentix.life/search`、`nextOffset` 分頁；`GET https://csm.api.opentix.life/programs/{id}` | 依 `eventVenues[].events[]` 拆場次及場館；不能用節目總起迄日期代替單場。語言、異動與票種仍需核對 |
 | 年代售票 | 官方關鍵字搜尋頁＋完整節目索引，讀每個節目內文及場次表格 | 關鍵字搜尋偏向標題，因此索引詳情補足內文提到台語的節目；沒有結束時間就留空 |
 | 李江却基金會 | 官方 Blogger Atom feed，支援 `rel=next` 及 OpenSearch 分頁資訊 | 文章發表日期與活動日期分開；依出版者 feed 提供範圍收集 |
