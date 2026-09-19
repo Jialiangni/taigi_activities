@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T20:23:46+08:00",
+  "reviewed_at": "2026-09-19T20:40:06+08:00",
   "applied_to_catalog": true,
   "collected_at": "2026-09-19T13:09:25+08:00",
   "candidate_count": 745,
@@ -4145,7 +4145,7 @@
       "source_url": "https://www.opentix.life/event/2052573679595487233",
       "title": "果陀劇場《三個傻瓜》2026熱血回歸",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "session_missing"
     },
     {
       "candidate_id": "2af4f331647ce1da99a235ee",
