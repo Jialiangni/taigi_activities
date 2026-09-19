@@ -196,7 +196,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
       <div class="month-filter" role="group" aria-label="揀月份，會當揀幾若个月"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div><span class="month-help">會當揀幾若个月</span></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
-        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（42）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（40）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="台語站">台語站（26）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
+        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（42）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（40）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="台語站">台語站（28）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
         <label for="priceFilter">所費 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
@@ -362,7 +362,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 20:13:42（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 20:23:09（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -503,6 +503,74 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%90%E8%AC%9B%E4%BA%88%E5%9B%A1%E4%BB%94%E8%81%BD%E7%9A%84%E4%BA%BA%E6%AC%8A%E7%B9%AA%E6%9C%AC%EF%BD%9C%E5%A4%A7%E6%89%8B%E7%89%BD%E5%B0%8F%E6%89%8B%EF%BC%8C%E8%81%BD%E9%98%BF%E5%AA%BD%E8%AC%9B%E5%8F%A4%EF%BC%81%E3%80%91&dates=20260920T023000Z%2F20260920T040000Z&ctz=Asia%2FTaipei&details=%E5%8F%B0%E8%AA%9E%E7%AB%99%E6%94%B6%E9%8C%84%E7%9A%84%E5%8F%B0%E8%AA%9E%E6%B4%BB%E5%8B%95%EF%BC%9B%E5%85%A7%E5%AE%B9%E3%80%81%E5%8F%83%E5%8A%A0%E8%B3%87%E6%A0%BC%E8%88%87%E6%9C%80%E6%96%B0%E7%95%B0%E5%8B%95%E8%AB%8B%E6%9F%A5%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E5%A0%B1%E5%90%8D%E6%96%B9%E5%BC%8F%E8%AB%8B%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%0Ahttps%3A%2F%2Fwww.gameislearning.url.tw%2Ftaigi-info.php%3Fnews%3D1581w9d4i94&location=%E5%9C%8B%E5%AE%B6%E4%BA%BA%E6%AC%8A%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%AD%B8%E7%BF%92%E4%B8%AD%E5%BF%83%E4%B8%80%E6%A8%93%E3%83%BB%E5%85%92%E7%AB%A5%E4%BA%BA%E6%AC%8A%E5%AD%B8%E7%BF%92%E5%9F%BA%E5%9C%B0+%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%B0%E5%BA%97%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF131%E8%99%9F+%E4%BA%BA%E6%AC%8A%E5%AD%B8%E7%BF%92%E4%B8%AD%E5%BF%83",
     "ics_event": "BEGIN:VEVENT\r\nUID:gameislearning_1581w9d4i94_20260920_1030@taigiactivities.tw\r\nDTSTAMP:20260919T112940Z\r\nDTSTART:20260920T023000Z\r\nDTEND:20260920T040000Z\r\nSUMMARY:【講予囡仔聽的人權繪本｜大手牽小手，聽阿媽講\r\n 古！】\r\nDESCRIPTION:台語站收錄的台語活動；內容、參加資格與最新\r\n 異動請查看活動公告。\\n免費，報名方式請看活動公告\\nh\r\n ttps://www.gameislearning.url.tw/taigi-info.php?news=1581w9d4i94\r\nLOCATION:國家人權博物館學習中心一樓・兒童人權學習基地\r\n  新北市新店區復興路131號 人權學習中心\r\nURL:https://www.gameislearning.url.tw/taigi-info.php?news=1581w9d4i94\r\nEND:VEVENT\r\n",
     "ics_path": "calendar-events/a4e245bfc3dfa81ea6f41f3907cb49b29c388403ac9a61d30e4b37fbc47e8411.ics"
+  },
+  {
+    "id": "gameislearning_1600op4ni94_20260920_1030",
+    "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+    "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。報名表的結束時間有不同記載，僅列確定的開始時間，結束時間請向主辦確認。",
+    "city": "桃園市",
+    "district": "桃園區",
+    "category": "台語繪本",
+    "start_time": "2026-09-20T10:30:00+08:00",
+    "end_time": null,
+    "venue": "喜憨兒桃園南門公園庇護商店",
+    "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+    "organizer": "主辦單位請見活動公告",
+    "source_platform": "台語站",
+    "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+    "registration_url": "https://ppt.cc/fblvqx",
+    "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+    "price_info": "免費，報名方式請看活動公告",
+    "is_free": true,
+    "tags": [
+      "台語",
+      "台語站信任來源",
+      "自動核實場次"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-19T20:20:03+08:00",
+      "source_title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園"
+    },
+    "description_taigi": "台語站收錄的台語活動；內容、參加資格佮最新異動，請看活動公告。報名表的結束時間有無仝的記載，這頁干焦列確定的開始時間；結束時間請問主辦單位。",
+    "price_info_taigi": "毋免錢，報名方式請看活動公告",
+    "title_taigi": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%902026%E5%B9%B4%E5%8F%A4%E9%8C%90%C3%AA%E8%AC%9B%E5%8F%A4%E5%BC%B7%E5%8B%A2%E5%9B%9E%E6%AD%B8%F0%9F%92%AA%E3%80%919%2F20%40%E6%A1%83%E5%9C%92&dates=20260920T023000Z%2F20260920T023000Z&ctz=Asia%2FTaipei&details=%E5%8F%B0%E8%AA%9E%E7%AB%99%E6%94%B6%E9%8C%84%E7%9A%84%E5%8F%B0%E8%AA%9E%E6%B4%BB%E5%8B%95%EF%BC%9B%E5%85%A7%E5%AE%B9%E3%80%81%E5%8F%83%E5%8A%A0%E8%B3%87%E6%A0%BC%E8%88%87%E6%9C%80%E6%96%B0%E7%95%B0%E5%8B%95%E8%AB%8B%E6%9F%A5%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%E3%80%82%E5%A0%B1%E5%90%8D%E8%A1%A8%E7%9A%84%E7%B5%90%E6%9D%9F%E6%99%82%E9%96%93%E6%9C%89%E4%B8%8D%E5%90%8C%E8%A8%98%E8%BC%89%EF%BC%8C%E5%83%85%E5%88%97%E7%A2%BA%E5%AE%9A%E7%9A%84%E9%96%8B%E5%A7%8B%E6%99%82%E9%96%93%EF%BC%8C%E7%B5%90%E6%9D%9F%E6%99%82%E9%96%93%E8%AB%8B%E5%90%91%E4%B8%BB%E8%BE%A6%E7%A2%BA%E8%AA%8D%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E5%A0%B1%E5%90%8D%E6%96%B9%E5%BC%8F%E8%AB%8B%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%0Ahttps%3A%2F%2Fwww.gameislearning.url.tw%2Ftaigi-info.php%3Fnews%3D1600op4ni94&location=%E5%96%9C%E6%86%A8%E5%85%92%E6%A1%83%E5%9C%92%E5%8D%97%E9%96%80%E5%85%AC%E5%9C%92%E5%BA%87%E8%AD%B7%E5%95%86%E5%BA%97+%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E4%B8%89%E6%B0%91%E8%B7%AF%E4%B8%89%E6%AE%B5264%E8%99%9F+%E5%96%9C%E6%86%A8%E5%85%92%E6%A1%83%E5%9C%92%E5%8D%97%E9%96%80%E5%85%AC%E5%9C%92%E5%BA%87%E8%AD%B7%E5%95%86%E5%BA%97",
+    "ics_event": "BEGIN:VEVENT\r\nUID:gameislearning_1600op4ni94_20260920_1030@taigiactivities.tw\r\nDTSTAMP:20260919T122003Z\r\nDTSTART:20260920T023000Z\r\nSUMMARY:【2026年古錐ê講古強勢回歸💪】9/20@桃園\r\nDESCRIPTION:台語站收錄的台語活動；內容、參加資格與最新\r\n 異動請查看活動公告。報名表的結束時間有不同記載，\r\n 僅列確定的開始時間，結束時間請向主辦確認。\\n免費，\r\n 報名方式請看活動公告\\nhttps://www.gameislearning.url.tw/taigi-in\r\n fo.php?news=1600op4ni94\r\nLOCATION:喜憨兒桃園南門公園庇護商店 桃園市桃園區三民\r\n 路三段264號 喜憨兒桃園南門公園庇護商店\r\nURL:https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94\r\nEND:VEVENT\r\n",
+    "ics_path": "calendar-events/248929119c516f1caf32905e4c051fc798e99a3b2d77585b2311796f7882ec20.ics"
+  },
+  {
+    "id": "gameislearning_1600op4ni94_20260920_1130",
+    "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+    "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+    "city": "桃園市",
+    "district": "桃園區",
+    "category": "台語繪本",
+    "start_time": "2026-09-20T11:30:00+08:00",
+    "end_time": "2026-09-20T12:20:00+08:00",
+    "venue": "喜憨兒桃園南門公園庇護商店",
+    "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+    "organizer": "主辦單位請見活動公告",
+    "source_platform": "台語站",
+    "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+    "registration_url": "https://ppt.cc/fblvqx",
+    "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+    "price_info": "免費，報名方式請看活動公告",
+    "is_free": true,
+    "tags": [
+      "台語",
+      "台語站信任來源",
+      "自動核實場次"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-09-19T20:20:03+08:00",
+      "source_title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園"
+    },
+    "description_taigi": "台語站收錄的台語活動；內容、參加資格佮最新異動，請看活動公告。",
+    "price_info_taigi": "毋免錢，報名方式請看活動公告",
+    "title_taigi": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%902026%E5%B9%B4%E5%8F%A4%E9%8C%90%C3%AA%E8%AC%9B%E5%8F%A4%E5%BC%B7%E5%8B%A2%E5%9B%9E%E6%AD%B8%F0%9F%92%AA%E3%80%919%2F20%40%E6%A1%83%E5%9C%92&dates=20260920T033000Z%2F20260920T042000Z&ctz=Asia%2FTaipei&details=%E5%8F%B0%E8%AA%9E%E7%AB%99%E6%94%B6%E9%8C%84%E7%9A%84%E5%8F%B0%E8%AA%9E%E6%B4%BB%E5%8B%95%EF%BC%9B%E5%85%A7%E5%AE%B9%E3%80%81%E5%8F%83%E5%8A%A0%E8%B3%87%E6%A0%BC%E8%88%87%E6%9C%80%E6%96%B0%E7%95%B0%E5%8B%95%E8%AB%8B%E6%9F%A5%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E5%A0%B1%E5%90%8D%E6%96%B9%E5%BC%8F%E8%AB%8B%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%0Ahttps%3A%2F%2Fwww.gameislearning.url.tw%2Ftaigi-info.php%3Fnews%3D1600op4ni94&location=%E5%96%9C%E6%86%A8%E5%85%92%E6%A1%83%E5%9C%92%E5%8D%97%E9%96%80%E5%85%AC%E5%9C%92%E5%BA%87%E8%AD%B7%E5%95%86%E5%BA%97+%E6%A1%83%E5%9C%92%E5%B8%82%E6%A1%83%E5%9C%92%E5%8D%80%E4%B8%89%E6%B0%91%E8%B7%AF%E4%B8%89%E6%AE%B5264%E8%99%9F+%E5%96%9C%E6%86%A8%E5%85%92%E6%A1%83%E5%9C%92%E5%8D%97%E9%96%80%E5%85%AC%E5%9C%92%E5%BA%87%E8%AD%B7%E5%95%86%E5%BA%97",
+    "ics_event": "BEGIN:VEVENT\r\nUID:gameislearning_1600op4ni94_20260920_1130@taigiactivities.tw\r\nDTSTAMP:20260919T122003Z\r\nDTSTART:20260920T033000Z\r\nDTEND:20260920T042000Z\r\nSUMMARY:【2026年古錐ê講古強勢回歸💪】9/20@桃園\r\nDESCRIPTION:台語站收錄的台語活動；內容、參加資格與最新\r\n 異動請查看活動公告。\\n免費，報名方式請看活動公告\\nh\r\n ttps://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94\r\nLOCATION:喜憨兒桃園南門公園庇護商店 桃園市桃園區三民\r\n 路三段264號 喜憨兒桃園南門公園庇護商店\r\nURL:https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94\r\nEND:VEVENT\r\n",
+    "ics_path": "calendar-events/c50387ffb135666e279aced677b71e9b1672d43ba829c4bbf87f0497b9de262f.ics"
   },
   {
     "id": "acc_2609140211321902093902_20260920_1300",

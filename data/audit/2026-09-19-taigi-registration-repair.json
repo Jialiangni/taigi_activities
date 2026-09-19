@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "mode": "official_rules_v1",
+  "reviewed_at": "2026-09-19T20:20:04+08:00",
+  "applied_to_catalog": true,
+  "collected_at": "2026-09-19T20:20:04.442990+08:00",
+  "candidate_count": 2,
+  "counts": {
+    "approved": 2
+  },
+  "collection_status_counts": {
+    "ok": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "b6ec9fd6fa7fe25b9f2fb376",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+      "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+      "decision": "approved",
+      "reason": "trusted_taigi_directory_session_verified",
+      "activity_id": "gameislearning_1600op4ni94_20260920_1030"
+    },
+    {
+      "candidate_id": "a00b7ce5027a8f5767f45d81",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+      "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+      "decision": "approved",
+      "reason": "trusted_taigi_directory_session_verified",
+      "activity_id": "gameislearning_1600op4ni94_20260920_1130"
+    }
+  ],
+  "reason": "Announcement has month/day and a poster, but the collector previously stopped before following its public registration form.",
+  "poster_visual_check": {
+    "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+    "date": "2026-09-20",
+    "sessions": [
+      {
+        "start_time": "10:30",
+        "title": "水母巴士"
+      },
+      {
+        "start_time": "11:30",
+        "title": "果子牛臆謎猜"
+      }
+    ],
+    "method": "Human-style visual inspection of the source page poster in browser; not automated OCR."
+  },
+  "registration_evidence": {
+    "url": "https://ppt.cc/fblvqx",
+    "final_url": "https://docs.google.com/forms/d/1wDbRxYgap7mSzDz3DbEKrtTvoe4-Ka920X7WYt9nFNk/viewform?edit_requested=true",
+    "checked_at": "2026-09-19T20:20:04+08:00",
+    "snapshot_sha256": "ace6f9295c84b4563768d714a5b4b0f471153f51014936c3c4beea4ef9bacefc",
+    "title": "2026.09.20古錐ê講古｜免費台語繪本活動報名表",
+    "choices": [
+      "第一場10:30-11:20",
+      "第二場11:30-12:20"
+    ]
+  },
+  "sessions": [
+    {
+      "start_time": "2026-09-20T10:30:00+08:00",
+      "end_time": null,
+      "registration_choice": "第一場10:30-11:20",
+      "end_time_variants": [
+        "2026-09-20T11:20:00+08:00",
+        "2026-09-20T11:30:00+08:00"
+      ]
+    },
+    {
+      "start_time": "2026-09-20T11:30:00+08:00",
+      "end_time": "2026-09-20T12:20:00+08:00",
+      "registration_choice": "第二場11:30-12:20",
+      "end_time_variants": [
+        "2026-09-20T12:20:00+08:00"
+      ]
+    }
+  ]
+}

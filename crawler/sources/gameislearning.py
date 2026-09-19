@@ -100,10 +100,85 @@ def choose_registration_url(links):
                  'opentix.life', 'kktix.cc', 'linktr.ee', 'linktree.com',
                  'ppt.cc', 'reurl.cc', 'lin.ee')
     for host in preferred:
-        found = next((u for u in links if (urlsplit(u).hostname or '').lower().endswith(host)), None)
+        found = next((u for u in links if (urlsplit(u).hostname or '').lower() == host
+                      or (urlsplit(u).hostname or '').lower().endswith('.' + host)), None)
         if found:
             return found
     return ''
+
+
+def registration_sessions(parsed, page, evidence):
+    """Read public Google Forms session choices; never submit or read responses."""
+    final = urlsplit(clean_url(evidence.get('final_url')) or '')
+    if final.scheme != 'https' or final.netloc != 'docs.google.com' or not re.fullmatch(
+            r'/forms/d/(?:e/)?[A-Za-z0-9_-]+/viewform', final.path):
+        raise CollectionError('registration_form_not_supported')
+    doc = Document(page)
+    form_title = next((n.text() for n in doc.root.all('title')), '')
+    dates = list(DATE_RE.finditer(form_title))
+    if len(dates) != 1 or not dates[0].group(1):
+        raise CollectionError('registration_date_not_explicit')
+    match = dates[0]
+    year, month, day = _year(match[1], 0), int(match[2]), int(match[3])
+    source_years = re.findall(r'20\d{2}', parsed['title'])
+    source_dates = list(DATE_RE.finditer(parsed['text']))
+    if (not any(int(d[2]) == month and int(d[3]) == day and
+                (not d[1] or _year(d[1], year) == year) for d in source_dates)
+            or (source_years and str(year) not in source_years)
+            or not parsed['venue'] or parsed['venue'] not in doc.root.text()):
+        raise CollectionError('registration_identity_mismatch')
+    date(year, month, day)  # Reject invalid calendar dates before producing sessions.
+    labels = []
+    visible = doc.root.text()
+    for question in doc.root.all():
+        if question.attrs.get('role') != 'listitem':
+            continue
+        # Combined booking options are not separate sessions and must not turn
+        # their total duration into a conflicting end time for the first session.
+        visible = visible.replace(question.text(), '')
+        headings = [n.text() for n in question.all() if n.attrs.get('role') == 'heading']
+        if not any('場次' in text for text in headings):
+            continue
+        for option in question.all():
+            if option.attrs.get('role') in ('radio', 'checkbox'):
+                label = option.attrs.get('data-value') or option.attrs.get('aria-label') or ''
+                if re.match(r'^第[一二三四五六七八九十\d]+場', label):
+                    labels.append(label)
+    sessions = []
+    visible += ' ' + ' '.join(labels)
+    for label in dict.fromkeys(labels):
+        clock = TIME_RE.search(label)
+        if not clock:
+            continue
+        sh, sm, eh, em = _range_clocks(clock)
+        start = datetime(year, month, day, sh, sm, tzinfo=TAIPEI)
+        end = datetime(year, month, day, eh, em, tzinfo=TAIPEI)
+        if not timedelta(0) < end - start <= timedelta(hours=12):
+            raise CollectionError('registration_session_invalid')
+        variants = sorted({datetime(year, month, day, c[2], c[3], tzinfo=TAIPEI).isoformat()
+                           for c in (_range_clocks(m) for m in TIME_RE.finditer(visible))
+                           if c[:2] == (sh, sm)})
+        if any(s['start_time'] == start.isoformat() for s in sessions):
+            raise CollectionError('registration_duplicate_start')
+        sessions.append({'start_time':start.isoformat(),
+                         'end_time':end.isoformat() if len(variants) == 1 else None,
+                         'registration_choice':label, 'end_time_variants':variants})
+    if not sessions:
+        raise CollectionError('registration_session_choices_missing')
+    return dict(parsed, sessions=sessions, registration_evidence={
+        'url':parsed['registration_url'], 'final_url':evidence['final_url'],
+        'checked_at':evidence['fetched_at'], 'snapshot_sha256':evidence['sha256'],
+        'title':form_title, 'choices':labels})
+
+
+def supplement_registration(parsed, client):
+    if parsed['sessions'] or not parsed.get('registration_url'):
+        return parsed
+    url = parsed['registration_url']
+    if urlsplit(url).hostname not in ('docs.google.com', 'forms.gle', 'ppt.cc', 'reurl.cc'):
+        return parsed
+    page, evidence = client.get(url)
+    return registration_sessions(parsed, page, evidence)
 
 
 def venue_of(body, address):
@@ -338,9 +413,14 @@ class GameIsLearningCrawler(Collector):
                     raise CollectionError('invalid_activity_detail')
                 if parsed['city'] not in CITY_FILTERS.values():
                     continue
+                supplement_issue = None
+                try:
+                    parsed = supplement_registration(parsed, client)
+                except (CollectionError, ValueError) as error:
+                    supplement_issue = getattr(error, 'code', 'registration_invalid_data')
                 if not parsed['sessions']:
                     result.candidates.append(candidate('gameislearning', url, parsed['title'], parsed['text'],
-                        evidence, fields=parsed, issues=['explicit_session_time_missing'], key=url))
+                        evidence, fields=parsed, issues=[supplement_issue or 'explicit_session_time_missing'], key=url))
                     continue
                 for session in parsed['sessions']:
                     fields = dict(parsed, **session)

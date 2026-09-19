@@ -101,7 +101,7 @@ def check_live_sources(sources):
                 validate_auto_source(source, payload['result'])
         elif source.get('automated_review', {}).get('source_type') in ('accupass', 'gameislearning'):
             from .review import validate_auto_source
-            validate_auto_source(source, None, html)
+            validate_auto_source(source, None, html, client=client)
 
 
 def load_verified(path=DATA_PATH, now=None, check_sources=False):

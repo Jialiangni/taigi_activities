@@ -17,7 +17,8 @@ from .collection import Client, CollectionError, TAIPEI, plain
 from .models import Activity, CategoryEnum, SourcePlatformEnum
 from .sources.accupass import parse_event as parse_accupass_event
 from .sources.opentix import parse_program
-from .sources.gameislearning import DETAIL_RE, parse_detail as parse_gameislearning_detail
+from .sources.gameislearning import (DETAIL_RE, parse_detail as parse_gameislearning_detail,
+                                    supplement_registration)
 from .verified import REVIEWED_FIELDS, load_verified, normalized_text, parse_time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -134,7 +135,7 @@ def accupass_language_claim(title, text):
     return None
 
 
-def validate_auto_source(source, program, html=None):
+def validate_auto_source(source, program, html=None, client=None):
     """Recheck frozen language/status evidence on every future public build."""
     proof = source.get('automated_review', {})
     if proof.get('source_type') == 'accupass':
@@ -155,6 +156,10 @@ def validate_auto_source(source, program, html=None):
     if proof.get('source_type') == 'gameislearning':
         require(isinstance(html, str), 'gameislearning_page_missing')
         live = parse_gameislearning_detail(html, source['url'], {}, now=datetime.now(TAIPEI))
+        if proof.get('registration_evidence'):
+            live = supplement_registration(live, client or Client())
+            require(live.get('registration_evidence', {}).get('final_url') ==
+                    proof['registration_evidence']['final_url'], 'registration_destination_changed')
         require(normalize(live['title']) == normalize(source['title']), 'gameislearning_title_changed')
         require(proof.get('trusted_language_source') is True, 'trusted_language_source_missing')
         require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
@@ -163,6 +168,10 @@ def validate_auto_source(source, program, html=None):
                            if row.get('start_time') == expected.get('start_time')
                            and row.get('end_time') == expected.get('end_time')), None)
             require(actual, 'gameislearning_session_changed')
+            if proof.get('registration_evidence'):
+                require(all(actual.get(k) == expected.get(k) for k in
+                            ('registration_choice', 'end_time_variants')),
+                        'registration_session_evidence_changed')
         if proof.get('registration_url'):
             require(live['registration_url'] == proof['registration_url'],
                     'gameislearning_registration_changed')
@@ -293,6 +302,7 @@ def verify_gameislearning(candidate, client, now):
         'city': fields.get('city'), 'district': fields.get('district'),
         'type': '', 'is_free': fields.get('is_free'),
         'published_at': fields.get('published_at')}, now)
+    live = supplement_registration(live, client)
     require(normalize(live['title']) == normalize(candidate['title']), 'candidate_title_changed')
     require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
     require(live['venue'] and live['address'] and live['organizer'], 'missing_identity_fields')
@@ -315,6 +325,8 @@ def verify_gameislearning(candidate, client, now):
              '費用未公告，請查看活動公告')
     language = '台語站活動專頁全部列為台語活動（使用者指定信任來源）'
     description = '台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。'
+    if len(session.get('end_time_variants', [])) > 1:
+        description += '報名表的結束時間有不同記載，僅列確定的開始時間，結束時間請向主辦確認。'
     activity_id = 'gameislearning_' + matched.group(1) + '_' + start.strftime('%Y%m%d_%H%M')
     act = Activity(id=activity_id, title=live['title'], description=description,
                    city=live['city'], district=fields.get('district', ''),
@@ -335,6 +347,10 @@ def verify_gameislearning(candidate, client, now):
                   'trusted_language_source': True, 'language_claims': [
                       {'origin': 'trusted_directory_policy', 'quote': language}],
                   'registration_url': live['registration_url'], 'sessions': [proof_session]}}
+    if live.get('registration_evidence'):
+        source['automated_review']['registration_evidence'] = live['registration_evidence']
+        proof_session['registration_choice'] = session['registration_choice']
+        proof_session['end_time_variants'] = session['end_time_variants']
     row = {'activity': act, 'verification': {'status': 'verified', 'source_id': key,
            'mode': MODE,
            'method': '台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。',
@@ -568,6 +584,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 prices[a['price_info']] = '毋免錢，愛事先報名'
             else:
                 translations[a['description']] = '台語站收錄的台語活動；內容、參加資格佮最新異動，請看活動公告。'
+                if '報名表的結束時間有不同記載' in a['description']:
+                    translations[a['description']] += '報名表的結束時間有無仝的記載，這頁干焦列確定的開始時間；結束時間請問主辦單位。'
                 prices[a['price_info']] = ('毋免錢，報名方式請看活動公告' if a['is_free'] is True else
                                            '愛納錢，金額佮報名方式請看活動公告' if a['is_free'] is False else
                                            '所費猶未公告，請看活動公告')

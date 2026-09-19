@@ -2137,6 +2137,64 @@
           }
         ]
       }
+    },
+    "auto_gameislearning_1600op4ni94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+      "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+      "required_text": [
+        "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+        "喜憨兒桃園南門公園庇護商店"
+      ],
+      "checked_at": "2026-09-19T20:20:03+08:00",
+      "snapshot_sha256": "4cb0ae68c14720d0c35d19fc6c3040bd32641388138baf62dbc30c0b143d2746",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://ppt.cc/fblvqx",
+        "sessions": [
+          {
+            "start_time": "2026-09-20T10:30:00+08:00",
+            "end_time": null,
+            "venue": "喜憨兒桃園南門公園庇護商店",
+            "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+            "city": "桃園市",
+            "registration_choice": "第一場10:30-11:20",
+            "end_time_variants": [
+              "2026-09-20T11:20:00+08:00",
+              "2026-09-20T11:30:00+08:00"
+            ]
+          },
+          {
+            "start_time": "2026-09-20T11:30:00+08:00",
+            "end_time": "2026-09-20T12:20:00+08:00",
+            "venue": "喜憨兒桃園南門公園庇護商店",
+            "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+            "city": "桃園市",
+            "registration_choice": "第二場11:30-12:20",
+            "end_time_variants": [
+              "2026-09-20T12:20:00+08:00"
+            ]
+          }
+        ],
+        "registration_evidence": {
+          "url": "https://ppt.cc/fblvqx",
+          "final_url": "https://docs.google.com/forms/d/1wDbRxYgap7mSzDz3DbEKrtTvoe4-Ka920X7WYt9nFNk/viewform?edit_requested=true",
+          "checked_at": "2026-09-19T20:20:04+08:00",
+          "snapshot_sha256": "ace6f9295c84b4563768d714a5b4b0f471153f51014936c3c4beea4ef9bacefc",
+          "title": "2026.09.20古錐ê講古｜免費台語繪本活動報名表",
+          "choices": [
+            "第一場10:30-11:20",
+            "第二場11:30-12:20"
+          ]
+        }
+      }
     }
   },
   "activities": [
@@ -8486,6 +8544,108 @@
           "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
           "checked_at": "2026-09-19T20:03:15+08:00",
           "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1600op4ni94_20260920_1030",
+        "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。報名表的結束時間有不同記載，僅列確定的開始時間，結束時間請向主辦確認。",
+        "city": "桃園市",
+        "district": "桃園區",
+        "category": "台語繪本",
+        "start_time": "2026-09-20T10:30:00+08:00",
+        "end_time": null,
+        "venue": "喜憨兒桃園南門公園庇護商店",
+        "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+        "registration_url": "https://ppt.cc/fblvqx",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1600op4ni94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-20T10:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+          "start_time": "2026-09-20T10:30:00+08:00",
+          "end_time": null,
+          "venue": "喜憨兒桃園南門公園庇護商店",
+          "city": "桃園市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+          "checked_at": "2026-09-19T20:20:03+08:00",
+          "snapshot_sha256": "4cb0ae68c14720d0c35d19fc6c3040bd32641388138baf62dbc30c0b143d2746"
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1600op4ni94_20260920_1130",
+        "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "桃園市",
+        "district": "桃園區",
+        "category": "台語繪本",
+        "start_time": "2026-09-20T11:30:00+08:00",
+        "end_time": "2026-09-20T12:20:00+08:00",
+        "venue": "喜憨兒桃園南門公園庇護商店",
+        "address": "桃園市桃園區三民路三段264號 喜憨兒桃園南門公園庇護商店",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+        "registration_url": "https://ppt.cc/fblvqx",
+        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1600op4ni94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-20T11:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
+          "start_time": "2026-09-20T11:30:00+08:00",
+          "end_time": "2026-09-20T12:20:00+08:00",
+          "venue": "喜憨兒桃園南門公園庇護商店",
+          "city": "桃園市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        },
+        "poster_evidence": {
+          "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260908flubd2.jpg?2",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
+          "checked_at": "2026-09-19T20:20:03+08:00",
+          "snapshot_sha256": "4cb0ae68c14720d0c35d19fc6c3040bd32641388138baf62dbc30c0b143d2746"
         }
       }
     }

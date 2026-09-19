@@ -233,3 +233,5 @@ iPhone 的 LINE 內建瀏覽器不直接交接 `.ics` 時，網站辨識 LINE us
 `fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Threads僅下載上述去識別快照。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
 
 所有正式檢查通過才提交核實資料、翻譯對照、審查紀錄及 HTML/ICS。來源重查涵蓋本次建置仍未結束的活動；已結束活動繼續保留不可變的核實歷史，但其已下架或改版的舊詳情頁不阻擋今日活動發布。提交推送失敗會停止部署，沒有 continue-on-error 或強制覆蓋 main。候選核實報告保留 Git 及14天 artifact，全文候選不進 Git／Pages。Python 測試保存9/18的85場固定樣本；當前正式清單另通過結構、來源與日曆一致性檢查，沒有85場數量上限。
+
+台語站缺少明確開始時間時，收集與核實皆會沿官方公告的 docs.google.com、forms.gle、ppt.cc、reurl.cc 連結讀公開 Google Forms。最終網址須為 HTTPS docs.google.com 的 viewform；表單標題須有唯一完整年月日，與公告月日、公告明列年份及場地相符。僅將「場次」題目下的「第N場」選項拆成活動，報名組合不另算場次；不提交表單或讀取填答。表單文字與選項的同一起始時間若出現不同結束時間，保留確定的開始時間、end_time=null，詳情註明結束時間待確認，ICS 不虛構 DTEND。來源快照保存表單目的網址、標題、指紋、場次選項及結束時間各種記載；後續發布必須重新核對，變更或抓取失敗會停止發布。首次收集失敗仍保留公告及失敗原因供後續處理。通用海報OCR不在本次實作範圍。
