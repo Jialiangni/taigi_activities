@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-19T12:20:29+08:00",
+  "reviewed_at": "2026-09-19T13:09:39+08:00",
   "applied_to_catalog": true,
-  "collected_at": "2026-09-19T06:19:37+08:00",
-  "candidate_count": 688,
+  "collected_at": "2026-09-19T13:09:25+08:00",
+  "candidate_count": 745,
   "counts": {
-    "pending": 639,
-    "duplicate": 43,
+    "pending": 689,
+    "duplicate": 50,
     "excluded": 6
   },
   "collection_status_counts": {
-    "ok": 32,
-    "partial": 73,
-    "failed": 51,
+    "ok": 57,
+    "partial": 77,
+    "failed": 22,
     "needs_configuration": 3
   },
   "decisions": [
@@ -42,18 +42,18 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "cd897e6b5bed2112f45e8671",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609140211321902093902",
-      "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
       "candidate_id": "4823f23854bb8b94c3482615",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609140247402019682780",
       "title": "台語咱佮意！台語主題系列講座 (10/17-11/21)",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "cd897e6b5bed2112f45e8671",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609140211321902093902",
+      "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -475,6 +475,381 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "a539040af8f4afa4246e24b5",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084126686540869633",
+      "title": "張雅淳×李婉菁《唸歌去天庭：老仙婆的跨界音樂會》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "144fdc8e13c05d6a71bbe450",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084126686540869633",
+      "title": "張雅淳×李婉菁《唸歌去天庭：老仙婆的跨界音樂會》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "66c966563631defc9c76aa49",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049748445126623233"
+    },
+    {
+      "candidate_id": "b0917340e79d46fa36fe5c7f",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049747309313294337"
+    },
+    {
+      "candidate_id": "a34b35fd20b13cebc9dfe885",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049747355484192769"
+    },
+    {
+      "candidate_id": "a400c46fd3a505889b19fe27",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056907131031330817",
+      "title": "【歌仔戲】鴻明歌劇團《戰神花雲》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "eced24c3bf5c65ae752a03cd",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056907131031330817",
+      "title": "【歌仔戲】鴻明歌劇團《戰神花雲》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "3bf2ef20364df447d40cbb86",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056999452011864065",
+      "title": "【歌仔戲】春美歌劇團《將軍寇》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "82f3e3b8dc47975d657c4725",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056999452011864065",
+      "title": "【歌仔戲】春美歌劇團《將軍寇》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d39ee1f39a8ec31c3fc8e3cc",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "58c8ab48810f3456e114e429",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "b889761835c11de20e403c00",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "0fb6cd537f6c2056576d7529",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d082f5c46d5c6a0bb1c84228",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "7b215dc69e9bc7184f2d6e60",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "2eadcf7e7c4eef10a3323379",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2082370327705296896",
+      "title": "2026財團法人廖瓊枝歌仔戲文教基金會《火燒紅蓮寺》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "0332f21ee58f4b0829cd5ad4",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2082370327705296896",
+      "title": "2026財團法人廖瓊枝歌仔戲文教基金會《火燒紅蓮寺》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "4f564ea1584c994403261f3f",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "4e233b2c3035b4ac7269f502",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d9074f20520d7e19d5c4232b",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f6535beafad35ee578ba1c39",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f54df65e3205fbcfb400494e",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "ad5372ca674b44fd43c43919",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "9796715a05915d4c452f2ea8",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081615616389365761",
+      "title": "台語光影戲《山神的餅店》劇場版",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2081616883683512321"
+    },
+    {
+      "candidate_id": "74b7a26b29fe284cb424ac8b",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081615616389365761",
+      "title": "台語光影戲《山神的餅店》劇場版",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2081620242303524865"
+    },
+    {
+      "candidate_id": "0ae2ad4786c6e1ab31934389",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "2854e3a513355cbe78658d5c",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f3f936c77f0f1a9e644d40a3",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "8e17aef746cb65c6e8741c09",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "c097f2e07eb1d256a46a34db",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-202當伯公遇見土地公",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "b1bc953c8f1798f1c9741a08",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "5ab65065446e6097b618375b",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "【特展】 「請戲-布袋戲一條街」特展",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "3a9361ee088d05fbba2851bb",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
+      "title": "金鷹歸來：隆興閣掌中武林特展",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "58e663ef9ee02797e0c56947",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "高城歌謠 快樂傳唱",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "9d7c72661457ad8b528a7e02",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年深入你心歌唱",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "953b320f05d64047a33265d7",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "樂活歡唱無限",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "544d1d50cb4722fa50076e66",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "歌謠班音樂研習",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "6d2bd8682f87b925c76ed786",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "歌唱班",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "212fcf75c1f78ea6dcdeee9f",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年度歌唱研習班",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "31e00a4048cc4a48d24cfd5a",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年望間歌唱研習活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d950dfcf2cf25350ceea3d40",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "吉他樂透樂團",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "fde0824510d641badd2a1e13",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085287665547493377",
+      "title": "黑白講・鬥嘴鼓： 我們為何還要看台語片？",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2085287666840485889"
+    },
+    {
+      "candidate_id": "310d83cbe91674eca1a83873",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
+      "title": "童演童語兒童閱讀推廣活動-霹靂電影日《奇人密碼—古羅布之謎》(2場)",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "e38af9d4a88d45184b00a9f4",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085263749562839041",
+      "title": "懷念的人 + 台語版預告",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "641c379698dbf84518c14a1d",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085263749562839041",
+      "title": "懷念的人 + 台語版預告",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "a6a013f8e8735db673d8bd28",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085269650239729664",
+      "title": "裝配台語：從農宣片到《飛天三輪車》",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2085270043361689600"
+    },
+    {
       "candidate_id": "113e6755357fa44896310110",
       "source_id": "culture_open_data",
       "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
@@ -830,7 +1205,7 @@
       "candidate_id": "4ce8e9b7cbe69be664b788f2",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
-      "title": "「轉型正義kap不當黨產」講座 【台北場】受政治影響ê台灣美術",
+      "title": "「轉型正義kap不當黨產」講座  【台北場】受政治影響ê台灣美術",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -2819,6 +3194,78 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "4ebb356c7c9034074ef6b43d",
+      "source_id": "ntpclib",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=c76ac5603bf44fec8015100fef27e0a2",
+      "title": "【中和員山分館】115年10月彩虹故事屋-新北市立圖書館",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "12b12d6360d07658bae2842f",
+      "source_id": "ntpclib",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=29e248e955484125865017a79c4df1a3",
+      "title": "【全市】閱讀集點新體驗！「新北好讀點」9月1日上線試營運一個月-新北市立圖書館",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f5ae8c052e74d644ce972c32",
+      "source_id": "ntpclib_district_220",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=a3265b0984d748bab64e3f7f771855d4",
+      "title": "【板橋江子翠分館】115年10月彩虹故事屋",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "02ca429a372726d8a558c973",
+      "source_id": "ntpclib_district_221",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=c2bfe69d5b454006b21139a322bf6a74",
+      "title": "【汐止分館】台語古早味歌謠賞析1、2",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f3ba85f09717ab80d1b5dc56",
+      "source_id": "ntpclib_district_234",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=da4d240a7bab4cd9931041f8a37f751f",
+      "title": "【永和民權分館】115年9月份彩虹故事屋",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "fd506a2e7b2d81b9b5ed3739",
+      "source_id": "ntpclib_district_235",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=c76ac5603bf44fec8015100fef27e0a2",
+      "title": "【中和員山分館】115年10月彩虹故事屋",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "8c5db2e9b917ad7343995a9f",
+      "source_id": "ntpclib_district_241",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
+      "title": "【三重東區分館】115年8月-11月份【本土語言書展】",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "6318c28b130b975127af53a7",
+      "source_id": "ntpclib_district_248",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=1887c673ba9f438ba9bed9fc6745feef",
+      "title": "【五股守讓堂】115年9月【影友會】",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f2e5f2254b334ff062c77c3d",
+      "source_id": "ntpclib_district_251",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
+      "title": "【淡水分館】 115年全年度藝文展演一覽表",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "d79395ef524b566db10a8a5d",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2056657152138346497",
@@ -3395,18 +3842,18 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "d3847418bad2bad34c59732f",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2036015355921928192",
-      "title": "【掌中戲】五洲勝義閣掌中劇團《濟世降魔傳》",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
       "candidate_id": "760fab36d26991811b7e4d15",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2036016610592505856",
       "title": "【掌中戲】新西園掌中劇團《文素臣之大義滅親-殺嫂》",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "d3847418bad2bad34c59732f",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2036015355921928192",
+      "title": "【掌中戲】五洲勝義閣掌中劇團《濟世降魔傳》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -5449,6 +5896,14 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "d3b02cefbeaec5471565476c",
+      "source_id": "taipei_tourism",
+      "source_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+      "title": "彩虹觀光巴士10月開跑！國際變裝巨星妮妃雅、 Pangina Heals邀你探索多元友善的臺北 115-09-19 迎接10月同志驕傲月，臺北市政府觀光傳播局推出「2026 Color Taipei Color your way」系列活動。10月來臺北，除了參加亞洲最具指標性的同志盛事，千萬別錯過廣受好評的彩虹觀光巴士遊程！遊程將於10月9日至30日登場，即日起於KKday獨家販售。帶領旅客穿梭臺北市區，走訪西門紅樓、二二八和平公園、台北101、臺北大巨蛋及華山文創園區等臺北經典地標及彩虹文化景點，今年更首度駛進林森條通商圈，探索條通街區夜間文化、欣賞變裝皇后演出還有國際巨星限定場次，深入感受臺北多元友善的城市魅力。今年彩虹觀光巴士推出三大特色遊程，下午場次的「一般導覽場」帶領旅客穿梭臺北市區，透過變裝皇后的導覽分享，認識臺北的彩虹文化故事；晚上場次的「派對演出場」則首度進入林森條通商圈，旅客將造訪天津大酒店及Bar Nine，跟著條通媽媽桑探索條通不為人知的歷史故事與夜間文化，欣賞變裝皇后精彩演出與互動體驗，還可免費享用一杯飲料，在微醺與歡樂氛圍中感受條通獨特魅力；另於10月28日及30日推出限量「特別嘉賓派對場」，邀請國際變裝巨星Pangina Heals及妮妃雅登車，打造今年最具話題性的彩虹觀光體驗。觀傳局表示，今年彩虹觀光巴士不僅首度結合條通街區探索與夜間文化體驗，更邀請泰國知名變裝天后Pangina Heals及《RuPaul's Drag Race》冠軍妮妃雅參與限定場次，打造兼具文化深度與娛樂話題的觀光遊程，期盼藉由彩虹文化、街區故事及國際級嘉賓等吸引更多國內外旅客走進臺北，感受自由、多元且包容的城市魅力。今年邀集8位臺灣知名變裝皇后擔任導覽員，包括跩姬寶貝、漢娜、小花寶貝、Yolanda、Marian、Bagel、Yugee及Honey Ji；同時結合《甲板日誌》、女同志派對品牌「浪漫銀河大舞廳」及高人氣的Sandra Hoe等LGBTQ+網路創作者共同參與。此外，今年特別規劃臺語導覽場次，並推出5場英文導覽，讓國內外旅客輕鬆認識臺北的多元文化。除彩虹觀光巴士外，「2026 Color Taipei Color your way」系列活動也推出多項限定體驗。9月24日至10月12日，只要至「臺北旅遊網」Facebook及Instagram指定貼文留言「Color Taipei Color your way」，並標記兩位好友，就有機會抽中彩虹觀光巴士遊程票券等限定好禮；西門町遊客中心則於10月1日至31日特別設置限定彩虹主題拍貼框，體驗拍貼還能獲得限定彩虹小禮。觀傳局表示，為迎接來臺北參與同志驕傲月活動及臺灣同志遊行的國內外旅客，今年更攜手Agoda推出「Taipei Nice Stay」限時住宿專區，提供友善優質的住宿選擇，鼓勵旅客多停留臺北，體驗臺北自由包容的城市氛圍與豐富精彩的文化風貌，共同創造屬於自己的「Color Taipei Color your way」。KKday「彩虹觀光巴士遊程」購票：連結「2026 Color Taipei Color your way」10月登場，邀旅客探索臺北多元友善魅力。國際知名變裝皇后妮妃雅將於10月30日登上彩虹觀光巴士與旅客近距離互動。 泰國知名變裝表演者Pangina Heals將於10月28日參與彩虹觀巴行程。臺灣知名變裝表演品牌灣島皇后們將登上彩虹觀光巴士，帶領旅客認識臺北彩虹文化。",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "627b611118572afd8e772b71",
       "source_id": "tmofa",
       "source_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
@@ -5545,6 +6000,14 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "f9e6eee1cc45faeede1611b3",
+      "source_id": "typl",
+      "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/9721",
+      "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "ee61d35971392d9630c8b372",
       "source_id": "typl_district_2",
       "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
@@ -5578,10 +6041,10 @@
     }
   ],
   "collection_run": {
-    "id": 35397735423,
-    "head_sha": "9d826c963248246a8a8e8873e6d9e6f3c897f47c",
+    "id": 35421049507,
+    "head_sha": "70f2f2dbcc9a73ad558e11a5849f48eb8a43864f",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/35397735423",
-    "artifact_id": 10570880723
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/35421049507",
+    "artifact_id": 10578126317
   }
 }
