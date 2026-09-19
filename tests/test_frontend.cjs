@@ -162,15 +162,21 @@ console.log('PASS: crowded week (14 events), city colors/filter, full titles, we
     assert.doesNotMatch(anchor,/\bdownload\b|\bonclick\b|\btarget\b/);
     for(const event of data){
       run(`openModal(${JSON.stringify(event.id)})`);
-      assert.equal(element('modalSingleIcsBtn').href,event.ics_path);
+      assert.equal(element('modalSingleIcsBtn').href,event.ics_path+'?preview=1');
       assert.match(event.ics_path,/^calendar-events\/[a-f0-9]{64}\.ics$/);
       const raw=fs.readFileSync(event.ics_path,'utf8');
       assert.equal((raw.match(/BEGIN:VEVENT/g)||[]).length,1);
-      assert.ok(raw.includes(event.ics_event));
+      const unfolded=raw.replace(/\r\n /g,'');
+      const original=event.ics_event.replace(/\r\n /g,'');
+      const description=original.split('\r\n').find(line=>line.startsWith('DESCRIPTION:')).slice('DESCRIPTION:'.length);
+      assert.ok(unfolded.split('\r\n').find(line=>line.startsWith('DESCRIPTION:')).endsWith(description));
+      assert.ok(unfolded.includes('第一步：先看預覽'));
+      assert.ok(unfolded.includes('Add to Calendar'));
+      for(const line of original.split('\r\n').filter(line=>!line.startsWith('DESCRIPTION:'))) assert.ok(unfolded.includes(line));
     }
     context.location.protocol='file:';
     run(`openModal(${JSON.stringify(data[0].id)})`);
-    assert.equal(element('modalSingleIcsBtn').href,'https://jialiangni.github.io/taigi_activities/'+data[0].ics_path);
+    assert.equal(element('modalSingleIcsBtn').href,'https://jialiangni.github.io/taigi_activities/'+data[0].ics_path+'?preview=1');
   }
   console.log('PASS: JS syntax, filters, Taipei time, official links, filtered ICS and hosted single-event ICS links');
 })().catch(e=>{console.error(e);process.exitCode=1});

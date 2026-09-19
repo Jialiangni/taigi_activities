@@ -21,7 +21,7 @@ def build(output_dir=Path('.'), check_sources=False):
         event_dir = stage / 'calendar-events'
         event_dir.mkdir()
         for activity in activities:
-            calendar.export_ics([activity], event_dir / calendar.single_event_filename(activity))
+            calendar.export_ics([activity], event_dir / calendar.single_event_filename(activity), preview_help=True)
         generate_single_html(activities, stage / 'index.html', resources=resources)
         (stage / 'taigi-activities-standalone.html').write_bytes((stage / 'index.html').read_bytes())
         # Replace the generated set only after all validation/build steps succeeded.
