@@ -67,9 +67,15 @@ if (data.length) {
   assert.ok(element('modalDesc').innerText.startsWith(data[0].description_taigi));
   assert.match(element('modalDesc').innerText,/官方資料確認/);
   assert.doesNotMatch(element('modalTime').innerText,/～/);
-  assert.equal(element('modalTicketLink').textContent,'🌐 活動公告／報名 ↗');
+  assert.equal(element('modalTicketLink').textContent,'🌐 活動公告 ↗');
   assert.equal(element('modalGoogleSearchLink').innerHTML,'🔍 Google 揣報名／買票 ↗');
 }
+const registrationEvent=data.find(a=>a.source_platform==='台語站' && a.registration_url);
+assert.ok(registrationEvent);
+run(`openModal(${JSON.stringify(registrationEvent.id)})`);
+assert.equal(element('modalRegistrationLink').href,registrationEvent.registration_url);
+assert.equal(element('modalRegistrationLink').hidden,false);
+assert.equal(element('modalTicketLink').href,registrationEvent.source_url);
 // Month selection is a union of year-months, intersected with all other filters.
 assert.equal(run("monthLabel('2026-09')"),'2026∙09');
 run('renderMonthFilters()');

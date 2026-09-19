@@ -10,7 +10,9 @@ from unittest.mock import patch
 
 from crawler.collection import CollectionError
 from crawler.review import (review, Pending, language_claims, validate_auto_source, source_url, duplicate,
-                            trusted_registration_link, published_accupass_series, verify_accupass)
+                            trusted_registration_link, published_accupass_series, verify_accupass,
+                            verify_gameislearning)
+from crawler.sources.gameislearning import parse_detail as parse_gameislearning_detail
 from crawler.sources.accupass import parse_event as parse_accupass_event
 from crawler.sources.opentix import parse_program
 from crawler.verified import load_verified
@@ -260,6 +262,29 @@ class CandidateReviewTests(unittest.TestCase):
         with self.assertRaises(Pending):
             verify_accupass(candidate, type('C', (), {'get': lambda self, u:
                 (html.replace('免費報名', '費用另洽'), evidence)})(), NOW)
+
+    def test_trusted_directory_skips_language_review_and_keeps_registration_url(self):
+        url = 'https://www.gameislearning.url.tw/taigi-info.php?news=abc123'
+        html = '''<h1>台語故事活動</h1><p>2026/10/4 10:30-12:00<br>
+        地點｜臺北市立圖書館總館<br>故事協會 邀請您<br>
+        https://forms.gle/signup</p><table><tr><td>活動地址</td><td>
+        <a href="https://www.google.com/maps/search/x">臺北市大安區建國南路二段125號 臺北市立圖書館總館</a>
+        </td></tr></table><table><tr><td id="titleTD"><a href="https://forms.gle/signup">來源</a></td></tr></table>'''
+        evidence = {'final_url':url, 'sha256':'d'*64, 'fetched_at':NOW.isoformat()}
+        parsed = parse_gameislearning_detail(html, url, evidence, {
+            'city':'臺北市','district':'大安區','type':'親子','is_free':True,
+            'published_at':'2026-09-19'}, NOW)
+        candidate = {'id':'trusted','source_id':'gameislearning','source_url':url,
+            'title':parsed['title'],'text':parsed['text'],'kind':'session',
+            'trusted_language_source':True,'fields':dict(parsed, **parsed['sessions'][0])}
+        candidate['fields'].pop('sessions')
+        class DirectoryClient:
+            def get(self, requested): return html, evidence
+        key, source, row = verify_gameislearning(candidate, DirectoryClient(), NOW)
+        self.assertEqual(key, 'auto_gameislearning_abc123')
+        self.assertEqual(row['activity']['registration_url'], 'https://forms.gle/signup')
+        self.assertIn('使用者指定信任來源', row['verification']['language_evidence'])
+        validate_auto_source(source, None, html)
 
     def test_missing_or_stale_candidate_report_stops_before_writing(self):
         self.save_candidates(NOW-timedelta(days=2))

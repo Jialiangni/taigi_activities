@@ -29,6 +29,15 @@ def detail_url(value):
     return value
 
 
+def optional_external_url(value):
+    if not value:
+        return value
+    p = urlsplit(value)
+    if p.scheme != 'https' or not p.hostname or p.username or p.password:
+        raise ValueError('報名連結須為不含憑證的 HTTPS 網址')
+    return value
+
+
 class PageText(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -90,7 +99,7 @@ def check_live_sources(sources):
             if 'automated_review' in source:
                 from .review import validate_auto_source
                 validate_auto_source(source, payload['result'])
-        elif source.get('automated_review', {}).get('source_type') == 'accupass':
+        elif source.get('automated_review', {}).get('source_type') in ('accupass', 'gameislearning'):
             from .review import validate_auto_source
             validate_auto_source(source, None, html)
 
@@ -127,7 +136,9 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
             valid_proof = (proof.get('mode') == 'official_rules_v1' and proof.get('language_claims') and
                            (('opentix_sessions' in source and proof.get('source_type') in (None, 'opentix')) or
                             (proof.get('source_type') == 'accupass' and proof.get('session') and
-                             proof.get('free_evidence'))))
+                             proof.get('free_evidence')) or
+                            (proof.get('source_type') == 'gameislearning' and proof.get('sessions') and
+                             proof.get('trusted_language_source') is True)))
             if not valid_proof:
                 raise ValueError('自動核實活動缺少可重查的官方證據')
         if 'opentix_sessions' in source:
@@ -136,6 +147,7 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
                 raise ValueError('正式活動與已核對的 OPENTIX 場次不一致')
         if data['source_url'] != source['url']:
             raise ValueError('活動連結與核實來源不一致')
+        optional_external_url(data.get('registration_url', ''))
         for field in REVIEWED_FIELDS:
             if field not in data or field not in review['confirmed_fields'] or review['confirmed_fields'][field] != data[field]:
                 raise ValueError(f'活動欄位 {field} 異動，需重新核對')

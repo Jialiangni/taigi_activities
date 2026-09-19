@@ -30,6 +30,7 @@ class SourcePlatformEnum(str, Enum):
     ACCUPASS = "Accupass 活動通"
     LI_KANG_KHIOK = "李江却基金會"
     LE_CHANG = "樂暢親子共學"
+    GAME_IS_LEARNING = "台語站"
     LIBRARIES = "北北桃市立圖書館"
     NATIONAL_LIBRARY = "國立臺灣圖書館"
     MUSEUMS = "美術館與博物館"
@@ -55,6 +56,7 @@ class Activity:
     organizer: str = ""
     source_platform: SourcePlatformEnum = SourcePlatformEnum.OPENTIX
     source_url: str = ""
+    registration_url: str = ""
     cover_image: str = ""
     price_info: str = "費用未公告，請洽主辦單位"
     is_free: Optional[bool] = None

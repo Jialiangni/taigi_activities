@@ -21,8 +21,12 @@ def fold_line(line):
     parts, part = [], ''
     for char in line:
         if len((part + char).encode('utf-8')) > 75:
-            parts.append(part)
-            part = ' '
+            # A semantic space at the fold boundary belongs after the RFC 5545
+            # continuation marker; leaving it at end-of-line trips text tools
+            # and is easy for editors to remove accidentally.
+            trailing = len(part) - len(part.rstrip(' '))
+            parts.append(part.rstrip(' '))
+            part = ' ' + (' ' * trailing)
         part += char
     parts.append(part)
     return '\r\n'.join(parts)

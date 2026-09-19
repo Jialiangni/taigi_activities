@@ -17,6 +17,7 @@ from .collection import Client, CollectionError, TAIPEI, plain
 from .models import Activity, CategoryEnum, SourcePlatformEnum
 from .sources.accupass import parse_event as parse_accupass_event
 from .sources.opentix import parse_program
+from .sources.gameislearning import DETAIL_RE, parse_detail as parse_gameislearning_detail
 from .verified import REVIEWED_FIELDS, load_verified, normalized_text, parse_time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -151,6 +152,21 @@ def validate_auto_source(source, program, html=None):
         require(quote == proof['language_claims'][0]['quote'], 'accupass_language_changed')
         require(proof['free_evidence'] in live['text'], 'accupass_price_changed')
         return
+    if proof.get('source_type') == 'gameislearning':
+        require(isinstance(html, str), 'gameislearning_page_missing')
+        live = parse_gameislearning_detail(html, source['url'], {}, now=datetime.now(TAIPEI))
+        require(normalize(live['title']) == normalize(source['title']), 'gameislearning_title_changed')
+        require(proof.get('trusted_language_source') is True, 'trusted_language_source_missing')
+        require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
+        for expected in proof.get('sessions', []):
+            actual = next((row for row in live['sessions']
+                           if row.get('start_time') == expected.get('start_time')
+                           and row.get('end_time') == expected.get('end_time')), None)
+            require(actual, 'gameislearning_session_changed')
+        if proof.get('registration_url'):
+            require(live['registration_url'] == proof['registration_url'],
+                    'gameislearning_registration_changed')
+        return
     if program.get('status') != 3 or plain(program.get('changeNotification')):
         raise ValueError('自動核實節目狀態或異動公告改變，停止發布')
     groups = {str(g['id']): g for g in program['eventVenues']}
@@ -260,6 +276,69 @@ def verify_accupass(candidate, client, now):
            'mode': MODE,
            'method': 'ACCUPASS 官方頁重新核對；單一場次明列台語場、日期、時間、地點、主辦及免費報名。',
            'language_evidence': quote,
+           'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
+    return key, source, row
+
+
+def verify_gameislearning(candidate, client, now):
+    """Trust this curated directory for language, while rechecking event facts."""
+    url = source_url(candidate['source_url'])
+    matched = DETAIL_RE.fullmatch(url)
+    require(matched and candidate.get('kind') == 'session', 'unsupported_trusted_directory_candidate')
+    require(candidate.get('trusted_language_source') is True, 'trusted_language_source_missing')
+    page_html, page = client.get(url)
+    require(page['final_url'] == url, 'official_page_redirected')
+    fields = candidate['fields']
+    live = parse_gameislearning_detail(page_html, url, page, {
+        'city': fields.get('city'), 'district': fields.get('district'),
+        'type': '', 'is_free': fields.get('is_free'),
+        'published_at': fields.get('published_at')}, now)
+    require(normalize(live['title']) == normalize(candidate['title']), 'candidate_title_changed')
+    require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
+    require(live['venue'] and live['address'] and live['organizer'], 'missing_identity_fields')
+    require(live['address'] == fields.get('address') and live['venue'] == fields.get('venue'),
+            'candidate_location_changed')
+    require(live['registration_url'] == fields.get('registration_url', ''),
+            'candidate_registration_changed')
+    session = next((row for row in live['sessions']
+                    if row.get('start_time') == fields.get('start_time')
+                    and row.get('end_time') == fields.get('end_time')), None)
+    require(session, 'candidate_session_changed')
+    start = parse_time(session['start_time'])
+    end = parse_time(session['end_time']) if session.get('end_time') else None
+    require((end or start) > now, 'expired')
+    require(end is None or timedelta(0) < end - start <= timedelta(hours=12), 'invalid_session_duration')
+    is_free = fields.get('is_free')
+    require(is_free is None or type(is_free) is bool, 'invalid_ticket_terms')
+    price = ('免費，報名方式請看活動公告' if is_free is True else
+             '需付費，金額與報名方式請看活動公告' if is_free is False else
+             '費用未公告，請查看活動公告')
+    language = '台語站活動專頁全部列為台語活動（使用者指定信任來源）'
+    description = '台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。'
+    activity_id = 'gameislearning_' + matched.group(1) + '_' + start.strftime('%Y%m%d_%H%M')
+    act = Activity(id=activity_id, title=live['title'], description=description,
+                   city=live['city'], district=fields.get('district', ''),
+                   category=fields.get('category', CategoryEnum.OTHER.value),
+                   start_time=session['start_time'], end_time=session['end_time'],
+                   venue=live['venue'], address=live['address'], organizer=live['organizer'],
+                   source_platform=SourcePlatformEnum.GAME_IS_LEARNING, source_url=url,
+                   registration_url=live['registration_url'], price_info=price, is_free=is_free,
+                   tags=['台語', '台語站信任來源', '自動核實場次']).to_dict()
+    proof_session = {'start_time': session['start_time'], 'end_time': session['end_time'],
+                     'venue': live['venue'], 'address': live['address'], 'city': live['city']}
+    key = 'auto_gameislearning_' + matched.group(1)
+    required = [live['title'], live['venue']]
+    source = {'url': url, 'title': live['title'], 'required_text': required,
+              'checked_at': page['fetched_at'], 'snapshot_sha256': page['sha256'],
+              'automated_review': {'mode': MODE, 'source_type': 'gameislearning',
+                  'trusted_language_source': True, 'language_claims': [
+                      {'origin': 'trusted_directory_policy', 'quote': language}],
+                  'registration_url': live['registration_url'], 'sessions': [proof_session]}}
+    row = {'activity': act, 'verification': {'status': 'verified', 'source_id': key,
+           'mode': MODE,
+           'method': '台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。',
+           'language_evidence': language,
+           'gameislearning_session_key': session['start_time'],
            'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
     return key, source, row
 
@@ -446,6 +525,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if c.get('fields', {}).get('sessions'):
                     raise Pending('structured_sessions_need_review')
                 key, source, row = verify_accupass(c, client, now)
+            elif c['source_id'] == 'gameislearning':
+                key, source, row = verify_gameislearning(c, client, now)
             else:
                 require(c['source_id'] == 'opentix' and c['kind'] == 'session',
                         'unstructured_source_needs_review')
@@ -467,6 +548,10 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 source['opentix_sessions'] = old['opentix_sessions'] + source['opentix_sessions']
                 source['required_text'] = list(dict.fromkeys(old['required_text'] + source['required_text']))
                 source['automated_review']['language_claims'] = old['automated_review']['language_claims'] + source['automated_review']['language_claims']
+            if key in catalog['sources'] and c['source_id'] == 'gameislearning':
+                old = catalog['sources'][key]
+                source['required_text'] = list(dict.fromkeys(old['required_text'] + source['required_text']))
+                source['automated_review']['sessions'] = old['automated_review']['sessions'] + source['automated_review']['sessions']
             catalog['sources'][key] = source
             catalog['activities'].append(row)
             translations[a['description']] = '這場明列做台語場。活動內容、報到方式佮參加規定，請看官方活動頁。'
@@ -474,10 +559,16 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 translations[a['description']] = '這場有台語內容。詳細節目紹介、入場規定佮報名狀況，請看活動公告。'
                 amounts = '、'.join(format(p, 'g') for p in source['opentix_sessions'][-1]['price_info'])
                 prices[a['price_info']] = '票價：' + amounts + '元；折扣佮買票規定請看官方公告。'
-            else:
+            elif c['source_id'] == 'accupass':
                 prices[a['price_info']] = '毋免錢，愛事先報名'
+            else:
+                translations[a['description']] = '台語站收錄的台語活動；內容、參加資格佮最新異動，請看活動公告。'
+                prices[a['price_info']] = ('毋免錢，報名方式請看活動公告' if a['is_free'] is True else
+                                           '愛納錢，金額佮報名方式請看活動公告' if a['is_free'] is False else
+                                           '所費猶未公告，請看活動公告')
             item.update(decision='approved',
                         reason=('official_page_single_session_verified' if c['source_id'] == 'accupass'
+                                else 'trusted_taigi_directory_session_verified' if c['source_id'] == 'gameislearning'
                                 else 'official_page_and_session_api_verified'), activity_id=a['id'])
         except Pending as e:
             item['reason'] = str(e)

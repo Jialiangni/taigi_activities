@@ -1754,6 +1754,352 @@
           "event_status": "https://schema.org/EventScheduled"
         }
       }
+    },
+    "auto_gameislearning_1615lr4vi187": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+      "title": "115-2初階台語推廣課程",
+      "required_text": [
+        "115-2初階台語推廣課程",
+        "台北市立圖書館總館11樓 研習教室"
+      ],
+      "checked_at": "2026-09-19T19:29:35+08:00",
+      "snapshot_sha256": "acd8e508e4815a8787d1be0e0d638ddebb6a94441fcd641622230115ee392cc5",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "sessions": [
+          {
+            "start_time": "2026-09-23T18:40:00+08:00",
+            "end_time": "2026-09-23T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-09-30T18:40:00+08:00",
+            "end_time": "2026-09-30T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-07T18:40:00+08:00",
+            "end_time": "2026-10-07T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-14T18:40:00+08:00",
+            "end_time": "2026-10-14T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-21T18:40:00+08:00",
+            "end_time": "2026-10-21T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-28T18:40:00+08:00",
+            "end_time": "2026-10-28T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-04T18:40:00+08:00",
+            "end_time": "2026-11-04T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-11T18:40:00+08:00",
+            "end_time": "2026-11-11T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-18T18:40:00+08:00",
+            "end_time": "2026-11-18T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-25T18:40:00+08:00",
+            "end_time": "2026-11-25T20:40:00+08:00",
+            "venue": "台北市立圖書館總館11樓 研習教室",
+            "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+            "city": "臺北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1603hq0qi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+      "title": "👍 笑咍咍台羅字母好料班第三期",
+      "required_text": [
+        "👍 笑咍咍台羅字母好料班第三期",
+        "樂暢親子共學空間"
+      ],
+      "checked_at": "2026-09-19T19:29:36+08:00",
+      "snapshot_sha256": "956ceb5cb00837cea31b16434fa03eeda5a83503af4f2ba78673bb8dec371e5d",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "sessions": [
+          {
+            "start_time": "2027-01-09T10:00:00+08:00",
+            "end_time": "2027-01-09T12:00:00+08:00",
+            "venue": "樂暢親子共學空間",
+            "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+            "city": "臺北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1594rl4yi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1594rl4yi94",
+      "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+      "required_text": [
+        "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+        "大稻埕戲苑"
+      ],
+      "checked_at": "2026-09-19T19:29:38+08:00",
+      "snapshot_sha256": "29ed8d792cbece2d98cebb1494a10324fddda4b1bc88c0ea69a52b30e766b614",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://www.opentix.life/event/2063886748971831297?srsltid=AfmBOopc_EhWHEJ7SBp_UxDOml_fRY2iCuAil8pvFBAj8urIiX7HVwwF",
+        "sessions": [
+          {
+            "start_time": "2026-10-30T19:30:00+08:00",
+            "end_time": null,
+            "venue": "大稻埕戲苑",
+            "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-31T14:30:00+08:00",
+            "end_time": null,
+            "venue": "大稻埕戲苑",
+            "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-01T14:30:00+08:00",
+            "end_time": null,
+            "venue": "大稻埕戲苑",
+            "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+            "city": "臺北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1583v0joi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "required_text": [
+        "中正紀念堂歷史小旅行【2026年台語場次】",
+        "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合"
+      ],
+      "checked_at": "2026-09-19T19:29:38+08:00",
+      "snapshot_sha256": "035ec338110dc963609b107578ce9b45fb0bd525e16a0e4adb95a48c102bf6cc",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://www.accupass.com/event/2608051357275636349740?utm_source=android_accupass&utm_medium=share_2506191009207545136170&utm_campaign=accu_e",
+        "sessions": [
+          {
+            "start_time": "2026-10-17T10:00:00+08:00",
+            "end_time": "2026-10-17T12:00:00+08:00",
+            "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+            "address": "台北市中正區中山南路21號 中正紀念堂",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-11-21T10:00:00+08:00",
+            "end_time": "2026-11-21T12:00:00+08:00",
+            "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+            "address": "台北市中正區中山南路21號 中正紀念堂",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-12-19T10:00:00+08:00",
+            "end_time": "2026-12-19T12:00:00+08:00",
+            "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+            "address": "台北市中正區中山南路21號 中正紀念堂",
+            "city": "臺北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1451398bi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1451398bi94",
+      "title": "⭐️2026夾腳拖劇團故事劇場",
+      "required_text": [
+        "⭐️2026夾腳拖劇團故事劇場",
+        "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）"
+      ],
+      "checked_at": "2026-09-19T19:29:39+08:00",
+      "snapshot_sha256": "51cd60991db5d032a5f0a0b63efb3f80b04def651fa2489b74a31a89421ebf64",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://forms.gle/GJ96zoTPBRSGxeqr8",
+        "sessions": [
+          {
+            "start_time": "2026-09-21T10:30:00+08:00",
+            "end_time": "2026-09-21T11:30:00+08:00",
+            "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+            "address": "台北市大同區 重慶北路三段25巷26號 書房有光",
+            "city": "臺北市"
+          },
+          {
+            "start_time": "2026-10-19T10:30:00+08:00",
+            "end_time": "2026-10-19T11:30:00+08:00",
+            "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+            "address": "台北市大同區 重慶北路三段25巷26號 書房有光",
+            "city": "臺北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_16086bkwi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=16086bkwi94",
+      "title": "【講予囡仔聽的人權繪本｜孩子眼中，什麼是最重要的事？】~10/14禮拜~",
+      "required_text": [
+        "【講予囡仔聽的人權繪本｜孩子眼中，什麼是最重要的事？】~10/14禮拜~",
+        "國家人權博物館學習中心一樓・兒童人權學習基地"
+      ],
+      "checked_at": "2026-09-19T19:29:39+08:00",
+      "snapshot_sha256": "fc11b137ce570ee0f1b2cb5db1c46dbcde93ed7442ec7a4bcaf3595cd19e99e2",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://www.accupass.com/event/2607280236031295663510",
+        "sessions": [
+          {
+            "start_time": "2026-10-04T10:30:00+08:00",
+            "end_time": "2026-10-04T12:00:00+08:00",
+            "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+            "address": "新北市新店區復興路131號 人權學習中心",
+            "city": "新北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1612kt0hi94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1612kt0hi94",
+      "title": "國家電影中心九月的免費放映來囉～『無言的山丘』",
+      "required_text": [
+        "國家電影中心九月的免費放映來囉～『無言的山丘』",
+        "國家電影及視聽文化中心"
+      ],
+      "checked_at": "2026-09-19T19:29:40+08:00",
+      "snapshot_sha256": "c833f5fc3561ea9cb12c3879f44d5a040046b22e3539698d2c4c483cbd91af71",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "",
+        "sessions": [
+          {
+            "start_time": "2026-09-20T18:00:00+08:00",
+            "end_time": null,
+            "venue": "國家電影及視聽文化中心",
+            "address": "新北市新莊區文藝路2號 國家電影及視聽文化中心",
+            "city": "新北市"
+          }
+        ]
+      }
+    },
+    "auto_gameislearning_1581w9d4i94": {
+      "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1581w9d4i94",
+      "title": "【講予囡仔聽的人權繪本｜大手牽小手，聽阿媽講古！】",
+      "required_text": [
+        "【講予囡仔聽的人權繪本｜大手牽小手，聽阿媽講古！】",
+        "國家人權博物館學習中心一樓・兒童人權學習基地"
+      ],
+      "checked_at": "2026-09-19T19:29:40+08:00",
+      "snapshot_sha256": "ada096f11951738489c5a04e973dcca9fd84c3e5532ac800927dff93474c9d14",
+      "automated_review": {
+        "mode": "official_rules_v1",
+        "source_type": "gameislearning",
+        "trusted_language_source": true,
+        "language_claims": [
+          {
+            "origin": "trusted_directory_policy",
+            "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+          }
+        ],
+        "registration_url": "https://www.accupass.com/event/2607280236031295663510",
+        "sessions": [
+          {
+            "start_time": "2026-09-20T10:30:00+08:00",
+            "end_time": "2026-09-20T12:00:00+08:00",
+            "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+            "address": "新北市新店區復興路131號 人權學習中心",
+            "city": "新北市"
+          }
+        ]
+      }
     }
   },
   "activities": [
@@ -6739,6 +7085,996 @@
           "city": "臺北市",
           "organizer": "故事 StoryStudio",
           "price_info": "免費，需事先報名",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20260923_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-09-23T18:40:00+08:00",
+        "end_time": "2026-09-23T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-23T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-09-23T18:40:00+08:00",
+          "end_time": "2026-09-23T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20260930_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-09-30T18:40:00+08:00",
+        "end_time": "2026-09-30T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-30T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-09-30T18:40:00+08:00",
+          "end_time": "2026-09-30T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261007_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-10-07T18:40:00+08:00",
+        "end_time": "2026-10-07T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-07T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-10-07T18:40:00+08:00",
+          "end_time": "2026-10-07T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261014_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-10-14T18:40:00+08:00",
+        "end_time": "2026-10-14T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-14T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-10-14T18:40:00+08:00",
+          "end_time": "2026-10-14T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261021_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-10-21T18:40:00+08:00",
+        "end_time": "2026-10-21T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-21T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-10-21T18:40:00+08:00",
+          "end_time": "2026-10-21T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261028_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-10-28T18:40:00+08:00",
+        "end_time": "2026-10-28T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-28T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-10-28T18:40:00+08:00",
+          "end_time": "2026-10-28T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261104_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-11-04T18:40:00+08:00",
+        "end_time": "2026-11-04T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-04T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-11-04T18:40:00+08:00",
+          "end_time": "2026-11-04T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261111_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-11-11T18:40:00+08:00",
+        "end_time": "2026-11-11T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-11T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-11-11T18:40:00+08:00",
+          "end_time": "2026-11-11T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261118_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-11-18T18:40:00+08:00",
+        "end_time": "2026-11-18T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-18T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-11-18T18:40:00+08:00",
+          "end_time": "2026-11-18T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1615lr4vi187_20261125_1840",
+        "title": "115-2初階台語推廣課程",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語體驗",
+        "start_time": "2026-11-25T18:40:00+08:00",
+        "end_time": "2026-11-25T20:40:00+08:00",
+        "venue": "台北市立圖書館總館11樓 研習教室",
+        "address": "台北市大安區建國南路二段125號 臺北立圖書館總館",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187",
+        "registration_url": "https://www.beclass.com/rid=30528256a95cf1ac73d1",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1615lr4vi187",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-25T18:40:00+08:00",
+        "confirmed_fields": {
+          "title": "115-2初階台語推廣課程",
+          "start_time": "2026-11-25T18:40:00+08:00",
+          "end_time": "2026-11-25T20:40:00+08:00",
+          "venue": "台北市立圖書館總館11樓 研習教室",
+          "city": "臺北市",
+          "organizer": "社團法人台灣台語文化協會",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1603hq0qi94_20270109_1000",
+        "title": "👍 笑咍咍台羅字母好料班第三期",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語繪本",
+        "start_time": "2027-01-09T10:00:00+08:00",
+        "end_time": "2027-01-09T12:00:00+08:00",
+        "venue": "樂暢親子共學空間",
+        "address": "台北市大同區長安西路78巷4弄5號2樓 樂暢親子共學空間",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1603hq0qi94",
+        "registration_url": "https://lin.ee/jqY7HN9j",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1603hq0qi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2027-01-09T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "👍 笑咍咍台羅字母好料班第三期",
+          "start_time": "2027-01-09T10:00:00+08:00",
+          "end_time": "2027-01-09T12:00:00+08:00",
+          "venue": "樂暢親子共學空間",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1594rl4yi94_20261030_1930",
+        "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語舞台劇",
+        "start_time": "2026-10-30T19:30:00+08:00",
+        "end_time": null,
+        "venue": "大稻埕戲苑",
+        "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1594rl4yi94",
+        "registration_url": "https://www.opentix.life/event/2063886748971831297?srsltid=AfmBOopc_EhWHEJ7SBp_UxDOml_fRY2iCuAil8pvFBAj8urIiX7HVwwF",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1594rl4yi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-30T19:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+          "start_time": "2026-10-30T19:30:00+08:00",
+          "end_time": null,
+          "venue": "大稻埕戲苑",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1594rl4yi94_20261031_1430",
+        "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語舞台劇",
+        "start_time": "2026-10-31T14:30:00+08:00",
+        "end_time": null,
+        "venue": "大稻埕戲苑",
+        "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1594rl4yi94",
+        "registration_url": "https://www.opentix.life/event/2063886748971831297?srsltid=AfmBOopc_EhWHEJ7SBp_UxDOml_fRY2iCuAil8pvFBAj8urIiX7HVwwF",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1594rl4yi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-31T14:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+          "start_time": "2026-10-31T14:30:00+08:00",
+          "end_time": null,
+          "venue": "大稻埕戲苑",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1594rl4yi94_20261101_1430",
+        "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語舞台劇",
+        "start_time": "2026-11-01T14:30:00+08:00",
+        "end_time": null,
+        "venue": "大稻埕戲苑",
+        "address": "台北市大同區迪化街一段21號9樓 大稻埕戲苑",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1594rl4yi94",
+        "registration_url": "https://www.opentix.life/event/2063886748971831297?srsltid=AfmBOopc_EhWHEJ7SBp_UxDOml_fRY2iCuAil8pvFBAj8urIiX7HVwwF",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1594rl4yi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-01T14:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【歌仔戲】元和劇子-鼓震千秋『梁紅玉』",
+          "start_time": "2026-11-01T14:30:00+08:00",
+          "end_time": null,
+          "venue": "大稻埕戲苑",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1583v0joi94_20261017_1000",
+        "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "中正區",
+        "category": "台語故事",
+        "start_time": "2026-10-17T10:00:00+08:00",
+        "end_time": "2026-10-17T12:00:00+08:00",
+        "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+        "address": "台北市中正區中山南路21號 中正紀念堂",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+        "registration_url": "https://www.accupass.com/event/2608051357275636349740?utm_source=android_accupass&utm_medium=share_2506191009207545136170&utm_campaign=accu_e",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1583v0joi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-17T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+          "start_time": "2026-10-17T10:00:00+08:00",
+          "end_time": "2026-10-17T12:00:00+08:00",
+          "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1583v0joi94_20261121_1000",
+        "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "中正區",
+        "category": "台語故事",
+        "start_time": "2026-11-21T10:00:00+08:00",
+        "end_time": "2026-11-21T12:00:00+08:00",
+        "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+        "address": "台北市中正區中山南路21號 中正紀念堂",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+        "registration_url": "https://www.accupass.com/event/2608051357275636349740?utm_source=android_accupass&utm_medium=share_2506191009207545136170&utm_campaign=accu_e",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1583v0joi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-11-21T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+          "start_time": "2026-11-21T10:00:00+08:00",
+          "end_time": "2026-11-21T12:00:00+08:00",
+          "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1583v0joi94_20261219_1000",
+        "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "中正區",
+        "category": "台語故事",
+        "start_time": "2026-12-19T10:00:00+08:00",
+        "end_time": "2026-12-19T12:00:00+08:00",
+        "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+        "address": "台北市中正區中山南路21號 中正紀念堂",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+        "registration_url": "https://www.accupass.com/event/2608051357275636349740?utm_source=android_accupass&utm_medium=share_2506191009207545136170&utm_campaign=accu_e",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1583v0joi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-12-19T10:00:00+08:00",
+        "confirmed_fields": {
+          "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+          "start_time": "2026-12-19T10:00:00+08:00",
+          "end_time": "2026-12-19T12:00:00+08:00",
+          "venue": "導覽開始前10分鐘，於捷運中正紀念堂站5號出口外集合",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1451398bi94_20260921_1030",
+        "title": "⭐️2026夾腳拖劇團故事劇場",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語故事",
+        "start_time": "2026-09-21T10:30:00+08:00",
+        "end_time": "2026-09-21T11:30:00+08:00",
+        "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+        "address": "台北市大同區 重慶北路三段25巷26號 書房有光",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1451398bi94",
+        "registration_url": "https://forms.gle/GJ96zoTPBRSGxeqr8",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1451398bi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-21T10:30:00+08:00",
+        "confirmed_fields": {
+          "title": "⭐️2026夾腳拖劇團故事劇場",
+          "start_time": "2026-09-21T10:30:00+08:00",
+          "end_time": "2026-09-21T11:30:00+08:00",
+          "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1451398bi94_20261019_1030",
+        "title": "⭐️2026夾腳拖劇團故事劇場",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "臺北市",
+        "district": "大同區",
+        "category": "台語故事",
+        "start_time": "2026-10-19T10:30:00+08:00",
+        "end_time": "2026-10-19T11:30:00+08:00",
+        "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+        "address": "台北市大同區 重慶北路三段25巷26號 書房有光",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1451398bi94",
+        "registration_url": "https://forms.gle/GJ96zoTPBRSGxeqr8",
+        "cover_image": "",
+        "price_info": "費用未公告，請查看活動公告",
+        "is_free": null,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1451398bi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-19T10:30:00+08:00",
+        "confirmed_fields": {
+          "title": "⭐️2026夾腳拖劇團故事劇場",
+          "start_time": "2026-10-19T10:30:00+08:00",
+          "end_time": "2026-10-19T11:30:00+08:00",
+          "venue": "書房有光　臺北市大同區重慶北路三段25巷26號（捷運大橋頭站）",
+          "city": "臺北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_16086bkwi94_20261004_1030",
+        "title": "【講予囡仔聽的人權繪本｜孩子眼中，什麼是最重要的事？】~10/14禮拜~",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "新北市",
+        "district": "新店區",
+        "category": "台語繪本",
+        "start_time": "2026-10-04T10:30:00+08:00",
+        "end_time": "2026-10-04T12:00:00+08:00",
+        "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+        "address": "新北市新店區復興路131號 人權學習中心",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16086bkwi94",
+        "registration_url": "https://www.accupass.com/event/2607280236031295663510",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_16086bkwi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-10-04T10:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【講予囡仔聽的人權繪本｜孩子眼中，什麼是最重要的事？】~10/14禮拜~",
+          "start_time": "2026-10-04T10:30:00+08:00",
+          "end_time": "2026-10-04T12:00:00+08:00",
+          "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+          "city": "新北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1612kt0hi94_20260920_1800",
+        "title": "國家電影中心九月的免費放映來囉～『無言的山丘』",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "新北市",
+        "district": "新莊區",
+        "category": "台語表演",
+        "start_time": "2026-09-20T18:00:00+08:00",
+        "end_time": null,
+        "venue": "國家電影及視聽文化中心",
+        "address": "新北市新莊區文藝路2號 國家電影及視聽文化中心",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1612kt0hi94",
+        "registration_url": "",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1612kt0hi94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-20T18:00:00+08:00",
+        "confirmed_fields": {
+          "title": "國家電影中心九月的免費放映來囉～『無言的山丘』",
+          "start_time": "2026-09-20T18:00:00+08:00",
+          "end_time": null,
+          "venue": "國家電影及視聽文化中心",
+          "city": "新北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "gameislearning_1581w9d4i94_20260920_1030",
+        "title": "【講予囡仔聽的人權繪本｜大手牽小手，聽阿媽講古！】",
+        "description": "台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。",
+        "city": "新北市",
+        "district": "新店區",
+        "category": "台語繪本",
+        "start_time": "2026-09-20T10:30:00+08:00",
+        "end_time": "2026-09-20T12:00:00+08:00",
+        "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+        "address": "新北市新店區復興路131號 人權學習中心",
+        "organizer": "主辦單位請見活動公告",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1581w9d4i94",
+        "registration_url": "https://www.accupass.com/event/2607280236031295663510",
+        "cover_image": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true,
+        "tags": [
+          "台語",
+          "台語站信任來源",
+          "自動核實場次"
+        ],
+        "raw_metadata": {}
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "auto_gameislearning_1581w9d4i94",
+        "mode": "official_rules_v1",
+        "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+        "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+        "gameislearning_session_key": "2026-09-20T10:30:00+08:00",
+        "confirmed_fields": {
+          "title": "【講予囡仔聽的人權繪本｜大手牽小手，聽阿媽講古！】",
+          "start_time": "2026-09-20T10:30:00+08:00",
+          "end_time": "2026-09-20T12:00:00+08:00",
+          "venue": "國家人權博物館學習中心一樓・兒童人權學習基地",
+          "city": "新北市",
+          "organizer": "主辦單位請見活動公告",
+          "price_info": "免費，報名方式請看活動公告",
           "is_free": true
         }
       }

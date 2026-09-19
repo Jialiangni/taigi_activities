@@ -19,6 +19,7 @@ from .sources.li_kang_khiok import LiKangKhiokCrawler
 from .sources.le_chang import LeChangCrawler
 from .sources.tmofa import TmofaCrawler
 from .sources.tfam import TfamCrawler
+from .sources.gameislearning import GameIsLearningCrawler
 
 
 def collectors(config, selected=None):
@@ -36,6 +37,7 @@ def collectors(config, selected=None):
         'li_kang_khiok': LiKangKhiokCrawler(keywords, limits.get('feed_pages', 5),
                                              max_details=limits.get('foundation_details', 30)),
         'le_chang': LeChangCrawler(keywords, limits.get('feed_pages', 5)),
+        'gameislearning': GameIsLearningCrawler(pages, details),
     }
     for spec in definitions:
         cls = LibraryListingCrawler if spec.get('collector') == 'library_listing' else WebsiteCrawler

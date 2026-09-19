@@ -4,7 +4,7 @@
 
 ## 資料流程
 
-`python3 -m crawler.collect` → `data/candidates/<source_id>.json`、`report.json` → 人工核對 → `data/verified_activities.json` → `main.py --check-sources` → 網站／ICS。
+`python3 -m crawler.collect` → `data/candidates/<source_id>.json`、`report.json` → 規則核實／必要時人工核對 → `data/verified_activities.json` → `main.py --check-sources` → 網站／ICS。
 
 **收集成功不等於活動已核實。** 候選文件、公告、節目期間與單場演出有不同 `kind`；全部 `review_status=pending`。沒有自動把貼文時間轉成活動日期、不猜地區／免費票價、不自動覆寫正式清單。
 
@@ -17,6 +17,7 @@
 | 年代售票 | 官方關鍵字搜尋頁＋完整節目索引，讀每個節目內文及場次表格 | 關鍵字搜尋偏向標題，因此索引詳情補足內文提到台語的節目；沒有結束時間就留空 |
 | 李江却基金會 | 官方 Blogger Atom feed，支援 `rel=next` 及 OpenSearch 分頁資訊 | 文章發表日期與活動日期分開；依出版者 feed 提供範圍收集 |
 | 樂暢親子共學 | 官方 Wix `blog-feed.xml` | 同上；RSS 未列出的舊文不推論已完整覆蓋 |
+| 台語站 | `POST https://www.gameislearning.url.tw/taigi.php` 依臺北、新北、桃園篩選並逐頁讀活動詳情；來源頁由使用者指定為全部皆是台語活動 | 語言直接信任，不再送人工語言判讀；仍須有北北桃地點與明確場次日期／時間才刊登。純文字 HTTPS 網址會辨識成可點的報名連結；系列逐場拆分、過期移除、疑似重複擋下 |
 | 圖書館、館舍、市府局處、民間團體 | `data/source_registry.json` 的 149 個入口；官方站內活動／消息連結發現與專頁讀取 | 通用網站收集器預設每站 30 頁、導航深度 3，翻頁不耗導航深度；PDF、圖片公告與未連出的舊資料需要另行核對 |
 | 桃園市立美術館所屬館群 | 官網首頁 `__NEXT_DATA__` 的公開 news／info 資料集，保留公告內文 | 取代只會讀到防護頁的內頁爬取；實測可解析，但首頁亦可能間歇回傳 HTTP 428，屆時標失敗並需正常瀏覽器補查 |
 | 文化部開放資料 | 依[官方介接文件](https://opendata.culture.tw/upload/dataSource/2021-02-18/9bee99c4-0732-4abd-b8c6-1a4bd0b62e64/db83c7223217e1d9947778256768153f.pdf)讀取各類別，保留 `showInfo` 各場次，依地址篩選北北桃，記錄命中的機構 | 補充上述機構與售票平台，不能保證各機構都有提供資料。`onSales=N` 不等於免費 |
@@ -36,6 +37,7 @@ python3 -m crawler.collect
 python3 -m crawler.collect --sources accupass,opentix,eraticket
 python3 -m crawler.collect --sources public_libraries,museums,government
 python3 -m crawler.collect --sources li_kang_khiok,le_chang
+python3 -m crawler.collect --sources gameislearning
 python3 -m crawler.collect --sources instagram,threads
 # 小量連線檢查（報告會明確標示截斷，不能宣稱全量）
 python3 -m crawler.collect --max-details 5 --website-pages 3 --output /tmp/taigi-smoke
@@ -43,6 +45,8 @@ python3 -m unittest discover -s tests -v
 ```
 
 預設每個售票來源最多 20 頁／關鍵字、200 個節目詳情，RSS 5 頁，通用網站收集器每站 30 頁，3 個來源並行，每個客戶端請求間隔至少 0.25 秒。北美館、桃園美術館使用各自的資料介面，不套用通用網站頁數上限。HTTP 429／5xx 僅有限重試，不繞過 CAPTCHA、不關閉 TLS。
+
+台語站使用同一組搜尋頁／詳情上限。報名網址可來自詳情頁的「活動資訊來源」欄或公告正文純文字；網址需為無帳密的 HTTPS，網站詳情會分開顯示「報名／買票」與「活動公告」。缺完整日期或開始時間的公告仍留在候選報告，原因是場次欄位不足，並非需要重新判斷語言。
 
 網站頁數上限是流量控制，包含入口、列表及詳情頁，不是活動數或日期範圍；30 頁不代表最近三週已完整搜尋。可用 `--website-pages 60` 覆寫單次上限，或增加確認過的活動列表入口。到達上限仍標 partial，沒有硬把有限的掃描範圍標為全站完整。配合預設從 8 頁提高到 30 頁，候選收集排程的執行時限由 40 分鐘提高到 90 分鐘。
 
@@ -128,7 +132,7 @@ python3 -m crawler.collect --sources tfam,ntm,228,228_national,ceramics,sshm,ntl
 
 ## 各區圖書館與活動中心擴充
 
-新增108個分區來源後，現共有158個收集器（registry149個）。名錄、方法及驗收範圍見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)。每入口預設30頁；日常排程會自動納入，無須逐一勾選。
+新增108個分區來源後，當時共有158個收集器（registry149個）；後續加入台語站後為159個。名錄、方法及驗收範圍見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)。每入口預設30頁；日常排程會自動納入，無須逐一勾選。
 
 ```bash
 python3 -m crawler.collect --sources public_libraries
@@ -178,7 +182,7 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 
 ## 三市總館明確涵蓋（2026-09-18 最新）
 
-目前158個收集器、150個registry入口，public_libraries群組60個。
+目前159個收集器、150個registry入口，public_libraries群組60個。
 
 | 總館 | 日常收集設定 | 本次限量6頁驗收 |
 |---|---|---|

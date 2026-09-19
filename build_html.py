@@ -227,8 +227,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="modal-desc" id="modalDesc"></div>
 
         <div class="modal-actions-bar">
+          <a id="modalRegistrationLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;" hidden>
+            ✍️ 報名／買票 ↗
+          </a>
           <a id="modalTicketLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:0.75rem 1.25rem; font-size:0.92rem;">
-            🌐 活動公告／報名 ↗
+            🌐 活動公告 ↗
           </a>
           <a id="modalGoogleSearchLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color); font-weight:600;">
             🔍 Google 揣報名／買票 ↗
@@ -720,7 +723,15 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
 
       const ticketBtn = document.getElementById('modalTicketLink');
       ticketBtn.href = act.source_url;
-      ticketBtn.textContent = '🌐 活動公告／報名 ↗';
+      ticketBtn.textContent = '🌐 活動公告 ↗';
+      const registrationBtn = document.getElementById('modalRegistrationLink');
+      if (act.registration_url && act.registration_url !== act.source_url) {{
+        registrationBtn.href = act.registration_url;
+        registrationBtn.hidden = false;
+      }} else {{
+        registrationBtn.href = '#';
+        registrationBtn.hidden = true;
+      }}
 
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
       document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 Google 揣報名／買票 ↗';

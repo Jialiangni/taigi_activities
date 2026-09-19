@@ -16,7 +16,7 @@
 - `data/audit/2026-09-18-legacy.json`：原 64 筆資料、程式來源、搜尋語句及不刊登理由。
 - `SOURCE_AUDIT.md`：核查摘要、官方證據、限制與後續事項。
 - `CRAWLER_AUDIT.md`：所有指定平台、場館、局處的爬蟲實況；`crawler/audit_endpoints.py` 提供售票搜尋端點診斷，不是爬蟲驗收或發布輸入。
-- `crawler/collect.py`：158 個入口的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
+- `crawler/collect.py`：159 個收集器的候選收集流程；`collection.py` 提供安全 HTTP、HTML、候選結構；`culture.py` 解析文化部場次，`social.py` 處理 Meta 游標。
 - `data/source_registry.json`：150 個官方機構／團體與分區入口與主管機關映射；`COLLECTORS.md` 說明方法、上限與授權。
 - `crawler/sources/`：已改為真實資料收集；不再回傳固定資料。舊 `fetch_activities()` 接口會明確拒絕未審核資料，請改用 `.collect(client)`。
 - `crawler/sample_data.py` 及 `processor.py`：保留的歷史實作；正式建置／候選收集均不使用。
@@ -27,6 +27,8 @@
 `schema_version: 1`；`sources` 按來源 ID 建立索引；`activities` 每筆包含 `activity` 與 `verification`。
 
 來源需包含 HTTPS 活動／報名專頁 `url`、`title`、`checked_at`（含 +08:00）、核查當時原始 HTML 的 `snapshot_sha256`，以及可重查的 `required_text`。SHA-256 是本次讀取指紋，不是活動真實性的自動證明；未把整份第三方 HTML 納入 Git。
+
+`registration_url` 為選用欄位，必須是無帳密 HTTPS 網址。它用於前端獨立「報名／買票」按鈕；`source_url` 仍固定指向可重查的活動詳情證據，兩者不能互相覆蓋。
 
 每筆活動需具備：
 
@@ -95,7 +97,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 ## 9. 各區圖書館與活動中心
 
-新增54個圖書館分區來源、54個區公所活動中心公告來源，對應臺北12、新北29、桃園13區。registry共149入口，全部收集器共158個。每個入口預設最多30頁，可用 `public_libraries`（59入口，含原有5個）及 `community_centers`（54入口）群組執行，每日候選收集排程自動納入。
+新增54個圖書館分區來源、54個區公所活動中心公告來源，對應臺北12、新北29、桃園13區。registry共149入口；另含台語站等專用收集器後，全部收集器共159個。每個入口預設最多30頁，可用 `public_libraries`（59入口，含原有5個）及 `community_centers`（54入口）群組執行，每日候選收集排程自動納入。
 
 `crawler/library_sources.py` 直接讀官方分館清單與實際分頁：臺北閱讀網53個分館／閱覽室列表分配至12區，沿同一列表的數字頁碼翻頁；新北依官方area代碼查該區所有館別，依表單及CSRF續頁；桃園送出完整Filter[0]至Filter[4]查詢、以CurrentPage表單翻頁，並逐筆比對data-area防止篩選失效。桃園區另含總館。行政區是收集範圍，不直接當作活動實際地點。列表至少預留所有初始分館入口，最多約一半頁數用於翻頁，其餘讀活動詳情，優先台語關鍵字；未讀完明確列partial。
 
@@ -138,7 +140,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 前端以全部正式場次的Asia/Taipei開始日期產生YYYY-MM月份選項，按年月排序，不受其他篩選隱藏選項。selectedMonths為空表示全部；多個月採聯集，再與城市、類別、來源、費用及文字篩選取交集。重按月份取消，全部月份清除。按鈕以aria-pressed呈現選取狀態，桌面與手機共用可水平捲動的列；維持按鈕DOM以保留鍵盤焦點。卡片、清單、週曆、計數及篩選後ICS使用同一組結果，非場次資訊不受活動月份篩選。若選月後目前週沒有符合活動，定位至篩選後首場活動所在週；沒有符合活動時定位至所選最早月份首日。週曆仍一次顯示一週。
 
-新增臺北總館專用LibraryListingCrawler（tpml_main），總數158收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
+新增臺北總館專用LibraryListingCrawler（tpml_main）；含後續台語站專用來源後，總數159收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
 
 ## 14. 活動卡片精簡（2026-09-18）
 
@@ -222,7 +224,7 @@ iPhone 的 LINE 內建瀏覽器不直接交接 `.ics` 時，網站辨識 LINE us
 
 使用者授權在網站更新前核實候選，通過者自動加入且不得重複已刊登活動。`crawler/review.py` 執行保守、可重現的官方資料核對；這是明列規則的自動核實，不宣稱人工逐頁判讀或涵蓋所有公告類型。每筆決策保存在 `data/audit/latest-candidate-review.json`。
 
-自動通過適配器支援 OPENTIX 及受限的 ACCUPASS 單一場次。OPENTIX 只接受固定官方 event URL；重讀官方 API 及 HTML，核對節目 ID、單場 ID、臺北時間起迄、北北桃場館地址、主辦、票面價格、節目狀態3及場次狀態0，明確語言／發音標示必須出現在該場館注意事項或節目正文，並在 HTML 可見內容中相符。ACCUPASS 只接受 JSON-LD 為單一場次、標題或內文明列「台語場」、完整起迄不超過12小時、北北桃地點、主辦、EventScheduled 狀態及正文明列免費報名者；發布後每日仍重讀相同證據。只提字幕、人物台語經歷、泛關鍵字不能通過；多版本、系列、缺時間、費用不明、狀態或候選與重查欄位不一致保留 pending。ACCUPASS 公告表格中格式明確的月日及起迄時間會拆成 `fields.sessions`，避免只留下 JSON-LD 系列總期間；系列場次仍須逐場核實語言、地點、費用與狀態。當所有尚未結束的明列場次均已刊登，候選才標為重複。其他來源也逐筆列出原因，仍須人工核實，不能從發文日期或系列期間猜場次。
+自動通過適配器支援 OPENTIX、受限的 ACCUPASS 單一場次與台語站。OPENTIX 只接受固定官方 event URL；重讀官方 API 及 HTML，核對節目 ID、單場 ID、臺北時間起迄、北北桃場館地址、主辦、票面價格、節目狀態3及場次狀態0，明確語言／發音標示必須出現在該場館注意事項或節目正文，並在 HTML 可見內容中相符。ACCUPASS 只接受 JSON-LD 為單一場次、標題或內文明列「台語場」、完整起迄不超過12小時、北北桃地點、主辦、EventScheduled 狀態及正文明列免費報名者；發布後每日仍重讀相同證據。台語站由使用者指定為全部皆是台語活動，故 `trusted_language_source=true` 直接滿足語言證據；仍須重新讀詳情頁，比對標題、北北桃地址、場地、明確場次及純文字／來源欄的報名網址。系列按規則逐場拆分，只有開始時間時不虛構結束時間；過期排除，疑似跨來源重複擋下，缺完整日期或開始時間維持候選。其他來源也逐筆列出原因，仍須人工核實，不能從發文日期或系列期間猜場次。
 
 自動通過的資料另存 `verification.mode=official_rules_v1` 與逐欄快照，來源保留語言宣告位置、頁面/API 指紋及各自重查時間。後續 `--check-sources` 同時比對原有場次欄位與自動來源的語言、節目狀態、異動公告；失敗不發布。既有人工 source 與活動不覆寫，自動新增來源使用獨立 `auto_op_` 或 `auto_acc_` ID。自動活動使用簡短官方語言摘錄作核查原文，台文摘要及所費以固定模板顯示，不猜劇情。
 
