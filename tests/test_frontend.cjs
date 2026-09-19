@@ -83,6 +83,13 @@ assert.ok(element('modalDesc').innerText.startsWith('簡介原文：官方提供
 assert.doesNotMatch(element('modalDesc').innerText,/猶待整理/);
 run("ACTIVITIES_DATA.pop()");
 const registrationEvent=data.find(a=>a.source_platform==='台語站' && a.registration_url);
+for (const event of data.filter(a=>a.source_platform==='台語站' && a.summary_taigi && a.summary_taigi!==a.description_taigi)) {
+  run(`renderGrid([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);openModal(${JSON.stringify(event.id)})`);
+  assert.ok(element('viewGrid').innerHTML.includes(event.summary_taigi));
+  assert.ok(element('modalDesc').innerText.startsWith(event.description_taigi));
+  assert.ok(event.description_taigi.length>event.summary_taigi.length);
+  assert.doesNotMatch(event.description_taigi,/台語站收錄的台語活動/);
+}
 assert.ok(registrationEvent);
 run(`openModal(${JSON.stringify(registrationEvent.id)})`);
 assert.equal(element('modalRegistrationLink').href,registrationEvent.registration_url);

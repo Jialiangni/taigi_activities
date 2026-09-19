@@ -401,9 +401,12 @@ def verify_gameislearning(candidate, client, now):
              '需付費，金額與報名方式請看活動公告' if is_free is False else
              '費用未公告，請查看活動公告')
     language = '台語站活動專頁全部列為台語活動（使用者指定信任來源）'
-    description = '台語站收錄的台語活動；內容、參加資格與最新異動請查看活動公告。'
+    from .editorial import directory_introduction, CONFLICT_ZH, CONFLICT_TAIGI
+    introduction = directory_introduction(live, session)
+    description = introduction['description']
     if len(session.get('end_time_variants', [])) > 1:
-        description += '報名表的結束時間有不同記載，僅列確定的開始時間，結束時間請向主辦確認。'
+        if CONFLICT_ZH not in description:
+            description += '\n\n' + CONFLICT_ZH
     activity_id = 'gameislearning_' + matched.group(1) + '_' + start.strftime('%Y%m%d_%H%M')
     act = Activity(id=activity_id, title=live['title'], description=description,
                    city=live['city'], district=fields.get('district', ''),
@@ -417,7 +420,7 @@ def verify_gameislearning(candidate, client, now):
     proof_session = {'start_time': session['start_time'], 'end_time': session['end_time'],
                      'venue': live['venue'], 'address': live['address'], 'city': live['city']}
     key = 'auto_gameislearning_' + matched.group(1)
-    required = [live['title'], live['venue']]
+    required = [live['title'], live['venue']] + introduction.get('source_quotes', [])
     source = {'url': url, 'title': live['title'], 'required_text': required,
               'checked_at': page['fetched_at'], 'snapshot_sha256': page['sha256'],
               'automated_review': {'mode': MODE, 'source_type': 'gameislearning',
@@ -436,6 +439,13 @@ def verify_gameislearning(candidate, client, now):
            'language_evidence': language,
            'gameislearning_session_key': session['start_time'],
            'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
+    row['verification']['introduction_evidence'] = {
+        'source_url': url, 'checked_at': page['fetched_at'],
+        'snapshot_sha256': page['sha256'], 'method': 'announcement_content',
+        'description_taigi': introduction.get('description_taigi', '')}
+    if (introduction.get('description_taigi') and CONFLICT_ZH in description
+            and CONFLICT_TAIGI not in introduction['description_taigi']):
+        row['verification']['introduction_evidence']['description_taigi'] += '\n\n' + CONFLICT_TAIGI
     if live['cover_image']:
         row['verification']['poster_evidence'] = {
             'url': live['cover_image'], 'source_url': url,
@@ -668,9 +678,9 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             elif c['source_id'] == 'accupass':
                 prices[a['price_info']] = '毋免錢，愛事先報名'
             else:
-                translations[a['description']] = '台語站收錄的台語活動；內容、參加資格佮最新異動，請看活動公告。'
-                if '報名表的結束時間有不同記載' in a['description']:
-                    translations[a['description']] += '報名表的結束時間有無仝的記載，這頁干焦列確定的開始時間；結束時間請問主辦單位。'
+                translated = row['verification'].get('introduction_evidence', {}).get('description_taigi')
+                if translated:
+                    translations[a['description']] = translated
                 prices[a['price_info']] = ('毋免錢，報名方式請看活動公告' if a['is_free'] is True else
                                            '愛納錢，金額佮報名方式請看活動公告' if a['is_free'] is False else
                                            '所費猶未公告，請看活動公告')

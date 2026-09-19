@@ -9,6 +9,7 @@ from typing import List
 from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
 from crawler.presentation import session_title
+from crawler.editorial import display_summary
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
@@ -24,6 +25,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         d = act.to_dict()
         # Exact source-text keys prevent stale translations after an official correction.
         d['description_taigi'] = translations.get(d['description'], '')
+        d['summary_taigi'] = display_summary(d['description'], d['description_taigi'])
         d['price_info_taigi'] = price_translations.get(d['price_info'], '')
         d['title_taigi'] = session_title(d['title'])
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
@@ -550,7 +552,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         <div class="card-labels"><span class="badge badge-city ${{cityClass(act.city)}}">${{text(act.city)}}</span><span class="badge badge-category">${{text(categoryLabel(act.category))}}</span><span class="badge badge-platform">${{text(sourceLabel(act.source_platform))}}</span></div>
         <div class="card-date">${{taigiDate(act.start_time)}}</div>
         <h3 class="card-title" lang="zh-Hant">${{text(act.title_taigi || act.title)}}</h3>
-        <p class="card-desc">${{text(act.description_taigi || ('簡介原文：' + act.description))}}</p>
+        <p class="card-desc">${{text(act.summary_taigi || act.description_taigi || ('簡介原文：' + act.description))}}</p>
         <p class="card-venue" lang="zh-Hant">${{text(act.venue)}}</p>
         <div class="card-footer"><span class="card-price">${{feeLabel(act)}}</span><button class="card-detail" lang="zh-Hant" data-activity-id="${{text(act.id)}}" onclick="openModal(this.dataset.activityId)">活動詳情 ›</button></div>
       </article>`;
@@ -610,7 +612,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
                         <span>${{act.venue}}</span>
                         <span><strong style="color:var(--primary);">${{feeLabel(act)}}</strong></span>
                       </div>
-                      <p style="font-size:0.8rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{escapeCalendarText(act.description_taigi || ('簡介原文：' + act.description))}}</p>
+                      <p style="font-size:0.8rem; color:var(--text-muted); display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;">${{escapeCalendarText(act.summary_taigi || act.description_taigi || ('簡介原文：' + act.description))}}</p>
                     </div>
                     <div class="agenda-actions">
                       <button class="btn btn-primary" style="font-size:0.78rem; justify-content:center;">活動詳情</button>

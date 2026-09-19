@@ -85,7 +85,9 @@ def parse_detail(page, url, evidence, card=None, now=None):
     venue = venue_of(body, address)
     organizer = organizer_of(body)
     sessions = sessions_of(body, card.get('published_at'), now)
+    from ..editorial import official_introduction
     return {'title': title, 'text': body, 'address': address, 'venue': venue,
+            'official_description': official_introduction(body, title),
             'organizer': organizer, 'city': city, 'district': district,
             'category': category_of(card.get('type', ''), title + ' ' + body),
             'is_free': card.get('is_free'), 'registration_url': registration,

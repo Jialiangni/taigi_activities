@@ -39,7 +39,12 @@ class VerifiedCalendarTests(unittest.TestCase):
         prices = json.loads((DATA_PATH.parent/'ui_price_taigi.json').read_text())
         for row in current['activities']:
             if row['verification'].get('mode') == 'official_rules_v1':
-                self.assertTrue(translations.get(row['activity']['description']))
+                intro = row['verification'].get('introduction_evidence', {})
+                if intro.get('method') == 'announcement_content' and not intro.get('description_taigi'):
+                    self.assertTrue(row['activity']['description'])
+                    self.assertNotIn('台語站收錄的台語活動', row['activity']['description'])
+                else:
+                    self.assertTrue(translations.get(row['activity']['description']))
                 self.assertTrue(prices.get(row['activity']['price_info']))
 
     def test_session_title_translation_is_scoped_and_shared_with_calendars(self):

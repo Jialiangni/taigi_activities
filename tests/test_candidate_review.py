@@ -266,6 +266,7 @@ class CandidateReviewTests(unittest.TestCase):
     def test_trusted_directory_skips_language_review_and_keeps_registration_url(self):
         url = 'https://www.gameislearning.url.tw/taigi-info.php?news=abc123'
         html = '''<h1>台語故事活動</h1><p>2026/10/4 10:30-12:00<br>
+        老師以繪本介紹海洋動物，讓孩子透過故事學習台語。<br>
         地點｜臺北市立圖書館總館<br>故事協會 邀請您<br>
         https://forms.gle/signup</p><table><tr><td>活動地址</td><td>
         <a href="https://www.google.com/maps/search/x">臺北市大安區建國南路二段125號 臺北市立圖書館總館</a>
@@ -285,6 +286,9 @@ class CandidateReviewTests(unittest.TestCase):
             def get(self, requested): return html, evidence
         key, source, row = verify_gameislearning(candidate, DirectoryClient(), NOW)
         self.assertEqual(key, 'auto_gameislearning_abc123')
+        self.assertIn('老師以繪本介紹海洋動物', row['activity']['description'])
+        self.assertNotIn('台語站收錄的台語活動', row['activity']['description'])
+        self.assertIn('老師以繪本介紹海洋動物，讓孩子透過故事學習台語。', source['required_text'])
         self.assertEqual(row['activity']['registration_url'], 'https://forms.gle/signup')
         self.assertEqual(row['activity']['cover_image'], poster)
         self.assertEqual(row['verification']['poster_evidence']['snapshot_sha256'], 'd'*64)
