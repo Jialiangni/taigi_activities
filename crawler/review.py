@@ -148,6 +148,22 @@ def facebook_official_candidates(candidate, client):
     return rows
 
 
+def trusted_registration_link(value):
+    """Page-authored Google Forms and Linktree URLs are accepted registration routes."""
+    try:
+        parsed = urlsplit(value or '')
+    except ValueError:
+        return False
+    host = (parsed.hostname or '').lower().rstrip('.')
+    if parsed.scheme != 'https' or parsed.username or parsed.password:
+        return False
+    if host == 'forms.gle':
+        return True
+    if host in ('docs.google.com', 'forms.google.com'):
+        return parsed.path == '/forms' or parsed.path.startswith('/forms/')
+    return host in ('linktr.ee', 'www.linktr.ee', 'linktree.com', 'www.linktree.com')
+
+
 def verify_opentix(candidate, client, now):
     url = candidate['source_url']
     require(re.fullmatch(r'https://www\.opentix\.life/event/\d+', url), 'unsupported_official_url')
@@ -298,6 +314,14 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if c.get('_facebook_routed_count'):
                     item.update(decision='routed', reason='official_opentix_link_routed_to_automatic_verification',
                                 routed_session_count=c['_facebook_routed_count'])
+                    continue
+                registration = [link['url'] for link in context['discovered_links']
+                                if isinstance(link, dict) and link.get('is_page_author') is True
+                                and trusted_registration_link(link.get('url'))]
+                if registration:
+                    item.update(decision='routed',
+                                reason='page_authored_registration_link_accepted_for_automatic_followup',
+                                accepted_registration_links=registration)
                     continue
                 if c.get('_facebook_automation_error'):
                     raise Pending('official_link_verification_failed:' + c['_facebook_automation_error'])

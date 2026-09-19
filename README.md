@@ -62,7 +62,7 @@ GitHub Actions 每日台灣時間 03:15 啟動候選收集，完成後以 `workf
 
 ## Facebook 粉專與留言
 
-已將出外講台語、阿熒的教室及 `facebook.com/taigiloo` 加入[粉專待查名單](data/facebook_pages.json)，保留既有 `taigilok`。Facebook收集器已支援逐篇留言與回覆分頁、報名連結及來源證據；指定粉專不因本文沒台語關鍵字而跳過。收集後另產生 `facebook_review.json` 去識別快照，只保留粉專公開貼文短摘錄、留言找到的網址、是否由粉專本人留言及回應雜湊；一般留言文字、姓名、ID、Graph API網址與權杖不會交給後續工作。判讀分三級：粉專本人提供的OPENTIX連結交給既有官方API／HTML規則自動核實，完整者刊登、過期或重複者排除；證據不足者集中更新同一張GitHub Issue，沒有待辦時自動關閉。**目前仍未設定Meta授權與Page ID對照，實際貼文／留言尚未完成連線驗收**，不會把待設定說成已抓取。設定、頁數限制與測試紀錄見[COLLECTORS.md](COLLECTORS.md#facebook-指定粉專與留言報名連結2026-09-18)。
+已將出外講台語、阿熒的教室及 `facebook.com/taigiloo` 加入[粉專待查名單](data/facebook_pages.json)，保留既有 `taigilok`。Facebook收集器已支援逐篇留言與回覆分頁、報名連結及來源證據；指定粉專不因本文沒台語關鍵字而跳過。收集後另產生 `facebook_review.json` 去識別快照，只保留粉專公開貼文短摘錄、留言找到的網址、是否由粉專本人留言及回應雜湊；一般留言文字、姓名、ID、Graph API網址與權杖不會交給後續工作。判讀分三級：粉專本人提供的OPENTIX連結交給既有官方API／HTML規則自動核實；粉專本人提供的Google Forms或Linktree視為可信報名入口，轉入自動補查而不送人工；過期或重複者排除，其餘證據不足者集中更新同一張GitHub Issue。**目前仍未設定Meta授權與Page ID對照，實際貼文／留言尚未完成連線驗收**，不會把待設定說成已抓取。設定、頁數限制與測試紀錄見[COLLECTORS.md](COLLECTORS.md#facebook-指定粉專與留言報名連結2026-09-18)。
 
 ## 李江却基金會系列場次補核（2026-09-18）
 

@@ -9,7 +9,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 from crawler.collection import CollectionError
-from crawler.review import review, Pending, language_claims, validate_auto_source, source_url, duplicate
+from crawler.review import (review, Pending, language_claims, validate_auto_source, source_url, duplicate,
+                            trusted_registration_link)
 from crawler.sources.opentix import parse_program
 from crawler.verified import load_verified
 from scripts.fetch_review_candidates import extract, trusted_run
@@ -181,6 +182,31 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(result['decisions'][0]['reason'], 'official_link_already_published')
         self.assertEqual(result['decisions'][0]['activity_id'], 'opentix_789')
         self.assertEqual(self.client.calls, [])
+
+    def test_page_authored_google_forms_and_linktree_skip_manual_review(self):
+        self.assertTrue(trusted_registration_link('https://forms.gle/abc'))
+        self.assertTrue(trusted_registration_link('https://docs.google.com/forms/d/e/abc/viewform'))
+        self.assertTrue(trusted_registration_link('https://linktr.ee/example'))
+        self.assertFalse(trusted_registration_link('https://forms.gle.evil.example/abc'))
+        self.assertFalse(trusted_registration_link('http://forms.gle/abc'))
+        for number, url in enumerate(('https://forms.gle/abc', 'https://linktr.ee/example'), 1):
+            candidate = {'id': 'fb-registration-' + str(number), 'source_id': 'facebook_review',
+                         'source_url': 'https://www.facebook.com/example/posts/' + str(number),
+                         'title': '粉專活動', 'text': '候選摘要', 'kind': 'social_snapshot',
+                         'review_status': 'pending', 'fields': {}, 'review_context': {
+                             'discovered_links': [{'url': url, 'origin': 'comment', 'is_page_author': True}],
+                             'draft': {'unverified_fields': ['start_time']}}}
+            self.write('candidates/facebook_review.json',
+                       {'source_id': 'facebook_review', 'candidates': [candidate]})
+            self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
+                {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
+            result = self.run_review()
+            self.assertEqual(result['counts'], {'routed': 1})
+            self.assertEqual(result['decisions'][0]['reason'],
+                             'page_authored_registration_link_accepted_for_automatic_followup')
+            self.assertEqual(result['decisions'][0]['accepted_registration_links'], [url])
+            self.assertEqual(self.client.calls, [])
+        self.assertEqual(json.loads((self.root/'data/verified_activities.json').read_text())['activities'], [])
 
     def test_cross_platform_session_duplicate(self):
         self.run_review()

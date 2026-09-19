@@ -117,7 +117,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 `data/facebook_pages.json` 為Facebook待查名單，包含ChhutGoaKongTaiGi、Guaayingla、taigiloo及既有taigilok；由Facebook收集器自動載入。以 `FACEBOOK_PAGE_ID_MAP` 明確綁定數字ID；未設定逐項標needs_configuration。名稱或網址相似不可直接合併。
 
-指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整。原始 `facebook.json` 留在收集執行器；後續只接收 `facebook_review.json` 去識別快照，內容限粉專公開貼文短摘錄、公開連結、作者可信度及回應雜湊。分級判讀先排除已刊登官方連結，再將粉專本人提供的OPENTIX連結轉為單場候選並套用第23節完整核實；不能完整核實者依缺連結、作者不明、不支援平台或驗證失敗分類為pending。pending Facebook候選由部署工作更新一張固定GitHub Issue，內容不得包含一般留言者身份或留言文字。詳見COLLECTORS.md。
+指定粉專預算內每篇feed貼文均先查comments stream游標分頁，涵蓋API可見回覆，不能因正文沒台語或報名連結就略過。保留留言連結出處與粉專作者判斷；其他留言者身份不保存。圖片貼文、留言失敗／超限保留待核實候選，空留言不視為零留言證明。每粉專200篇、每篇留言20頁為預設上限，可在config limits調整。原始 `facebook.json` 留在收集執行器；後續只接收 `facebook_review.json` 去識別快照，內容限粉專公開貼文短摘錄、公開連結、作者可信度及回應雜湊。分級判讀先排除已刊登官方連結，再將粉專本人提供的OPENTIX連結轉為單場候選並套用第23節完整核實；粉專本人提供且HTTPS主機名完全符合Google Forms或Linktree正式網域的報名連結標記為可信自動接手，不進人工Issue。其餘不能完整核實者依缺連結、作者不明、不支援平台或驗證失敗分類為pending。pending Facebook候選由部署工作更新一張固定GitHub Issue，內容不得包含一般留言者身份或留言文字。詳見COLLECTORS.md。
 
 
 ## 11. 李江却基金會系列場次核實
