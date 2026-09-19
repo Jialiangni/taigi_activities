@@ -38,6 +38,16 @@ assert.equal(run("formatDateDisplay('2026-09-20T16:05:00Z')"),'2026∙09∙21 �
 assert.equal(run("formatEventTime('2026-10-04T13:00:00+08:00','2026-10-04T17:30:00+08:00')"),'2026∙10∙04 禮拜 13:00 - 17:30');
 assert.equal(run("formatEventTime('2026-10-04T23:00:00+08:00','2026-10-05T01:00:00+08:00')"),'2026∙10∙04 禮拜 23:00 - 2026∙10∙05 拜一 01:00');
 const data = JSON.parse(run('JSON.stringify(ACTIVITIES_DATA)'));
+const priorityAudit=JSON.parse(fs.readFileSync('data/audit/2026-09-19-accupass-primary.json','utf8'));
+for (const [directoryId, decision] of Object.entries(priorityAudit.decisions)) {
+  assert.ok(!data.some(a=>a.id===directoryId),'Directory duplicate or unverified primary must not be published');
+  const primary=data.find(a=>a.id===decision.primary_activity_id);
+  if (primary) {
+    assert.equal(primary.source_url,decision.primary_url);
+    assert.ok(primary.raw_metadata.supplemental_description);
+    assert.ok(primary.description_taigi.length>primary.summary_taigi.length);
+  }
+}
 for(const event of data.filter(a=>a.title_taigi!==a.title)){
   run(`renderGrid([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);renderAgenda([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);openModal(${JSON.stringify(event.id)})`);
   assert.ok(element('viewGrid').innerHTML.includes(event.title_taigi));

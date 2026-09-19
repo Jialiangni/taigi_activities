@@ -24,8 +24,12 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     for act in activities:
         d = act.to_dict()
         # Exact source-text keys prevent stale translations after an official correction.
-        d['description_taigi'] = translations.get(d['description'], '')
-        d['summary_taigi'] = display_summary(d['description'], d['description_taigi'])
+        display_description = d['raw_metadata'].get('supplemental_description', d['description'])
+        d['description_taigi'] = translations.get(display_description, translations.get(d['description'], ''))
+        d['summary_taigi'] = display_summary(display_description, d['description_taigi'])
+        primary_text = translations.get(d['description'], '')
+        if display_description != d['description'] and primary_text and primary_text != d['description_taigi']:
+            d['description_taigi'] += '\n\n' + primary_text
         d['price_info_taigi'] = price_translations.get(d['price_info'], '')
         d['title_taigi'] = session_title(d['title'])
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)

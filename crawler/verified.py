@@ -9,6 +9,7 @@ from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
 from .collection import Client
 from .sources.opentix import parse_program
 from .posters import poster_url
+from .source_priority import publication_priority
 
 TAIPEI = timezone(timedelta(hours=8))
 DATA_PATH = Path(__file__).resolve().parents[1] / 'data/verified_activities.json'
@@ -133,6 +134,13 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
                 raise ValueError('OPENTIX 缺少已核對場次或 API 指紋')
             if parse_time(source['api_checked_at']) > now:
                 raise ValueError('API 核對時間不可在未來')
+    priorities = publication_priority(payload)
+    supplements = {}
+    for row in payload['activities']:
+        decision = priorities.get(row['activity']['id'], {})
+        target = decision.get('primary_activity_id')
+        if target and row['verification'].get('introduction_evidence'):
+            supplements.setdefault(target, row)
     activities, seen_ids, seen_sessions, active_source_ids = [], set(), set(), set()
     for row in payload['activities']:
         data, review = row['activity'], row['verification']
@@ -180,11 +188,20 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
         seen_sessions.add(session)
         if (end or start) <= now:
             continue
+        if data['id'] in priorities:
+            # A directory link may cover several sessions. Never substitute the
+            # series date range or another session for an unverified primary one.
+            continue
         act = Activity(**data)
         act.city = CityEnum(act.city)
         act.category = CategoryEnum(act.category)
         act.source_platform = SourcePlatformEnum(act.source_platform)
         act.raw_metadata = {'verified_at': source['checked_at'], 'source_title': source['title']}
+        if data['id'] in supplements:
+            extra = supplements[data['id']]
+            act.raw_metadata['supplemental_description'] = extra['activity']['description']
+            act.raw_metadata['supplemental_source_url'] = extra['activity']['source_url']
+            active_source_ids.add(extra['verification']['source_id'])
         activities.append(act)
         active_source_ids.add(review['source_id'])
     if check_sources:

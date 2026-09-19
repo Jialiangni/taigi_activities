@@ -20,6 +20,7 @@ from .sources.opentix import parse_program
 from .sources.gameislearning import (DETAIL_RE, parse_detail as parse_gameislearning_detail,
                                     supplement_registration)
 from .verified import REVIEWED_FIELDS, load_verified, normalized_text, parse_time
+from .source_priority import accupass_url, directory_registration, primary_session, publication_priority
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = {'facebook', 'instagram', 'threads'}
@@ -57,8 +58,14 @@ def source_url(value):
 
 
 def duplicate(activity, catalog, session_id=None):
+    primary = primary_session(activity, catalog)
+    if primary:
+        return primary['activity']['id']
     for row in catalog['activities']:
         other, review = row['activity'], row['verification']
+        if directory_registration(other) and accupass_url(activity.get('source_url')):
+            # Primary publication must not be blocked by an older directory row.
+            continue
         if session_id and str(review.get('opentix_session_id', '')) == session_id:
             return other['id']
         if activity.get('start_time') != other['start_time']:
@@ -380,6 +387,7 @@ def verify_gameislearning(candidate, client, now):
         'type': '', 'is_free': fields.get('is_free'),
         'published_at': fields.get('published_at')}, now)
     live = supplement_registration(live, client)
+    require(not accupass_url(live['registration_url']), 'accupass_primary_required')
     require(normalize(live['title']) == normalize(candidate['title']), 'candidate_title_changed')
     require(live['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
     require(live['venue'] and live['address'] and live['organizer'], 'missing_identity_fields')
@@ -544,10 +552,36 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
     catalog_path = root / 'data/verified_activities.json'
     load_verified(catalog_path, now=now)  # Never repair/bypass an invalid existing catalog.
     catalog = json.loads(catalog_path.read_text())
+    manual = load_manual_decisions(root)
     published_urls = {source_url(row['activity'].get('source_url', '')) for row in catalog['activities']}
     expanded = []
+    routed_accupass = set()
     for candidate_row in candidates:
         expanded.append(candidate_row)
+        if candidate_row['id'] in manual:
+            continue
+        if candidate_row['source_id'] == 'gameislearning':
+            try:
+                url = source_url(candidate_row['source_url'])
+                require(DETAIL_RE.fullmatch(url), 'unsupported_trusted_directory_candidate')
+                html, evidence = client.get(url)
+                require(evidence['final_url'] == url, 'official_page_redirected')
+                live = parse_gameislearning_detail(html, url, evidence, candidate_row['fields'], now)
+                primary_url = accupass_url(live['registration_url'])
+                if primary_url:
+                    candidate_row['_primary_accupass_url'] = primary_url
+                    hint = dict(candidate_row['fields'], source_url=url, registration_url=primary_url)
+                    primary = primary_session(hint, catalog)
+                    if primary:
+                        candidate_row['_primary_activity_id'] = primary['activity']['id']
+                    elif primary_url not in routed_accupass:
+                        page, proof = client.get(primary_url)
+                        require(accupass_url(proof['final_url']) == primary_url, 'official_page_redirected')
+                        expanded.extend(parse_accupass_event(page, primary_url, proof))
+                        routed_accupass.add(primary_url)
+            except (CollectionError, Pending, ValueError, KeyError, TypeError) as error:
+                candidate_row['_directory_priority_error'] = getattr(error, 'code', str(error))
+            continue
         if candidate_row['source_id'] not in SOCIAL_REVIEW:
             continue
         context = candidate_row.get('review_context') or {}
@@ -563,10 +597,10 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             candidate_row['_social_automation_error'] = (
                 error.code if isinstance(error, CollectionError) else str(error) if isinstance(error, Pending)
                 else type(error).__name__)
+    require(len(expanded) <= 20000, 'too_many_candidates')
     candidates = expanded
     translations = json.loads((root / 'data/ui_taigi.json').read_text())
     prices = json.loads((root / 'data/ui_price_taigi.json').read_text())
-    manual = load_manual_decisions(root)
     decisions, seen = [], set()
     for number, c in enumerate(candidates, 1):
         item = {'candidate_id': c['id'], 'source_id': c['source_id'], 'source_url': c['source_url'],
@@ -621,6 +655,16 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if context['discovered_links']:
                     raise Pending('comment_link_authorship_needs_review')
                 raise Pending('official_event_link_missing')
+            if c.get('_directory_priority_error'):
+                raise Pending('accupass_priority_check_failed:' + c['_directory_priority_error'])
+            if c.get('_primary_accupass_url'):
+                item['primary_source_url'] = c['_primary_accupass_url']
+                if c.get('_primary_activity_id'):
+                    item.update(decision='duplicate', reason='accupass_primary_session',
+                                activity_id=c['_primary_activity_id'])
+                else:
+                    item.update(decision='pending', reason='accupass_session_not_verified')
+                continue
             published_series = published_accupass_series(c, catalog, now)
             if published_series:
                 item.update(decision='duplicate', reason='all_future_sessions_already_published',
@@ -654,6 +698,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             # Same city/time and near-identical title or venue: hold rather than risk cross-platform duplicates.
             for old in catalog['activities']:
                 b = old['activity']
+                if directory_registration(b) == accupass_url(a.get('source_url')) and directory_registration(b):
+                    continue
                 if a['city'] == b['city'] and a['start_time'] == b['start_time']:
                     require(normalize(a['venue']) != normalize(b['venue']) and
                             normalize(a['title']) not in normalize(b['title']) and
@@ -699,7 +745,16 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             decisions.append(item)
             if number % 50 == 0:
                 print('Reviewed', number, '/', len(candidates), dict(Counter(d['decision'] for d in decisions)), flush=True)
+    # A primary candidate may have been verified later in this same run.
+    for item in decisions:
+        if item.get('reason') == 'accupass_session_not_verified':
+            c = next(c for c in candidates if c['id'] == item['candidate_id'] and c['source_id'] == item['source_id'])
+            hint = dict(c['fields'], source_url=c['source_url'], registration_url=item['primary_source_url'])
+            primary = primary_session(hint, catalog)
+            if primary:
+                item.update(decision='duplicate', reason='accupass_primary_session', activity_id=primary['activity']['id'])
     audit = {'schema_version': 1, 'mode': MODE, 'reviewed_at': now.isoformat(timespec='seconds'),
+             'source_priority': publication_priority(catalog),
              'applied_to_catalog': apply,
              'collected_at': report['collected_at'], 'candidate_count': len(candidates),
              'counts': dict(Counter(d['decision'] for d in decisions)),

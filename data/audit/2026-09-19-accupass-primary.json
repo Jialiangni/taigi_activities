@@ -1,0 +1,53 @@
+{
+  "policy": "ACCUPASS is primary when a trusted directory registration link points to its event page. Match event ID, exact start time and city; retain historical rows but do not publish directory copies.",
+  "decisions": {
+    "gameislearning_1583v0joi94_20261017_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261017_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261121_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261121_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261219_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": null,
+      "reason": "accupass_session_not_verified"
+    },
+    "gameislearning_16086bkwi94_20261004_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20261004_1030",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1581w9d4i94_20260920_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20260920_1030",
+      "reason": "accupass_primary_session"
+    }
+  },
+  "live_primary_evidence": {
+    "2608051357275636349740": {
+      "url": "https://www.accupass.com/event/2608051357275636349740",
+      "final_url": "https://www.accupass.com/event/2608051357275636349740",
+      "http_status": 200,
+      "request_method": "GET",
+      "fetched_at": "2026-09-19T21:56:37+08:00",
+      "sha256": "5d3a09ab99daca3393898fe0fb84a9bd541b25243a216751d294e542836638cf"
+    },
+    "2607280236031295663510": {
+      "url": "https://www.accupass.com/event/2607280236031295663510",
+      "final_url": "https://www.accupass.com/event/2607280236031295663510",
+      "http_status": 200,
+      "request_method": "GET",
+      "fetched_at": "2026-09-19T21:56:58+08:00",
+      "sha256": "d3293f0fe67f46a6d2c1c39134168df34677c4c25be6cbf67431f0e1565aae36"
+    }
+  },
+  "held_session": {
+    "id": "gameislearning_1583v0joi94_20261219_1000",
+    "reason": "ACCUPASS正文列12/19，但結構化活動期間只到12/12；沒有已核實ACCUPASS單場可取代，停止刊登並保留待核實。"
+  },
+  "preserve_taiwanese_introductions": true
+}
