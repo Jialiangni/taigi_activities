@@ -1,5 +1,6 @@
 """Google Calendar links and standards-compliant iCalendar export (no API sync)."""
 from datetime import datetime, timezone
+from hashlib import sha256
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -40,6 +41,11 @@ class GoogleWorkspaceSync:
             'ctz': 'Asia/Taipei', 'details': f'{act.description}\n{act.price_info}\n{act.source_url}',
             'location': ' '.join(filter(None, [act.venue, act.address]))
         })
+
+    @staticmethod
+    def single_event_filename(act):
+        # Stable, URL-safe names never interpret source IDs as filesystem paths.
+        return sha256(act.id.encode('utf-8')).hexdigest() + '.ics'
 
     def event_content(self, act):
         stamp = act.raw_metadata.get('verified_at') or datetime.now(timezone.utc).isoformat()

@@ -60,7 +60,7 @@ jobs:
         run: |
           mkdir -p public
           cp index.html taigi_activities.ics manifest.json public/
-          cp -R assets public/assets
+          cp -R assets calendar-events public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

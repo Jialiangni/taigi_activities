@@ -152,10 +152,31 @@ class VerifiedCalendarTests(unittest.TestCase):
 
     def test_source_failure_preserves_existing_artifacts(self):
         out = Path(self.tmp.name)
+        (out / 'calendar-events').mkdir()
+        existing_event = out / 'calendar-events' / 'existing.ics'
+        existing_event.write_text('existing event')
         for name in ('index.html', 'taigi_activities.ics'): (out/name).write_text('existing')
         with patch('main.load_verified', side_effect=ValueError('source failed')):
             with self.assertRaises(ValueError): build(out, check_sources=True)
         for name in ('index.html', 'taigi_activities.ics'): self.assertEqual((out/name).read_text(), 'existing')
+        self.assertEqual(existing_event.read_text(), 'existing event')
+
+    def test_hosted_event_calendars_match_html_and_remove_stale_files(self):
+        out = Path(self.tmp.name) / 'site'
+        events = self.load()
+        sync = GoogleWorkspaceSync()
+        with patch('main.load_verified', return_value=events), patch('main.load_resources', return_value=[]):
+            build(out)
+        rows = json.loads(re.search(r'const ACTIVITIES_DATA = (\[.*?\]);', (out / 'index.html').read_text(), re.S).group(1))
+        self.assertEqual(len(list((out / 'calendar-events').glob('*.ics'))), len(events))
+        for event, row in zip(events, rows):
+            raw = (out / row['ics_path']).read_bytes()
+            self.assertEqual(raw, (sync.HEADER + sync.event_content(event) + 'END:VCALENDAR\r\n').encode())
+            self.assertEqual(raw.count(b'BEGIN:VEVENT'), 1)
+            self.assertNotIn(b'\n', raw.replace(b'\r\n', b''))
+        with patch('main.load_verified', return_value=events[:1]), patch('main.load_resources', return_value=[]):
+            build(out)
+        self.assertEqual([p.name for p in (out / 'calendar-events').iterdir()], [sync.single_event_filename(events[0])])
 
     def test_calendar_uses_real_end_and_utc(self):
         events = self.load()

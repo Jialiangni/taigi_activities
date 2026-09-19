@@ -24,6 +24,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         d['description_taigi'] = translations.get(d['description'], '')
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)
         d["ics_event"] = g_sync.event_content(act)
+        d["ics_path"] = 'calendar-events/' + g_sync.single_event_filename(act)
         activities_data.append(d)
 
     source_names = sorted({a.source_platform for a in activities})
@@ -231,9 +232,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
           <a id="modalGCalLink" href="#" target="_blank" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             📅 加到 Google 日曆 (Android 推薦)
           </a>
-          <button id="modalSingleIcsBtn" onclick="downloadSingleIcs()" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
+          <a id="modalSingleIcsBtn" class="btn btn-light" style="color:var(--text-main); border-color:var(--border-color);">
             🍏 加到 Apple 日曆 (.ics)
-          </button>
+          </a>
           <button id="modalShareBtn" onclick="shareCurrentActivity()" class="btn btn-light btn-share" style="border:none;">
             📤 分享到 LINE / 社群
           </button>
@@ -694,6 +695,10 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       document.getElementById('modalGoogleSearchLink').href = googleSearchUrl;
       document.getElementById('modalGoogleSearchLink').innerHTML = '🔍 用 Google 揣報名／買票資訊 ↗';
       document.getElementById('modalGCalLink').href = act.gcal_url;
+      // A real calendar URL lets iPhone Safari hand off to Calendar instead of
+      // trying to download a temporary blob. The standalone HTML uses the live site.
+      document.getElementById('modalSingleIcsBtn').href =
+        (location.protocol === 'file:' ? 'https://jialiangni.github.io/taigi_activities/' : '') + act.ics_path;
       document.getElementById('modalMapLink').href = `https://www.google.com/maps/search/?api=1&query=${{encodeURIComponent(act.venue + ' ' + act.address)}}`;
 
       openOverlay('eventModal');
@@ -783,9 +788,6 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       saveCalendar(getFilteredActivities(), 'taigi_activities.ics');
     }}
 
-    function downloadSingleIcs() {{
-      if (selectedActivity) saveCalendar([selectedActivity], selectedActivity.id + '.ics');
-    }}
   </script>
 </body>
 </html>

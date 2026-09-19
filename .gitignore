@@ -32,6 +32,7 @@ token.json
 config.json
 public/
 taigi-activities-standalone.html
+calendar-events/
 data/candidates/
 .env
 

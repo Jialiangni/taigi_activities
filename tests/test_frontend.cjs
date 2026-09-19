@@ -9,7 +9,7 @@ const element = id => {
   return elements.get(id);
 };
 let download;
-const context = vm.createContext({Intl, Date, Blob, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
+const context = vm.createContext({Intl, Date, Blob, location:{protocol:'https:'}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
   addEventListener(){},querySelectorAll:()=>[],querySelector:element,getElementById:element,body:{style:{},appendChild(){},removeChild(){}},
   createElement:()=>({click(){}})
 }});
@@ -157,9 +157,20 @@ console.log('PASS: crowded week (14 events), city colors/filter, full titles, we
     run(`selectedMonths.add('${monthKeys[0]}');exportCalendarFile()`);
     assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,data.filter(a=>a.start_time.startsWith(monthKeys[0])).length);
     run('selectedMonths.clear()');
-    run('downloadSingleIcs()');
-    assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,1);
-    assert.ok((await download.text()).includes(data[0].ics_event));
+    // Every details link opens its own hosted ICS; no blob or forced download.
+    const anchor = html.match(/<a id="modalSingleIcsBtn"[^>]*>/)[0];
+    assert.doesNotMatch(anchor,/\bdownload\b|\bonclick\b|\btarget\b/);
+    for(const event of data){
+      run(`openModal(${JSON.stringify(event.id)})`);
+      assert.equal(element('modalSingleIcsBtn').href,event.ics_path);
+      assert.match(event.ics_path,/^calendar-events\/[a-f0-9]{64}\.ics$/);
+      const raw=fs.readFileSync(event.ics_path,'utf8');
+      assert.equal((raw.match(/BEGIN:VEVENT/g)||[]).length,1);
+      assert.ok(raw.includes(event.ics_event));
+    }
+    context.location.protocol='file:';
+    run(`openModal(${JSON.stringify(data[0].id)})`);
+    assert.equal(element('modalSingleIcsBtn').href,'https://jialiangni.github.io/taigi_activities/'+data[0].ics_path);
   }
-  console.log('PASS: JS syntax, filters, empty state, Taipei time, official link, review date, full/single ICS downloads');
+  console.log('PASS: JS syntax, filters, Taipei time, official links, filtered ICS and hosted single-event ICS links');
 })().catch(e=>{console.error(e);process.exitCode=1});

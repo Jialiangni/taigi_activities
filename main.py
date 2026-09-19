@@ -16,9 +16,26 @@ def build(output_dir=Path('.'), check_sources=False):
     output_dir.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(dir=output_dir) as stage:
         stage = Path(stage)
-        GoogleWorkspaceSync().export_ics(activities, stage / 'taigi_activities.ics')
+        calendar = GoogleWorkspaceSync()
+        calendar.export_ics(activities, stage / 'taigi_activities.ics')
+        event_dir = stage / 'calendar-events'
+        event_dir.mkdir()
+        for activity in activities:
+            calendar.export_ics([activity], event_dir / calendar.single_event_filename(activity))
         generate_single_html(activities, stage / 'index.html', resources=resources)
         (stage / 'taigi-activities-standalone.html').write_bytes((stage / 'index.html').read_bytes())
+        # Replace the generated set only after all validation/build steps succeeded.
+        # This removes stale single-event files without touching source records.
+        target = output_dir / 'calendar-events'
+        backup = stage / 'previous-calendar-events'
+        if target.exists():
+            target.replace(backup)
+        try:
+            event_dir.replace(target)
+        except Exception:
+            if backup.exists():
+                backup.replace(target)
+            raise
         for name in ('index.html', 'taigi_activities.ics', 'taigi-activities-standalone.html'):
             (stage / name).replace(output_dir / name)
     print(f'已產生 {len(activities)} 筆經人工核實、尚未結束的場次。')
