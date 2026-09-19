@@ -323,6 +323,7 @@ def verify_gameislearning(candidate, client, now):
                    venue=live['venue'], address=live['address'], organizer=live['organizer'],
                    source_platform=SourcePlatformEnum.GAME_IS_LEARNING, source_url=url,
                    registration_url=live['registration_url'], price_info=price, is_free=is_free,
+                   cover_image=live['cover_image'],
                    tags=['台語', '台語站信任來源', '自動核實場次']).to_dict()
     proof_session = {'start_time': session['start_time'], 'end_time': session['end_time'],
                      'venue': live['venue'], 'address': live['address'], 'city': live['city']}
@@ -340,6 +341,10 @@ def verify_gameislearning(candidate, client, now):
            'language_evidence': language,
            'gameislearning_session_key': session['start_time'],
            'confirmed_fields': {k: act[k] for k in REVIEWED_FIELDS}}}
+    if live['cover_image']:
+        row['verification']['poster_evidence'] = {
+            'url': live['cover_image'], 'source_url': url,
+            'checked_at': page['fetched_at'], 'snapshot_sha256': page['sha256']}
     return key, source, row
 
 

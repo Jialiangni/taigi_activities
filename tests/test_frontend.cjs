@@ -6,7 +6,9 @@ const html = fs.readFileSync('index.html', 'utf8');
 const elements = new Map();
 const element = id => {
   if (!elements.has(id)) elements.set(id, {innerHTML:'', innerText:'', textContent:'', style:{}, parentElement:{style:{}}, classList:{add(){},remove(){},toggle(){}}, showModal(){this.open=true},close(){this.open=false},querySelector:()=>({scrollTop:0}),appendChild(child){child.parentElement=this}});
-  return elements.get(id);
+  const result = elements.get(id);
+  result.removeAttribute = name => {delete result[name]};
+  return result;
 };
 let download;
 const context = vm.createContext({Intl, Date, Blob, URLSearchParams, navigator:{userAgent:'Mozilla/5.0 (iPhone) Version/18.0 Mobile Safari/604.1'}, location:{protocol:'https:',origin:'https://example.test',pathname:'/taigi_activities/',search:''}, setTimeout: fn=>fn(), URL:{createObjectURL: b=>{download=b;return 'blob:test'},revokeObjectURL(){}}, document:{
@@ -76,6 +78,22 @@ run(`openModal(${JSON.stringify(registrationEvent.id)})`);
 assert.equal(element('modalRegistrationLink').href,registrationEvent.registration_url);
 assert.equal(element('modalRegistrationLink').hidden,false);
 assert.equal(element('modalTicketLink').href,registrationEvent.source_url);
+// Poster is the verified original, can open full size, and never leaves a broken image.
+const posterEvent = data.find(a=>a.source_platform==='台語站' && a.cover_image);
+assert.ok(posterEvent);
+run(`openModal(${JSON.stringify(posterEvent.id)})`);
+assert.equal(element('modalImg').src,posterEvent.cover_image);
+assert.equal(element('modalPosterLink').href,posterEvent.cover_image);
+assert.equal(element('modalPosterLink').style.display,'block');
+element('modalImg').onerror();
+assert.equal(element('modalPosterLink').style.display,'none');
+run(`openModal(${JSON.stringify(posterEvent.id)})`);
+assert.equal(element('modalPosterLink').style.display,'block');
+const noPosterEvent = data.find(a=>!a.cover_image);
+run(`openModal(${JSON.stringify(noPosterEvent.id)})`);
+assert.equal(element('modalPosterLink').style.display,'none');
+assert.equal(element('modalImg').src,undefined);
+assert.equal(element('modalPosterLink').href,undefined);
 // Month selection is a union of year-months, intersected with all other filters.
 assert.equal(run("monthLabel('2026-09')"),'2026∙09');
 run('renderMonthFilters()');

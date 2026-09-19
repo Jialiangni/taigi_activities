@@ -271,6 +271,8 @@ class CandidateReviewTests(unittest.TestCase):
         <a href="https://www.google.com/maps/search/x">臺北市大安區建國南路二段125號 臺北市立圖書館總館</a>
         </td></tr></table><table><tr><td id="titleTD"><a href="https://forms.gle/signup">來源</a></td></tr></table>'''
         evidence = {'final_url':url, 'sha256':'d'*64, 'fetched_at':NOW.isoformat()}
+        poster = 'https://files.gameislearning.url.tw/taigi/info-pic/story.jpg?2'
+        html += '<img id="myPic" src="' + poster + '">'
         parsed = parse_gameislearning_detail(html, url, evidence, {
             'city':'臺北市','district':'大安區','type':'親子','is_free':True,
             'published_at':'2026-09-19'}, NOW)
@@ -278,11 +280,14 @@ class CandidateReviewTests(unittest.TestCase):
             'title':parsed['title'],'text':parsed['text'],'kind':'session',
             'trusted_language_source':True,'fields':dict(parsed, **parsed['sessions'][0])}
         candidate['fields'].pop('sessions')
+        candidate['fields']['cover_image'] = 'https://untrusted.test/forged.jpg'
         class DirectoryClient:
             def get(self, requested): return html, evidence
         key, source, row = verify_gameislearning(candidate, DirectoryClient(), NOW)
         self.assertEqual(key, 'auto_gameislearning_abc123')
         self.assertEqual(row['activity']['registration_url'], 'https://forms.gle/signup')
+        self.assertEqual(row['activity']['cover_image'], poster)
+        self.assertEqual(row['verification']['poster_evidence']['snapshot_sha256'], 'd'*64)
         self.assertIn('使用者指定信任來源', row['verification']['language_evidence'])
         validate_auto_source(source, None, html)
 

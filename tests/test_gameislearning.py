@@ -56,6 +56,23 @@ class GameIsLearningTests(unittest.TestCase):
             '每月一次，週六上午 10:00－12:00\n日期：09/19、10/17、11/21、12/19',
             '2026-09-15', NOW)), 4)
 
+    def test_only_detail_poster_is_used_without_guessing_original_url(self):
+        image = 'https://files.gameislearning.url.tw/taigi/info-pic/poster.jpg?2'
+        page = '<img src="https://files.gameislearning.url.tw/logo.jpg">' + DETAIL
+        self.assertEqual(parse_detail(page, URL, {}, now=NOW)['cover_image'], '')
+        page += '<img id="myPic" src="' + image + '">'
+        self.assertEqual(parse_detail(page, URL, {}, now=NOW)['cover_image'], image)
+        self.assertEqual(parse_detail(page.replace(image, '/taigi/info-pic/poster.png'),
+                                      URL, {}, now=NOW)['cover_image'],
+                         'https://www.gameislearning.url.tw/taigi/info-pic/poster.png')
+        for invalid in ('http://files.gameislearning.url.tw/taigi/info-pic/x.jpg',
+                        'https://files.gameislearning.url.tw.evil.test/taigi/info-pic/x.jpg',
+                        'https://files.gameislearning.url.tw/logo.jpg',
+                        'https://files.gameislearning.url.tw:bad/taigi/info-pic/x.jpg',
+                        'https://[', 'javascript:alert(1)', ''):
+            with self.subTest(url=invalid):
+                self.assertEqual(parse_detail(page.replace(image, invalid), URL, {}, now=NOW)['cover_image'], '')
+
     def test_city_posts_are_collected_as_trusted_session_candidates(self):
         result = GameIsLearningCrawler(max_pages=1, max_details=20, now=NOW).collect(FakeClient())
         self.assertEqual(result.status, 'ok')

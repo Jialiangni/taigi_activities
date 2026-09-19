@@ -181,9 +181,9 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="modal-dialog">
       <div class="modal-sheet-handle"></div>
       <button class="modal-close" onclick="closeModal()" aria-label="關起活動詳情" autofocus>✕</button>
-      <div class="modal-hero-img">
-        <img id="modalImg" src="" alt="活動海報">
-      </div>
+      <a class="modal-hero-img" id="modalPosterLink" target="_blank" rel="noopener noreferrer" aria-label="開啟活動海報原圖" style="display:none">
+        <img id="modalImg" alt="活動海報" decoding="async">
+      </a>
       <div class="modal-content">
         <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
           <span class="badge badge-city" id="modalCity"></span>
@@ -704,8 +704,18 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       if (!act) return;
       selectedActivity = act;
 
-      document.getElementById('modalImg').src = act.cover_image || '';
-      document.getElementById('modalImg').parentElement.style.display = act.cover_image ? '' : 'none';
+      const poster = document.getElementById('modalImg');
+      const posterLink = document.getElementById('modalPosterLink');
+      poster.onerror = () => {{ posterLink.style.display = 'none'; }};
+      poster.alt = `${{act.title}} 活動海報`;
+      posterLink.style.display = act.cover_image ? 'block' : 'none';
+      if (act.cover_image) {{
+        posterLink.href = act.cover_image;
+        poster.src = act.cover_image;
+      }} else {{
+        poster.removeAttribute('src');
+        posterLink.removeAttribute('href');
+      }}
       document.getElementById('modalCity').className = 'badge badge-city ' + cityClass(act.city);
       document.getElementById('modalCity').innerText = '📍 ' + act.city + (act.district ? ` (${{act.district}})` : '');
       document.getElementById('modalCategory').innerText = categoryLabel(act.category);

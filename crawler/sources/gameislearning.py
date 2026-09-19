@@ -43,6 +43,25 @@ def _first(pattern, value, flags=re.I | re.S):
     return matched.group(1).strip() if matched else ''
 
 
+def poster_url(page, url):
+    """Use the detail page's event image, never navigation art or guessed thumbnails."""
+    for node in Document(page).root.all('img'):
+        if node.attrs.get('id') != 'myPic':
+            continue
+        try:
+            image = clean_url(urljoin(url, node.attrs.get('src') or ''))
+        except ValueError:
+            continue
+        if not image:
+            continue
+        parsed = urlsplit(image)
+        if (parsed.scheme == 'https'
+                and parsed.netloc in ('files.gameislearning.url.tw', 'www.gameislearning.url.tw')
+                and re.fullmatch(r'/taigi/info-pic/[^/]+\.(?:jpe?g|png|webp|gif)', parsed.path, re.I)):
+            return image
+    return ''
+
+
 def parse_detail(page, url, evidence, card=None, now=None):
     """Parse only explicit fields; the live reviewer repeats this parser."""
     now = now or datetime.now(TAIPEI)
@@ -71,7 +90,7 @@ def parse_detail(page, url, evidence, card=None, now=None):
             'category': category_of(card.get('type', ''), title + ' ' + body),
             'is_free': card.get('is_free'), 'registration_url': registration,
             'content_links': links, 'sessions': sessions, 'evidence': evidence,
-            'source_url': url}
+            'source_url': url, 'cover_image': poster_url(page, url)}
 
 
 def choose_registration_url(links):
