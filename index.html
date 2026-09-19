@@ -106,13 +106,9 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
   .card-footer{padding-top:4px;min-height:48px}
   .card-detail{min-height:44px;padding:8px 0 8px 16px;font-size:13px}
   .ios-tab-bar{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:8px max(10px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));border-top:1px solid var(--border-color);background:color-mix(in srgb,var(--bg-main) 92%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-  .ios-tab-item{position:relative;isolation:isolate;clip-path:polygon(7px 0,calc(100% - 7px) 0,100% 7px,100% calc(100% - 7px),calc(100% - 7px) 100%,7px 100%,0 calc(100% - 7px),0 7px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:54px;min-width:0;padding:5px 2px;background:var(--text-muted);border-radius:0;color:var(--text-muted);font-size:11px}
-  .ios-tab-item::before{content:"";position:absolute;z-index:-1;inset:1px;pointer-events:none;background:var(--bg-main);clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px)}
-  .ios-tab-item:focus-visible{outline:0;background:var(--text-main)}
-  .ios-tab-item:focus-visible::before{inset:3px}
-  .ios-tab-item.active::before{background:var(--secondary-light)}
+  .ios-tab-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:54px;min-width:0;padding:5px 2px;background:transparent;border-radius:14px;color:var(--text-muted);font-size:11px}
   .ios-tab-item svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-  .ios-tab-item.active{color:var(--text-main);background:var(--text-main)}
+  .ios-tab-item.active{color:var(--text-main);background:var(--secondary-light)}
   .ios-tab-item.active span{font-weight:600}
   dialog.modal-overlay{padding:0;align-items:flex-end}
   .modal-dialog,.filter-modal .modal-dialog{max-width:none!important;max-height:calc(100dvh - max(20px,env(safe-area-inset-top)));border-radius:26px 26px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -12px 60px #0004;animation:sheet-enter .2s ease-out}
@@ -199,13 +195,13 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
       <div class="filter-row" role="group" aria-label="揀地區">
         <span class="filter-label">城市</span>
         <div class="city-options">
-        <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
+        <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏選 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" aria-pressed="false" onclick="setCityFilter('新北市')"><span class="badge-city city-newtaipei">新北</span><span class="pill-count" id="count-city-newtaipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
         </div>
       </div>
-      <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div></div>
+      <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">月份</span><div class="month-options" id="monthFilterOptions"></div></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（42）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（40）</option><option value="北北桃市府局處">北北桃市府局處（3）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="台語站">台語站（23）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
@@ -369,7 +365,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-09-19 23:28:54（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-09-19 23:32:26（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -5889,7 +5885,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
     function renderMonthFilters() {
       const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
       document.getElementById('monthFilterOptions').innerHTML =
-        `<button class="pill ${selectedMonth ? '' : 'active'}" data-month="all" aria-pressed="${!selectedMonth}" onclick="setMonth('all')">攏總</button>` +
+        `<button class="pill ${selectedMonth ? '' : 'active'}" data-month="all" aria-pressed="${!selectedMonth}" onclick="setMonth('all')">攏選</button>` +
         months.map(month => `<button class="pill ${selectedMonth === month ? 'active' : ''}" data-month="${month}" aria-pressed="${selectedMonth === month}" onclick="setMonth('${month}')">${monthLabel(month)}</button>`).join('');
     }
 

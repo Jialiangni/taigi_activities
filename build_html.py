@@ -122,13 +122,13 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       <div class="filter-row" role="group" aria-label="揀地區">
         <span class="filter-label">城市</span>
         <div class="city-options">
-        <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏總 <span class="pill-count" id="count-city-all"></span></button>
+        <button class="pill active" data-filter-type="city" data-value="all" aria-pressed="true" onclick="setCityFilter('all')">攏選 <span class="pill-count" id="count-city-all"></span></button>
         <button class="pill" data-filter-type="city" data-value="臺北市" aria-pressed="false" onclick="setCityFilter('臺北市')"><span class="badge-city city-taipei">臺北</span><span class="pill-count" id="count-city-taipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="新北市" aria-pressed="false" onclick="setCityFilter('新北市')"><span class="badge-city city-newtaipei">新北</span><span class="pill-count" id="count-city-newtaipei"></span></button>
         <button class="pill" data-filter-type="city" data-value="桃園市" aria-pressed="false" onclick="setCityFilter('桃園市')"><span class="badge-city city-taoyuan">桃園</span><span class="pill-count" id="count-city-taoyuan"></span></button>
         </div>
       </div>
-      <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">幾月</span><div class="month-options" id="monthFilterOptions"></div></div>
+      <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">月份</span><div class="month-options" id="monthFilterOptions"></div></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
         <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)">{platform_options}</select></label>
@@ -427,7 +427,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderMonthFilters() {{
       const months = [...new Set(ACTIVITIES_DATA.map(act => taipeiDateKey(new Date(act.start_time)).slice(0, 7)))].sort();
       document.getElementById('monthFilterOptions').innerHTML =
-        `<button class="pill ${{selectedMonth ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonth}}" onclick="setMonth('all')">攏總</button>` +
+        `<button class="pill ${{selectedMonth ? '' : 'active'}}" data-month="all" aria-pressed="${{!selectedMonth}}" onclick="setMonth('all')">攏選</button>` +
         months.map(month => `<button class="pill ${{selectedMonth === month ? 'active' : ''}}" data-month="${{month}}" aria-pressed="${{selectedMonth === month}}" onclick="setMonth('${{month}}')">${{monthLabel(month)}}</button>`).join('');
     }}
 

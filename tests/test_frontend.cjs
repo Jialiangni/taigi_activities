@@ -141,7 +141,7 @@ assert.equal(element('modalPosterLink').href,undefined);
 // Month selection is exclusive; selecting the same month keeps it selected.
 assert.equal(run("monthLabel('2026-09')"),'2026∙09');
 run('renderMonthFilters()');
-assert.match(element('monthFilterOptions').innerHTML, /攏總/);
+assert.match(element('monthFilterOptions').innerHTML, /攏選/);
 const monthKeys=[...new Set(data.map(a=>a.start_time.slice(0,7)))].sort();
 for (const key of monthKeys) assert.ok(element('monthFilterOptions').innerHTML.includes(key));
 if (monthKeys.length) {
