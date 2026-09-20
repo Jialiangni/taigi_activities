@@ -125,6 +125,24 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(self.run_review()['counts'], {'pending': 1})
         self.assertEqual(json.loads((self.root/'data/verified_activities.json').read_text())['activities'], [])
 
+    def test_retired_threads_artifacts_cannot_route_or_block_other_sources(self):
+        self.write('candidates/threads_review.json', {
+            'source_id': 'threads_review', 'candidates': [{
+                'id': 'retired-post', 'source_id': 'threads_review',
+                'source_url': 'https://www.threads.com/@example/post/1',
+                'title': '台語活動', 'text': '舊快照', 'kind': 'social_snapshot', 'fields': {},
+                'review_context': {'discovered_links': [
+                    {'url': URL, 'origin': 'post', 'is_page_author': True}]}}]})
+        self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
+            {'source_id': 'threads', 'status': 'needs_configuration', 'candidate_count': 0},
+            {'source_id': 'threads_review', 'status': 'ok', 'candidate_count': 1},
+            {'source_id': 'opentix', 'status': 'ok', 'candidate_count': 1}]})
+        result = self.run_review()
+        self.assertEqual(result['counts'], {'approved': 1})
+        self.assertEqual(result['candidate_count'], 1)
+        self.assertTrue(all(r['source_id'] == 'opentix' for r in result['decisions']))
+        self.assertEqual(self.client.calls, ['https://csm.api.opentix.life/programs/123', URL])
+
     def test_subtitles_biographies_negation_and_keyword_hits_are_not_language_proof(self):
         for text in ['字幕語言：臺語', '曾演出台語劇', '台語指導：某某',
                      '演出語言：華語；演員會台語', '非臺語發音', '本片並非演出語言：臺語',
@@ -222,16 +240,16 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertFalse(trusted_registration_link('https://forms.gle.evil.example/abc'))
         self.assertFalse(trusted_registration_link('http://forms.gle/abc'))
         for number, url in enumerate(('https://forms.gle/abc', 'https://linktr.ee/example'), 1):
-            candidate = {'id': 'threads-registration-' + str(number), 'source_id': 'threads_review',
-                         'source_url': 'https://www.threads.com/@example/post/' + str(number),
-                         'title': 'Threads 活動', 'text': '候選摘要', 'kind': 'social_snapshot',
+            candidate = {'id': 'facebook-registration-' + str(number), 'source_id': 'facebook_review',
+                         'source_url': 'https://www.facebook.com/example/posts/' + str(number),
+                         'title': 'Facebook 活動', 'text': '候選摘要', 'kind': 'social_snapshot',
                          'review_status': 'pending', 'fields': {}, 'review_context': {
                              'discovered_links': [{'url': url, 'origin': 'comment', 'is_page_author': True}],
                              'draft': {'unverified_fields': ['start_time']}}}
-            self.write('candidates/threads_review.json',
-                       {'source_id': 'threads_review', 'candidates': [candidate]})
+            self.write('candidates/facebook_review.json',
+                       {'source_id': 'facebook_review', 'candidates': [candidate]})
             self.write('candidates/report.json', {'collected_at': NOW.isoformat(), 'sources': [
-                {'source_id': 'threads_review', 'status': 'ok', 'candidate_count': 1}]})
+                {'source_id': 'facebook_review', 'status': 'ok', 'candidate_count': 1}]})
             result = self.run_review()
             self.assertEqual(result['counts'], {'routed': 1})
             self.assertEqual(result['decisions'][0]['reason'],

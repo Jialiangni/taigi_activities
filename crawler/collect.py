@@ -13,8 +13,6 @@ from .sources.accupass import AccupassCrawler
 from .sources.opentix import OpentixCrawler
 from .sources.eraticket import EraTicketCrawler
 from .sources.instagram import InstagramCrawler
-from .sources.threads import ThreadsCrawler
-from .threads_review import build_threads_review
 from .sources.li_kang_khiok import LiKangKhiokCrawler
 from .sources.le_chang import LeChangCrawler
 from .sources.tmofa import TmofaCrawler
@@ -33,7 +31,6 @@ def collectors(config, selected=None):
         'eraticket': EraTicketCrawler(keywords, pages, details),
         'culture_open_data': CultureCrawler(keywords, definitions),
         'instagram': InstagramCrawler(hashtags=config.get('instagram_hashtags'), keywords=keywords, max_pages=pages),
-        'threads': ThreadsCrawler(keywords, pages, max_reply_pages=limits.get('threads_reply_pages', 20)),
         'li_kang_khiok': LiKangKhiokCrawler(keywords, limits.get('feed_pages', 5),
                                              max_details=limits.get('foundation_details', 30)),
         'le_chang': LeChangCrawler(keywords, limits.get('feed_pages', 5)),
@@ -95,18 +92,6 @@ def run(config, output, selected=None, client_factory=Client):
             tmp.replace(target)
             results.append(data)
             print('{}: {} / {} candidates'.format(data['source_id'], data['status'], len(data['candidates'])), flush=True)
-    # Raw authorized Threads material stays on this runner. A compact snapshot
-    # excludes other users' reply text, identities, API URLs and credentials.
-    threads = next((row for row in results if row['source_id'] == 'threads'), None)
-    if threads is not None:
-        review_data = build_threads_review(threads)
-        target = output / 'threads_review.json'
-        tmp = target.with_suffix('.tmp')
-        tmp.write_text(json.dumps(review_data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-        tmp.replace(target)
-        results.append(review_data)
-        print('threads_review: {} / {} candidates'.format(
-            review_data['status'], len(review_data['candidates'])), flush=True)
     results.sort(key=lambda r: r['source_id'])
     report = {'schema_version': 1, 'collected_at': datetime.now(TAIPEI).isoformat(timespec='seconds'),
               'publication_changed': False, 'config': config,

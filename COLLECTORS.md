@@ -22,7 +22,7 @@
 | 桃園市立美術館所屬館群 | 官網首頁 `__NEXT_DATA__` 的公開 news／info 資料集，保留公告內文 | 取代只會讀到防護頁的內頁爬取；實測可解析，但首頁亦可能間歇回傳 HTTP 428，屆時標失敗並需正常瀏覽器補查 |
 | 文化部開放資料 | 依[官方介接文件](https://opendata.culture.tw/upload/dataSource/2021-02-18/9bee99c4-0732-4abd-b8c6-1a4bd0b62e64/db83c7223217e1d9947778256768153f.pdf)讀取各類別，保留 `showInfo` 各場次，依地址篩選北北桃，記錄命中的機構 | 補充上述機構與售票平台，不能保證各機構都有提供資料。`onSales=N` 不等於免費 |
 | Instagram | `ig_hashtag_search` → `/{hashtag-id}/recent_media`，兩次均帶真實 `user_id`，支援平台的同值 after 游標 | 專業帳號、Facebook Login、Public Content Access；近期 24 小時公開媒體，非全站歷史搜尋 |
-| Threads | 對四個指定帳號逐一呼叫 `https://graph.threads.com/v1.0/keyword_search`，以 `author_username` 精確篩選；再以 `/{media-id}/conversation` 讀取可見回覆與其中連結 | 只取得符合設定關鍵字的貼文；公開搜尋需要 `threads_keyword_search` 核准，且 API 可見回覆不等於完整留言歷史 |
+| Threads | 2026-09-20 已依使用者要求移除 | 不再收集貼文、回覆或產生候選提醒 |
 
 票務搜尋 API 是本次從網站公開前端觀察並實測成功的網站介面，不是承諾永久穩定的第三方服務合約。格式改變、HTTP 失敗、重複頁面、缺少欄位均需處理為錯誤。
 
@@ -38,7 +38,7 @@ python3 -m crawler.collect --sources accupass,opentix,eraticket
 python3 -m crawler.collect --sources public_libraries,museums,government
 python3 -m crawler.collect --sources li_kang_khiok,le_chang
 python3 -m crawler.collect --sources gameislearning
-python3 -m crawler.collect --sources instagram,threads
+python3 -m crawler.collect --sources instagram
 # 小量連線檢查（報告會明確標示截斷，不能宣稱全量）
 python3 -m crawler.collect --max-details 5 --website-pages 3 --output /tmp/taigi-smoke
 python3 -m unittest discover -s tests -v
@@ -60,7 +60,7 @@ python3 -m unittest discover -s tests -v
 
 報告記錄各來源候選數、成功回應數、時間、來源 URL、成功回應 SHA-256（解壓後內容）、失敗碼與截斷原因。API POST 的公開搜尋條件一併留存，不儲存授權標頭。候選全文是本機待審資料，已排除於 Git 與 GitHub Pages；Git 只保存精簡測試樣本與驗證摘要。
 
-GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Instagram／Threads 原始授權內容不放進 artifact。Threads 另輸出去識別 `threads_review.json`：保留指定帳號公開貼文短摘錄、本文或回覆找到的公開網址、連結是否由原帳號提供、抓取時間及內容雜湊，排除其他回覆者文字與身分、Graph API 請求網址及權杖。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
+GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘要及公開來源候選存為 artifact，保留 14 天供核對；Instagram／Threads 原始授權內容不放進 artifact。Threads 已移除；舊 Threads 原始內容與快照均排除於新 artifact。收集失敗仍上傳已完成來源。收集工作本身不提交候選；完成後會觸發獨立的候選核實與發布工作，通過官方證據規則及後續全部檢查者才加入網站。
 
 任何來源的請求／格式錯誤會令 CLI 回傳非零碼，但仍完成其他獨立來源並保存報告；單純到達已設定上限會標 partial。設定缺漏的社群屬明確待設定狀態，無法以此視為已驗證。
 
@@ -68,18 +68,17 @@ GitHub Actions 每日臺灣時間 03:15 或手動執行候選收集。來源摘�
 
 ## 社群授權接入口
 
-使用者已確認目前沒有 Meta App／授權，因此 Instagram 與 Threads 目前只能完成介面與模擬回應測試，不能宣稱授權後實際回傳已驗證。Facebook 已依使用者要求退出每日收集流程。
+使用者已確認目前沒有 Meta App／授權，因此 Instagram 目前只能完成介面與模擬回應測試，不能宣稱授權後實際回傳已驗證。Facebook 與 Threads 已依使用者要求退出每日收集流程。
 
 | 環境變數／GitHub Secret 名稱 | 用途 |
 |---|---|
 | `INSTAGRAM_ACCESS_TOKEN` | Facebook Login 對應的使用者 token |
 | `INSTAGRAM_USER_ID` | Instagram Business／Creator 帳號的數字 ID，不是 `me` |
-| `THREADS_ACCESS_TOKEN` | 具 `threads_basic`、`threads_keyword_search` 的 Threads token |
 | `META_GRAPH_VERSION` | 選用環境變數／GitHub Actions Variable，預設本次官方文件列出的 `v26.0` |
 
 將值設在執行環境或 GitHub Actions Secrets，不要貼進聊天、Git、設定 JSON 或候選資料。專案不會自行建立 Meta App、申請擴大權限或代為完成授權同意。
 
-Instagram 依[官方 hashtag search](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag-search/)及[recent media 文件](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag/recent-media/)，7 天最多 30 個不同標籤，請維持固定標籤避免累積超額；Threads 依官方 [Keyword Search](https://developers.facebook.com/documentation/threads/keyword-search) 與 [Replies and Conversations](https://developers.facebook.com/documentation/threads/retrieve-and-manage-replies/replies-and-conversations) 介面。
+Instagram 依[官方 hashtag search](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag-search/)及[recent media 文件](https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-hashtag/recent-media/)，7 天最多 30 個不同標籤，請維持固定標籤避免累積超額。
 
 設定後先跑對應來源，檢查實際 token 權限、成功回應、分頁和候選內容，才能將社群來源標成已連線驗收。
 
@@ -96,7 +95,7 @@ Instagram 依[官方 hashtag search](https://developers.facebook.com/documentati
 | 李江却基金會 | 246 篇 | 正確跟隨官方 Blogger 分頁；到達 5 頁上限 |
 | 樂暢 | 16 篇 | 官方 RSS 回應與解析完成 |
 | 36 個機構入口 | 6 篇 | 多數到達 8 頁上限；桃園美術館 17:00 曾取得 1 篇，但 17:07 重查 HTTP 428，最新結果保留失敗，未以舊成功掩蓋 |
-| Instagram／Threads | 0 | 均為 needs_configuration；使用者尚未設定 App／授權；Facebook 已於 2026-09-19 停用 |
+| Instagram／Threads（歷史驗收） | 0 | 當時均為 needs_configuration；Threads 已於 2026-09-20 移除，Facebook 已於 2026-09-19 停用 |
 
 合計 684 筆候選，包含文章、公告、節目期間及場次，也可能含過期內容或尚未確認地區的資料；不是 684 場已核實活動。ACCUPASS 的最終關鍵字過濾以這輪剛取得的完整文字重算，原始來源欄位及回應指紋保留於本機，摘要另記錄重算時間。
 
@@ -113,7 +112,7 @@ Instagram 依[官方 hashtag search](https://developers.facebook.com/documentati
 - **鶯歌分館**：使用新北市圖 `area=239&branch=EA` 活動清單，EA 由官方 `getBranch?area=239` 回傳；分館介紹頁的 UUID 不能拿來當查詢代碼。候選標題須對應鶯歌，排除全市公告中其他分館的台語活動。
 - **四號公園圖書館**：是國立臺灣圖書館，不是新北市圖；新增官網、官方最新消息 RSS 與台語路合作故事專頁。
 - **迪化街**：先依大稻埕戲苑加入藝文處官方列表、已知《請戲—布袋戲一條街》特展；尚待確認使用者是否另指原林柳新／台原亞洲偶戲博物館，未宣稱兩館同一處。
-- **台語路**：官方 `taigiloo.tw` RSS、最新消息及活動文章；aliases 包含台語路／台語鹿／台語路親子樂團／taigilok。另追蹤 Threads 帳號 `@taigiloo`，仍需 Threads token 與公開搜尋權限才能取得貼文。官網 RSS 內容可能較舊，合作圖書館／售票平台仍是目前新活動的重要來源，不能說已完整取得社群貼文。
+- **台語路**：官方 `taigiloo.tw` RSS、最新消息及活動文章；aliases 包含台語路／台語鹿／台語路親子樂團／taigilok。Threads 帳號追蹤已於2026-09-20移除。官網 RSS 內容可能較舊，合作圖書館／售票平台仍是目前新活動的重要來源，不能說已完整取得社群貼文。
 
 本輪指定網站驗收採每站 20 頁，當時日常預設為 8 頁（後續已提高至 30 頁）；到達上限如實列 partial，沒有全站完整涵蓋承諾。詳見 `data/audit/2026-09-18-museum-collection-report.json`。
 
@@ -145,28 +144,9 @@ python3 -m crawler.collect --sources tpml_district_a,ntpclib_district_239,typl_d
 活動中心沿各區公所公開公告收集，需同時含中心及台語相關內容；不把場地租借、管理或收費辦法認作活動，不表示該區每一場館的未公開課表都有取得。候選收集不改變公開63場活動及5項導覽資訊。
 
 
-## Threads 指定帳號與回覆連結（2026-09-19）
+## Threads 已移除（2026-09-20）
 
-`data/threads_accounts.json` 是 Threads 收集器實際載入的名單，與機構官網 registry 分開。Facebook 收集器已退出排程；目前追蹤4個 Threads 帳號：
-
-- [出外講台語](https://www.threads.com/@chhut_goa_kong_tai_gi) `@chhut_goa_kong_tai_gi`
-- [牽囡仔ê手 行台語ê路－台灣台語路協會](https://www.threads.com/@taigiloo) `@taigiloo`
-- [二樓有人](https://www.threads.com/@lesecondfloor) `@lesecondfloor`
-- [樂暢親子共學](https://www.threads.com/@lekhiantang) `@lekhiantang`
-
-讀取方法：
-
-1. 對每個帳號及每個設定關鍵字呼叫官方 `keyword_search`，使用 `search_type=KEYWORD`、`search_mode=RECENT` 與不含 `@` 的 `author_username`。回應的 username 必須再次精確相符；回覆型及引用型結果不當作原帳號貼文。
-2. 保留貼文本文與 permalink，擷取其中公開網址。若貼文標示有回覆，再讀 `/{media-id}/conversation` 的游標分頁；只把回覆中的網址及其作者是否為原帳號交給後續，不把其他回覆者的文字或身分放進 artifact。
-3. 同一貼文可能命中多個關鍵字，以 media ID 去重。每個搜尋預設最多 `search_pages` 頁，每篇 conversation 最多 `limits.threads_reply_pages` 頁；到達上限或個別回覆讀取失敗會保留已取得內容並標 partial。
-4. 連結只是核實線索，不自動視為已確認活動。仍需核對主辦、活動日期、場地、語言、費用及狀態；圖片內未結構化文字仍可能需要人工判讀。
-
-官方 API 需要 `THREADS_ACCESS_TOKEN`，至少具 `threads_basic` 與 `threads_keyword_search`。未經 App Review 核准公開搜尋時，Keyword Search 只能搜尋授權使用者自己的貼文，無法完成這四個外部帳號的監測。公開 Threads 個人頁 HTML 沒有穩定提供完整貼文與回覆資料，因此不拿頁面抓取假裝成 API 的替代方案。介面依官方 [Keyword Search](https://developers.facebook.com/documentation/threads/keyword-search) 與 [Replies and Conversations](https://developers.facebook.com/documentation/threads/retrieve-and-manage-replies/replies-and-conversations) 文件實作。
-
-目前無 Threads token，實跑會是 **needs_configuration / 0候選**，四個目標逐一列於 `threads.json` 及 `report.json` 的 `account_status`，不能解讀成「四個帳號都沒有活動」。設定並通過權限後，仍需先以實際成功回應驗證搜尋、分頁與 conversation 可見範圍，才可標示已連線。
-
-原始 `threads.json` 持續排除於 artifact；只有 `threads_review.json` 去識別快照交給後續核實。原帳號提供的 OPENTIX 活動連結會進入相同的官方 API／HTML 嚴格核實；原帳號提供的 `forms.gle`、`docs.google.com/forms`、`forms.google.com/forms` 或 Linktree 正式網域視為可信報名入口，標記自動接手。網址必須是 HTTPS 且主機名完全相符。過期與已刊登連結自動排除；回覆作者不明、缺連結、圖片或其他驗證失敗者保持 pending。pending 項目每日更新同一張「待判讀：Threads 活動候選」GitHub Issue；清空後自動關閉。
-
+移除四帳號追蹤、Keyword Search、conversation 回覆收集、去識別快照與待判讀 Issue。每日排程與手動指定來源均不再提供 Threads；舊候選附件的 Threads 來源也不送進核實。歷史執行紀錄保留原始結果，未設定狀態不代表目前仍需設定。
 
 ## 李江却基金會：公告正文與系列核實清單（2026-09-18）
 

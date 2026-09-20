@@ -24,7 +24,8 @@ from .source_priority import accupass_url, directory_registration, primary_sessi
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = {'facebook', 'instagram', 'threads'}
-SOCIAL_REVIEW = {'facebook_review', 'threads_review'}
+RETIRED = {'threads', 'threads_review'}
+SOCIAL_REVIEW = {'facebook_review'}
 MODE = 'official_rules_v1'
 
 
@@ -535,7 +536,7 @@ def read_candidates(folder, now):
     for entry in report['sources']:
         sid = entry['source_id']
         require(re.fullmatch(r'[a-z0-9_]+', sid), 'invalid_source_id')
-        if sid in PRIVATE:
+        if sid in PRIVATE or sid in RETIRED:
             continue
         path = folder / (sid + '.json')
         require(path.is_file() and not path.is_symlink() and path.stat().st_size <= 20_000_000,

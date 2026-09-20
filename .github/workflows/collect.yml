@@ -29,7 +29,6 @@ jobs:
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION || 'v26.0' }}
         run: python3 -u -m crawler.collect
       - name: Preserve source diagnostics even when collection fails
@@ -41,9 +40,10 @@ jobs:
             data/candidates/*.json
             !data/candidates/instagram.json
             !data/candidates/threads.json
+            !data/candidates/threads_review.json
           if-no-files-found: warn
           retention-days: 14
-      # Preserve public-source candidates plus the redacted Threads review snapshot.
+      # Preserve public-source candidates; retired Threads files are excluded.
       # Raw authorized social responses stay on the runner.
       # Completion triggers deploy.yml, which reviews public candidates before publishing.
       # No Pages upload of unreviewed event or social data.

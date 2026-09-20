@@ -59,12 +59,12 @@ GitHub Actions 每日台灣時間 03:15 啟動候選收集，完成後以 `workf
 
 ## 各區圖書館與活動中心爬蟲
 
-已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有159個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。
+已加入臺北12區、新北29區、桃園13區，共54個圖書館分區入口及54個區公所活動中心公告入口；現有158個收集器，預設每入口30頁，納入每日收集排程。可分別使用 `--sources public_libraries` 與 `--sources community_centers`。方法、逐區名錄及連線限制見 [DISTRICT_SOURCES.md](DISTRICT_SOURCES.md)；有來源入口不代表所有場館與近三週資料完整，也不會直接新增未核實活動。
 
 
-## Threads 帳號與回覆
+## Threads 已移除（2026-09-20）
 
-Facebook 已退出每日收集流程；目前追蹤[四個 Threads 帳號](data/threads_accounts.json)：`chhut_goa_kong_tai_gi`、`taigiloo`、`lesecondfloor`、`lekhiantang`。收集器以官方 Keyword Search 的 `author_username` 精確限制帳號，再讀每篇貼文的 conversation，尋找本文及可見回覆中的活動連結。原始授權內容只留在執行器，後續僅接收 `threads_review.json` 去識別快照；其他回覆者的姓名與文字不會進入核實工作。原帳號提供的 OPENTIX、Google Forms 或 Linktree 連結沿用分級自動判讀，其餘證據不足者集中更新同一張 GitHub Issue。**目前仍未設定 Threads token，且公開帳號搜尋需要 Meta 核准 `threads_keyword_search`，所以尚未完成實際貼文／回覆連線驗收**。設定、限制與官方介面見 [COLLECTORS.md](COLLECTORS.md#threads-指定帳號與回覆連結2026-09-19)。
+Threads 已退出爬蟲與候選核實流程，四個追蹤帳號、API 權杖設定、回覆快照及 GitHub 待判讀提醒皆已移除。舊收集附件的 Threads 候選會略過，不會重新接手。樂暢親子共學、台語路的官方網站收集器仍照常執行。
 
 ## 李江却基金會系列場次補核（2026-09-18）
 
@@ -80,7 +80,7 @@ Facebook 已退出每日收集流程；目前追蹤[四個 Threads 帳號](data/
 
 月份按鈕一次只能選擇一個月份，改選月份會取代上一個，重按同月維持選取；「攏選」清除月份限制。月份包含年份，以臺北時間的活動開始日期篩選，套用至卡片、清單、週曆及篩選後ICS下載。選月後若目前週沒有符合活動，週曆會定位至選取範圍第一場活動所在週。
 
-三市總館均列入日常收集設定：臺北新增 `tpml_main` 官方「總館-全」專用列表；新北由 `ntpclib_district_220` 板橋區全部館別涵蓋；桃園由 `typl_district_2` 的總館area 1涵蓋。現為159個收集器、150個registry入口。限量6頁驗收臺北及桃園成功取得回應但達上限（partial）；新北仍HTTP502（failed），不能宣稱本次已取得其活動。詳見[總館核對紀錄](data/audit/2026-09-18-main-libraries-check.json)。
+三市總館均列入日常收集設定：臺北新增 `tpml_main` 官方「總館-全」專用列表；新北由 `ntpclib_district_220` 板橋區全部館別涵蓋；桃園由 `typl_district_2` 的總館area 1涵蓋。現為158個收集器、150個registry入口。限量6頁驗收臺北及桃園成功取得回應但達上限（partial）；新北仍HTTP502（failed），不能宣稱本次已取得其活動。詳見[總館核對紀錄](data/audit/2026-09-18-main-libraries-check.json)。
 
 ## 台語站信任來源（2026-09-19）
 

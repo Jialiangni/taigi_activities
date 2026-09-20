@@ -97,7 +97,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 ## 9. 各區圖書館與活動中心
 
-新增54個圖書館分區來源、54個區公所活動中心公告來源，對應臺北12、新北29、桃園13區。registry共149入口；另含台語站等專用收集器後，全部收集器共159個。每個入口預設最多30頁，可用 `public_libraries`（59入口，含原有5個）及 `community_centers`（54入口）群組執行，每日候選收集排程自動納入。
+新增54個圖書館分區來源、54個區公所活動中心公告來源，對應臺北12、新北29、桃園13區。registry共149入口；另含台語站等專用收集器後，全部收集器共158個。每個入口預設最多30頁，可用 `public_libraries`（59入口，含原有5個）及 `community_centers`（54入口）群組執行，每日候選收集排程自動納入。
 
 `crawler/library_sources.py` 直接讀官方分館清單與實際分頁：臺北閱讀網53個分館／閱覽室列表分配至12區，沿同一列表的數字頁碼翻頁；新北依官方area代碼查該區所有館別，依表單及CSRF續頁；桃園送出完整Filter[0]至Filter[4]查詢、以CurrentPage表單翻頁，並逐筆比對data-area防止篩選失效。桃園區另含總館。行政區是收集範圍，不直接當作活動實際地點。列表至少預留所有初始分館入口，最多約一半頁數用於翻頁，其餘讀活動詳情，優先台語關鍵字；未讀完明確列partial。
 
@@ -115,12 +115,9 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 非場次類型增加 `reading_resource`，呈現臺語閱讀推廣；`exhibition_resource` 標籤為「台語相關展覽」，避免一般書展被誤稱為語音導覽。日期範圍但沒有固定時刻的活動以資源卡呈現，沒有日曆事件；日期到期界線使用結束日的次日零時，並非推定館方營業時間。全部資源仍須通過相同官方來源檢查。
 
 
-## 11. Threads 指定帳號與回覆收集
+## 11. Threads 已移除（2026-09-20）
 
-`data/threads_accounts.json` 是實際追蹤名單，包含 `chhut_goa_kong_tai_gi`、`taigiloo`、`lesecondfloor`、`lekhiantang`。Facebook 不再列入預設收集器。Threads 收集器逐帳號、逐關鍵字呼叫官方 Keyword Search，以 `author_username` 精確限制帳號，拒絕回應中帳號不符、轉貼或回覆型結果；找到貼文後再讀 conversation 的可見回覆。
-
-原始 `threads.json` 留在收集執行器；後續只接收 `threads_review.json` 去識別快照，內容限原帳號公開貼文短摘錄、公開連結、連結是否由原帳號提供及回應雜湊。其他回覆者身份及文字、Graph API 網址與 token 不得進入 artifact。分級判讀先排除已刊登官方連結，再將原帳號提供的 OPENTIX 連結轉為單場候選並套用第23節完整核實；原帳號提供且 HTTPS 主機名完全符合 Google Forms 或 Linktree 正式網域的報名連結標記為可信自動接手，不進人工 Issue。其餘不能完整核實者依缺連結、作者不明、不支援平台或驗證失敗分類為 pending，由部署工作更新一張固定 Threads GitHub Issue。未設定 token 逐帳號標 `needs_configuration`；不能解讀為帳號沒有活動。詳見 COLLECTORS.md。
-
+依使用者要求移除 Threads 收集器、四帳號名單、快照生成、設定與候選提醒。預設與指定來源均不能執行 Threads；核實入口略過舊 artifact 的 `threads`、`threads_review`，不讀取候選、不發出網路請求、不新增活動。發布工作移除 Threads Issue 步驟與不再需要的 issues:write 權限。其他官方來源與現有活動核實規則維持原樣。
 
 ## 11. 李江却基金會系列場次核實
 
@@ -140,7 +137,7 @@ OPENTIX 官方 HTML 的場次選單由動態 API 提供，不能只檢查節目�
 
 前端以全部正式場次的Asia/Taipei開始日期產生YYYY-MM月份選項，按年月排序，不受其他篩選隱藏選項。selectedMonth為空表示全部；一次只能選一個YYYY-MM，改選即取代上一個，再與城市、類別、來源、費用及文字篩選取交集。重按同月維持選取，「攏選」清除。按鈕以aria-pressed呈現選取狀態，桌面與手機共用可水平捲動的列；維持按鈕DOM以保留鍵盤焦點。卡片、清單、週曆、計數及篩選後ICS使用同一組結果，非場次資訊不受活動月份篩選。若選月後目前週沒有符合活動，定位至篩選後首場活動所在週；沒有符合活動時定位至所選月份首日。週曆仍一次顯示一週。
 
-新增臺北總館專用LibraryListingCrawler（tpml_main）；含後續台語站專用來源後，總數159收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
+新增臺北總館專用LibraryListingCrawler（tpml_main）；含後續台語站專用來源後，總數158收集器／150 registry，public_libraries群組60入口；排程預設全部來源會自動包含它。新北總館沿板橋區area=220、不限branch；桃園總館沿typl_district_2、area_codes包含1。限量驗收與各館證據見main-libraries-check；HTTP502、partial與未核實候選均不代表全館沒有活動或完整覆蓋。
 
 ## 14. 活動卡片精簡（2026-09-18）
 
@@ -230,7 +227,7 @@ iPhone 的 LINE 內建瀏覽器不直接交接 `.ics` 時，網站辨識 LINE us
 
 去重以既有全部歷史紀錄與本輪已通過結果為基準：官方 session ID優先，其次官方頁＋起迄時間，再比對跨站正規化標題／城市／地點／時間。相同城市時間但標題或場地疑似重複時保留 pending。同一官方系列的不同日期可分別通過；同一報告反覆執行不重複新增。過期活動只從輸出排除，核實歷史仍保留。
 
-`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Threads僅下載上述去識別快照。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
+`fetch_review_candidates.py` 僅下載同倉庫、main、collect.yml、schedule/workflow_dispatch、最近36小時完成的 success/failure 工作。workflow_run 使用觸發的同一 run，push／手動發布選最近一輪完成工作；不使用其他分支／PR artifact，不執行 artifact 內容。檔名／大小／JSON／來源數量一致性與新鮮度不符即停止；原始社群授權內容不下載，Threads 已停用，舊去識別快照即使存在也不送入核實。個別來源有 errors 不影響其他來源的核實，但收集結果仍保留 failure／partial 狀態。
 
 所有正式檢查通過才提交核實資料、翻譯對照、審查紀錄及 HTML/ICS。來源重查涵蓋本次建置仍未結束的活動；已結束活動繼續保留不可變的核實歷史，但其已下架或改版的舊詳情頁不阻擋今日活動發布。提交推送失敗會停止部署，沒有 continue-on-error 或強制覆蓋 main。候選核實報告保留 Git 及14天 artifact，全文候選不進 Git／Pages。Python 測試保存9/18的85場固定樣本；當前正式清單另通過結構、來源與日曆一致性檢查，沒有85場數量上限。
 

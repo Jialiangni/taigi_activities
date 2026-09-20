@@ -14,7 +14,6 @@ on:
 permissions:
   contents: write
   actions: read
-  issues: write
   pages: write
   id-token: write
 
@@ -71,13 +70,6 @@ jobs:
           path: data/audit/latest-candidate-review.json
           if-no-files-found: ignore
           retention-days: 14
-
-      - name: Update Threads manual-review reminder
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: python3 scripts/update_manual_review_issue.py
 
       - name: Verify official sources and build calendar
         run: |
