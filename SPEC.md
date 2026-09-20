@@ -334,3 +334,12 @@ OCR測試圖為程式繪製的中文日期時間fixture，不是外部活動海�
 每天01:00 schedule只對已核實正式catalog重建、移除過期HTML／ICS場次；不刪歷史證據、不抓候選、不查外站、不匯入新稿、不使用AI。新稿故障不阻擋此維護。queue與deploy共用Git寫入concurrency group，外部寫入仍以non-fast-forward拒絕保護。
 
 `data/editorial/config.json`控制enabled與provider；Codex下載時提供provider guard，切換後不再編輯，另停用本機排程可省例行喚醒。`EDITORIAL_HANDOFF.md`為其他AI通用契約，不依賴特定SDK。舊Responses編輯器保留但不在任何自動workflow使用。
+
+
+## 36. 無新稿時零AI的本機程式閘門（取代第35節的固定Codex喚醒）
+
+週二、五08:00由macOS launchd啟動一般Python程式，先同步待編輯佇列，空佇列或停用時立即結束，不啟動模型程序、CLI登入查詢或API。原Codex heartbeat停用。GitHub排程不變。
+
+有待編輯活動才依本機runner.json的命令對應選擇AI；遠端只提供provider識別，不接受遠端下發任意shell命令。每批5筆、獨立工作目錄、stdin傳入固定編輯指示，Codex使用既有ChatGPT登入與workspace-write限制，網路用於字典查證。AI不做Git操作，Python在驗證成稿及最新來源版本後回傳。
+
+鎖防重入、已完成稿復用、每來源＋規範最多2次AI嘗試、每批30分鐘上限、錯誤不即刻重試，均保存於不進Git的本機狀態。已完成稿即使worker稍後失敗仍保留，之後只補回傳。一般檢查仍有網路傳輸，僅模型用量為0；真正產生新稿時依登入方案消耗額度。

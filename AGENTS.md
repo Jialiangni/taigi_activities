@@ -18,7 +18,8 @@
 
 自動流程採 GitHub 核實佇列 → 地端編輯 → GitHub 接收發布，詳見
 [EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md)。執行者可為 Codex 或其他 AI，格式與品質要求相同。
-每次先下載未處理檔；0筆就停止，不重讀整個儲存庫、不重跑爬蟲、不自行呼叫 API。
+由 `scripts/editorial_gate.py` 一般程式先下載檢查；0筆不啟動AI。AI僅在獨立批次工作目錄編輯，
+不重讀整個儲存庫、不重跑爬蟲、不自行呼叫API；下載、驗證及回傳由外部程式負責。
 只回傳 `data/editorial/results/` 的文案結果，由 GitHub 檢查來源版本及校訂後發布。
 日常排程不使用 `main.py --write-ai`；舊 API 編輯器僅保留為明確手動使用的備用工具。
 `data/ai_taigi.json` 的保留名單和既有校訂文案不得為了補跑而移除、重設或覆寫。

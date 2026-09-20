@@ -6,11 +6,11 @@
 ## 排程與責任
 
 - GitHub：臺灣時間週二、五04:00收集；完成後核實、去重，寫入 `data/editorial/queue.json`，此時不上站。
-- 地端：週二、五08:00下載所有尚未完成且未過期的活動；依規範撰寫、查詞、語感校訂、事實校訂，再回傳。
+- 地端：週二、五08:00由macOS launchd啟動一般Python檢查程式。沒有待編輯活動便停止（不啟動AI）；有活動才啟動獨立AI工作，完成撰寫、查詞及兩輪校訂，再由一般程式驗證、回傳。
 - GitHub：收到結果檔的 main push 後，檢查格式、來源／規範雜湊、引句及新場次的官方來源；通過才套用文案和發布。
 - GitHub：每天01:00只重建已核實資料，將已結束活動移出HTML／ICS；保留歷史證據與文案，不收集、不呼叫AI、不匯入待發布結果。
 
-GitHub 時間可能延遲，地端按「未處理」而非「今天」下載。電腦與應用程式須在地端排程時保持可執行、連網；錯過的批次下次仍會下載。待處理檔持久保存在Git，不靠14天附件保存。
+GitHub 時間可能延遲，地端按「未處理」而非「今天」下載。電腦須保持可執行、連網；Codex CLI使用本機既有ChatGPT登入，桌面應用程式不必維持開啟。錯過的批次下次仍會下載。待處理檔持久保存在Git，不靠14天附件保存。
 
 ## 三個共用命令
 
@@ -76,9 +76,11 @@ Git憑證從既有設定取得，不貼進JSON、對話或log。
 
 ## 換成其他 AI
 
-1. 將 `data/editorial/config.json` 的 `provider` 改成其他識別值，例如 `other-ai`，提交至main；Codex排程下次只檢查設定後停止編輯。
-2. 讓新AI執行 `download --provider other-ai`、遵循上述流程、`validate`、`submit`。不需改爬蟲／網站。
-3. 確認新執行者能定時工作且能push後，停用Codex的08:00排程，即可連例行喚醒額度也省下。
+1. 先在本機 `~/Library/Application Support/TaigiEditorial/runner.json` 的 `workers` 新增執行器，例如 `other-ai: {"argv": ["/絕對路徑/AI程式", "其他參數"]}`。一般程式以stdin傳入工作指示，工作目錄是獨立的批次資料夾，可用 `{workspace}` 作為argv內的路徑代換。執行器只寫results，不自行做Git操作。
+2. 將Git的 `data/editorial/config.json` 中provider改為相同識別值並提交。下一次一般程式檢查時會選擇該本機執行器；沒有設定對應命令就停止，不會退回Codex花額度。
+3. 共用同一份編輯契約與驗證／回傳程式，無須修改爬蟲、網站或排程。舊Codex定時喚醒已停用，不需要額外再關一次。
+
+也可讓其他工具手動執行上述download／validate／submit，格式相同；請勿同時排程兩個入口。
 
 `enabled: false` 可暫停所有遵守此設定的下載作業。不要同時啟動兩個編輯器處理同一批；已在另一個編輯器手上的檔案不會被設定自動撤回。
 其他AI服務的安裝、登入與計費由該執行者處理，本專案不假設其具有免費額度。
@@ -98,5 +100,28 @@ Git憑證從既有設定取得，不貼進JSON、對話或log。
 - 首次佇列初始化成功：[35505497234](https://github.com/Jialiangni/taigi_activities/actions/runs/35505497234)。既有爬蟲資料重新核實、去重後，待編輯合格新活動為0筆；未核實候選仍留在核實報告，不交給文案AI猜測。
 - 真實地端download成功；空佇列不生成、不提交。暫存Git整合測試已驗證其他AI格式、重複回傳、競爭寫入後重試、保護使用者未提交變更。
 - 正式HTML與ICS實查皆為123場，ID無重複；既有活動與人工文案未重寫。
-- 本機排程「台語新活動地端編輯」已啟用，週二、五08:00；GitHub收集04:00、過期維護每日01:00，皆為臺灣時間。
+- 初版曾啟用Codex本機排程「台語新活動地端編輯」；同日依使用者要求改為下述一般程式檢查，停用原定時AI喚醒。GitHub收集04:00、過期維護每日01:00維持不變，皆為臺灣時間。
 - 目前沒有真實新活動稿可驗收，尚未宣稱實際台文生成品質通過；首個自然排程亦尚未到時。已測通的是程式、同步及部署流程，沒有呼叫付費AI API。
+
+
+## 一般程式檢查與條件啟動AI（2026-09-20）
+
+`launchd → scripts/editorial_gate.py → Git同步／JSON待處理判斷 → 0筆結束；有需要才啟動AI → 一般程式驗證及submit`。
+
+- macOS LaunchAgent：`com.codex.taigi.editorial-gate`，週二、五08:00，系統時區Asia/Taipei；RunAtLoad為false，不在登入時額外啟動。
+- 安裝：`python3 scripts/install_editorial_gate.py`可先檢視設定，`--install`才安裝及載入。重裝會保留本機自訂AI命令。
+- 本機設定：`~/Library/Application Support/TaigiEditorial/runner.json`。不把本機命令或憑證放在Git公開檔案。
+- 狀態：`~/Library/Application Support/TaigiEditorial/state/latest-run.json`，明列pending、ai_starts、submitted及status；submitted表示已回傳，不等於Pages部署完成。
+- 記錄：同目錄的 `jobs/`保存每批輸入、AI結果及私有執行紀錄；`gate.log`／`gate.error.log`在TaigiEditorial資料夾。
+- 沒有新活動：仍有一般網路／Git檢查，但沒有Codex／其他AI程序，也沒有模型token消耗。
+- 有新活動：每批最多5筆，開新CLI工作，不帶入此聊天或整個儲存庫；不保留Codex會話歷史，文案和查證結果另存。
+- 預設Codex保留目前模型設定，使用既有ChatGPT登入，移除API key環境變數並限制登入方式；AI只能寫批次工作目錄，網路供字典查證，Git與回傳由一般程式處理。
+- 已有本機合格文案時只重試回傳，不再啟動AI。相同來源＋編輯規範最多嘗試2次，逾限標記needs_attention，避免故障反覆花額度。處理原因後可人工調整該項 `attempts.json` 計數，不可自動清空全部紀錄。
+- 檔案鎖防止重複執行；AI每批逾30分鐘就停止並保留已完成稿，沒有失敗後即刻重啟迴圈。這是執行上限，不是固定token或費用保證。
+
+機制依[官方非互動模式](https://learn.chatgpt.com/docs/non-interactive-mode)使用 `codex exec`；登入留在使用者本機，不複製到GitHub。
+
+2026-09-20 18:48臺灣時間已安裝並透過launchd實跑：`pending=0`、`ai_starts=0`、
+`submitted=0`、`status=empty`，launchd最後退出碼0。舊Codex heartbeat `automation`已設PAUSED。
+本機215項測試通過（1項OCR環境略過），包含空佇列／斷網不啟動AI、程序邊界、重入鎖、
+舊稿復用、重試上限及其他執行器介面；新活動模型實跑仍待有真實新稿時驗收。

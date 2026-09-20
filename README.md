@@ -8,7 +8,7 @@
 - ICS：https://jialiangni.github.io/taigi_activities/taigi_activities.ics
 - 系統規格：[SPEC.md](SPEC.md)
 - 台文編輯規範：[TAIGI_EDITORIAL.md](TAIGI_EDITORIAL.md)（自然語序、資訊保留、查詞與兩輪校訂；AI 協作入口見 [AGENTS.md](AGENTS.md)）
-- 新活動 AI 台文：[通用地端交接契約](EDITORIAL_HANDOFF.md)；週二、五04:00收集核實，08:00地端撰寫校訂並回傳，GitHub自動發布；每日01:00移除過期活動。現有文案保留，日常流程不需API金鑰。
+- 新活動 AI 台文：[通用地端交接契約](EDITORIAL_HANDOFF.md)；週二、五04:00收集核實，08:00地端一般程式檢查，有待編輯活動才啟動AI撰寫校訂並回傳，GitHub自動發布；每日01:00移除過期活動。現有文案保留，日常流程不需API金鑰。
 - 本次核查：[SOURCE_AUDIT.md](SOURCE_AUDIT.md)
 - 現行收集器與授權設定：[COLLECTORS.md](COLLECTORS.md)
 - 重建前爬蟲核查：[CRAWLER_AUDIT.md](CRAWLER_AUDIT.md)
@@ -52,7 +52,7 @@ SSL_CERT_FILE=/etc/ssl/cert.pem python3 main.py --check-sources
 
 ## 發布流程
 
-GitHub Actions 在臺灣時間每週二、五04:00收集，完成後以 `workflow_run` 觸發 `editorial-queue.yml`，核實、去重並提交待編輯JSON。地端週二、五08:00使用 `scripts/editorial_sync.py` 下載尚未完成的所有批次，編輯後只push結果檔至main。`deploy.yml`檢查文案及新場次來源、建置HTML／ICS、前端測試後提交並部署；不再下載候選、不執行AI。每天01:00獨立重建既有核實清單以移除過期場次，不匯入新稿。並行推送衝突不強推、不發布未保存的版本；GitHub排程可能延遲。欄位格式、其他AI接手方式及故障處理見 [EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md)。
+GitHub Actions 在臺灣時間每週二、五04:00收集，完成後以 `workflow_run` 觸發 `editorial-queue.yml`，核實、去重並提交待編輯JSON。地端週二、五08:00由macOS launchd啟動 `scripts/editorial_gate.py`，先用一般程式下載檢查；0筆不啟動AI，有需要才分批交給本機設定的AI，文案驗證後只push結果檔至main。`deploy.yml`檢查文案及新場次來源、建置HTML／ICS、前端測試後提交並部署；不再下載候選、不執行AI。每天01:00獨立重建既有核實清單以移除過期場次，不匯入新稿。並行推送衝突不強推、不發布未保存的版本；GitHub排程可能延遲。欄位格式、其他AI接手方式及故障處理見 [EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md)。
 
 `main.py` 只讀 `data/verified_activities.json`，不再載入示範資料、固定博物館／市府活動或未驗證的 API 結果。各來源已重建為候選收集器；使用 `python3 -m crawler.collect` 執行，結果寫入 `data/candidates/`。
 
