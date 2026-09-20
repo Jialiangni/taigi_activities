@@ -250,6 +250,28 @@ run("selectedMonth=''");
 run('ACTIVITIES_DATA.splice(0, ACTIVITIES_DATA.length, ...originalActivities)');
 console.log('PASS: crowded week (14 events), city colors/filter, full titles, week navigation, year/leap boundaries, Taipei dates, empty week');
 (async()=>{
+  // Weekends follow the Taipei date, even at UTC day boundaries.
+  for (const [date,expected] of [
+    ['2026-09-18T15:59:59Z',false], ['2026-09-18T16:00:00Z',true],
+    ['2026-09-20T15:59:59Z',true], ['2026-09-20T16:00:00Z',false]
+  ]) assert.equal(run(`isWeekend('${date}')`),expected);
+  const weekendData=data.filter(a=>[0,6].includes(new Date(new Date(a.start_time).toLocaleString('en-US',{timeZone:'Asia/Taipei'})).getDay()));
+  run("selectedCalendarDay='2026-09-21';toggleWeekendFilter()");
+  assert.equal(run('selectedCalendarDay'),'');
+  assert.equal(run('getFilteredActivities().length'),weekendData.length);
+  for (const city of ['臺北市','新北市','桃園市']) {
+    for (const month of monthKeys) {
+      run(`setCityFilter('${city}');setMonth('${month}')`);
+      const expected=weekendData.filter(a=>a.city===city && a.start_time.startsWith(month));
+      assert.deepEqual(JSON.parse(run('JSON.stringify(getFilteredActivities().map(a=>a.id))')),expected.map(a=>a.id));
+      assert.equal((element('viewGrid').innerHTML.match(/class="event-card"/g)||[]).length,expected.length);
+      run('exportCalendarFile()');
+      assert.equal(((await download.text()).match(/BEGIN:VEVENT/g)||[]).length,expected.length);
+    }
+  }
+  run("setCityFilter('all');setMonth('all');toggleWeekendFilter()");
+  assert.equal(run('getFilteredActivities().length'),data.length);
+  console.log('PASS: Taipei weekend boundaries, city/month intersections, cards, filtered ICS and clearing');
   // Source selection must affect the cards, week, count and exported ICS together.
   const sources=[...new Set(data.map(a=>a.source_platform))];
   for(const source of sources){

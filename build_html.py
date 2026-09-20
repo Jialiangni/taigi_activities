@@ -115,6 +115,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <div class="container controls-container">
       <div class="controls-row-1">
         <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" aria-label="揣活動抑是地點" placeholder="揣活動抑是地點" oninput="handleSearch(this.value)"></div>
+        <button class="btn weekend-desktop" data-weekend-filter aria-pressed="false" onclick="toggleWeekendFilter()">週末</button>
         <div class="view-switchers" role="group" aria-label="欲按怎看">
           <button class="view-btn active" data-view="grid" aria-pressed="true" onclick="switchView('grid')">活動</button>
           <button class="view-btn" data-view="agenda" aria-pressed="false" onclick="switchView('agenda')">清單</button>
@@ -283,6 +284,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     <button class="ios-tab-item active" data-tab="grid" aria-pressed="true" onclick="switchViewMobile('grid')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>活動</span></button>
     <button class="ios-tab-item" data-tab="agenda" aria-pressed="false" onclick="switchViewMobile('agenda')"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg><span>清單</span></button>
     <button class="ios-tab-item" data-tab="calendar" aria-pressed="false" onclick="switchViewMobile('calendar')"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 11h18M8 16h2M14 16h2"/></svg><span>看一禮拜</span></button>
+    <button class="ios-tab-item" data-weekend-filter aria-pressed="false" onclick="toggleWeekendFilter()"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg><span>週末</span></button>
     <button class="ios-tab-item" aria-haspopup="dialog" aria-controls="syncModal" onclick="openSyncModal()"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span>日曆佮設定</span></button>
   </nav>
 
@@ -312,6 +314,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     let currentPlatform = 'all';
     let currentPrice = 'all';
     let selectedMonth = '';
+    let weekendOnly = false;
     let searchQuery = '';
     let selectedActivity = null;
     let calDate = new Date(taipeiDateKey() + 'T00:00:00Z');
@@ -469,8 +472,24 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
       renderAll();
     }}
 
+    function isWeekend(startTime) {{
+      const day = new Date(taipeiDateKey(new Date(startTime)) + 'T00:00:00Z').getUTCDay();
+      return day === 0 || day === 6;
+    }}
+
+    function toggleWeekendFilter() {{
+      weekendOnly = !weekendOnly;
+      document.querySelectorAll('[data-weekend-filter]').forEach(button => {{
+        button.classList.toggle('active', weekendOnly);
+        button.setAttribute('aria-pressed', String(weekendOnly));
+      }});
+      if (weekendOnly && selectedCalendarDay && !isWeekend(selectedCalendarDay + 'T00:00:00+08:00')) selectedCalendarDay = '';
+      renderAll();
+    }}
+
     function getFilteredActivities() {{
       return ACTIVITIES_DATA.filter(act => {{
+        if (weekendOnly && !isWeekend(act.start_time)) return false;
         if (selectedMonth && selectedMonth !== taipeiDateKey(new Date(act.start_time)).slice(0, 7)) return false;
         if (currentCity !== 'all' && act.city !== currentCity) return false;
         if (currentCategory !== 'all' && act.category !== currentCategory) return false;
@@ -507,7 +526,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     function renderAll() {{
       const filtered = getFilteredActivities();
       document.getElementById('visibleCount').innerText = filtered.length;
-      document.getElementById('activeFiltersSummary').innerText = selectedMonth ? monthLabel(selectedMonth) : '攏總';
+      document.getElementById('activeFiltersSummary').innerText = [selectedMonth ? monthLabel(selectedMonth) : '', weekendOnly ? '週末' : ''].filter(Boolean).join(' · ') || '攏總';
       const extraCount = [currentPlatform, currentCategory, currentPrice].filter(value => value !== 'all').length;
       document.getElementById('mobileFilterCount').innerText = extraCount ? String(extraCount) : '';
       document.getElementById('filterResultCount').innerText = `（${{filtered.length}}）`;

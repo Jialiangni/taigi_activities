@@ -62,7 +62,43 @@ const {chromium,webkit} = require(process.env.PLAYWRIGHT_MODULE || 'playwright')
     await noOverflow();
     await page.locator('.filter-row [data-value="all"]').tap();
     await page.setViewportSize({width:390,height:844});
-    // Selection is a persistent visual state after a real touch, including multi-month choices.
+    // The lower mobile toggle and upper desktop toggle share one filter state.
+    for (const theme of ['dark','light']) {
+      await page.evaluate(t=>document.documentElement.setAttribute('data-theme',t),theme);
+      for (const width of [320,390,700]) {
+        await page.setViewportSize({width,height:844});
+        const toggle=page.locator('.ios-tab-bar [data-weekend-filter]');
+        assert.ok(await toggle.isVisible());
+        assert.ok(!await page.locator('.weekend-desktop').isVisible());
+        const box=await toggle.boundingBox();
+        assert.ok(box.y>700 && box.width>=44 && box.height>=44);
+        await toggle.tap();
+        assert.equal(await toggle.getAttribute('aria-pressed'),'true');
+        const weekends=await page.evaluate(()=>ACTIVITIES_DATA.filter(a=>[0,6].includes(new Date(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(a.start_time))+'T00:00:00Z').getUTCDay())).length);
+        assert.equal(await count(),weekends);
+        const paint=await toggle.evaluate(el=>getComputedStyle(el).backgroundColor);
+        assert.notEqual(paint,'rgba(0, 0, 0, 0)');
+        await page.locator('[data-tab="agenda"]').tap();
+        assert.equal(await count(),weekends);
+        assert.equal(await toggle.getAttribute('aria-pressed'),'true');
+        await page.locator('[data-tab="calendar"]').tap();
+        assert.ok(await page.locator('#viewCalendar').isVisible());
+        assert.equal(await toggle.getAttribute('aria-pressed'),'true');
+        await page.setViewportSize({width:1200,height:900});
+        const desktop=page.locator('.weekend-desktop');
+        assert.ok(await desktop.isVisible());
+        assert.ok((await desktop.boundingBox()).y<500);
+        assert.equal(await desktop.getAttribute('aria-pressed'),'true');
+        await desktop.click();
+        assert.equal(await count(),initialCount);
+        await page.setViewportSize({width,height:844});
+        assert.equal(await toggle.getAttribute('aria-pressed'),'false');
+        await page.locator('[data-tab="grid"]').tap();
+        await noOverflow();
+      }
+    }
+    await page.setViewportSize({width:390,height:844});
+    // Selection is a persistent visual state after a real touch, including exclusive month choices.
     for (const theme of ['dark','light']) {
       await page.evaluate(t => document.documentElement.setAttribute('data-theme',t),theme);
       await page.locator('.filter-row [data-value="新北市"]').tap();
@@ -70,14 +106,17 @@ const {chromium,webkit} = require(process.env.PLAYWRIGHT_MODULE || 'playwright')
       assert.equal(await page.locator('.filter-row [data-value="all"]').getAttribute('aria-pressed'),'false');
       await page.locator('#monthFilterOptions button').nth(1).tap();
       await page.locator('#monthFilterOptions button').nth(2).tap();
-      assert.equal(await page.locator('#monthFilterOptions [aria-pressed="true"]').count(),2);
+      assert.equal(await page.locator('#monthFilterOptions [aria-pressed="true"]').count(),1);
+      assert.equal(await page.locator('#monthFilterOptions button').nth(1).getAttribute('aria-pressed'),'false');
+      assert.equal(await page.locator('#monthFilterOptions button').nth(2).getAttribute('aria-pressed'),'true');
+      await assertSelectedPaint(theme);
       const selection = await page.evaluate(() => {
         const city = document.querySelector('.filter-row [aria-pressed="true"]');
         const month = document.querySelector('#monthFilterOptions [aria-pressed="true"]');
         const off = document.querySelector('.filter-row [data-value="all"]');
         const style = el => {const s=getComputedStyle(el);return {bg:s.backgroundColor,color:s.color};};
         return {city:style(city),month:style(month),off:style(off),cityText:getComputedStyle(city.querySelector('.badge-city')).color,
-          expected:ACTIVITIES_DATA.filter(a=>a.city==='新北市' && selectedMonths.has(taipeiDateKey(new Date(a.start_time)).slice(0,7))).length};
+          expected:ACTIVITIES_DATA.filter(a=>a.city==='新北市' && selectedMonth === taipeiDateKey(new Date(a.start_time)).slice(0,7)).length};
       });
       assert.deepEqual(selection.city,selection.month);
       assert.equal(selection.city.bg,theme==='dark' ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)');
