@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 from crawler.models import Activity
 from crawler.presentation import session_title
 from crawler.editorial import display_summary, session_editions, session_edition
+from crawler.ai_editorial import load_state, approved_edition
 from crawler.sources.google_workspace import GoogleWorkspaceSync
 
 
@@ -20,6 +21,7 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
     styles = (root / 'assets/site.css').read_text(encoding='utf-8')
     activities_data = []
     editorial_copy = session_editions()
+    ai_state = load_state()
     g_sync = GoogleWorkspaceSync()
 
     for act in activities:
@@ -35,6 +37,11 @@ def generate_single_html(activities: List[Activity], output_path: str = "index.h
         if edition:
             d['description_taigi'] = edition['description_taigi']
             d['summary_taigi'] = edition['summary_taigi']
+        elif not d['description_taigi']:
+            ai_copy = approved_edition(d, ai_state)
+            if ai_copy:
+                d['description_taigi'] = ai_copy['description_taigi']
+                d['summary_taigi'] = ai_copy['summary_taigi']
         d['price_info_taigi'] = price_translations.get(d['price_info'], '')
         d['title_taigi'] = session_title(d['title'])
         d["gcal_url"] = g_sync.generate_google_calendar_url(act)

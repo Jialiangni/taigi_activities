@@ -16,5 +16,7 @@
 - 保留官方標題、姓名、地點、時間、費用、URL、原始資料和已採用的介面詞語。
 - 使用者的新修訂優先；例句未經使用者確認，不可標記為使用者偏好或母語者審定。
 
-這些規則供讀取專案的 AI 編輯執行。GitHub 爬蟲本身不會因加入 Markdown
-規則就自動獲得台文生成或語感審查能力；不得宣稱每日新候選已經過這些編輯步驟。
+每日流程以 `main.py --check-sources --write-ai` 明確載入本規範，透過
+`crawler/ai_editorial.py` 處理新增場次；需要 GitHub Actions secret `OPENAI_API_KEY`。
+缺金鑰、API 失敗或校訂未通過者保留原文；不得宣稱已完成台文編輯。
+`data/ai_taigi.json` 的保留名單和既有校訂文案不得為了補跑而移除、重設或覆寫。
