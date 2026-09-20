@@ -6,20 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:北北桃台語活動行事曆
 X-WR-TIMEZONE:Asia/Taipei
 BEGIN:VEVENT
-UID:opentix_2085263061757206529@taigiactivities.tw
-DTSTAMP:20260919T022222Z
-DTSTART:20260920T093000Z
-DTEND:20260920T104900Z
-SUMMARY:流浪補雨傘
-DESCRIPTION:官方語言說明：發音：台語\n入場規定、購票條
- 件及節目詳情請查閱官方活動公告。\n票面價格：220元；
- 折扣、贊助票與購票條件依官方頁面\nhttps://www.opentix.life
- /event/2085262816860184577
-LOCATION:國家電影及視聽文化中心-大影格 新北市新莊區文
- 藝路2號
-URL:https://www.opentix.life/event/2085262816860184577
-END:VEVENT
-BEGIN:VEVENT
 UID:opentix_2085262078443405313@taigiactivities.tw
 DTSTAMP:20260919T022223Z
 DTSTART:20260920T113000Z
