@@ -7,6 +7,7 @@
 - 網站：https://jialiangni.github.io/taigi_activities/
 - ICS：https://jialiangni.github.io/taigi_activities/taigi_activities.ics
 - 系統規格：[SPEC.md](SPEC.md)
+- 台文編輯規範：[TAIGI_EDITORIAL.md](TAIGI_EDITORIAL.md)（自然語序、資訊保留、查詞與兩輪校訂；AI 協作入口見 [AGENTS.md](AGENTS.md)）
 - 本次核查：[SOURCE_AUDIT.md](SOURCE_AUDIT.md)
 - 現行收集器與授權設定：[COLLECTORS.md](COLLECTORS.md)
 - 重建前爬蟲核查：[CRAWLER_AUDIT.md](CRAWLER_AUDIT.md)
