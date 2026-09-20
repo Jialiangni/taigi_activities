@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-20T14:58:39+08:00",
+  "reviewed_at": "2026-09-20T18:35:41+08:00",
   "source_priority": {
     "gameislearning_1583v0joi94_20261017_1000": {
       "primary_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -29,13 +29,14 @@
       "reason": "accupass_primary_session"
     }
   },
-  "applied_to_catalog": true,
+  "applied_to_catalog": false,
   "collected_at": "2026-09-20T06:25:23+08:00",
-  "candidate_count": 738,
+  "candidate_count": 746,
   "counts": {
-    "pending": 651,
-    "duplicate": 75,
-    "excluded": 12
+    "pending": 648,
+    "excluded": 22,
+    "routed": 1,
+    "duplicate": 75
   },
   "collection_status_counts": {
     "ok": 59,
@@ -57,8 +58,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608270744575474894310",
       "title": "台語兒少讀劇工作坊—數念的厝",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "decision": "excluded",
+      "reason": "expired"
     },
     {
       "candidate_id": "4823f23854bb8b94c3482615",
@@ -121,11 +122,9 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2606300741301758195196",
       "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "duplicate",
-      "reason": "all_future_sessions_already_published",
-      "activity_ids": [
-        "acc_2606300741301758195196_20260920_1500"
-      ]
+      "decision": "routed",
+      "reason": "explicit_series_table_split",
+      "routed_session_count": 8
     },
     {
       "candidate_id": "8467ed7be7bc44a65306a8a0",
@@ -463,8 +462,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608171126451455988314",
       "title": "茶商筆記：找茶｜大正十二年，大稻埕一盞茶的商戰（古蹟裡的推理實境遊戲）",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "decision": "excluded",
+      "reason": "expired"
     },
     {
       "candidate_id": "49b55809ecfe407f47bdd939",
@@ -758,8 +757,8 @@
       "source_id": "gameislearning",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1550dx9oi94",
       "title": "⭐️【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
-      "decision": "pending",
-      "reason": "possible_cross_source_duplicate"
+      "decision": "excluded",
+      "reason": "expired"
     },
     {
       "candidate_id": "36269611872a5238b75c8cc0",
@@ -3865,7 +3864,7 @@
       "source_url": "https://www.opentix.life/event/2086703899479011328",
       "title": "繁露 — 成功愛樂合唱團2026公演",
       "decision": "pending",
-      "reason": "change_notice_needs_review"
+      "reason": "verification_failed:http_400"
     },
     {
       "candidate_id": "0b4465d89335ba4b3eaa83c4",
@@ -4193,7 +4192,7 @@
       "source_url": "https://www.opentix.life/event/2052573679595487233",
       "title": "果陀劇場《三個傻瓜》2026熱血回歸",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "session_missing"
     },
     {
       "candidate_id": "4cf4dd93170dac7ea04fc7ff",
@@ -5335,7 +5334,7 @@
       "source_url": "https://www.opentix.life/event/2064238054131441664",
       "title": "「爵士禾聲」系列音樂會 #05｜《爵士樂裡的女聲——女作之韻系列》",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "verification_failed:http_400"
     },
     {
       "candidate_id": "ccf13659a7045b6e5b008661",
@@ -6042,6 +6041,71 @@
       "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d4aaac65668e5e2fc5802767",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "66932240e7af405070e2f962",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "847014c2e489c6343bb3616d",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "40bc623851b9d18f04803a39",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "a00cc4a0c678d7089221d2d5",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "75353af3b7f5ea605e80f8f7",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "4a82918c4988bc99b3304c46",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "excluded",
+      "reason": "expired"
+    },
+    {
+      "candidate_id": "1587dbb80527028b25125ef4",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2606300741301758195196",
+      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2606300741301758195196_20260920_1500"
     }
   ],
   "collection_run": {
@@ -6050,5 +6114,6 @@
     "conclusion": "failure",
     "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/35470447306",
     "artifact_id": 10593541169
-  }
+  },
+  "destination": "data/editorial/queue.json"
 }
