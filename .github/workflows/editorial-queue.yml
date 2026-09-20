@@ -1,0 +1,60 @@
+name: Verify candidates for local editorial
+on:
+  workflow_run:
+    workflows: [Collect event review candidates]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: taigi-repository-publish
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       (github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure')) ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install poster OCR fallback
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-tra tesseract-ocr-eng
+      - name: Test verification and handoff gates
+        run: python3 -m unittest discover -s tests -v
+      - name: Download trusted collection
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          COLLECTION_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+        run: python3 scripts/fetch_review_candidates.py --output "$RUNNER_TEMP/review-candidates"
+      - name: Verify, deduplicate and queue without publishing
+        run: python3 -u -m crawler.editorial_queue prepare --candidates "$RUNNER_TEMP/review-candidates"
+      - name: Preserve verification diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidate-editorial-queue
+          path: |
+            data/editorial/queue.json
+            data/audit/latest-candidate-review.json
+          retention-days: 14
+      - name: Persist queue for any local editor
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/editorial/queue.json data/audit/latest-candidate-review.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Queue verified activities for local editorial [skip ci]"
+            git push origin HEAD:main
+          fi

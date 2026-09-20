@@ -1,14 +1,16 @@
 name: Deploy Taigi Calendar to GitHub Pages
 
 on:
-  workflow_run:
-    workflows: [Collect event review candidates]
-    types: [completed]
-    branches: [main]
+  schedule:
+    - cron: '0 17 * * *' # Asia/Taipei daily 01:00: expiration only, no AI.
   workflow_dispatch: # 支援在 GitHub 網頁上手動點擊立即執行
   push:
     branches:
       - main
+    paths-ignore:
+      - "data/editorial/queue.json"
+      - "data/audit/**"
+      - "**.md"
 
 # 設定 GitHub Pages 部屬權限
 permissions:
@@ -18,16 +20,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: taigi-repository-publish
   cancel-in-progress: false
 
 jobs:
   build-and-deploy:
-    if: >-
-      (github.event_name == 'workflow_run' &&
-       github.event.workflow_run.head_repository.full_name == github.repository &&
-       (github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure')) ||
-      (github.event_name != 'workflow_run' && github.ref == 'refs/heads/main')
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -45,6 +43,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install local Traditional Chinese poster OCR
+        if: github.event_name != 'schedule'
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-tra tesseract-ocr-eng
@@ -53,41 +52,14 @@ jobs:
       - name: Test publication gates and calendar exports
         run: python3 -m unittest discover -s tests -v
 
-      - name: Download recent public candidates from trusted collection
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          COLLECTION_RUN_ID: ${{ github.event.workflow_run.id || '' }}
-        run: python3 scripts/fetch_review_candidates.py --output "$RUNNER_TEMP/review-candidates"
+      - name: Import completed editorial and recheck incoming sources
+        if: github.event_name != 'schedule'
+        run: python3 -u -m crawler.editorial_queue ingest
 
-      - name: Verify candidates and exclude published sessions
-        run: python3 -u -m crawler.review --candidates "$RUNNER_TEMP/review-candidates" --apply
-
-      - name: Preserve review decisions
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: candidate-review-decisions
-          path: data/audit/latest-candidate-review.json
-          if-no-files-found: ignore
-          retention-days: 14
-
-      - name: Verify official sources and build calendar
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TAIGI_AI_MODEL: ${{ vars.TAIGI_AI_MODEL || 'gpt-5.4' }}
-        run: |
-          python3 -u main.py --check-sources --write-ai
-
-      - name: Preserve AI editorial results and diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-editorial-results
-          path: |
-            data/ai_taigi.json
-            data/audit/latest-ai-editorial.json
-          if-no-files-found: ignore
-          retention-days: 14
+      - name: Build verified calendar and remove expired sessions
+        # Scheduled maintenance only rebuilds the already-verified catalog.
+        # Incoming events were source-checked by ingest; no AI runs in CI.
+        run: python3 -u main.py
 
       - name: Verify browser logic and calendar download content
         run: node tests/test_frontend.cjs
@@ -96,9 +68,9 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/verified_activities.json data/ui_taigi.json data/ui_price_taigi.json data/audit/latest-candidate-review.json data/ai_taigi.json data/audit/latest-ai-editorial.json index.html taigi_activities.ics
+          git add data/verified_activities.json data/ai_taigi.json data/editorial/queue.json data/editorial/receipts.json index.html taigi_activities.ics
           if ! git diff --staged --quiet; then
-            git commit -m "Review candidates and update verified calendar [skip ci]"
+            git commit -m "Apply reviewed copy and expire ended sessions [skip ci]"
             git push origin HEAD:main
           fi
 

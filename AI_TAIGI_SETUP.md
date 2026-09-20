@@ -1,4 +1,11 @@
-# 新活動 AI 台文設定
+# 舊 API 模式設定（保留備用，非現行排程）
+
+2026-09-20 已依使用者最新決定改為 GitHub 核實佇列＋地端編輯，
+詳見 [EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md)。**日常流程不需要 API key，也不在 Actions 呼叫 AI。**
+下列內容是原先 API 實作的設定與驗收歷史；僅在未來明確選用手動 API 模式時適用。
+原先「設定金鑰後每日自動生成」已不適用，目前 deploy workflow 不注入該金鑰。
+
+# 原 API 模式設定
 
 ## 一次設定
 

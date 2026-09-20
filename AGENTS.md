@@ -16,7 +16,9 @@
 - 保留官方標題、姓名、地點、時間、費用、URL、原始資料和已採用的介面詞語。
 - 使用者的新修訂優先；例句未經使用者確認，不可標記為使用者偏好或母語者審定。
 
-每日流程以 `main.py --check-sources --write-ai` 明確載入本規範，透過
-`crawler/ai_editorial.py` 處理新增場次；需要 GitHub Actions secret `OPENAI_API_KEY`。
-缺金鑰、API 失敗或校訂未通過者保留原文；不得宣稱已完成台文編輯。
+自動流程採 GitHub 核實佇列 → 地端編輯 → GitHub 接收發布，詳見
+[EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md)。執行者可為 Codex 或其他 AI，格式與品質要求相同。
+每次先下載未處理檔；0筆就停止，不重讀整個儲存庫、不重跑爬蟲、不自行呼叫 API。
+只回傳 `data/editorial/results/` 的文案結果，由 GitHub 檢查來源版本及校訂後發布。
+日常排程不使用 `main.py --write-ai`；舊 API 編輯器僅保留為明確手動使用的備用工具。
 `data/ai_taigi.json` 的保留名單和既有校訂文案不得為了補跑而移除、重設或覆寫。

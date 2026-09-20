@@ -1,7 +1,7 @@
 name: Collect event review candidates
 on:
   schedule:
-    - cron: '15 19 * * *' # Taiwan 03:15; completion triggers review and publication.
+    - cron: '0 20 * * 1,4' # Asia/Taipei Tuesday and Friday 04:00 (UTC Monday/Thursday).
   workflow_dispatch:
 permissions:
   contents: read
@@ -45,5 +45,5 @@ jobs:
           retention-days: 14
       # Preserve public-source candidates; retired Threads files are excluded.
       # Raw authorized social responses stay on the runner.
-      # Completion triggers deploy.yml, which reviews public candidates before publishing.
+      # Completion triggers editorial-queue.yml; verified new events wait for edited copy.
       # No Pages upload of unreviewed event or social data.

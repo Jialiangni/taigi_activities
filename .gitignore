@@ -35,6 +35,7 @@ taigi-activities-standalone.html
 calendar-events/
 data/candidates/
 .env
+.editorial-work/
 
 # OS files
 .DS_Store

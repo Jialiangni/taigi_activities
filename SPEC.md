@@ -319,3 +319,18 @@ OCR測試圖為程式繪製的中文日期時間fixture，不是外部活動海�
 預設 `gpt-5.4`，GitHub secret `OPENAI_API_KEY` 提供憑證；`TAIGI_AI_MODEL` repository variable 可覆寫模型。讀取台文編輯規範，以3次 Responses API 呼叫完成草稿、查詞後校訂和獨立審查；任何疑詞查詢未成功、審查否決、JSON／引句／數字檢查未通過均保留原文。審查屬 AI 自動判斷，不宣稱母語者認證或內容完全無誤。
 
 每臺灣日最多開始5筆、每筆最多3次API、每次輸出最多5000 token、總輸入50000字元；同一內容同日不重試，跨日最多2次。缺金鑰不扣嘗試次數；API 異常停止本輪後續呼叫。報告進 Actions 摘要、14天 artifact，needs_attention 留警告。成功發布才提交狀態；提交前失敗的 runner 結果不自動恢復，詳見 `AI_TAIGI_SETUP.md`。這是用量界線而非固定費用保證。
+
+
+## 35. 通用地端台文交接與分離排程（2026-09-20，取代第34節的每日API排程）
+
+臺灣時間週二、五04:00收集，完成後核實與去重。`crawler.editorial_queue prepare` 在暫存目錄執行既有候選核實，不變更正式活動／人工文案；合格新場次連同官方證據寫入持久Git佇列。既有已刊登ID及保留名單不重寫。
+
+地端08:00下載全部未處理且未過期項目，僅讀活動與共同編輯規範；使用者可更換AI。通用JSON包含活動ID、來源與規範hash、簡介、紹介、真實執行者、時間、字典證據、語感與事實審查。查詞與兩輪校訂要求同 `TAIGI_EDITORIAL.md`，不將程式檢查宣稱為語感保證。
+
+`scripts/editorial_sync.py`提供download／validate／submit。回傳使用最新main的隔離暫存checkout，只提交結果檔；衝突最多重新抓取驗證3次，不強推、不碰使用者的索引／分支。已接收結果不得變更，來源／規範變動須重新編輯，已過期項目不刊登。來源證據使用每場獨立key，避免覆寫同系列舊場次。
+
+結果push觸發deploy：格式與綁定、引句、數字、疑詞及審查檢查 → 新場次官方來源重查 → 正式catalog合併與AI文案快取 → HTML／ICS建置 → 前端測試 → Git提交接收紀錄 → Pages部署。失敗不部署，不自行重寫；Pages末端失敗可重跑deploy重建已保存資料。
+
+每天01:00 schedule只對已核實正式catalog重建、移除過期HTML／ICS場次；不刪歷史證據、不抓候選、不查外站、不匯入新稿、不使用AI。新稿故障不阻擋此維護。queue與deploy共用Git寫入concurrency group，外部寫入仍以non-fast-forward拒絕保護。
+
+`data/editorial/config.json`控制enabled與provider；Codex下載時提供provider guard，切換後不再編輯，另停用本機排程可省例行喚醒。`EDITORIAL_HANDOFF.md`為其他AI通用契約，不依賴特定SDK。舊Responses編輯器保留但不在任何自動workflow使用。

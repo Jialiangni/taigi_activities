@@ -4,6 +4,8 @@
 
 ## 資料流程
 
+現行排程與台文交接以 [EDITORIAL_HANDOFF.md](EDITORIAL_HANDOFF.md) 為準：候選核實後先進待編輯佇列，收到合格新稿才加入正式活動。下列來源方法及核實規則維持使用。
+
 `python3 -m crawler.collect` → `data/candidates/<source_id>.json`、`report.json` → 規則核實／必要時人工核對 → `data/verified_activities.json` → `main.py --check-sources` → 網站／ICS。
 
 **收集成功不等於活動已核實。** 候選文件、公告、節目期間與單場演出有不同 `kind`；全部 `review_status=pending`。沒有自動把貼文時間轉成活動日期、不猜地區／免費票價、不自動覆寫正式清單。
