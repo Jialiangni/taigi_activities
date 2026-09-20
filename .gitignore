@@ -30,6 +30,7 @@ ENV/
 credentials.json
 token.json
 config.json
+!data/editorial/config.json
 public/
 taigi-activities-standalone.html
 calendar-events/
