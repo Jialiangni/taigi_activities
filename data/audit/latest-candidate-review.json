@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-20T18:35:41+08:00",
+  "reviewed_at": "2026-09-22T08:00:26+08:00",
   "source_priority": {
     "gameislearning_1583v0joi94_20261017_1000": {
       "primary_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -30,19 +30,18 @@
     }
   },
   "applied_to_catalog": false,
-  "collected_at": "2026-09-20T06:25:23+08:00",
-  "candidate_count": 746,
+  "collected_at": "2026-09-22T07:59:46+08:00",
+  "candidate_count": 765,
   "counts": {
-    "pending": 648,
-    "excluded": 22,
-    "routed": 1,
-    "duplicate": 75
+    "pending": 681,
+    "duplicate": 73,
+    "excluded": 11
   },
   "collection_status_counts": {
-    "ok": 59,
-    "partial": 75,
-    "failed": 23,
-    "needs_configuration": 3
+    "ok": 60,
+    "partial": 76,
+    "failed": 21,
+    "needs_configuration": 1
   },
   "decisions": [
     {
@@ -54,12 +53,12 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "ead485f15a3fea710295f336",
+      "candidate_id": "c87c2b9bf43e88fe44b5272b",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608270744575474894310",
-      "title": "台語兒少讀劇工作坊—數念的厝",
-      "decision": "excluded",
-      "reason": "expired"
+      "source_url": "https://www.accupass.com/event/2609030741412898282180",
+      "title": "思念ê聲—台語作詞工作坊／楊肅浩老師",
+      "decision": "pending",
+      "reason": "series_schedule:explicit_date_time_table_missing"
     },
     {
       "candidate_id": "4823f23854bb8b94c3482615",
@@ -70,26 +69,18 @@
       "reason": "series_or_duration_needs_review"
     },
     {
-      "candidate_id": "c87c2b9bf43e88fe44b5272b",
+      "candidate_id": "922de7ea9931d58bc3ba5728",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609030741412898282180",
-      "title": "思念ê聲—台語作詞工作坊／楊肅浩老師",
+      "source_url": "https://www.accupass.com/event/2607280236031295663510",
+      "title": "用台語講故事：講予囡仔聽的人權繪本",
       "decision": "pending",
-      "reason": "series_schedule:explicit_date_time_table_missing"
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "cd897e6b5bed2112f45e8671",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609140211321902093902",
       "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
-    },
-    {
-      "candidate_id": "922de7ea9931d58bc3ba5728",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2607280236031295663510",
-      "title": "用台語講故事：講予囡仔聽的人權繪本",
       "decision": "pending",
       "reason": "series_or_duration_needs_review"
     },
@@ -116,15 +107,6 @@
       "title": "台語咱佮意！親子生活會話基礎班",
       "decision": "pending",
       "reason": "series_or_duration_needs_review"
-    },
-    {
-      "candidate_id": "d3eedfd4de4c5064668c9ade",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "routed",
-      "reason": "explicit_series_table_split",
-      "routed_session_count": 8
     },
     {
       "candidate_id": "8467ed7be7bc44a65306a8a0",
@@ -160,14 +142,6 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "eb39465c415c5dfde5345256",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
-    },
-    {
       "candidate_id": "a8a6b958ba960f29ee32f50b",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609140340221048585938",
@@ -176,13 +150,12 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "8c6099a53378b65a45691903",
+      "candidate_id": "eb39465c415c5dfde5345256",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609181101568312033380",
-      "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2609181101568312033380_20261108_1000"
+      "source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "f9225dbce70896a1f621a008",
@@ -208,6 +181,22 @@
       "title": "2026人權主題歷史解謎遊戲——【五個被洪水沖走的手提箱】",
       "decision": "pending",
       "reason": "series_or_duration_needs_review"
+    },
+    {
+      "candidate_id": "fd185109957360e48156efa3",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608170923234871848230",
+      "title": "2026人權主題情境體驗遊戲——【超時空副本】",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review"
+    },
+    {
+      "candidate_id": "41b0413d0260d2d5b9f2c42f",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609161113091287619822",
+      "title": "Slap&Pop 兩週年活動 —— 法克遊專輯暖身派對🎢",
+      "decision": "pending",
+      "reason": "missing_identity_fields"
     },
     {
       "candidate_id": "8857e318b1f5e3db7d73818f",
@@ -242,20 +231,13 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "fd185109957360e48156efa3",
+      "candidate_id": "8c6099a53378b65a45691903",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608170923234871848230",
-      "title": "2026人權主題情境體驗遊戲——【超時空副本】",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
-    },
-    {
-      "candidate_id": "41b0413d0260d2d5b9f2c42f",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609161113091287619822",
-      "title": "Slap&Pop 兩週年活動 —— 法克遊專輯暖身派對🎢",
-      "decision": "pending",
-      "reason": "missing_identity_fields"
+      "source_url": "https://www.accupass.com/event/2609181101568312033380",
+      "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2609181101568312033380_20261108_1000"
     },
     {
       "candidate_id": "b19fd9580d13c6ea33ed3540",
@@ -394,14 +376,6 @@
       "reason": "missing_identity_fields"
     },
     {
-      "candidate_id": "8242490de27dc5d82c8cb284",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2605111405516075205330",
-      "title": "2026 歌舞劇全方位專班6月：GLEE x High School Musical",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
-    },
-    {
       "candidate_id": "def2157d8519e4535d760385",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2303130833491195750522",
@@ -458,18 +432,18 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "4ead70926d45d5235b6c7602",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608171126451455988314",
-      "title": "茶商筆記：找茶｜大正十二年，大稻埕一盞茶的商戰（古蹟裡的推理實境遊戲）",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
       "candidate_id": "49b55809ecfe407f47bdd939",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2604161917471542799416",
       "title": "2026童演童語-霹靂電影日《奇人密碼—古羅布之謎》 ",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "ef1a6e31d32de5d073afb079",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2604161852431123538314",
+      "title": "2026童演童語-故事DIY-《智慧地圖包：做決定我最勇敢》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -482,10 +456,263 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "4d7016b8d872d9e3142f3d56",
+      "source_id": "ceramics",
+      "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
+      "title": "語種選擇，請點選最下方數字方格",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "8976e82703d1c6ac4c470899",
+      "source_id": "ceramics",
+      "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0M327320819378174143",
+      "title": "語種選擇，請點選最下方數字方格",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "ae9b41dda95882cce536a08e",
       "source_id": "confucius",
       "source_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
       "title": "115年九合一地方公職人員選舉反賄選宣導-臺語影片",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "a539040af8f4afa4246e24b5",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084126686540869633",
+      "title": "張雅淳×李婉菁《唸歌去天庭：老仙婆的跨界音樂會》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "144fdc8e13c05d6a71bbe450",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084126686540869633",
+      "title": "張雅淳×李婉菁《唸歌去天庭：老仙婆的跨界音樂會》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "66c966563631defc9c76aa49",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049748445126623233"
+    },
+    {
+      "candidate_id": "b0917340e79d46fa36fe5c7f",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049747309313294337"
+    },
+    {
+      "candidate_id": "a34b35fd20b13cebc9dfe885",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2049746347755511809",
+      "title": "《找歌仔戲演員主演BL是否搞錯了什麼》毛斷計畫｜2026戲曲夢工場",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2049747355484192769"
+    },
+    {
+      "candidate_id": "a400c46fd3a505889b19fe27",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056907131031330817",
+      "title": "【歌仔戲】鴻明歌劇團《戰神花雲》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "eced24c3bf5c65ae752a03cd",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056907131031330817",
+      "title": "【歌仔戲】鴻明歌劇團《戰神花雲》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "3bf2ef20364df447d40cbb86",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056999452011864065",
+      "title": "【歌仔戲】春美歌劇團《將軍寇》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "82f3e3b8dc47975d657c4725",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2056999452011864065",
+      "title": "【歌仔戲】春美歌劇團《將軍寇》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d39ee1f39a8ec31c3fc8e3cc",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "58c8ab48810f3456e114e429",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "b889761835c11de20e403c00",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "0fb6cd537f6c2056576d7529",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d082f5c46d5c6a0bb1c84228",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "7b215dc69e9bc7184f2d6e60",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2079450182924001281",
+      "title": "2026歌仔戲旗艦展演補助計畫-明華園總團旗艦製作《烏龍天下》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "2eadcf7e7c4eef10a3323379",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2082370327705296896",
+      "title": "2026財團法人廖瓊枝歌仔戲文教基金會《火燒紅蓮寺》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "0332f21ee58f4b0829cd5ad4",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2082370327705296896",
+      "title": "2026財團法人廖瓊枝歌仔戲文教基金會《火燒紅蓮寺》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "4f564ea1584c994403261f3f",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "4e233b2c3035b4ac7269f502",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "d9074f20520d7e19d5c4232b",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f6535beafad35ee578ba1c39",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f54df65e3205fbcfb400494e",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "ad5372ca674b44fd43c43919",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2084921215902920705",
+      "title": "2026歌仔戲旗艦展演—唐美雲歌仔戲團《南都幽靈夜譚》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "9796715a05915d4c452f2ea8",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081615616389365761",
+      "title": "台語光影戲《山神的餅店》劇場版",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2081616883683512321"
+    },
+    {
+      "candidate_id": "74b7a26b29fe284cb424ac8b",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2081615616389365761",
+      "title": "台語光影戲《山神的餅店》劇場版",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2081620242303524865"
+    },
+    {
+      "candidate_id": "0ae2ad4786c6e1ab31934389",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "2854e3a513355cbe78658d5c",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f3f936c77f0f1a9e644d40a3",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "8e17aef746cb65c6e8741c09",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -496,6 +723,111 @@
       "title": "115年「掌藝薪傳-大師工作坊」",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "c097f2e07eb1d256a46a34db",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-202當伯公遇見土地公",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "b1bc953c8f1798f1c9741a08",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "5ab65065446e6097b618375b",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "【特展】 「請戲-布袋戲一條街」特展",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "3a9361ee088d05fbba2851bb",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
+      "title": "金鷹歸來：隆興閣掌中武林特展",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "9d7c72661457ad8b528a7e02",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年深入你心歌唱",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "953b320f05d64047a33265d7",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "樂活歡唱無限",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "544d1d50cb4722fa50076e66",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "歌謠班音樂研習",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "6d2bd8682f87b925c76ed786",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "歌唱班",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "212fcf75c1f78ea6dcdeee9f",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年度歌唱研習班",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "31e00a4048cc4a48d24cfd5a",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年望間歌唱研習活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "310d83cbe91674eca1a83873",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
+      "title": "童演童語兒童閱讀推廣活動-霹靂電影日《奇人密碼—古羅布之謎》(2場)",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "641c379698dbf84518c14a1d",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085263749562839041",
+      "title": "懷念的人 + 台語版預告",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "a6a013f8e8735db673d8bd28",
+      "source_id": "culture_open_data",
+      "source_url": "https://www.opentix.life/program/2085269650239729664",
+      "title": "裝配台語：從農宣片到《飛天三輪車》",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "opentix_2085270043361689600"
     },
     {
       "candidate_id": "edf0d3e2802b8815c2b56d8e",
@@ -769,14 +1101,6 @@
       "reason": "possible_cross_source_duplicate"
     },
     {
-      "candidate_id": "c285acb5a992cde6af39b2fc",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1607rkcei94",
-      "title": "讀冊練仙『日花閃爍』",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
       "candidate_id": "25395026911d20c8f29a3e22",
       "source_id": "gameislearning",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1594rl4yi94",
@@ -933,87 +1257,6 @@
       "activity_id": "gameislearning_1451398bi94_20261019_1030"
     },
     {
-      "candidate_id": "920221137f22452eae36d688",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "d3eedfd4de4c5064668c9ade",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "duplicate",
-      "reason": "duplicate_candidate"
-    },
-    {
-      "candidate_id": "d29d19d49a14f35b7167dace",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "6b704b4dff09e9616b2e19ca",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "306359a3898f594d74ceccda",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "07450f50fc68e2b664cbd328",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "d0b676ab443c4de9788b4ed7",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "636c767c7b7d09910a4ff6c8",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "0ec71f1a1c6b0f3837ef75bb",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15222qs2i94",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽『時間來的車』",
-      "decision": "duplicate",
-      "primary_source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "reason": "accupass_primary_session",
-      "activity_id": "acc_2606300741301758195196_20260920_1500"
-    },
-    {
       "candidate_id": "9320730b692debede73da07e",
       "source_id": "gameislearning",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16086bkwi94",
@@ -1059,22 +1302,12 @@
       "activity_id": "acc_2607280236031295663510_20260920_1030"
     },
     {
-      "candidate_id": "b6ec9fd6fa7fe25b9f2fb376",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
-      "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "gameislearning_1600op4ni94_20260920_1030"
-    },
-    {
-      "candidate_id": "a00b7ce5027a8f5767f45d81",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1600op4ni94",
-      "title": "【2026年古錐ê講古強勢回歸💪】9/20@桃園",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "gameislearning_1600op4ni94_20260920_1130"
+      "candidate_id": "ec709fb402df6e26daaa16cc",
+      "source_id": "gold",
+      "source_url": "https://www.gep.ntpc.gov.tw/xmdoc/cont?xsmsid=0G246371101027433254",
+      "title": "簡介 | 新北市立黃金博物館",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
     },
     {
       "candidate_id": "971c012b46b5f28be5f0fb34",
@@ -1213,14 +1446,6 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "2dae05743582417abffafd2d",
-      "source_id": "li_kang_khiok",
-      "source_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
-      "title": "「轉型正義kap不當黨產」講座 【高雄場】是按怎lán ài ē記--得",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
       "candidate_id": "98d7616f80cd46c8e69bb09a",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/07/829.html",
@@ -1249,6 +1474,14 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/08/2026tioh.html",
       "title": "2026陳雷台語文獎tio̍h獎名單",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "2dae05743582417abffafd2d",
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+      "title": "「轉型正義kap不當黨產」講座 【高雄場】是按怎lán ài ē記--得",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -3245,6 +3478,38 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "88c471912c644ff0fea112d0",
+      "source_id": "ntpc_center_gongliao",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+      "title": "2026-09-21 貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "f7f4b245cbedc9b1a59edc72",
+      "source_id": "ntpc_center_gongliao",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節 貢寮區公所 2026-09-21",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "bd0d014308f31004258b51c8",
+      "source_id": "ntpc_center_jinshan",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+      "title": "2026-09-21 彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "390321cc4d115711d3c67ed0",
+      "source_id": "ntpc_center_jinshan",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動 秘書室 2026-09-21",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "9e99e1e786f6a1a6349a2145",
       "source_id": "ntpc_center_ruifang",
       "source_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
@@ -3281,14 +3546,6 @@
       "source_id": "ntpc_education",
       "source_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
       "title": "教育成果-中小學教育-新北市政府教育局",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "4ebb356c7c9034074ef6b43d",
-      "source_id": "ntpclib",
-      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=c76ac5603bf44fec8015100fef27e0a2",
-      "title": "【中和員山分館】115年10月彩虹故事屋-新北市立圖書館",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -3437,15 +3694,6 @@
       "activity_id": "opentix_2081620242303524865"
     },
     {
-      "candidate_id": "5bdb2d8808ebf923e9783923",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2085288862221320193",
-      "title": "特別放映：《丁蘭廿四孝》+映前導讀",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "opentix_2085288863274115073"
-    },
-    {
       "candidate_id": "61320293d34fa91807a1bfc2",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2085276703160541185",
@@ -3461,24 +3709,6 @@
       "decision": "duplicate",
       "reason": "already_published",
       "activity_id": "opentix_2085261583923527681"
-    },
-    {
-      "candidate_id": "1539595d9544ef568fb507de",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2085262816860184577",
-      "title": "流浪補雨傘",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "opentix_2085263061757206529"
-    },
-    {
-      "candidate_id": "dd8fee6198b550cea46a148c",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2085261755653632001",
-      "title": "見君一面",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "opentix_2085262078443405313"
     },
     {
       "candidate_id": "7a17b21f519d96a3ef27cf10",
@@ -3859,14 +4089,6 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "ca04cc09e7598d1128880f99",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2086703899479011328",
-      "title": "繁露 — 成功愛樂合唱團2026公演",
-      "decision": "pending",
-      "reason": "verification_failed:http_400"
-    },
-    {
       "candidate_id": "0b4465d89335ba4b3eaa83c4",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2070446724700692480",
@@ -3899,18 +4121,18 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "760fab36d26991811b7e4d15",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2036016610592505856",
-      "title": "【掌中戲】新西園掌中劇團《文素臣之大義滅親-殺嫂》",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
       "candidate_id": "d3847418bad2bad34c59732f",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2036015355921928192",
       "title": "【掌中戲】五洲勝義閣掌中劇團《濟世降魔傳》",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "760fab36d26991811b7e4d15",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2036016610592505856",
+      "title": "【掌中戲】新西園掌中劇團《文素臣之大義滅親-殺嫂》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -4185,14 +4407,6 @@
       "title": "2026朱宗慶打擊樂團擊樂劇場《六部曲》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
-    },
-    {
-      "candidate_id": "2af4f331647ce1da99a235ee",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2052573679595487233",
-      "title": "果陀劇場《三個傻瓜》2026熱血回歸",
-      "decision": "pending",
-      "reason": "session_missing"
     },
     {
       "candidate_id": "4cf4dd93170dac7ea04fc7ff",
@@ -5329,22 +5543,6 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "4c321f9a946a2d8fbc129f72",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2064238054131441664",
-      "title": "「爵士禾聲」系列音樂會 #05｜《爵士樂裡的女聲——女作之韻系列》",
-      "decision": "pending",
-      "reason": "verification_failed:http_400"
-    },
-    {
-      "candidate_id": "ccf13659a7045b6e5b008661",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2077950208897163265",
-      "title": "《中秋嫦娥不奔月，下凡來辦桌》戲曲+賞月＋辦桌美食",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
       "candidate_id": "4b84bb4d166de282573f9b4a",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2081990762330185729",
@@ -5367,16 +5565,6 @@
       "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
-    },
-    {
-      "candidate_id": "99542236f6b6073508bdd24e",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2057004988266651648",
-      "title": "明華園戲劇總團《貓．阿修羅》",
-      "decision": "excluded",
-      "reason": "owner_feedback_taigi_but_too_near_to_publish",
-      "review_mode": "owner_feedback",
-      "reviewed_at": "2026-09-19T11:07:23+08:00"
     },
     {
       "candidate_id": "1ed312c294d17e93c0ac8f72",
@@ -5891,6 +6079,14 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "ff53c437eba7054f027341d1",
+      "source_id": "taipei_industry",
+      "source_url": "https://doed.gov.taipei/News_Content.aspx?n=DD2DDE3BA14D9019&sms=9D72E82EC16F3E64&s=1685AE05ED586CB4",
+      "title": "臺北市政府產業發展局",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "64cc677f7b287f08f1515202",
       "source_id": "taipei_industry",
       "source_url": "https://doed.gov.taipei/News_Content.aspx?n=DD2DDE3BA14D9019&sms=9D72E82EC16F3E64&s=B3890735B159AE67",
@@ -5995,6 +6191,14 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "c34f28406d311cf244835759",
+      "source_id": "tshs",
+      "source_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+      "title": "行動博物館模組申請計畫 | 新北市立淡水古蹟博物館",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "33b24205e0eb12ce37a2adce",
       "source_id": "typl",
       "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
@@ -6030,7 +6234,7 @@
       "candidate_id": "60ea7a868afe61c3c098f280",
       "source_id": "typl_district_2",
       "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10135",
-      "title": "[桃園活動]台語說故事：趣味手作摺紙",
+      "title": "[桃園活動]台語說故事：來熟似50種活物仔",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -6041,79 +6245,14 @@
       "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "d4aaac65668e5e2fc5802767",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "66932240e7af405070e2f962",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "847014c2e489c6343bb3616d",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "40bc623851b9d18f04803a39",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "a00cc4a0c678d7089221d2d5",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "75353af3b7f5ea605e80f8f7",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "4a82918c4988bc99b3304c46",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "excluded",
-      "reason": "expired"
-    },
-    {
-      "candidate_id": "1587dbb80527028b25125ef4",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2606300741301758195196",
-      "title": "2026 臺灣新文化運動紀念館台語戲劇導覽《時間來的車》",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2606300741301758195196_20260920_1500"
     }
   ],
   "collection_run": {
-    "id": 35470447306,
-    "head_sha": "3d165a945b40e4e0e51b238a77041fcdacc6b7b4",
+    "id": 35665675352,
+    "head_sha": "099e42a4ed62b0c67a5198871e9437698a8e452c",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/35470447306",
-    "artifact_id": 10593541169
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/35665675352",
+    "artifact_id": 10670393827
   },
   "destination": "data/editorial/queue.json"
 }
