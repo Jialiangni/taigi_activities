@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-09-25T08:07:28+08:00",
+  "prepared_at": "2026-09-29T09:22:09+08:00",
   "collection_run": {
-    "id": 36070791985,
-    "head_sha": "5a69c263f30059e2190f6ff4e850749de4714774",
+    "id": 36502097688,
+    "head_sha": "7d9d1d06f7cf9ac8dc1b53b1b385309d1beec267",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36070791985",
-    "artifact_id": 10839474502
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36502097688",
+    "artifact_id": 11007079747
   },
   "items": []
 }
