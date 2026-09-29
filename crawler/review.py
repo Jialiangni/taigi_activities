@@ -682,9 +682,19 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
             if c['source_id'] == 'accupass':
+                if not c['fields'].get('series_session') and not c['fields'].get('reviewed_text_session'):
+                    # Reparse older collected parents too: a parser upgrade must not
+                    # require discovery to find the same event again.
+                    url = source_url(c['source_url'])
+                    require(re.fullmatch(r'https://www\.accupass\.com/event/\d+', url), 'unsupported_official_url')
+                    html, proof = client.get(url)
+                    require(proof['final_url'] == url, 'official_page_redirected')
+                    refreshed = parse_accupass_event(html, url, proof)
+                    require(len(refreshed) == 1 and normalize(refreshed[0]['title']) == normalize(c['title']), 'candidate_title_changed')
+                    c = dict(c, fields=refreshed[0]['fields'])
                 # Refresh the official article before classifying a mixed text list.
                 # The text labels establish candidate language, not ticket terms or approval.
-                if not c['fields'].get('schedule_rows') and (c['fields'].get('text_schedule_rows') or c['fields'].get('text_schedule_issue')):
+                if not c['fields'].get('reviewed_text_session') and not c['fields'].get('schedule_rows') and (c['fields'].get('text_schedule_rows') or c['fields'].get('text_schedule_issue')):
                     url = source_url(c['source_url'])
                     require(re.fullmatch(r'https://www\.accupass\.com/event/\d+', url), 'unsupported_official_url')
                     html, proof = client.get(url)
@@ -706,18 +716,36 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                         reason=('expired' if parse_time(session['start_time']) <= now else
                                 'individual_ticket_and_session_review_required' if session['language_classification'] == 'explicit_taigi_label'
                                 else 'no_explicit_taigi_session_label')) for session in sessions]
+                    from .accupass_text_review import contract_for
+                    contract = contract_for(live, root)
+                    if contract:
+                        children = []
+                        for session in contract['sessions']:
+                            child_fields = dict(fields, start_time=session['start_time'], end_time=session['end_time'],
+                                                reviewed_text_session=session)
+                            child_fields.pop('sessions', None)
+                            children.append(make_candidate('accupass', url, live['title'], live['text'], proof,
+                                child_fields, 'session', key=url + ':text:' + session['start_time']))
+                        require(len(candidates) + len(children) <= 20000, 'too_many_candidates')
+                        candidates.extend(children)
+                        item.update(decision='routed', reason='reviewed_text_sessions_split', routed_session_count=len(children))
+                        continue
                     item.update(reason='text_sessions_classified_pending_verification',
                                 taigi_session_count=sum(s['decision'] == 'pending' for s in item['session_classifications']),
                                 other_session_count=sum(s['decision'] == 'not_selected' for s in item['session_classifications']))
                     continue
-                if c.get('fields', {}).get('sessions'):
+                if c['fields'].get('reviewed_text_session'):
+                    from .accupass_text_review import verify_session
+                    key, source, row = verify_session(c, client, root, now)
+                elif c.get('fields', {}).get('sessions'):
                     children = accupass_series_candidates(c, client)
                     require(len(candidates) + len(children) <= 20000, 'too_many_candidates')
                     candidates.extend(children)
                     item.update(decision='routed', reason='explicit_series_table_split',
                                 routed_session_count=len(children))
                     continue
-                key, source, row = verify_accupass(c, client, now)
+                else:
+                    key, source, row = verify_accupass(c, client, now)
             elif c['source_id'] == 'gameislearning':
                 key, source, row = verify_gameislearning(c, client, now)
             else:

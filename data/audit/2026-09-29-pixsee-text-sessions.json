@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "mode": "official_rules_v1",
+  "reviewed_at": "2026-09-29T23:05:16+08:00",
+  "source_priority": {
+    "gameislearning_1583v0joi94_20261017_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261017_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261121_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261121_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261219_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": null,
+      "reason": "accupass_session_not_verified"
+    },
+    "gameislearning_16086bkwi94_20261004_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20261004_1030",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1581w9d4i94_20260920_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20260920_1030",
+      "reason": "accupass_primary_session"
+    }
+  },
+  "applied_to_catalog": false,
+  "collected_at": "2026-09-29T23:04:50+08:00",
+  "candidate_count": 3,
+  "counts": {
+    "routed": 1,
+    "approved": 2
+  },
+  "collection_status_counts": {
+    "ok": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "13203120beb12917dddddbd4",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "decision": "routed",
+      "session_classifications": [
+        {
+          "start_time": "2026-10-03T13:10:00+08:00",
+          "end_time": null,
+          "session_title": "音樂故事教室",
+          "performer": "嘉寶老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）13:10【 音樂故事教室 】-嘉寶老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "ccd8efab4e8d21bc9c36f3bd",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T14:25:00+08:00",
+          "end_time": null,
+          "session_title": "音樂故事教室",
+          "performer": "嘉寶老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）14:25【 音樂故事教室 】-嘉寶老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "e6ff8b1aa775ac34df7413a8",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T14:45:00+08:00",
+          "end_time": null,
+          "session_title": "Formosa歷遊記",
+          "performer": "哲璋老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）14:45【 Formosa歷遊記】-哲璋老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "1a7e75394d6d11be5a41a228",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T15:05:00+08:00",
+          "end_time": null,
+          "session_title": "Formosa歷遊記",
+          "performer": "哲璋老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）15:05【 Formosa歷遊記】-哲璋老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "b02ad039ec5504729fb43f8d",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T15:30:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場",
+          "candidate_id": "1a6cadbf95e85e089a6096c7",
+          "decision": "pending",
+          "reason": "individual_ticket_and_session_review_required"
+        },
+        {
+          "start_time": "2026-10-03T15:55:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場",
+          "candidate_id": "916470239e706c69774fb7c8",
+          "decision": "pending",
+          "reason": "individual_ticket_and_session_review_required"
+        },
+        {
+          "start_time": "2026-10-03T16:20:00+08:00",
+          "end_time": null,
+          "session_title": "快樂教養",
+          "performer": "台灣鷹爸",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）16:20【 快樂教養】-台灣鷹爸 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "ad7ab08c95b1c87c69d2cf3a",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T16:40:00+08:00",
+          "end_time": null,
+          "session_title": "快樂教養",
+          "performer": "台灣鷹爸",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）16:40【 快樂教養】-台灣鷹爸 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "3e9d73311f6622ca0e45b2e4",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        }
+      ],
+      "reason": "reviewed_text_sessions_split",
+      "routed_session_count": 2
+    },
+    {
+      "candidate_id": "1a6cadbf95e85e089a6096c7",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "decision": "approved",
+      "reason": "official_page_single_session_verified",
+      "activity_id": "acc_2609040825101995339640_20261003_1530"
+    },
+    {
+      "candidate_id": "916470239e706c69774fb7c8",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "decision": "approved",
+      "reason": "official_page_single_session_verified",
+      "activity_id": "acc_2609040825101995339640_20261003_1555"
+    }
+  ],
+  "destination": "data/editorial/queue.json",
+  "scope": "Targeted follow-up for ACCUPASS 2609040825101995339640; not a full collection run"
+}

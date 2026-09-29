@@ -87,6 +87,7 @@ def pending(root=ROOT, now=None):
 def prepare(folder, root=ROOT, now=None):
     """Run existing verification in isolation. Never publish the staged catalog."""
     root = Path(root)
+    live_clock = now is None
     now = now or datetime.now(TAIPEI)
     before = read(root, 'data/verified_activities.json')
     before_ids = {row['activity']['id'] for row in before['activities']}
@@ -98,7 +99,8 @@ def prepare(folder, root=ROOT, now=None):
         after = read(staged, 'data/verified_activities.json')
         # Local structural validation of the full result; live evidence was
         # obtained by the source-specific verifiers above.
-        active = {a.id for a in load_verified(staged / 'data/verified_activities.json', now=now)}
+        validation_time = datetime.now(TAIPEI) if live_clock else now
+        active = {a.id for a in load_verified(staged / 'data/verified_activities.json', now=validation_time)}
         for row in after['activities']:
             aid = row['activity']['id']
             if aid in before_ids or aid not in active:
