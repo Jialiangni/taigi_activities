@@ -195,3 +195,13 @@ ACCUPASS、李江却、圖書館網站與列表、博物館網站、北美館JSO
 ### 台語站 → ACCUPASS 主來源（2026-09-19）
 
 核實會重新讀台語站公告的報名連結。若指向ACCUPASS活動專頁，依活動ID、開始時間、城市對照已核實場次；已有者只刊主來源，尚未核實者直接抓取ACCUPASS送入原有核實規則，台語站不再繞過主來源另行刊登。分享參數不影響辨識，同一系列不同時間不合併。HTTP失敗、無明確單場或主來源日期矛盾仍pending。核實報告的`source_priority`記錄舊資料的合併或暫停刊登理由。
+
+## 收集診斷紀錄（2026-09-29）
+
+收集日誌現在逐次印出 `request_error`，包括來源、去除 query／fragment／帳密的 URL、GET／POST、時間、耗時、逾時上限、重試次數與 HTTP 狀態；HTTP 429／5xx 的首次失敗即使稍後重試成功仍會保存。網路錯誤保留原 `network_or_tls_error` 代碼，新增 `diagnostics.category` 區分 DNS、timeout、TLS 憑證、其他 TLS 與 connection；無法細分時仍標 network，不猜原因。可用時附 errno／verify_code，不記錄原始 exception 訊息、請求本文、cookie 或授權標頭。
+
+已捕捉的解析錯誤與未預期例外會記錄最後8層檔名／函式／行號，不包含原始碼行或區域變數。這能定位 `library_listing_schema_changed` 和 `unexpected_ValueError` 的程式位置，但不能單憑代碼斷定對方網站改版或封鎖。
+
+各來源 JSON 新增 `request_failures` 與 `duration_seconds`；report.json 保留逐来源錯誤並新增失敗請求次數（含重試）與耗時，原有 successful_response_count 仍只計成功回應。GitHub 收集摘要顯示各來源實際狀態、候選數與錯誤代碼；候選不等於已刊登場次。測試步驟不寫 GitHub 編輯摘要，避免 FakeAI 的測試結果混入正式收集結果。
+
+附件 `event-review-candidates` 保留14天，仍排除原社群授權回應檔。即時 log 不等待整批完成；若程序被強制終止，最後總摘要可能尚未產生。診斷強化不改變核實、重試次數、保留名單或發布規則，也不自動建立 issue。

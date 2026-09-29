@@ -1,6 +1,10 @@
 """Collect review candidates from real sources; never write the published calendar."""
 import argparse
 import json
+import os
+import time
+from collections import Counter
+from .diagnostics import error_location
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
@@ -60,8 +64,12 @@ def run(config, output, selected=None, client_factory=Client):
     def work(pair):
         key, instance = pair
         started_at = datetime.now(TAIPEI).isoformat(timespec='seconds')
+        started = time.monotonic()
+        print('{}: collection started'.format(key), flush=True)
         client = client_factory()
         client.progress = lambda count: print('{}: {} successful responses'.format(key, count), flush=True)
+        client.diagnostic = lambda record: print('{}: request_error {}'.format(
+            key, json.dumps(record, ensure_ascii=True)), flush=True)
         try:
             result = instance.collect(client)
         except CollectionError as e:
@@ -71,13 +79,16 @@ def run(config, output, selected=None, client_factory=Client):
             # Preserve a failing source report while letting other independent sources finish.
             # Do not serialize exception values which may contain credentials.
             result = Result(key, 'collector', status='failed')
-            result.errors.append({'code': 'unexpected_' + type(e).__name__})
+            result.errors.append({'code': 'unexpected_' + type(e).__name__,
+                                  'location': error_location(e)})
         rows = {r['id']: r for r in result.candidates}
         result.candidates = list(rows.values())
         if result.errors and result.candidates:
             result.status = 'partial'
         data = result.to_dict()
         data['requests'] = client.requests
+        data['request_failures'] = getattr(client, 'request_failures', [])
+        data['duration_seconds'] = round(time.monotonic() - started, 3)
         data['started_at'] = started_at
         data['completed_at'] = datetime.now(TAIPEI).isoformat(timespec='seconds')
         return data
@@ -91,13 +102,17 @@ def run(config, output, selected=None, client_factory=Client):
             tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             tmp.replace(target)
             results.append(data)
+            for error in data['errors']:
+                print('{}: source_error {}'.format(data['source_id'], json.dumps(error, ensure_ascii=True)), flush=True)
             print('{}: {} / {} candidates'.format(data['source_id'], data['status'], len(data['candidates'])), flush=True)
     results.sort(key=lambda r: r['source_id'])
     report = {'schema_version': 1, 'collected_at': datetime.now(TAIPEI).isoformat(timespec='seconds'),
               'publication_changed': False, 'config': config,
               'sources': [dict({k: r[k] for k in ('source_id', 'method', 'status', 'errors', 'notes', 'coverage_complete')},
                               candidate_count=len(r['candidates']), successful_response_count=len(r['requests']),
-                              started_at=r['started_at'], completed_at=r['completed_at']) for r in results]}
+                              started_at=r['started_at'], completed_at=r['completed_at'],
+                              duration_seconds=r['duration_seconds'],
+                              failed_attempt_count=len(r['request_failures'])) for r in results]}
     for summary, result in zip(report['sources'], results):
         if 'account_status' in result:
             summary['account_status'] = result['account_status']
@@ -130,6 +145,21 @@ def main():
         if not isinstance(v, int) or v < 1:
             parser.error('All collection limits must be positive integers')
     report = run(config, args.output, args.sources.split(',') if args.sources else None)
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        counts = Counter(r['status'] for r in report['sources'])
+        lines = ['\n### 活動收集實際結果', '',
+                 '來源狀態：' + ', '.join('{}={}'.format(k, v) for k, v in sorted(counts.items())),
+                 '', '以下為收集結果，候選數不等於新增刊登活動數。詳細錯誤與程式位置見 event-review-candidates 附件的 report.json 及各來源 JSON。',
+                 '', '| 來源 | 狀態 | 候選 | 失敗請求次數（含重試） | 耗時秒 | 錯誤代碼 |',
+                 '| --- | --- | ---: | ---: | ---: | --- |']
+        for row in report['sources']:
+            codes = ', '.join(sorted({e['code'] for e in row['errors']})) or '—'
+            lines.append('| {} | {} | {} | {} | {} | {} |'.format(
+                row['source_id'], row['status'], row['candidate_count'],
+                row['failed_attempt_count'], row['duration_seconds'], codes))
+        with open(summary_path, 'a', encoding='utf-8') as handle:
+            handle.write('\n'.join(lines) + '\n')
     # Missing optional social authorization is reported, not silently called successful.
     return 1 if any(r['status'] == 'failed' or r['errors'] for r in report['sources']) else 0
 

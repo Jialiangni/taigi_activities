@@ -24,7 +24,8 @@ jobs:
           tesseract --list-langs
 
       - name: Test candidate collectors
-        run: python3 -m unittest discover -s tests -v
+        # Fake AI test results must never appear as real editorial summaries.
+        run: GITHUB_STEP_SUMMARY= python3 -m unittest discover -s tests -v
       - name: Collect review candidates
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}

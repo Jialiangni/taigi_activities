@@ -16,14 +16,17 @@ from urllib.request import Request, build_opener, HTTPSHandler, HTTPRedirectHand
 from http.cookiejar import CookieJar
 from urllib.request import HTTPCookieProcessor
 
+from .diagnostics import safe_url, exception_info, error_location
+
 TAIPEI = timezone(timedelta(hours=8))
 KEYWORDS = ['台語', '臺語', '台灣話', '臺灣話', '閩南語', '囡仔古', '歌仔戲', '布袋戲', '唸歌', '台文']
 
 
 class CollectionError(Exception):
-    def __init__(self, code, detail=''):
+    def __init__(self, code, detail='', diagnostics=None):
         super().__init__(code)
         self.code, self.detail = code, detail
+        self.diagnostics = diagnostics or {}
 
 
 def canonical(url):
@@ -66,6 +69,8 @@ class Client:
         self.timeout, self.delay = timeout, delay
         self.cache, self.requests = {}, []
         self.progress = None
+        self.request_failures = []
+        self.diagnostic = None
 
     def scoped(self, allowed_hosts, url_filter=None):
         key = (tuple(sorted(allowed_hosts)), url_filter)
@@ -73,6 +78,8 @@ class Client:
             self.scoped_clients[key] = Client(self.timeout, self.delay, frozenset(allowed_hosts), url_filter)
             self.scoped_clients[key].requests = self.requests
             self.scoped_clients[key].progress = self.progress
+            self.scoped_clients[key].request_failures = self.request_failures
+            self.scoped_clients[key].diagnostic = self.diagnostic
         return self.scoped_clients[key]
 
     def get(self, url, payload=None, token=None, form=None, ajax=False):
@@ -99,6 +106,17 @@ class Client:
             headers['Authorization'] = 'Bearer ' + token
         for attempt in range(2):
             time.sleep(self.delay)
+            started = time.monotonic()
+            def record_failure(code, info):
+                record = dict(info, code=code, url=safe_url(url),
+                              request_method='POST' if body is not None else 'GET',
+                              attempt=attempt + 1, elapsed_ms=round((time.monotonic() - started) * 1000),
+                              timeout_seconds=self.timeout,
+                              recorded_at=datetime.now(TAIPEI).isoformat(timespec='seconds'))
+                self.request_failures.append(record)
+                if self.diagnostic:
+                    self.diagnostic(record)
+                return record
             try:
                 with self.opener.open(Request(url, data=body, headers=headers), timeout=self.timeout) as r:
                     raw = r.read(20_000_001)
@@ -119,7 +137,9 @@ class Client:
                     evidence = {'url': url, 'final_url': r.url, 'http_status': r.status,
                                 'request_method': 'POST' if body is not None else 'GET',
                                 'fetched_at': datetime.now(TAIPEI).isoformat(timespec='seconds'),
-                                'sha256': hashlib.sha256(raw).hexdigest()}
+                                'sha256': hashlib.sha256(raw).hexdigest(),
+                                'elapsed_ms': round((time.monotonic() - started) * 1000),
+                                'attempt': attempt + 1}
                     if payload is not None and not token:
                         evidence['request_body'] = payload
                     if form is not None:
@@ -134,12 +154,22 @@ class Client:
                         self.cache[key] = result
                     return result
             except HTTPError as e:
+                retry_after = e.headers.get('Retry-After', '') if e.headers else ''
+                info = {'category': 'http', 'http_status': e.code,
+                        'will_retry': e.code in (429, 500, 502, 503, 504) and attempt == 0}
+                if retry_after.isdigit():
+                    info['retry_after_seconds'] = int(retry_after)
+                diagnostic = record_failure('http_' + str(e.code), info)
                 if e.code in (429, 500, 502, 503, 504) and attempt == 0:
-                    time.sleep(min(3, max(1, int(e.headers.get('Retry-After', '1')) if e.headers.get('Retry-After', '1').isdigit() else 1)))
+                    time.sleep(min(3, max(1, int(retry_after) if retry_after.isdigit() else 1)))
                     continue
-                raise CollectionError('http_' + str(e.code)) from None
-            except (URLError, TimeoutError, OSError):
-                raise CollectionError('network_or_tls_error') from None
+                raise CollectionError('http_' + str(e.code), diagnostics=diagnostic) from None
+            except (URLError, TimeoutError, OSError) as e:
+                diagnostic = record_failure('network_or_tls_error', exception_info(e))
+                raise CollectionError('network_or_tls_error', diagnostics=diagnostic) from None
+            except CollectionError as e:
+                e.diagnostics = record_failure(e.code, {'category': 'response_validation'})
+                raise
 
     def json(self, url, payload=None, token=None):
         text, evidence = self.get(url, payload, token)
@@ -293,7 +323,10 @@ class Result:
     coverage_complete: bool = False
 
     def error(self, url, error):
-        self.errors.append({'url': url, 'code': error.code})
+        entry = {'url': safe_url(url), 'code': error.code, 'location': error_location(error)}
+        if error.diagnostics:
+            entry['diagnostics'] = error.diagnostics
+        self.errors.append(entry)
         self.status = 'partial' if self.candidates else 'failed'
 
     def to_dict(self):
