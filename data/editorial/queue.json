@@ -1,6 +1,12 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-09-29T23:05:16+08:00",
-  "collection_run": null,
+  "prepared_at": "2026-09-29T23:37:10+08:00",
+  "collection_run": {
+    "id": 36584423572,
+    "head_sha": "a39758c027f0f48a83fefe5e68118fe06cd0657b",
+    "conclusion": "failure",
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36584423572",
+    "artifact_id": 11043787966
+  },
   "items": []
 }

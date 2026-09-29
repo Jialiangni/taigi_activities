@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-09-29T09:22:09+08:00",
+  "reviewed_at": "2026-09-29T23:37:10+08:00",
   "source_priority": {
     "gameislearning_1583v0joi94_20261017_1000": {
       "primary_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -30,17 +30,18 @@
     }
   },
   "applied_to_catalog": false,
-  "collected_at": "2026-09-29T09:21:43+08:00",
-  "candidate_count": 719,
+  "collected_at": "2026-09-29T23:36:42+08:00",
+  "candidate_count": 718,
   "counts": {
-    "pending": 653,
-    "duplicate": 57,
+    "pending": 649,
+    "duplicate": 59,
+    "routed": 1,
     "excluded": 9
   },
   "collection_status_counts": {
-    "ok": 47,
-    "partial": 77,
-    "failed": 33,
+    "ok": 56,
+    "partial": 72,
+    "failed": 29,
     "needs_configuration": 1
   },
   "decisions": [
@@ -51,14 +52,6 @@
       "title": "二二八國家紀念館團體台語導覽預約",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "cd897e6b5bed2112f45e8671",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609140211321902093902",
-      "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
     },
     {
       "candidate_id": "4823f23854bb8b94c3482615",
@@ -73,6 +66,14 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2607280236031295663510",
       "title": "用台語講故事：講予囡仔聽的人權繪本",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review"
+    },
+    {
+      "candidate_id": "cd897e6b5bed2112f45e8671",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609140211321902093902",
+      "title": "台語咱佮意！台語主題系列講座 (9/19-10/11)",
       "decision": "pending",
       "reason": "series_or_duration_needs_review"
     },
@@ -174,10 +175,10 @@
       "reason": "series_or_duration_needs_review"
     },
     {
-      "candidate_id": "b19fd9580d13c6ea33ed3540",
+      "candidate_id": "232ead48441e180201ea7b9a",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2607230625546733134960",
-      "title": "【專業訓練】進階香水調製萃取與解讀(含測驗)",
+      "source_url": "https://www.accupass.com/event/2609180844161047784508",
+      "title": "最孤獨的時候，有最溫暖的陪伴：幾米經典繪本《月娘袂記矣》分享會【台北場】",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -214,6 +215,15 @@
       "reason": "explicit_session_language_missing"
     },
     {
+      "candidate_id": "8c6099a53378b65a45691903",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609181101568312033380",
+      "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2609181101568312033380_20261108_1000"
+    },
+    {
       "candidate_id": "f9225dbce70896a1f621a008",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609180900251903050199",
@@ -223,13 +233,12 @@
       "activity_id": "acc_2609180900251903050199_20261107_1000"
     },
     {
-      "candidate_id": "8c6099a53378b65a45691903",
+      "candidate_id": "b19fd9580d13c6ea33ed3540",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609181101568312033380",
-      "title": "來自不同時空的聲響：六張犁極樂公墓走讀【台語場：11月08日（日）】",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "acc_2609181101568312033380_20261108_1000"
+      "source_url": "https://www.accupass.com/event/2607230625546733134960",
+      "title": "【專業訓練】進階香水調製萃取與解讀(含測驗)",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
     },
     {
       "candidate_id": "6b20340b818b267b0b3b5265",
@@ -245,7 +254,7 @@
       "source_url": "https://www.accupass.com/event/2609211150041692182754",
       "title": "【表演者&教育者必修系列】靈魂演唱學：找到屬於你的演唱靈魂！",
       "decision": "pending",
-      "reason": "explicit_session_language_missing"
+      "reason": "text_schedule:incomplete_text_schedule"
     },
     {
       "candidate_id": "b007654cd8d19ec0eb441747",
@@ -260,22 +269,145 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609040825101995339640",
       "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
-      "decision": "pending",
-      "reason": "series_schedule:explicit_date_time_table_missing"
-    },
-    {
-      "candidate_id": "c9e935674bdd5b0030aa5e73",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2512201025032586653690",
-      "title": "中正紀念堂歷史小旅行【2026年華語場次】",
-      "decision": "pending",
-      "reason": "series_or_duration_needs_review"
+      "decision": "routed",
+      "session_classifications": [
+        {
+          "start_time": "2026-10-03T13:10:00+08:00",
+          "end_time": null,
+          "session_title": "音樂故事教室",
+          "performer": "嘉寶老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）13:10【 音樂故事教室 】-嘉寶老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "ccd8efab4e8d21bc9c36f3bd",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T14:25:00+08:00",
+          "end_time": null,
+          "session_title": "音樂故事教室",
+          "performer": "嘉寶老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）14:25【 音樂故事教室 】-嘉寶老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "e6ff8b1aa775ac34df7413a8",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T14:45:00+08:00",
+          "end_time": null,
+          "session_title": "Formosa歷遊記",
+          "performer": "哲璋老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）14:45【 Formosa歷遊記】-哲璋老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "1a7e75394d6d11be5a41a228",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T15:05:00+08:00",
+          "end_time": null,
+          "session_title": "Formosa歷遊記",
+          "performer": "哲璋老師",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3（六）15:05【 Formosa歷遊記】-哲璋老師 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "b02ad039ec5504729fb43f8d",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T15:30:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場",
+          "candidate_id": "1a6cadbf95e85e089a6096c7",
+          "decision": "pending",
+          "reason": "individual_ticket_and_session_review_required"
+        },
+        {
+          "start_time": "2026-10-03T15:55:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場",
+          "candidate_id": "916470239e706c69774fb7c8",
+          "decision": "pending",
+          "reason": "individual_ticket_and_session_review_required"
+        },
+        {
+          "start_time": "2026-10-03T16:20:00+08:00",
+          "end_time": null,
+          "session_title": "快樂教養",
+          "performer": "台灣鷹爸",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）16:20【 快樂教養】-台灣鷹爸 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "ad7ab08c95b1c87c69d2cf3a",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        },
+        {
+          "start_time": "2026-10-03T16:40:00+08:00",
+          "end_time": null,
+          "session_title": "快樂教養",
+          "performer": "台灣鷹爸",
+          "duration_minutes": 15,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）16:40【 快樂教養】-台灣鷹爸 (約15分鐘/堂)",
+          "language_classification": "not_established",
+          "category": null,
+          "language_evidence": null,
+          "candidate_id": "3e9d73311f6622ca0e45b2e4",
+          "decision": "not_selected",
+          "reason": "no_explicit_taigi_session_label"
+        }
+      ],
+      "reason": "reviewed_text_sessions_split",
+      "routed_session_count": 2
     },
     {
       "candidate_id": "562123e4be4937bbc3ebd8cb",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2604081121391029506053",
       "title": "中正紀念堂歷史小旅行【2026年粵語場次】",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review"
+    },
+    {
+      "candidate_id": "c9e935674bdd5b0030aa5e73",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2512201025032586653690",
+      "title": "中正紀念堂歷史小旅行【2026年華語場次】",
       "decision": "pending",
       "reason": "series_or_duration_needs_review"
     },
@@ -301,7 +433,7 @@
       "source_url": "https://www.accupass.com/event/2609160343451609851912",
       "title": "《撕掉「傳承」的標籤：母語創作的當代實踐與審美重塑》張淦勛 × 黃宇寒 × 張嘉祥",
       "decision": "pending",
-      "reason": "missing_identity_fields"
+      "reason": "text_schedule:incomplete_text_schedule"
     },
     {
       "candidate_id": "8f8cec47edc8254a5d05d028",
@@ -309,7 +441,7 @@
       "source_url": "https://www.accupass.com/event/2609160315472065630577",
       "title": "《佢兜个世界：女性如何書寫自身》張芳慈 × 王品渝",
       "decision": "pending",
-      "reason": "missing_identity_fields"
+      "reason": "text_schedule:incomplete_text_schedule"
     },
     {
       "candidate_id": "3cbbd348bb088887384eba06",
@@ -765,26 +897,10 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "544d1d50cb4722fa50076e66",
-      "source_id": "culture_open_data",
-      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "title": "歌謠班音樂研習",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
       "candidate_id": "6d2bd8682f87b925c76ed786",
       "source_id": "culture_open_data",
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "title": "歌唱班",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "212fcf75c1f78ea6dcdeee9f",
-      "source_id": "culture_open_data",
-      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "title": "115年度歌唱研習班",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -909,6 +1025,53 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "15e3b56b1ed39b7f45788e1b",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "duplicate",
+      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "reason": "accupass_primary_session",
+      "activity_id": "acc_2608051357275636349740_20260919_1000"
+    },
+    {
+      "candidate_id": "93aec0c7c701b80e7e65455a",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "duplicate",
+      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "reason": "accupass_primary_session",
+      "activity_id": "acc_2608051357275636349740_20261017_1000"
+    },
+    {
+      "candidate_id": "8c201167a21479e17b972ea0",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "duplicate",
+      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "reason": "accupass_primary_session",
+      "activity_id": "acc_2608051357275636349740_20261121_1000"
+    },
+    {
+      "candidate_id": "6a9af46326972658fff4e7d0",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "pending",
+      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "reason": "accupass_session_not_verified"
+    },
+    {
+      "candidate_id": "eb39465c415c5dfde5345256",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "duplicate",
+      "reason": "duplicate_candidate"
+    },
+    {
       "candidate_id": "c415b5725dac53be819189f0",
       "source_id": "gameislearning",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1550dx9oi94",
@@ -1011,53 +1174,6 @@
       "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
       "decision": "pending",
       "reason": "unsupported_trusted_directory_candidate"
-    },
-    {
-      "candidate_id": "15e3b56b1ed39b7f45788e1b",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "duplicate",
-      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "reason": "accupass_primary_session",
-      "activity_id": "acc_2608051357275636349740_20260919_1000"
-    },
-    {
-      "candidate_id": "93aec0c7c701b80e7e65455a",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "duplicate",
-      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "reason": "accupass_primary_session",
-      "activity_id": "acc_2608051357275636349740_20261017_1000"
-    },
-    {
-      "candidate_id": "8c201167a21479e17b972ea0",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "duplicate",
-      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "reason": "accupass_primary_session",
-      "activity_id": "acc_2608051357275636349740_20261121_1000"
-    },
-    {
-      "candidate_id": "6a9af46326972658fff4e7d0",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "pending",
-      "primary_source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "reason": "accupass_session_not_verified"
-    },
-    {
-      "candidate_id": "eb39465c415c5dfde5345256",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "decision": "duplicate",
-      "reason": "duplicate_candidate"
     },
     {
       "candidate_id": "d50adf5d105c3f70c43d3186",
@@ -1290,6 +1406,14 @@
       "reason": "unstructured_source_needs_review"
     },
     {
+      "candidate_id": "0d310dbf8977ca977933b3ee",
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+      "title": "【台語sa攏有】歷史教育ê轉型正義",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
       "candidate_id": "d0ebe28a8c815a240b9fd5d6",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
@@ -1301,7 +1425,7 @@
       "candidate_id": "98d7616f80cd46c8e69bb09a",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/07/829.html",
-      "title": "臺灣唸歌廳-楊秀卿篇 網站、講座",
+      "title": "臺灣唸歌廳-楊秀卿篇  網站、講座",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -1381,7 +1505,7 @@
       "candidate_id": "4ce8e9b7cbe69be664b788f2",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
-      "title": "「轉型正義kap不當黨產」講座 【台北場】受政治影響ê台灣美術",
+      "title": "「轉型正義kap不當黨產」講座  【台北場】受政治影響ê台灣美術",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -3250,14 +3374,6 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "d01397ac69283d52fa1e2b2e",
-      "source_id": "li_kang_khiok",
-      "source_url": "https://www.tgb.org.tw/2017/08/sa-kap.html",
-      "title": "【台語sa攏有】俗物有好貨--台灣民俗kap俗文學",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
       "candidate_id": "3fcdd80eb7beac074909affe",
       "source_id": "linfamily",
       "source_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
@@ -3386,18 +3502,18 @@
       "reason": "unstructured_source_needs_review"
     },
     {
-      "candidate_id": "12b5d3b61427753fad3447ee",
-      "source_id": "ntpc_culture",
-      "source_url": "https://www.culture.ntpc.gov.tw/xceventsnews/cont?xsmsid=0g295700334178642420&qcat=0G336743893825971626&sid=0Q140316004865830602",
-      "title": "115新北市巷弄藝起來巡演活動 | 新北市文化局",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
       "candidate_id": "6eb146558935dd91098a7bb6",
       "source_id": "ntpc_education",
       "source_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
       "title": "教育成果-中小學教育-新北市政府教育局",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "12b12d6360d07658bae2842f",
+      "source_id": "ntpclib",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/Info?cntId=29e248e955484125865017a79c4df1a3",
+      "title": "【全市】閱讀集點新體驗！「新北好讀點」9月1日上線試營運一個月-新北市立圖書館",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -3438,14 +3554,6 @@
       "source_id": "ntpclib_district_235",
       "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=c76ac5603bf44fec8015100fef27e0a2",
       "title": "【中和員山分館】115年10月彩虹故事屋",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "6318c28b130b975127af53a7",
-      "source_id": "ntpclib_district_248",
-      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=1887c673ba9f438ba9bed9fc6745feef",
-      "title": "【五股守讓堂】115年9月【影友會】",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -4357,6 +4465,14 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2097977020675448833",
       "title": "月印：月光下，誰記得？",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "91e375484e070820ffa35d85",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2102298802570960896",
+      "title": "《風笙 SS Project》薩克斯風Ｘ笙音樂會",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -5279,6 +5395,22 @@
       "reason": "explicit_session_language_missing"
     },
     {
+      "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
       "candidate_id": "c094f01672a44be0783b4e12",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2078041749721079808",
@@ -5351,22 +5483,6 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2055198355043160065",
-      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
-      "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2055198355043160065",
-      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
       "candidate_id": "69e6b1d9a4f6c7c705536fb6",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2095045191349043200",
@@ -5399,22 +5515,6 @@
       "reason": "explicit_session_language_missing"
     },
     {
-      "candidate_id": "1f796896e1e95983ac4859b6",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2079784321891332096",
-      "title": "走戲人《酷麗鳥搞砸了》",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
-      "candidate_id": "770b760135bf1a19b696d87b",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2079784321891332096",
-      "title": "走戲人《酷麗鳥搞砸了》",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing"
-    },
-    {
       "candidate_id": "5db9d0116590aac65fcc5312",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2063886748971831297",
@@ -5435,6 +5535,22 @@
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2063886748971831297",
       "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "1f796896e1e95983ac4859b6",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079784321891332096",
+      "title": "走戲人《酷麗鳥搞砸了》",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing"
+    },
+    {
+      "candidate_id": "770b760135bf1a19b696d87b",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079784321891332096",
+      "title": "走戲人《酷麗鳥搞砸了》",
       "decision": "pending",
       "reason": "explicit_session_language_missing"
     },
@@ -5547,14 +5663,6 @@
       "source_id": "sshm",
       "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
       "title": "十三行博物館個人化導覽服務",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "fe652bb87e22e0976d6ed370",
-      "source_id": "sshm",
-      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
-      "title": "十三行博物館摺頁 | 新北市立十三行博物館",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
     },
@@ -5698,14 +5806,6 @@
       "candidate_id": "ff53c437eba7054f027341d1",
       "source_id": "taipei_industry",
       "source_url": "https://doed.gov.taipei/News_Content.aspx?n=DD2DDE3BA14D9019&sms=9D72E82EC16F3E64&s=1685AE05ED586CB4",
-      "title": "臺北市政府產業發展局",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review"
-    },
-    {
-      "candidate_id": "64cc677f7b287f08f1515202",
-      "source_id": "taipei_industry",
-      "source_url": "https://doed.gov.taipei/News_Content.aspx?n=DD2DDE3BA14D9019&sms=9D72E82EC16F3E64&s=B3890735B159AE67",
       "title": "臺北市政府產業發展局",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
@@ -5861,14 +5961,32 @@
       "title": "【2026亮點漫讀】《雲端亮點調頻室》系列活動",
       "decision": "pending",
       "reason": "unstructured_source_needs_review"
+    },
+    {
+      "candidate_id": "1a6cadbf95e85e089a6096c7",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2609040825101995339640_20261003_1530"
+    },
+    {
+      "candidate_id": "916470239e706c69774fb7c8",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "decision": "duplicate",
+      "reason": "already_published",
+      "activity_id": "acc_2609040825101995339640_20261003_1555"
     }
   ],
   "collection_run": {
-    "id": 36502097688,
-    "head_sha": "7d9d1d06f7cf9ac8dc1b53b1b385309d1beec267",
+    "id": 36584423572,
+    "head_sha": "a39758c027f0f48a83fefe5e68118fe06cd0657b",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36502097688",
-    "artifact_id": 11007079747
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36584423572",
+    "artifact_id": 11043787966
   },
   "destination": "data/editorial/queue.json"
 }
