@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "activity_id": "acc_2609040825101995339640_20261003_1555",
+  "source_hash": "ef7bfc6f897a1b7e3f8002d5faa9e5f07833cd21a5e0421ff8bdf182092efe70",
+  "guide_hash": "cee61c8d83342a95782444ed6d2f8d0295c51e05e078b36d20053d984c42abda",
+  "summary_taigi": "夾腳拖劇團佇 Pixsee 星球故事屋演「台語劇場」，用台語小劇場予囡仔學台語、學品格。這是10月3日15:55的場次，約20分鐘，適合3–10歲囡仔。",
+  "description_taigi": "夾腳拖劇團致力用全台語劇場講臺灣在地故事佮歷史議題。這擺帶來 Pixsee 專屬小劇場，予囡仔學台語、學品格。\n\n這場佇10月3日15:55開始，約20分鐘。演出的所在是「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位。\n\n內容適合3–10歲囡仔，每場上濟20人。一張票一个人入場；大人會使佇透明故事屋外口等，若欲陪囡仔入教室，愛另外買票。票價請看 ACCUPASS。\n\n入場愛提紙本票。請提早至少20分鐘到 Pixsee 攤位報到、換紙本入場票券；開演進前10分鐘閣轉來排隊。無劃位，位仔家己揀。若傷慢到，無法度臨時換別場。\n\n紙本票限活動當工佇現場兌換；票若無去，無補發。票袂使換現金，嘛袂使佮其他優惠做伙用；退票照 ACCUPASS 規定辦理。教室有開冷氣，保暖衫請家己準備。",
+  "uncertain_terms": [],
+  "review": {
+    "facts_match": true,
+    "natural_taiwanese": true,
+    "people_and_content_complete": true,
+    "issues": [],
+    "evidence": [
+      {
+        "claim": "夾腳拖劇團致力用全台語劇場講臺灣在地故事佮歷史議題。",
+        "quote": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格"
+      },
+      {
+        "claim": "這擺帶來 Pixsee 專屬小劇場，予囡仔學台語、學品格。",
+        "quote": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格"
+      },
+      {
+        "claim": "這場佇10月3日15:55開始，約20分鐘。",
+        "quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)"
+      },
+      {
+        "claim": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+        "quote": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位"
+      },
+      {
+        "claim": "內容適合3–10歲囡仔，每場上濟20人。",
+        "quote": "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。"
+      },
+      {
+        "claim": "一張票一个人入場",
+        "quote": "一張票僅供一位入場者，陪同家長需購票進場"
+      },
+      {
+        "claim": "大人會使佇透明故事屋外口等，若欲陪囡仔入教室，愛另外買票。",
+        "quote": "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。"
+      },
+      {
+        "claim": "票價請看 ACCUPASS。",
+        "quote": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。"
+      },
+      {
+        "claim": "入場愛提紙本票。請提早至少20分鐘到 Pixsee 攤位報到、換紙本入場票券",
+        "quote": "當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券"
+      },
+      {
+        "claim": "開演進前10分鐘閣轉來排隊。無劃位，位仔家己揀。若傷慢到，無法度臨時換別場。",
+        "quote": "請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。"
+      },
+      {
+        "claim": "紙本票限活動當工佇現場兌換；票若無去，無補發。",
+        "quote": "僅限當日現場兌換，如票券遺失恕不補發。"
+      },
+      {
+        "claim": "票袂使換現金，嘛袂使佮其他優惠做伙用；退票照 ACCUPASS 規定辦理。",
+        "quote": "本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。"
+      },
+      {
+        "claim": "教室有開冷氣，保暖衫請家己準備。",
+        "quote": "上課教室中冷氣開放，如需保暖衣物請自行準備。"
+      }
+    ]
+  },
+  "dictionary_evidence": [
+    {
+      "query": "上濟",
+      "source_url": "https://www.moedict.tw/t/%E4%B8%8A%E6%BF%9F.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-29T23:07:41+08:00",
+      "title": "上濟",
+      "readings": [
+        {
+          "tailo": "siōng tsē/siōng tsuē/siāng tsē/siāng tsuē",
+          "entry_id": "551",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "最多。指數量上的多寡。",
+              "part_of_speech": "副",
+              "examples": [
+                {
+                  "taiwanese": "伊食上濟。",
+                  "tailo": "I tsia̍h siōng tsē. ",
+                  "mandarin": "他吃最多。"
+                }
+              ]
+            },
+            {
+              "meaning_zh": "至多、頂多。指在最壞的情況下。",
+              "part_of_speech": "副",
+              "examples": [
+                {
+                  "taiwanese": "上濟錢了去爾爾。",
+                  "tailo": "Siōng-tsē tsînn liáu--khì niā-niā. ",
+                  "mandarin": "頂多虧錢而已。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "外口",
+      "source_url": "https://www.moedict.tw/t/%E5%A4%96%E5%8F%A3.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-29T23:07:41+08:00",
+      "title": "外口",
+      "readings": [
+        {
+          "tailo": "guā-kháu",
+          "entry_id": "1434",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "外面、外頭、外邊。",
+              "part_of_speech": "位",
+              "examples": [
+                {
+                  "taiwanese": "伊拄才對外口轉來。",
+                  "tailo": "I tú-tsiah tuì guā-kháu tńg--lâi. ",
+                  "mandarin": "他剛才從外頭回來。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "囡仔",
+      "source_url": "https://www.moedict.tw/t/%E5%9B%A1%E4%BB%94.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-29T23:07:42+08:00",
+      "title": "囡仔",
+      "readings": [
+        {
+          "tailo": "gín-á",
+          "entry_id": "2152",
+          "variants": [
+            "囝仔"
+          ],
+          "definitions": [
+            {
+              "meaning_zh": "小孩子。",
+              "part_of_speech": "名",
+              "examples": [
+                {
+                  "taiwanese": "伊的囡仔真古錐。",
+                  "tailo": "I ê gín-á tsin kóo-tsui. ",
+                  "mandarin": "他的小孩真可愛。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "退票",
+      "source_url": "https://www.moedict.tw/t/%E9%80%80%E7%A5%A8.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-29T23:07:42+08:00",
+      "title": "退票",
+      "readings": [
+        {
+          "tailo": "thè-phiò",
+          "entry_id": "53658",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "把已買好的車票､船票､戲票等退還原處，收回買票的錢。",
+              "part_of_speech": "",
+              "examples": []
+            },
+            {
+              "meaning_zh": "一種行使票據權利的方法。指執票人於提示期限出示票據，但發票人之帳戶內並無足夠的存款支付，或背書不連續，則付款人將此票據退還給持票人，而不予付款。",
+              "part_of_speech": "",
+              "examples": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editor": {
+    "provider": "codex",
+    "model": "gpt-6"
+  },
+  "edited_at": "2026-09-29T23:10:56+08:00"
+}
