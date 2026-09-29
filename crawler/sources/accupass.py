@@ -2,6 +2,7 @@
 import re
 from datetime import datetime
 from ..posters import poster_fields
+from .accupass_text_schedule import text_schedule
 
 from ..collection import Collector, CollectionError, Result, Document, candidate, local_time, city_of, plain, KEYWORDS, relevant
 
@@ -146,12 +147,15 @@ def parse_event(html, url, evidence):
         schedule_rows, schedule_issue = table_schedule(html, event)
         if schedule_rows:
             sessions = [{k: r[k] for k in ('start_time','end_time')} for r in schedule_rows]
+        introduction = activity_intro(event, doc)
+        text_rows, text_issue = text_schedule(introduction, event)
         fields = {'start_time': local_time(event.get('startDate')), 'end_time': local_time(event.get('endDate')),
                   'venue': location.get('name'), 'address': address, 'city': city_of(address),
                   'organizer': organizer.get('name') if isinstance(organizer, dict) else None,
                   'price_info': prices or None, 'is_free': None, 'event_status': event.get('eventStatus'),
                   'sessions': sessions, 'schedule_rows':schedule_rows,
-                  'schedule_issue':schedule_issue, 'official_summary':activity_intro(event, doc),
+                  'schedule_issue':schedule_issue, 'official_summary':introduction,
+                  'text_schedule_rows': text_rows, 'text_schedule_issue': text_issue,
                   **poster_fields(html, url)}
         # Aggregate schema dates do not establish individual session dates or universal free admission.
         issues = ['manual_event_verification_required', 'check_series_sessions_and_ticket_terms']

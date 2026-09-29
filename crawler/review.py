@@ -195,6 +195,7 @@ def accupass_session_fields(live, expected, series):
         fields.update({k: session[k] for k in ('start_time', 'end_time')})
     else:
         require(live['kind'] == 'event_period' and not fields.get('sessions')
+                and not fields.get('text_schedule_rows') and not fields.get('text_schedule_issue')
                 and fields.get('schedule_issue') == 'explicit_date_time_table_missing',
                 'accupass_series_needs_review')
     return fields
@@ -681,6 +682,34 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
             if c['source_id'] == 'accupass':
+                # Refresh the official article before classifying a mixed text list.
+                # The text labels establish candidate language, not ticket terms or approval.
+                if not c['fields'].get('schedule_rows') and (c['fields'].get('text_schedule_rows') or c['fields'].get('text_schedule_issue')):
+                    url = source_url(c['source_url'])
+                    require(re.fullmatch(r'https://www\.accupass\.com/event/\d+', url), 'unsupported_official_url')
+                    html, proof = client.get(url)
+                    require(proof['final_url'] == url, 'official_page_redirected')
+                    live_rows = parse_accupass_event(html, url, proof)
+                    require(len(live_rows) == 1, 'program_identity_changed')
+                    live = live_rows[0]
+                    require(normalize(live['title']) == normalize(c['title']), 'candidate_title_changed')
+                    fields = live['fields']
+                    require(not fields['text_schedule_issue'], 'text_schedule:' + fields['text_schedule_issue'])
+                    require(fields['text_schedule_rows'], 'text_schedule_disappeared')
+                    require(fields['city'] in ('臺北市', '新北市', '桃園市'), 'outside_region')
+                    sessions = fields['text_schedule_rows']
+                    item['session_classifications'] = [dict(session,
+                        candidate_id=make_candidate('accupass', url, live['title'], live['text'], proof,
+                            key=url + ':text:' + session['start_time'])['id'],
+                        decision=('excluded' if parse_time(session['start_time']) <= now else
+                                  'pending' if session['language_classification'] == 'explicit_taigi_label' else 'not_selected'),
+                        reason=('expired' if parse_time(session['start_time']) <= now else
+                                'individual_ticket_and_session_review_required' if session['language_classification'] == 'explicit_taigi_label'
+                                else 'no_explicit_taigi_session_label')) for session in sessions]
+                    item.update(reason='text_sessions_classified_pending_verification',
+                                taigi_session_count=sum(s['decision'] == 'pending' for s in item['session_classifications']),
+                                other_session_count=sum(s['decision'] == 'not_selected' for s in item['session_classifications']))
+                    continue
                 if c.get('fields', {}).get('sessions'):
                     children = accupass_series_candidates(c, client)
                     require(len(candidates) + len(children) <= 20000, 'too_many_candidates')
