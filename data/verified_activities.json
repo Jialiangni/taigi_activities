@@ -2477,6 +2477,264 @@
           ]
         }
       }
+    },
+    "editorial_acc_2609040825101995339640_20261003_1530_883f078fa1f3121d": {
+      "url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "checked_at": "2026-09-29T23:05:17+08:00",
+      "snapshot_sha256": "ab5dc2bb725ef08963b6d6368a1727f938df497f6f9c05a999688bf700a88008",
+      "required_text": [
+        "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+        "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+        "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+        "每場次限額20位",
+        "活動對象｜3-10歲小朋友",
+        "一張票僅供一位入場者，陪同家長需購票進場",
+        "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。",
+        "當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券",
+        "僅限當日現場兌換，如票券遺失恕不補發。",
+        "請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。",
+        "本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。",
+        "上課教室中冷氣開放，如需保暖衣物請自行準備。"
+      ],
+      "text_session_review": {
+        "mode": "reviewed_text_sessions_v1",
+        "contract": {
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "reviewer": "Codex (AI source review, not human certification)",
+          "reviewed_at": "2026-09-29T23:04:50+08:00",
+          "article_sha256": "00b29b5824344fb3cfd79836485adb36199d1bb8d6dbd0fe271339e8aca33a02",
+          "identity": {
+            "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+            "city": "新北市",
+            "organizer": "Pixsee",
+            "event_status": "https://schema.org/EventScheduled",
+            "start_time": "2026-10-03T13:00:00+08:00",
+            "end_time": "2026-10-03T17:00:00+08:00"
+          },
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "is_free": false,
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "language_quote": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+          "ticket_quote": "一張票僅供一位入場者，陪同家長需購票進場",
+          "description_quotes": [
+            "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+            "每場次限額20位",
+            "活動對象｜3-10歲小朋友",
+            "一張票僅供一位入場者，陪同家長需購票進場",
+            "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。",
+            "當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券",
+            "僅限當日現場兌換，如票券遺失恕不補發。",
+            "請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。",
+            "本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。",
+            "上課教室中冷氣開放，如需保暖衣物請自行準備。"
+          ],
+          "sessions": [
+            {
+              "start_time": "2026-10-03T15:30:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            },
+            {
+              "start_time": "2026-10-03T15:55:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            }
+          ]
+        },
+        "session": {
+          "start_time": "2026-10-03T15:30:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場"
+        },
+        "activity": {
+          "id": "acc_2609040825101995339640_20261003_1530",
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "description": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)\n夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格\n每場次限額20位\n活動對象｜3-10歲小朋友\n一張票僅供一位入場者，陪同家長需購票進場\n故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。\n當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券\n僅限當日現場兌換，如票券遺失恕不補發。\n請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。\n本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。\n上課教室中冷氣開放，如需保暖衣物請自行準備。",
+          "city": "新北市",
+          "district": "",
+          "category": "台語舞台劇",
+          "start_time": "2026-10-03T15:30:00+08:00",
+          "end_time": null,
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+          "organizer": "Pixsee",
+          "source_platform": "Accupass 活動通",
+          "source_url": "https://www.accupass.com/event/2609040825101995339640",
+          "registration_url": "https://www.accupass.com/event/2609040825101995339640",
+          "cover_image": "https://static.accupass.com/eventbanner/2609081038406027208370.jpg",
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "is_free": false,
+          "tags": [
+            "台語",
+            "夾腳拖劇團"
+          ],
+          "raw_metadata": {
+            "text_session": {
+              "start_time": "2026-10-03T15:30:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            }
+          }
+        }
+      }
+    },
+    "editorial_acc_2609040825101995339640_20261003_1555_ef7bfc6f897a1b7e": {
+      "url": "https://www.accupass.com/event/2609040825101995339640",
+      "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+      "checked_at": "2026-09-29T23:05:17+08:00",
+      "snapshot_sha256": "ab5dc2bb725ef08963b6d6368a1727f938df497f6f9c05a999688bf700a88008",
+      "required_text": [
+        "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+        "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+        "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+        "每場次限額20位",
+        "活動對象｜3-10歲小朋友",
+        "一張票僅供一位入場者，陪同家長需購票進場",
+        "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。",
+        "當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券",
+        "僅限當日現場兌換，如票券遺失恕不補發。",
+        "請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。",
+        "本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。",
+        "上課教室中冷氣開放，如需保暖衣物請自行準備。"
+      ],
+      "text_session_review": {
+        "mode": "reviewed_text_sessions_v1",
+        "contract": {
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "reviewer": "Codex (AI source review, not human certification)",
+          "reviewed_at": "2026-09-29T23:04:50+08:00",
+          "article_sha256": "00b29b5824344fb3cfd79836485adb36199d1bb8d6dbd0fe271339e8aca33a02",
+          "identity": {
+            "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+            "city": "新北市",
+            "organizer": "Pixsee",
+            "event_status": "https://schema.org/EventScheduled",
+            "start_time": "2026-10-03T13:00:00+08:00",
+            "end_time": "2026-10-03T17:00:00+08:00"
+          },
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "is_free": false,
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "language_quote": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+          "ticket_quote": "一張票僅供一位入場者，陪同家長需購票進場",
+          "description_quotes": [
+            "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+            "每場次限額20位",
+            "活動對象｜3-10歲小朋友",
+            "一張票僅供一位入場者，陪同家長需購票進場",
+            "故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。",
+            "當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券",
+            "僅限當日現場兌換，如票券遺失恕不補發。",
+            "請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。",
+            "本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。",
+            "上課教室中冷氣開放，如需保暖衣物請自行準備。"
+          ],
+          "sessions": [
+            {
+              "start_time": "2026-10-03T15:30:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            },
+            {
+              "start_time": "2026-10-03T15:55:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            }
+          ]
+        },
+        "session": {
+          "start_time": "2026-10-03T15:55:00+08:00",
+          "end_time": null,
+          "session_title": "台語劇場",
+          "performer": "夾腳拖劇團",
+          "duration_minutes": 20,
+          "duration_approximate": true,
+          "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+          "language_classification": "explicit_taigi_label",
+          "category": "台語舞台劇",
+          "language_evidence": "台語劇場"
+        },
+        "activity": {
+          "id": "acc_2609040825101995339640_20261003_1555",
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "description": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)\n夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格\n每場次限額20位\n活動對象｜3-10歲小朋友\n一張票僅供一位入場者，陪同家長需購票進場\n故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。\n當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券\n僅限當日現場兌換，如票券遺失恕不補發。\n請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。\n本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。\n上課教室中冷氣開放，如需保暖衣物請自行準備。",
+          "city": "新北市",
+          "district": "",
+          "category": "台語舞台劇",
+          "start_time": "2026-10-03T15:55:00+08:00",
+          "end_time": null,
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+          "organizer": "Pixsee",
+          "source_platform": "Accupass 活動通",
+          "source_url": "https://www.accupass.com/event/2609040825101995339640",
+          "registration_url": "https://www.accupass.com/event/2609040825101995339640",
+          "cover_image": "https://static.accupass.com/eventbanner/2609081038406027208370.jpg",
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "is_free": false,
+          "tags": [
+            "台語",
+            "夾腳拖劇團"
+          ],
+          "raw_metadata": {
+            "text_session": {
+              "start_time": "2026-10-03T15:55:00+08:00",
+              "end_time": null,
+              "session_title": "台語劇場",
+              "performer": "夾腳拖劇團",
+              "duration_minutes": 20,
+              "duration_approximate": true,
+              "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+              "language_classification": "explicit_taigi_label",
+              "category": "台語舞台劇",
+              "language_evidence": "台語劇場"
+            }
+          }
+        }
+      }
     }
   },
   "activities": [
@@ -9627,6 +9885,118 @@
             "「顧園猴」",
             "0-99 歲全年齡"
           ]
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "acc_2609040825101995339640_20261003_1530",
+        "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+        "description": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)\n夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格\n每場次限額20位\n活動對象｜3-10歲小朋友\n一張票僅供一位入場者，陪同家長需購票進場\n故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。\n當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券\n僅限當日現場兌換，如票券遺失恕不補發。\n請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。\n本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。\n上課教室中冷氣開放，如需保暖衣物請自行準備。",
+        "city": "新北市",
+        "district": "",
+        "category": "台語舞台劇",
+        "start_time": "2026-10-03T15:30:00+08:00",
+        "end_time": null,
+        "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+        "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+        "organizer": "Pixsee",
+        "source_platform": "Accupass 活動通",
+        "source_url": "https://www.accupass.com/event/2609040825101995339640",
+        "registration_url": "https://www.accupass.com/event/2609040825101995339640",
+        "cover_image": "https://static.accupass.com/eventbanner/2609081038406027208370.jpg",
+        "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "夾腳拖劇團"
+        ],
+        "raw_metadata": {
+          "text_session": {
+            "start_time": "2026-10-03T15:30:00+08:00",
+            "end_time": null,
+            "session_title": "台語劇場",
+            "performer": "夾腳拖劇團",
+            "duration_minutes": 20,
+            "duration_approximate": true,
+            "schedule_quote": "2026/10/3 （六）15:30【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+            "language_classification": "explicit_taigi_label",
+            "category": "台語舞台劇",
+            "language_evidence": "台語劇場"
+          }
+        }
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "editorial_acc_2609040825101995339640_20261003_1530_883f078fa1f3121d",
+        "mode": "reviewed_text_sessions_v1",
+        "method": "Codex逐場核對官方混合場次、台語證據與購票限制；程式重查已核對正文及場次綁定，非人類審定。",
+        "language_evidence": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+        "confirmed_fields": {
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "start_time": "2026-10-03T15:30:00+08:00",
+          "end_time": null,
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "city": "新北市",
+          "organizer": "Pixsee",
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "is_free": false
+        }
+      }
+    },
+    {
+      "activity": {
+        "id": "acc_2609040825101995339640_20261003_1555",
+        "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+        "description": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)\n夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格\n每場次限額20位\n活動對象｜3-10歲小朋友\n一張票僅供一位入場者，陪同家長需購票進場\n故事節目內容適合3-10歲小朋友，家長可於透明故事屋外等候，如需陪同進入教室需另購票。每場次限額20位。\n當日須憑紙本入場票券入場，請至少於該節目開始前20分鐘至Pixsee攤位，進行報到手續及兌換可愛紙本入場票券\n僅限當日現場兌換，如票券遺失恕不補發。\n請務必於該場次節目開始前10分鐘回到Pixsee攤位排隊，憑報到時領取的入場票券入場；非劃位票券，採自由入座。若超過規定時間抵達，因空間有限，恕無法臨時更換其他場次，敬請見諒。\n本票券不得折換現金，亦不得與其他優惠活動合併使用。退票相關事宜依 ACCUPASS 平台規定辦理。\n上課教室中冷氣開放，如需保暖衣物請自行準備。",
+        "city": "新北市",
+        "district": "",
+        "category": "台語舞台劇",
+        "start_time": "2026-10-03T15:55:00+08:00",
+        "end_time": null,
+        "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+        "address": "台灣新北市「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位 （三峽區大義路388號 -「中悅彼得堡前」）",
+        "organizer": "Pixsee",
+        "source_platform": "Accupass 活動通",
+        "source_url": "https://www.accupass.com/event/2609040825101995339640",
+        "registration_url": "https://www.accupass.com/event/2609040825101995339640",
+        "cover_image": "https://static.accupass.com/eventbanner/2609081038406027208370.jpg",
+        "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+        "is_free": false,
+        "tags": [
+          "台語",
+          "夾腳拖劇團"
+        ],
+        "raw_metadata": {
+          "text_session": {
+            "start_time": "2026-10-03T15:55:00+08:00",
+            "end_time": null,
+            "session_title": "台語劇場",
+            "performer": "夾腳拖劇團",
+            "duration_minutes": 20,
+            "duration_approximate": true,
+            "schedule_quote": "2026/10/3 （六）15:55【 台語劇場】-夾腳拖劇團 (約20分鐘/堂)",
+            "language_classification": "explicit_taigi_label",
+            "category": "台語舞台劇",
+            "language_evidence": "台語劇場"
+          }
+        }
+      },
+      "verification": {
+        "status": "verified",
+        "source_id": "editorial_acc_2609040825101995339640_20261003_1555_ef7bfc6f897a1b7e",
+        "mode": "reviewed_text_sessions_v1",
+        "method": "Codex逐場核對官方混合場次、台語證據與購票限制；程式重查已核對正文及場次綁定，非人類審定。",
+        "language_evidence": "夾腳拖劇團「台語劇場」｜致力將臺灣在地故事與歷史議題轉換成全台語劇場，本次帶來Pixsee專屬小劇場，學台語、也學品格",
+        "confirmed_fields": {
+          "title": "Pixsee星球故事屋＠瘋北大兒童上街趣｜互動故事快閃課【適合3－10歲】",
+          "start_time": "2026-10-03T15:55:00+08:00",
+          "end_time": null,
+          "venue": "「瘋北大兒童上街趣」封街活動會場內「Pixsee星球故事屋」攤位",
+          "city": "新北市",
+          "organizer": "Pixsee",
+          "price_info": "需購票；票價請見 ACCUPASS 票券。陪同進入教室的家長須另購票。",
+          "is_free": false
         }
       }
     }
