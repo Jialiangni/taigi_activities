@@ -84,6 +84,19 @@ class EditorialQueueTests(unittest.TestCase):
                 q.ingest(self.root, self.now)
         self.assertEqual(before, [(self.root / n).read_bytes() for n in names])
 
+    def test_fresh_poster_does_not_break_reviewed_activity_contract(self):
+        mode = 'reviewed_announcement_sessions_v1'
+        self.row['verification']['mode'] = mode
+        self.source['reviewed_announcement'] = {'mode': mode, 'activity': copy.deepcopy(self.row['activity'])}
+        self.item = q.request_for(self.row, self.source)
+        self.write(q.QUEUE, {'schema_version': 1, 'items': [self.item]})
+        self.return_result()
+        with patch('crawler.verified.check_live_sources', return_value={
+                self.activity['source_url']: {'url': 'https://example.org/new.jpg', 'source_url': self.activity['source_url']}}):
+            self.assertEqual(q.ingest(self.root, self.now), ['new'])
+        catalog = q.read(self.root, 'data/verified_activities.json')
+        self.assertEqual(catalog['activities'][0]['activity'], self.row['activity'])
+
     def test_wrong_hash_guide_facts_dictionary_and_unresolved_terms_rejected(self):
         mutations = [lambda r: r.update(source_hash='b' * 64),
                      lambda r: r.update(guide_hash='c' * 64),
@@ -144,7 +157,7 @@ class EditorialQueueTests(unittest.TestCase):
     def test_prepare_uses_isolated_catalog_and_keeps_unprocessed_batches(self):
         self.write('data/ui_taigi.json', {})
         self.write('data/ui_price_taigi.json', {})
-        def fake_review(folder, root, now, apply):
+        def fake_review(folder, root, now, apply, backlog_only=False):
             # Represents a newly verified second session from the existing verifier.
             row = copy.deepcopy(self.row)
             row['activity']['id'] = 'second'

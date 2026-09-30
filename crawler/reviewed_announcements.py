@@ -24,8 +24,24 @@ def content(html,url):
   return rows[0]['fields']['official_summary']+' '+plain(event.get('description') or '')
  return Document(html).content()
 
-def check(html,url,contract):
- require(digest(content(html,url))==contract['content_sha256'],'reviewed_announcement_content_changed')
+def check(html,url,contract,client=None):
+ from .candidate_triage import document
+ bound = document(html,url) if contract.get('content_version') == 2 else content(html,url)
+ require(digest(bound)==contract['content_sha256'],'reviewed_announcement_content_changed')
+ if contract.get('poster_evidence'):
+  from urllib.parse import urljoin,urlsplit
+  from .collection import Client
+  posters=contract['poster_evidence']
+  require(isinstance(posters,list) and 1<=len(posters)<=3,'reviewed_poster_limit')
+  linked={urljoin(url,n.attrs.get('src','')) for n in Document(html).root.all('img')}
+  client=client or Client()
+  for p in posters:
+   require(p.get('transcription') and p.get('reviewed_at'),'reviewed_poster_reading_missing')
+   image_url=p['url']
+   require(image_url in linked and urlsplit(image_url).scheme=='https' and
+           urlsplit(image_url).netloc==urlsplit(url).netloc,'reviewed_poster_not_official_attachment')
+   _,ev=client.scoped({urlsplit(url).netloc}).get(image_url)
+   require(ev['final_url']==image_url and ev['sha256']==p['image_sha256'],'reviewed_poster_changed')
  full=normalized_text(html)
  import re
  for row in contract['sessions']:
@@ -35,12 +51,12 @@ def check(html,url,contract):
 
 def expand(parent,client,contract):
  h,e=client.get(parent['source_url']);require(e['final_url']==parent['source_url'],'official_page_redirected')
- check(h,parent['source_url'],contract)
+ check(h,parent['source_url'],contract,client)
  return [candidate(parent['source_id'],parent['source_url'],s['activity']['title'],content(h,parent['source_url']),e,
     dict(s['activity'],reviewed_announcement_id=s['activity']['id']),'session',key=s['activity']['id']) for s in contract['sessions']]
 
 def verify(c,client,contract,now):
- h,e=client.get(c['source_url']);require(e['final_url']==c['source_url'],'official_page_redirected');check(h,c['source_url'],contract)
+ h,e=client.get(c['source_url']);require(e['final_url']==c['source_url'],'official_page_redirected');check(h,c['source_url'],contract,client)
  selected=next((s for s in contract['sessions'] if s['activity']['id']==c['fields']['reviewed_announcement_id']),None)
  require(selected is not None,'reviewed_announcement_not_selected');a=selected['activity']
  require(parse_time(a.get('end_time') or a['start_time'])>now,'expired')
@@ -52,6 +68,6 @@ def verify(c,client,contract,now):
  'method':'Codex逐場核對官方公告及條件；發布前重查公告正文、引句與場次綁定，非人類審定。'}}
  return key,source,row
 
-def validate_live(source,html):
- proof=source['reviewed_announcement'];check(html,source['url'],proof['contract'])
+def validate_live(source,html,client=None):
+ proof=source['reviewed_announcement'];check(html,source['url'],proof['contract'],client)
  require(any(s['activity']==proof['activity'] for s in proof['contract']['sessions']),'reviewed_announcement_not_selected')

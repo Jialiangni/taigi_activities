@@ -97,7 +97,7 @@ def check_live_sources(sources):
         check_source_content(source, html)
         if 'reviewed_announcement' in source:
             from .reviewed_announcements import validate_live
-            validate_live(source, html)
+            validate_live(source, html, client=client)
         if 'reviewed_session_blocks' in source:
             from .reviewed_sessions import validate_live
             validate_live(source, html)
@@ -203,7 +203,7 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
             raise ValueError('活動不在北北桃')
         if data['is_free'] is not None and type(data['is_free']) is not bool:
             raise ValueError('費用狀態須為 true / false / null')
-        if data['is_free'] is None and '未公告' not in data['price_info']:
+        if data['is_free'] is None and not any(w in data['price_info'] for w in ('未公告', '未確認')):
             raise ValueError('未知費用必須明確標示')
         start = parse_time(data['start_time'])
         end = parse_time(data['end_time']) if data['end_time'] else None

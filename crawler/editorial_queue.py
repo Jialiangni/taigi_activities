@@ -84,7 +84,7 @@ def pending(root=ROOT, now=None):
     return sorted(items, key=lambda i: (i['activity']['start_time'], i['activity_id']))
 
 
-def prepare(folder, root=ROOT, now=None):
+def prepare(folder, root=ROOT, now=None, backlog_only=False):
     """Run existing verification in isolation. Never publish the staged catalog."""
     root = Path(root)
     live_clock = now is None
@@ -95,7 +95,7 @@ def prepare(folder, root=ROOT, now=None):
     with tempfile.TemporaryDirectory() as temp:
         staged = Path(temp)
         shutil.copytree(str(root / 'data'), str(staged / 'data'))
-        audit = review(folder, root=staged, now=now, apply=True)
+        audit = review(folder, root=staged, now=now, apply=True, backlog_only=backlog_only)
         after = read(staged, 'data/verified_activities.json')
         backlog = read(staged, 'data/review_backlog.json') if (staged/'data/review_backlog.json').exists() else None
         # Local structural validation of the full result; live evidence was
@@ -213,7 +213,12 @@ def ingest(root=ROOT, now=None, live_check=True):
         posters = {a.id: a.cover_image for a in checked}
         for row in catalog['activities']:
             if row['activity']['id'] in posters:
-                row['activity']['cover_image'] = posters[row['activity']['id']]
+                source = catalog['sources'][row['verification']['source_id']]
+                # Reviewed contracts bind the complete activity, including its
+                # original image. A fresh optional thumbnail must not mutate
+                # that evidence and invalidate an otherwise verified session.
+                if not any(k in source for k in ('reviewed_announcement', 'reviewed_session_blocks', 'text_session_review')):
+                    row['activity']['cover_image'] = posters[row['activity']['id']]
         save_json(temp / 'catalog.json', catalog)
         load_verified(temp / 'catalog.json', now=now)
     save_json(root / 'data/verified_activities.json', catalog)

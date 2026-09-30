@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "origin": "reviewed_program",
+      "program_id": "2084126686540869633",
+      "group_id": "2084126975446855681",
+      "content_sha256": "ec38e0cfcb897996840f2c7b1ea88c5fdc0f59e7aefb6edeb781766981c6fd05",
+      "quote": "唸歌「老仙婆遊天庭」",
+      "rationale": "本次作品明確為月琴唸歌，不是演出者曾演過台語的履歷。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2056907131031330817",
+      "group_id": "2056907131253235713",
+      "content_sha256": "dcdb8ee465529a7711110b299853bde5bf570382cec936e495fc00261bcf2751",
+      "quote": "【歌仔戲】鴻明歌劇團《戰神花雲》",
+      "rationale": "官方將本次節目標為歌仔戲，非劇團履歷或周邊推薦；具台語戲曲內容。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2056999452011864065",
+      "group_id": "2056999452229967873",
+      "content_sha256": "d1c96d91d848817f3aaab4c7a6fa652de5e595d8c63221f0f45d614c437b6464",
+      "quote": "【歌仔戲】春美歌劇團《將軍寇》",
+      "rationale": "官方明列本次為歌仔戲。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2063886748971831297",
+      "group_id": "2063886749110243328",
+      "content_sha256": "0a5ac576a93415acdf32cf4aba1693626e9985669ee4ebb6c823093318d7f7c6",
+      "quote": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "rationale": "官方明列本次為歌仔戲。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2082370327705296896",
+      "group_id": "2082370327972130817",
+      "content_sha256": "4ac5b79caf3aa54e9c0a8f4edfec8c120beff67620a46769f680ce9631a511a6",
+      "quote": "經由重新再製企圖，期能深化承傳傳統歌仔戲能力",
+      "rationale": "本次重演明確以傳統歌仔戲呈現，非泛指基金會業務。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2090378180198309889",
+      "group_id": "2090380640761585665",
+      "content_sha256": "24327b32c0a80cd5d30606c2f983cf0b66da58a08be2f5ff742dc1da04ccb07e",
+      "quote": "無字幕， 80%以上為台語",
+      "rationale": "注意事項雖放於字幕欄，實際句意明列演出八成以上台語。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2036018024078086145",
+      "group_id": "2036018024299446273",
+      "content_sha256": "f39cf9937c5fe48e98ba97e40841d48ed49d329176593eec160d2fe6b30afad7",
+      "quote": "大稻埕戲苑之掌中戲節目多以臺灣台語發音",
+      "rationale": "本次傳統掌中戲官方專頁附台語發音說明，未列其他語言版本；按該節目內容與說明合併判讀。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2036016610592505856",
+      "group_id": "2036016610790576129",
+      "content_sha256": "c94f45d48a205f25d5523f90ded896f878bf579d0083133a259b37a99c1a2c5c",
+      "quote": "大稻埕戲苑之掌中戲節目多以臺灣台語發音",
+      "rationale": "本次傳統掌中戲專頁提供台語發音說明，未有相反場次資訊。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2036015355921928192",
+      "group_id": "2036015356133629953",
+      "content_sha256": "fc0ae01852c2816291a8eaef6494ea342edaa2f3575e5ef622f0a6b3f1ed3fb4",
+      "quote": "大稻埕戲苑之掌中戲節目多以臺灣台語發音",
+      "rationale": "本次傳統掌中戲專頁提供台語發音說明，未有相反場次資訊。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2036014871218495489",
+      "group_id": "2036014871336673281",
+      "content_sha256": "78fe0c7a013262e0711c4ea88a69ecbeb1d624771da7fcfb258d9511bc9f5846",
+      "quote": "大稻埕戲苑之掌中戲節目多以臺灣台語發音",
+      "rationale": "本次傳統掌中戲專頁提供台語發音說明，未有相反場次資訊。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2082659728235339777",
+      "group_id": "2082660130735239169",
+      "content_sha256": "ca1666c7285c7d4e49203ff0add6c48df0b144b2aac1cf26fd20b6283ea39805",
+      "quote": "涵蓋英文、中文、台語及原民語",
+      "rationale": "明列本次合唱語言包含台語；屬多語音樂會，不標成全台語。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2037069944678072321",
+      "group_id": "2037070246163988481",
+      "content_sha256": "a8fe09bf1743c7a2238a789a024f5d22e11488144565e9ed4666b14e6466f61a",
+      "quote": "首齣『視障台語音樂劇』",
+      "rationale": "明列本次作品為台語音樂劇。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2041775304994054145",
+      "group_id": "2041784736514842625",
+      "content_sha256": "2fe82dc00f62af854e1554156d57ae7bac357d8745a63b930339b1f0b16671c2",
+      "quote": "台語發音比例為90%",
+      "rationale": "比例以「為」敘述，舊規則只認冒號造成漏收。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2092446061770362880",
+      "group_id": "2092446381101359105",
+      "content_sha256": "04f968a7e7aca6e7f46a0373ebc6f2caf11247b0b063365a6497a1856205f55a",
+      "quote": "女高音林靜涓老師演唱林福裕所創作的台語藝術歌曲",
+      "rationale": "明列本次演唱者與台語曲目；多語音樂會。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2095475915937751041",
+      "group_id": "2095475916121477121",
+      "content_sha256": "38da72876cc10766e56717769b161fd1a04450bfe462f7d08bbf647e7f94c07d",
+      "quote": "一人說客語，一人說台語",
+      "rationale": "本場影片《你夢見我時，我已醒來》明列人物使用台語；合映不等於全場全台語。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2095475915937751041",
+      "group_id": "2095475916122300417",
+      "content_sha256": "38da72876cc10766e56717769b161fd1a04450bfe462f7d08bbf647e7f94c07d",
+      "quote": "一人說客語，一人說台語",
+      "rationale": "本場影片《你夢見我時，我已醒來》明列人物使用台語；合映不等於全場全台語。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2089921134541438977",
+      "group_id": "2089921263462825985",
+      "content_sha256": "d565c01f872f1aeb54466f62d0b8de1f70fdfdf6e32d8d7773be9ebc7dc2de6d",
+      "quote": "台語經典《世界恬靜落來的時》",
+      "rationale": "本次男聲合唱曲目明列台語歌曲。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2054095506013016065",
+      "group_id": "2054096221820702721",
+      "content_sha256": "d2166ba04967284b255bd1817fb5b811968928e8fbc1db62c3516eb6220471d2",
+      "quote": "演出語言為臺灣台語，備有中文字幕",
+      "rationale": "實際演出語言填在字幕欄內，應按句意核實。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2085550223014764544",
+      "group_id": "2085550223396446209",
+      "content_sha256": "70b3053252273c623c59f220c47628f2bbc94ac2dc71b895ecf98c4eb3f0b89a",
+      "quote": "臺語金曲《浪流連》",
+      "rationale": "本次演唱曲目有台語歌，非演唱者履歷。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2087386323953926145",
+      "group_id": "2087386643870035969",
+      "content_sha256": "eaddebced1cb795ef361c43c8f69d4ea0d4ebec3eba349805e3dcaea3931ff09",
+      "quote": "曲目橫跨宗教、流行、臺語經典、日文歌曲與原住民族語創作",
+      "rationale": "本次合唱曲目明列包含臺語，不標成全台語。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2082042280907173889",
+      "group_id": "2082042281178308609",
+      "content_sha256": "155ba560fea5d60a1bc606468c86e803a43cf858589322ad15f67a3cb9d4cb2d",
+      "quote": "作品以歌仔戲為創作根基",
+      "rationale": "本劇明確以歌仔戲為根基，含台語戲曲內容。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2079784321891332096",
+      "group_id": "2079784745743310849",
+      "content_sha256": "92a3343171731ca0043d3239e64203e6321a2244568d11f7cf0053af1824cfaf",
+      "quote": "打造一齣充滿歡笑與感動的兒童歌仔戲",
+      "rationale": "本作品明列兒童歌仔戲，非只因團名推論。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2087822052724801537",
+      "group_id": "2087822381682044929",
+      "content_sha256": "816d3aeb3483ecdbc616e2c3abbbb4e121c27a6b55b29b43abfbe57fd243e55a",
+      "quote": "1. 歌仔戲: 義女情—譏 2. 歌仔戲:花燈情緣",
+      "rationale": "本次折子戲明列兩齣歌仔戲；其餘黃梅戲崑曲京劇也要如實交代。",
+      "reviewed_at": "2026-10-01T00:40:44+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2092861457800269824",
+      "group_id": "2092861458048655361",
+      "content_sha256": "bfb57b79e43a69d2effa205f79bcd6e18c581c1476224cbd67ac0d96154fb0e1",
+      "quote": "四時媠 咱台北（好台北） 月下獨酌 頭一擺（初戀） 我永遠是少年家",
+      "rationale": "本次實際聲樂演唱曲目包含台語作品，非僅作曲者履歷。",
+      "reviewed_at": "2026-10-01T00:52:14.368796+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2094701120285835264",
+      "group_id": "2094710408368566273",
+      "content_sha256": "379e63e06f0225174fcdd892f5217c13696d544e665954a9d6df7f2b99573d3e",
+      "quote": "用台灣的語文創作台灣戲曲",
+      "rationale": "本次為七七歌仔戲團自編台灣語文歌仔戲，不以澎湖場代替台北場；核對台北兩場。",
+      "reviewed_at": "2026-10-01T00:52:14.368922+08:00"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2090269380048343041",
+      "group_id": "2090276698148327425",
+      "content_sha256": "fdd44b40f065bcaa493a3a960271f710773afc9ceafab4a8977bb5e2ea1fed99",
+      "quote": "民權歌劇團《鐵弓緣》選段",
+      "rationale": "逐場對照節目表，只核准本次四場歌仔戲；不把京劇、客家戲或相聲混入。",
+      "reviewed_at": "2026-10-01T00:52:14.369071+08:00",
+      "session_ids": [
+        "2090277736930988033"
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2090269380048343041",
+      "group_id": "2090277408898306048",
+      "content_sha256": "fdd44b40f065bcaa493a3a960271f710773afc9ceafab4a8977bb5e2ea1fed99",
+      "quote": "民權歌劇團《鐵弓緣》選段",
+      "rationale": "逐場對照節目表，只核准本次四場歌仔戲；不把京劇、客家戲或相聲混入。",
+      "reviewed_at": "2026-10-01T00:52:14.369215+08:00",
+      "session_ids": [
+        "2090325788232011777",
+        "2092153509960237057",
+        "2092153603140894721"
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2067491105969741825",
+      "group_id": "2067491106259148801",
+      "content_sha256": "73ba2bd63e06e30da3b43c37949beda8daf6e819746572c53378b65e0cf3f5c4",
+      "quote": "歌仔戲｜唐美雲歌仔戲團《大漠胭脂》吳宜蓁",
+      "rationale": "逐場對照七場明列歌仔戲的混合節目，京劇、豫劇與客家戲仍在簡介如實交代；其餘場次不靠同頁關鍵字通過。",
+      "reviewed_at": "2026-10-01T00:52:14.369451+08:00",
+      "session_ids": [
+        "2069979320480288768",
+        "2069979454930292737",
+        "2069979465842679809",
+        "2069979472712552449",
+        "2069979167001845761",
+        "2069979173344104449",
+        "2069979782025695232"
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2080112539683344385",
+      "group_id": "2080112539941625857",
+      "content_sha256": "33a35ffdfc352a3a53de73abc9d24898aa6d8aecab1d457ab857dc6ec78270fb",
+      "quote": "透過華語、臺語與客語作品",
+      "rationale": "實際節目明列含台語歌曲。",
+      "session_ids": [
+        "2080112736725581825"
+      ],
+      "reviewed_at": "2026-10-01T00:55:16.464364+08:00",
+      "change_notice_sha256": "8935cd2e69f7e583dd025fa4916874416fdef87b6892374e37723bdf5411d33e",
+      "change_notice_rationale": "取消公告明列11/12臺中國家歌劇院；本筆為11/2臺北國家演奏廳，API正常且該場未取消。"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2084482215968473088",
+      "group_id": "2084482566487093249",
+      "content_sha256": "cbee053dd39978f4d10f6f6ac070e2a0afd75b85f73c31ecb17920d62f7c871b",
+      "quote": "整體曲目涵蓋華語、古今臺語、客家及原住民語詩詞",
+      "rationale": "實際節目明列含台語歌曲。",
+      "session_ids": [
+        "2084482692297109505"
+      ],
+      "reviewed_at": "2026-10-01T00:55:16.465059+08:00",
+      "change_notice_sha256": "7e2df246be649b5761d6f1d446ba7a70e2c1c6164e0fe38673a03eee7ff0e48a",
+      "change_notice_rationale": "9/3公告調整為女聲合唱加鋼琴，沒有取消台北10/24；採目前形式並在文案說明，不沿用旧編制。"
+    }
+  ]
+}

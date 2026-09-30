@@ -265,13 +265,29 @@ def validate_auto_source(source, program, html=None, client=None):
             require(live['registration_url'] == proof['registration_url'],
                     'gameislearning_registration_changed')
         return
-    if program.get('status') != 3 or plain(program.get('changeNotification')):
+    if program.get('status') != 3:
         raise ValueError('自動核實節目狀態或異動公告改變，停止發布')
     groups = {str(g['id']): g for g in program['eventVenues']}
     for claim in source['automated_review']['language_claims']:
         group = groups.get(claim['group_id'])
-        if not group or claim not in language_claims(program, group):
+        from .reviewed_opentix_language import validate as reviewed_language_valid
+        valid = group and (reviewed_language_valid(claim, program, group)
+                           if claim.get('origin') == 'reviewed_program'
+                           else claim in language_claims(program, group))
+        if not valid:
             raise ValueError('自動核實語言證據異動，停止發布')
+    for session in source.get('opentix_sessions', []):
+        sid = session['session_id']
+        from .reviewed_opentix_language import notice_valid
+        if plain(program.get('changeNotification')) and not any(
+                notice_valid(c, program, sid) for c in source['automated_review']['language_claims']):
+            raise ValueError('本場異動公告尚未核實或已改變')
+        group_id = next((str(g['id']) for g in program['eventVenues']
+                         if any(str(e['id']) == sid for e in g['events'])), None)
+        if not any(c['group_id'] == group_id and
+                   ('session_ids' not in c or sid in c['session_ids'])
+                   for c in source['automated_review']['language_claims']):
+            raise ValueError('本場未包含在已核對的台語場次內')
 
 
 def require(condition, reason):
@@ -472,7 +488,7 @@ def verify_gameislearning(candidate, client, now):
     return key, source, row
 
 
-def verify_opentix(candidate, client, now):
+def verify_opentix(candidate, client, now, root=ROOT):
     url = candidate['source_url']
     require(re.fullmatch(r'https://www\.opentix\.life/event/\d+', url), 'unsupported_official_url')
     pid = url.rsplit('/', 1)[-1]
@@ -480,7 +496,6 @@ def verify_opentix(candidate, client, now):
     program = data.get('result') or {}
     require(str(program.get('id')) == pid, 'program_identity_changed')
     require(program.get('status') == 3, 'program_status_needs_review')
-    require(not plain(program.get('changeNotification')), 'change_notice_needs_review')
     sid = str(candidate.get('fields', {}).get('session_id', ''))
     live = next((r for r in parse_program(program, api) if r['fields']['session_id'] == sid), None)
     require(live, 'session_missing')
@@ -494,13 +509,18 @@ def verify_opentix(candidate, client, now):
     require(f['platform_session_status'] == 0, 'session_status_needs_review')
     require(not re.search(r'取消|延期|改期|異動|場次限定|華語場|國語場|英語場|客語場', f['session_name'] or ''),
             'session_language_or_change_needs_review')
-    claims = language_claims(program, group)
+    from .reviewed_opentix_language import claims as reviewed_language_claims
+    claims = reviewed_language_claims(root, program, group, sid) or language_claims(program, group)
     require(claims, 'explicit_session_language_missing')
+    if plain(program.get('changeNotification')):
+        from .reviewed_opentix_language import notice_valid
+        claims = [c for c in claims if notice_valid(c, program, sid)]
+        require(claims, 'change_notice_needs_review')
     # Mixed-version/series announcements need a person to associate language and dates.
     require(not re.search(r'雙版本|不同版本|各場.*語言|部分場次', plain(program.get('description'))),
             'multi_version_language_needs_review')
     require(f['venue'] and f['address'] and f['organizer'] and program.get('name'), 'missing_identity_fields')
-    require(f['price_info'] and f['is_free'] is not None, 'ticket_terms_need_review')
+    require(f['price_info'], 'ticket_terms_need_review')
     require(all(type(p) in (int, float) and 0 <= p <= 100000 for p in f['price_info']), 'invalid_prices')
     # Known candidate disagreement is not silently accepted as a correction.
     require(normalize(candidate['title']) == normalize(program['name']), 'candidate_title_changed')
@@ -519,7 +539,10 @@ def verify_opentix(candidate, client, now):
     require(all(normalized_text(x) in normalized_text(html) for x in required), 'page_api_disagree')
     prices = '、'.join(format(p, 'g') for p in f['price_info'])
     price = ('票面價格：' + prices + '元；折扣、贊助票與購票條件依官方頁面')
-    description = '\n\n'.join(introduction)
+    if f['is_free'] is None:
+        price += '；免費票適用資格未確認，請洽主辦單位'
+    session_note = ('本場公告：' + f['session_name']) if f['session_name'] else ''
+    description = '\n\n'.join(filter(None, [plain(program.get('changeNotification')), session_note, *introduction]))
     act = Activity(id='opentix_' + sid, title=program['name'], description=description,
                    city=f['city'], category=CategoryEnum.PERFORMANCE,
                    start_time=f['start_time'], end_time=f['end_time'], venue=f['venue'], address=f['address'],
@@ -561,9 +584,13 @@ def read_candidates(folder, now):
     return report, rows
 
 
-def review(folder, root=ROOT, client=None, now=None, apply=False):
+def review(folder, root=ROOT, client=None, now=None, apply=False, backlog_only=False):
     now, client = now or datetime.now(TAIPEI), client or Client(timeout=30)
-    report, candidates = read_candidates(Path(folder), now)
+    if backlog_only:
+        require(folder is None, 'backlog_review_must_not_mix_collection')
+        report, candidates = {'collected_at': None, 'sources': []}, []
+    else:
+        report, candidates = read_candidates(Path(folder), now)
     backlog_path = Path(root)/'data/review_backlog.json'
     if backlog_path.exists():
         backlog=json.loads(backlog_path.read_text())
@@ -578,6 +605,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
     load_verified(catalog_path, now=now)  # Never repair/bypass an invalid existing catalog.
     catalog = json.loads(catalog_path.read_text())
     manual = load_manual_decisions(root)
+    from .candidate_triage import load as load_dispositions, matches as disposition_matches
+    dispositions = load_dispositions(root)
     from . import reviewed_sessions, reviewed_announcements
     block_contracts = reviewed_sessions.contracts(root)
     announcement_contracts = reviewed_announcements.contracts(root)
@@ -648,6 +677,12 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item.update(decision='duplicate', reason='duplicate_candidate')
                 continue
             seen.add(identity)
+            disposition = dispositions.get(identity)
+            if disposition and disposition_matches(disposition, c, client):
+                item.update(decision='excluded', reason='reviewed_' + disposition['reason'],
+                            review_mode='evidence_bound_ai_review',
+                            rationale=disposition['rationale'], reviewed_at=disposition['reviewed_at'])
+                continue
             manual_row = manual.get(c['id'])
             if manual_row:
                 require(all(c[k] == manual_row[k] for k in ('source_id', 'source_url', 'title')),
@@ -818,7 +853,7 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
             else:
                 require(c['source_id'] == 'opentix' and c['kind'] == 'session',
                         'unstructured_source_needs_review')
-                key, source, row = verify_opentix(c, client, now)
+                key, source, row = verify_opentix(c, client, now, root=root)
             a = row['activity']
             existing = duplicate(a, catalog, row['verification'].get('opentix_session_id'))
             if existing:
@@ -891,13 +926,14 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
              'source_priority': publication_priority(catalog),
              'applied_to_catalog': apply,
              'collected_at': report['collected_at'], 'candidate_count': len(candidates),
+             'input_kind': 'persisted_backlog' if backlog_only else 'trusted_collection_and_backlog',
              'counts': dict(Counter(d['decision'] for d in decisions)),
              'collection_status_counts': dict(Counter(s['status'] for s in report['sources'])),
              'decisions': decisions}
     from .review_attention import summary
     audit['attention'] = summary(audit)
-    manifest = Path(folder) / '_collection_run.json'
-    if manifest.is_file():
+    manifest = Path(folder) / '_collection_run.json' if folder is not None else None
+    if manifest is not None and manifest.is_file():
         audit['collection_run'] = json.loads(manifest.read_text())
     pending_ids={(d['source_id'],d['candidate_id']) for d in decisions if d['decision']=='pending' or d.get('held_sessions')}
     retained={}

@@ -286,6 +286,9 @@ def plain(html):
 
 
 def relevant(text, keywords=KEYWORDS):
+    # These are ordinary Chinese words, not references to Taiwanese Hokkien.
+    # Keep any independent 台語/臺語 claim elsewhere in the same document.
+    text = re.sub(r'舞[台臺]語[言彙]|跨平[台臺]語言', '', text)
     return any(k in text for k in keywords)
 
 

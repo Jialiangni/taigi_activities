@@ -88,6 +88,24 @@ class CandidateReviewTests(unittest.TestCase):
         self.assertEqual(self.client.calls, [])
         self.assertEqual(original, (self.root/'data/verified_activities.json').read_bytes())
 
+    def test_persisted_backlog_review_does_not_require_or_forge_collection(self):
+        self.write('data/review_backlog.json', {'schema_version': 1, 'candidates': self.candidates})
+        audit = review(None, root=self.root, client=self.client, now=NOW, apply=True, backlog_only=True)
+        self.assertEqual(audit['counts'], {'approved': 1})
+        self.assertEqual(audit['input_kind'], 'persisted_backlog')
+        self.assertIsNone(audit['collected_at'])
+        self.assertNotIn('collection_run', audit)
+        with self.assertRaises(Pending):
+            review(self.folder, root=self.root, client=self.client, now=NOW, backlog_only=True)
+
+    def test_opentix_session_note_is_retained_for_editor(self):
+        self.program['eventVenues'][0]['events'][0]['description'] = '★映後座談之場次'
+        self.candidates = parse_program(self.program, {})
+        self.save_candidates()
+        self.assertEqual(self.run_review()['counts'], {'approved': 1})
+        catalog = json.loads((self.root/'data/verified_activities.json').read_text())
+        self.assertIn('本場公告：★映後座談之場次', catalog['activities'][0]['activity']['description'])
+
     def test_opentix_retains_full_content_without_boilerplate_translation(self):
         self.program['description'] += '<p>' + '家庭故事與戲偶演出。' * 50 + '</p><p>演員：甲、乙；導演：丙。</p>'
         self.program['eventVenues'][0]['eventNoteContent'] = '<p>本場館演前導聆。</p>'

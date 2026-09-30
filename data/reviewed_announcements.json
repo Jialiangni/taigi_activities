@@ -697,6 +697,958 @@
           ]
         }
       ]
+    },
+    "https://www.accupass.com/event/2609100854024528725810": {
+      "content_version": 2,
+      "content_sha256": "f37e6d356a137a669203dc694cce8e232fe702cacd4de9d9a669bc1b2b5864cf",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609100854024528725810_20261028_0900",
+            "title": "【一本書，變成一整季的行銷素材】AI內容行銷實戰工作坊",
+            "description": "📚  一本書，能不能變成一整季都用得上的行銷素材？ 出版之後，真正的內容行銷才開始。 新書發表、書籍導讀、社群短影音、通路提案、有聲內容……每一項都需要重新整理素材。 這場  「AI 內容行銷實戰工作坊」 ，將從出版業實際工作情境出發， 帶你一次掌握  AI 虛擬人、AI 配音、虛擬人簡報、MindCast、台語內容與有聲書製作 ， 並在下午直接完成一項可帶回使用的實作成果。 ✨ 這堂課會學到什麼？ 🎬 從零開始製作 AI 虛擬人與角色形象 🎙 運用 AI 配音選角，調整語氣與速度 🗣 使用 Mosa 台語模型與「華語轉台羅」製作台語內容 🖥 製作虛擬人簡報，應用於新書發表、導讀、通路與版權提案 📱 使用 MindCast 將內容快速轉成腳本、配音與字幕短影音 🎧 掌握有聲書製作流程、校聽與成品輸出 ✂ 使用 Audacity 進行淡入淡出、背景音樂、音量與停頓調整 🎬 上午｜從聲音到形象：AI 虛擬人與配音 上午將從 AI 虛擬人的製作流程開始， 了解如何依照腳本生成適合的角色與場景， 再搭配 AI 輔助腳本撰寫與 VoAI 配音，完成更完整的虛擬人內容。 AI 虛擬人形象生成與動作同步 角色設定與 AI 繪圖 AI 輔助虛擬人腳本撰寫 VoAI 配音角色選擇、語氣與速度調整 台語配音：Mosa 台語模型與華語轉台羅 🖥 虛擬人簡報 × MindCast 接著將介紹出版產業可以直接應用的影音內容製作方式， 包含新書發表、書籍導讀、通路提案與版權提案等情境。 虛擬人簡報概念與操作示範 新書發表與書籍導讀影片 通路與版權提案影片 MindCast：一鍵將內容轉成腳本、配音與字幕短影音 案例討論與現場提問 🎧 下午｜有聲書製作教學 下午將進一步進入「聲音內容商品化」， 從選書、腳本整理、AI 聲音選角，到校聽與成品交付， 建立完整的有聲書製作概念。 有聲書製作流程總覽 文本整理與 AI 聲音選角 台語有聲書製作 破音字、語調語速、停頓長度的校聽重點 ✂ 剪輯教學｜讓成品更完整 Audacity 介面與基本操作 淡入淡出 背景音樂 音量調整 停頓微調 章節切分、命名規則與匯出設定 💻 下午實作｜四選一，直接做出成果 最後安排完整實作時間， 學員可使用自備書稿自由發揮， 並由講師與助教現場巡場指導。 四種實作方向可擇一： 🎧 有聲書 📱 MindCast 🖥 虛擬人簡報 🎬 虛擬人影片 帶自己的書稿來，當天直接做出作品。 🧰 本次課程使用工具 VoAI 聲音創造所 虛擬人、虛擬人簡報、AI 配音、聲音克隆、有聲書製作、台語 MindCast 一鍵生成 AI Podbook 腳本與影片 Audacity 音檔後製剪輯 📍 活動資訊 日期： 2026 年 10 月 28 日（三） 時間： 09:00–17:00 地點： 中國文化大學推廣教育部－建國本部（大夏館）1 樓 103 教室 午餐： 主辦單位免費供餐 主辦單位： 絕好聲創 × 中華民國圖書出版協會 課程費用： 中華民國圖書出版協會的會員及出版業者免費 **若非此類身分參加者需酌收1000元課程費用(付費票)** 📌 報名提醒 請事先準備  Google 帳號 ，並記得帳號與密碼，當天需登入使用。 現場為電腦教室，已備有電腦設備。 ✦  強烈建議學員自備筆電與有麥克風的耳機。 請 自備書稿電子檔 ，供下午實作時段使用。 午餐於 5 樓 503 教室用餐，課程教室為 1 樓 103 教室。 📖  帶一本書來，把它延伸成更多被看見、被聽見、被分享的內容。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-28T09:00:00+08:00",
+            "end_time": "2026-10-28T17:00:00+08:00",
+            "venue": "中國文化大學APA藝文中心大夏館1樓(103電腦教室)",
+            "address": "台灣台北市大安區建國南路二段231號",
+            "organizer": "VoAI絕好聲創",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609100854024528725810",
+            "registration_url": "https://www.accupass.com/event/2609100854024528725810",
+            "cover_image": "https://static.accupass.com/eventbanner/2609100956597124715430.jpg",
+            "price_info": "中華民國圖書出版協會會員及出版業者免費；其他身分1000元。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "使用 Mosa 台語模型與「華語轉台羅」製作台語內容",
+          "quotes": [
+            "使用 Mosa 台語模型與「華語轉台羅」製作台語內容",
+            "VoAI絕好聲創"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.324040+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609140340221048585938": {
+      "content_version": 2,
+      "content_sha256": "689ded2c81aba1d4cf4c736a8266bbc59efe4d9ffd3231980e40f2f51826e12b",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609140340221048585938_20261003_1600",
+            "title": "華麗島的文學少女「黃鳳姿的寫作之路」／Re: 民俗、生活與文學．新書分享講座Ⅱ（aka街道散步）",
+            "description": "秋日裡，座談+走讀這位一百年前的臺灣文學少女－－黃鳳姿   以繪本作為序曲，透過文圖節奏，進入臺灣文學作家的內心宇宙 《華麗島的文學少女──黃鳳姿的寫作之路》《風華艋舺ê文學少女──黃鳳姿ê寫作人生》是國立臺灣文學館「作家故事系列」的首部作品，希望以繪本作為序曲，讓孩子透過圖文走進歷史，認識作家的生命軌跡與創作初心。台文館自2015年起編纂「臺灣兒童文學叢書」，此次轉型為以作家為主角的企劃，並選擇從黃鳳姿出發，正好能讓大眾讀者們對系列的新企畫產生共鳴與好奇。 作者林安狗、繪者陳芊榕、台文版改寫者諾拉，三位現代女性穿過歷史，試圖用兒童文學與母語，呼應黃鳳姿以兒童視角和當時的國語（日語）所留下的臺灣民俗書寫，並為現代的年輕讀者重新介紹一次這位特別的臺灣文學作家。 臺灣台語版《風華艋舺ê文學少女──黃鳳姿ê寫作人生》經蔡惠名老師的專業審訂，並附有羅馬拼音版本的別冊以利不同需求閱讀，也附上了台語有聲書QR Code，掃描即可聆聽；當年黃鳳姿用日語記錄了阿媽與媽媽口中的臺灣，今日的讀者則能用她與家人原本說的母語，把這些本土的故事再聽一次、重新找回並放到我們的生命裡。   本次活動將邀請套書創作群：林安狗、陳芊榕、諾拉，和 審訂老師蔡惠名， 在擁有超過一甲子故事的青雲閣裡， 聊一聊他們透過創作認識的黃鳳姿， 也隨著高傳棋老師的帶領， 走過翻新的街道，捕捉黃鳳姿曾留下的足跡 。   既是生活，也是文學，跨越時空的創作對話 黃鳳姿出身艋舺書香世家，出身艋舺書香世家，在豐富的人文薰陶與耳濡目染之中，從小便孕育出對生活體驗獨有的觀察和思索。當然，最廣為人知的，莫過於他十來歲時就出版了第一本作品《七娘媽生》，被稱呼為「臺灣的文學少女」。 一切起點是一份作業。就讀龍山公學校（今臺北市龍山國小）三年級時，級任老師池田敏雄出了一道與生活周遭有關的作文題，他寫下臺灣人冬至搓湯圓的情景，從此一路寫了下去；他寫傳統節慶、鄉野傳說，以及個人的所知所見，作品經池田敏雄引介給西川滿、立石鐵臣等，而有賴這些文壇前輩支持，黃鳳姿的文章不久便集結成冊出版發行，在臺、日兩地引起不小的注目。 黃鳳姿不僅寫自己的親身經歷，也寫他從眾女性長輩口中聽到的禮俗、軼事，這亦凸顯出他筆下的臺灣，不只是他身處的臺灣，還有他好奇的、想像的、嚮往的臺灣。而在一百年後，這些日常書寫作品像修復過的膠卷，帶我們走進上個世紀的臺灣，重回當時的文化現場，尤其是看見艋舺的昔日風華。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語繪本",
+            "start_time": "2026-10-03T16:00:00+08:00",
+            "end_time": "2026-10-03T17:30:00+08:00",
+            "venue": "青雲閣",
+            "address": "台灣台北市萬華區環河南路二段5巷6弄20號",
+            "organizer": "木水月出版有限公司",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609140340221048585938",
+            "registration_url": "https://www.accupass.com/event/2609140340221048585938",
+            "cover_image": "https://static.accupass.com/eventbanner/2609140336496722902840.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "臺灣台語版《風華艋舺ê文學少女──黃鳳姿ê寫作人生》",
+          "quotes": [
+            "臺灣台語版《風華艋舺ê文學少女──黃鳳姿ê寫作人生》",
+            "木水月出版有限公司"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.341667+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609100905344368537350": {
+      "content_version": 2,
+      "content_sha256": "1f7cc13c31eaba323c3b73d1c718a62e9ea8a7c862a60491a03431d856660801",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609100905344368537350_20261025_1030",
+            "title": "2026華文朗讀節 一粒米．好土台灣【朗讀沙龍】10/25週日場",
+            "description": "【朗讀沙龍】撖捱等介土地糴米--跟我們的土地買米 ►活動時間 2026年10月25日(日) 10:30～12:00 ►活動地點 華山1914文化創意產業園區 中3館2樓拱廳 （捷運忠孝新生站1號出口走路5分鐘，鄰近園區春水堂與服務中心，二層樓古蹟建築）   〈撖捱等介土地糴米〉是詩人鍾永豐2006年寫給林生祥《種樹》專輯的詞。來自美濃的鍾永豐，和來自潮州的王昭華，同屬南方小鎮外圍庄頭的離農子弟，多年來以各自母語寫詩與散文，以誌那片賣我們米的土地。此次朗讀節首度同台，將朗讀詩作與散文，展開以「米」為主題的對話。   ►講者介紹 王昭華 潮州鎮蓬萊里人，現居高雄，一日自煮一餐，一次買半斗米。 淡水時代於瓦窯坑結識鍾永豐，深受啟發。 電影《大佛普拉斯》片尾曲〈有無〉填詞人；台語散文《我隨意，你盡量》獲2023年臺灣文學金典獎。   鍾永豐 詞作者，1964年次， 成長於牛繩末端， 略知雜草的可食性， 熟諳菸稻的生產過程。     ►注意事項 ◎ 活動皆安排影像拍攝與紀錄，報名本活動即同意個人肖像權供主辦單位紀錄及宣傳使用。 ◎ 活動在2樓，無電梯須爬樓梯，現場備有無障礙設施 ◎ 當日活動於開始前30分鐘開放報到，敬請準時抵達，以利活動順利進行。 ◎ 若您不克前來，可提早登入accupass取消您的報名，將名額讓給其他人。 ◎ 主辦單位至慢於活動前一至二天寄發活動資訊，請留意 E-mail 通知，謝謝。 ◎ 如遇特殊天氣或其他不可抗力因素，活動可能會延期或取消，將及時通知參加者。 ◎ 主辦單位保留隨時修改、變更、暫停或終止本活動內容之權利。 無障礙設施說明 場地位於古蹟二樓，現場無一般電梯，若有輪椅使用者或行動不便者，可使用無障礙升降爬梯設備，可事先告知，以利安排工作人員協助上下樓。   ►洽詢電話    02-23581914分機122，陳小姐 ►洽詢信箱    foundation@huashan1914.com",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-25T10:30:00+08:00",
+            "end_time": "2026-10-25T12:00:00+08:00",
+            "venue": "華山1914文化創意產業園區 中3館2樓拱廳",
+            "address": "台灣台北市中正區八德路一段1號",
+            "organizer": "財團法人台灣文創發展基金會",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609100905344368537350",
+            "registration_url": "https://www.accupass.com/event/2609100905344368537350",
+            "cover_image": "https://static.accupass.com/eventbanner/2609100937321989963733.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "多年來以各自母語寫詩與散文",
+          "quotes": [
+            "多年來以各自母語寫詩與散文",
+            "財團法人台灣文創發展基金會"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.358277+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609180844161047784508": {
+      "content_version": 2,
+      "content_sha256": "5529b60e463755768d145e5c2d3bd1906ea05a0e96286538c4dee63dab8f89d4",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609180844161047784508_20261016_2000",
+            "title": "最孤獨的時候，有最溫暖的陪伴：幾米經典繪本《月娘袂記矣》分享會【台北場】",
+            "description": "最孤獨的時候，有最溫暖的陪伴   《月亮忘記了》是讀者認為最暖心的幾米經典繪本，失落的月亮與孤單的男孩互相陪伴，度過了生命中最幽暗的時期。這段細緻溫暖的情感在翻譯成全世界十二種語言後，重新用台語來訴說，讓《月娘袂記矣》台文版撫慰那段不被人所理解、感覺被世界遺棄的歲月，用熟悉的語言在心底點亮溫柔的光。 無意中相拄， 煞為烏暗的性命紮來溫柔美好的光。   上深的暗暝就欲過去， 你看，月娘出來矣。     贊助單位：文化部  #文化部國家語言整體方案支持  、 #台語主流化    活動資訊  ▍最孤獨的時候，有最溫暖的陪伴：幾米經典繪本《月娘袂記矣》分享會【台北場】 ▨時間｜10/16(五) 20:00-21:00 ▨地點｜誠品書店松菸 3F FORUM（臺北市信義區新仁里菸廠路88號) ▨講者｜幾米 ▨嘉賓｜洪明道 ▨報名｜免費入場 ▨簽書會｜限定名額50人。預計21:00開始簽書至結束，簽書須領取號碼牌。 ▨號碼牌取得辦法｜活動前半小時憑大塊文化出版的幾米作品於【報到處】兌換簽書號碼牌乙張，每人限領乙張，不得代領，領完為止。 ▎活動流程 19:30 開放報到、領取號碼牌 20:00 活動開始 21:00 開始簽書 ▎活動須知 1.號碼牌採先到先得，號碼牌僅代表簽書順序。 2.簽書時請等候工作人員叫號排隊，過號者請待區間叫號完畢再依指示上前。 3.僅限簽幾米正版出版品及正版授權周邊商品。 4.簽書時開放署名、不開放合照，可以側拍、勿開閃光燈。 5.主辦單位保有修改及終止本活動之權利，若有調整將依現場工作人員公告為準。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語繪本",
+            "start_time": "2026-10-16T20:00:00+08:00",
+            "end_time": "2026-10-16T21:00:00+08:00",
+            "venue": "誠品書店松菸 3F FORUM",
+            "address": "台灣台北市臺北市信義區新仁里菸廠路88號",
+            "organizer": "大塊文化",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609180844161047784508",
+            "registration_url": "https://www.accupass.com/event/2609180844161047784508",
+            "cover_image": "https://static.accupass.com/eventbanner/2609291103392072779881.jpg",
+            "price_info": "免費入場；簽書限50名，需持大塊文化出版的幾米作品領號碼牌。",
+            "is_free": true,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "《月娘袂記矣》台文版",
+          "quotes": [
+            "《月娘袂記矣》台文版",
+            "大塊文化"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.373744+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609160343451609851912": {
+      "content_version": 2,
+      "content_sha256": "62d2c7ec497cee42cfa742ac4ee53df2fb043aadfd15a1b6334e139edaa11302",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609160343451609851912_20270114_1900",
+            "title": "《撕掉「傳承」的標籤：母語創作的當代實踐與審美重塑》張淦勛 × 黃宇寒 × 張嘉祥",
+            "description": "我們談到母語音樂，大眾習慣戴上「文化傳承」的濾鏡，但當代音樂人關注的，早已不單只是語言的留存，而是聲音的更多可能性。 這場對談集結台語、客語與排灣族語的指標創作者，撕掉單一標籤，回歸音樂本質。我們將從創作起點聊起，一路延伸至當代聲響與曲風的碰撞；更直擊產業第一線——聊聊他們如何選擇母語作為創作起點、如何在演算法時代突破語言邊界，憑實力走進大眾的播放清單、以及政策補助資源對生態帶來的真實推力與拉力，聽聽三位創作者如何在市場現實、個人風格與語言流變中找到專屬 C 位。 一起撕掉「母語創作＝傳承」的標籤，邀請你一同擺脫刻板包袱，與當代母語創作者一起重塑屬於這個世代的審美與態度。   黃宇寒 Han 台灣龍潭客家人、印尼華僑二代。以多元文化為養分創作，以最新專輯《Ngai》榮獲第37屆金曲獎最佳客語專輯獎，而《有時有日》、《虛空現下》、《Ngai》三張專輯皆曾三料入圍金曲獎最佳客語歌手、最佳客語專輯及年度專輯獎。2022年發行第三張電子風格專輯《故事力》、2024年推出純粹曲風EP《樹影》，2025年發行第四張專輯《Ngai》，融合客、台、英、粵、法、韓與阿美族語吟唱，開拓客語音樂新視野。持續帶著傳承精神連結在地與世界，展現當代客語創作能量，並拓展跨語言敘事聲響的想像與未來性。   張淦勛 Giyu Tjuljaviya 來自台灣的排灣族創作歌⼿，當代原住⺠⺠謠與獨⽴搖滾的重要聲⾳之⼀，特別聚焦於「都市原住⺠」⻘年世代的⽣命經驗。其⾳樂兼具電影感的深度與鮮明的⼟地感，融合細膩私密的敘事與⽂化認同，探討語⾔流失、遷徙與歸屬感等主題。 首張專輯《雲就要翻過山》融合排灣族身分認同、當代另類聲響與內斂詩意的文學性詞作，於第 36 屆金曲獎榮獲最佳作詞人與專輯製作人等大獎。   張嘉祥 1993年出生。嘉義民雄人，火燒庄張炳鴻之孫。寫小說寫音樂辦活動。現為「庄尾文化聲音工作室」負責人、台語獨立樂團「裝咖人Tsng-kha-lâng」團長。2021年出版《夜官巡場》專輯，入圍第33屆金曲獎最佳新人；2022年出版《夜官巡場》同名小說，獲2023年臺灣文學金典獎、蓓蕾獎。   —--------------------------------------------------------------------------- 《撕掉「傳承」的標籤：母語創作的當代實踐與審美重塑》張淦勛 × 黃宇寒 × 張嘉祥   ｜時間｜2027/01/14（四）19:00–21:00 ｜地點｜屯屯 tūn-tūn Books & Booze 3F（臺北市中山區長安東路一段39號三樓） ｜主辦／策劃｜ 屯屯 tūn-tūn Books & Booze  平權的陣線，需要你一起來湊陣。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2027-01-14T19:00:00+08:00",
+            "end_time": "2027-01-14T21:00:00+08:00",
+            "venue": "屯屯 tūn-tūn Books & Booze 3F",
+            "address": "台灣台北市中山區長安東路一段39號3樓",
+            "organizer": "法律白話文 Plain Law Media",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609160343451609851912",
+            "registration_url": "https://www.accupass.com/event/2609160343451609851912",
+            "cover_image": "https://static.accupass.com/eventbanner/2609160344053374501680.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "這場對談集結台語、客語與排灣族語的指標創作者",
+          "quotes": [
+            "這場對談集結台語、客語與排灣族語的指標創作者",
+            "法律白話文 Plain Law Media"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.389040+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2608280851407382646440": {
+      "content_version": 2,
+      "content_sha256": "1978868388d8c01218f2cac0ae55d243e95ed812fb0e4ac83cca46f53618c76f",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2608280851407382646440_20261120_1930",
+            "title": "2026人權藝術生活節開幕音樂會",
+            "description": "本次演出特別邀集來自華語、臺語、客語、原住民族語及新住民語言的新世代音樂人， 以多元語言與當代音樂風格，呈現臺灣社會豐富而真實的文化樣貌。 透過不同族群與世代的生命經驗交會，讓音樂成為彼此理解與對話的媒介， 也讓人權不再只是歷史課本中的議題，而是與每個人的生活、身分與未來緊密相連。 我們期待透過這場音樂會，讓更多人重新思考： 當社會快速前進時，是否仍願意傾聽那些微弱卻真誠的聲音？ 當面對差異與不理解時，是否仍願意彼此靠近。 因為，當每一種語言都能被聽見，每一段生命都能被理解，人權所追求的平等與尊嚴， 才有真正實現的可能。讓我們在不同的聲音之中，重新學習傾聽，並共同思考一個更包容、 更理解彼此的未來。   時間：11/20（五）19:30 地點：2026 人權藝術生活節官網 禮堂 票價：150元   演出者 邱淑蟬｜金曲35最佳客語專輯，以客語民謠唱出土地情感。  凹與山｜金曲37最佳演唱組合入圍，電氣民謠唱出隱藏記憶。  張淦勛 Giyu Tjuljaviya｜金曲36最佳作詞人，透過音樂的質地帶出族群、文化遷徙的痕跡。 張嘉祥｜金曲33最佳新人入圍，以文學與音樂跨域創作為特色。  桃子A1J｜臺越混血饒舌女聲，融合臺越等多語言創作展現多元文化。   旁白｜柯念萱   音樂團隊  製作人｜張歆宜 音樂總監｜陳品先 弦樂編寫｜吳柏翰 執行製作｜路 現場樂手 吉他｜陳啟原、朱雨民 弦樂｜六藝樂集  小提琴｜吳柏翰、陳婉真 中提琴｜--- 大提琴｜鄭宇彤",
+            "city": "新北市",
+            "district": "",
+            "category": "台語表演",
+            "start_time": "2026-11-20T19:30:00+08:00",
+            "end_time": "2026-11-20T20:30:00+08:00",
+            "venue": "國家人權博物館 白色恐怖景美紀念園區 禮堂",
+            "address": "台灣新北市新店區復興路131號",
+            "organizer": "2026 人權藝術生活節",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2608280851407382646440",
+            "registration_url": "https://www.accupass.com/event/2608280851407382646440",
+            "cover_image": "https://static.accupass.com/eventbanner/2609040203296998349790.jpg",
+            "price_info": "票價150元。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "本次演出特別邀集來自華語、臺語、客語、原住民族語及新住民語言的新世代音樂人",
+          "quotes": [
+            "本次演出特別邀集來自華語、臺語、客語、原住民族語及新住民語言的新世代音樂人",
+            "2026 人權藝術生活節"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.403879+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2608200326361362764597": {
+      "content_version": 2,
+      "content_sha256": "2f619da3174224421029902e65e81e47411cb06d3cf1071a516f433d8e7ab146",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2608200326361362764597_20261003_1610",
+            "title": "【府中15】10月〈乘著光影的篇章〉｜福爾摩沙國際電影節巡迴放映《以愛致父（劉維崇教授傳記紀錄片）》、《打開花園的門》、《關於遺留之物》",
+            "description": "10/3 (六) 16:10 《以愛致父（劉維崇教授傳記紀錄片）》、《打開花園的門》、《關於遺留之物》 ★ 映後座談 索票日期：9/26(六) 9:30 分級：普遍級、普遍級、普遍級   ● 【映後座談】講者： 《以愛致父》導演洪馬克、《打開花園的門》導演陳志漢 ● 《以愛致父（劉維崇教授傳記紀錄片）》 紀錄片｜2026｜臺灣｜HD｜35分鐘｜國語發音｜中文字幕｜普遍級 導演：洪馬克 ★2025日本歐亞電影節傳統文化傳播獎 本片是臺灣戰後文壇「神秘學者」劉維崇教授的傳記。影片透過其女劉沙林的深情視角，溫柔揭開這位畢生奉獻於教育、文學與藝術的國學巨擘的生命世界。片中呈現了劉教授出神入化的甲骨文書法等珍貴作品，並透過學生與後輩學者的訪談，勾勒出他活潑紮實、誨人不倦的教學風範，以及他對臺灣語文教育的深遠貢獻。   ● 《打開花園的門》 紀錄片｜2026｜臺灣｜HD｜31分鐘｜國、客語發音｜中文字幕｜普遍級 導演：陳志漢 ★2025 水里影展 陳韻如（好好小姐）從小就在客語環境中長大，但她長大後才開始學習客語，並且用戲劇的方式把客語帶回到生活中。《自私的巨人》改編自王爾德的童話故事，舞台上，演員及戲偶們與「巨人」在花園的圍牆內外追逐、對話，讓原本陌生的觀眾，也跟著踏進這個花園。與此同時，好好小姐也正視自己對於操偶師身分的未來發展。   ● 《關於遺留之物》 紀錄片｜2026｜臺灣｜HD｜42分鐘｜韓、國、臺語語發音｜中文字幕｜普遍級 導演：朴秀敏 ★2025 水里影展 失去母親、又要照顧懷孕妻子的景木，長久以來壓抑著自己的悲傷。在完成第一本旅行隨筆書的出版工作後，他再次回到與母親第一次出國旅行的臺灣水里。在那裡，他遇見了林文珊，一位早一步送走自己兒子的母親。透過這次相遇，景木壓抑已久的思母之情如潮水般湧上心頭。他決定在這段旅程中，勇敢直視那份長久以來逃避的悲傷。   入場須知 1.影片放映前20分鐘開放入場 2.索票觀眾,需於影片放映前5分鐘完成進場。 3.影片放映20分鐘後禁止入場。",
+            "city": "新北市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-03T16:10:00+08:00",
+            "end_time": "2026-10-03T18:30:00+08:00",
+            "venue": "府中15-紀錄片放映院",
+            "address": "台灣新北市板橋區府中路15號B1",
+            "organizer": "府中15-紀錄片放映院",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2608200326361362764597",
+            "registration_url": "https://www.accupass.com/event/2608200326361362764597",
+            "cover_image": "https://static.accupass.com/eventbanner/2609020412041655427150.jpg",
+            "price_info": "須先索票；費用未公告。",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "韓、國、臺語語發音",
+          "quotes": [
+            "韓、國、臺語語發音",
+            "府中15-紀錄片放映院"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.440164+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609220651581190015945": {
+      "content_version": 2,
+      "content_sha256": "6337e64fe1c0753ad95ab850142d9633bd6bc8db3cc15d95816a846dd794bffb",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609220651581190015945_20261025_1400",
+            "title": "【凝望家鄉】10/25 陌路兄弟 Road's End in Taiwan + 映後座談",
+            "description": "觀影須知 網路索票優先入場，請先 出示電子票券 或身分證件並簽到始完成報到。惟 開演前10分鐘 未完成報到者，將依現場狀況釋出座位予現場候補。 請於電影開演前30分鐘至現場報到。 為維護觀影品質， 開演20分鐘後 禁止入場。 二樓影廳禁止飲食，只限白開水。   │中壢光影電影館 │十月主題影展｜凝望家鄉 【主題影展：凝望家鄉】 10/25 (日) 14:00 陌路兄弟 Road's End in Taiwan + 映後座談 瑪莉亞尼科里埃爾｜2025｜臺灣、瑞士｜劇情｜HD｜91分｜ 護 ｜國語、英語、臺語 ★2025 瑞士索倫圖恩影展觀眾獎提名 ★2025 台北電影節 藍色的信封從臺灣飄洋過海到瑞士，裝著關於達米恩未曾知曉的身世。原以為早逝的父親竟才剛離世，更有遺產等著他繼承簽字。帶著對異國的好奇興奮和對血脈的迷茫未知，達米恩孤身一人來到臺北，卻發現父親不只他一個孩子。同父異母的臺灣哥哥急於拿錢了事，他則一心追逐著照片中的故事，被迫結伴同行的兩人，隨著手中的地址，在尋找其他繼承人的公路上一路行駛。       │中壢光影電影館 │十月主題影展｜凝望家鄉 十月適逢桃園眷村文化節，中壢光影電影館推出「凝望家鄉」主題影展，精選來自不同國家與文化背景的電影作品，帶領觀眾看見遷徙、移居與文化交流所交織出的多元故事。從離開熟悉土地的旅程，到在異鄉重新建立歸屬的日常；從世代記憶的傳承，到不同文化之間的相遇與理解，每一部作品都映照著人們對家與認同的想像。邀請您跟隨銀幕中的人物，一同走過他鄉與故鄉之間的旅程，在電影中看見文化交會的豐富風景。   【策展人介紹】 徐慶珠（導演） 世新大學、日本青山女子短期大學畢業，主修大眾傳播學。1983年進入影視產業，跨足廣告、電視、唱片、藝人經紀、電影版權發行等領域，2015年首次於電影《五月一號》擔任製片人，2019年推出首部執導劇情長片《最是橙黃橘綠時》。   【完整場次資訊】 https://www.taoyuan.arts-cinema.com/ 【十月節目手冊資訊】         【索票觀影流程】 1.  請於Accupass活動通網站上報名，收到活動確認信即完成報名。 2.  請於開演前30分鐘至現場報到並出示電子票券 ，開演前10分鐘未完成報到者，將釋出座位予現場候補。 3. 開演前30分鐘開放現場排隊候補，開演前10分鐘依現場狀況候補入場。 4. 為維護觀影品質，開演20分鐘後禁止入場。 【注意事項】 * 活動過程會拍照及攝影，僅作為紀錄及宣傳使用，參與本活動即視為同意中壢光影使用其肖像之權利。 *  電影免費放映，每場次座位有限，索完為止。 *  開演前 10 分鐘開放入場，採自由入座。 *  上述事項若有未盡事宜，中壢光影電影館保留活動更動之權利。 *  最新訊息請上官方網站、粉絲專頁查詢，或來電洽詢。 【館場資訊】 中壢光影電影館 Zhongli Arts Cinema 聯絡地址 ｜桃園市中壢區龍清街116巷31號 開館時間 ｜13:00-21:00（週一休館） 聯絡洽詢 ｜03-458-1598 / 03-332-2592 #8711 官方網站  ｜ Facebook （如有任何問題，請私訊FB小編） *** 影廳注意事項 *** ❶ 影廳內禁止飲食、吸菸及攜帶寵物 ❷ 觀賞電影時，請關閉行動電話或轉為靜音震動 ❸ 為維護著作權，放映期間請勿拍照及錄影 ❹ 為維持廳內逃生動線，請勿逗留、站立或坐在廳內走道與其他非座位處",
+            "city": "桃園市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-25T14:00:00+08:00",
+            "end_time": "2026-10-25T15:35:00+08:00",
+            "venue": "中壢光影電影館",
+            "address": "台灣桃園市中壢區龍清街116巷31號",
+            "organizer": "中壢光影電影館",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609220651581190015945",
+            "registration_url": "https://www.accupass.com/event/2609220651581190015945",
+            "cover_image": "https://static.accupass.com/eventbanner/2609220652171436549216.jpg",
+            "price_info": "免費放映，需索票；開演前10分鐘未報到釋出候補。",
+            "is_free": true,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "國語、英語、臺語",
+          "quotes": [
+            "國語、英語、臺語",
+            "中壢光影電影館"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.455112+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609220559499387979350": {
+      "content_version": 2,
+      "content_sha256": "a7ae5299c8f135eacf6168867a4e6cf3c2d9373aea0d27854316b370d97d8008",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609220559499387979350_20261004_1400",
+            "title": "【凝望家鄉】10/04 徘徊年代 Days Before the Millennium",
+            "description": "觀影須知 網路索票優先入場，請先 出示電子票券 或身分證件並簽到始完成報到。惟 開演前10分鐘 未完成報到者，將依現場狀況釋出座位予現場候補。 請於電影開演前30分鐘至現場報到。 為維護觀影品質， 開演20分鐘後 禁止入場。 二樓影廳禁止飲食，只限白開水。   │中壢光影電影館 │十月主題影展｜凝望家鄉 【主題影展：凝望家鄉】 10/04 (日) 14:00 徘徊年代 Days Before the Millennium 張騰元｜2021｜臺灣｜劇情｜HD｜148分｜ 普 ｜國語、臺語、越南語 ★2021 台北電影節國際新導演競賽 ★2021 大阪亞洲電影節最佳影片提名 ★2022 德國漢堡影展 越南女子文慧在風起雲湧的九零年代，遠嫁繁榮的臺灣。原以為迎接她的是幸福與機會，卻被荒郊磚房裡的現實壓迫得幾乎窒息。隨著臺灣的社會變動不斷吞噬文慧夫家，她的婚姻逐漸成為夢靨，而她也必須在異鄉困境之中重新出發。千禧年後的臺灣都會裡，一名擔任徵信探員的神祕越南女子，在文慧的故事中看見自己的理想，進而追尋起文慧的過去......旅途中，她竟接連遇見如魅影般魔幻、又帶著既視感的人事物。         │中壢光影電影館 │十月主題影展｜凝望家鄉 十月適逢桃園眷村文化節，中壢光影電影館推出「凝望家鄉」主題影展，精選來自不同國家與文化背景的電影作品，帶領觀眾看見遷徙、移居與文化交流所交織出的多元故事。從離開熟悉土地的旅程，到在異鄉重新建立歸屬的日常；從世代記憶的傳承，到不同文化之間的相遇與理解，每一部作品都映照著人們對家與認同的想像。邀請您跟隨銀幕中的人物，一同走過他鄉與故鄉之間的旅程，在電影中看見文化交會的豐富風景。   【策展人介紹】 徐慶珠 （ 導演 ） 世新大學、日本青山女子短期大學畢業，主修大眾傳播學。1983年進入影視產業，跨足廣告、電視、唱片、藝人經紀、電影版權發行等領域，2015年首次於電影《五月一號》擔任製片人，2019年推出首部執導劇情長片《最是橙黃橘綠時》。   【完整場次資訊】 https://www.taoyuan.arts-cinema.com/ 【十月節目手冊資訊】         【索票觀影流程】 1.  請於Accupass活動通網站上報名，收到活動確認信即完成報名。 2. 請於開演前30分鐘至現場報到並出示電子票券，開演前10分鐘未完成報到者，將釋出座位予現場候補。 3. 開演前30分鐘開放現場排隊候補，開演前10分鐘依現場狀況候補入場。 4. 為維護觀影品質，開演20分鐘後禁止入場。 【注意事項】 *  電影免費放映，每場次座位有限，索完為止。 *  開演前 10 分鐘開放入場，採自由入座。 *  上述事項若有未盡事宜，中壢光影電影館保留活動更動之權利。 *  最新訊息請上官方網站、粉絲專頁查詢，或來電洽詢。 【館場資訊】 中壢光影電影館 Zhongli Arts Cinema 聯絡地址 ｜桃園市中壢區龍清街116巷31號 開館時間 ｜13:00-21:00（週一休館） 聯絡洽詢 ｜03-458-1598 / 03-332-2592 #8711 官方網站  ｜ Facebook （如有任何問題，請私訊FB小編） *** 影廳注意事項 *** ❶ 影廳內禁止飲食、吸菸及攜帶寵物 ❷ 觀賞電影時，請關閉行動電話或轉為靜音震動 ❸ 為維護著作權，放映期間請勿拍照及錄影 ❹ 為維持廳內逃生動線，請勿逗留、站立或坐在廳內走道與其他非座位處",
+            "city": "桃園市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-04T14:00:00+08:00",
+            "end_time": "2026-10-04T16:30:00+08:00",
+            "venue": "中壢光影電影館",
+            "address": "台灣桃園市中壢區龍清街116巷31號",
+            "organizer": "中壢光影電影館",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609220559499387979350",
+            "registration_url": "https://www.accupass.com/event/2609220559499387979350",
+            "cover_image": "https://static.accupass.com/eventbanner/2609220602491687181697.jpg",
+            "price_info": "免費放映，需索票；開演前10分鐘未報到釋出候補。",
+            "is_free": true,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "國語、臺語、越南語",
+          "quotes": [
+            "國語、臺語、越南語",
+            "中壢光影電影館"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.471261+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609171337331414810900": {
+      "content_version": 2,
+      "content_sha256": "9c2092b1d466d17c0d2801e0c4037cdc3e2970ead570fdf6ffbc955cd70bbd46",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609171337331414810900_20261108_2000",
+            "title": "《春雨の喜劇力開發研究部》11、12月號",
+            "description": "本筆只刊11月8日，嘉賓妹迪 IN TAIWAN（姚辰穎、謝明璋）；12月6日蓉丹利場不在本筆。單場結束時間未公告，不能沿用系列末場21:30。\n\n《 春雨 の 喜劇力開發研究部 》 11、12月號 ｜節目介紹 Introduction｜ 為了守護所有觀眾的笑容！ 為了創新全新節目的內容！ 為了開發演員的喜劇之力！ 漫才團體—春雨，全心投入、開發他們身上的喜劇力基因， 直到搞笑之力到達120%之前～絕．不．停．歇！   Two Three Comedy 2026年全新週日喜劇夜夜秀 這場演出是由春雨所主辦充滿了「實驗性」的演出 每個月都會邀請一組漫才團體擔任嘉賓一同玩耍 演出內容（可能）有漫才、短劇、單人短劇、搞笑企劃、即興劇、音樂喜劇 … 各種形式！ 如同喜劇驚喜包一般，你可能會看到超棒的演出，也可能看到超普的企劃。 但想讓觀眾快樂的心情，是兩個天秤男不變的保證。 關於這個演出，套一句吳柏毅的台詞：笑點（應該）都點的到。 在此邀請各位成為我們的部員，一邊喝著酒，一邊用笑聲監督我們的開發成果吧！ ｜團隊介紹 Group｜   春雨 由吐槽役—聖博&裝傻役—照明組成的漫才團體。 出道於2023年5月14日，擁有號稱台灣漫才圈最高學歷的三碩士漫才團體。 兩人皆出身於劇場，靠著細緻又厚底子的表演功力在台灣漫才圈佔有一席之地。 至於為什麼叫做春雨 … 《莊子．外物》：「春雨日時，草木怒生。」 宋．陸游〈臨安春雨初霽〉詩：「小樓一夜聽春雨，深巷明朝賣杏花。」  不過跟上面一點關係都沒有，他們只是純粹喜歡通靈王。   ｜時間 Time｜ 2026/ 11 / 08 （日） 20:00(演出前半小時開放入場) ft. 妹迪IN TAIWAN 2026/1 2 / 06 （日） 20:00(演出前半小時開放入場) ft. 蓉丹利   ｜ 地點  Place ｜ 23 喜劇俱樂部 ( 台 北市中山區林森北路286號 )   ｜票價 Ticket｜ 4 0 0 元 --- 嘉賓介紹： 11月號 妹迪IN TAIWAN   阮是臺灣製造少年家-妹迪 IN TAIWAN」。 團體於2024年由表妹（姚辰穎）、胡迪（謝明璋）所組成。 台語與劇場環境成長的兩人以台語創作漫才練喙花， 期待透過作品讓更多人喜歡台語的趣味。   12月號 蓉丹利 相愛相殺的漫才組合，由天生傻妹性格的小蓉包，與鋼鐵直男的丹利組成。作品常以生活觀察、時事話題來創作。小蓉包的奇想世界，加上丹利無可奈何的吐槽，是個歡喜冤家的喜劇搭檔。 ｜注意事項  notice｜ 「禁止酒駕，酒後不開車 安全有保障」、「未滿18歲請勿飲酒」",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語表演",
+            "start_time": "2026-11-08T20:00:00+08:00",
+            "end_time": null,
+            "venue": "23 喜劇俱樂部",
+            "address": "台灣台北市林森北路286號地下一樓",
+            "organizer": "Two Three Comedy",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609171337331414810900",
+            "registration_url": "https://www.accupass.com/event/2609171337331414810900",
+            "cover_image": "https://static.accupass.com/eventbanner/2609171342407997778670.jpg",
+            "price_info": "票價400元。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "台語與劇場環境成長的兩人以台語創作漫才練喙花",
+          "quotes": [
+            "台語與劇場環境成長的兩人以台語創作漫才練喙花",
+            "Two Three Comedy"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.488090+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609091313429433024630": {
+      "content_version": 2,
+      "content_sha256": "60d28d4dbc23c491c5a30ee1f32799a03af01f6bc6709838f175f5abfb08dcf5",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609091313429433024630_20261003_1030",
+            "title": "萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」",
+            "description": "本場主題：青草綻放；國台語混合。\n\n萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」 Wanhua in Many Colors: Coexisting & Flourishing — A Teahouse Culture Immersive Walking Theater Experience 推開茶室木門，走進被時光凝結的常民生活現場。這不僅是一場走讀導覽，更是一段融合角色演繹、感官互動與真實場域的文化體驗。邀您化身故事中的旅人，親身走進老城客廳，讀懂屬於萬華的生命記憶與溫暖日常。 Open the door to an old teahouse and step into everyday life from another time. This is more than a walking tour. It’s a cultural experience that brings together live performances, sensory experiences, and real places in Wanhua. Join us as a traveler in the story, step into Wanhua’s “living room,” and discover the memories, stories, and everyday warmth of this old neighborhood. 🌿 主題一｜《青草綻放》（臺灣台語場） 自幼赴美的 Nancy，為了替住院的阿公祈福，重新踏上了這趟萬華歸鄉旅途。在導覽員的帶領下，觀眾將與 Nancy 一同從百年青草巷啟程，品飲青草茶、辨識草藥。隨後步入剝皮寮的紅磚木窗下，尋找昔日「老茶桌仔」遺留的歷史線索。在這趟充滿草藥清涼與歷史氣息的五感走讀中，Nancy 究竟會遇見誰？這趟尋根之旅，又將如何揭開萬華強韌的生活美學與在地真切的人情溫度？邀請您親自走入街區，一探究竟。 (青草綻放場次補充說明：兩場活動戲劇演出與導覽皆相同，演出以在地生活最真實的「國台語混合」自然呈現，不懂深奧台語也能輕鬆融入，非常適合長輩或闔家同行！) 🍵 主題二｜《萬象品茗》（中英雙語場） 自幼赴美的 Nancy 為了探望生病的阿公重返萬華，邀請觀眾化身「茶友」，循著阿公常去的「金孔雀」、「艋舺茶館」與「牽手茶室」展開尋味之旅。旅途中 Nancy 意外重逢國小同學阿珠與美滿，在熟悉的老歌與茶香中，看見茶室女性為家計打拚的辛酸，也體會她們用溫暖陪伴老客人的真情—原來阿公念念不忘的不只是茶，更是「茶燒燒，心嘛燒燒」的老城人情味。 (萬象品茗場次補充說明：兩場活動戲劇演出與導覽皆相同，劇中穿插「國台語與部分英文日常互動」，導覽則以「國台語混合」解說。10/4 中英文雙語場次特別為外國友人備有「英文戲劇導覽小卡」，無論是外國朋友或是想要帶外國友人體驗在地文化的民眾，都能瞭解萬華茶室文化！) 票務與參與資訊 活動地點：萬華區街區與在地茶室 集合地點：捷運龍山寺站 活動場次：  【主題一｜青草綻放】 10/03 (六) 10:30-12:00(臺灣台語場) 10/17 (六) 10:30-12:00 【主題二｜萬象品茗】 10/04 (日) 10:30-12:00 (中英雙語場) 10/18 (日) 10:30-12:00 票價資訊： 一般票：NT$ 250/人 愛心票：NT$ 150/人(65歲以上長者、1歲以下兒童) 親子套票：NT$ 300/組(1位成人及1位12歲以下兒童) 報名與活動注意事項 實名制與保險：為保障參與者權益，本活動全程投保公共意外責任險。購票報名時，請務必確實填寫參加者之真實中文姓名、身分證字號與出生年月日。 準時報到：請於活動開始前 10 分鐘抵達集合地點，領取導覽設備與聆聽行前說明，以利準時出發。 穿著與設備：活動全程需於街區步道與室內空間步行，建議穿著輕便衣物與好走的鞋子。 觀賞禮儀：演出過程中包含演員實境互動，請配合現場引路人引導；為維持整體氛圍，進行中請避免大聲喧嘩。 意見回饋：活動尾聲將安排短暫交流，懇請參與者協助填寫回饋問卷，共同為萬華文化推廣提供寶貴建言。 退票規範：本活動依照 ACCUPASS 平台退改政策辦理。活動當日因個人因素逾時未到或缺席者，恕不予退費。 如遇天然災害以致活動延期，本活動將「青草綻放」場次延期至10月24日舉辦；「萬象品茗」場次延期至10月25日舉辦。   Program Introduction & Storylines 🌿 Theme 1｜\"Herbal Blooms\" (Taiwanese Hokkien Session) Nancy grew up in the United States. Now, she returns to Wanhua to pray for her grandfather, who is in the hospital. Led by a local guide, you’ll join Nancy on a journey through the century-old Herb Lane. Along the way, you’ll taste herbal tea and learn about local medicinal plants. Then, you’ll walk through Bopiliao Historic Block, passing its red-brick walls and wooden windows as you search for clues left behind by the old tea stalls. Along this journey filled with the fresh scent of herbs and the atmosphere of old Wanhua, who will Nancy meet? And what will she discover about the resilience, everyday beauty, and human warmth of Wanhua? Come walk the streets with us and find out for yourself.  🍵 Theme 2｜\"Tea & Stories of Wanhua\" (Mandarin & English Bilingual Session) Nancy grew up in the United States and returns to Wanhua to visit her sick grandfather. Join Nancy as a “tea companion” and follow the places her grandfather used to visit, including Golden Peacock, Bangka Teahouse, and Hand-in-Hand Teahouse. Along the way, Nancy unexpectedly reunites with her old elementary school classmates, Ah Zhu and Mei Man. As old songs play and the aroma of tea fills the air, she learns about the struggles these teahouse women faced while supporting their families, as well as the warmth and companionship they shared with their longtime customers. Nancy begins to understand that what her grandfather missed was not just the tea, but the warmth of the people and the sense of community that made old Wanhua special. Event Info Locations: Wanhua historic neighborhood streets & local authentic teahouses Meeting Point: MRT Longshan Temple Station Session Schedule: 【Theme 1｜Herbal Blooms】 10/03 (Sat) 10:30–12:00 (Taiwanese Hokkien Session) 10/17 (Sat) 10:30–12:00 (Herbal Blooms Note: Both sessions are exactly the same. The play and tour are in a natural mix of Mandarin and Taiwanese, just like real daily life here. You don’t need to know advanced Taiwanese to enjoy it—it's great for seniors and the whole family!) 【Theme 2｜Tea & Stories of Wanhua】 10/04 (Sun) 10:30–12:00 (Mandarin & English Bilingual Session) 10/18 (Sun) 10:30–12:00 (Tea & Stories of Wanhua Note: Both sessions are exactly the same. The actors chat naturally in a mix of Mandarin, Taiwanese, and some everyday English, while the tour itself is in Mandarin and Taiwanese. For the Oct 4 bilingual session, we have a handy English Guide Card ready for foreign guests. Whether you're visiting from abroad or bringing friends from overseas, everyone can easily follow along and enjoy Wanhua’s teahouse culture!)    Ticket Prices: General Ticket: NT$ 250 / person Concession Ticket: NT$ 150 / person (seniors aged 65 and above and infants under 1 year old) Family Package: NT$ 300 / set (1 adult + 1 child under 12) Registration & Insurance Insurance & Registration: Public liability insurance is included for all participants. When signing up, please make sure to provide each attendee’s full legal name, ID/Passport number, and date of birth. Arrival Time: Please arrive at the meeting spot at least 10 minutes early to pick up your audio gear and listen to a brief orientation so we can head out on time. What to Wear: We’ll be walking through outdoor alleys and visiting indoor teahouses. We strongly recommend wearing comfortable clothes and walking shoes. Tour Etiquette: This experience includes live, interactive performances. Please follow your guide's directions and keep noise to a minimum so everyone can enjoy the immersive atmosphere. Feedback: We’ll have a brief wrap-up chat at the end. We’d love it if you could take a couple of minutes to fill out our quick survey and help us keep sharing Wanhua's culture! Refund Policy: Ticket changes and refunds follow ACCUPASS policies. Unfortunately, no refunds can be given for late arrivals or no-shows on the event day. Rescheduling Due to Severe Weather: If the event has to be postponed due to severe weather (such as a typhoon warning), Herbal Blooms will be rescheduled to October 24, and Tea & Stories of Wanhua will be rescheduled to October 25.   主辦單位：臺北市政府文化局 執行單位：閱野文創股份有限公司",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-03T10:30:00+08:00",
+            "end_time": "2026-10-03T12:00:00+08:00",
+            "venue": "捷運龍山寺站集合；萬華區街區與在地茶室",
+            "address": "台灣台北市萬華區富民里西園路一段153號",
+            "organizer": "閱野文創股份有限公司",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609091313429433024630",
+            "registration_url": "https://www.accupass.com/event/2609091313429433024630",
+            "cover_image": "https://static.accupass.com/eventbanner/2609091308024646574060.jpg",
+            "price_info": "一般票250元；65歲以上及1歲以下150元；親子套票300元（1成人及1名12歲以下兒童）。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "導覽則以「國台語混合」解說",
+          "quotes": [
+            "導覽則以「國台語混合」解說",
+            "閱野文創股份有限公司"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609091313429433024630_20261004_1030",
+            "title": "萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」",
+            "description": "本場主題：萬象品茗；國台語混合、部分英文，10/4另有英文戲劇導覽小卡。\n\n萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」 Wanhua in Many Colors: Coexisting & Flourishing — A Teahouse Culture Immersive Walking Theater Experience 推開茶室木門，走進被時光凝結的常民生活現場。這不僅是一場走讀導覽，更是一段融合角色演繹、感官互動與真實場域的文化體驗。邀您化身故事中的旅人，親身走進老城客廳，讀懂屬於萬華的生命記憶與溫暖日常。 Open the door to an old teahouse and step into everyday life from another time. This is more than a walking tour. It’s a cultural experience that brings together live performances, sensory experiences, and real places in Wanhua. Join us as a traveler in the story, step into Wanhua’s “living room,” and discover the memories, stories, and everyday warmth of this old neighborhood. 🌿 主題一｜《青草綻放》（臺灣台語場） 自幼赴美的 Nancy，為了替住院的阿公祈福，重新踏上了這趟萬華歸鄉旅途。在導覽員的帶領下，觀眾將與 Nancy 一同從百年青草巷啟程，品飲青草茶、辨識草藥。隨後步入剝皮寮的紅磚木窗下，尋找昔日「老茶桌仔」遺留的歷史線索。在這趟充滿草藥清涼與歷史氣息的五感走讀中，Nancy 究竟會遇見誰？這趟尋根之旅，又將如何揭開萬華強韌的生活美學與在地真切的人情溫度？邀請您親自走入街區，一探究竟。 (青草綻放場次補充說明：兩場活動戲劇演出與導覽皆相同，演出以在地生活最真實的「國台語混合」自然呈現，不懂深奧台語也能輕鬆融入，非常適合長輩或闔家同行！) 🍵 主題二｜《萬象品茗》（中英雙語場） 自幼赴美的 Nancy 為了探望生病的阿公重返萬華，邀請觀眾化身「茶友」，循著阿公常去的「金孔雀」、「艋舺茶館」與「牽手茶室」展開尋味之旅。旅途中 Nancy 意外重逢國小同學阿珠與美滿，在熟悉的老歌與茶香中，看見茶室女性為家計打拚的辛酸，也體會她們用溫暖陪伴老客人的真情—原來阿公念念不忘的不只是茶，更是「茶燒燒，心嘛燒燒」的老城人情味。 (萬象品茗場次補充說明：兩場活動戲劇演出與導覽皆相同，劇中穿插「國台語與部分英文日常互動」，導覽則以「國台語混合」解說。10/4 中英文雙語場次特別為外國友人備有「英文戲劇導覽小卡」，無論是外國朋友或是想要帶外國友人體驗在地文化的民眾，都能瞭解萬華茶室文化！) 票務與參與資訊 活動地點：萬華區街區與在地茶室 集合地點：捷運龍山寺站 活動場次：  【主題一｜青草綻放】 10/03 (六) 10:30-12:00(臺灣台語場) 10/17 (六) 10:30-12:00 【主題二｜萬象品茗】 10/04 (日) 10:30-12:00 (中英雙語場) 10/18 (日) 10:30-12:00 票價資訊： 一般票：NT$ 250/人 愛心票：NT$ 150/人(65歲以上長者、1歲以下兒童) 親子套票：NT$ 300/組(1位成人及1位12歲以下兒童) 報名與活動注意事項 實名制與保險：為保障參與者權益，本活動全程投保公共意外責任險。購票報名時，請務必確實填寫參加者之真實中文姓名、身分證字號與出生年月日。 準時報到：請於活動開始前 10 分鐘抵達集合地點，領取導覽設備與聆聽行前說明，以利準時出發。 穿著與設備：活動全程需於街區步道與室內空間步行，建議穿著輕便衣物與好走的鞋子。 觀賞禮儀：演出過程中包含演員實境互動，請配合現場引路人引導；為維持整體氛圍，進行中請避免大聲喧嘩。 意見回饋：活動尾聲將安排短暫交流，懇請參與者協助填寫回饋問卷，共同為萬華文化推廣提供寶貴建言。 退票規範：本活動依照 ACCUPASS 平台退改政策辦理。活動當日因個人因素逾時未到或缺席者，恕不予退費。 如遇天然災害以致活動延期，本活動將「青草綻放」場次延期至10月24日舉辦；「萬象品茗」場次延期至10月25日舉辦。   Program Introduction & Storylines 🌿 Theme 1｜\"Herbal Blooms\" (Taiwanese Hokkien Session) Nancy grew up in the United States. Now, she returns to Wanhua to pray for her grandfather, who is in the hospital. Led by a local guide, you’ll join Nancy on a journey through the century-old Herb Lane. Along the way, you’ll taste herbal tea and learn about local medicinal plants. Then, you’ll walk through Bopiliao Historic Block, passing its red-brick walls and wooden windows as you search for clues left behind by the old tea stalls. Along this journey filled with the fresh scent of herbs and the atmosphere of old Wanhua, who will Nancy meet? And what will she discover about the resilience, everyday beauty, and human warmth of Wanhua? Come walk the streets with us and find out for yourself.  🍵 Theme 2｜\"Tea & Stories of Wanhua\" (Mandarin & English Bilingual Session) Nancy grew up in the United States and returns to Wanhua to visit her sick grandfather. Join Nancy as a “tea companion” and follow the places her grandfather used to visit, including Golden Peacock, Bangka Teahouse, and Hand-in-Hand Teahouse. Along the way, Nancy unexpectedly reunites with her old elementary school classmates, Ah Zhu and Mei Man. As old songs play and the aroma of tea fills the air, she learns about the struggles these teahouse women faced while supporting their families, as well as the warmth and companionship they shared with their longtime customers. Nancy begins to understand that what her grandfather missed was not just the tea, but the warmth of the people and the sense of community that made old Wanhua special. Event Info Locations: Wanhua historic neighborhood streets & local authentic teahouses Meeting Point: MRT Longshan Temple Station Session Schedule: 【Theme 1｜Herbal Blooms】 10/03 (Sat) 10:30–12:00 (Taiwanese Hokkien Session) 10/17 (Sat) 10:30–12:00 (Herbal Blooms Note: Both sessions are exactly the same. The play and tour are in a natural mix of Mandarin and Taiwanese, just like real daily life here. You don’t need to know advanced Taiwanese to enjoy it—it's great for seniors and the whole family!) 【Theme 2｜Tea & Stories of Wanhua】 10/04 (Sun) 10:30–12:00 (Mandarin & English Bilingual Session) 10/18 (Sun) 10:30–12:00 (Tea & Stories of Wanhua Note: Both sessions are exactly the same. The actors chat naturally in a mix of Mandarin, Taiwanese, and some everyday English, while the tour itself is in Mandarin and Taiwanese. For the Oct 4 bilingual session, we have a handy English Guide Card ready for foreign guests. Whether you're visiting from abroad or bringing friends from overseas, everyone can easily follow along and enjoy Wanhua’s teahouse culture!)    Ticket Prices: General Ticket: NT$ 250 / person Concession Ticket: NT$ 150 / person (seniors aged 65 and above and infants under 1 year old) Family Package: NT$ 300 / set (1 adult + 1 child under 12) Registration & Insurance Insurance & Registration: Public liability insurance is included for all participants. When signing up, please make sure to provide each attendee’s full legal name, ID/Passport number, and date of birth. Arrival Time: Please arrive at the meeting spot at least 10 minutes early to pick up your audio gear and listen to a brief orientation so we can head out on time. What to Wear: We’ll be walking through outdoor alleys and visiting indoor teahouses. We strongly recommend wearing comfortable clothes and walking shoes. Tour Etiquette: This experience includes live, interactive performances. Please follow your guide's directions and keep noise to a minimum so everyone can enjoy the immersive atmosphere. Feedback: We’ll have a brief wrap-up chat at the end. We’d love it if you could take a couple of minutes to fill out our quick survey and help us keep sharing Wanhua's culture! Refund Policy: Ticket changes and refunds follow ACCUPASS policies. Unfortunately, no refunds can be given for late arrivals or no-shows on the event day. Rescheduling Due to Severe Weather: If the event has to be postponed due to severe weather (such as a typhoon warning), Herbal Blooms will be rescheduled to October 24, and Tea & Stories of Wanhua will be rescheduled to October 25.   主辦單位：臺北市政府文化局 執行單位：閱野文創股份有限公司",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-04T10:30:00+08:00",
+            "end_time": "2026-10-04T12:00:00+08:00",
+            "venue": "捷運龍山寺站集合；萬華區街區與在地茶室",
+            "address": "台灣台北市萬華區富民里西園路一段153號",
+            "organizer": "閱野文創股份有限公司",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609091313429433024630",
+            "registration_url": "https://www.accupass.com/event/2609091313429433024630",
+            "cover_image": "https://static.accupass.com/eventbanner/2609091308024646574060.jpg",
+            "price_info": "一般票250元；65歲以上及1歲以下150元；親子套票300元（1成人及1名12歲以下兒童）。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "導覽則以「國台語混合」解說",
+          "quotes": [
+            "導覽則以「國台語混合」解說",
+            "閱野文創股份有限公司"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609091313429433024630_20261017_1030",
+            "title": "萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」",
+            "description": "本場主題：青草綻放；國台語混合。\n\n萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」 Wanhua in Many Colors: Coexisting & Flourishing — A Teahouse Culture Immersive Walking Theater Experience 推開茶室木門，走進被時光凝結的常民生活現場。這不僅是一場走讀導覽，更是一段融合角色演繹、感官互動與真實場域的文化體驗。邀您化身故事中的旅人，親身走進老城客廳，讀懂屬於萬華的生命記憶與溫暖日常。 Open the door to an old teahouse and step into everyday life from another time. This is more than a walking tour. It’s a cultural experience that brings together live performances, sensory experiences, and real places in Wanhua. Join us as a traveler in the story, step into Wanhua’s “living room,” and discover the memories, stories, and everyday warmth of this old neighborhood. 🌿 主題一｜《青草綻放》（臺灣台語場） 自幼赴美的 Nancy，為了替住院的阿公祈福，重新踏上了這趟萬華歸鄉旅途。在導覽員的帶領下，觀眾將與 Nancy 一同從百年青草巷啟程，品飲青草茶、辨識草藥。隨後步入剝皮寮的紅磚木窗下，尋找昔日「老茶桌仔」遺留的歷史線索。在這趟充滿草藥清涼與歷史氣息的五感走讀中，Nancy 究竟會遇見誰？這趟尋根之旅，又將如何揭開萬華強韌的生活美學與在地真切的人情溫度？邀請您親自走入街區，一探究竟。 (青草綻放場次補充說明：兩場活動戲劇演出與導覽皆相同，演出以在地生活最真實的「國台語混合」自然呈現，不懂深奧台語也能輕鬆融入，非常適合長輩或闔家同行！) 🍵 主題二｜《萬象品茗》（中英雙語場） 自幼赴美的 Nancy 為了探望生病的阿公重返萬華，邀請觀眾化身「茶友」，循著阿公常去的「金孔雀」、「艋舺茶館」與「牽手茶室」展開尋味之旅。旅途中 Nancy 意外重逢國小同學阿珠與美滿，在熟悉的老歌與茶香中，看見茶室女性為家計打拚的辛酸，也體會她們用溫暖陪伴老客人的真情—原來阿公念念不忘的不只是茶，更是「茶燒燒，心嘛燒燒」的老城人情味。 (萬象品茗場次補充說明：兩場活動戲劇演出與導覽皆相同，劇中穿插「國台語與部分英文日常互動」，導覽則以「國台語混合」解說。10/4 中英文雙語場次特別為外國友人備有「英文戲劇導覽小卡」，無論是外國朋友或是想要帶外國友人體驗在地文化的民眾，都能瞭解萬華茶室文化！) 票務與參與資訊 活動地點：萬華區街區與在地茶室 集合地點：捷運龍山寺站 活動場次：  【主題一｜青草綻放】 10/03 (六) 10:30-12:00(臺灣台語場) 10/17 (六) 10:30-12:00 【主題二｜萬象品茗】 10/04 (日) 10:30-12:00 (中英雙語場) 10/18 (日) 10:30-12:00 票價資訊： 一般票：NT$ 250/人 愛心票：NT$ 150/人(65歲以上長者、1歲以下兒童) 親子套票：NT$ 300/組(1位成人及1位12歲以下兒童) 報名與活動注意事項 實名制與保險：為保障參與者權益，本活動全程投保公共意外責任險。購票報名時，請務必確實填寫參加者之真實中文姓名、身分證字號與出生年月日。 準時報到：請於活動開始前 10 分鐘抵達集合地點，領取導覽設備與聆聽行前說明，以利準時出發。 穿著與設備：活動全程需於街區步道與室內空間步行，建議穿著輕便衣物與好走的鞋子。 觀賞禮儀：演出過程中包含演員實境互動，請配合現場引路人引導；為維持整體氛圍，進行中請避免大聲喧嘩。 意見回饋：活動尾聲將安排短暫交流，懇請參與者協助填寫回饋問卷，共同為萬華文化推廣提供寶貴建言。 退票規範：本活動依照 ACCUPASS 平台退改政策辦理。活動當日因個人因素逾時未到或缺席者，恕不予退費。 如遇天然災害以致活動延期，本活動將「青草綻放」場次延期至10月24日舉辦；「萬象品茗」場次延期至10月25日舉辦。   Program Introduction & Storylines 🌿 Theme 1｜\"Herbal Blooms\" (Taiwanese Hokkien Session) Nancy grew up in the United States. Now, she returns to Wanhua to pray for her grandfather, who is in the hospital. Led by a local guide, you’ll join Nancy on a journey through the century-old Herb Lane. Along the way, you’ll taste herbal tea and learn about local medicinal plants. Then, you’ll walk through Bopiliao Historic Block, passing its red-brick walls and wooden windows as you search for clues left behind by the old tea stalls. Along this journey filled with the fresh scent of herbs and the atmosphere of old Wanhua, who will Nancy meet? And what will she discover about the resilience, everyday beauty, and human warmth of Wanhua? Come walk the streets with us and find out for yourself.  🍵 Theme 2｜\"Tea & Stories of Wanhua\" (Mandarin & English Bilingual Session) Nancy grew up in the United States and returns to Wanhua to visit her sick grandfather. Join Nancy as a “tea companion” and follow the places her grandfather used to visit, including Golden Peacock, Bangka Teahouse, and Hand-in-Hand Teahouse. Along the way, Nancy unexpectedly reunites with her old elementary school classmates, Ah Zhu and Mei Man. As old songs play and the aroma of tea fills the air, she learns about the struggles these teahouse women faced while supporting their families, as well as the warmth and companionship they shared with their longtime customers. Nancy begins to understand that what her grandfather missed was not just the tea, but the warmth of the people and the sense of community that made old Wanhua special. Event Info Locations: Wanhua historic neighborhood streets & local authentic teahouses Meeting Point: MRT Longshan Temple Station Session Schedule: 【Theme 1｜Herbal Blooms】 10/03 (Sat) 10:30–12:00 (Taiwanese Hokkien Session) 10/17 (Sat) 10:30–12:00 (Herbal Blooms Note: Both sessions are exactly the same. The play and tour are in a natural mix of Mandarin and Taiwanese, just like real daily life here. You don’t need to know advanced Taiwanese to enjoy it—it's great for seniors and the whole family!) 【Theme 2｜Tea & Stories of Wanhua】 10/04 (Sun) 10:30–12:00 (Mandarin & English Bilingual Session) 10/18 (Sun) 10:30–12:00 (Tea & Stories of Wanhua Note: Both sessions are exactly the same. The actors chat naturally in a mix of Mandarin, Taiwanese, and some everyday English, while the tour itself is in Mandarin and Taiwanese. For the Oct 4 bilingual session, we have a handy English Guide Card ready for foreign guests. Whether you're visiting from abroad or bringing friends from overseas, everyone can easily follow along and enjoy Wanhua’s teahouse culture!)    Ticket Prices: General Ticket: NT$ 250 / person Concession Ticket: NT$ 150 / person (seniors aged 65 and above and infants under 1 year old) Family Package: NT$ 300 / set (1 adult + 1 child under 12) Registration & Insurance Insurance & Registration: Public liability insurance is included for all participants. When signing up, please make sure to provide each attendee’s full legal name, ID/Passport number, and date of birth. Arrival Time: Please arrive at the meeting spot at least 10 minutes early to pick up your audio gear and listen to a brief orientation so we can head out on time. What to Wear: We’ll be walking through outdoor alleys and visiting indoor teahouses. We strongly recommend wearing comfortable clothes and walking shoes. Tour Etiquette: This experience includes live, interactive performances. Please follow your guide's directions and keep noise to a minimum so everyone can enjoy the immersive atmosphere. Feedback: We’ll have a brief wrap-up chat at the end. We’d love it if you could take a couple of minutes to fill out our quick survey and help us keep sharing Wanhua's culture! Refund Policy: Ticket changes and refunds follow ACCUPASS policies. Unfortunately, no refunds can be given for late arrivals or no-shows on the event day. Rescheduling Due to Severe Weather: If the event has to be postponed due to severe weather (such as a typhoon warning), Herbal Blooms will be rescheduled to October 24, and Tea & Stories of Wanhua will be rescheduled to October 25.   主辦單位：臺北市政府文化局 執行單位：閱野文創股份有限公司",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-17T10:30:00+08:00",
+            "end_time": "2026-10-17T12:00:00+08:00",
+            "venue": "捷運龍山寺站集合；萬華區街區與在地茶室",
+            "address": "台灣台北市萬華區富民里西園路一段153號",
+            "organizer": "閱野文創股份有限公司",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609091313429433024630",
+            "registration_url": "https://www.accupass.com/event/2609091313429433024630",
+            "cover_image": "https://static.accupass.com/eventbanner/2609091308024646574060.jpg",
+            "price_info": "一般票250元；65歲以上及1歲以下150元；親子套票300元（1成人及1名12歲以下兒童）。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "導覽則以「國台語混合」解說",
+          "quotes": [
+            "導覽則以「國台語混合」解說",
+            "閱野文創股份有限公司"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609091313429433024630_20261018_1030",
+            "title": "萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」",
+            "description": "本場主題：萬象品茗；國台語混合、部分英文。\n\n萬華萬象—共生與綻放「茶室文化主題走動式戲劇導覽」 Wanhua in Many Colors: Coexisting & Flourishing — A Teahouse Culture Immersive Walking Theater Experience 推開茶室木門，走進被時光凝結的常民生活現場。這不僅是一場走讀導覽，更是一段融合角色演繹、感官互動與真實場域的文化體驗。邀您化身故事中的旅人，親身走進老城客廳，讀懂屬於萬華的生命記憶與溫暖日常。 Open the door to an old teahouse and step into everyday life from another time. This is more than a walking tour. It’s a cultural experience that brings together live performances, sensory experiences, and real places in Wanhua. Join us as a traveler in the story, step into Wanhua’s “living room,” and discover the memories, stories, and everyday warmth of this old neighborhood. 🌿 主題一｜《青草綻放》（臺灣台語場） 自幼赴美的 Nancy，為了替住院的阿公祈福，重新踏上了這趟萬華歸鄉旅途。在導覽員的帶領下，觀眾將與 Nancy 一同從百年青草巷啟程，品飲青草茶、辨識草藥。隨後步入剝皮寮的紅磚木窗下，尋找昔日「老茶桌仔」遺留的歷史線索。在這趟充滿草藥清涼與歷史氣息的五感走讀中，Nancy 究竟會遇見誰？這趟尋根之旅，又將如何揭開萬華強韌的生活美學與在地真切的人情溫度？邀請您親自走入街區，一探究竟。 (青草綻放場次補充說明：兩場活動戲劇演出與導覽皆相同，演出以在地生活最真實的「國台語混合」自然呈現，不懂深奧台語也能輕鬆融入，非常適合長輩或闔家同行！) 🍵 主題二｜《萬象品茗》（中英雙語場） 自幼赴美的 Nancy 為了探望生病的阿公重返萬華，邀請觀眾化身「茶友」，循著阿公常去的「金孔雀」、「艋舺茶館」與「牽手茶室」展開尋味之旅。旅途中 Nancy 意外重逢國小同學阿珠與美滿，在熟悉的老歌與茶香中，看見茶室女性為家計打拚的辛酸，也體會她們用溫暖陪伴老客人的真情—原來阿公念念不忘的不只是茶，更是「茶燒燒，心嘛燒燒」的老城人情味。 (萬象品茗場次補充說明：兩場活動戲劇演出與導覽皆相同，劇中穿插「國台語與部分英文日常互動」，導覽則以「國台語混合」解說。10/4 中英文雙語場次特別為外國友人備有「英文戲劇導覽小卡」，無論是外國朋友或是想要帶外國友人體驗在地文化的民眾，都能瞭解萬華茶室文化！) 票務與參與資訊 活動地點：萬華區街區與在地茶室 集合地點：捷運龍山寺站 活動場次：  【主題一｜青草綻放】 10/03 (六) 10:30-12:00(臺灣台語場) 10/17 (六) 10:30-12:00 【主題二｜萬象品茗】 10/04 (日) 10:30-12:00 (中英雙語場) 10/18 (日) 10:30-12:00 票價資訊： 一般票：NT$ 250/人 愛心票：NT$ 150/人(65歲以上長者、1歲以下兒童) 親子套票：NT$ 300/組(1位成人及1位12歲以下兒童) 報名與活動注意事項 實名制與保險：為保障參與者權益，本活動全程投保公共意外責任險。購票報名時，請務必確實填寫參加者之真實中文姓名、身分證字號與出生年月日。 準時報到：請於活動開始前 10 分鐘抵達集合地點，領取導覽設備與聆聽行前說明，以利準時出發。 穿著與設備：活動全程需於街區步道與室內空間步行，建議穿著輕便衣物與好走的鞋子。 觀賞禮儀：演出過程中包含演員實境互動，請配合現場引路人引導；為維持整體氛圍，進行中請避免大聲喧嘩。 意見回饋：活動尾聲將安排短暫交流，懇請參與者協助填寫回饋問卷，共同為萬華文化推廣提供寶貴建言。 退票規範：本活動依照 ACCUPASS 平台退改政策辦理。活動當日因個人因素逾時未到或缺席者，恕不予退費。 如遇天然災害以致活動延期，本活動將「青草綻放」場次延期至10月24日舉辦；「萬象品茗」場次延期至10月25日舉辦。   Program Introduction & Storylines 🌿 Theme 1｜\"Herbal Blooms\" (Taiwanese Hokkien Session) Nancy grew up in the United States. Now, she returns to Wanhua to pray for her grandfather, who is in the hospital. Led by a local guide, you’ll join Nancy on a journey through the century-old Herb Lane. Along the way, you’ll taste herbal tea and learn about local medicinal plants. Then, you’ll walk through Bopiliao Historic Block, passing its red-brick walls and wooden windows as you search for clues left behind by the old tea stalls. Along this journey filled with the fresh scent of herbs and the atmosphere of old Wanhua, who will Nancy meet? And what will she discover about the resilience, everyday beauty, and human warmth of Wanhua? Come walk the streets with us and find out for yourself.  🍵 Theme 2｜\"Tea & Stories of Wanhua\" (Mandarin & English Bilingual Session) Nancy grew up in the United States and returns to Wanhua to visit her sick grandfather. Join Nancy as a “tea companion” and follow the places her grandfather used to visit, including Golden Peacock, Bangka Teahouse, and Hand-in-Hand Teahouse. Along the way, Nancy unexpectedly reunites with her old elementary school classmates, Ah Zhu and Mei Man. As old songs play and the aroma of tea fills the air, she learns about the struggles these teahouse women faced while supporting their families, as well as the warmth and companionship they shared with their longtime customers. Nancy begins to understand that what her grandfather missed was not just the tea, but the warmth of the people and the sense of community that made old Wanhua special. Event Info Locations: Wanhua historic neighborhood streets & local authentic teahouses Meeting Point: MRT Longshan Temple Station Session Schedule: 【Theme 1｜Herbal Blooms】 10/03 (Sat) 10:30–12:00 (Taiwanese Hokkien Session) 10/17 (Sat) 10:30–12:00 (Herbal Blooms Note: Both sessions are exactly the same. The play and tour are in a natural mix of Mandarin and Taiwanese, just like real daily life here. You don’t need to know advanced Taiwanese to enjoy it—it's great for seniors and the whole family!) 【Theme 2｜Tea & Stories of Wanhua】 10/04 (Sun) 10:30–12:00 (Mandarin & English Bilingual Session) 10/18 (Sun) 10:30–12:00 (Tea & Stories of Wanhua Note: Both sessions are exactly the same. The actors chat naturally in a mix of Mandarin, Taiwanese, and some everyday English, while the tour itself is in Mandarin and Taiwanese. For the Oct 4 bilingual session, we have a handy English Guide Card ready for foreign guests. Whether you're visiting from abroad or bringing friends from overseas, everyone can easily follow along and enjoy Wanhua’s teahouse culture!)    Ticket Prices: General Ticket: NT$ 250 / person Concession Ticket: NT$ 150 / person (seniors aged 65 and above and infants under 1 year old) Family Package: NT$ 300 / set (1 adult + 1 child under 12) Registration & Insurance Insurance & Registration: Public liability insurance is included for all participants. When signing up, please make sure to provide each attendee’s full legal name, ID/Passport number, and date of birth. Arrival Time: Please arrive at the meeting spot at least 10 minutes early to pick up your audio gear and listen to a brief orientation so we can head out on time. What to Wear: We’ll be walking through outdoor alleys and visiting indoor teahouses. We strongly recommend wearing comfortable clothes and walking shoes. Tour Etiquette: This experience includes live, interactive performances. Please follow your guide's directions and keep noise to a minimum so everyone can enjoy the immersive atmosphere. Feedback: We’ll have a brief wrap-up chat at the end. We’d love it if you could take a couple of minutes to fill out our quick survey and help us keep sharing Wanhua's culture! Refund Policy: Ticket changes and refunds follow ACCUPASS policies. Unfortunately, no refunds can be given for late arrivals or no-shows on the event day. Rescheduling Due to Severe Weather: If the event has to be postponed due to severe weather (such as a typhoon warning), Herbal Blooms will be rescheduled to October 24, and Tea & Stories of Wanhua will be rescheduled to October 25.   主辦單位：臺北市政府文化局 執行單位：閱野文創股份有限公司",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-18T10:30:00+08:00",
+            "end_time": "2026-10-18T12:00:00+08:00",
+            "venue": "捷運龍山寺站集合；萬華區街區與在地茶室",
+            "address": "台灣台北市萬華區富民里西園路一段153號",
+            "organizer": "閱野文創股份有限公司",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609091313429433024630",
+            "registration_url": "https://www.accupass.com/event/2609091313429433024630",
+            "cover_image": "https://static.accupass.com/eventbanner/2609091308024646574060.jpg",
+            "price_info": "一般票250元；65歲以上及1歲以下150元；親子套票300元（1成人及1名12歲以下兒童）。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "導覽則以「國台語混合」解說",
+          "quotes": [
+            "導覽則以「國台語混合」解說",
+            "閱野文創股份有限公司"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.509238+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609110511001151318561": {
+      "content_version": 2,
+      "content_sha256": "61119750c256b90b2c240ecbcbcf6e9fcecfcb3762d09aaf6c5a56c80ec94fe1",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609110511001151318561_20261218_1930",
+            "title": "《霎霎仔雨，一霎仔久》",
+            "description": "本場約100分鐘，依公告演出長度計算結束時間；演後另有座談，結束時間未含座談。\n\n＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼ ｜  ˚  ＼   ✧   ｜   ✦   ＼  ˚  ｜   ✧   ＼   ｜   ✦ ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ˚ ⋆ ｡   ✧   ｡ ⋆ ˚ 綁鞋帶劇團 2026 全新原創製作 ˚ ⋆ ｡   ✧   ｡ ⋆ ˚   ╔═ ✧ ═══════════ ✧ ═╗ 霎霎仔雨，一霎仔久 sap-sap-á-hōo, tsi̍t-tiap-á-kú ╚═ ✧ ═══════════ ✧ ═╝   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜ ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼     —————————————— ◦ ✧ ° ✦ 演　出　介　紹 ✦ ° ✧ ◦ —————————————— 你還記得 2006 年的自己嗎？   手機裡沒有滑不完的動態，但有傳不完的簡訊； 放學後最重要的事，是衝去社團、和朋友瞎聊； 在 MSN 等某個人上線，然後假裝自己一點也不在意； 在無名小站發一些鎖密碼的文章，密碼提示是某人的生日 ... ...   故事，就從四名重返高中社辦的  36  歲男子開始。   有點路癡的高冷學霸、總是戴著耳機的文青、樂觀直爽的動漫迷、 鑽進自己世界的轉學生──四個看起來完全不搭的人， 20 年前，「妖怪研究社」就是他們的全世界。 當下雨的滴答聲響起，凝滯的朦朧青春，突然鮮明了起來，四人的重逢喚醒了「水妖怪」， 他們竟然獲得了可以回到2006 年某個下雨天的機會？！   綁鞋帶劇團 ──2026 年原創作品 《霎霎仔雨，一霎仔久》 帶我們回歸那個青春還很笨拙、喜歡一個人還需要鼓起很大勇氣的年代。   喜歡的人有沒有上線？朋友是不是在生氣？還有妖怪到底存不存在？ 高中生的世界就是這樣，一大堆現在想起來有點好笑的小事，但在當年可是認真得不得了的大煩惱。   啊，還有！這一次，不可以後悔喔！     ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿ ◦ ✧ ° ✦ 場　次　資　訊 ✦ ° ✧ ◦ ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿   ♡｡ﾟ 2026 / 12 / 18（五）19：30  ♡｡ﾟ 2026 / 12 / 19（六）14：30 ♡｡ﾟ 2026 / 12 / 19（六）19：30 ♡｡ﾟ 2026 / 12 / 20（日）14：30    ° 演出時長約 100 分鐘，無中場休息 （主辦單位有權調整異動） ° 所有場次均安排演後座談   ╭─◦°◦──────────╮ 演 出 地 點 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ 藝秀設計影像工作室 臺北市大同區承德路三段63號4樓 ╰──────────◦°◦─╯     ◇◆◇━━━━━━━━◇◆◇ ◦ ✧ ° ✦ 票　種　說　明 ✦ ° ✧ ◦ ◇◆◇━━━━━━━━◇◆◇ 本次演出採全域自由入座， 包含坐墊區2排、小板凳區2排、座椅區2排。 演出前30分鐘開放藝文贊助票觀眾入場； 演出前15分鐘全面開放所有觀眾入場。     ♛   一起愛我❤藝文贊助票｜1725元 ✧ 每場次限量10席 ✧ 優先入席自由選位 ✧ 特典內容①：官方番外劇情&寫真書 1本 ✧ 特典內容②：演員角色護貝卡 1套10張   ❀   就愛我 ❤ 一般票｜925元 ✧ 特典內容：演員角色護貝卡 1套4張     ✦ ═════ ✧ ✦ ✧ ═════ ✦ ❀ ✿ ❀　製 作 團 隊　❀ ✿ ❀ ✦ ═════ ✧ ✦ ✧ ═════ ✦ 製  作 人 ｜ 林哲輝 劇  作 家 ｜ 張家綾 導　   演 ｜ 易盈瑄 平面設計 ｜ 曹祖銘             寫真拍攝 ｜ 曹祖銘、林哲輝   ✰  演員  ✰ 葉子賢　林哲輝 　 林家偉　曹祖銘   ˚ ｡   ✧   ｡ ˚   ❥ 特 別 感 謝 ❥  攝　  影 ｜ 潘昱淇（主視覺、演員介紹）   ˚ ༘ ♡ ⋆｡˚ ✧ ˚｡⋆ ♡ ༘ ˚     —————————————— ◦ ✧ ° ✦ 注　意　事　項 ✦ ° ✧ ◦ ——————————————   以上優惠活動，主辦單位保有最終修改、變更、活動解釋及取消本活動之權利。 若有相關異動將會公告於【綁鞋帶劇團】Instagram，恕不另行通知。     —————————————— ◦ ✧ ° ✦ 展　演　須　知 ✦ ° ✧ ◦ —————————————— ▲ 本次禁止於演出時拍攝、錄影、錄音 ; 謝幕時開放攝影。 ▲ 演出活動開始30分鐘後不開放當天場次觀眾驗票入場，請提早報到，以避免爭議，謝謝。 ▲ 場地禁止飲食，且需脫鞋，建議穿著易穿脫的鞋履前往。 ▲ 演出地點為老舊公寓，無任何無障礙設施，坐輪椅或行動不便者，請斟酌購票入場。 ▲ 演出台詞包含臺語元素及少量不雅詞彙，且無字幕，請斟酌購票入場。 ▲ 角色之價值觀非本製作單位之立場。 ▲ 演出單位有權調整開放時間、演出長度。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語舞台劇",
+            "start_time": "2026-12-18T19:30:00+08:00",
+            "end_time": "2026-12-18T21:10:00+08:00",
+            "venue": "藝秀設計影像工作室",
+            "address": "台灣台北市大同區承德路三段63號4樓",
+            "organizer": "綁鞋帶劇團",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609110511001151318561",
+            "registration_url": "https://www.accupass.com/event/2609110511001151318561",
+            "cover_image": "https://static.accupass.com/eventbanner/2609110503499446373760.jpg",
+            "price_info": "一般票925元；藝文贊助票1725元，限每場10席。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "演出台詞包含臺語元素及少量不雅詞彙",
+          "quotes": [
+            "演出台詞包含臺語元素及少量不雅詞彙",
+            "綁鞋帶劇團"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609110511001151318561_20261219_1430",
+            "title": "《霎霎仔雨，一霎仔久》",
+            "description": "本場約100分鐘，依公告演出長度計算結束時間；演後另有座談，結束時間未含座談。\n\n＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼ ｜  ˚  ＼   ✧   ｜   ✦   ＼  ˚  ｜   ✧   ＼   ｜   ✦ ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ˚ ⋆ ｡   ✧   ｡ ⋆ ˚ 綁鞋帶劇團 2026 全新原創製作 ˚ ⋆ ｡   ✧   ｡ ⋆ ˚   ╔═ ✧ ═══════════ ✧ ═╗ 霎霎仔雨，一霎仔久 sap-sap-á-hōo, tsi̍t-tiap-á-kú ╚═ ✧ ═══════════ ✧ ═╝   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜ ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼     —————————————— ◦ ✧ ° ✦ 演　出　介　紹 ✦ ° ✧ ◦ —————————————— 你還記得 2006 年的自己嗎？   手機裡沒有滑不完的動態，但有傳不完的簡訊； 放學後最重要的事，是衝去社團、和朋友瞎聊； 在 MSN 等某個人上線，然後假裝自己一點也不在意； 在無名小站發一些鎖密碼的文章，密碼提示是某人的生日 ... ...   故事，就從四名重返高中社辦的  36  歲男子開始。   有點路癡的高冷學霸、總是戴著耳機的文青、樂觀直爽的動漫迷、 鑽進自己世界的轉學生──四個看起來完全不搭的人， 20 年前，「妖怪研究社」就是他們的全世界。 當下雨的滴答聲響起，凝滯的朦朧青春，突然鮮明了起來，四人的重逢喚醒了「水妖怪」， 他們竟然獲得了可以回到2006 年某個下雨天的機會？！   綁鞋帶劇團 ──2026 年原創作品 《霎霎仔雨，一霎仔久》 帶我們回歸那個青春還很笨拙、喜歡一個人還需要鼓起很大勇氣的年代。   喜歡的人有沒有上線？朋友是不是在生氣？還有妖怪到底存不存在？ 高中生的世界就是這樣，一大堆現在想起來有點好笑的小事，但在當年可是認真得不得了的大煩惱。   啊，還有！這一次，不可以後悔喔！     ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿ ◦ ✧ ° ✦ 場　次　資　訊 ✦ ° ✧ ◦ ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿   ♡｡ﾟ 2026 / 12 / 18（五）19：30  ♡｡ﾟ 2026 / 12 / 19（六）14：30 ♡｡ﾟ 2026 / 12 / 19（六）19：30 ♡｡ﾟ 2026 / 12 / 20（日）14：30    ° 演出時長約 100 分鐘，無中場休息 （主辦單位有權調整異動） ° 所有場次均安排演後座談   ╭─◦°◦──────────╮ 演 出 地 點 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ 藝秀設計影像工作室 臺北市大同區承德路三段63號4樓 ╰──────────◦°◦─╯     ◇◆◇━━━━━━━━◇◆◇ ◦ ✧ ° ✦ 票　種　說　明 ✦ ° ✧ ◦ ◇◆◇━━━━━━━━◇◆◇ 本次演出採全域自由入座， 包含坐墊區2排、小板凳區2排、座椅區2排。 演出前30分鐘開放藝文贊助票觀眾入場； 演出前15分鐘全面開放所有觀眾入場。     ♛   一起愛我❤藝文贊助票｜1725元 ✧ 每場次限量10席 ✧ 優先入席自由選位 ✧ 特典內容①：官方番外劇情&寫真書 1本 ✧ 特典內容②：演員角色護貝卡 1套10張   ❀   就愛我 ❤ 一般票｜925元 ✧ 特典內容：演員角色護貝卡 1套4張     ✦ ═════ ✧ ✦ ✧ ═════ ✦ ❀ ✿ ❀　製 作 團 隊　❀ ✿ ❀ ✦ ═════ ✧ ✦ ✧ ═════ ✦ 製  作 人 ｜ 林哲輝 劇  作 家 ｜ 張家綾 導　   演 ｜ 易盈瑄 平面設計 ｜ 曹祖銘             寫真拍攝 ｜ 曹祖銘、林哲輝   ✰  演員  ✰ 葉子賢　林哲輝 　 林家偉　曹祖銘   ˚ ｡   ✧   ｡ ˚   ❥ 特 別 感 謝 ❥  攝　  影 ｜ 潘昱淇（主視覺、演員介紹）   ˚ ༘ ♡ ⋆｡˚ ✧ ˚｡⋆ ♡ ༘ ˚     —————————————— ◦ ✧ ° ✦ 注　意　事　項 ✦ ° ✧ ◦ ——————————————   以上優惠活動，主辦單位保有最終修改、變更、活動解釋及取消本活動之權利。 若有相關異動將會公告於【綁鞋帶劇團】Instagram，恕不另行通知。     —————————————— ◦ ✧ ° ✦ 展　演　須　知 ✦ ° ✧ ◦ —————————————— ▲ 本次禁止於演出時拍攝、錄影、錄音 ; 謝幕時開放攝影。 ▲ 演出活動開始30分鐘後不開放當天場次觀眾驗票入場，請提早報到，以避免爭議，謝謝。 ▲ 場地禁止飲食，且需脫鞋，建議穿著易穿脫的鞋履前往。 ▲ 演出地點為老舊公寓，無任何無障礙設施，坐輪椅或行動不便者，請斟酌購票入場。 ▲ 演出台詞包含臺語元素及少量不雅詞彙，且無字幕，請斟酌購票入場。 ▲ 角色之價值觀非本製作單位之立場。 ▲ 演出單位有權調整開放時間、演出長度。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語舞台劇",
+            "start_time": "2026-12-19T14:30:00+08:00",
+            "end_time": "2026-12-19T16:10:00+08:00",
+            "venue": "藝秀設計影像工作室",
+            "address": "台灣台北市大同區承德路三段63號4樓",
+            "organizer": "綁鞋帶劇團",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609110511001151318561",
+            "registration_url": "https://www.accupass.com/event/2609110511001151318561",
+            "cover_image": "https://static.accupass.com/eventbanner/2609110503499446373760.jpg",
+            "price_info": "一般票925元；藝文贊助票1725元，限每場10席。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "演出台詞包含臺語元素及少量不雅詞彙",
+          "quotes": [
+            "演出台詞包含臺語元素及少量不雅詞彙",
+            "綁鞋帶劇團"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609110511001151318561_20261219_1930",
+            "title": "《霎霎仔雨，一霎仔久》",
+            "description": "本場約100分鐘，依公告演出長度計算結束時間；演後另有座談，結束時間未含座談。\n\n＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼ ｜  ˚  ＼   ✧   ｜   ✦   ＼  ˚  ｜   ✧   ＼   ｜   ✦ ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ˚ ⋆ ｡   ✧   ｡ ⋆ ˚ 綁鞋帶劇團 2026 全新原創製作 ˚ ⋆ ｡   ✧   ｡ ⋆ ˚   ╔═ ✧ ═══════════ ✧ ═╗ 霎霎仔雨，一霎仔久 sap-sap-á-hōo, tsi̍t-tiap-á-kú ╚═ ✧ ═══════════ ✧ ═╝   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜ ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼     —————————————— ◦ ✧ ° ✦ 演　出　介　紹 ✦ ° ✧ ◦ —————————————— 你還記得 2006 年的自己嗎？   手機裡沒有滑不完的動態，但有傳不完的簡訊； 放學後最重要的事，是衝去社團、和朋友瞎聊； 在 MSN 等某個人上線，然後假裝自己一點也不在意； 在無名小站發一些鎖密碼的文章，密碼提示是某人的生日 ... ...   故事，就從四名重返高中社辦的  36  歲男子開始。   有點路癡的高冷學霸、總是戴著耳機的文青、樂觀直爽的動漫迷、 鑽進自己世界的轉學生──四個看起來完全不搭的人， 20 年前，「妖怪研究社」就是他們的全世界。 當下雨的滴答聲響起，凝滯的朦朧青春，突然鮮明了起來，四人的重逢喚醒了「水妖怪」， 他們竟然獲得了可以回到2006 年某個下雨天的機會？！   綁鞋帶劇團 ──2026 年原創作品 《霎霎仔雨，一霎仔久》 帶我們回歸那個青春還很笨拙、喜歡一個人還需要鼓起很大勇氣的年代。   喜歡的人有沒有上線？朋友是不是在生氣？還有妖怪到底存不存在？ 高中生的世界就是這樣，一大堆現在想起來有點好笑的小事，但在當年可是認真得不得了的大煩惱。   啊，還有！這一次，不可以後悔喔！     ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿ ◦ ✧ ° ✦ 場　次　資　訊 ✦ ° ✧ ◦ ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿   ♡｡ﾟ 2026 / 12 / 18（五）19：30  ♡｡ﾟ 2026 / 12 / 19（六）14：30 ♡｡ﾟ 2026 / 12 / 19（六）19：30 ♡｡ﾟ 2026 / 12 / 20（日）14：30    ° 演出時長約 100 分鐘，無中場休息 （主辦單位有權調整異動） ° 所有場次均安排演後座談   ╭─◦°◦──────────╮ 演 出 地 點 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ 藝秀設計影像工作室 臺北市大同區承德路三段63號4樓 ╰──────────◦°◦─╯     ◇◆◇━━━━━━━━◇◆◇ ◦ ✧ ° ✦ 票　種　說　明 ✦ ° ✧ ◦ ◇◆◇━━━━━━━━◇◆◇ 本次演出採全域自由入座， 包含坐墊區2排、小板凳區2排、座椅區2排。 演出前30分鐘開放藝文贊助票觀眾入場； 演出前15分鐘全面開放所有觀眾入場。     ♛   一起愛我❤藝文贊助票｜1725元 ✧ 每場次限量10席 ✧ 優先入席自由選位 ✧ 特典內容①：官方番外劇情&寫真書 1本 ✧ 特典內容②：演員角色護貝卡 1套10張   ❀   就愛我 ❤ 一般票｜925元 ✧ 特典內容：演員角色護貝卡 1套4張     ✦ ═════ ✧ ✦ ✧ ═════ ✦ ❀ ✿ ❀　製 作 團 隊　❀ ✿ ❀ ✦ ═════ ✧ ✦ ✧ ═════ ✦ 製  作 人 ｜ 林哲輝 劇  作 家 ｜ 張家綾 導　   演 ｜ 易盈瑄 平面設計 ｜ 曹祖銘             寫真拍攝 ｜ 曹祖銘、林哲輝   ✰  演員  ✰ 葉子賢　林哲輝 　 林家偉　曹祖銘   ˚ ｡   ✧   ｡ ˚   ❥ 特 別 感 謝 ❥  攝　  影 ｜ 潘昱淇（主視覺、演員介紹）   ˚ ༘ ♡ ⋆｡˚ ✧ ˚｡⋆ ♡ ༘ ˚     —————————————— ◦ ✧ ° ✦ 注　意　事　項 ✦ ° ✧ ◦ ——————————————   以上優惠活動，主辦單位保有最終修改、變更、活動解釋及取消本活動之權利。 若有相關異動將會公告於【綁鞋帶劇團】Instagram，恕不另行通知。     —————————————— ◦ ✧ ° ✦ 展　演　須　知 ✦ ° ✧ ◦ —————————————— ▲ 本次禁止於演出時拍攝、錄影、錄音 ; 謝幕時開放攝影。 ▲ 演出活動開始30分鐘後不開放當天場次觀眾驗票入場，請提早報到，以避免爭議，謝謝。 ▲ 場地禁止飲食，且需脫鞋，建議穿著易穿脫的鞋履前往。 ▲ 演出地點為老舊公寓，無任何無障礙設施，坐輪椅或行動不便者，請斟酌購票入場。 ▲ 演出台詞包含臺語元素及少量不雅詞彙，且無字幕，請斟酌購票入場。 ▲ 角色之價值觀非本製作單位之立場。 ▲ 演出單位有權調整開放時間、演出長度。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語舞台劇",
+            "start_time": "2026-12-19T19:30:00+08:00",
+            "end_time": "2026-12-19T21:10:00+08:00",
+            "venue": "藝秀設計影像工作室",
+            "address": "台灣台北市大同區承德路三段63號4樓",
+            "organizer": "綁鞋帶劇團",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609110511001151318561",
+            "registration_url": "https://www.accupass.com/event/2609110511001151318561",
+            "cover_image": "https://static.accupass.com/eventbanner/2609110503499446373760.jpg",
+            "price_info": "一般票925元；藝文贊助票1725元，限每場10席。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "演出台詞包含臺語元素及少量不雅詞彙",
+          "quotes": [
+            "演出台詞包含臺語元素及少量不雅詞彙",
+            "綁鞋帶劇團"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609110511001151318561_20261220_1430",
+            "title": "《霎霎仔雨，一霎仔久》",
+            "description": "本場約100分鐘，依公告演出長度計算結束時間；演後另有座談，結束時間未含座談。\n\n＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼ ｜  ˚  ＼   ✧   ｜   ✦   ＼  ˚  ｜   ✧   ＼   ｜   ✦ ＼   ✦   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ˚ ⋆ ｡   ✧   ｡ ⋆ ˚ 綁鞋帶劇團 2026 全新原創製作 ˚ ⋆ ｡   ✧   ｡ ⋆ ˚   ╔═ ✧ ═══════════ ✧ ═╗ 霎霎仔雨，一霎仔久 sap-sap-á-hōo, tsi̍t-tiap-á-kú ╚═ ✧ ═══════════ ✧ ═╝   ｜   ✧   ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜ ＼  ˚  ｜   ✦   ＼   ✧   ｜  ˚  ＼   ✦   ｜   ✧   ＼     —————————————— ◦ ✧ ° ✦ 演　出　介　紹 ✦ ° ✧ ◦ —————————————— 你還記得 2006 年的自己嗎？   手機裡沒有滑不完的動態，但有傳不完的簡訊； 放學後最重要的事，是衝去社團、和朋友瞎聊； 在 MSN 等某個人上線，然後假裝自己一點也不在意； 在無名小站發一些鎖密碼的文章，密碼提示是某人的生日 ... ...   故事，就從四名重返高中社辦的  36  歲男子開始。   有點路癡的高冷學霸、總是戴著耳機的文青、樂觀直爽的動漫迷、 鑽進自己世界的轉學生──四個看起來完全不搭的人， 20 年前，「妖怪研究社」就是他們的全世界。 當下雨的滴答聲響起，凝滯的朦朧青春，突然鮮明了起來，四人的重逢喚醒了「水妖怪」， 他們竟然獲得了可以回到2006 年某個下雨天的機會？！   綁鞋帶劇團 ──2026 年原創作品 《霎霎仔雨，一霎仔久》 帶我們回歸那個青春還很笨拙、喜歡一個人還需要鼓起很大勇氣的年代。   喜歡的人有沒有上線？朋友是不是在生氣？還有妖怪到底存不存在？ 高中生的世界就是這樣，一大堆現在想起來有點好笑的小事，但在當年可是認真得不得了的大煩惱。   啊，還有！這一次，不可以後悔喔！     ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿ ◦ ✧ ° ✦ 場　次　資　訊 ✦ ° ✧ ◦ ✿ ｡ﾟ+.━━━━━━━━.+ﾟ｡ ✿   ♡｡ﾟ 2026 / 12 / 18（五）19：30  ♡｡ﾟ 2026 / 12 / 19（六）14：30 ♡｡ﾟ 2026 / 12 / 19（六）19：30 ♡｡ﾟ 2026 / 12 / 20（日）14：30    ° 演出時長約 100 分鐘，無中場休息 （主辦單位有權調整異動） ° 所有場次均安排演後座談   ╭─◦°◦──────────╮ 演 出 地 點 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ 藝秀設計影像工作室 臺北市大同區承德路三段63號4樓 ╰──────────◦°◦─╯     ◇◆◇━━━━━━━━◇◆◇ ◦ ✧ ° ✦ 票　種　說　明 ✦ ° ✧ ◦ ◇◆◇━━━━━━━━◇◆◇ 本次演出採全域自由入座， 包含坐墊區2排、小板凳區2排、座椅區2排。 演出前30分鐘開放藝文贊助票觀眾入場； 演出前15分鐘全面開放所有觀眾入場。     ♛   一起愛我❤藝文贊助票｜1725元 ✧ 每場次限量10席 ✧ 優先入席自由選位 ✧ 特典內容①：官方番外劇情&寫真書 1本 ✧ 特典內容②：演員角色護貝卡 1套10張   ❀   就愛我 ❤ 一般票｜925元 ✧ 特典內容：演員角色護貝卡 1套4張     ✦ ═════ ✧ ✦ ✧ ═════ ✦ ❀ ✿ ❀　製 作 團 隊　❀ ✿ ❀ ✦ ═════ ✧ ✦ ✧ ═════ ✦ 製  作 人 ｜ 林哲輝 劇  作 家 ｜ 張家綾 導　   演 ｜ 易盈瑄 平面設計 ｜ 曹祖銘             寫真拍攝 ｜ 曹祖銘、林哲輝   ✰  演員  ✰ 葉子賢　林哲輝 　 林家偉　曹祖銘   ˚ ｡   ✧   ｡ ˚   ❥ 特 別 感 謝 ❥  攝　  影 ｜ 潘昱淇（主視覺、演員介紹）   ˚ ༘ ♡ ⋆｡˚ ✧ ˚｡⋆ ♡ ༘ ˚     —————————————— ◦ ✧ ° ✦ 注　意　事　項 ✦ ° ✧ ◦ ——————————————   以上優惠活動，主辦單位保有最終修改、變更、活動解釋及取消本活動之權利。 若有相關異動將會公告於【綁鞋帶劇團】Instagram，恕不另行通知。     —————————————— ◦ ✧ ° ✦ 展　演　須　知 ✦ ° ✧ ◦ —————————————— ▲ 本次禁止於演出時拍攝、錄影、錄音 ; 謝幕時開放攝影。 ▲ 演出活動開始30分鐘後不開放當天場次觀眾驗票入場，請提早報到，以避免爭議，謝謝。 ▲ 場地禁止飲食，且需脫鞋，建議穿著易穿脫的鞋履前往。 ▲ 演出地點為老舊公寓，無任何無障礙設施，坐輪椅或行動不便者，請斟酌購票入場。 ▲ 演出台詞包含臺語元素及少量不雅詞彙，且無字幕，請斟酌購票入場。 ▲ 角色之價值觀非本製作單位之立場。 ▲ 演出單位有權調整開放時間、演出長度。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語舞台劇",
+            "start_time": "2026-12-20T14:30:00+08:00",
+            "end_time": "2026-12-20T16:10:00+08:00",
+            "venue": "藝秀設計影像工作室",
+            "address": "台灣台北市大同區承德路三段63號4樓",
+            "organizer": "綁鞋帶劇團",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609110511001151318561",
+            "registration_url": "https://www.accupass.com/event/2609110511001151318561",
+            "cover_image": "https://static.accupass.com/eventbanner/2609110503499446373760.jpg",
+            "price_info": "一般票925元；藝文贊助票1725元，限每場10席。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "演出台詞包含臺語元素及少量不雅詞彙",
+          "quotes": [
+            "演出台詞包含臺語元素及少量不雅詞彙",
+            "綁鞋帶劇團"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.561550+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.accupass.com/event/2609150126476971150670": {
+      "content_version": 2,
+      "content_sha256": "5516f863b61585bc50166187337787d8805410b65860d9836e69d3f0381498e8",
+      "sessions": [
+        {
+          "activity": {
+            "id": "acc_2609150126476971150670_20261011_1300",
+            "title": "漫遊老臺北─新公園時空解碼戰",
+            "description": "本筆為指定日期的臺語導覽，每場90分鐘，需先報名；自由解謎總期間與中文、英文導覽不算此台語場。\n\n貓咪不見了！ 跟著牠留下的足跡穿梭新公園時空，一起把牠找回來！ A cat has gone missing! Follow the clues through the different eras of 228 Peace Park and help bring it home! 一座公園，兩種玩法 限定導覽 x 自由解謎      活動日期｜Event Period   2026.10.01─11.30     活動地點｜Location    台北二二八和平公園　228 Peace Park     適合年齡｜Recommended Age    建議 11 歲以上參加 Recommended for ages 11 and up      活動方式｜How to Join    想自己解謎？取得線索卡後隨時出發！ 想深入認識新公園？也可以參加限定導覽！ Want to solve the puzzles on your own?  Pick up a Clue Card and start anytime! Want to discover more about New Park?  Join one of our special guided tours!      限定導覽｜Guided Tour     2026年10月9日至11日、10月24日至26日 每日各 2 場，每場約 90 分鐘，需事先報名。 Each tour lasts approximately 90 minutes, with two sessions per day. Advance registration is required. 13:00–14:30｜15:30–17:00 每個活動日提供指定語言導覽，場次如下： Tours are offered in a designated language on each date, as listed below: 語言 Language 導覽日期 Tour Dates 中文版｜Mandarin Chinese 10/09（五）、10/25（日） English Oct. 10 (Sat.), Oct. 24 (Sat.) 臺語版｜Taiwanese 10/11（日）、10/26（一） *特別提醒： 導覽與實境解謎內容彼此獨立，不會透露解謎遊戲的謎題或解答。若沒有遊戲所需的線索卡，報名導覽場可直接取得線索卡。 *Special Note:   The guided tour and the puzzle game are separate experiences.  The tour will not reveal any puzzles or answers from the game . If you do not have the  Clue Card  required for the game, you can receive one by registering for a guided tour.      實境解謎｜How To Play    1. 在指定地點取得解謎所需的線索卡  Pick up the clue card you need to solve the puzzle at the designated location. （地點即將公開 Location to be announced soon. ） 2. 跟隨線索卡指示和完成任務 Follow the instructions on the Clue Card and complete the mission. 3. 自 10月17日 起，每週六14:00-16:00，可至二二八庭園咖啡館前，向穿著牧天背心的工作人員出示任務通關完成畫面，即可兌換一份紀念小禮物。數量有限，送完為止。 Starting October 17, every Saturday 14:00-16:00, show your Mission Complete screen to a staff member wearing a light-blue vest in front of the 228 Garden Café to receive a special gift. ▶特別加碼｜Bonus Redemption◀ 10月9日至11日、10月24日至26日導覽場期間，只要在公園內遇到牧天工作人員，即可出示任務通關完成畫面，兌換一份紀念小禮物。 From October 9–11 and October 24–26, during the guided tour sessions, simply show your Mission Complete screen to any Mutant Staff member you meet to receive a special gift. 4. 活動單位擁有調整活動的權利 The organizer reserves the right to modify the event.      其他說明｜Other Info     學校、教育團體或公益單位如有團體參與需求，欲索取多張遊戲線索卡，歡迎來信洽詢： info@mutant.fun ，將由專人協助相關事宜。 Schools, educational groups, and nonprofit organizations  that require multiple Clue Cards for group participation are welcome to contact us at  info@mutant.fun . Our team will be happy to assist with your request.     交通方式｜Getting There    搭乘捷運到台大醫院站 Take the MRT to NTU Hospital Station 　開啟地圖　 　      最新消息｜Follow Us for Updates    活動最新消息與即時公告，請追蹤我們的 Facebook。 Follow us on Facebook for the latest event news and updates. FACEBOOK   https://www.facebook.com/MutantxFun/",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-11T13:00:00+08:00",
+            "end_time": "2026-10-11T14:30:00+08:00",
+            "venue": "台北二二八和平公園",
+            "address": "台灣台北市臺北市中正區黎明里凱達格蘭大道3號",
+            "organizer": "牧天遊戲",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609150126476971150670",
+            "registration_url": "https://www.accupass.com/event/2609150126476971150670",
+            "cover_image": "https://static.accupass.com/eventbanner/2609190243401719541660.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+          "quotes": [
+            "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+            "牧天遊戲"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609150126476971150670_20261011_1530",
+            "title": "漫遊老臺北─新公園時空解碼戰",
+            "description": "本筆為指定日期的臺語導覽，每場90分鐘，需先報名；自由解謎總期間與中文、英文導覽不算此台語場。\n\n貓咪不見了！ 跟著牠留下的足跡穿梭新公園時空，一起把牠找回來！ A cat has gone missing! Follow the clues through the different eras of 228 Peace Park and help bring it home! 一座公園，兩種玩法 限定導覽 x 自由解謎      活動日期｜Event Period   2026.10.01─11.30     活動地點｜Location    台北二二八和平公園　228 Peace Park     適合年齡｜Recommended Age    建議 11 歲以上參加 Recommended for ages 11 and up      活動方式｜How to Join    想自己解謎？取得線索卡後隨時出發！ 想深入認識新公園？也可以參加限定導覽！ Want to solve the puzzles on your own?  Pick up a Clue Card and start anytime! Want to discover more about New Park?  Join one of our special guided tours!      限定導覽｜Guided Tour     2026年10月9日至11日、10月24日至26日 每日各 2 場，每場約 90 分鐘，需事先報名。 Each tour lasts approximately 90 minutes, with two sessions per day. Advance registration is required. 13:00–14:30｜15:30–17:00 每個活動日提供指定語言導覽，場次如下： Tours are offered in a designated language on each date, as listed below: 語言 Language 導覽日期 Tour Dates 中文版｜Mandarin Chinese 10/09（五）、10/25（日） English Oct. 10 (Sat.), Oct. 24 (Sat.) 臺語版｜Taiwanese 10/11（日）、10/26（一） *特別提醒： 導覽與實境解謎內容彼此獨立，不會透露解謎遊戲的謎題或解答。若沒有遊戲所需的線索卡，報名導覽場可直接取得線索卡。 *Special Note:   The guided tour and the puzzle game are separate experiences.  The tour will not reveal any puzzles or answers from the game . If you do not have the  Clue Card  required for the game, you can receive one by registering for a guided tour.      實境解謎｜How To Play    1. 在指定地點取得解謎所需的線索卡  Pick up the clue card you need to solve the puzzle at the designated location. （地點即將公開 Location to be announced soon. ） 2. 跟隨線索卡指示和完成任務 Follow the instructions on the Clue Card and complete the mission. 3. 自 10月17日 起，每週六14:00-16:00，可至二二八庭園咖啡館前，向穿著牧天背心的工作人員出示任務通關完成畫面，即可兌換一份紀念小禮物。數量有限，送完為止。 Starting October 17, every Saturday 14:00-16:00, show your Mission Complete screen to a staff member wearing a light-blue vest in front of the 228 Garden Café to receive a special gift. ▶特別加碼｜Bonus Redemption◀ 10月9日至11日、10月24日至26日導覽場期間，只要在公園內遇到牧天工作人員，即可出示任務通關完成畫面，兌換一份紀念小禮物。 From October 9–11 and October 24–26, during the guided tour sessions, simply show your Mission Complete screen to any Mutant Staff member you meet to receive a special gift. 4. 活動單位擁有調整活動的權利 The organizer reserves the right to modify the event.      其他說明｜Other Info     學校、教育團體或公益單位如有團體參與需求，欲索取多張遊戲線索卡，歡迎來信洽詢： info@mutant.fun ，將由專人協助相關事宜。 Schools, educational groups, and nonprofit organizations  that require multiple Clue Cards for group participation are welcome to contact us at  info@mutant.fun . Our team will be happy to assist with your request.     交通方式｜Getting There    搭乘捷運到台大醫院站 Take the MRT to NTU Hospital Station 　開啟地圖　 　      最新消息｜Follow Us for Updates    活動最新消息與即時公告，請追蹤我們的 Facebook。 Follow us on Facebook for the latest event news and updates. FACEBOOK   https://www.facebook.com/MutantxFun/",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-11T15:30:00+08:00",
+            "end_time": "2026-10-11T17:00:00+08:00",
+            "venue": "台北二二八和平公園",
+            "address": "台灣台北市臺北市中正區黎明里凱達格蘭大道3號",
+            "organizer": "牧天遊戲",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609150126476971150670",
+            "registration_url": "https://www.accupass.com/event/2609150126476971150670",
+            "cover_image": "https://static.accupass.com/eventbanner/2609190243401719541660.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+          "quotes": [
+            "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+            "牧天遊戲"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609150126476971150670_20261026_1300",
+            "title": "漫遊老臺北─新公園時空解碼戰",
+            "description": "本筆為指定日期的臺語導覽，每場90分鐘，需先報名；自由解謎總期間與中文、英文導覽不算此台語場。\n\n貓咪不見了！ 跟著牠留下的足跡穿梭新公園時空，一起把牠找回來！ A cat has gone missing! Follow the clues through the different eras of 228 Peace Park and help bring it home! 一座公園，兩種玩法 限定導覽 x 自由解謎      活動日期｜Event Period   2026.10.01─11.30     活動地點｜Location    台北二二八和平公園　228 Peace Park     適合年齡｜Recommended Age    建議 11 歲以上參加 Recommended for ages 11 and up      活動方式｜How to Join    想自己解謎？取得線索卡後隨時出發！ 想深入認識新公園？也可以參加限定導覽！ Want to solve the puzzles on your own?  Pick up a Clue Card and start anytime! Want to discover more about New Park?  Join one of our special guided tours!      限定導覽｜Guided Tour     2026年10月9日至11日、10月24日至26日 每日各 2 場，每場約 90 分鐘，需事先報名。 Each tour lasts approximately 90 minutes, with two sessions per day. Advance registration is required. 13:00–14:30｜15:30–17:00 每個活動日提供指定語言導覽，場次如下： Tours are offered in a designated language on each date, as listed below: 語言 Language 導覽日期 Tour Dates 中文版｜Mandarin Chinese 10/09（五）、10/25（日） English Oct. 10 (Sat.), Oct. 24 (Sat.) 臺語版｜Taiwanese 10/11（日）、10/26（一） *特別提醒： 導覽與實境解謎內容彼此獨立，不會透露解謎遊戲的謎題或解答。若沒有遊戲所需的線索卡，報名導覽場可直接取得線索卡。 *Special Note:   The guided tour and the puzzle game are separate experiences.  The tour will not reveal any puzzles or answers from the game . If you do not have the  Clue Card  required for the game, you can receive one by registering for a guided tour.      實境解謎｜How To Play    1. 在指定地點取得解謎所需的線索卡  Pick up the clue card you need to solve the puzzle at the designated location. （地點即將公開 Location to be announced soon. ） 2. 跟隨線索卡指示和完成任務 Follow the instructions on the Clue Card and complete the mission. 3. 自 10月17日 起，每週六14:00-16:00，可至二二八庭園咖啡館前，向穿著牧天背心的工作人員出示任務通關完成畫面，即可兌換一份紀念小禮物。數量有限，送完為止。 Starting October 17, every Saturday 14:00-16:00, show your Mission Complete screen to a staff member wearing a light-blue vest in front of the 228 Garden Café to receive a special gift. ▶特別加碼｜Bonus Redemption◀ 10月9日至11日、10月24日至26日導覽場期間，只要在公園內遇到牧天工作人員，即可出示任務通關完成畫面，兌換一份紀念小禮物。 From October 9–11 and October 24–26, during the guided tour sessions, simply show your Mission Complete screen to any Mutant Staff member you meet to receive a special gift. 4. 活動單位擁有調整活動的權利 The organizer reserves the right to modify the event.      其他說明｜Other Info     學校、教育團體或公益單位如有團體參與需求，欲索取多張遊戲線索卡，歡迎來信洽詢： info@mutant.fun ，將由專人協助相關事宜。 Schools, educational groups, and nonprofit organizations  that require multiple Clue Cards for group participation are welcome to contact us at  info@mutant.fun . Our team will be happy to assist with your request.     交通方式｜Getting There    搭乘捷運到台大醫院站 Take the MRT to NTU Hospital Station 　開啟地圖　 　      最新消息｜Follow Us for Updates    活動最新消息與即時公告，請追蹤我們的 Facebook。 Follow us on Facebook for the latest event news and updates. FACEBOOK   https://www.facebook.com/MutantxFun/",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-26T13:00:00+08:00",
+            "end_time": "2026-10-26T14:30:00+08:00",
+            "venue": "台北二二八和平公園",
+            "address": "台灣台北市臺北市中正區黎明里凱達格蘭大道3號",
+            "organizer": "牧天遊戲",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609150126476971150670",
+            "registration_url": "https://www.accupass.com/event/2609150126476971150670",
+            "cover_image": "https://static.accupass.com/eventbanner/2609190243401719541660.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+          "quotes": [
+            "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+            "牧天遊戲"
+          ]
+        },
+        {
+          "activity": {
+            "id": "acc_2609150126476971150670_20261026_1530",
+            "title": "漫遊老臺北─新公園時空解碼戰",
+            "description": "本筆為指定日期的臺語導覽，每場90分鐘，需先報名；自由解謎總期間與中文、英文導覽不算此台語場。\n\n貓咪不見了！ 跟著牠留下的足跡穿梭新公園時空，一起把牠找回來！ A cat has gone missing! Follow the clues through the different eras of 228 Peace Park and help bring it home! 一座公園，兩種玩法 限定導覽 x 自由解謎      活動日期｜Event Period   2026.10.01─11.30     活動地點｜Location    台北二二八和平公園　228 Peace Park     適合年齡｜Recommended Age    建議 11 歲以上參加 Recommended for ages 11 and up      活動方式｜How to Join    想自己解謎？取得線索卡後隨時出發！ 想深入認識新公園？也可以參加限定導覽！ Want to solve the puzzles on your own?  Pick up a Clue Card and start anytime! Want to discover more about New Park?  Join one of our special guided tours!      限定導覽｜Guided Tour     2026年10月9日至11日、10月24日至26日 每日各 2 場，每場約 90 分鐘，需事先報名。 Each tour lasts approximately 90 minutes, with two sessions per day. Advance registration is required. 13:00–14:30｜15:30–17:00 每個活動日提供指定語言導覽，場次如下： Tours are offered in a designated language on each date, as listed below: 語言 Language 導覽日期 Tour Dates 中文版｜Mandarin Chinese 10/09（五）、10/25（日） English Oct. 10 (Sat.), Oct. 24 (Sat.) 臺語版｜Taiwanese 10/11（日）、10/26（一） *特別提醒： 導覽與實境解謎內容彼此獨立，不會透露解謎遊戲的謎題或解答。若沒有遊戲所需的線索卡，報名導覽場可直接取得線索卡。 *Special Note:   The guided tour and the puzzle game are separate experiences.  The tour will not reveal any puzzles or answers from the game . If you do not have the  Clue Card  required for the game, you can receive one by registering for a guided tour.      實境解謎｜How To Play    1. 在指定地點取得解謎所需的線索卡  Pick up the clue card you need to solve the puzzle at the designated location. （地點即將公開 Location to be announced soon. ） 2. 跟隨線索卡指示和完成任務 Follow the instructions on the Clue Card and complete the mission. 3. 自 10月17日 起，每週六14:00-16:00，可至二二八庭園咖啡館前，向穿著牧天背心的工作人員出示任務通關完成畫面，即可兌換一份紀念小禮物。數量有限，送完為止。 Starting October 17, every Saturday 14:00-16:00, show your Mission Complete screen to a staff member wearing a light-blue vest in front of the 228 Garden Café to receive a special gift. ▶特別加碼｜Bonus Redemption◀ 10月9日至11日、10月24日至26日導覽場期間，只要在公園內遇到牧天工作人員，即可出示任務通關完成畫面，兌換一份紀念小禮物。 From October 9–11 and October 24–26, during the guided tour sessions, simply show your Mission Complete screen to any Mutant Staff member you meet to receive a special gift. 4. 活動單位擁有調整活動的權利 The organizer reserves the right to modify the event.      其他說明｜Other Info     學校、教育團體或公益單位如有團體參與需求，欲索取多張遊戲線索卡，歡迎來信洽詢： info@mutant.fun ，將由專人協助相關事宜。 Schools, educational groups, and nonprofit organizations  that require multiple Clue Cards for group participation are welcome to contact us at  info@mutant.fun . Our team will be happy to assist with your request.     交通方式｜Getting There    搭乘捷運到台大醫院站 Take the MRT to NTU Hospital Station 　開啟地圖　 　      最新消息｜Follow Us for Updates    活動最新消息與即時公告，請追蹤我們的 Facebook。 Follow us on Facebook for the latest event news and updates. FACEBOOK   https://www.facebook.com/MutantxFun/",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語導覽",
+            "start_time": "2026-10-26T15:30:00+08:00",
+            "end_time": "2026-10-26T17:00:00+08:00",
+            "venue": "台北二二八和平公園",
+            "address": "台灣台北市臺北市中正區黎明里凱達格蘭大道3號",
+            "organizer": "牧天遊戲",
+            "source_platform": "Accupass 活動通",
+            "source_url": "https://www.accupass.com/event/2609150126476971150670",
+            "registration_url": "https://www.accupass.com/event/2609150126476971150670",
+            "cover_image": "https://static.accupass.com/eventbanner/2609190243401719541660.jpg",
+            "price_info": "費用未公告，請洽主辦單位",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+          "quotes": [
+            "臺語版｜Taiwanese 10/11（日）、10/26（一）",
+            "牧天遊戲"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T00:51:14.656362+08:00",
+      "review_basis": "Codex逐場閱讀官方完整正文、結構化資料與參加限制；混合語言如實標示。"
+    },
+    "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html": {
+      "content_sha256": "6d6bb01409a8ece2fb55f2ea8ba0a5afac3356f31e0ffc7f6978fc66b8e68030",
+      "sessions": [
+        {
+          "activity": {
+            "id": "tgb_20261014_1930",
+            "title": "【台語sa攏有】歷史教育ê轉型正義",
+            "description": "【台語sa攏有】講座 歷史教育ê轉型正義 免費報名 → https://forms.gle/Nt63arHQAeeaHUHr7 時間：2026/10/14（拜三）19:30～21:30 地點：濟南教會 （ 台北市中山南路3號 ， 主日學教室 ） 台北火車頭kah捷運「善導寺」站附近。 講師： 黃惠貞 （歷史教師深根聯盟發言人、現任板橋高中歷史科教師） 主題：歷史教育 ê轉型正義 大綱： 為民族主義虛構ê「中國」史 黨國威權體制教科書建構ê歷史神話 歷史教育視角ê翻轉 #配合文化部培育台語家庭計畫集點 #文化部國家語言整體發展方案支持 台語使用比例100% 預計認列點數：2 洽詢電話：02-2311-2199 聯絡信箱：bongpo1996@gmail.com 主辦單位：李江却台語文教基金會 協辦單位：台灣基督長老教會濟南教會 補助單位：文化部 ",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語活動",
+            "start_time": "2026-10-14T19:30:00+08:00",
+            "end_time": "2026-10-14T21:30:00+08:00",
+            "venue": "濟南教會 主日學教室",
+            "address": "台北市中山南路3號",
+            "organizer": "李江却台語文教基金會",
+            "source_platform": "李江却基金會",
+            "source_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+            "registration_url": "https://forms.gle/Nt63arHQAeeaHUHr7",
+            "cover_image": "",
+            "price_info": "免費，請先填寫報名表。",
+            "is_free": true,
+            "tags": [
+              "台語",
+              "講座"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "台語使用比例100%",
+          "quotes": [
+            "2026/10/14",
+            "19:30",
+            "21:30",
+            "黃惠貞",
+            "台語使用比例100%",
+            "濟南教會"
+          ]
+        }
+      ]
+    },
+    "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0WAULDW": {
+      "content_sha256": "eb36335a02a186b0ee47993e7f3cc4f08d7d3222db28c05bb6ec44707af4c78a",
+      "sessions": [
+        {
+          "activity": {
+            "id": "eraticket_shen_20261101",
+            "title": "「2026年國際沈文程日-小琉球情歌演唱會」",
+            "description": "年代售票 | 「2026年國際沈文程日-小琉球情歌演唱會」 登入 / 登出 註冊 會員專區 Toggle navigation × 進階搜尋 所有藝文(不限制類別) 音樂 舞蹈 戲劇 親子 演唱會 運動 講座 展覽 電影 旅遊 優惠套票 周邊商品 其他 不限地區 北部 中部 南部 東部 搜尋 tags 首頁 > 演唱會類 分享： 「2026年國際沈文程日-小琉球情歌演唱會」 2026/11/01(Sun)15:00 ~ 2027/06/26(Sat)23:00 大大國際娛樂 立即訂購 已閱讀實名制購票注意事項 節目資訊 臺東場地示意圖 購票方式 取票方式 退票方式 注意事項 節目折扣優惠 場次列表 立即訂購 節目資訊 出道四十年的金曲歌王沈文程，唱過無數令人琅琅上口的歌曲，除了台語經典歌曲《心事誰人知》、《漂丿的𨑨迌人》、《舊情也綿綿》、《來去台東》……等，更翻唱了多首經典西洋歌曲，如Slow Hand, The Temple of the King, Hotel California，#首首膾炙人口的歌曲陪伴歌迷譜出情懷與故事；近年，他的《五月十一彼下埔》再度被歌迷們提起，更喊出「#國際沈文程日」，引起的話題熱度也帶領新一代聽眾認識這位實力派歌王，希望能透過多首經典歌曲，讓歌迷們共襄盛舉，透過經典歌曲引領大家重溫流行歌曲的黃金年代。 從未辦過個人演唱會的沈文程，2023年在台中、台北、高雄舉行「國際沈文程日巡迴演唱會」，因反應熱烈，主辦單位特別舉行台北返場加演，依然是座無虛席全場叫好！沈文程感動萬分，在演唱會上更驚喜加碼公布《國際沈文程日》系列演唱會再度於2025年5月10日在台北國際會議中心，2025年5月11日下午在台中惠蓀堂開唱，正港呼應他奪金曲歌王的經典曲目《五月十一彼下埔》，成為此IP系列演唱會中唯一真正百分百match到「五月十一彼下埔」的一站，具有劃時代的意義！2025年5月11日剛好也是母親節，大家孝敬媽媽進場來聽沈文程唱歌，從下午開心到晚上，結束剛好帶媽媽去吃母親節大餐，是慶祝母親節最完美的行程安排！ 接著隆重登場的就是 ! 「國際沈文程日演唱會」 跟著非洲白馬王子aka台灣強尼戴普aka七海刀狼aka超級巨星沈文程 從台東的紅頭嶼遊玩三仙台 一路前往小琉球徜徉在星空下海灘上一起唱著情歌 這是屬於你和我限定的國際沈文程日 *由於全台歌迷引頸期盼，主辦單位正式宣佈：2026台南文化中心、桃園展演中心，2027臺東縣立體育館、台中中興大學惠蓀堂、台北國際會議中心加演確定！ 讓全台灣都能同步感受雙金歌王熱力四射、誠意滿載的現場演出。* 啊小琉球啊 景色使人留戀 暗暗來 祈禱每一工 我甲心愛ㄟ人永遠袂分西東 今日又擱返來 昔日ㄟ琉球港 惦在碼頭孤單心茫茫 陣陣海風吹著我ㄟ耳孔 親像安慰阮破碎ㄟ夢 2026 臺南場 ▍活動時間： 2026/08/01 （六） 14:00 正式開演 ▍活動地點：臺南文化中心演藝廳 ( 台南市東區中華東路三段 332 號 ) ▍票價： 3600 、 3200 、 2600 、 2000 、 1200 桃園場 ▍活動時間： 2026/11/01 （日） 15:00 正式開演 ▍活動地點：桃園展演中心展演廳 ( 桃園市桃園區中正路 1188 號 ) ▍票價： 3600 、 3200 、 2600 、 2000 、 1600 、 1200 2027 臺東場 ▍活動時間： 2027/03/20 （六） 15:00 正式開演 ▍活動地點：臺東縣立體育館（臺東縣臺東市桂林北路52巷124號） ▍票價：3000、 2800 、 2400 、 2000 、 1600 、 1200 台中場 ▍活動時間： 2027/05/08 （六） 15:00 正式開演 ▍活動地點：台中中興大學惠蓀堂（台中市南區興大路 145 號） ▍票價： 3600 、 3200 、 2800 、 2400 、 2000 、 1600 、 1200 、 800 台北場 ▍活動時間： 2027/06/26 （六） 15:00 正式開演 ▍活動地點：台北國際會議中心 TICC （台北市信義區信義路五段 1 號） ▍票價： 3600 、 3200 、 2800 、 2400 、 2000 、 1600 、 1200 臺東場地示意圖 *示意圖僅供參考，現場以實際座位為主 . 購票方式 本節目開放以下購票方式： 【網路購票】信用卡 【超商購票】現金 【端點購票】現金 【傳真刷卡】信用卡 【APP購票】信用卡 各購票方式注意事項詳見 如何購票 取票方式 本節目於網路購票後，開放以下取票方式： 【郵寄取票】 【超商取票】 各取票方式注意事項詳見 如何取票 退票方式 退換須知： 一、依據文化部訂定之「藝文表演票券定型化契約應記載及不記載事項」第6點規定，本活動提供隻退、換票機制為： 本節目退換票請依照年代網站 退票方案二 規定辦理 購票後3天內可退票，第4天起不可退票，退換票手續費為票面價格的5% 如購票日距活動日不足三天，請於活動開始前一工作日之上班時間內完成退票程序，逾期恕不受理。 換票視同退票再購。 【 方案二退票申請表下載 】 二、依據文化部訂定之「藝文表演票券定型化契約應記載及不記載事項」第3點規定，藝文表演主要表演人員或主要節目內容，於預定表演前發生變動時，消費者可向原信用卡發卡行申請信用卡爭議款退款，本活動提供之退票(款)機制為： 屆時會發退票公告於網頁，並會註明退票方式以及提供退票表格下載。 注意事項 演出大約二小時半 節目折扣優惠 購買輪椅或身障席及陪同席，當天需同時進場，並且攜帶證件檢查，如資格不符時，將無法進場也無法退票。 場次列表 活動日期/Date and Time 地點/Location 票價/Price 2026/11/01(日)15:00 桃園展演中心展演廳 桃園場 3600、 3200、 2600、 2000、 1600、 1200 2027/03/20(六)15:00 臺東縣立體育館 臺東場 3000、 2800、 2400、 2000、 1600、 1200 2027/05/08(六)15:00 台中中興大學惠蓀堂 臺中場 3600、 3200、 2800、 2400、 2000、 1600、 1200、 800 2027/06/26(六)15:00 台北國際會議中心大會堂 台北場 3600、 3200、 2800、 2400、 2000、 1600、 1200 檢 核 錯 誤 清 單 關閉",
+            "city": "桃園市",
+            "district": "",
+            "category": "台語表演",
+            "start_time": "2026-11-01T15:00:00+08:00",
+            "end_time": "2026-11-01T17:30:00+08:00",
+            "venue": "桃園展演中心展演廳",
+            "address": "桃園市桃園區中正路1188號",
+            "organizer": "大大國際娛樂",
+            "source_platform": "年代售票",
+            "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0WAULDW",
+            "registration_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0WAULDW",
+            "cover_image": "",
+            "price_info": "票價1200、1600、2000、2600、3200、3600元；演出約兩小時半。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "演唱會"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "台語經典歌曲",
+          "quotes": [
+            "台語經典歌曲",
+            "2026/11/01",
+            "15:00",
+            "桃園展演中心展演廳"
+          ]
+        },
+        {
+          "activity": {
+            "id": "eraticket_shen_20270626",
+            "title": "「2026年國際沈文程日-小琉球情歌演唱會」",
+            "description": "年代售票 | 「2026年國際沈文程日-小琉球情歌演唱會」 登入 / 登出 註冊 會員專區 Toggle navigation × 進階搜尋 所有藝文(不限制類別) 音樂 舞蹈 戲劇 親子 演唱會 運動 講座 展覽 電影 旅遊 優惠套票 周邊商品 其他 不限地區 北部 中部 南部 東部 搜尋 tags 首頁 > 演唱會類 分享： 「2026年國際沈文程日-小琉球情歌演唱會」 2026/11/01(Sun)15:00 ~ 2027/06/26(Sat)23:00 大大國際娛樂 立即訂購 已閱讀實名制購票注意事項 節目資訊 臺東場地示意圖 購票方式 取票方式 退票方式 注意事項 節目折扣優惠 場次列表 立即訂購 節目資訊 出道四十年的金曲歌王沈文程，唱過無數令人琅琅上口的歌曲，除了台語經典歌曲《心事誰人知》、《漂丿的𨑨迌人》、《舊情也綿綿》、《來去台東》……等，更翻唱了多首經典西洋歌曲，如Slow Hand, The Temple of the King, Hotel California，#首首膾炙人口的歌曲陪伴歌迷譜出情懷與故事；近年，他的《五月十一彼下埔》再度被歌迷們提起，更喊出「#國際沈文程日」，引起的話題熱度也帶領新一代聽眾認識這位實力派歌王，希望能透過多首經典歌曲，讓歌迷們共襄盛舉，透過經典歌曲引領大家重溫流行歌曲的黃金年代。 從未辦過個人演唱會的沈文程，2023年在台中、台北、高雄舉行「國際沈文程日巡迴演唱會」，因反應熱烈，主辦單位特別舉行台北返場加演，依然是座無虛席全場叫好！沈文程感動萬分，在演唱會上更驚喜加碼公布《國際沈文程日》系列演唱會再度於2025年5月10日在台北國際會議中心，2025年5月11日下午在台中惠蓀堂開唱，正港呼應他奪金曲歌王的經典曲目《五月十一彼下埔》，成為此IP系列演唱會中唯一真正百分百match到「五月十一彼下埔」的一站，具有劃時代的意義！2025年5月11日剛好也是母親節，大家孝敬媽媽進場來聽沈文程唱歌，從下午開心到晚上，結束剛好帶媽媽去吃母親節大餐，是慶祝母親節最完美的行程安排！ 接著隆重登場的就是 ! 「國際沈文程日演唱會」 跟著非洲白馬王子aka台灣強尼戴普aka七海刀狼aka超級巨星沈文程 從台東的紅頭嶼遊玩三仙台 一路前往小琉球徜徉在星空下海灘上一起唱著情歌 這是屬於你和我限定的國際沈文程日 *由於全台歌迷引頸期盼，主辦單位正式宣佈：2026台南文化中心、桃園展演中心，2027臺東縣立體育館、台中中興大學惠蓀堂、台北國際會議中心加演確定！ 讓全台灣都能同步感受雙金歌王熱力四射、誠意滿載的現場演出。* 啊小琉球啊 景色使人留戀 暗暗來 祈禱每一工 我甲心愛ㄟ人永遠袂分西東 今日又擱返來 昔日ㄟ琉球港 惦在碼頭孤單心茫茫 陣陣海風吹著我ㄟ耳孔 親像安慰阮破碎ㄟ夢 2026 臺南場 ▍活動時間： 2026/08/01 （六） 14:00 正式開演 ▍活動地點：臺南文化中心演藝廳 ( 台南市東區中華東路三段 332 號 ) ▍票價： 3600 、 3200 、 2600 、 2000 、 1200 桃園場 ▍活動時間： 2026/11/01 （日） 15:00 正式開演 ▍活動地點：桃園展演中心展演廳 ( 桃園市桃園區中正路 1188 號 ) ▍票價： 3600 、 3200 、 2600 、 2000 、 1600 、 1200 2027 臺東場 ▍活動時間： 2027/03/20 （六） 15:00 正式開演 ▍活動地點：臺東縣立體育館（臺東縣臺東市桂林北路52巷124號） ▍票價：3000、 2800 、 2400 、 2000 、 1600 、 1200 台中場 ▍活動時間： 2027/05/08 （六） 15:00 正式開演 ▍活動地點：台中中興大學惠蓀堂（台中市南區興大路 145 號） ▍票價： 3600 、 3200 、 2800 、 2400 、 2000 、 1600 、 1200 、 800 台北場 ▍活動時間： 2027/06/26 （六） 15:00 正式開演 ▍活動地點：台北國際會議中心 TICC （台北市信義區信義路五段 1 號） ▍票價： 3600 、 3200 、 2800 、 2400 、 2000 、 1600 、 1200 臺東場地示意圖 *示意圖僅供參考，現場以實際座位為主 . 購票方式 本節目開放以下購票方式： 【網路購票】信用卡 【超商購票】現金 【端點購票】現金 【傳真刷卡】信用卡 【APP購票】信用卡 各購票方式注意事項詳見 如何購票 取票方式 本節目於網路購票後，開放以下取票方式： 【郵寄取票】 【超商取票】 各取票方式注意事項詳見 如何取票 退票方式 退換須知： 一、依據文化部訂定之「藝文表演票券定型化契約應記載及不記載事項」第6點規定，本活動提供隻退、換票機制為： 本節目退換票請依照年代網站 退票方案二 規定辦理 購票後3天內可退票，第4天起不可退票，退換票手續費為票面價格的5% 如購票日距活動日不足三天，請於活動開始前一工作日之上班時間內完成退票程序，逾期恕不受理。 換票視同退票再購。 【 方案二退票申請表下載 】 二、依據文化部訂定之「藝文表演票券定型化契約應記載及不記載事項」第3點規定，藝文表演主要表演人員或主要節目內容，於預定表演前發生變動時，消費者可向原信用卡發卡行申請信用卡爭議款退款，本活動提供之退票(款)機制為： 屆時會發退票公告於網頁，並會註明退票方式以及提供退票表格下載。 注意事項 演出大約二小時半 節目折扣優惠 購買輪椅或身障席及陪同席，當天需同時進場，並且攜帶證件檢查，如資格不符時，將無法進場也無法退票。 場次列表 活動日期/Date and Time 地點/Location 票價/Price 2026/11/01(日)15:00 桃園展演中心展演廳 桃園場 3600、 3200、 2600、 2000、 1600、 1200 2027/03/20(六)15:00 臺東縣立體育館 臺東場 3000、 2800、 2400、 2000、 1600、 1200 2027/05/08(六)15:00 台中中興大學惠蓀堂 臺中場 3600、 3200、 2800、 2400、 2000、 1600、 1200、 800 2027/06/26(六)15:00 台北國際會議中心大會堂 台北場 3600、 3200、 2800、 2400、 2000、 1600、 1200 檢 核 錯 誤 清 單 關閉",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語表演",
+            "start_time": "2027-06-26T15:00:00+08:00",
+            "end_time": "2027-06-26T17:30:00+08:00",
+            "venue": "台北國際會議中心大會堂",
+            "address": "台北市信義區信義路五段1號",
+            "organizer": "大大國際娛樂",
+            "source_platform": "年代售票",
+            "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0WAULDW",
+            "registration_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0WAULDW",
+            "cover_image": "",
+            "price_info": "票價1200、1600、2000、2400、2800、3200、3600元；演出約兩小時半。",
+            "is_free": false,
+            "tags": [
+              "台語",
+              "演唱會"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "台語經典歌曲",
+          "quotes": [
+            "台語經典歌曲",
+            "2027/06/26",
+            "15:00",
+            "台北國際會議中心大會堂"
+          ]
+        }
+      ]
+    },
+    "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610&mserno=7e42c2fa8e3604e750441394ba06be29": {
+      "content_version": 2,
+      "content_sha256": "cb2fc2ca178c8573d21ffedc17a1a09f9d7bd89b44cd24be5e7780ff26f24a54",
+      "poster_evidence": [
+        {
+          "url": "https://www.xizhi.ntpc.gov.tw/userfiles/9530329/images/115%E8%87%BA%E5%82%B3%E6%AD%8C%E4%BB%94%E6%88%B2%E6%BC%94%E5%87%BA-%E7%9B%AE%E4%B8%8D%E8%AD%98%E4%B8%81-xizhi.jpg",
+          "image_sha256": "29789e7b73331685b15e9e351bfe610af83d3d11a092c25c6af49b3be21db72c",
+          "reviewed_at": "2026-10-01T01:20:30+08:00",
+          "transcription": "115臺傳歌仔戲演出 目不識丁（全本）。演出日期11/7（六），演出時間晚上7:00，演出地點台北市大稻埕戲苑9樓（台北市迪化街一段21號九樓）。演出單位臺北傳統戲劇團。藝術總監／復排導演萬裕民，原排導演吳安琪，編曲／文場領奏賴嘉宸，武場領導洪碩韓，台語文顧問李碧月。免費索票報名10/1開始，請掃QR Code進「臺傳Line群組」索取。",
+          "reading_method": "Codex directly inspected official poster image; not OCR or human certification"
+        },
+        {
+          "url": "https://www.xizhi.ntpc.gov.tw/userfiles/9530329/images/115%E8%87%BA%E5%82%B3%E6%AD%8C%E4%BB%94%E6%88%B2%E6%BC%94%E5%87%BA-%E7%9B%AE%E4%B8%8D%E8%AD%98%E4%B8%81-%E5%8A%87%E6%83%85%E7%B0%A1%E4%BB%8B-xizhi.jpg",
+          "image_sha256": "964b85aecf4cb8c3e2e8a63add248db4125814014cc62858abaa53aa4609f37a",
+          "reviewed_at": "2026-10-01T01:20:30+08:00",
+          "transcription": "劇情簡介：明朝中葉，天下太平。隘丁城相爺和夫人以百字文貼告示招婿。龍光父母相繼過世，自力更生，雖不識字卻學得修補鞋子功夫。龍光熱心帶路，向進賢之人請教學問卻被作弄，誤學誤用。家丁誤認他只有一個字不認識，帶進府見相爺，引來一場詩文大會，改變他的一生。演員角色：蔡瑜真飾龍光、翁婉玲飾相爺、毛延年飾祝通、陳玉華飾秦賢、許群莉飾千金、陳月紅飾夫人、曾秀芬飾李花姐／小紅、張美瑤飾王媒婆／小梅、黃志瑋飾家丁甲／老夫子、賴彥呈飾家丁乙／秀士甲、韋有朋飾管家／秀士乙。團長／編劇／製作蔡瑜真。",
+          "reading_method": "Codex directly inspected official poster image; not OCR or human certification"
+        }
+      ],
+      "sessions": [
+        {
+          "activity": {
+            "id": "xizhi_mubushiding_20261107_1900",
+            "title": "115臺傳歌仔戲演出-目不識丁",
+            "description": "115臺傳歌仔戲演出 目不識丁（全本）。演出日期11/7（六），演出時間晚上7:00，演出地點台北市大稻埕戲苑9樓（台北市迪化街一段21號九樓）。演出單位臺北傳統戲劇團。藝術總監／復排導演萬裕民，原排導演吳安琪，編曲／文場領奏賴嘉宸，武場領導洪碩韓，台語文顧問李碧月。免費索票報名10/1開始，請掃QR Code進「臺傳Line群組」索取。\n\n劇情簡介：明朝中葉，天下太平。隘丁城相爺和夫人以百字文貼告示招婿。龍光父母相繼過世，自力更生，雖不識字卻學得修補鞋子功夫。龍光熱心帶路，向進賢之人請教學問卻被作弄，誤學誤用。家丁誤認他只有一個字不認識，帶進府見相爺，引來一場詩文大會，改變他的一生。演員角色：蔡瑜真飾龍光、翁婉玲飾相爺、毛延年飾祝通、陳玉華飾秦賢、許群莉飾千金、陳月紅飾夫人、曾秀芬飾李花姐／小紅、張美瑤飾王媒婆／小梅、黃志瑋飾家丁甲／老夫子、賴彥呈飾家丁乙／秀士甲、韋有朋飾管家／秀士乙。團長／編劇／製作蔡瑜真。\n\n公告年份115年即2026年。結束時間未公告。",
+            "city": "臺北市",
+            "district": "",
+            "category": "台語表演",
+            "start_time": "2026-11-07T19:00:00+08:00",
+            "end_time": null,
+            "venue": "台北市大稻埕戲苑9樓",
+            "address": "台北市迪化街一段21號九樓",
+            "organizer": "臺北傳統戲劇團",
+            "source_platform": "北北桃市府局處",
+            "source_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610&mserno=7e42c2fa8e3604e750441394ba06be29",
+            "registration_url": "",
+            "cover_image": "https://www.xizhi.ntpc.gov.tw/userfiles/9530329/images/115%E8%87%BA%E5%82%B3%E6%AD%8C%E4%BB%94%E6%88%B2%E6%BC%94%E5%87%BA-%E7%9B%AE%E4%B8%8D%E8%AD%98%E4%B8%81-xizhi.jpg",
+            "price_info": "免費索票；10/1開始，請掃官方海報QR Code進臺傳LINE群組索取。",
+            "is_free": true,
+            "tags": [
+              "台語",
+              "歌仔戲",
+              "官方海報逐場核實"
+            ],
+            "raw_metadata": {}
+          },
+          "language_quote": "115臺傳歌仔戲演出-目不識丁",
+          "quotes": [
+            "115臺傳歌仔戲演出-目不識丁"
+          ]
+        }
+      ],
+      "reviewed_at": "2026-10-01T01:20:30+08:00",
+      "review_basis": "官方公告及兩張海報逐項目視判讀；歌仔戲、台語文顧問及角色；海報日期、時間、所在與免費索票條件。無結束時間不猜。"
     }
   }
 }
