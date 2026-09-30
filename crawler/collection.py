@@ -258,6 +258,14 @@ class Document(HTMLParser):
         return ''
 
     def content(self):
+        # New Taipei Library's login-help article can be longer than the event.
+        # Prefer the article inside the explicitly marked announcement container.
+        for container in self.root.all('div'):
+            classes=set(container.attrs.get('class','').split())
+            if {'article-page','paging-content'} <= classes:
+                articles=list(container.all('article'))
+                if len(articles)==1:
+                    return articles[0].text()
         for tag in ('article', 'main'):
             nodes = list(self.root.all(tag))
             if nodes:

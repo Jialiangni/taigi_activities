@@ -97,6 +97,7 @@ def prepare(folder, root=ROOT, now=None):
         shutil.copytree(str(root / 'data'), str(staged / 'data'))
         audit = review(folder, root=staged, now=now, apply=True)
         after = read(staged, 'data/verified_activities.json')
+        backlog = read(staged, 'data/review_backlog.json') if (staged/'data/review_backlog.json').exists() else None
         # Local structural validation of the full result; live evidence was
         # obtained by the source-specific verifiers above.
         validation_time = datetime.now(TAIPEI) if live_clock else now
@@ -112,6 +113,8 @@ def prepare(folder, root=ROOT, now=None):
     queue = {'schema_version': 1, 'prepared_at': now.isoformat(timespec='seconds'),
              'collection_run': audit.get('collection_run'),
              'items': sorted(existing.values(), key=lambda i: i['activity_id'])}
+    if backlog is not None:
+        save_json(root / 'data/review_backlog.json', backlog)
     save_json(root / QUEUE, queue)
     save_json(root / 'data/audit/latest-candidate-review.json', audit)
     print('Verified pending editorial:', len(queue['items']))

@@ -73,7 +73,9 @@ def duplicate(activity, catalog, session_id=None):
             continue
         # The same official page and session time must never acquire another ID.
         if (source_url(activity.get('source_url', '')) == source_url(other['source_url']) and
-                activity.get('end_time') == other.get('end_time')):
+                activity.get('end_time') == other.get('end_time') and
+                (not activity.get('venue') or not other.get('venue') or
+                 normalize(activity['venue']) == normalize(other['venue']))):
             return other['id']
         if (normalize(activity.get('title')) == normalize(other['title']) and
                 normalize(activity.get('venue')) == normalize(other['venue']) and
@@ -109,6 +111,13 @@ def language_claims(program, group):
     labels = re.findall(r'(?<!字幕)(?:演出語言|發音|語言)\s*[：:]\s*([^。；]{1,75})', venue_text)
     if any(not re.match(r'(?:臺灣)?[台臺]語(?:\s|[、，,/／+（(。]|為主|$)', value) for value in labels):
         return []
+    # Venue notes can explicitly say '全台語演出' or '台語發音' without a colon.
+    # Only performance notes qualify here; biographies and subtitle-only labels do not.
+    for clause in re.split(r'[。；;\n◎★]', venue_text):
+        if not clause.strip() or re.search(r'取消|延期|非[台臺]語|不使用|不含|並非|並不是|台語指導|臺語指導|[台臺]語以外',clause):
+            continue
+        if re.search(r'(?:臺灣)?[台臺]語\s*(?:發音|演出|演唱)',clause):
+            claims.append({'origin':'eventNoteContent','group_id':str(group['id']),'quote':clause.strip()})
     for origin, html in [('description', program.get('description', '')),
                          ('eventNoteContent', group.get('eventNoteContent', ''))]:
         # br and paragraph boundaries matter: do not join an unrelated biography.
@@ -555,16 +564,38 @@ def read_candidates(folder, now):
 def review(folder, root=ROOT, client=None, now=None, apply=False):
     now, client = now or datetime.now(TAIPEI), client or Client(timeout=30)
     report, candidates = read_candidates(Path(folder), now)
+    backlog_path = Path(root)/'data/review_backlog.json'
+    if backlog_path.exists():
+        backlog=json.loads(backlog_path.read_text())
+        require(backlog.get('schema_version')==1,'invalid_review_backlog')
+        known={(c['source_id'],c['id']) for c in candidates}
+        for c in backlog.get('candidates',[]):
+            if c['source_id'] not in PRIVATE|RETIRED and (c['source_id'],c['id']) not in known:
+                candidates.append(c)
+                known.add((c['source_id'],c['id']))
+        require(len(candidates)<=20000,'too_many_candidates')
     catalog_path = root / 'data/verified_activities.json'
     load_verified(catalog_path, now=now)  # Never repair/bypass an invalid existing catalog.
     catalog = json.loads(catalog_path.read_text())
     manual = load_manual_decisions(root)
+    from . import reviewed_sessions, reviewed_announcements
+    block_contracts = reviewed_sessions.contracts(root)
+    announcement_contracts = reviewed_announcements.contracts(root)
     published_urls = {source_url(row['activity'].get('source_url', '')) for row in catalog['activities']}
     expanded = []
     routed_accupass = set()
     for candidate_row in candidates:
         expanded.append(candidate_row)
         if candidate_row['id'] in manual:
+            continue
+        linked = re.fullmatch(r'https://www\.opentix\.life/(?:program|event)/(\d+)',candidate_row['source_url'])
+        if linked and candidate_row['source_id'] != 'opentix':
+            try:
+                payload,proof=client.json('https://csm.api.opentix.life/programs/'+linked[1])
+                expanded.extend(parse_program(payload['result'],proof))
+                candidate_row['_official_program_routed']=True
+            except (CollectionError,KeyError,ValueError,TypeError) as error:
+                candidate_row['_official_program_error']=getattr(error,'code',type(error).__name__)
             continue
         if candidate_row['source_id'] == 'gameislearning':
             try:
@@ -661,6 +692,11 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 if context['discovered_links']:
                     raise Pending('comment_link_authorship_needs_review')
                 raise Pending('official_event_link_missing')
+            if c.get('_official_program_routed'):
+                item.update(decision='routed',reason='official_program_url_rechecked')
+                continue
+            if c.get('_official_program_error'):
+                raise Pending('official_program_recheck_failed:'+c['_official_program_error'])
             if c.get('_directory_priority_error'):
                 raise Pending('accupass_priority_check_failed:' + c['_directory_priority_error'])
             if c.get('_primary_accupass_url'):
@@ -676,12 +712,38 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item.update(decision='duplicate', reason='all_future_sessions_already_published',
                             activity_ids=published_series)
                 continue
+            announcement = announcement_contracts.get(c['source_url'])
+            if announcement and not c['fields'].get('reviewed_announcement_id'):
+                children=reviewed_announcements.expand(c,client,announcement)
+                require(len(candidates)+len(children)<=20000,'too_many_candidates')
+                candidates.extend(children)
+                item.update(decision='routed',reason='reviewed_announcement_sessions_split',routed_session_count=len(children))
+                continue
+            contract = block_contracts.get(c['source_url'])
+            if not contract and c['source_id']=='accupass' and not c['fields'].get('reviewed_block_key'):
+                url=source_url(c['source_url'])
+                require(re.fullmatch(r'https://www\.accupass\.com/event/\d+',url),'unsupported_official_url')
+                html,evidence=client.get(url)
+                require(evidence['final_url']==url,'official_page_redirected')
+                contract=reviewed_sessions.automatic_contract(html,url)
+                if contract:
+                    block_contracts[c['source_url']]=contract
+            if contract and c['source_id'] == 'accupass' and not c['fields'].get('reviewed_block_key'):
+                children = reviewed_sessions.expand(c, client, contract)
+                require(len(candidates)+len(children)<=20000,'too_many_candidates')
+                candidates.extend(children)
+                item.update(decision='routed',reason='reviewed_labelled_blocks_split',routed_session_count=len(children),held_sessions=contract.get('held_sessions',[]))
+                continue
             hint = dict(c['fields'], title=c['title'], source_url=c['source_url'])
             existing = duplicate(hint, catalog, str(c['fields'].get('session_id', '')) if c['source_id']=='opentix' else None)
             if existing:
                 item.update(decision='duplicate', reason='already_published', activity_id=existing)
                 continue
-            if c['source_id'] == 'accupass':
+            if c['fields'].get('reviewed_announcement_id') and announcement:
+                key,source,row=reviewed_announcements.verify(c,client,announcement,now)
+            elif c['fields'].get('reviewed_block_key') and contract:
+                key, source, row = reviewed_sessions.verify(c, client, contract, now)
+            elif c['source_id'] == 'accupass':
                 if not c['fields'].get('series_session') and not c['fields'].get('reviewed_text_session'):
                     # Reparse older collected parents too: a parser upgrade must not
                     # require discovery to find the same event again.
@@ -692,6 +754,11 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                     refreshed = parse_accupass_event(html, url, proof)
                     require(len(refreshed) == 1 and normalize(refreshed[0]['title']) == normalize(c['title']), 'candidate_title_changed')
                     c = dict(c, fields=refreshed[0]['fields'])
+                if c['fields'].get('block_schedule_rows') or c['fields'].get('block_schedule_issue'):
+                    item.update(reason='labelled_sessions_need_conditions_review',
+                                session_classifications=c['fields'].get('block_schedule_rows', []),
+                                extraction_issue=c['fields'].get('block_schedule_issue', ''))
+                    continue
                 # Refresh the official article before classifying a mixed text list.
                 # The text labels establish candidate language, not ticket terms or approval.
                 if not c['fields'].get('reviewed_text_session') and not c['fields'].get('schedule_rows') and (c['fields'].get('text_schedule_rows') or c['fields'].get('text_schedule_issue')):
@@ -762,6 +829,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 b = old['activity']
                 if directory_registration(b) == accupass_url(a.get('source_url')) and directory_registration(b):
                     continue
+                if source_url(a['source_url']) == source_url(b['source_url']) and normalize(a['venue']) != normalize(b['venue']):
+                    continue
                 if a['city'] == b['city'] and a['start_time'] == b['start_time']:
                     require(normalize(a['venue']) != normalize(b['venue']) and
                             normalize(a['title']) not in normalize(b['title']) and
@@ -792,7 +861,7 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                                            '愛納錢，金額佮報名方式請看活動公告' if a['is_free'] is False else
                                            '所費猶未公告，請看活動公告')
             item.update(decision='approved',
-                        reason=(('official_page_series_session_verified' if c['fields'].get('series_session') else
+                        reason=('official_reviewed_sessions_verified' if row['verification'].get('mode') in (reviewed_sessions.MODE,reviewed_announcements.MODE) else ('official_page_series_session_verified' if c['fields'].get('series_session') else
                                  'official_page_single_session_verified') if c['source_id'] == 'accupass'
                                 else 'trusted_taigi_directory_session_verified' if c['source_id'] == 'gameislearning'
                                 else 'official_page_and_session_api_verified'), activity_id=a['id'])
@@ -802,7 +871,11 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
                 item['decision'] = 'excluded'
         except (CollectionError, ValueError, KeyError, TypeError, StopIteration) as e:
             item['reason'] = 'verification_failed:' + (e.code if isinstance(e, CollectionError) else type(e).__name__)
+            if isinstance(e,CollectionError) and e.code in ('expired','outside_region'):
+                item.update(decision='excluded',reason=e.code)
         finally:
+            from .review_attention import annotate
+            annotate(item, c, client, catalog)
             decisions.append(item)
             if number % 50 == 0:
                 print('Reviewed', number, '/', len(candidates), dict(Counter(d['decision'] for d in decisions)), flush=True)
@@ -821,10 +894,20 @@ def review(folder, root=ROOT, client=None, now=None, apply=False):
              'counts': dict(Counter(d['decision'] for d in decisions)),
              'collection_status_counts': dict(Counter(s['status'] for s in report['sources'])),
              'decisions': decisions}
+    from .review_attention import summary
+    audit['attention'] = summary(audit)
     manifest = Path(folder) / '_collection_run.json'
     if manifest.is_file():
         audit['collection_run'] = json.loads(manifest.read_text())
-    outputs = {'data/verified_activities.json': catalog, 'data/ui_taigi.json': translations,
+    pending_ids={(d['source_id'],d['candidate_id']) for d in decisions if d['decision']=='pending' or d.get('held_sessions')}
+    retained={}
+    for c in candidates:
+        identity=(c['source_id'],c['id'])
+        if identity in pending_ids:
+            retained[identity]={k:c[k] for k in ('id','source_id','source_url','title','kind','fields') if k in c}
+            retained[identity].update(text='',evidence=c.get('evidence',{}),backlog_origin=True)
+    backlog={'schema_version':1,'updated_at':now.isoformat(timespec='seconds'),'candidates':list(retained.values())}
+    outputs = {'data/review_backlog.json':backlog,'data/verified_activities.json': catalog, 'data/ui_taigi.json': translations,
                'data/ui_price_taigi.json': prices, 'data/audit/latest-candidate-review.json': audit}
     with tempfile.TemporaryDirectory() as temp:
         staged = Path(temp)

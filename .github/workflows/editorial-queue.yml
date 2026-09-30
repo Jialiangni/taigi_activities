@@ -40,6 +40,8 @@ jobs:
         run: python3 scripts/fetch_review_candidates.py --output "$RUNNER_TEMP/review-candidates"
       - name: Verify, deduplicate and queue without publishing
         run: python3 -u -m crawler.editorial_queue prepare --candidates "$RUNNER_TEMP/review-candidates"
+      - name: Report unresolved verification work
+        run: python3 scripts/report_review_attention.py
       - name: Preserve verification diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,12 +50,13 @@ jobs:
           path: |
             data/editorial/queue.json
             data/audit/latest-candidate-review.json
+            data/review_backlog.json
           retention-days: 14
       - name: Persist queue for any local editor
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/editorial/queue.json data/audit/latest-candidate-review.json
+          git add data/editorial/queue.json data/audit/latest-candidate-review.json data/review_backlog.json
           if ! git diff --staged --quiet; then
             git commit -m "Queue verified activities for local editorial [skip ci]"
             git push origin HEAD:main

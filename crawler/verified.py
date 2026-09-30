@@ -95,6 +95,12 @@ def check_live_sources(sources):
         if len(html.encode('utf-8')) > 4_000_000:
             raise ValueError('來源回應超出限制')
         check_source_content(source, html)
+        if 'reviewed_announcement' in source:
+            from .reviewed_announcements import validate_live
+            validate_live(source, html)
+        if 'reviewed_session_blocks' in source:
+            from .reviewed_sessions import validate_live
+            validate_live(source, html)
         if 'text_session_review' in source:
             from .accupass_text_review import validate_live
             validate_live(source, html)
@@ -159,6 +165,14 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
         if review.get('status') != 'verified' or not review.get('language_evidence'):
             raise ValueError('未核實活動或缺少台語內容證據，不可發布')
         source = sources[review['source_id']]
+        if review.get('mode') == 'reviewed_announcement_sessions_v1':
+            proof = source.get('reviewed_announcement', {})
+            if proof.get('mode') != review['mode'] or proof.get('activity') != data:
+                raise ValueError('公告場次缺少核對證據或活動綁定異動')
+        if review.get('mode') == 'reviewed_session_blocks_v1':
+            proof = source.get('reviewed_session_blocks', {})
+            if proof.get('mode') != review['mode'] or proof.get('activity') != data:
+                raise ValueError('分場活動缺少核對證據或活動綁定異動')
         if review.get('mode') == 'reviewed_text_sessions_v1':
             proof = source.get('text_session_review', {})
             if proof.get('mode') != review['mode'] or proof.get('activity') != data:
