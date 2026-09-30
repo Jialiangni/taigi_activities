@@ -14,6 +14,7 @@ from crawler.sources.opentix import parse_program
 from crawler.sources.google_workspace import GoogleWorkspaceSync, ics_text, fold_line
 from main import build
 from crawler.presentation import session_title
+from crawler.ai_editorial import approved_edition, load_state
 
 NOW = datetime.fromisoformat('2026-09-18T23:00:00+08:00')
 HISTORICAL = Path(__file__).parent / 'fixtures/verified_catalog_20260918.json'
@@ -37,10 +38,17 @@ class VerifiedCalendarTests(unittest.TestCase):
             self.assertEqual(comparable, row)
         translations = json.loads((DATA_PATH.parent/'ui_taigi.json').read_text())
         prices = json.loads((DATA_PATH.parent/'ui_price_taigi.json').read_text())
+        editorial_state = load_state()
         for row in current['activities']:
             if row['verification'].get('mode') == 'official_rules_v1':
                 intro = row['verification'].get('introduction_evidence', {})
-                if intro.get('method') == 'announcement_content' and not intro.get('description_taigi'):
+                edition = approved_edition(row['activity'], editorial_state)
+                if edition:
+                    # Newly ingested copy lives in the editorial state and must
+                    # still match the exact activity binding and source hash.
+                    self.assertTrue(edition['summary_taigi'])
+                    self.assertTrue(edition['description_taigi'])
+                elif intro.get('method') == 'announcement_content' and not intro.get('description_taigi'):
                     self.assertTrue(row['activity']['description'])
                     self.assertNotIn('台語站收錄的台語活動', row['activity']['description'])
                 else:
