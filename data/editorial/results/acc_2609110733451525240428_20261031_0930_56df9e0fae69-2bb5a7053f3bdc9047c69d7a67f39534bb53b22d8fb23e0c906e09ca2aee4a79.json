@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "activity_id": "acc_2609110733451525240428_20261031_0930_56df9e0fae69",
+  "source_hash": "2bb5a7053f3bdc9047c69d7a67f39534bb53b22d8fb23e0c906e09ca2aee4a79",
+  "guide_hash": "cee61c8d83342a95782444ed6d2f8d0295c51e05e078b36d20053d984c42abda",
+  "summary_taigi": "郭竹屏老師用台語佮法語講故事，帶逐家陪小熊揣帽仔。故事互動配合手作，予大人囡仔做伙參加。",
+  "description_taigi": "「Bonjour！小熊找帽子：台法雙語沉浸式故事派對」由郭竹屏老師帶領。活動用台語佮法語，配合故事互動佮手作，陪小熊共無去的帽仔揣轉來。\n\n活動全程免錢，歡迎想欲認識、學台語的民眾參加。親子做伙參加的時，大人佮囡仔愛分開報名；家長愛另外替囡仔填報名資料。\n\n桃園市政府文化局主辦，星玉文創有限公司執行。",
+  "uncertain_terms": [],
+  "review": {
+    "facts_match": true,
+    "natural_taiwanese": true,
+    "people_and_content_complete": true,
+    "issues": [],
+    "evidence": [
+      {
+        "claim": "郭竹屏老師用台語佮法語講故事，帶逐家陪小熊揣帽仔。故事互動配合手作，予大人囡仔做伙參加。",
+        "quote": "10/31（六）09:30–11:30\n主題：Bonjour！小熊找帽子：台法雙語沉浸式故事派對\n講師：郭竹屏老師\n內容：結合台語、法語、故事互動與手作，陪小熊找回不見的帽子。\n活動全程免費\n親子共同參加時，家長與孩童皆須分別報名，請家長另為孩童填寫報名資料。\n想認識、學習台語的一般民眾，歡迎親子共同參加。\n主辦單位：桃園市政府文化局\n執行單位：星玉文創有限公司"
+      },
+      {
+        "claim": "「Bonjour！小熊找帽子：台法雙語沉浸式故事派對」由郭竹屏老師帶領。活動用台語佮法語，配合故事互動佮手作，陪小熊共無去的帽仔揣轉來。",
+        "quote": "10/31（六）09:30–11:30\n主題：Bonjour！小熊找帽子：台法雙語沉浸式故事派對\n講師：郭竹屏老師\n內容：結合台語、法語、故事互動與手作，陪小熊找回不見的帽子。"
+      },
+      {
+        "claim": "活動全程免錢，歡迎想欲認識、學台語的民眾參加。親子做伙參加的時，大人佮囡仔愛分開報名；家長愛另外替囡仔填報名資料。",
+        "quote": "活動全程免費\n親子共同參加時，家長與孩童皆須分別報名，請家長另為孩童填寫報名資料。\n想認識、學習台語的一般民眾，歡迎親子共同參加。\n主辦單位：桃園市政府文化局\n執行單位：星玉文創有限公司"
+      },
+      {
+        "claim": "桃園市政府文化局主辦，星玉文創有限公司執行。",
+        "quote": "活動全程免費\n親子共同參加時，家長與孩童皆須分別報名，請家長另為孩童填寫報名資料。\n想認識、學習台語的一般民眾，歡迎親子共同參加。\n主辦單位：桃園市政府文化局\n執行單位：星玉文創有限公司"
+      }
+    ]
+  },
+  "dictionary_evidence": [
+    {
+      "query": "做伙",
+      "source_url": "https://www.moedict.tw/t/%E5%81%9A%E4%BC%99.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-30T23:58:32+08:00",
+      "title": "做伙",
+      "readings": [
+        {
+          "tailo": "tsò-hué/tsuè-hé",
+          "entry_id": "6971",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "一起、一塊兒。",
+              "part_of_speech": "副",
+              "examples": [
+                {
+                  "taiwanese": "咱兩个做伙來去𨑨迌。",
+                  "tailo": "Lán nn̄g ê tsò-hué lâi-khì tshit-thô. ",
+                  "mandarin": "我們兩個一起去玩。"
+                }
+              ]
+            },
+            {
+              "meaning_zh": "生活上的接觸、往來。",
+              "part_of_speech": "動",
+              "examples": [
+                {
+                  "taiwanese": "逐家有緣做伙，愛珍惜這種緣份。",
+                  "tailo": "Ta̍k-ke ū-iân tsò-hué, ài tin-sioh tsit-tsióng iân-hūn. ",
+                  "mandarin": "大家有緣同聚一堂，要珍惜這種緣分。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "揣",
+      "source_url": "https://www.moedict.tw/t/%E6%8F%A3.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-09-30T23:58:32+08:00",
+      "title": "揣",
+      "readings": [
+        {
+          "tailo": "tshuē/tshē",
+          "entry_id": "8434",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "尋找。",
+              "part_of_speech": "動",
+              "examples": [
+                {
+                  "taiwanese": "一人囥，眾人揣。",
+                  "tailo": "Tsi̍t lâng khǹg, tsìng-lâng tshuē. ",
+                  "mandarin": "一個人放東西，要很多人才找得到。比喻找東西很困難。"
+                },
+                {
+                  "taiwanese": "物件愛收予好，欲用的時才袂揣無。",
+                  "tailo": "Mi̍h-kiānn ài siu hōo hó, beh īng ê sî tsiah bē tshuē bô. ",
+                  "mandarin": "東西要收好，要用時才不會找不到。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editor": {
+    "provider": "codex",
+    "model": "gpt-6"
+  },
+  "edited_at": "2026-10-01T00:05:09+08:00"
+}

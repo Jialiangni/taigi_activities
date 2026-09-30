@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "activity_id": "review_1f09be0d7f48ccf01ccf161d",
+  "source_hash": "b38d6a2dfa3a103e17d7fb61e36a758556c353259db9c38c8ed4bddf0774e039",
+  "guide_hash": "cee61c8d83342a95782444ed6d2f8d0295c51e05e078b36d20053d984c42abda",
+  "summary_taigi": "王賢禎欲用台語講《Guji-Guji》。同場閣有謝美琴講《你要去哪裡？》、徐秀滿講《流星劃過天空的夜晚》，這兩个故事用中文講。",
+  "description_taigi": "王賢禎欲用台語講《Guji-Guji》。同場閣有謝美琴講《你要去哪裡？》、徐秀滿講《流星劃過天空的夜晚》，這兩个故事用中文講。\n\n這是總館彩虹故事屋的混合節目；台語故事佮其他故事排佇仝一場。若有取消抑是更動，以現場公告為準。",
+  "uncertain_terms": [],
+  "review": {
+    "facts_match": true,
+    "natural_taiwanese": true,
+    "people_and_content_complete": true,
+    "issues": [],
+    "evidence": [
+      {
+        "claim": "王賢禎欲用台語講《Guji-Guji》。同場閣有謝美琴講《你要去哪裡？》、徐秀滿講《流星劃過天空的夜晚》，這兩个故事用中文講。",
+        "quote": "10/24\n你要去哪裡？/中文/謝美琴 Guji-Guji/ 臺語/王賢禎 流星劃過天空的夜晚/中文/徐秀滿\n時間：每周六/14:00-15:00\n活動單位保有取消、變更之權利，請依現場為主。"
+      },
+      {
+        "claim": "王賢禎欲用台語講《Guji-Guji》。同場閣有謝美琴講《你要去哪裡？》、徐秀滿講《流星劃過天空的夜晚》，這兩个故事用中文講。\n\n這是總館彩虹故事屋的混合節目；台語故事佮其他故事排佇仝一場。若有取消抑是更動，以現場公告為準。",
+        "quote": "10/24\n你要去哪裡？/中文/謝美琴 Guji-Guji/ 臺語/王賢禎 流星劃過天空的夜晚/中文/徐秀滿\n時間：每周六/14:00-15:00\n活動單位保有取消、變更之權利，請依現場為主。"
+      },
+      {
+        "claim": "總館",
+        "quote": "新北市立圖書館總館3樓兒童室故事舞臺（快樂天地）"
+      }
+    ]
+  },
+  "dictionary_evidence": [],
+  "editor": {
+    "provider": "codex",
+    "model": "gpt-6"
+  },
+  "edited_at": "2026-10-01T00:05:09+08:00"
+}
