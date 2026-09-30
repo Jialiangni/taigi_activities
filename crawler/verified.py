@@ -27,7 +27,9 @@ def detail_url(value):
     p = urlsplit(value)
     if p.scheme != 'https' or not p.hostname or p.username or p.password:
         raise ValueError('來源須為不含憑證的 HTTPS 活動專頁')
-    if p.path in ('', '/', '/ch', '/zh-tw') or p.hostname.endswith('google.com'):
+    public_form = (p.hostname == 'docs.google.com' and re.fullmatch(
+        r'/forms/d/e/[A-Za-z0-9_-]+/viewform', p.path))
+    if p.path in ('', '/', '/ch', '/zh-tw') or (p.hostname.endswith('google.com') and not public_form):
         raise ValueError('首頁與搜尋頁不能作為活動證據')
     return value
 

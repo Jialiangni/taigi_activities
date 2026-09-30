@@ -271,7 +271,7 @@ def validate_auto_source(source, program, html=None, client=None):
     for claim in source['automated_review']['language_claims']:
         group = groups.get(claim['group_id'])
         from .reviewed_opentix_language import validate as reviewed_language_valid
-        valid = group and (reviewed_language_valid(claim, program, group)
+        valid = group and (reviewed_language_valid(claim, program, group, client)
                            if claim.get('origin') == 'reviewed_program'
                            else claim in language_claims(program, group))
         if not valid:
@@ -510,7 +510,7 @@ def verify_opentix(candidate, client, now, root=ROOT):
     require(not re.search(r'取消|延期|改期|異動|場次限定|華語場|國語場|英語場|客語場', f['session_name'] or ''),
             'session_language_or_change_needs_review')
     from .reviewed_opentix_language import claims as reviewed_language_claims
-    claims = reviewed_language_claims(root, program, group, sid) or language_claims(program, group)
+    claims = reviewed_language_claims(root, program, group, sid, client) or language_claims(program, group)
     require(claims, 'explicit_session_language_missing')
     if plain(program.get('changeNotification')):
         from .reviewed_opentix_language import notice_valid

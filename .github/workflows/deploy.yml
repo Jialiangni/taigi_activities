@@ -68,7 +68,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/verified_activities.json data/ai_taigi.json data/editorial/queue.json data/editorial/receipts.json index.html taigi_activities.ics
+          git add data/verified_activities.json data/ai_taigi.json data/ui_price_taigi.json data/editorial/queue.json data/editorial/receipts.json index.html taigi_activities.ics
           if ! git diff --staged --quiet; then
             git commit -m "Apply reviewed copy and expire ended sessions [skip ci]"
             git push origin HEAD:main

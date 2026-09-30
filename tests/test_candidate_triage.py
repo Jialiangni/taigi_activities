@@ -20,6 +20,17 @@ class Client:
 
 
 class TriageTests(unittest.TestCase):
+    def test_public_registration_form_is_not_a_google_search_page(self):
+        from crawler.verified import detail_url
+        url = 'https://docs.google.com/forms/d/e/public-form-id/viewform?usp=send_form'
+        self.assertEqual(url, detail_url(url))
+        for url in ['https://www.google.com/search?q=台語',
+                    'https://docs.google.com/forms/d/e/id/formResponse',
+                    'https://docs.google.com/forms/d/id/edit',
+                    'https://docs.google.com/document/d/id/edit']:
+            with self.assertRaises(ValueError):
+                detail_url(url)
+
     def test_incidental_stage_and_programming_language_not_discovered(self):
         self.assertFalse(relevant('以舞台語言呈現舞蹈，Python是跨平台語言'))
         self.assertFalse(relevant('精準的舞臺語彙'))
@@ -132,6 +143,50 @@ class TriageTests(unittest.TestCase):
             self.assertEqual(1, len(json.loads((root/'data/review_backlog.json').read_text())['candidates']))
             with self.assertRaises(ValueError):
                 followup(root, {'cases': [dict(case, next_review_at=(now+timedelta(days=30)).isoformat())]})
+
+    def test_supporting_form_changes_reopen_closed_candidate(self):
+        url = 'https://official.example/form'
+        body = '<main>Conference: 2025/12/14</main>'
+        proof = dict(url=url, content_sha256=digest(document(body, url)),
+                     quotes=['2025/12/14'], reviewed_at='2026-10-01', rationale='Linked official registration')
+        owner = self
+        class Pages:
+            form = body
+            def get(self, requested):
+                return (self.form if requested == url else owner.body), {'final_url': requested}
+        client = Pages()
+        row = dict(self.row, supporting_evidence=[proof])
+        self.assertTrue(matches(row, self.c, client))
+        client.form = body.replace('2025', '2027')
+        self.assertFalse(matches(row, self.c, client))
+
+    def test_external_language_proof_is_live_and_session_scoped(self):
+        from crawler.reviewed_supporting_evidence import valid
+        url = 'https://official.example/program'
+        body = '<main>11/8 本演出為臺灣台語發音</main>'
+        proof = dict(url=url, content_sha256=digest(document(body, url)),
+                     quotes=['11/8', '本演出為臺灣台語發音'], reviewed_at='2026-10-01', rationale='Same dated performance')
+        p = dict(id=1, name='Series', description='11/8 puppet; 11/9 Mandarin')
+        g = dict(id=2, events=[{'id': 10}, {'id': 11}])
+        claim = dict(origin='reviewed_program', program_id='1', group_id='2',
+                     content_sha256=digest(content(p, g)), quote='11/8 puppet',
+                     reviewed_at='2026-10-01', rationale='Official venue confirms language',
+                     session_ids=['10'], supporting_evidence=[proof])
+        self.assertTrue(validate(claim, p, g, Client(body)))
+        self.assertFalse(validate(claim, p, g, Client(body.replace('台語', '華語'))))
+        unscoped = dict(claim); del unscoped['session_ids']
+        self.assertFalse(validate(unscoped, p, g, Client(body)))
+        self.assertFalse(valid([], Client(body)))
+        self.assertFalse(valid([dict(proof, quotes=['invented'])], Client(body)))
+        class Redirect(Client):
+            def get(self, url):
+                return self.body, {'final_url': url + '/redirect'}
+        self.assertFalse(validate(claim, p, g, Redirect(body)))
+        class Failure(Client):
+            def get(self, url):
+                raise OSError('official source unavailable')
+        with self.assertRaises(OSError):
+            validate(claim, p, g, Failure(body))
 
 
 if __name__ == '__main__':

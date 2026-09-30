@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-10-01T01:34:59+08:00",
+  "reviewed_at": "2026-10-01T07:20:19+08:00",
   "source_priority": {
     "gameislearning_1583v0joi94_20261017_1000": {
       "primary_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -31,13 +31,14 @@
   },
   "applied_to_catalog": false,
   "collected_at": null,
-  "candidate_count": 77,
+  "candidate_count": 76,
   "input_kind": "persisted_backlog",
   "counts": {
-    "routed": 3,
-    "pending": 44,
+    "routed": 6,
+    "pending": 37,
     "excluded": 1,
-    "duplicate": 29
+    "duplicate": 29,
+    "approved": 3
   },
   "collection_status_counts": {},
   "decisions": [
@@ -170,11 +171,11 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2608300947345233191260",
-        "fetched_at": "2026-10-01T01:35:05+08:00",
-        "sha256": "6509ab615f7a66ce46e9d96a62d8f7447425130ddcc498515076a48ecd830c71",
+        "fetched_at": "2026-10-01T07:20:24+08:00",
+        "sha256": "add92ff124f7615e161c64e75fde0590049056cae2cfbd1ba4f8d16e31655ae5",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:05+08:00",
+      "rechecked_at": "2026-10-01T07:20:24+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
@@ -189,11 +190,11 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2604161917471542799416",
-        "fetched_at": "2026-10-01T01:35:06+08:00",
-        "sha256": "a9fbbbd5a4353ec1e915f7c5b8f1c29ba292548521d85e57057df295ff41b2c1",
+        "fetched_at": "2026-10-01T07:20:25+08:00",
+        "sha256": "919fb4aee4e7a9346b74870b22a81237c5921cc31fde50543709e61e7e164ce8",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:06+08:00",
+      "rechecked_at": "2026-10-01T07:20:25+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -210,7 +211,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:06+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "e0df23565b4e236588bdda64",
@@ -223,7 +224,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:06+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "6e589e9ca5b2710ed36c2293",
@@ -236,7 +237,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:06+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "99b74f07e1e195ef8988e4d3",
@@ -249,7 +250,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:07+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "282ef64b8e651ede508fd205",
@@ -262,7 +263,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:07+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "8af11f045b3d4f74f9cb278a",
@@ -275,7 +276,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:07+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "7300d9f17a8bcc75d9311a90",
@@ -288,7 +289,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:35:07+08:00"
+      "rechecked_at": "2026-10-01T07:20:26+08:00"
     },
     {
       "candidate_id": "113e6755357fa44896310110",
@@ -298,12 +299,12 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "final_url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=0IHd1NsrsgQMrP9x&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
-        "fetched_at": "2026-10-01T01:35:08+08:00",
-        "sha256": "e19339860f7fbdeebc2af3ef723a287796f2150d0ed144fbc4efa9803902839e",
+        "final_url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=Hwu4F8kmn9I7jpRO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
+        "fetched_at": "2026-10-01T07:20:27+08:00",
+        "sha256": "5ac8133e48cc13096c4ee5ef725d885d117a16b0c374ae824643252eff0cc047",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:08+08:00",
+      "rechecked_at": "2026-10-01T07:20:27+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -318,11 +319,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-01T01:35:08+08:00",
-        "sha256": "cf4afd886ed4168500536cba62cb2626ebd061f81539ce789407ab8dcf8634c6",
+        "fetched_at": "2026-10-01T07:20:27+08:00",
+        "sha256": "a3bbfa9019a91d2634dc869ab4aa99dd0f96088b697d399fe5f711ae8656d408",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:08+08:00",
+      "rechecked_at": "2026-10-01T07:20:27+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -337,11 +338,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-01T01:35:08+08:00",
-        "sha256": "cf4afd886ed4168500536cba62cb2626ebd061f81539ce789407ab8dcf8634c6",
+        "fetched_at": "2026-10-01T07:20:27+08:00",
+        "sha256": "a3bbfa9019a91d2634dc869ab4aa99dd0f96088b697d399fe5f711ae8656d408",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:08+08:00",
+      "rechecked_at": "2026-10-01T07:20:27+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -356,11 +357,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-01T01:35:08+08:00",
-        "sha256": "cf4afd886ed4168500536cba62cb2626ebd061f81539ce789407ab8dcf8634c6",
+        "fetched_at": "2026-10-01T07:20:27+08:00",
+        "sha256": "a3bbfa9019a91d2634dc869ab4aa99dd0f96088b697d399fe5f711ae8656d408",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:08+08:00",
+      "rechecked_at": "2026-10-01T07:20:27+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -375,11 +376,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
-        "fetched_at": "2026-10-01T01:35:09+08:00",
-        "sha256": "42ef44a49ffc40bc3f7e4e1985ae606ee2c378248bb6dd7552f5d2524486c8ff",
+        "fetched_at": "2026-10-01T07:20:28+08:00",
+        "sha256": "4ccecaa78b368d111a910beed9ab71e07ee6815a13c0ac5a3f95e33dc641e6a1",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:09+08:00",
+      "rechecked_at": "2026-10-01T07:20:28+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -400,11 +401,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
-        "fetched_at": "2026-10-01T01:34:59+08:00",
+        "fetched_at": "2026-10-01T07:20:19+08:00",
         "sha256": "035ec338110dc963609b107578ce9b45fb0bd525e16a0e4adb95a48c102bf6cc",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:34:59+08:00",
+      "rechecked_at": "2026-10-01T07:20:19+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -435,11 +436,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
-        "fetched_at": "2026-10-01T01:35:01+08:00",
+        "fetched_at": "2026-10-01T07:20:21+08:00",
         "sha256": "bb3d66634e8bef1f681ef8ef8c5456fa6efcc5bfbab31720275cb894948c19de",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:01+08:00",
+      "rechecked_at": "2026-10-01T07:20:21+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -454,11 +455,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
-        "fetched_at": "2026-10-01T01:35:01+08:00",
+        "fetched_at": "2026-10-01T07:20:21+08:00",
         "sha256": "7f91079ca5e8725eeffc4ef12b90f400919babbfade017c8d0075079bcdd200c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:01+08:00",
+      "rechecked_at": "2026-10-01T07:20:21+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -473,11 +474,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
-        "fetched_at": "2026-10-01T01:35:09+08:00",
-        "sha256": "62cf48292fdad75ce60d928267b6a9d047f5a5ae81779165719af645a60358b9",
+        "fetched_at": "2026-10-01T07:20:29+08:00",
+        "sha256": "4b960d77cef77c8498864f1112780e0f76f6120ea753686ebde0293799bf93d0",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:09+08:00",
+      "rechecked_at": "2026-10-01T07:20:29+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -492,49 +493,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/07/23.html",
-        "fetched_at": "2026-10-01T01:35:11+08:00",
-        "sha256": "394b6f72d5c719a43f90666b98bace7dfc8e52268a10f5836698486504cf4c1d",
+        "fetched_at": "2026-10-01T07:20:29+08:00",
+        "sha256": "7e8e1c71d4a123f1709c9ca429b697292d4d270994b6e43164c889481aebd85e",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:11+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
-      "candidate_id": "864b407359e71db2eda8a859",
-      "source_id": "li_kang_khiok",
-      "source_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
-      "title": "李江却台語文讀冊會讀冊會hioh-khùn日期",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
-        "fetched_at": "2026-10-01T01:35:12+08:00",
-        "sha256": "ea847d9ed3195ea463e7271f97885592c79048095fc4512e7ef892e3cf69a8ed",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-01T01:35:12+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
-      "candidate_id": "fcf94a9cce68c68ceb44bb0d",
-      "source_id": "li_kang_khiok",
-      "source_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
-      "title": "報名全國台語政策民間會議",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
-        "fetched_at": "2026-10-01T01:35:13+08:00",
-        "sha256": "718fecd659abd6b99443a73991ed84e423fc999f047f533c4b7b39f95d45f956",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-01T01:35:13+08:00",
+      "rechecked_at": "2026-10-01T07:20:29+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -549,11 +512,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
-        "fetched_at": "2026-10-01T01:35:14+08:00",
-        "sha256": "f6975d254eb87838383f86f2de4039ef5b9ca88d1af5e48cc0e50b217b1f06ec",
+        "fetched_at": "2026-10-01T07:20:30+08:00",
+        "sha256": "f1cfc9bd529d93cdd95362dad34b7de8b81f252479e7007e47d383b25bdbd759",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:35:14+08:00",
+      "rechecked_at": "2026-10-01T07:20:30+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -567,13 +530,16 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "status": "failed",
-        "code": "network_or_tls_error"
+        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
+        "fetched_at": "2026-10-01T07:20:30+08:00",
+        "sha256": "b17b0372ade2b29ea1336168ba4d34a5ad1e3cd45e2ac147a5a005db921fd7d6",
+        "http_status": 200
       },
-      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "rechecked_at": "2026-10-01T07:20:30+08:00",
       "missing_evidence": [
-        "reachable_official_source"
-      ]
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "f2e5f2254b334ff062c77c3d",
@@ -583,13 +549,16 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "status": "failed",
-        "code": "network_or_tls_error"
+        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
+        "fetched_at": "2026-10-01T07:20:32+08:00",
+        "sha256": "0c6577194c4c005647469e2923e4e61a7d371a7740223f3252cdab9a9c8b469c",
+        "http_status": 200
       },
-      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "rechecked_at": "2026-10-01T07:20:32+08:00",
       "missing_evidence": [
-        "reachable_official_source"
-      ]
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "391f5e8c7c80cd85b39483e6",
@@ -602,7 +571,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:15+08:00"
+      "rechecked_at": "2026-10-01T07:20:32+08:00"
     },
     {
       "candidate_id": "4f9bb42f7b315990d6b18349",
@@ -615,7 +584,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:15+08:00"
+      "rechecked_at": "2026-10-01T07:20:32+08:00"
     },
     {
       "candidate_id": "9536d3788d0ad8287e08c44a",
@@ -628,7 +597,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:15+08:00"
+      "rechecked_at": "2026-10-01T07:20:32+08:00"
     },
     {
       "candidate_id": "ca9d315ceace54ffb3cf53f8",
@@ -641,7 +610,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:15+08:00"
+      "rechecked_at": "2026-10-01T07:20:32+08:00"
     },
     {
       "candidate_id": "0ffb8dbdd398f9fa634e048e",
@@ -654,26 +623,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:16+08:00"
-    },
-    {
-      "candidate_id": "3840f5fc146158fbd3337558",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2090269380048343041",
-      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "published_session_ids": [
-        "opentix_2090277736930988033",
-        "opentix_2090325788232011777",
-        "opentix_2092153509960237057",
-        "opentix_2092153603140894721"
-      ],
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-01T01:36:17+08:00"
+      "rechecked_at": "2026-10-01T07:20:33+08:00"
     },
     {
       "candidate_id": "43ab2434874dc7f43b2df4a1",
@@ -692,92 +642,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:17+08:00"
-    },
-    {
-      "candidate_id": "e75fcbc9810240b230605a44",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2090269380048343041",
-      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "published_session_ids": [
-        "opentix_2090277736930988033",
-        "opentix_2090325788232011777",
-        "opentix_2092153509960237057",
-        "opentix_2092153603140894721"
-      ],
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-01T01:36:17+08:00"
-    },
-    {
-      "candidate_id": "5d52037bd3c456d091b706da",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2067491105969741825",
-      "title": "2026承功—新秀舞臺",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "published_session_ids": [
-        "opentix_2069979320480288768",
-        "opentix_2069979454930292737",
-        "opentix_2069979465842679809",
-        "opentix_2069979472712552449",
-        "opentix_2069979167001845761",
-        "opentix_2069979173344104449",
-        "opentix_2069979782025695232"
-      ],
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-01T01:36:18+08:00"
-    },
-    {
-      "candidate_id": "a2af84755ea6155dac7d979d",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2067491105969741825",
-      "title": "2026承功—新秀舞臺",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "published_session_ids": [
-        "opentix_2069979320480288768",
-        "opentix_2069979454930292737",
-        "opentix_2069979465842679809",
-        "opentix_2069979472712552449",
-        "opentix_2069979167001845761",
-        "opentix_2069979173344104449",
-        "opentix_2069979782025695232"
-      ],
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-01T01:36:18+08:00"
-    },
-    {
-      "candidate_id": "c6b61dcf8b1bf6e9c9be044c",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2067491105969741825",
-      "title": "2026承功—新秀舞臺",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "published_session_ids": [
-        "opentix_2069979320480288768",
-        "opentix_2069979454930292737",
-        "opentix_2069979465842679809",
-        "opentix_2069979472712552449",
-        "opentix_2069979167001845761",
-        "opentix_2069979173344104449",
-        "opentix_2069979782025695232"
-      ],
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-01T01:36:18+08:00"
+      "rechecked_at": "2026-10-01T07:20:33+08:00"
     },
     {
       "candidate_id": "aff4987e3ecf4e1363512619",
@@ -790,7 +655,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:19+08:00"
+      "rechecked_at": "2026-10-01T07:20:33+08:00"
     },
     {
       "candidate_id": "5c6660b8262bfe3f31cfc623",
@@ -803,7 +668,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:19+08:00"
+      "rechecked_at": "2026-10-01T07:20:33+08:00"
     },
     {
       "candidate_id": "69e6b1d9a4f6c7c705536fb6",
@@ -816,7 +681,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:19+08:00"
+      "rechecked_at": "2026-10-01T07:20:34+08:00"
     },
     {
       "candidate_id": "f8ebc54324d597bc142c1ff9",
@@ -829,7 +694,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-01T01:36:20+08:00"
+      "rechecked_at": "2026-10-01T07:20:34+08:00"
     },
     {
       "candidate_id": "354df5cb54dab32cf32620a7",
@@ -840,11 +705,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
-        "fetched_at": "2026-10-01T01:36:21+08:00",
-        "sha256": "ea39bb5aacf0562e620ee1cab33f41159dbc1fdc45e1f4c774fce9cd13649e6b",
+        "fetched_at": "2026-10-01T07:20:35+08:00",
+        "sha256": "2a4f4185c4c01ff1c2ef943d5dfcdc4ab8f9d1c75dbf6a4535aee5415f4ec8ea",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:36:21+08:00",
+      "rechecked_at": "2026-10-01T07:20:35+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -859,11 +724,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://taigiloo.tw/course/tuesday/",
-        "fetched_at": "2026-10-01T01:36:21+08:00",
-        "sha256": "27167c4278aa21754b967e65c7c4d8b94c3c652f8e1c4268517bdd0b729fa98e",
+        "fetched_at": "2026-10-01T07:20:36+08:00",
+        "sha256": "d08bf8924888536845e4d9d31ddac783e2cf37a6ab9bd3701e7a979d41f401ff",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:36:21+08:00",
+      "rechecked_at": "2026-10-01T07:20:36+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -878,11 +743,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
-        "fetched_at": "2026-10-01T01:36:22+08:00",
-        "sha256": "3b5fed855618b16696e457f10c7ba11905fb409d6600d084a8bb02853fe5e54b",
+        "fetched_at": "2026-10-01T07:20:36+08:00",
+        "sha256": "71ff90b8e3dd811c04641ed66dc26b4cd0166687adf1831b056df46acc77acaa",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:36:22+08:00",
+      "rechecked_at": "2026-10-01T07:20:36+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -897,11 +762,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
-        "fetched_at": "2026-10-01T01:36:22+08:00",
-        "sha256": "b44b1bd90fb045c743af32af72d5fc71f9b754f0b22968a9b8b36fa4b6414d32",
+        "fetched_at": "2026-10-01T07:20:36+08:00",
+        "sha256": "78e75402ec8d90f9ccbf172c9cb61c10e714c20aed32f980babfac81ab98af62",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-01T01:36:22+08:00",
+      "rechecked_at": "2026-10-01T07:20:36+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -922,6 +787,33 @@
       "missing_evidence": [
         "reachable_official_source"
       ]
+    },
+    {
+      "candidate_id": "75de00514fb6cfe752f3733f",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSfEzQ8Y-UGCO-eK5_GLO9LEXTe5NjMieFI-HlVjD3LjKcfqKw/viewform?usp=send_form",
+      "title": "走揣城南ê熱天—— 練工夫：小小攝影師出任務！",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1
+    },
+    {
+      "candidate_id": "f6d436a96ca176f7f60469cc",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSfHMlEs56Ek3rcgp57q2M2MTEkmAo_2O1B78JlTDwm2jyNLAQ/viewform?usp=send_form",
+      "title": "走揣城南ê熱天—— 練工夫：當一個小小書法家！",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1
+    },
+    {
+      "candidate_id": "3d4539fd09a650e4bda2ecd1",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSeot7rVF5aR5Zps5aa1RIBPyvoi06W3hcUXpGscUeWqZYCQcQ/viewform?usp=send_form",
+      "title": "走揣城南ê熱天——踅城南：來去植物園！",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1
     },
     {
       "candidate_id": "b42140302fea95c4579969bc",
@@ -1543,12 +1435,48 @@
         "acc_2609140313052076422556_20261101_1330_ca5c25044671",
         "acc_2609140313052076422556_20261108_1330_0bc53deed03c"
       ]
+    },
+    {
+      "candidate_id": "f122242a1dc64ac6ad330ca4",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSfEzQ8Y-UGCO-eK5_GLO9LEXTe5NjMieFI-HlVjD3LjKcfqKw/viewform?usp=send_form",
+      "title": "走揣城南ê熱天—— 練工夫：小小攝影師出任務！",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_nmh_0edeb425bcbec5d28039",
+      "published_session_ids": [
+        "review_nmh_0edeb425bcbec5d28039"
+      ]
+    },
+    {
+      "candidate_id": "fedd0dc7aab6b80d21989169",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSfHMlEs56Ek3rcgp57q2M2MTEkmAo_2O1B78JlTDwm2jyNLAQ/viewform?usp=send_form",
+      "title": "走揣城南ê熱天—— 練工夫：當一個小小書法家！",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_nmh_54928ce745238bce75c8",
+      "published_session_ids": [
+        "review_nmh_54928ce745238bce75c8"
+      ]
+    },
+    {
+      "candidate_id": "8befa2232ffd64caa4bf9c40",
+      "source_id": "official_nmh",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSeot7rVF5aR5Zps5aa1RIBPyvoi06W3hcUXpGscUeWqZYCQcQ/viewform?usp=send_form",
+      "title": "走揣城南ê熱天——踅城南：來去植物園！",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_nmh_88802643cc42cd6623b8",
+      "published_session_ids": [
+        "review_nmh_88802643cc42cd6623b8"
+      ]
     }
   ],
   "attention": {
-    "pending_candidates": 44,
-    "already_has_published_sessions": 7,
-    "source_unavailable": 3,
+    "pending_candidates": 37,
+    "already_has_published_sessions": 2,
+    "source_unavailable": 1,
     "message": "待編輯0筆不代表所有候選已核實；以下待核實項目仍須處理。"
   },
   "destination": "data/editorial/queue.json"

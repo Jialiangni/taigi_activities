@@ -297,6 +297,104 @@
       "reviewed_at": "2026-10-01T00:55:16.465059+08:00",
       "change_notice_sha256": "7e2df246be649b5761d6f1d446ba7a70e2c1c6164e0fe38673a03eee7ff0e48a",
       "change_notice_rationale": "9/3公告調整為女聲合唱加鋼琴，沒有取消台北10/24；採目前形式並在文案說明，不沿用旧編制。"
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2067491105969741825",
+      "group_id": "2067491106268536833",
+      "session_ids": [
+        "2067534055683293185",
+        "2069980028719353857"
+      ],
+      "content_sha256": "73ba2bd63e06e30da3b43c37949beda8daf6e819746572c53378b65e0cf3f5c4",
+      "quote": "不貳偶劇《海邊關救駕》",
+      "rationale": "指定場次包含不貳偶劇《海邊關救駕》；官方詳細節目明列臺灣台語發音。僅認定本場有台語內容，不概括其他劇種或未查證的另一折戲。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "supporting_evidence": [
+        {
+          "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60122",
+          "content_sha256": "a30949953b3027d55a228e55dd86dd1c6db467436df9469612b9fef8af9c7666",
+          "quotes": [
+            "本演出為臺灣台語發音",
+            "2026/10/30",
+            "2026/11/01"
+          ],
+          "rationale": "戲曲中心同年度、同劇目、同日期及場館的正式節目介紹，非劇團履歷或字幕推論。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2067491105969741825",
+      "group_id": "2067491106268536833",
+      "session_ids": [
+        "2069979970899398657"
+      ],
+      "content_sha256": "73ba2bd63e06e30da3b43c37949beda8daf6e819746572c53378b65e0cf3f5c4",
+      "quote": "昇平五洲園《武飛斷足》",
+      "rationale": "指定場次包含昇平五洲園《武飛斷足》；官方詳細節目明列臺灣台語發音。僅認定本場有台語內容，不概括其他劇種或未查證的另一折戲。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "supporting_evidence": [
+        {
+          "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60121",
+          "content_sha256": "5cb2911b4eb436e19e8707b84a72228830c4df4a9570c513a06605312857e458",
+          "quotes": [
+            "本演出為臺灣台語發音",
+            "2026/10/31"
+          ],
+          "rationale": "戲曲中心同年度、同劇目、同日期及場館的正式節目介紹，非劇團履歷或字幕推論。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2090269380048343041",
+      "group_id": "2090276698148327425",
+      "session_ids": [
+        "2092152555672571904"
+      ],
+      "content_sha256": "fdd44b40f065bcaa493a3a960271f710773afc9ceafab4a8977bb5e2ea1fed99",
+      "quote": "臺北木偶劇團《雷萬春打虎》",
+      "rationale": "指定場次包含臺北木偶劇團《雷萬春打虎》；官方詳細節目明列臺灣台語發音。僅認定本場有台語內容，不概括其他劇種或未查證的另一折戲。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "supporting_evidence": [
+        {
+          "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60139",
+          "content_sha256": "a0b31465c15921e4fd05f182ccfe342ff2591411511a5a5bb39f51123cabd9b8",
+          "quotes": [
+            "本演出為臺灣台語發音",
+            "2026/11/08"
+          ],
+          "rationale": "戲曲中心同年度、同劇目、同日期及場館的正式節目介紹，非劇團履歷或字幕推論。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
+    },
+    {
+      "origin": "reviewed_program",
+      "program_id": "2090269380048343041",
+      "group_id": "2090276698148327425",
+      "session_ids": [
+        "2092153362364047360"
+      ],
+      "content_sha256": "fdd44b40f065bcaa493a3a960271f710773afc9ceafab4a8977bb5e2ea1fed99",
+      "quote": "陳錫煌傳統掌中劇團《孫臏鬥海潮》",
+      "rationale": "指定場次包含陳錫煌傳統掌中劇團《孫臏鬥海潮》；官方詳細節目明列臺灣台語發音。僅認定本場有台語內容，不概括其他劇種或未查證的另一折戲。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "supporting_evidence": [
+        {
+          "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60142",
+          "content_sha256": "2a6f98fc70bb2ae69b00cf17c88aea74b4bbfb77e6d0b01e55e9cf8684e83c52",
+          "quotes": [
+            "本演出為臺灣台語發音",
+            "2026/11/22"
+          ],
+          "rationale": "戲曲中心同年度、同劇目、同日期及場館的正式節目介紹，非劇團履歷或字幕推論。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
     }
   ]
 }

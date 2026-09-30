@@ -14,18 +14,21 @@ def content(program, group):
                       plain(group.get('eventNoteContent'))])
 
 
-def validate(claim, program, group):
+def validate(claim, program, group, client=None):
     text = content(program, group)
     selected = claim.get('session_ids')
     if selected is not None and (not isinstance(selected, list) or not selected
             or any(s not in {str(e['id']) for e in group['events']} for s in selected)):
         return False
+    from .reviewed_supporting_evidence import valid as supporting_valid
     return (claim.get('origin') == 'reviewed_program'
             and claim.get('program_id') == str(program['id'])
             and claim.get('group_id') == str(group['id'])
             and claim.get('content_sha256') == digest(text)
             and bool(claim.get('quote')) and claim['quote'] in text
-            and bool(claim.get('rationale')) and bool(claim.get('reviewed_at')))
+            and bool(claim.get('rationale')) and bool(claim.get('reviewed_at'))
+            and (not claim.get('supporting_evidence') or selected is not None)
+            and supporting_valid(claim.get('supporting_evidence'), client))
 
 
 def notice_valid(claim, program, session_id):
@@ -35,12 +38,13 @@ def notice_valid(claim, program, session_id):
             and bool(claim.get('change_notice_rationale')))
 
 
-def claims(root, program, group, session_id=None):
+def claims(root, program, group, session_id=None, client=None):
     path = Path(root) / 'data/reviewed_opentix_language.json'
     if not path.exists():
         return []
     data = json.loads(path.read_text())
     if data.get('schema_version') != 1:
         raise ValueError('Invalid reviewed OPENTIX language version')
-    return [c for c in data['claims'] if validate(c, program, group)
-            and ('session_ids' not in c or session_id in c['session_ids'])]
+    return [c for c in data['claims']
+            if ('session_ids' not in c or session_id in c['session_ids'])
+            and validate(c, program, group, client)]

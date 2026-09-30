@@ -95,5 +95,7 @@ def matches(row, candidate, client):
     if ev['final_url'] != row['evidence_url']:
         return False
     content = document(body, row['evidence_url'])
+    from .reviewed_supporting_evidence import valid as supporting_valid
     return (digest(content) == row['content_sha256']
-            and all(q in content for q in row['quotes']))
+            and all(q in content for q in row['quotes'])
+            and supporting_valid(row.get('supporting_evidence'), client))

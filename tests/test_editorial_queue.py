@@ -62,6 +62,25 @@ class EditorialQueueTests(unittest.TestCase):
             live.assert_not_called()
         self.assertEqual(q.read(self.root, 'data/verified_activities.json')['activities'], [])
 
+    def test_ingest_saves_missing_prices_without_rewriting_existing_copy(self):
+        price = '票面價格：0、240元；折扣、贊助票與購票條件依官方頁面；免費票適用資格未確認，請洽主辦單位'
+        self.activity['price_info'] = price
+        self.row['verification']['confirmed_fields']['price_info'] = price
+        self.item = q.request_for(self.row, self.source)
+        self.result['source_hash'] = self.item['source_hash']
+        self.write(q.QUEUE, {'schema_version': 1, 'items': [self.item]})
+        self.write('data/ui_price_taigi.json', {'original': 'User-approved wording'})
+        self.return_result()
+        with patch('crawler.verified.check_live_sources', return_value={}):
+            q.ingest(self.root, self.now)
+        prices = q.read(self.root, 'data/ui_price_taigi.json')
+        self.assertEqual(prices['original'], 'User-approved wording')
+        self.assertIn('0、240', prices[price])
+        self.assertIn('資格猶未確認', prices[price])
+        from crawler.price_copy import complete
+        self.assertEqual({price: 'Approved'}, complete({price: 'Approved'}, [self.activity]))
+        self.assertEqual({}, complete({}, [dict(price_info='未知票價，不可猜')]))
+
     def test_any_provider_can_return_and_public_copy_is_bound(self):
         self.return_result()
         with patch('crawler.verified.check_live_sources', return_value={}) as live:

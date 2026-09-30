@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "automation_id": "automation-3",
+  "started_at": "2026-10-01T07:02:34.925674+08:00",
+  "completed_review_at": "2026-10-01T07:21:41+08:00",
+  "input_kind": "persisted_backlog",
+  "before": 47,
+  "exported_candidates": 38,
+  "exported_official_sources": 25,
+  "closed_exclusions": 2,
+  "verified_original_candidates": 5,
+  "new_linked_official_sessions": 3,
+  "queued_for_editorial": 8,
+  "remaining": 40,
+  "followups_updated": 31,
+  "unreviewed_original_candidates": 9,
+  "next_editorial_at": "2026-10-02T08:00:00+08:00",
+  "newly_published": 0,
+  "closure_decisions": [
+    {
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+      "title": "李江却台語文讀冊會讀冊會hioh-khùn日期",
+      "candidate_id": "864b407359e71db2eda8a859",
+      "reason": "resource_only",
+      "quotes": [
+        "3/1 (拜一) 讀冊會 hioh-khùn",
+        "2/1-2/15 讀冊會hioh-khùn，2/22讀冊會起鼓。"
+      ],
+      "rationale": "2021年發布的讀冊會休假通知，並非目前可報名的單場活動。僅結案本公告，不推定讀冊會已停辦；日後新的活動公告另案核實。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+      "content_sha256": "01c53e836ab05948ee233e64cdab931ddf4e522202a2b6992f4280f3238c3ebb"
+    },
+    {
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+      "title": "報名全國台語政策民間會議",
+      "candidate_id": "fcf94a9cce68c68ceb44bb0d",
+      "reason": "expired",
+      "quotes": [
+        "報名全國台語政策民間會議",
+        "https://reurl.cc/mk3Z5M"
+      ],
+      "rationale": "沿原公告報名連結讀取主辦表單，確認第二屆會議日期為2025年12月14日，已過期。報名表完整內容指紋亦綁定並重查，若改為新場次則重新核實。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+      "content_sha256": "f0e8e324c72f8a7c8bc7f85c865b1349ebe5979e162b9de3cd1692c0ff5dae52",
+      "supporting_evidence": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdG083T8-EyGT4FAx5-hvRjguIgw-vWFduqaQh9TfoXGnjv_Q/viewform",
+          "content_sha256": "b19489ad5d9428185cb8d8aaf11b50b33a4f75f5586eb7ead6a4e4aacb683a24",
+          "quotes": [
+            "第二屆「全國台語政策民間會議」報名表",
+            "日期：2025年12月14日"
+          ],
+          "rationale": "原文reurl報名連結目的地；確認是同一屆會議的官方日期。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
+    }
+  ],
+  "queued_activity_ids": [
+    "opentix_2067534055683293185",
+    "opentix_2069979970899398657",
+    "opentix_2069980028719353857",
+    "opentix_2092152555672571904",
+    "opentix_2092153362364047360",
+    "review_nmh_0edeb425bcbec5d28039",
+    "review_nmh_54928ce745238bce75c8",
+    "review_nmh_88802643cc42cd6623b8"
+  ],
+  "updated_followup_ids": [
+    "0ffb8dbdd398f9fa634e048e",
+    "113e6755357fa44896310110",
+    "1bcfc3a7c9e4c1e2559c82d8",
+    "1c6493508b4d0fca0170f1df",
+    "26fc8fd52baf542daaf8e1a6",
+    "282ef64b8e651ede508fd205",
+    "310d83cbe91674eca1a83873",
+    "31e00a4048cc4a48d24cfd5a",
+    "391f5e8c7c80cd85b39483e6",
+    "43ab2434874dc7f43b2df4a1",
+    "4823f23854bb8b94c3482615",
+    "49b55809ecfe407f47bdd939",
+    "4b84bb4d166de282573f9b4a",
+    "4f9bb42f7b315990d6b18349",
+    "6a9af46326972658fff4e7d0",
+    "6e589e9ca5b2710ed36c2293",
+    "70c1fd0d84b337d74c0167bc",
+    "72edde934c4530680c1af542",
+    "7300d9f17a8bcc75d9311a90",
+    "8af11f045b3d4f74f9cb278a",
+    "9536d3788d0ad8287e08c44a",
+    "953b320f05d64047a33265d7",
+    "99b74f07e1e195ef8988e4d3",
+    "9d7c72661457ad8b528a7e02",
+    "c1b791a8002c2b01dd6bd656",
+    "ca9d315ceace54ffb3cf53f8",
+    "d50adf5d105c3f70c43d3186",
+    "e0df23565b4e236588bdda64",
+    "e4858c7f13f5548a20fffad8",
+    "ea63b67a5d7b39257caf3c6e",
+    "f2e5f2254b334ff062c77c3d"
+  ],
+  "local_validation": {
+    "unittest_total": 249,
+    "unittest_failures": 0,
+    "unittest_skips": 1,
+    "skip_reason": "本機未安裝繁體中文OCR；CI具備並執行",
+    "frontend": "passed",
+    "preview_html_ics_sessions": 258,
+    "existing_catalog_and_editions": "byte-for-byte unchanged",
+    "old_price_labels": "preserved",
+    "missing_price_labels_restored": 18
+  },
+  "publication": {
+    "status": "not_yet_checked",
+    "note": "此輪8筆待正常地端編輯；部署僅修復票價顯示與流程，不能計為新活動刊登。"
+  },
+  "findings": [
+    "2則旧公告依官方正文及報名表結案；補充證據亦會重新下載核對",
+    "5場布袋戲以戲曲中心同場台語發音說明確認；只綁定對應session_ids",
+    "史博館6張表單逐張閱讀，3場資訊完整；其餘日期／標題衝突及未開表單保留追查",
+    "汐止海報已成功下載並實際閱讀，只有書展期間，仍欠三場說故事課表",
+    "修復上次editorial ingest未保存新票價台文對照而導致之下次CI失敗；保留既有對照"
+  ],
+  "evidence_export_sha256": "b183e0f74b18f6bcbbb0eb0fe2abe5582037fb661d755f90cbbafb7a6fcc207b"
+}

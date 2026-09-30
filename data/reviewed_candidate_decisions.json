@@ -11943,6 +11943,48 @@
       "published_activity_ids": [
         "xizhi_mubushiding_20261107_1900"
       ]
+    },
+    {
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+      "title": "李江却台語文讀冊會讀冊會hioh-khùn日期",
+      "candidate_id": "864b407359e71db2eda8a859",
+      "reason": "resource_only",
+      "quotes": [
+        "3/1 (拜一) 讀冊會 hioh-khùn",
+        "2/1-2/15 讀冊會hioh-khùn，2/22讀冊會起鼓。"
+      ],
+      "rationale": "2021年發布的讀冊會休假通知，並非目前可報名的單場活動。僅結案本公告，不推定讀冊會已停辦；日後新的活動公告另案核實。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+      "content_sha256": "01c53e836ab05948ee233e64cdab931ddf4e522202a2b6992f4280f3238c3ebb"
+    },
+    {
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+      "title": "報名全國台語政策民間會議",
+      "candidate_id": "fcf94a9cce68c68ceb44bb0d",
+      "reason": "expired",
+      "quotes": [
+        "報名全國台語政策民間會議",
+        "https://reurl.cc/mk3Z5M"
+      ],
+      "rationale": "沿原公告報名連結讀取主辦表單，確認第二屆會議日期為2025年12月14日，已過期。報名表完整內容指紋亦綁定並重查，若改為新場次則重新核實。",
+      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+      "content_sha256": "f0e8e324c72f8a7c8bc7f85c865b1349ebe5979e162b9de3cd1692c0ff5dae52",
+      "supporting_evidence": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdG083T8-EyGT4FAx5-hvRjguIgw-vWFduqaQh9TfoXGnjv_Q/viewform",
+          "content_sha256": "b19489ad5d9428185cb8d8aaf11b50b33a4f75f5586eb7ead6a4e4aacb683a24",
+          "quotes": [
+            "第二屆「全國台語政策民間會議」報名表",
+            "日期：2025年12月14日"
+          ],
+          "rationale": "原文reurl報名連結目的地；確認是同一屆會議的官方日期。",
+          "reviewed_at": "2026-10-01T07:13:25+08:00"
+        }
+      ]
     }
   ]
 }

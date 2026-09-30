@@ -221,7 +221,12 @@ def ingest(root=ROOT, now=None, live_check=True):
                     row['activity']['cover_image'] = posters[row['activity']['id']]
         save_json(temp / 'catalog.json', catalog)
         load_verified(temp / 'catalog.json', now=now)
+    from .price_copy import complete
+    price_path = root / 'data/ui_price_taigi.json'
+    prices = json.loads(price_path.read_text()) if price_path.exists() else {}
+    prices = complete(prices, [r['activity'] for r in catalog['activities']])
     save_json(root / 'data/verified_activities.json', catalog)
+    save_json(price_path, prices)
     save_json(root / 'data/ai_taigi.json', state)
     save_json(root / RECEIPTS, receipts)
     queue = read(root, QUEUE)
