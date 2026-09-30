@@ -5,15 +5,15 @@
   "original_report_pending": 587,
   "original_backlog_including_held_series": 590,
   "initial_candidates_by_current_state": {
-    "closed_with_evidence": 477,
-    "still_in_backlog": 48,
+    "closed_with_evidence": 478,
+    "still_in_backlog": 47,
     "resolved_by_normal_verification_routing_or_deduplication": 65
   },
-  "closed_candidate_count": 477,
+  "closed_candidate_count": 478,
   "closure_reason_counts": {
     "not_event": 108,
     "expired": 177,
-    "already_covered": 20,
+    "already_covered": 21,
     "resource_only": 24,
     "outside_region": 11,
     "not_taigi": 56,
@@ -94,7 +94,7 @@
     "tgb_20261014_1930",
     "xizhi_mubushiding_20261107_1900"
   ],
-  "remaining_backlog_count": 48,
+  "remaining_backlog_count": 47,
   "remaining_owned_cases": {
     "4823f23854bb8b94c3482615": {
       "candidate_id": "4823f23854bb8b94c3482615",
@@ -107,7 +107,7 @@
       ],
       "next_action": "重讀主辦最新場次表及公開報名選項，逐場解決衝突；已刊登無爭議場次不重寫。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "1bcfc3a7c9e4c1e2559c82d8": {
       "candidate_id": "1bcfc3a7c9e4c1e2559c82d8",
@@ -120,7 +120,7 @@
       ],
       "next_action": "重讀主辦最新場次表及公開報名選項，逐場解決衝突；已刊登無爭議場次不重寫。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "ea63b67a5d7b39257caf3c6e": {
       "candidate_id": "ea63b67a5d7b39257caf3c6e",
@@ -133,7 +133,7 @@
       ],
       "next_action": "重讀主辦最新場次表及公開報名選項，逐場解決衝突；已刊登無爭議場次不重寫。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "e4858c7f13f5548a20fffad8": {
       "candidate_id": "e4858c7f13f5548a20fffad8",
@@ -146,7 +146,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "49b55809ecfe407f47bdd939": {
       "candidate_id": "49b55809ecfe407f47bdd939",
@@ -159,7 +159,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "4b84bb4d166de282573f9b4a": {
       "candidate_id": "4b84bb4d166de282573f9b4a",
@@ -172,7 +172,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "e0df23565b4e236588bdda64": {
       "candidate_id": "e0df23565b4e236588bdda64",
@@ -185,7 +185,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "6e589e9ca5b2710ed36c2293": {
       "candidate_id": "6e589e9ca5b2710ed36c2293",
@@ -198,7 +198,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "99b74f07e1e195ef8988e4d3": {
       "candidate_id": "99b74f07e1e195ef8988e4d3",
@@ -211,7 +211,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "282ef64b8e651ede508fd205": {
       "candidate_id": "282ef64b8e651ede508fd205",
@@ -224,7 +224,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "8af11f045b3d4f74f9cb278a": {
       "candidate_id": "8af11f045b3d4f74f9cb278a",
@@ -237,7 +237,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "7300d9f17a8bcc75d9311a90": {
       "candidate_id": "7300d9f17a8bcc75d9311a90",
@@ -250,7 +250,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "113e6755357fa44896310110": {
       "candidate_id": "113e6755357fa44896310110",
@@ -263,7 +263,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "9d7c72661457ad8b528a7e02": {
       "candidate_id": "9d7c72661457ad8b528a7e02",
@@ -276,7 +276,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "953b320f05d64047a33265d7": {
       "candidate_id": "953b320f05d64047a33265d7",
@@ -289,7 +289,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "31e00a4048cc4a48d24cfd5a": {
       "candidate_id": "31e00a4048cc4a48d24cfd5a",
@@ -302,7 +302,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "310d83cbe91674eca1a83873": {
       "candidate_id": "310d83cbe91674eca1a83873",
@@ -315,7 +315,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "6a9af46326972658fff4e7d0": {
       "candidate_id": "6a9af46326972658fff4e7d0",
@@ -328,7 +328,7 @@
       ],
       "next_action": "重讀主辦最新場次表及公開報名選項，逐場解決衝突；已刊登無爭議場次不重寫。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "c1b791a8002c2b01dd6bd656": {
       "candidate_id": "c1b791a8002c2b01dd6bd656",
@@ -341,7 +341,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "d50adf5d105c3f70c43d3186": {
       "candidate_id": "d50adf5d105c3f70c43d3186",
@@ -354,7 +354,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "26fc8fd52baf542daaf8e1a6": {
       "candidate_id": "26fc8fd52baf542daaf8e1a6",
@@ -367,7 +367,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "1c6493508b4d0fca0170f1df": {
       "candidate_id": "1c6493508b4d0fca0170f1df",
@@ -380,7 +380,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "864b407359e71db2eda8a859": {
       "candidate_id": "864b407359e71db2eda8a859",
@@ -393,7 +393,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "fcf94a9cce68c68ceb44bb0d": {
       "candidate_id": "fcf94a9cce68c68ceb44bb0d",
@@ -406,7 +406,7 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "72edde934c4530680c1af542": {
       "candidate_id": "72edde934c4530680c1af542",
@@ -419,33 +419,20 @@
       ],
       "next_action": "重讀主辦最新場次表及公開報名選項，逐場解決衝突；已刊登無爭議場次不重寫。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
-    },
-    "22c90e3fb77c5af0872317da": {
-      "candidate_id": "22c90e3fb77c5af0872317da",
-      "source_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
-      "title": "汐止區公所 2026-09-22 115臺傳歌仔戲演出-目不識丁",
-      "owner": "Codex",
-      "finding": "已人工看過官方海報，確認11/7 19:00大稻埕戲苑歌仔戲《目不識丁》；場次資訊主要在圖片。",
-      "missing_fields": [
-        "可重查的海報內容與逐場證據契約"
-      ],
-      "next_action": "完成原海報指紋與內容核對的發布契約，再送正常編輯；勿因文字擷取不到而認定非活動。",
-      "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "70c1fd0d84b337d74c0167bc": {
       "candidate_id": "70c1fd0d84b337d74c0167bc",
       "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
       "title": "【汐止分館】115年10月主題書展：書香傳承母語情、台語共讀趣",
       "owner": "Codex",
-      "finding": "公告提及台語故事活動，但海報下載兩次逾時。",
+      "finding": "公告提及台語故事活動，但海報下載兩次逾時。 本輪再次直接下載官方海報，20秒逾時且未收到內容；尚不能核對3場說故事日期。",
       "missing_fields": [
         "海報上的場次時間及講者"
       ],
       "next_action": "重試官方圖片／同分館月份活動表；下載失败保留技術診斷，不排除活動。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "f2e5f2254b334ff062c77c3d": {
       "candidate_id": "f2e5f2254b334ff062c77c3d",
@@ -458,7 +445,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "391f5e8c7c80cd85b39483e6": {
       "candidate_id": "391f5e8c7c80cd85b39483e6",
@@ -471,7 +458,7 @@
       ],
       "next_action": "用官方前台及公開備援入口重試；讀不到不等於不是台語活動。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "4f9bb42f7b315990d6b18349": {
       "candidate_id": "4f9bb42f7b315990d6b18349",
@@ -484,7 +471,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "9536d3788d0ad8287e08c44a": {
       "candidate_id": "9536d3788d0ad8287e08c44a",
@@ -497,7 +484,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "ca9d315ceace54ffb3cf53f8": {
       "candidate_id": "ca9d315ceace54ffb3cf53f8",
@@ -510,7 +497,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "0ffb8dbdd398f9fa634e048e": {
       "candidate_id": "0ffb8dbdd398f9fa634e048e",
@@ -523,7 +510,7 @@
       ],
       "next_action": "重查官方場次及售票狀態，保留最新異動公告；不得單為通過而把狀態改成0。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "3840f5fc146158fbd3337558": {
       "candidate_id": "3840f5fc146158fbd3337558",
@@ -536,7 +523,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "43ab2434874dc7f43b2df4a1": {
       "candidate_id": "43ab2434874dc7f43b2df4a1",
@@ -549,7 +536,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "e75fcbc9810240b230605a44": {
       "candidate_id": "e75fcbc9810240b230605a44",
@@ -562,7 +549,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "5d52037bd3c456d091b706da": {
       "candidate_id": "5d52037bd3c456d091b706da",
@@ -575,7 +562,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "a2af84755ea6155dac7d979d": {
       "candidate_id": "a2af84755ea6155dac7d979d",
@@ -588,7 +575,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "c6b61dcf8b1bf6e9c9be044c": {
       "candidate_id": "c6b61dcf8b1bf6e9c9be044c",
@@ -601,7 +588,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "aff4987e3ecf4e1363512619": {
       "candidate_id": "aff4987e3ecf4e1363512619",
@@ -614,7 +601,7 @@
       ],
       "next_action": "查主辦本節目專頁／最新節目單，確認是否包含唸歌，不能把同藝術節其他節目混入。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "5c6660b8262bfe3f31cfc623": {
       "candidate_id": "5c6660b8262bfe3f31cfc623",
@@ -627,7 +614,7 @@
       ],
       "next_action": "查主辦本節目專頁／最新節目單，確認是否包含唸歌，不能把同藝術節其他節目混入。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "69e6b1d9a4f6c7c705536fb6": {
       "candidate_id": "69e6b1d9a4f6c7c705536fb6",
@@ -640,7 +627,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "f8ebc54324d597bc142c1ff9": {
       "candidate_id": "f8ebc54324d597bc142c1ff9",
@@ -653,7 +640,7 @@
       ],
       "next_action": "沿官方節目頁、劇團／場館公告查本次版本及場次語言；混合系列只採有證據場次。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "354df5cb54dab32cf32620a7": {
       "candidate_id": "354df5cb54dab32cf32620a7",
@@ -666,7 +653,7 @@
       ],
       "next_action": "確認頁面為文章索引而非活動後，以可靠頁面標題與主區塊證據結案，勿用空內容指紋。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "80f5dc08121066e2b79da2b1": {
       "candidate_id": "80f5dc08121066e2b79da2b1",
@@ -679,20 +666,21 @@
       ],
       "next_action": "沿公告的公開報名表與主辦最新公告補核；舊活動不得用今年年份自動展開。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "e1e402c37a1d67499b7caa1f": {
       "candidate_id": "e1e402c37a1d67499b7caa1f",
       "source_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
       "title": "臺北市政府文化局",
       "owner": "Codex",
-      "finding": "本篇為萬華戲劇導覽新聞稿；ACCUPASS已有完整場次核實，準備發布。",
+      "finding": "同篇沉浸式戲劇導覽4場已完成核實、台文及正式上站；另有10月17日2場懷舊演唱會，不能把整篇視為導覽重複而漏掉演唱會。",
       "missing_fields": [
-        "主來源刊登完成"
+        "演唱會兩場各自開始時間",
+        "演唱會實際台語歌曲或內容"
       ],
-      "next_action": "確認主來源場次已刊登後，以活動ID與來源綁定標記跨來源重複。",
+      "next_action": "核對文化局及閱野文創的10月17日演唱會海報／節目表，取得下午、晚間場的開始時間與台語內容；導覽依既有ACCUPASS主來源去重。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "d3b02cefbeaec5471565476c": {
       "candidate_id": "d3b02cefbeaec5471565476c",
@@ -705,7 +693,7 @@
       ],
       "next_action": "跟隨公告內KKday報名連結，核對台語選項與可預約場次，勿將其他語言車次加入。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     },
     "627b611118572afd8e772b71": {
       "candidate_id": "627b611118572afd8e772b71",
@@ -718,12 +706,29 @@
       ],
       "next_action": "用官方前台及公開備援入口重試；讀不到不等於不是台語活動。",
       "reviewed_at": "2026-10-01T01:00:17+08:00",
-      "next_review_at": "2026-10-01T07:00:17+08:00"
+      "next_review_at": "2026-10-01T07:00:00+08:00"
     }
   },
   "candidate_and_session_counts_are_not_additive": "One candidate can yield multiple sessions; 3 original series parents retained held sessions in addition to 587 pending candidates.",
   "publication": {
-    "status": "awaiting_github_publication"
+    "status": "published_and_live_verified",
+    "workflow_run": 36751867822,
+    "workflow_url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36751867822",
+    "workflow_conclusion": "success",
+    "source_revision": "6b0e9cea2a198f8a9e3b12865d5e00c7fec94704",
+    "published_catalog_revision": "3c395654338082dc4f283fbce63df7e5cd415aa5",
+    "checked_at": "2026-10-01T01:34:07+08:00",
+    "website": "https://jialiangni.github.io/taigi_activities/",
+    "html_sha256": "516dd98b3c4c512dc64066c438c2741252434ce68369dba7bf2c9aa23865a881",
+    "ics_sha256": "72a812610a7e3e37cbb0592c3484a742ff363c71e0ba940a259e5e0e7ae68f5b",
+    "live_html_sessions": 258,
+    "live_ics_sessions": 258,
+    "new_sessions_verified": 72,
+    "all_new_copy_matches": true,
+    "existing_catalog_rows_unchanged": 229,
+    "existing_editions_unchanged": 80,
+    "protected_ids_unchanged": 149,
+    "pending_editorial": 0
   },
   "validation": {
     "unit_tests": 245,
@@ -732,7 +737,11 @@
     "draft_validation_count": 72,
     "live_source_checked_new_sessions": 72,
     "staged_site_sessions": 258,
-    "frontend_checks": "passed"
+    "frontend_checks": "passed",
+    "github_unit_tests": 245,
+    "github_skipped_tests": 0,
+    "github_frontend": "passed",
+    "final_backlog_recheck": "44 pending decisions plus 3 held series parents; editorial queue empty"
   },
   "followup": {
     "owner": "Codex",
@@ -744,6 +753,26 @@
     "existing_catalog_rows_unchanged": true,
     "existing_editions_unchanged": true,
     "protected_activity_ids_unchanged": true,
-    "verified_by": "isolated staged live ingest; final GitHub result pending"
-  }
+    "verified_by": "GitHub published catalog and live HTML/ICS compared against baseline 5c016ea; 229 existing rows, 80 editions and 149 protected IDs identical"
+  },
+  "completed_publication_check_at": "2026-10-01T01:37:19+08:00",
+  "limitations": [
+    "47 candidates remain unresolved; do not claim the backlog is completely cleared.",
+    "Daily 07:00 follow-up is configured and ACTIVE; its first scheduled execution has not yet occurred."
+  ],
+  "publication_attempts": [
+    {
+      "run": 36751268150,
+      "outcome": "superseded; push refused when incoming copy arrived concurrently"
+    },
+    {
+      "run": 36751297642,
+      "outcome": "cancelled before publication to remove an unsupported childhood detail from a new draft"
+    },
+    {
+      "run": 36751867822,
+      "outcome": "success; all 72 new sessions imported and deployed"
+    }
+  ],
+  "run_annotation_note": "Legacy API-key and editorial-failure warnings were emitted by simulated failure cases in the Test publication gates step. Actual Import completed editorial accepted 72; no API-based editor ran in the deployment."
 }

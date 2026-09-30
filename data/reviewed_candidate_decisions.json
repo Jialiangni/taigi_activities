@@ -11925,6 +11925,24 @@
         "attempt": 1
       },
       "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "22c90e3fb77c5af0872317da",
+      "source_id": "ntpc_center_xizhi",
+      "source_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
+      "title": "汐止區公所 2026-09-22 115臺傳歌仔戲演出-目不識丁",
+      "reason": "already_covered",
+      "rationale": "同一汐止區公所公告的另一網址參數；兩張官方海報與已刊登的11月7日19:00《目不識丁》相同，不新增重複場次。",
+      "reviewed_at": "2026-10-01T01:34:34+08:00",
+      "evidence_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
+      "content_sha256": "1f1134857e90c27ba7d0ccedeec0069f73fa555d3296cdbd8198155658fd6678",
+      "quotes": [
+        "115臺傳歌仔戲演出-目不識丁",
+        "2026-11-07"
+      ],
+      "published_activity_ids": [
+        "xizhi_mubushiding_20261107_1900"
+      ]
     }
   ]
 }

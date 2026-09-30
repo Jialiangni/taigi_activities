@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-01T01:20:31+08:00",
+  "updated_at": "2026-10-01T01:34:59+08:00",
   "candidates": [
     {
       "id": "4823f23854bb8b94c3482615",
@@ -1046,29 +1046,6 @@
         "request_method": "GET",
         "fetched_at": "2026-09-29T22:44:54+08:00",
         "sha256": "c52420be259a4ad1ef9e1398397b4ea4390bb37588a818fac4a93179eb970ae1"
-      },
-      "backlog_origin": true
-    },
-    {
-      "id": "22c90e3fb77c5af0872317da",
-      "source_id": "ntpc_center_xizhi",
-      "source_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
-      "title": "汐止區公所 2026-09-22 115臺傳歌仔戲演出-目不識丁",
-      "kind": "announcement",
-      "fields": {
-        "start_time": null,
-        "end_time": null,
-        "is_free": null,
-        "cover_image": ""
-      },
-      "text": "",
-      "evidence": {
-        "url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
-        "final_url": "https://www.xizhi.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=bf623b649e233949d991e236d5de2610",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-29T23:07:45+08:00",
-        "sha256": "850c3e964442fb52774a2b006f176122eaff57214d77c4fdd717367407bf65d6"
       },
       "backlog_origin": true
     },
