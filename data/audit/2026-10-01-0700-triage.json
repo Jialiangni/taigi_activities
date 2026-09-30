@@ -115,8 +115,44 @@
     "missing_price_labels_restored": 18
   },
   "publication": {
-    "status": "not_yet_checked",
-    "note": "此輪8筆待正常地端編輯；部署僅修復票價顯示與流程，不能計為新活動刊登。"
+    "status": "success",
+    "checked_at": "2026-10-01T07:24:40+08:00",
+    "workflow_url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36790738548",
+    "tested_commit": "b26667cccbe9ae6e65ff75ca59590814a078889b",
+    "html_url": "https://jialiangni.github.io/taigi_activities/",
+    "html_count": 258,
+    "ics_url": "https://jialiangni.github.io/taigi_activities/taigi_activities.ics",
+    "ics_count": 258,
+    "newly_published": 0,
+    "editorial_pending": 8,
+    "price_labels_match": true,
+    "ci_tests": 249,
+    "ci_skips": 0,
+    "prior_failed_run": "https://github.com/Jialiangni/taigi_activities/actions/runs/36777562609",
+    "prior_failure": "已發布活動缺18組票價台文對照，下一次排程測試失敗；此輪補齊並修正ingest保存。",
+    "note": "8筆新活動仍待10/2 08:00地端編輯，此次部署只修復票價顯示與程序。",
+    "evidence": {
+      "index.html": {
+        "url": "https://jialiangni.github.io/taigi_activities/index.html",
+        "final_url": "https://jialiangni.github.io/taigi_activities/index.html",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-10-01T07:24:40+08:00",
+        "sha256": "06add93a4e7a3e5863b55cbde24015fc95954732d9dca9d694095eeef5dcc2d9",
+        "elapsed_ms": 1976,
+        "attempt": 1
+      },
+      "taigi_activities.ics": {
+        "url": "https://jialiangni.github.io/taigi_activities/taigi_activities.ics",
+        "final_url": "https://jialiangni.github.io/taigi_activities/taigi_activities.ics",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-10-01T07:24:39+08:00",
+        "sha256": "72a812610a7e3e37cbb0592c3484a742ff363c71e0ba940a259e5e0e7ae68f5b",
+        "elapsed_ms": 1398,
+        "attempt": 1
+      }
+    }
   },
   "findings": [
     "2則旧公告依官方正文及報名表結案；補充證據亦會重新下載核對",
