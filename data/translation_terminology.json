@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "preferences": [
+    {
+      "id": "free-admission-mian-tsinn",
+      "confirmed_on": "2026-10-01",
+      "user_instruction": "免費：免錢",
+      "source_thread_id": "01a0f50f-281e-79b0-9b64-3d10e865ce02",
+      "source_term": "免費",
+      "preferred_taigi": "免錢",
+      "context": "台語活動文案表達免費入場或免費參加的意思。",
+      "scope": "本批及後續相同語境的台語文；保留中文原稿、官方引句、官方名稱及固定資料，不擴大為全站自動取代。",
+      "provenance": "使用者明確指定用語修訂，另存修訂版本；不改動模型原始輸出或沿用其 verify 雜湊宣稱修訂版通過模型重建。"
+    }
+  ]
+}

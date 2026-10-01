@@ -1,0 +1,24 @@
+{
+  "model": "Taigi-Llama-2-Translator-13B:latest",
+  "happy_path": "real CLI output + restoration + CLI verify + user terminology + v2 packaging + isolated ingest passed",
+  "negative_path": "real scheduled worker called model; missing 80% and other source differences blocked submission",
+  "published_trial_activities": 0,
+  "formal_catalog_unchanged": true,
+  "accepted_in_isolated_copy": [
+    "review_nmh_54928ce745238bce75c8"
+  ],
+  "date": "2026-10-01",
+  "scope": "Switch new activity translation workflow; no existing copy rewritten, no trial activity published.",
+  "provider": "tw-hokkien",
+  "schema_version": 2,
+  "model_digest": "f52f2925585b8932da148d8a7a059b4dd5c850d15a9146a24ed122a10923a84e",
+  "tests": {
+    "python_passed": 258,
+    "python_skipped": 1,
+    "frontend": "passed",
+    "python_total": 259
+  },
+  "guide_hash": "a0b00b65fc6acf7a765b30e6d4d8ba81190b740ce97c0fb30c52348021ec99ca",
+  "schedule": "Existing Tuesday/Friday 08:00 Asia/Taipei; no new schedule.",
+  "naturalness": "User accepts model; no independent naturalness assessment. Facts and meaning checks remain mandatory."
+}

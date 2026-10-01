@@ -37,6 +37,7 @@ calendar-events/
 data/candidates/
 .env
 .editorial-work/
+.translation-trials/
 
 # OS files
 .DS_Store

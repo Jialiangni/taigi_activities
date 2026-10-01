@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from crawler.ai_editorial import EditorialError, fingerprint, save_json
 from crawler.editorial_queue import (pending, result_name, validate_result,
-                                    read, RESULTS, RECEIPTS)
+                                    read, RESULTS, RECEIPTS, check_provider)
 
 
 def git(*args, cwd=None):
@@ -53,7 +53,9 @@ def download(output, provider=None):
             # A returned file is waiting on publication, not on another rewrite.
             if (repo / RESULTS / name).exists():
                 try:
-                    validate_result(read(repo, RESULTS + '/' + name), item, guide)
+                    saved = read(repo, RESULTS + '/' + name)
+                    check_provider(repo, saved)
+                    validate_result(saved, item, guide)
                 except (ValueError, EditorialError):
                     pass  # A changed guide or rejected result needs correction.
                 else:
@@ -65,6 +67,8 @@ def download(output, provider=None):
                                          'items': tasks})
         (output / 'TAIGI_EDITORIAL.md').write_text(guide, encoding='utf-8')
         (output / 'EDITORIAL_HANDOFF.md').write_bytes((repo / 'EDITORIAL_HANDOFF.md').read_bytes())
+        if policy['provider'] == 'tw-hokkien':
+            (output / 'translation_terminology.json').write_bytes((repo / 'data/translation_terminology.json').read_bytes())
         (output / 'results').mkdir(exist_ok=True)
         print('Pending activities:', len(tasks), '; handoff:', output / 'input.json')
         return len(tasks)
@@ -91,6 +95,7 @@ def checked_files(folder, repo):
             # Old local results may outlive their activity; never publish them.
             print('Skipped expired, superseded or no-longer-pending result:', path.name)
             continue
+        check_provider(repo, result)
         validate_result(result, requests[path.name], guide)
         if target.exists() and json.loads(target.read_text()) == result:
             continue

@@ -22,19 +22,22 @@ def task_request(task):
     return dict(task, row={'activity': task['activity']})
 
 
-def valid_saved(path, task, guide):
+def valid_saved(path, task, guide, provider=None):
     if not path.exists():
         return False
     if path.is_symlink() or path.stat().st_size > 150000:
         raise ValueError('Unsafe local result')
     try:
-        validate_result(json.loads(path.read_text()), task_request(task), guide)
+        result = json.loads(path.read_text())
+        if provider == 'tw-hokkien' and (result.get('schema_version') != 2 or result.get('editor', {}).get('provider') != provider):
+            return False
+        validate_result(result, task_request(task), guide)
         return True
     except (ValueError, sync.EditorialError, KeyError):
         return False
 
 
-def submit_saved(pool, tasks, guide, submitter):
+def submit_saved(pool, tasks, guide, submitter, provider=None):
     # Only current validated copies enter submission. A stale local draft must
     # not prevent its replacement or block other newly completed activities.
     with tempfile.TemporaryDirectory(prefix='taigi-ready-') as temp:
@@ -42,7 +45,7 @@ def submit_saved(pool, tasks, guide, submitter):
         count = 0
         for task in tasks:
             source = pool / task['result_file']
-            if valid_saved(source, task, guide):
+            if valid_saved(source, task, guide, provider):
                 shutil.copyfile(str(source), str(selected / task['result_file']))
                 count += 1
         return submitter(selected, push=True) if count else 0
@@ -63,7 +66,7 @@ def run_worker(settings, provider, job, prompt):
     args = worker_command(settings, provider, job)
     env = dict(os.environ)
     # Codex uses the existing ChatGPT login; no fallback to billable API auth.
-    if provider == 'codex':
+    if provider in ('codex', 'tw-hokkien'):
         for key in ('OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL'):
             env.pop(key, None)
     with (job / 'worker.jsonl').open('w') as out, (job / 'worker.stderr').open('w') as err:
@@ -112,14 +115,14 @@ def run(settings, downloader=sync.download, submitter=sync.submit, invoke=run_wo
             pool.mkdir(exist_ok=True)
             eligible, blocked = [], []
             for task in bundle['items']:
-                if valid_saved(pool / task['result_file'], task, guide):
+                if valid_saved(pool / task['result_file'], task, guide, provider):
                     continue  # Retry network publication without paying for rewriting.
                 key = task['source_hash'] + ':' + bundle['guide_hash']
                 if attempts.get(key, 0) >= settings.get('max_attempts', 2):
                     blocked.append(task['activity_id'])
                 else:
                     eligible.append(task)
-            report['submitted'] += submit_saved(pool, bundle['items'], guide, submitter)
+            report['submitted'] += submit_saved(pool, bundle['items'], guide, submitter, provider)
             size = settings.get('batch_size', 5)
             if not isinstance(size, int) or not 1 <= size <= 20:
                 raise ValueError('Invalid local batch size')
@@ -132,9 +135,13 @@ def run(settings, downloader=sync.download, submitter=sync.submit, invoke=run_wo
                 save_json(job / 'input.json', dict(bundle, items=batch))
                 for name in ('TAIGI_EDITORIAL.md', 'EDITORIAL_HANDOFF.md'):
                     shutil.copyfile(str(bundle_dir / name), str(job / name))
-                prompt = (ROOT / 'scripts/editorial_worker_prompt.txt').read_text().replace(
+                if provider == 'tw-hokkien':
+                    shutil.copyfile(str(bundle_dir / 'translation_terminology.json'), str(job / 'translation_terminology.json'))
+                prompt_file = 'tw_hokkien_worker_prompt.txt' if provider == 'tw-hokkien' else 'editorial_worker_prompt.txt'
+                prompt = (ROOT / 'scripts' / prompt_file).read_text().replace(
                     '{dictionary_script}', str(ROOT / 'scripts/lookup_taiwanese.py')).replace(
-                    '{python}', sys.executable)
+                    '{python}', sys.executable).replace('{packager}', str(ROOT / 'scripts/tw_hokkien_result.py')).replace(
+                    '{translator}', str(Path.home() / '.local/bin/taigi-translate'))
                 # Confirm configured executable before consuming an attempt.
                 worker_command(settings, provider, job)
                 for task in batch:
@@ -149,13 +156,13 @@ def run(settings, downloader=sync.download, submitter=sync.submit, invoke=run_wo
                     # Retain completed files even if the worker later times out.
                     for task in batch:
                         source = job / 'results' / task['result_file']
-                        if valid_saved(source, task, guide):
+                        if valid_saved(source, task, guide, provider):
                             shutil.copyfile(str(source), str(pool / task['result_file']))
                 # A successful process exit does not mean it produced valid copy.
                 for task in batch:
-                    if not valid_saved(pool / task['result_file'], task, guide):
-                        raise ValueError('AI did not produce validated copy: ' + task['activity_id'])
-                report['submitted'] += submit_saved(pool, batch, guide, submitter)
+                    if not valid_saved(pool / task['result_file'], task, guide, provider):
+                        blocked.append(task['activity_id'])
+                report['submitted'] += submit_saved(pool, batch, guide, submitter, provider)
             report['needs_attention'] = blocked
             report['status'] = 'needs_attention' if blocked else 'submitted'
             return report

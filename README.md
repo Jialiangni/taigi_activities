@@ -9,6 +9,7 @@
 - 系統規格：[SPEC.md](SPEC.md)
 - 台文編輯規範：[TAIGI_EDITORIAL.md](TAIGI_EDITORIAL.md)（自然語序、資訊保留、查詞與兩輪校訂；AI 協作入口見 [AGENTS.md](AGENTS.md)）
 - 新活動 AI 台文：[通用地端交接契約](EDITORIAL_HANDOFF.md)；週二、五04:00收集核實，08:00地端一般程式檢查，有待編輯活動才啟動AI撰寫校訂並回傳，GitHub自動發布；每日01:00移除過期活動。現有文案保留，日常流程不需API金鑰。
+- 2026-10-01 起新活動由本機 TW-Hokkien-LLM（`Taigi-Llama-2-Translator-13B:latest`）翻譯長短文；Codex 整理中文、核對事實與還原固定資料，不另作自然度評審。使用者指定「免費→免錢」另記修訂；正式结果 v2 保留模型與資料還原的追溯資訊。模型失敗停止，不換模型；排程時段及既有文案不變。
 - 待核實候選：[Codex 逐筆追查流程](REVIEW_TRIAGE.md)，每天07:00處理到期案件；明確排除者保存證據，符合者接原有台文編輯及發布，仍缺資料者逐筆記錄責任、缺漏與追查期限。
 - 本次核查：[SOURCE_AUDIT.md](SOURCE_AUDIT.md)
 - 現行收集器與授權設定：[COLLECTORS.md](COLLECTORS.md)

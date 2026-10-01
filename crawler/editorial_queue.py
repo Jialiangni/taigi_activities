@@ -127,7 +127,10 @@ def validate_result(result, item, guide):
     required = {'schema_version', 'activity_id', 'source_hash', 'guide_hash',
                 'summary_taigi', 'description_taigi', 'uncertain_terms',
                 'review', 'dictionary_evidence', 'editor', 'edited_at'}
-    if not isinstance(result, dict) or set(result) != required or result['schema_version'] != 1:
+    version = result.get('schema_version') if isinstance(result, dict) else None
+    if version == 2:
+        required.add('translation')
+    if not isinstance(result, dict) or set(result) != required or type(version) is not int or version not in (1, 2):
         raise ValueError('Invalid returned editorial format')
     if (result['activity_id'] != item['activity_id'] or result['source_hash'] != item['source_hash']
             or result['guide_hash'] != fingerprint(guide)):
@@ -148,7 +151,14 @@ def validate_result(result, item, guide):
             raise ValueError('Dictionary lookup was not completed')
     review_data = result['review']
     validate_shape(review_data, REVIEW_SCHEMA)
-    if (not all(review_data[k] for k in ('facts_match', 'natural_taiwanese', 'people_and_content_complete'))
+    if version == 2:
+        from .tw_hokkien import validate_translation
+        validate_translation(result, item['activity'])
+    elif editor['provider'] == 'tw-hokkien':
+        raise ValueError('TW-Hokkien requires translation provenance v2')
+    checks = ('facts_match', 'people_and_content_complete') if version == 2 else (
+        'facts_match', 'natural_taiwanese', 'people_and_content_complete')
+    if (not all(review_data[k] for k in checks)
             or review_data['issues'] or not review_data['evidence']):
         raise ValueError('Editorial review did not pass')
     prose = result['summary_taigi'] + '\n' + result['description_taigi']
@@ -158,6 +168,14 @@ def validate_result(result, item, guide):
                 or not evidence['quote'].strip() or evidence['quote'] not in original):
             raise ValueError('Editorial evidence mismatch')
     return result
+
+
+def check_provider(root, result):
+    """New submissions obey the selected translator; accepted history stays intact."""
+    policy = Path(root) / 'data/editorial/config.json'
+    if policy.exists() and json.loads(policy.read_text()).get('provider') == 'tw-hokkien':
+        if result.get('schema_version') != 2 or result.get('editor', {}).get('provider') != 'tw-hokkien':
+            raise ValueError('New copy must come from the configured TW-Hokkien translator')
 
 
 def attach(catalog, item):
@@ -191,7 +209,9 @@ def ingest(root=ROOT, now=None, live_check=True):
             continue
         if path.is_symlink() or path.stat().st_size > 150000:
             raise ValueError('Unsafe editorial file')
-        result = validate_result(json.loads(path.read_text(encoding='utf-8')), item, guide)
+        result = json.loads(path.read_text(encoding='utf-8'))
+        check_provider(root, result)
+        result = validate_result(result, item, guide)
         if duplicate(item['row']['activity'], new_catalog, item['row']['verification'].get('opentix_session_id')):
             raise ValueError('Duplicate returned session')
         attach(new_catalog, item)

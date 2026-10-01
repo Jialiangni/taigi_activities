@@ -13,13 +13,17 @@ LABEL = 'com.codex.taigi.editorial-gate'
 
 
 def configuration(base, codex):
-    return {'schema_version': 1, 'state_dir': str(base / 'state'), 'batch_size': 5,
+    config = {'schema_version': 1, 'state_dir': str(base / 'state'), 'batch_size': 5,
             'max_attempts': 2, 'timeout_seconds': 1800,
             'workers': {'codex': {'argv': [str(codex), 'exec', '--ephemeral', '--json',
                 '--skip-git-repo-check', '--sandbox', 'workspace-write',
                 '-c', 'sandbox_workspace_write.network_access=true',
                 '-c', 'approval_policy="never"', '-c', 'forced_login_method="chatgpt"',
                 '--cd', '{workspace}', '-']}}}
+    # Codex prepares Chinese inputs and checks facts; only the local translator
+    # produces Taiwanese. The provider-specific prompt enforces that boundary.
+    config['workers']['tw-hokkien'] = {'argv': list(config['workers']['codex']['argv'])}
+    return config
 
 
 def launch_agent(base, settings):
@@ -56,6 +60,12 @@ def main():
     # Preserve custom alternative-provider commands on reinstall.
     if not settings.exists():
         settings.write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n')
+    else:
+        existing = json.loads(settings.read_text())
+        if 'tw-hokkien' not in existing.get('workers', {}):
+            existing.setdefault('workers', {})['tw-hokkien'] = json.loads(json.dumps(
+                existing['workers'].get('codex', config['workers']['tw-hokkien'])))
+            settings.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + '\n')
     plist.parent.mkdir(parents=True, exist_ok=True)
     with plist.open('wb') as handle:
         plistlib.dump(agent, handle)

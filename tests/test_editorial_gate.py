@@ -63,6 +63,42 @@ class EditorialGateTests(unittest.TestCase):
         self.assertEqual(report['ai_starts'], 1)
         self.assertTrue((self.base / 'results' / self.task['result_file']).exists())
 
+    def test_incomplete_copy_is_retained_for_attention_without_false_submission(self):
+        submitter = Mock(return_value=0)
+        report = gate.run(self.settings, downloader=self.download, submitter=submitter, invoke=Mock())
+        self.assertEqual(report['status'], 'needs_attention')
+        self.assertEqual(report['needs_attention'], ['future'])
+        self.assertEqual(report['submitted'], 0)
+        submitter.assert_not_called()
+
+    def test_tw_hokkien_worker_receives_terms_and_provider_prompt(self):
+        from crawler.tw_hokkien import MODEL, FIELDS, text_hash
+        def download(directory):
+            self.download(directory)
+            data = json.loads((directory / 'input.json').read_text())
+            data['provider'] = 'tw-hokkien'
+            save_json(directory / 'input.json', data)
+            save_json(directory / 'translation_terminology.json', {'preferences': []})
+            return 1
+        result = copy.deepcopy(self.result)
+        result['schema_version'] = 2
+        result['editor'] = {'provider': 'tw-hokkien', 'model': MODEL}
+        result['review']['natural_taiwanese'] = False
+        result['translation'] = {'model': MODEL, 'model_digest': 'a' * 64, 'fields': {
+            field: {'verified_translation': result[field], 'input_sha256': 'b' * 64,
+                    'report_sha256': 'c' * 64, 'output_sha256': text_hash(result[field]),
+                    'cli_verified': True, 'protected_literals': [], 'user_overrides': []}
+            for field in FIELDS}}
+        def worker(settings, provider, job, prompt):
+            self.assertEqual(provider, 'tw-hokkien')
+            self.assertIn(MODEL, prompt)
+            self.assertIn('tw_hokkien_result.py', prompt)
+            self.assertTrue((job / 'translation_terminology.json').exists())
+            save_json(job / 'results' / self.task['result_file'], result)
+        settings = dict(self.settings, workers={'tw-hokkien': {'argv': ['/usr/bin/true']}})
+        report = gate.run(settings, downloader=download, submitter=Mock(return_value=1), invoke=worker)
+        self.assertEqual(report['submitted'], 1)
+
     def test_valid_local_copy_retries_return_without_rewriting(self):
         save_json(self.base / 'results' / self.task['result_file'], self.result)
         worker, submitter = Mock(), Mock(return_value=1)

@@ -94,6 +94,25 @@ class EditorialQueueTests(unittest.TestCase):
             self.assertEqual(q.ingest(self.root, self.now), [])
             live.assert_not_called()
 
+    def test_tw_hokkien_v2_ingests_without_naturalness_review(self):
+        from crawler.tw_hokkien import MODEL, PROVIDER, FIELDS, text_hash
+        self.result['schema_version'] = 2
+        self.result['editor'] = {'provider': PROVIDER, 'model': MODEL}
+        self.result['review']['natural_taiwanese'] = False
+        self.result['translation'] = {'model': MODEL, 'model_digest': 'a' * 64, 'fields': {
+            field: {'verified_translation': self.result[field], 'input_sha256': 'b' * 64,
+                    'report_sha256': 'c' * 64, 'output_sha256': text_hash(self.result[field]),
+                    'cli_verified': True, 'protected_literals': [], 'user_overrides': []}
+            for field in FIELDS}}
+        self.write('data/editorial/config.json', {'provider': PROVIDER})
+        self.return_result()
+        with patch('crawler.verified.check_live_sources', return_value={}):
+            self.assertEqual(q.ingest(self.root, self.now), ['new'])
+        entry = approved_edition(self.activity, q.read(self.root, 'data/ai_taigi.json'))
+        self.assertEqual(entry['model'], MODEL)
+        self.assertFalse(entry['review']['natural_taiwanese'])
+        self.assertIn(q.result_name(self.item), q.read(self.root, q.RECEIPTS)['results'])
+
     def test_failed_live_source_leaves_all_publication_data_untouched(self):
         self.return_result()
         names = ['data/verified_activities.json', 'data/ai_taigi.json', q.QUEUE, q.RECEIPTS]
