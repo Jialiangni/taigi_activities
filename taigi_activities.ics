@@ -6,20 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:北北桃台語活動行事曆
 X-WR-TIMEZONE:Asia/Taipei
 BEGIN:VEVENT
-UID:opentix_2037522701486735361@taigiactivities.tw
-DTSTAMP:20260919T022238Z
-DTSTART:20261001T113000Z
-DTEND:20261001T134000Z
-SUMMARY:2026同黨劇團《父親母親》
-DESCRIPTION:官方語言說明：語言：台語、華語 (本次為 三面
- 台形式演出，三面皆有中英文字幕)\n入場規定、購票條
- 件及節目詳情請查閱官方活動公告。\n票面價格：900、120
- 0、1500、1800、2100、2400元；折扣、贊助票與購票條件依官
- 方頁面\nhttps://www.opentix.life/event/2037519395154640897
-LOCATION:水源劇場 臺北市中正區羅斯福路四段92號10樓
-URL:https://www.opentix.life/event/2037519395154640897
-END:VEVENT
-BEGIN:VEVENT
 UID:opentix_2038901677539012609@taigiactivities.tw
 DTSTAMP:20260919T022238Z
 DTSTART:20261002T113000Z
