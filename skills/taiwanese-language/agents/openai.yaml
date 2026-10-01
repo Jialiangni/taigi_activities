@@ -1,0 +1,4 @@
+interface:
+  display_name: "整段理解與台文重寫"
+  short_description: "先理解完整中文，再依台語敘述方式重寫，查核疑詞與事實，供不同模型和專案接手"
+  default_prompt: "請用 $taiwanese-language 先理解這段中文的完整意思，再用自然的台語敘述方式寫成台文，保留事實與指定用語。"

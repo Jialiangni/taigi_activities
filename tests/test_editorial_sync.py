@@ -34,6 +34,11 @@ class EditorialSyncTests(unittest.TestCase):
         self.guide = 'Fixture guide'
         (self.repo / 'TAIGI_EDITORIAL.md').write_text(self.guide)
         (self.repo / 'EDITORIAL_HANDOFF.md').write_text('Fixture contract')
+        skill = self.repo / 'skills/taiwanese-language'
+        (skill / 'references').mkdir(parents=True)
+        (skill / 'SKILL.md').write_text('Portable paragraph translation method')
+        (skill / 'references/handoff.md').write_text('Portable handoff contract')
+        save_json(self.repo / 'data/translation_terminology.json', {'preferences': []})
         for name, value in {
             'config': {'enabled': True, 'provider': 'codex'},
             'queue': {'schema_version': 1, 'items': [self.item]},
@@ -82,6 +87,19 @@ class EditorialSyncTests(unittest.TestCase):
         self.assertEqual(sync.download(self.output, 'codex'), 1)
         self.assertEqual(sync.download(self.output, 'other-ai'), 0)
         self.assertEqual(json.loads((self.output / 'input.json').read_text())['items'], [])
+
+    def test_download_contains_portable_method_and_terms_for_other_editor(self):
+        save_json(self.repo / 'data/editorial/config.json', {'enabled': True, 'provider': 'other-ai'})
+        self.git('add', '.'); self.git('commit', '-m', 'Select another editor'); self.git('push', 'origin', 'main')
+        self.assertEqual(sync.download(self.output, 'other-ai'), 1)
+        self.assertEqual((self.output / 'skills/taiwanese-language/SKILL.md').read_text(),
+                         'Portable paragraph translation method')
+        self.assertTrue((self.output / 'skills/taiwanese-language/references/handoff.md').is_file())
+        self.assertEqual(json.loads((self.output / 'translation_terminology.json').read_text()), {'preferences': []})
+        # Refreshing the portable rules must not remove a writer's saved results.
+        saved = self.output / 'results/keep.txt'; saved.write_text('Draft')
+        sync.download(self.output, 'other-ai')
+        self.assertEqual(saved.read_text(), 'Draft')
 
     def test_push_race_retries_latest_main_without_losing_other_change(self):
         sync.download(self.output, 'codex')

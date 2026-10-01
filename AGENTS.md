@@ -8,8 +8,9 @@
 [TAIGI_EDITORIAL.md](TAIGI_EDITORIAL.md)，並使用可用的 `taiwanese-language` skill。
 不確定的詞義、用字或臺羅，先用 `lookup_taiwanese` 核對；工具不可用時依 skill 的備援方式處理。
 
-現行活動翻譯依 `TAIGI_EDITORIAL.md` 首節：TW-Hokkien-LLM 實際產生台文，Codex 只整理中文、核對事實及還原固定資料，不自行潤飾台文、不另作自然度評審。
-已確認的使用者用語修訂另存版本與紀錄。下列舊自撰原則不得覆蓋此分工。
+現行活動翻譯依 `TAIGI_EDITORIAL.md` 首節與 [共用技能](skills/taiwanese-language/SKILL.md)：由接手的寫作者先理解整段中文及上下文，再按台語語序重寫；現在由 Codex 直接完成。
+不自動呼叫 TW-Hokkien、Muse 或其他翻譯模型。寫作者可修稿，並完成整句自檢及事實核對；不另啟動獨立自然度評審，也不要求逐筆人工批准。
+可攜交接見 [TRANSLATION_HANDOFF.md](TRANSLATION_HANDOFF.md)；使用者已確認的用語須按適用語境採用。
 
 - 預設採自然、親切、資訊具體的活動編輯語氣，漢字為主、必要時配臺羅。
 - 先理解活動，再按台語語序重寫整句；不可只替換華語單字。

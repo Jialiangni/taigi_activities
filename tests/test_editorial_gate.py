@@ -106,6 +106,24 @@ class EditorialGateTests(unittest.TestCase):
         worker.assert_not_called()
         self.assertEqual(report['submitted'], 1)
 
+    def test_direct_writer_receives_portable_method_and_terms(self):
+        def download(directory):
+            self.download(directory)
+            skill = directory / 'skills/taiwanese-language'
+            (skill / 'references').mkdir(parents=True)
+            (skill / 'SKILL.md').write_text('Portable method')
+            (skill / 'references/handoff.md').write_text('Handoff')
+            save_json(directory / 'translation_terminology.json', {'preferences': []})
+            return 1
+        def writer(settings, provider, job, prompt):
+            self.assertEqual((job / 'skills/taiwanese-language/SKILL.md').read_text(), 'Portable method')
+            self.assertTrue((job / 'skills/taiwanese-language/references/handoff.md').exists())
+            self.assertTrue((job / 'translation_terminology.json').exists())
+            self.assertNotIn('{dictionary_script}', prompt)
+            save_json(job / 'results' / self.task['result_file'], self.result)
+        report = gate.run(self.settings, downloader=download, submitter=Mock(return_value=1), invoke=writer)
+        self.assertEqual(report['submitted'], 1)
+
     def test_ai_failure_is_bounded_and_complete_output_survives(self):
         def fail(*args):
             raise RuntimeError('test failure')

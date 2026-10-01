@@ -6,6 +6,7 @@ stderr or remote URLs: some checkouts contain credentials in their remote URL.
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -67,8 +68,14 @@ def download(output, provider=None):
                                          'items': tasks})
         (output / 'TAIGI_EDITORIAL.md').write_text(guide, encoding='utf-8')
         (output / 'EDITORIAL_HANDOFF.md').write_bytes((repo / 'EDITORIAL_HANDOFF.md').read_bytes())
-        if policy['provider'] == 'tw-hokkien':
+        if (repo / 'data/translation_terminology.json').is_file():
             (output / 'translation_terminology.json').write_bytes((repo / 'data/translation_terminology.json').read_bytes())
+        skill = repo / 'skills/taiwanese-language'
+        if skill.is_dir():
+            target = output / 'skills/taiwanese-language'
+            if target.exists():
+                shutil.rmtree(target)
+            shutil.copytree(skill, target)
         (output / 'results').mkdir(exist_ok=True)
         print('Pending activities:', len(tasks), '; handoff:', output / 'input.json')
         return len(tasks)

@@ -3,42 +3,21 @@
 此文件與 `TAIGI_EDITORIAL.md` 是執行契約。資料格式不依賴 OpenAI API、Codex SDK 或特定模型。
 只編輯新活動；正式舊稿、來源日期、地點、報名連結及程式碼不在編輯範圍。
 
-## 現行 TW-Hokkien 流程（2026-10-01）
+## 現行流程：整段理解，由寫作者直接翻譯（2026-10-01）
 
-本節取代下方原先的 Codex 直接撰寫／兩輪台文校訂要求。排程時段與 GitHub 核實、接收、發布順序不變。
-`data/editorial/config.json` 的 provider 為 `tw-hokkien`。本機同名 worker 使用 Codex 整理中文及核對事實，
-台文必須實際透過 `~/.local/bin/taigi-translate` 由 `Taigi-Llama-2-Translator-13B:latest` 產生。
-不依賴桌面任務保持開啟，不另建排程；模型不可用就停止，沒有其他模型備援。
-無待編輯活動時仍是一般程式直接結束，不啟動 Codex 或翻譯模型。
+使用者最新決定：由 Codex 理解完整中文段落，再按台語的敘述方式寫成台文；未來可換成其他模型或專案。
+現在 provider=`codex`，使用本機原有 Codex 登入與模型設定；不另呼叫 TW-Hokkien、Muse 或付費翻譯 API。
+共用方法是 `skills/taiwanese-language/SKILL.md` 的 `whole-paragraph-v1`；語言方法不綁provider，網站欄位則依本契約。
+每批會帶入共用技能資料夾與 `translation_terminology.json`，接手者不必讀舊對話、整個儲存庫或依賴個人技能安裝。
+先讀完整原文與必要上下文，確認人物、角色與關係，再重寫長短台文；不以華語句型逐詞替換。
+同一寫作者修稿並核對事實，不啟動另一個自然度評審模型、不增加逐筆人工批准。
 
-每批包含 `input.json`、兩份規範及 `translation_terminology.json`。依 `scripts/tw_hokkien_worker_prompt.txt`：
-先整理中文摘要／完整介紹與各自保護清單，分別翻譯；依工具紀錄還原固定資料，逐项核對事實與語意完整性。
-使用者已接受模型，不另要求自然度審查；不能填寫虛構的自然度通過。漏譯、否定、角色、條件或新增事實仍攔下。
-既有正式活動、保留名單與已接收稿件不重寫；試譯草稿不直接匯入。
-
-### 正式結果 v2
-
-保留 v1 所有欄位，`schema_version=2`，`editor={"provider":"tw-hokkien","model":"Taigi-Llama-2-Translator-13B:latest"}`。
-`review.natural_taiwanese=false` 表示未另行評審，`facts_match` 和 `people_and_content_complete` 必須 true，`issues=[]` 且事實引句吻合。
-新增 `translation`：`model`、64位十六進位 `model_digest`，以及 `fields` 的 summary_taigi／description_taigi。
-每欄包含 `verified_translation`（CLI核對後、使用者用語修訂前的完整譯文）、`input_sha256`、`report_sha256`、`output_sha256`、
-`cli_verified=true`、`protected_literals`、`user_overrides`（start/end字元位置、source、replacement、rule_id）。
-目前只授權 `free-admission-mian-tsinn` 的 免費→免錢，不更動被保護的官方名稱、引句或固定資料。
-結果只放文案、來源綁定與翻譯紀錄，不可修改活動欄位。文案不嵌入URL／HTML，連結仍由原activity欄位顯示。
-
-由一般程式組裝，不能手填模型執行證明：
-
-```sh
-python3 scripts/tw_hokkien_result.py --workspace /批次目錄 --plan plans/活動ID.json
-```
-
-plan格式為 `{"activity_id":"ID","fields":{"summary_taigi":"translations/ID.summary.txt","description_taigi":"translations/ID.description.txt"},"review_file":"reviews/ID.json"}`。
-review_file 包含上述review六欄，必須依實際核對填寫。程式重跑 CLI verify、檢查模型名稱與digest一致，保存地端紀錄，
-套用已確認用語並更新evidence.claim（quote保留），通過v2檢查才寫results。原始中文、工具原稿和報告保留。
-GitHub重建用語修改及比對雜湊；雜湊是追溯證據，不是遠端模型執行的獨立認證。
-舊 v1 已接收資料繼續顯示；provider切換後的新稿必須為 v2，不偽造v1自然度通過。
-
-下載命令改用 `python3 scripts/editorial_sync.py download --provider tw-hokkien`，validate/submit仍由外部程式處理。
+新稿沿用下方通用結果 v1。`review.natural_taiwanese=true` 只表示寫作者實際完成台語整句自檢，並非獨立評審或母語者認證。
+另外兩個事實／完整性欄位必須實際通過，issues空、引句可核對；未做過的查詞與審查不能填成功。
+`editor.provider` 使用本批 input.json 的provider；`editor.model` 記實際模型，精確ID不可得就寫未提供。
+已接收的 TW-Hokkien v2 與舊稿照常保留；其歷史契約見 [docs/translation-tw-hokkien-history.md](docs/translation-tw-hokkien-history.md)。
+排程、核實、0筆不啟動AI、只回傳文案、固定資料與既有149筆保留名單不變。
+快速接手方式見 [TRANSLATION_HANDOFF.md](TRANSLATION_HANDOFF.md)。
 
 ## 排程與責任
 

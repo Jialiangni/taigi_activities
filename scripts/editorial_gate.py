@@ -135,8 +135,10 @@ def run(settings, downloader=sync.download, submitter=sync.submit, invoke=run_wo
                 save_json(job / 'input.json', dict(bundle, items=batch))
                 for name in ('TAIGI_EDITORIAL.md', 'EDITORIAL_HANDOFF.md'):
                     shutil.copyfile(str(bundle_dir / name), str(job / name))
-                if provider == 'tw-hokkien':
+                if (bundle_dir / 'translation_terminology.json').is_file():
                     shutil.copyfile(str(bundle_dir / 'translation_terminology.json'), str(job / 'translation_terminology.json'))
+                if (bundle_dir / 'skills/taiwanese-language').is_dir():
+                    shutil.copytree(bundle_dir / 'skills/taiwanese-language', job / 'skills/taiwanese-language')
                 prompt_file = 'tw_hokkien_worker_prompt.txt' if provider == 'tw-hokkien' else 'editorial_worker_prompt.txt'
                 prompt = (ROOT / 'scripts' / prompt_file).read_text().replace(
                     '{dictionary_script}', str(ROOT / 'scripts/lookup_taiwanese.py')).replace(
