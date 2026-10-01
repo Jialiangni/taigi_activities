@@ -11985,6 +11985,37 @@
           "reviewed_at": "2026-10-01T07:13:25+08:00"
         }
       ]
+    },
+    {
+      "candidate_id": "391f5e8c7c80cd85b39483e6",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2087010372770115585",
+      "title": "2026北藝學院｜人物筆記：讓陰影書寫",
+      "reason": "expired",
+      "rationale": "完整閱讀同一節目官方HTML及異動公告：原10月1日講座已提前到2026年9月30日19:30，頁面明示本節目已下架。不是因API400而推定過期。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "evidence_url": "https://www.opentix.life/event/2087010372770115585",
+      "content_sha256": "daa7ca059d4a2cdaf2d112c6401f3f0578158f12f10d28bb517d721db1c1a715",
+      "quotes": [
+        "本節目已下架",
+        "2026年09月30日（三）19:30"
+      ],
+      "evidence_kind": "opentix_archived_html",
+      "api_fetch_error": "http_400"
+    },
+    {
+      "candidate_id": "354df5cb54dab32cf32620a7",
+      "source_id": "taigiloo",
+      "source_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+      "title": "台語路經驗分享",
+      "reason": "resource_only",
+      "rationale": "實際核對官方HTML及瀏覽器：頁面主區塊是文章列表／台語路經驗分享索引，非某場活動公告；本筆索引候選結案，不排除網站的共學團或後續活動。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "evidence_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+      "content_sha256": "f70f48aaa12dbb94d8cd33f6f0e49ca80aa745c990201b4d234428688e2edd10",
+      "quotes": [
+        "文章列表 – 台語路經驗分享"
+      ]
     }
   ]
 }

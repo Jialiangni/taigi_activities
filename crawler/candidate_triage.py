@@ -8,7 +8,7 @@ import json
 import re
 from pathlib import Path
 
-from .collection import Document, plain
+from .collection import CollectionError, Document, plain
 
 PATH = 'data/reviewed_candidate_decisions.json'
 REASONS = {'expired', 'not_event', 'outside_region', 'not_taigi',
@@ -27,6 +27,14 @@ def document(body, url):
         # Keep sessions and changes; a newly added session must reopen the case.
         return json.dumps(p, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
     d = Document(body)
+    if url.startswith('https://taigiloo.tw/') and not d.content().strip():
+        # Article-index pages have a heading outside an empty entry-content.
+        # Preserve that visible main section, rather than hashing an empty page.
+        nodes = [n for n in d.root.all('div') if n.attrs.get('id') == 'content']
+        if len(nodes) == 1:
+            text = nodes[0].text() + ' ' + ' '.join(
+                n.attrs.get('src', '') + ' ' + n.attrs.get('href', '') for n in nodes[0].all())
+            return re.sub(r'\s+', ' ', text).strip()
     if url.startswith('https://www.xizhi.ntpc.gov.tw/home.jsp'):
         nodes = [n for n in d.root.all('div') if n.attrs.get('id') == 'home_content']
         if len(nodes) == 1:
@@ -89,12 +97,32 @@ def load(root):
 def matches(row, candidate, client):
     if not all(row[k] == candidate[k] for k in ('source_id', 'source_url', 'title')):
         return False
-    if row['candidate_id'] != candidate['id'] or row['evidence_url'] != evidence_url(candidate):
+    if row['candidate_id'] != candidate['id']:
+        return False
+    archived_html = row.get('evidence_kind') == 'opentix_archived_html'
+    if archived_html:
+        # Archived programs can retain a dated notice in HTML after the API
+        # returns 400. Never turn an arbitrary API/network failure into closure.
+        if (candidate['source_id'] != 'opentix' or row['reason'] != 'expired'
+                or not re.fullmatch(r'https://www\.opentix\.life/event/\d+', candidate['source_url'])
+                or row['evidence_url'] != candidate['source_url']):
+            return False
+        try:
+            client.get(evidence_url(candidate))
+        except CollectionError as error:
+            if error.code != 'http_400':
+                raise
+        else:
+            # An API restored with new sessions requires a new review.
+            return False
+    elif row['evidence_url'] != evidence_url(candidate):
         return False
     body, ev = client.get(row['evidence_url'])
     if ev['final_url'] != row['evidence_url']:
         return False
     content = document(body, row['evidence_url'])
+    if archived_html and ('本節目已下架' not in content or candidate['title'] not in content):
+        return False
     from .reviewed_supporting_evidence import valid as supporting_valid
     return (digest(content) == row['content_sha256']
             and all(q in content for q in row['quotes'])

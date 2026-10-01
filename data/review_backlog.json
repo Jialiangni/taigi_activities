@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-01T07:20:19+08:00",
+  "updated_at": "2026-10-02T07:13:02+08:00",
   "candidates": [
     {
       "id": "4823f23854bb8b94c3482615",
@@ -1001,41 +1001,6 @@
       "backlog_origin": true
     },
     {
-      "id": "391f5e8c7c80cd85b39483e6",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2087010372770115585",
-      "title": "2026北藝學院｜人物筆記：讓陰影書寫",
-      "kind": "session",
-      "fields": {
-        "start_time": "2026-09-30T19:30:00+08:00",
-        "end_time": "2026-09-30T21:00:00+08:00",
-        "venue": "臺北表演藝術中心 藍盒子",
-        "city": "臺北市",
-        "address": "臺北市士林區劍潭路1號",
-        "organizer": [
-          "臺北表演藝術中心"
-        ],
-        "price_info": [
-          0
-        ],
-        "is_free": true,
-        "platform_session_status": 3,
-        "session_name": "",
-        "session_id": "2087010645484466176",
-        "change_notification": "<p><span style=\"font-size: 16.5pt; color: rgb(32, 33, 36);\">【OPENTIX</span><span style=\"font-size: 16.5pt; color: rgb(32, 33, 36);\">活動異動</span><span style=\"font-size: 16.5pt; color: rgb(32, 33, 36);\">公告】</span><b><span style=\"font-size: 9.5pt; color: rgb(230, 80, 0);\">（公告日期</span></b><b><span style=\"font-size: 9pt; color: rgb(230, 80, 0);\">2026年09月17日</span></b><b><span style=\"font-size: 9.5pt; color: rgb(230, 80, 0);\">）</span></b><span style=\"font-size: 4pt;\"></span></p><p>&nbsp;</p><p>原訂於<b><span style=\"color:#E65000\">2026年10月01日（四）19:30</span></b>於臺北表演藝術中心藍盒子辦理之人物筆記講座，因活動規劃需求將調整至<b><span style=\"color:#E65000\">2026年09月30日（三）19:30</span></b>原場地辦理；已索票觀眾可持原票券入場，若您因延期無法前往，可於線上辦理退票，讓寶貴的入場名額留給其他有需要的觀眾，謝謝您的體諒與配合！</p><p>&nbsp;</p><p>退票辦法如下：</p><p><b>【電子票或尚未取紙本票】</b></p><ol type=\"1\"><li><u>以「信用卡、行動支付、文化幣全額支付」購票：</u></li></ol><p>請使用OPENTIX線上退訂單功能，至會員＞<a href=\"https://www.opentix.life/account/order-list?tab=TAB1\"><span style=\"color: rgb(17, 85, 204);\">訂單紀錄</span></a>＞點入要退訂的訂單，按下「退訂單」勾選欲退項目，線上完成退訂。</p><p>※請留意，每日23:30-00:00為系統結算期間暫停服務。請務必留意退票期限，提前申請。</p><p>※購買團票、套票或其他無法使用退訂單功能時，請至<a href=\"https://refund.opentix.life/\"><span style=\"color: rgb(17, 85, 204);\">網站</span></a>勾選項目1，填寫訂單資料辦理。申請的退票如符合退票規則，將於3個工作日內執行退票作業。</p><ol type=\"1\"><li><u>以「ATM轉帳、現金」購票：</u></li></ol><p>請至<a href=\"https://refund.opentix.life/\"><span style=\"color: rgb(17, 85, 204);\">網站</span></a>勾選項目2，填寫訂單資料並附上存摺照片辦理，申請的退票如符合退票規則，將於3個工作日內執行退票作業。</p><p>&nbsp;</p><p><b>【已取紙本票】</b>請由下述退票方案擇一辦理：</p><ol type=\"1\"><li><u>臨櫃退票</u>：請於服務時間內，至OPENTIX臺北、臺中、臺南、高雄四大服務處辦理。</li><li><u>郵寄退票</u>：請將存摺影本（刷卡購票無須提供）、票券、姓名電話等聯絡資訊於退票期限前（郵戳為憑），掛號郵寄至「100012臺北市中正區中山南路21-1號\n     OPENTIX 退票小組收」。退票郵寄前請記下票面之訂單編號，並請妥善保存掛號收據。</li></ol><p style=\"background-color: white;\"><b>【向主辦單位購買之有價票券者】</b>，請洽<b><span style=\"color: rgb(230, 80, 0);\">北藝中心原窗口</span></b>辦理<b><span style=\"color: rgb(230, 80, 0);\"></span></b></p><p style=\"background-color: white;\"><b>--------</b><b></b></p><p style=\"background-color: white;\">※如何查詢付款方式：</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp; </span>登入OPENTIX＞會員＞訂單紀錄，點入要查詢的訂單編號內即可查看付款方式。如為文化幣全額支付，付款方式會顯示「現金\n$0 + 文化幣」。</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp;\n</span>票券入場聯，票價旁的英文代號C為現金付款，ATM為ATM轉帳，V／M／J／AE／AP／GP為刷卡付款，B為向主辦單位購票票券。</p><p style=\"background-color: white;\">※注意事項</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp; </span>如購票時使用文化幣或點數折抵，退票時，系統將退還折抵之全額文化幣，並於扣除退票手續費後，優先退還點數，再將剩餘款項退回。特別提醒，如退票時（含換、補票及因節目異動之退票），抵用之文化幣、點數已逾使用效期，OPENTIX將無法以任何形式進行返還、展延。</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp; </span>退票以票面金額為計算標準，取票所產生之郵寄費、超商服務費，退票寄回郵資、選擇ATM轉帳付款產生之轉帳手續費等均不屬於退票費用計算內。</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp; </span>原訂單如為線上購買或分銷點購買並有歸戶OPENTIX會員，退票成功後會收到Email通知，你亦可登入OPENTIX訂單紀錄，查詢訂單狀態。</p><p style=\"background-color: white;\">●<span style=\"font-size: 7pt;\">&nbsp;&nbsp;&nbsp;\n</span>刷卡購票將退票至原購票信用卡，約7-10個工作日可向發卡行查詢到該筆款項；現金及ATM轉帳購票，選擇線上或郵寄辦理，約10個工作日匯款至你指定之帳戶。</p><p style=\"background-color: white;\">&nbsp;</p><p style=\"background-color: white;\">若有其他疑問，請洽詢OPENTIX兩廳院文化生活客服中心(02)3393-9888\n(每日09:00-20:00)</p>"
-      },
-      "text": "",
-      "evidence": {
-        "url": "https://csm.api.opentix.life/programs/2087010372770115585",
-        "final_url": "https://csm.api.opentix.life/programs/2087010372770115585",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-29T22:41:59+08:00",
-        "sha256": "31a709590ee52e6bc690271c444991db9f4d85bb19c478ad79abf2647764f383"
-      },
-      "backlog_origin": true
-    },
-    {
       "id": "4f9bb42f7b315990d6b18349",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2081904868818423809",
@@ -1356,29 +1321,6 @@
         "request_method": "GET",
         "fetched_at": "2026-09-29T22:43:03+08:00",
         "sha256": "0a9f2cc6d780fa6262326c026eb988da347df985e9e7d546a0992bcb6a8bb136"
-      },
-      "backlog_origin": true
-    },
-    {
-      "id": "354df5cb54dab32cf32620a7",
-      "source_id": "taigiloo",
-      "source_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
-      "title": "台語路經驗分享",
-      "kind": "announcement",
-      "fields": {
-        "start_time": null,
-        "end_time": null,
-        "is_free": null,
-        "cover_image": ""
-      },
-      "text": "",
-      "evidence": {
-        "url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
-        "final_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-29T22:58:43+08:00",
-        "sha256": "cbdb34b52e88682db881266ed07740819e83f9768469bd46e873e5c5cdb81031"
       },
       "backlog_origin": true
     },

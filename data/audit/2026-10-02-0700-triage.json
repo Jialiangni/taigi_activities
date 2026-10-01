@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "automation_id": "automation-3",
+  "reviewed_at": "2026-10-02T07:14:04+08:00",
+  "base_commit": "9d29cfa9b0aea29951c6de6691115e6639e911a7",
+  "input_kind": "persisted_backlog",
+  "exported_at": "2026-10-02T07:05:16.337759+08:00",
+  "export_candidate_count": 18,
+  "export_official_source_count": 15,
+  "backlog_before": 40,
+  "backlog_after": 38,
+  "closed_count": 2,
+  "closed": [
+    {
+      "candidate_id": "391f5e8c7c80cd85b39483e6",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2087010372770115585",
+      "title": "2026北藝學院｜人物筆記：讓陰影書寫",
+      "reason": "expired",
+      "rationale": "完整閱讀同一節目官方HTML及異動公告：原10月1日講座已提前到2026年9月30日19:30，頁面明示本節目已下架。不是因API400而推定過期。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "evidence_url": "https://www.opentix.life/event/2087010372770115585",
+      "content_sha256": "daa7ca059d4a2cdaf2d112c6401f3f0578158f12f10d28bb517d721db1c1a715",
+      "quotes": [
+        "本節目已下架",
+        "2026年09月30日（三）19:30"
+      ],
+      "evidence_kind": "opentix_archived_html",
+      "api_fetch_error": "http_400"
+    },
+    {
+      "candidate_id": "354df5cb54dab32cf32620a7",
+      "source_id": "taigiloo",
+      "source_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+      "title": "台語路經驗分享",
+      "reason": "resource_only",
+      "rationale": "實際核對官方HTML及瀏覽器：頁面主區塊是文章列表／台語路經驗分享索引，非某場活動公告；本筆索引候選結案，不排除網站的共學團或後續活動。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "evidence_url": "https://taigiloo.tw/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8/%e6%96%87%e7%ab%a0%e5%88%97%e8%a1%a8-%e5%8f%b0%e8%aa%9e%e8%b7%af%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/",
+      "content_sha256": "f70f48aaa12dbb94d8cd33f6f0e49ca80aa745c990201b4d234428688e2edd10",
+      "quotes": [
+        "文章列表 – 台語路經驗分享"
+      ]
+    }
+  ],
+  "followup_count": 16,
+  "followups": [
+    {
+      "candidate_id": "113e6755357fa44896310110",
+      "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
+      "title": "115年「掌藝薪傳-大師工作坊」",
+      "owner": "Codex",
+      "finding": "已讀國藝會同一115年工作坊完整公告、公開報名表與官方海報。表單明列前場10/4、10/18 10:00–12:00、台北偶戲館3樓、市民大道五段99號；後場10/18改10/11，11/1成果在霞海城隍廟。課程3000元、材料費另計、前場自備偶，不能把四班全部視為台語課或用每週日推算。原FB分享頁仍轉址且只有摘要。",
+      "missing_fields": [
+        "前場演出口白實際使用語言",
+        "中途加入／單堂參加條件",
+        "11/1成果發表確切開始時間"
+      ],
+      "next_action": "沿劇團本屆課程內容及官方報名表補核前場台語口白與參加條件；僅明確符合的前場日期建契約，其餘班別分開處理。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
+      "fetch_error": "Official page redirected; inspect destination before deciding",
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
+          "checked_at": "2026-10-02T07:07:35+08:00",
+          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
+          "checked_at": "2026-10-02T07:07:35+08:00",
+          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd"
+        }
+      ]
+    },
+    {
+      "candidate_id": "9d7c72661457ad8b528a7e02",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年深入你心歌唱",
+      "owner": "Codex",
+      "finding": "文化部UID69e1333c26b3242a48a9e3f7仍只有2026/1/6 19:00至10/27 21:00的整期起迄、八德區及大勇社區主辦，明示國台語教唱；搜尋未找到本期逐堂課表。",
+      "missing_fields": [
+        "逐堂日期及開始時間",
+        "確切教室地址",
+        "報名方式及費用"
+      ],
+      "next_action": "再查大勇社區發展協會本期官方課表；不得將整期起迄拼成10/27 19:00的單場。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "953b320f05d64047a33265d7",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "樂活歡唱無限",
+      "owner": "Codex",
+      "finding": "文化部UID69e284b726b3242a48a9e4e6仍為3/6 13:30至10/16 16:30整期、龍潭區中山社區及詹國祥國台語歌唱，未見單堂課表與教室；外部搜尋沒有補足官方場次。",
+      "missing_fields": [
+        "逐堂日期時間",
+        "確切教室地址",
+        "報名方式及費用"
+      ],
+      "next_action": "追查龍潭中山社區發展協會本期課程公告；保留國台語活動身分，勿把總期間當單場。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "31e00a4048cc4a48d24cfd5a",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年望間歌唱研習活動",
+      "owner": "Codex",
+      "finding": "完整文化部UID6a304d0026b3243414ccd317明示國台客語教唱，5/8 19:00起、10/2 21:00整期結束；仍只寫新屋區，未提供今天是否上課、今日起始時間與教室。定向搜尋只有同一API轉載，不能補猜今晚19:00。",
+      "missing_fields": [
+        "今日實際上課時間",
+        "教室地址",
+        "參加條件"
+      ],
+      "next_action": "明早重讀同一官方UID，若仍明示10/2已結束且沒有延期／新場次，即以官方整期截止證據辦理過期結案；若延期則追查課表。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "c1b791a8002c2b01dd6bd656",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
+      "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
+      "owner": "Codex",
+      "finding": "重讀主公告、Portaly及三張未決表單。10/3《熱人的冰麒麟》、10/17《雲遊博物館》表單仍寫星期日，但2026日期及Portaly為星期六；10/31漫才表單資訊欄仍誤列《雲遊博物館》；10/17下午《春福神傳說》仍顯示即將開放。此前已核實3場不重複新增。",
+      "missing_fields": [
+        "10/3及10/17星期矛盾的官方更正",
+        "10/31節目名稱更正",
+        "10/17下午完整報名說明"
+      ],
+      "next_action": "優先於10/3早上重查冰麒麟表單是否更正；其他逐場追查。日期／名稱衝突不能由Codex代改，新增符合者僅建立新場次契約。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
+      "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
+      "checked_supporting_sources": [
+        {
+          "url": "https://portaly.cc/nmhunitas",
+          "checked_at": "2026-10-02T07:07:34+08:00",
+          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfgXrKf_PnZwNcNjHEUzK-a3z2vucMQdcSnrnw-1IGmgzgkdQ/viewform?usp=send_form",
+          "checked_at": "2026-10-02T07:07:36+08:00",
+          "content_sha256": "59df395ffa49bcf07246ab23f4812e18f6e92232f6c62236f031b8580188b432"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
+          "checked_at": "2026-10-02T07:07:36+08:00",
+          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
+          "checked_at": "2026-10-02T07:07:36+08:00",
+          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c"
+        }
+      ]
+    },
+    {
+      "candidate_id": "d50adf5d105c3f70c43d3186",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
+      "title": "雙連教會『兒童台語文秋季班』",
+      "owner": "Codex",
+      "finding": "原公告仍明列每主日9:00–9:50、702/703教室、陳淑華與劉惠雅、國小1至6年級。2026秋季官方表單已關閉但文字明示歡迎隨時加入、請洽9樓辦公室靜婷幹事02-25415390#221；不是課程取消。未見學期末或逐堂課表。",
+      "missing_fields": [
+        "本期逐堂日期／結束日期",
+        "費用及參加規定"
+      ],
+      "next_action": "追查雙連教會本期兒童主日學／台語班正式公告或公開週報課表；未補齊前不自行展開每主日場次。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
+      "content_sha256": "894c8d29108d0d4a682ce5cfa8464edf98705ab08a7da34d8dc4a9e986005ad6",
+      "checked_supporting_sources": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScBtmViVEh76tH_3-xNBkOPjKJWfisk1wkioT_OZUBqWwvUKQ/closedform",
+          "checked_at": "2026-10-02T07:07:36+08:00",
+          "content_sha256": "8e1d3ec848e6b04bcadb1980023cea7e8085469ef2e441e5c7a864e77cff8088"
+        }
+      ]
+    },
+    {
+      "candidate_id": "72edde934c4530680c1af542",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
+      "title": "三少爺遊世界：臺灣台語繪本說故事",
+      "owner": "Codex",
+      "finding": "今日官方頁仍同時列場次2026/10/24（六）14:00–15:30及正文10/12（日）14:00–15:30，未更正；台語約80%、黃郁欽、鐵道部食堂2樓、12組親子與購票入館100/50元均可核對。",
+      "missing_fields": [
+        "活動日期矛盾的官方更正"
+      ],
+      "next_action": "追查臺博館同一報名頁及正式活動公告，待10/24與10/12衝突釐清才建場次。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-05T07:00:00+08:00",
+      "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
+      "content_sha256": "5a0a5f23752b2555ecaaf8401eddba23410d5addf868ce3d2d52abfeeb02fefb",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "70c1fd0d84b337d74c0167bc",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
+      "title": "【汐止分館】115年10月主題書展：書香傳承母語情、台語共讀趣",
+      "owner": "Codex",
+      "finding": "書展公告仍提三場台語故事但沒有日期。另找到並全文閱讀汐止分館115年10月彩虹故事屋：只列10/24（六）14:00–14:30「(中)砰！」楊淑宜，不能當作三場台語故事；原書展海報只有10/1–31展期。",
+      "missing_fields": [
+        "三場台語繪本故事各自日期時間與題名"
+      ],
+      "next_action": "追查汐止分館10月新增台語專場公告／場次表；10/24中文故事不混入台語清單，書展與單場活動分開。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-05T07:00:00+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
+      "content_sha256": "2333c4e5ddca331e7e9f8662e1bdfcc5a78dcc80bacfe0b07dd0b92bd79d3e9f",
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=d0c2e71a5df04c66b757e5cc8ff7d2f9",
+          "checked_at": "2026-10-02T07:07:35+08:00",
+          "content_sha256": "818bc5021178e07a0569e2754064f1abf78f02c58e1b3daffce03cc4b7e1cff6"
+        }
+      ]
+    },
+    {
+      "candidate_id": "aff4987e3ecf4e1363512619",
+      "source_url": "https://www.opentix.life/event/2079846338651627521",
+      "title": "梨園《傾國之戀》當代傳奇劇場",
+      "owner": "Codex",
+      "finding": "全文重讀OPENTIX：藝術節總述仍稱《傾國之戀》融合台灣唸歌，但本節目曲目只有《貴妃醉酒》《拾玉鐲》《霸王別姬》，主演黃若琳、許立縈、張偉全；售票頁無唸歌段落或演出者。搜尋的其他節目轉載不能用來證實本節目台語內容。",
+      "missing_fields": [
+        "本節目是否實際包含台灣唸歌及演出者"
+      ],
+      "next_action": "追查當代傳奇／板橋放送所本節目正式節目單，確認唸歌是否另屬藝術節其他節目；不以京劇曲目直接否定有唸歌的矛盾總述。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
+      "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "5c6660b8262bfe3f31cfc623",
+      "source_url": "https://www.opentix.life/event/2079846338651627521",
+      "title": "梨園《傾國之戀》當代傳奇劇場",
+      "owner": "Codex",
+      "finding": "與同一節目另一場一併全文核對：藝術節總述稱融合台灣唸歌，但本節目只列京劇三折及京劇演員，尚無唸歌段落對應。兩場同一未解矛盾。",
+      "missing_fields": [
+        "本場是否包含台灣唸歌及演出者"
+      ],
+      "next_action": "與同來源另一場共同追查正式節目單，僅對獲得台語證據的場次採用。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
+      "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "69e6b1d9a4f6c7c705536fb6",
+      "source_url": "https://www.opentix.life/event/2095045191349043200",
+      "title": "大稻埕戲苑「115年駐館團隊專場演出」《三國演義之古城會》",
+      "owner": "Codex",
+      "finding": "完整OPENTIX劇情、製作名單及展演須知已讀：11/15布袋戲，陳冠霖主演，須知僅明列「字幕語言：台語」，未明列口述／演出語言；不能把字幕視為發音。",
+      "missing_fields": [
+        "本場演出／口白語言"
+      ],
+      "next_action": "沿大稻埕戲苑與陳錫煌劇團本場演出公告查語言；取得本場口述台語證據後綁定session，不引用單純演員履歷。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095045191349043200",
+      "content_sha256": "29fe03c419d10b1f8c623690e28aff262a000666429ff30d0578adf22844109d",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "f8ebc54324d597bc142c1ff9",
+      "source_url": "https://www.opentix.life/event/2087818083774783489",
+      "title": "《聽見那個年代》張林峯2026音樂會",
+      "owner": "Codex",
+      "finding": "完整OPENTIX音樂會正文、場館須知已讀：以1980–2000台灣音樂、布袋戲歌聲、土地歌聲及KULO原創為主，未公布具名曲目或演唱語言。搜尋中其他演出／Podcast的台語文字不作此場證据。",
+      "missing_fields": [
+        "本次演唱台語歌曲或明確語言聲明"
+      ],
+      "next_action": "追查張林峯本場2026/10/24音樂會官方節目單或演出者本場公告，區分台灣題材、器樂與實際台語演唱。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2087818083774783489",
+      "content_sha256": "eba8cbdba92869cfa9cb006bbf347a79c287c4439f977891064db56f530afc6f",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "80f5dc08121066e2b79da2b1",
+      "source_url": "https://taigiloo.tw/course/tuesday/",
+      "title": "台語囡仔共學團",
+      "owner": "Codex",
+      "finding": "全文重讀共學團頁：全台語2–6歲、家長陪同並輪值、每週二上午、台北市室內、免費；仍未提供本期起訖、單堂開始時間或固定地址。頁面沒有公開報名表，只連官方粉專；不能把未定地點的團體紹介當逐場活動。",
+      "missing_fields": [
+        "本期有效日期及單堂開始時間",
+        "實際上課地址",
+        "現行參加辦法"
+      ],
+      "next_action": "沿台灣台語路協會官方共學團更新查本期招生及場地；若只是長期團體介紹，須確認後改列非場次資訊，不擅自排入每週二。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://taigiloo.tw/course/tuesday/",
+      "content_sha256": "fce7bf4a9e60fac33063dd0b30868d89077b2338e37349d203bf638d2df0175a",
+      "checked_supporting_sources": []
+    },
+    {
+      "candidate_id": "e1e402c37a1d67499b7caa1f",
+      "source_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
+      "title": "臺北市政府文化局",
+      "owner": "Codex",
+      "finding": "完整文化局新聞稿現可核對10/17艋舺公園兩場14:30–16:30、17:30–19:30，免費自由入座；已實際看官方演唱會海報，確認雙場及表演名單，但沒有實際歌曲／台語比例。台語導覽4场既有记录不重写。",
+      "missing_fields": [
+        "兩場演唱會實際台語歌曲／演出內容"
+      ],
+      "next_action": "追查文化局與承辦的兩場節目單；時間已確認，不再列缺開始時間。不得因歌手曾唱台語即推定當日曲目。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
+      "content_sha256": "b1e38420c3e4387adbf1010ba4567180aaed200f996f028405a0b746c780e566",
+      "checked_supporting_sources": [
+        {
+          "url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
+          "checked_at": "2026-10-02T07:07:37+08:00",
+          "content_sha256": "b1e38420c3e4387adbf1010ba4567180aaed200f996f028405a0b746c780e566"
+        }
+      ]
+    },
+    {
+      "candidate_id": "d3b02cefbeaec5471565476c",
+      "source_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+      "title": "彩虹觀光巴士10月開跑！國際變裝巨星妮妃雅、 Pangina Heals邀你探索多元友善的臺北 115-09-19 迎接10月同志驕傲月，臺北市政府觀光傳播局推出「2026 Color Taipei Color your way」系列活動。10月來臺北，除了參加亞洲最具指標性的同志盛事，千萬別錯過廣受好評的彩虹觀光巴士遊程！遊程將於10月9日至30日登場，即日起於KKday獨家販售。帶領旅客穿梭臺北市區，走訪西門紅樓、二二八和平公園、台北101、臺北大巨蛋及華山文創園區等臺北經典地標及彩虹文化景點，今年更首度駛進林森條通商圈，探索條通街區夜間文化、欣賞變裝皇后演出還有國際巨星限定場次，深入感受臺北多元友善的城市魅力。今年彩虹觀光巴士推出三大特色遊程，下午場次的「一般導覽場」帶領旅客穿梭臺北市區，透過變裝皇后的導覽分享，認識臺北的彩虹文化故事；晚上場次的「派對演出場」則首度進入林森條通商圈，旅客將造訪天津大酒店及Bar Nine，跟著條通媽媽桑探索條通不為人知的歷史故事與夜間文化，欣賞變裝皇后精彩演出與互動體驗，還可免費享用一杯飲料，在微醺與歡樂氛圍中感受條通獨特魅力；另於10月28日及30日推出限量「特別嘉賓派對場」，邀請國際變裝巨星Pangina Heals及妮妃雅登車，打造今年最具話題性的彩虹觀光體驗。觀傳局表示，今年彩虹觀光巴士不僅首度結合條通街區探索與夜間文化體驗，更邀請泰國知名變裝天后Pangina Heals及《RuPaul's Drag Race》冠軍妮妃雅參與限定場次，打造兼具文化深度與娛樂話題的觀光遊程，期盼藉由彩虹文化、街區故事及國際級嘉賓等吸引更多國內外旅客走進臺北，感受自由、多元且包容的城市魅力。今年邀集8位臺灣知名變裝皇后擔任導覽員，包括跩姬寶貝、漢娜、小花寶貝、Yolanda、Marian、Bagel、Yugee及Honey Ji；同時結合《甲板日誌》、女同志派對品牌「浪漫銀河大舞廳」及高人氣的Sandra Hoe等LGBTQ+網路創作者共同參與。此外，今年特別規劃臺語導覽場次，並推出5場英文導覽，讓國內外旅客輕鬆認識臺北的多元文化。除彩虹觀光巴士外，「2026 Color Taipei Color your way」系列活動也推出多項限定體驗。9月24日至10月12日，只要至「臺北旅遊網」Facebook及Instagram指定貼文留言「Color Taipei Color your way」，並標記兩位好友，就有機會抽中彩虹觀光巴士遊程票券等限定好禮；西門町遊客中心則於10月1日至31日特別設置限定彩虹主題拍貼框，體驗拍貼還能獲得限定彩虹小禮。觀傳局表示，為迎接來臺北參與同志驕傲月活動及臺灣同志遊行的國內外旅客，今年更攜手Agoda推出「Taipei Nice Stay」限時住宿專區，提供友善優質的住宿選擇，鼓勵旅客多停留臺北，體驗臺北自由包容的城市氛圍與豐富精彩的文化風貌，共同創造屬於自己的「Color Taipei Color your way」。KKday「彩虹觀光巴士遊程」購票：連結「2026 Color Taipei Color your way」10月登場，邀旅客探索臺北多元友善魅力。國際知名變裝皇后妮妃雅將於10月30日登上彩虹觀光巴士與旅客近距離互動。 泰國知名變裝表演者Pangina Heals將於10月28日參與彩虹觀巴行程。臺灣知名變裝表演品牌灣島皇后們將登上彩虹觀光巴士，帶領旅客認識臺北彩虹文化。",
+      "owner": "Codex",
+      "finding": "沿新聞稿短網址到KKday #122926：程式HTTP403，瀏覽器可完整閱讀及展開日期方案。確認集合臺北車站東三門、A14:00–15:00/B16:00–17:00/C18:00–20:00及399/999/1500元方案；只有英文場10/28 C、10/29 A/B、10/30 B/C明確標記。台語專場沒有對應日期；實際查看官方主圖僅10/9–30總期間。",
+      "missing_fields": [
+        "台語導覽對應日期／路線",
+        "可重查的本場官方語言證據"
+      ],
+      "next_action": "優先追查觀傳局／灣島皇后正式台語場次表或KKday更新；非英文場不等於台語場。保存購票入口與已確認集合資訊，勿整批加入。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "evidence_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+      "content_sha256": "485418170a074eb3140de0237fa01aa3d5ae91119c6ff19a70de6622c1081eb2",
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+          "checked_at": "2026-10-02T07:07:37+08:00",
+          "content_sha256": "485418170a074eb3140de0237fa01aa3d5ae91119c6ff19a70de6622c1081eb2"
+        },
+        {
+          "url": "https://www.kkday.com/zh-tw/product/122926-color-taipei-rainbow-sightseeing-bus",
+          "checked_at": "2026-10-02T07:12:58+08:00",
+          "method": "browser_read_only",
+          "finding": "Read expanded package, calendar, itinerary, notice and official poster; no Taiwanese-specific session mapping."
+        }
+      ]
+    },
+    {
+      "candidate_id": "627b611118572afd8e772b71",
+      "source_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
+      "title": "縮放你我、縮放世界 桃園市兒童美術館「放大鏡與縮小燈：縮放自如主題書展」 陪你一起加入變化多端的冒險",
+      "owner": "Codex",
+      "finding": "官方新聞633今日仍HTTP428；網頁讀取備援亦失敗。定向搜尋找到館方署名的同名展覽資訊指向2025/11/26–2026/3/2，但原官方頁尚無可重查正文，不能只據搜尋摘要或讀取失敗結案。",
+      "missing_fields": [
+        "原官方公告可讀取內容與展期",
+        "同篇延伸台語活動是否全部結束"
+      ],
+      "next_action": "查美術館官方前台、公開活動平台的同名展覽完整公告；補齊可重查展期證據再辦理過期結案，不標非台語。",
+      "reviewed_at": "2026-10-02T07:12:58+08:00",
+      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "evidence_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
+      "fetch_error": "http_428",
+      "checked_supporting_sources": []
+    }
+  ],
+  "newly_verified_sessions": 0,
+  "newly_queued_sessions": 0,
+  "newly_published_sessions": 0,
+  "queue_action": "No new qualifying sessions; preserved existing queue for normal Friday 08:00 editorial gate.",
+  "not_due_candidates": 22,
+  "validation": {
+    "unit_tests": 263,
+    "passed": true,
+    "skipped": 1,
+    "skip_reason": "Optional local OCR integration unavailable",
+    "preserved_files_sha256": {
+      "data/verified_activities.json": "529ed6a625e79f0006f4320b0418f0ca9fed19669c5d1e403c2f7d74f559639b",
+      "data/ai_taigi.json": "2bccb3a2fc12bd134ead00cfd78808a1151e058f843ea5cbf05188d318b09e26",
+      "data/ui_taigi.json": "f4ca44c82ed22724ec26fa7b10ff6d18b62b22e928b317e84726e75eb45600a5",
+      "data/ui_price_taigi.json": "9b14acba105d8fd51bb757c49e64195810c245be8224facc39e60970bb4a667b",
+      "data/accupass_editorial.json": "83174fa28ee9c78c955973db95869e014b9c6b09d79fcb7ede8e9005a60d191d",
+      "data/opentix_editorial.json": "adcf74423976219cc3038faf7d88ceac49f63e3c2a94770a2d82b8a462401beb",
+      "data/directory_editorial.json": "2e4caf4b1ba581ae1a32d17251b6f3e2e449f2c498dd14bd69e569f1ceeae49e",
+      "data/editorial/queue.json": "461a8495d5699991dad9f246d3019a288da83c8a79c3688431f21005a9b412df"
+    }
+  },
+  "fixes": [
+    "Allow evidence-bound expired OPENTIX closure from its archived HTML only while API returns400; API recovery or HTML changes reopen review.",
+    "Preserve visible Taigiloo index heading when an empty entry-content hides main-section identity."
+  ],
+  "publication": {
+    "status": "not_yet_pushed",
+    "new_activity_publication": false
+  }
+}

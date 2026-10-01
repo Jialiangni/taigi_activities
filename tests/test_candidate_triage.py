@@ -52,6 +52,15 @@ class TriageTests(unittest.TestCase):
         self.assertFalse(matches(self.row, dict(self.c, title='New event'), Client(self.body)))
         self.assertFalse(matches(dict(self.row, quotes=['invented']), self.c, Client(self.body)))
 
+    def test_empty_taigiloo_entry_preserves_visible_index_identity(self):
+        url = 'https://taigiloo.tw/articles/'
+        body = '<div id="content"><h1>文章列表 – 台語路經驗分享</h1><div class="entry-content"></div></div>'
+        before = document(body, url)
+        self.assertIn('文章列表', before)
+        changed = body.replace('</h1>', '</h1><a href="/new-event">新活動</a>')
+        self.assertNotEqual(digest(before), digest(document(changed, url)))
+        self.assertEqual('', document('<div class="entry-content"></div>', url))
+
     def test_failed_batch_does_not_delete_backlog(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -73,6 +82,37 @@ class TriageTests(unittest.TestCase):
         p['result']['eventVenues'][0]['events'].append({'id': 2})
         after = document(json.dumps(p), 'https://csm.api.opentix.life/programs/1')
         self.assertNotEqual(digest(before), digest(after))
+
+    def test_archived_opentix_html_requires_exact_page_and_api_400(self):
+        from crawler.collection import CollectionError
+        c = dict(self.c, source_id='opentix', source_url='https://www.opentix.life/event/123')
+        body = '<main>Old event 本節目已下架 Event ended 2025/12/01</main>'
+        row = dict(self.row, source_id='opentix', source_url=c['source_url'],
+                   evidence_url=c['source_url'], evidence_kind='opentix_archived_html',
+                   content_sha256=digest(document(body, c['source_url'])))
+        class Archived:
+            error = 'http_400'
+            html = body
+            def get(self, url):
+                if 'csm.api.opentix.life' in url:
+                    if self.error:
+                        raise CollectionError(self.error)
+                    return '{"result":{"eventVenues":[{"events":[{"id":2}]}]}}', {'final_url': url}
+                return self.html, {'final_url': url}
+        client = Archived()
+        self.assertTrue(matches(row, c, client))
+        self.assertFalse(matches(dict(row, evidence_url=c['source_url']+'4'), c, client))
+        self.assertFalse(matches(dict(row, reason='not_taigi'), c, client))
+        client.error = None
+        self.assertFalse(matches(row, c, client))
+        client.error = 'http_503'
+        with self.assertRaises(CollectionError):
+            matches(row, c, client)
+        client.error = 'http_400'
+        client.html = body.replace('2025', '2027')
+        self.assertFalse(matches(row, c, client))
+        client.html = body.replace('本節目已下架', '')
+        self.assertFalse(matches(dict(row, content_sha256=digest(document(client.html, c['source_url']))), c, client))
 
     def test_reviewed_poster_must_remain_linked_and_unchanged(self):
         from crawler.reviewed_announcements import check
