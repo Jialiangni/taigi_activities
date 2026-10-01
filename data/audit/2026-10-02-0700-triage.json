@@ -388,7 +388,7 @@
     "unit_tests": 263,
     "passed": true,
     "skipped": 1,
-    "skip_reason": "Optional local OCR integration unavailable",
+    "skip_reason": "Tesseract integration runs on Linux CI; local tesseract unavailable",
     "preserved_files_sha256": {
       "data/verified_activities.json": "529ed6a625e79f0006f4320b0418f0ca9fed19669c5d1e403c2f7d74f559639b",
       "data/ai_taigi.json": "2bccb3a2fc12bd134ead00cfd78808a1151e058f843ea5cbf05188d318b09e26",
@@ -398,14 +398,24 @@
       "data/opentix_editorial.json": "adcf74423976219cc3038faf7d88ceac49f63e3c2a94770a2d82b8a462401beb",
       "data/directory_editorial.json": "2e4caf4b1ba581ae1a32d17251b6f3e2e449f2c498dd14bd69e569f1ceeae49e",
       "data/editorial/queue.json": "461a8495d5699991dad9f246d3019a288da83c8a79c3688431f21005a9b412df"
-    }
+    },
+    "all_remaining_cases_owned": 38,
+    "overdue_cases_after_run": 0
   },
   "fixes": [
     "Allow evidence-bound expired OPENTIX closure from its archived HTML only while API returns400; API recovery or HTML changes reopen review.",
     "Preserve visible Taigiloo index heading when an empty entry-content hides main-section identity."
   ],
   "publication": {
-    "status": "not_yet_pushed",
+    "status": "success",
+    "run_url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36939698589",
+    "run_head": "8028f132f1a75127677c654d62a1b6e2dda6f37f",
+    "checked_at": "2026-10-02T07:15:49+08:00",
+    "html_status": 200,
+    "ics_status": 200,
+    "live_html_sessions": 257,
+    "live_ics_sessions": 257,
+    "live_matches_repository": true,
     "new_activity_publication": false
   }
 }
