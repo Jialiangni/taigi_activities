@@ -29,8 +29,7 @@ def valid_saved(path, task, guide, provider=None):
         raise ValueError('Unsafe local result')
     try:
         result = json.loads(path.read_text())
-        versions = {'tw-hokkien': 2, 'meta-model-api': 3}
-        if provider in versions and (result.get('schema_version') != versions[provider] or result.get('editor', {}).get('provider') != provider):
+        if provider == 'tw-hokkien' and (result.get('schema_version') != 2 or result.get('editor', {}).get('provider') != provider):
             return False
         validate_result(result, task_request(task), guide)
         return True
@@ -67,7 +66,7 @@ def run_worker(settings, provider, job, prompt):
     args = worker_command(settings, provider, job)
     env = dict(os.environ)
     # Codex uses the existing ChatGPT login; no fallback to billable API auth.
-    if provider in ('codex', 'tw-hokkien', 'meta-model-api'):
+    if provider in ('codex', 'tw-hokkien'):
         for key in ('OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL'):
             env.pop(key, None)
     with (job / 'worker.jsonl').open('w') as out, (job / 'worker.stderr').open('w') as err:
@@ -136,16 +135,13 @@ def run(settings, downloader=sync.download, submitter=sync.submit, invoke=run_wo
                 save_json(job / 'input.json', dict(bundle, items=batch))
                 for name in ('TAIGI_EDITORIAL.md', 'EDITORIAL_HANDOFF.md'):
                     shutil.copyfile(str(bundle_dir / name), str(job / name))
-                if provider in ('tw-hokkien', 'meta-model-api'):
+                if provider == 'tw-hokkien':
                     shutil.copyfile(str(bundle_dir / 'translation_terminology.json'), str(job / 'translation_terminology.json'))
-                prompt_file = {'tw-hokkien': 'tw_hokkien_worker_prompt.txt',
-                               'meta-model-api': 'meta_worker_prompt.txt'}.get(provider, 'editorial_worker_prompt.txt')
+                prompt_file = 'tw_hokkien_worker_prompt.txt' if provider == 'tw-hokkien' else 'editorial_worker_prompt.txt'
                 prompt = (ROOT / 'scripts' / prompt_file).read_text().replace(
                     '{dictionary_script}', str(ROOT / 'scripts/lookup_taiwanese.py')).replace(
                     '{python}', sys.executable).replace('{packager}', str(ROOT / 'scripts/tw_hokkien_result.py')).replace(
-                    '{translator}', str(Path.home() / '.local/bin/taigi-translate')).replace(
-                    '{meta_packager}', str(ROOT / 'scripts/meta_result.py')).replace(
-                    '{meta_translator}', str(ROOT / 'scripts/muse_translate.py'))
+                    '{translator}', str(Path.home() / '.local/bin/taigi-translate'))
                 # Confirm configured executable before consuming an attempt.
                 worker_command(settings, provider, job)
                 for task in batch:

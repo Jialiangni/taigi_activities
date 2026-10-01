@@ -128,9 +128,9 @@ def validate_result(result, item, guide):
                 'summary_taigi', 'description_taigi', 'uncertain_terms',
                 'review', 'dictionary_evidence', 'editor', 'edited_at'}
     version = result.get('schema_version') if isinstance(result, dict) else None
-    if version in (2, 3):
+    if version == 2:
         required.add('translation')
-    if not isinstance(result, dict) or set(result) != required or type(version) is not int or version not in (1, 2, 3):
+    if not isinstance(result, dict) or set(result) != required or type(version) is not int or version not in (1, 2):
         raise ValueError('Invalid returned editorial format')
     if (result['activity_id'] != item['activity_id'] or result['source_hash'] != item['source_hash']
             or result['guide_hash'] != fingerprint(guide)):
@@ -154,12 +154,9 @@ def validate_result(result, item, guide):
     if version == 2:
         from .tw_hokkien import validate_translation
         validate_translation(result, item['activity'])
-    elif version == 3:
-        from .meta_translation import validate_translation
-        validate_translation(result, item['activity'])
-    elif editor['provider'] in ('tw-hokkien', 'meta-model-api'):
-        raise ValueError('Selected translator requires versioned translation provenance')
-    checks = ('facts_match', 'people_and_content_complete') if version in (2, 3) else (
+    elif editor['provider'] == 'tw-hokkien':
+        raise ValueError('TW-Hokkien requires translation provenance v2')
+    checks = ('facts_match', 'people_and_content_complete') if version == 2 else (
         'facts_match', 'natural_taiwanese', 'people_and_content_complete')
     if (not all(review_data[k] for k in checks)
             or review_data['issues'] or not review_data['evidence']):
@@ -176,11 +173,9 @@ def validate_result(result, item, guide):
 def check_provider(root, result):
     """New submissions obey the selected translator; accepted history stays intact."""
     policy = Path(root) / 'data/editorial/config.json'
-    provider = json.loads(policy.read_text()).get('provider') if policy.exists() else None
-    versions = {'tw-hokkien': 2, 'meta-model-api': 3}
-    if provider in versions:
-        if result.get('schema_version') != versions[provider] or result.get('editor', {}).get('provider') != provider:
-            raise ValueError('New copy must come from the configured translator: ' + provider)
+    if policy.exists() and json.loads(policy.read_text()).get('provider') == 'tw-hokkien':
+        if result.get('schema_version') != 2 or result.get('editor', {}).get('provider') != 'tw-hokkien':
+            raise ValueError('New copy must come from the configured TW-Hokkien translator')
 
 
 def attach(catalog, item):
