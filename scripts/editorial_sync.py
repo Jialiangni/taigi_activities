@@ -67,7 +67,7 @@ def download(output, provider=None):
                                          'items': tasks})
         (output / 'TAIGI_EDITORIAL.md').write_text(guide, encoding='utf-8')
         (output / 'EDITORIAL_HANDOFF.md').write_bytes((repo / 'EDITORIAL_HANDOFF.md').read_bytes())
-        if policy['provider'] == 'tw-hokkien':
+        if policy['provider'] in ('tw-hokkien', 'meta-model-api'):
             (output / 'translation_terminology.json').write_bytes((repo / 'data/translation_terminology.json').read_bytes())
         (output / 'results').mkdir(exist_ok=True)
         print('Pending activities:', len(tasks), '; handoff:', output / 'input.json')

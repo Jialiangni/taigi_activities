@@ -23,6 +23,7 @@ def configuration(base, codex):
     # Codex prepares Chinese inputs and checks facts; only the local translator
     # produces Taiwanese. The provider-specific prompt enforces that boundary.
     config['workers']['tw-hokkien'] = {'argv': list(config['workers']['codex']['argv'])}
+    config['workers']['meta-model-api'] = {'argv': list(config['workers']['codex']['argv'])}
     return config
 
 
@@ -62,10 +63,11 @@ def main():
         settings.write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n')
     else:
         existing = json.loads(settings.read_text())
-        if 'tw-hokkien' not in existing.get('workers', {}):
-            existing.setdefault('workers', {})['tw-hokkien'] = json.loads(json.dumps(
-                existing['workers'].get('codex', config['workers']['tw-hokkien'])))
-            settings.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + '\n')
+        for provider in ('tw-hokkien', 'meta-model-api'):
+            if provider not in existing.get('workers', {}):
+                existing.setdefault('workers', {})[provider] = json.loads(json.dumps(
+                    existing['workers'].get('codex', config['workers'][provider])))
+        settings.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + '\n')
     plist.parent.mkdir(parents=True, exist_ok=True)
     with plist.open('wb') as handle:
         plistlib.dump(agent, handle)

@@ -1,6 +1,20 @@
 # 北北桃台語活動行事曆：系統規格與交接
 
-## 最新決定：TW-Hokkien 正式翻譯（2026-10-01）
+## 現行 Meta Model API 翻譯（2026-10-01，取代下方 TW-Hokkien 流程）
+
+使用者改選 Meta Model API 的 `muse-spark-1.3`。`meta-model-api` provider 透過已登入的 Muse Code
+以 `muse exec` 在背景呼叫官方 API，沒有 Desktop 視窗操作；登入由 Muse 管理，不把憑證寫入專案。
+Codex 只整理有來源支持的中文長短稿、列保護資料、核對事實；台文全部由 Muse Spark 生成，不另評判自然度、不自行潤飾。
+依 `scripts/meta_worker_prompt.txt` 呼叫 `scripts/muse_translate.py`，原始輸入、JSONL事件、原稿、模型與執行ID保留於地端。
+姓名、角色、日期、費用與單位（例如200元）完整保護；缺資料、誤譯、登入失效、截斷或未知回覆格式時停止，不換模型或盲目重送。
+`scripts/meta_result.py` 重讀實際事件及原稿，再套用既有使用者指定的「免費→免錢」並另存修訂，不改官方名稱或引句。
+結果採 v3：保留來源／規範綁定、事實核對及引句，`natural_taiwanese=false`；加入 Meta 模型、傳輸方式、run ID與來源／原稿雜湊。
+run ID 是 Muse 執行識別，不冒稱 API response ID、模型權重 digest 或伺服器認證；GitHub只驗證資料一致性及來源，不獨立認證遠端模型執行。
+週二／五08:00的一般程式閘門、0筆不啟动AI、GitHub核實與接收發布、既有149筆保留名單及已接收文案均維持。
+Muse 登入與可執行環境仍為必要條件；單次背景實測不代表電腦睡眠或鎖屏期間也能執行。
+詳細操作及驗收見 [META_API_TRANSLATION.md](META_API_TRANSLATION.md)。下方 TW-Hokkien v2 說明保留作歷史與明確手動使用，不能覆蓋此節。
+
+## 歷史：TW-Hokkien 正式翻譯（2026-10-01稍早）
 
 新活動台文由 `tw-hokkien` provider 實際呼叫本機 `Taigi-Llama-2-Translator-13B:latest`；Codex 只整理中文、核對事實並還原固定資料。
 取消獨立自然度評審，不要求逐筆人工批准。兩個事實／完整性欄位、來源與規範綁定、引句、數字、URL／HTML檢查及發布前官方來源重查仍必須通過。
