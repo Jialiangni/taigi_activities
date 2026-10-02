@@ -1651,9 +1651,9 @@
       "review_basis": "官方公告及兩張海報逐項目視判讀；歌仔戲、台語文顧問及角色；海報日期、時間、所在與免費索票條件。無結束時間不猜。"
     },
     "https://docs.google.com/forms/d/e/1FAIpQLSfEzQ8Y-UGCO-eK5_GLO9LEXTe5NjMieFI-HlVjD3LjKcfqKw/viewform?usp=send_form": {
-      "content_version": 2,
-      "content_sha256": "d7c5604ad245d57e72b87da722b7127694673e8ccc8d42b760c1e529d88aa860",
-      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "content_version": 3,
+      "content_sha256": "0898d3f4fe9b7c51fb49fed723ec0e1dbd95931e805391c78eacb5e2a9616820",
+      "reviewed_at": "2026-10-02T08:24:46+08:00",
       "sessions": [
         {
           "activity": {
@@ -1699,9 +1699,9 @@
       ]
     },
     "https://docs.google.com/forms/d/e/1FAIpQLSfHMlEs56Ek3rcgp57q2M2MTEkmAo_2O1B78JlTDwm2jyNLAQ/viewform?usp=send_form": {
-      "content_version": 2,
-      "content_sha256": "ca5ea576bc6314ff434b3fe84caba3c6ea352ea352335760dce202b49db51130",
-      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "content_version": 3,
+      "content_sha256": "9c2ba9138de4871c2475545a250a09cb0c766b789907ad3848ff068be25de3ea",
+      "reviewed_at": "2026-10-02T08:24:46+08:00",
       "sessions": [
         {
           "activity": {
@@ -1747,9 +1747,9 @@
       ]
     },
     "https://docs.google.com/forms/d/e/1FAIpQLSeot7rVF5aR5Zps5aa1RIBPyvoi06W3hcUXpGscUeWqZYCQcQ/viewform?usp=send_form": {
-      "content_version": 2,
-      "content_sha256": "70f83c82272b3f3c081f7b0cc00fbe9edc52f0f7eb487db688f0559cb88b5fb0",
-      "reviewed_at": "2026-10-01T07:13:25+08:00",
+      "content_version": 3,
+      "content_sha256": "b96a2061179593ccb5b55c7670c2c07f6fb6cdb3b5a1f93b8143c970d5698694",
+      "reviewed_at": "2026-10-02T08:24:46+08:00",
       "sessions": [
         {
           "activity": {

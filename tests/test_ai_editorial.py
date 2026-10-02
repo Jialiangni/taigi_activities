@@ -173,6 +173,27 @@ class AIEditorialTests(unittest.TestCase):
             enrich.assert_not_called()
         with self.assertRaises(ValueError): main.build(self.root, False, True)
 
+    def test_copy_allows_only_exact_source_links(self):
+        activity = self.activity.to_dict()
+        activity['description'] += ' 詳情：https://example.org/show?event=1。'
+        base = {'summary_taigi': SUMMARY, 'description_taigi': DESCRIPTION,
+                'uncertain_terms': []}
+        ai.validate_copy(dict(base, description_taigi=DESCRIPTION + '\nhttps://example.org/show?event=1'), activity)
+        for extra in ('https://example.org/show?event=2', 'https://example.org/show?event=1/evil',
+                      'https://evil.org/show?event=1', '<a href="https://example.org/show?event=1">詳情</a>'):
+            with self.subTest(extra=extra), self.assertRaisesRegex(ai.EditorialError, 'unexpected_link_or_markup'):
+                ai.validate_copy(dict(base, description_taigi=DESCRIPTION + extra), activity)
+
+    def test_copy_accepts_minutes_only_for_bound_zero_second_times(self):
+        activity = self.activity.to_dict()
+        activity['end_time'] = '2027-01-01T16:35:00+08:00'
+        result = {'summary_taigi': SUMMARY, 'description_taigi': DESCRIPTION + '16:35散場。',
+                  'uncertain_terms': []}
+        ai.validate_copy(result, activity)
+        for ending in (None, '2027-01-01T16:36:00+08:00', '2027-01-01T16:35:30+08:00'):
+            with self.subTest(ending=ending), self.assertRaisesRegex(ai.EditorialError, 'unsupported_number'):
+                ai.validate_copy(result, dict(activity, end_time=ending))
+
     def test_display_uses_ai_only_when_matching_and_keeps_manual_precedence(self):
         from build_html import generate_single_html
         client = FakeAI()

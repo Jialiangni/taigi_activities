@@ -8,6 +8,34 @@ from .verified import normalized_text,parse_time,REVIEWED_FIELDS
 
 MODE='reviewed_announcement_sessions_v1'
 
+def public_form_content(html, url):
+ """Bind author content/settings, not Google's region-dependent UI labels.
+
+ Versioned separately from old full-page contracts. Only an open, matching
+ public form qualifies; missing payload, closed forms or identity changes fail.
+ """
+ import re
+ from urllib.parse import urlsplit
+ parts=urlsplit(url)
+ match=re.fullmatch(r'/forms/d/e/([A-Za-z0-9_-]+)/viewform',parts.path)
+ require(parts.scheme=='https' and parts.netloc=='docs.google.com' and match is not None,
+         'reviewed_form_url_invalid')
+ marker=re.search(r'\bFB_PUBLIC_LOAD_DATA_\s*=\s*',html)
+ require(marker is not None,'reviewed_form_payload_missing')
+ try:
+  payload=json.JSONDecoder().raw_decode(html[marker.end():])[0]
+  require(isinstance(payload,list) and len(payload)>14 and payload[14]=='e/'+match[1],
+          'reviewed_form_identity_changed')
+  require(isinstance(payload[1],list) and len(payload[1])>8 and payload[1][8],
+          'reviewed_form_payload_invalid')
+ except (ValueError,TypeError,IndexError):
+  require(False,'reviewed_form_payload_invalid')
+ forms=list(Document(html).root.all('form'))
+ require(len(forms)==1 and urlsplit(forms[0].attrs.get('action','')).netloc==parts.netloc
+         and urlsplit(forms[0].attrs.get('action','')).path==parts.path.replace('/viewform','/formResponse'),
+         'reviewed_form_closed_or_changed')
+ return json.dumps({'identity':payload[14],'form':payload[1]},ensure_ascii=False,sort_keys=True,separators=(',',':'))
+
 def contracts(root):
  p=Path(root)/'data/reviewed_announcements.json'
  if not p.exists():return {}
@@ -26,7 +54,9 @@ def content(html,url):
 
 def check(html,url,contract,client=None):
  from .candidate_triage import document
- bound = document(html,url) if contract.get('content_version') == 2 else content(html,url)
+ version=contract.get('content_version',1)
+ require(version in (1,2,3),'reviewed_announcement_content_version')
+ bound = public_form_content(html,url) if version==3 else document(html,url) if version==2 else content(html,url)
  require(digest(bound)==contract['content_sha256'],'reviewed_announcement_content_changed')
  if contract.get('poster_evidence'):
   from urllib.parse import urljoin,urlsplit

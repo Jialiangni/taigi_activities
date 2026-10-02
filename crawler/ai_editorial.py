@@ -168,10 +168,19 @@ def validate_copy(copy, activity):
             or len(copy['uncertain_terms']) > 8):
         raise EditorialError('copy_length_or_lookup_limit')
     combined = copy['summary_taigi'] + '\n' + copy['description_taigi']
-    # Original fields/links remain in the detail UI; prose must not invent new ones.
-    if re.search(r'https?://|<[^>]+>', combined):
+    # Preserve exact source links; never accept invented links or HTML markup.
+    original = source_text(activity)
+    url_pattern = r'''https?://[^\s<>"'，。；！？、（）《》「」]+'''
+    links = lambda text: {u.rstrip('.,;!?)') for u in re.findall(url_pattern, text)}
+    if re.search(r'<[^>]+>', combined) or links(combined) - links(original):
         raise EditorialError('unexpected_link_or_markup')
-    numbers = set(re.findall(r'\d+(?:[.:]\d+)*', source_text(activity)))
+    numbers = set(re.findall(r'\d+(?:[.:]\d+)*', original))
+    # ISO timestamps with zero seconds may be displayed as HH:MM. Only use
+    # the bound session times, not arbitrary colon-separated source numbers.
+    for field in ('start_time', 'end_time'):
+        value = activity.get(field)
+        if isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00\+08:00', value):
+            numbers.add(value[11:16])
     if set(re.findall(r'\d+(?:[.:]\d+)*', combined)) - numbers:
         raise EditorialError('unsupported_number')
 

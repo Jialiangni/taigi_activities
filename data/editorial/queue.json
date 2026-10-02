@@ -927,8 +927,8 @@
       "source": {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfEzQ8Y-UGCO-eK5_GLO9LEXTe5NjMieFI-HlVjD3LjKcfqKw/viewform?usp=send_form",
         "title": "走揣城南ê熱天—— 練工夫：小小攝影師出任務！",
-        "checked_at": "2026-10-01T07:20:38+08:00",
-        "snapshot_sha256": "0e525efb4cd4e275b9b39fb11a73686baad5942d8f34da8eba95971aefd86528",
+        "checked_at": "2026-10-02T08:24:47+08:00",
+        "snapshot_sha256": "b5e2bf87ee2f8d339015818a49b8aea04c8a8d70f319d1235cbc47e232785711",
         "required_text": [
           "10/03",
           "14:00",
@@ -943,9 +943,9 @@
         "reviewed_announcement": {
           "mode": "reviewed_announcement_sessions_v1",
           "contract": {
-            "content_version": 2,
-            "content_sha256": "d7c5604ad245d57e72b87da722b7127694673e8ccc8d42b760c1e529d88aa860",
-            "reviewed_at": "2026-10-01T07:13:25+08:00",
+            "content_version": 3,
+            "content_sha256": "0898d3f4fe9b7c51fb49fed723ec0e1dbd95931e805391c78eacb5e2a9616820",
+            "reviewed_at": "2026-10-02T08:24:46+08:00",
             "sessions": [
               {
                 "activity": {
@@ -1090,8 +1090,8 @@
       "source": {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfHMlEs56Ek3rcgp57q2M2MTEkmAo_2O1B78JlTDwm2jyNLAQ/viewform?usp=send_form",
         "title": "走揣城南ê熱天—— 練工夫：當一個小小書法家！",
-        "checked_at": "2026-10-01T07:20:39+08:00",
-        "snapshot_sha256": "f59f03abb93c3562dde93e3e1e99e0109fea60a43fd3855c4f0f94f0f15ad68f",
+        "checked_at": "2026-10-02T08:24:48+08:00",
+        "snapshot_sha256": "c83aa15059cef1445644ce3c876a579793da9985a70527716e2171821e86167f",
         "required_text": [
           "10/18",
           "14:00",
@@ -1106,9 +1106,9 @@
         "reviewed_announcement": {
           "mode": "reviewed_announcement_sessions_v1",
           "contract": {
-            "content_version": 2,
-            "content_sha256": "ca5ea576bc6314ff434b3fe84caba3c6ea352ea352335760dce202b49db51130",
-            "reviewed_at": "2026-10-01T07:13:25+08:00",
+            "content_version": 3,
+            "content_sha256": "9c2ba9138de4871c2475545a250a09cb0c766b789907ad3848ff068be25de3ea",
+            "reviewed_at": "2026-10-02T08:24:46+08:00",
             "sessions": [
               {
                 "activity": {
@@ -1253,8 +1253,8 @@
       "source": {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSeot7rVF5aR5Zps5aa1RIBPyvoi06W3hcUXpGscUeWqZYCQcQ/viewform?usp=send_form",
         "title": "走揣城南ê熱天——踅城南：來去植物園！",
-        "checked_at": "2026-10-01T07:20:41+08:00",
-        "snapshot_sha256": "b54382456891844645d3cf0c052ea0b13406c23d98a4040b6c162ebffdb151a4",
+        "checked_at": "2026-10-02T08:24:50+08:00",
+        "snapshot_sha256": "518624138e20b0918102edf6780586edc0aca3d9725ac9f4ce4ef9f15cf6decd",
         "required_text": [
           "10/04",
           "14:00",
@@ -1269,9 +1269,9 @@
         "reviewed_announcement": {
           "mode": "reviewed_announcement_sessions_v1",
           "contract": {
-            "content_version": 2,
-            "content_sha256": "70f83c82272b3f3c081f7b0cc00fbe9edc52f0f7eb487db688f0559cb88b5fb0",
-            "reviewed_at": "2026-10-01T07:13:25+08:00",
+            "content_version": 3,
+            "content_sha256": "b96a2061179593ccb5b55c7670c2c07f6fb6cdb3b5a1f93b8143c970d5698694",
+            "reviewed_at": "2026-10-02T08:24:46+08:00",
             "sessions": [
               {
                 "activity": {
