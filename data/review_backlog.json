@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T07:16:35+08:00",
+  "updated_at": "2026-10-03T07:29:30+08:00",
   "candidates": [
     {
       "id": "4823f23854bb8b94c3482615",
@@ -1402,63 +1402,6 @@
         "fetched_at": "2026-10-02T07:46:23+08:00",
         "sha256": "7f91079ca5e8725eeffc4ef12b90f400919babbfade017c8d0075079bcdd200c",
         "elapsed_ms": 867,
-        "attempt": 1
-      },
-      "backlog_origin": true
-    },
-    {
-      "id": "d61210112901dd52191542dc",
-      "source_id": "gameislearning",
-      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-      "title": "古錐ê講古｜免費台語繪本活動 ~10/3~",
-      "kind": "session",
-      "fields": {
-        "title": "古錐ê講古｜免費台語繪本活動 ~10/3~",
-        "text": "台文I🎈古錐 ê 講古🎈本活動配合文化部台語家庭集點計畫（一場1點，兩場攏參加2點）\n⏰時間：10月03（拜六）邀請逐家做伙來聽囡仔古。\n「古錐ê講古」有兩場，歡迎參加！\n10:00-10.50 (第一場)：主題： 卵\n雞蛋、鴨蛋、鹹蛋，你上愛食佗一款？邀請逐家做伙來熟似卵的秘密，上尾閣會當食水煠卵。\n11:00-11:50 (第二場)：主題：動物\n以早鴟鴞( lā-hio̍h/lāi-hio̍h/bā-hio̍h)是臺灣真普遍的鳥仔，因為一寡仔原因致使數量減足濟。\nin拄著啥物困難?囡仔兄囡仔姊敢會使來共in鬥相共?同齊來聽故事，激頭殼想看覓😗\n「牽囡仔ê手 行台語ê路」是全台語親子團體，阮用台語講萬項，邀請逐家鬥陣來感受台語的溫暖和趣味。\n活動適合0-99歲的年歲，無論會曉講台語無，攏歡迎來參加活動，歡迎阿公、阿媽、阿爸、阿母、囡仔兄、囡仔姊手牽手同齊來，輕輕鬆鬆、歡歡喜喜來聽講古！\n共學團的好朋友嘛需要寫表單報名，多謝逐家!\n🎈古錐 ê 講古🎈本活動配合文化部台語家庭集點計畫（一場1點，兩場都參加可集點2點　）\n「牽囡仔ê手 行台語ê路」是全台語親子團體，我們用台語說萬物，邀請大家一起來感受台語的溫暖和趣味。\n活動適合0-99歲全年齡層，無論會不會說台語都歡迎來參加活動，歡迎爺爺奶奶、爸爸媽媽、孩子們一同手牽手輕輕鬆鬆、歡歡喜喜來聽故事！\n共學團的好朋友也需要填寫表單報名，感謝大家!\n報名連結：https://ppt.cc/fqbFJx",
-        "address": "新北市三重區自強路三段42巷11號 三重後竹圍市民活動中心",
-        "venue": "三重後竹圍市民活動中心",
-        "official_description": "台文I🎈古錐 ê 講古🎈本活動配合文化部台語家庭集點計畫（一場1點，兩場攏參加2點）\n⏰時間：10月03（拜六）邀請逐家做伙來聽囡仔古。\n「古錐ê講古」有兩場，歡迎參加！\n10:00-10.50 (第一場)：主題： 卵\n雞蛋、鴨蛋、鹹蛋，你上愛食佗一款？邀請逐家做伙來熟似卵的秘密，上尾閣會當食水煠卵。\n11:00-11:50 (第二場)：主題：動物\n以早鴟鴞( lā-hio̍h/lāi-hio̍h/bā-hio̍h)是臺灣真普遍的鳥仔，因為一寡仔原因致使數量減足濟。\nin拄著啥物困難?囡仔兄囡仔姊敢會使來共in鬥相共?同齊來聽故事，激頭殼想看覓😗\n「牽囡仔ê手 行台語ê路」是全台語親子團體，阮用台語講萬項，邀請逐家鬥陣來感受台語的溫暖和趣味。\n活動適合0-99歲的年歲，無論會曉講台語無，攏歡迎來參加活動，歡迎阿公、阿媽、阿爸、阿母、囡仔兄、囡仔姊手牽手同齊來，輕輕鬆鬆、歡歡喜喜來聽講古！\n共學團的好朋友嘛需要寫表單報名，多謝逐家!\n🎈古錐 ê 講古🎈本活動配合文化部台語家庭集點計畫（一場1點，兩場都參加可集點2點　）\n「牽囡仔ê手 行台語ê路」是全台語親子團體，我們用台語說萬物，邀請大家一起來感受台語的溫暖和趣味。\n活動適合0-99歲全年齡層，無論會不會說台語都歡迎來參加活動，歡迎爺爺奶奶、爸爸媽媽、孩子們一同手牽手輕輕鬆鬆、歡歡喜喜來聽故事！\n共學團的好朋友也需要填寫表單報名，感謝大家!",
-        "organizer": "主辦單位請見活動公告",
-        "city": "新北市",
-        "district": "三重區",
-        "category": "台語繪本",
-        "is_free": true,
-        "registration_url": "https://ppt.cc/fqbFJx",
-        "content_links": [
-          "https://www.facebook.com/taigiloo/posts/pfbid03DjLLRMWt6piSSCY7PvLUYbLagVX3zTPpdyqdvcxAppynkdJZXbRhHT4aCGBLhvil?__cft__%5B0%5D=AZhCRhdJWZW-CAu_h8XSy7sVYj9czmLBCVaYxvF6sd50UEFsmwRP57hNQmTEIVSFRt-XHjYKm7bj8Ci80uKdNSHvBuCXHuGVjrxITg_H25TMH6FXGwvp5Nywt1sXIDiGlDNEnCfWEu7gAOOiDYZSAkgZU8d99pbN&__tn__=%2CO%2CP-R",
-          "https://ppt.cc/fqbFJx"
-        ],
-        "evidence": {
-          "url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-          "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-          "http_status": 200,
-          "request_method": "GET",
-          "fetched_at": "2026-10-02T07:46:28+08:00",
-          "sha256": "5a19b0e57f95dfc9e9c791d6c62a50081f33526de9cc268a013b49c794ed8360",
-          "elapsed_ms": 1092,
-          "attempt": 1
-        },
-        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-        "published_at": "2026-09-30",
-        "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260930proqwb.jpg?2",
-        "registration_attempts": [
-          {
-            "url": "https://ppt.cc/fqbFJx",
-            "reason": "registration_identity_mismatch"
-          }
-        ],
-        "start_time": "2026-10-03T10:00:00+08:00",
-        "end_time": null
-      },
-      "text": "",
-      "evidence": {
-        "url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-        "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-10-02T07:46:28+08:00",
-        "sha256": "5a19b0e57f95dfc9e9c791d6c62a50081f33526de9cc268a013b49c794ed8360",
-        "elapsed_ms": 1092,
         "attempt": 1
       },
       "backlog_origin": true

@@ -11908,6 +11908,22 @@
           "reviewed_at": "2026-10-03T07:16:34+08:00"
         }
       ]
+    },
+    {
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
+      "title": "古錐ê講古｜免費台語繪本活動 ~10/3~",
+      "candidate_id": "d61210112901dd52191542dc",
+      "reason": "already_covered",
+      "rationale": "完整公告與官方報名表已核對，拆成 review_guichue_20261003_1000（卵）及 review_guichue_20261003_1100（動物）；兩場已通過台文兩輪校訂、GitHub來源重查與發布，2026-10-03 07:29正式HTML及ICS均確認存在。來源中鳥種說法不同已在介紹揭露，不擅選其一。原始候選保留為來源證據。",
+      "reviewed_at": "2026-10-03T07:29:30+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16365x7ri94",
+      "content_sha256": "02e812a078db0aa4577bb5d3eb6b741ab33b045650fb24581d65ec5f8f5973ad",
+      "document_version": 2,
+      "quotes": [
+        "10:00-10.50 (第一場)：主題： 卵",
+        "11:00-11:50 (第二場)：主題：動物"
+      ]
     }
   ]
 }

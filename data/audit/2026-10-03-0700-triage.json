@@ -3,17 +3,17 @@
   "base_revision": "3741a72c6dfbd517c151181095b055f3184bd1af",
   "official_sources_exported": 25,
   "candidates_read": 29,
-  "evidence_bound_closed": 21,
+  "evidence_bound_closed": 22,
   "routed_to_editorial_parent_candidates": 1,
   "newly_verified_sessions": 4,
   "previously_queued_sessions_reverified_and_completed_facts": 2,
   "editorial_queue_count": 6,
   "urgent_for_local_editorial": 5,
   "owned_followups_updated": 6,
-  "awaiting_publication_parent_candidate": "d61210112901dd52191542dc",
+  "awaiting_publication_parent_candidate": null,
   "backlog_before": 336,
-  "backlog_after": 314,
-  "protection": "Existing catalog, published prose and protected IDs unchanged. No crawler or paid AI API.",
+  "backlog_after": 313,
+  "protection": "All 309 pre-existing catalog records, 160 previous editions and 149 protected activity IDs preserved; only 5 new editions and corresponding verified activities added. No crawler or paid AI API.",
   "mechanical_fix": "Versioned disposition documents ignore only live page-view counter values on four known official hosts; historical version 1 remains unchanged.",
   "previous_unpublished_queue": {
     "schema_version": 1,
@@ -290,10 +290,87 @@
     "passed": true,
     "skipped": 1,
     "diff_check": "passed",
-    "existing_catalog_and_prose_unchanged": true
+    "existing_catalog_and_prose_unchanged": true,
+    "frontend": "passed with all five incoming activities; distinct, same and missing registration URLs tested",
+    "isolated_ingest_accepted": 5,
+    "existing_catalog_records_preserved": 309,
+    "existing_editions_preserved": 160,
+    "protected_ids_preserved": 149
   },
   "publication": {
-    "status": "not_yet_submitted",
-    "published": 0
-  }
+    "status": "verified_live",
+    "published": 5,
+    "result_commit": "cfb6c4864cbcced54c6799b488080c6c126460ad",
+    "failed_run": {
+      "id": 37077222194,
+      "reason": "Frontend test selected the first live registration event and incorrectly required a separate registration button when registration_url equals source_url. Source recheck and build had passed."
+    },
+    "test_fix_commit": "f28c7aca94f27470f82dcaa42a5f17b63a00b821",
+    "successful_run": {
+      "id": 37077646965,
+      "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37077646965",
+      "conclusion": "success"
+    },
+    "applied_commit": "17518f46479afc3513ec062556f5449a1f5e4377",
+    "live_verification": {
+      "checked_at": "2026-10-03T07:29:04+08:00",
+      "url": "https://jialiangni.github.io/taigi_activities/",
+      "html_sha256": "c163615282446fb371a3ab6df2f8015c7d23f9ab65aa01bf7c9e488a80c766ba",
+      "ics_sha256": "2e9cee7794a7407a43d302bec691a01e98285497d62bfbfe28f2809dda397dfa",
+      "html_sessions": 268,
+      "ics_sessions": 268,
+      "activities": [
+        {
+          "id": "gameislearning_1632vj10i94_20261003_0900",
+          "title": "『台語路故事講師課程—FINAL CALL！ 』",
+          "start_time": "2026-10-03T09:00:00+08:00",
+          "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdtlTxQIN0pP93Qhkm9Gj09H6tpvJGoGB7xHpA5oc9xqXPXxw/viewform",
+          "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSdtlTxQIN0pP93Qhkm9Gj09H6tpvJGoGB7xHpA5oc9xqXPXxw/viewform"
+        },
+        {
+          "id": "gameislearning_1633m3bui94_20261004_1000",
+          "title": "【台語情緒故事 × 感覺統合親子活動】",
+          "start_time": "2026-10-04T10:00:00+08:00",
+          "source_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform",
+          "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform"
+        },
+        {
+          "id": "review_guichue_20261003_1000",
+          "title": "古錐ê講古｜免費台語繪本活動（第1場：卵）",
+          "start_time": "2026-10-03T10:00:00+08:00",
+          "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform",
+          "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform"
+        },
+        {
+          "id": "review_guichue_20261003_1100",
+          "title": "古錐ê講古｜免費台語繪本活動（第2場：動物）",
+          "start_time": "2026-10-03T11:00:00+08:00",
+          "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform",
+          "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform"
+        },
+        {
+          "id": "review_puppet_20261004_1400",
+          "title": "臺灣布袋戲傳習中心旗艦巡演｜昇平五洲園《穆桂英之降龍木》",
+          "start_time": "2026-10-04T14:00:00+08:00",
+          "source_url": "https://www.accupass.com/event/2608060917163807075530",
+          "registration_url": "https://www.accupass.com/event/2608060917163807075530"
+        }
+      ]
+    }
+  },
+  "completed_at": "2026-10-03T07:29:59+08:00",
+  "closure_reasons": {
+    "resource_only": 9,
+    "already_covered": 8,
+    "not_event": 3,
+    "outside_region": 2
+  },
+  "editorial_remaining": [
+    {
+      "activity_id": "review_puppet_20270227_1430",
+      "start_time": "2027-02-27T14:30:00+08:00",
+      "title": "臺灣布袋戲傳習中心旗艦巡演｜陳錫煌傳統掌中劇團《蒼穹萍生》"
+    }
+  ],
+  "editorial_audit_directory": "/Users/nijialiang/Library/Application Support/TaigiEditorial/state/jobs/20261003T0700-triage"
 }
