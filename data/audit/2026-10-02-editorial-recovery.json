@@ -44,7 +44,28 @@
   ],
   "draft_changes": false,
   "publication": {
-    "status": "pending"
+    "status": "success",
+    "run_url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36946000211",
+    "checked_at": "2026-10-02T08:29:15+08:00",
+    "live_html_sessions": 265,
+    "live_ics_sessions": 265,
+    "newly_published_sessions": 8,
+    "live_matches_repository": true,
+    "new_activity_ids": [
+      "opentix_2067534055683293185",
+      "opentix_2069979970899398657",
+      "opentix_2069980028719353857",
+      "opentix_2092152555672571904",
+      "opentix_2092153362364047360",
+      "review_nmh_0edeb425bcbec5d28039",
+      "review_nmh_54928ce745238bce75c8",
+      "review_nmh_88802643cc42cd6623b8"
+    ],
+    "existing_activity_records_unchanged": 301,
+    "existing_editions_unchanged": 152,
+    "protected_ids_unchanged": true,
+    "html_snapshot_sha256": "26bc4ef544731ce87b6c19717acf463c47b6d959cda76150627f94c869d2a92c",
+    "ics_snapshot_sha256": "59db2f8c92d42ce98c4721c99c4f2a32eabfc7aa7647e4ef71586d7a82fabb17"
   },
   "validation": {
     "unit_tests": 268,
