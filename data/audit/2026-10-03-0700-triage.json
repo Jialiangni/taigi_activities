@@ -1,0 +1,299 @@
+{
+  "checked_at": "2026-10-03T07:16:34+08:00",
+  "base_revision": "3741a72c6dfbd517c151181095b055f3184bd1af",
+  "official_sources_exported": 25,
+  "candidates_read": 29,
+  "evidence_bound_closed": 21,
+  "routed_to_editorial_parent_candidates": 1,
+  "newly_verified_sessions": 4,
+  "previously_queued_sessions_reverified_and_completed_facts": 2,
+  "editorial_queue_count": 6,
+  "urgent_for_local_editorial": 5,
+  "owned_followups_updated": 6,
+  "awaiting_publication_parent_candidate": "d61210112901dd52191542dc",
+  "backlog_before": 336,
+  "backlog_after": 314,
+  "protection": "Existing catalog, published prose and protected IDs unchanged. No crawler or paid AI API.",
+  "mechanical_fix": "Versioned disposition documents ignore only live page-view counter values on four known official hosts; historical version 1 remains unchanged.",
+  "previous_unpublished_queue": {
+    "schema_version": 1,
+    "prepared_at": "2026-10-02T08:45:54+08:00",
+    "collection_run": {
+      "id": 36942324528,
+      "head_sha": "339e0987ec295ecbade02924ea90ba881629de75",
+      "conclusion": "failure",
+      "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/36942324528",
+      "artifact_id": 11202079503
+    },
+    "items": [
+      {
+        "activity_id": "gameislearning_1632vj10i94_20261003_0900",
+        "source_hash": "0a9edbc0c1d550d87a971060cb16995c85f099e910aa0e6c0fa711586a556fad",
+        "activity": {
+          "id": "gameislearning_1632vj10i94_20261003_0900",
+          "title": "『台語路故事講師課程—FINAL CALL！ 』",
+          "description": "咱拜六早起同齊來上課--ooh!\n💡 拄著聽無台語的囡仔欲按怎？貓仔老師來開破！\n伊欲來共咱分享按怎運用『全身肢體反應法（TPR）』，予聽無台語ê囡仔，嘛通自然聽有心適ê台語囡仔古。\n💡 按怎予囡仔感受台語ê媠kap文化價值？王梨老師來報你知！\n阮特別邀請王梨老師uì屏東來到台北，佮咱分享in活動設計ê理念，做伙用無仝角度，思考講古活動ê無限可能。\n來遮報名： CALL！ 》",
+          "city": "臺北市",
+          "district": "大安區",
+          "category": "台語故事",
+          "start_time": "2026-10-03T09:00:00+08:00",
+          "end_time": "2026-10-03T12:00:00+08:00",
+          "venue": "近大安森林公園",
+          "address": "台北市大安區新生南路一段157巷19號三樓 客家藝文活動中心",
+          "organizer": "主辦單位請見活動公告",
+          "source_platform": "台語站",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1632vj10i94",
+          "registration_url": "https://forms.gle/zhRpGy3dWCfpqyeQ6%E3%80%8A%E5%8F%B0%E8%AA%9E%E8%B7%AF%E6%95%85%E4%BA%8B%E8%AC%9B%E5%B8%AB%E8%AA%B2%E7%A8%8B%E2%80%94FINAL",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        },
+        "row": {
+          "activity": {
+            "id": "gameislearning_1632vj10i94_20261003_0900",
+            "title": "『台語路故事講師課程—FINAL CALL！ 』",
+            "description": "咱拜六早起同齊來上課--ooh!\n💡 拄著聽無台語的囡仔欲按怎？貓仔老師來開破！\n伊欲來共咱分享按怎運用『全身肢體反應法（TPR）』，予聽無台語ê囡仔，嘛通自然聽有心適ê台語囡仔古。\n💡 按怎予囡仔感受台語ê媠kap文化價值？王梨老師來報你知！\n阮特別邀請王梨老師uì屏東來到台北，佮咱分享in活動設計ê理念，做伙用無仝角度，思考講古活動ê無限可能。\n來遮報名： CALL！ 》",
+            "city": "臺北市",
+            "district": "大安區",
+            "category": "台語故事",
+            "start_time": "2026-10-03T09:00:00+08:00",
+            "end_time": "2026-10-03T12:00:00+08:00",
+            "venue": "近大安森林公園",
+            "address": "台北市大安區新生南路一段157巷19號三樓 客家藝文活動中心",
+            "organizer": "主辦單位請見活動公告",
+            "source_platform": "台語站",
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1632vj10i94",
+            "registration_url": "https://forms.gle/zhRpGy3dWCfpqyeQ6%E3%80%8A%E5%8F%B0%E8%AA%9E%E8%B7%AF%E6%95%85%E4%BA%8B%E8%AC%9B%E5%B8%AB%E8%AA%B2%E7%A8%8B%E2%80%94FINAL",
+            "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260930qwh5a6.jpg?2",
+            "price_info": "費用未公告，請查看活動公告",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "台語站信任來源",
+              "自動核實場次"
+            ],
+            "raw_metadata": {}
+          },
+          "verification": {
+            "status": "verified",
+            "source_id": "auto_gameislearning_1632vj10i94",
+            "mode": "official_rules_v1",
+            "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+            "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+            "gameislearning_session_key": "2026-10-03T09:00:00+08:00",
+            "confirmed_fields": {
+              "title": "『台語路故事講師課程—FINAL CALL！ 』",
+              "start_time": "2026-10-03T09:00:00+08:00",
+              "end_time": "2026-10-03T12:00:00+08:00",
+              "venue": "近大安森林公園",
+              "city": "臺北市",
+              "organizer": "主辦單位請見活動公告",
+              "price_info": "費用未公告，請查看活動公告",
+              "is_free": null
+            },
+            "introduction_evidence": {
+              "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1632vj10i94",
+              "checked_at": "2026-10-02T08:46:14+08:00",
+              "snapshot_sha256": "195b5a3870420af496ef93a653969c0ef666234f5d739796d14e132812a22f84",
+              "method": "announcement_content",
+              "description_taigi": ""
+            },
+            "poster_evidence": {
+              "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260930qwh5a6.jpg?2",
+              "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1632vj10i94",
+              "checked_at": "2026-10-02T08:46:14+08:00",
+              "snapshot_sha256": "195b5a3870420af496ef93a653969c0ef666234f5d739796d14e132812a22f84"
+            }
+          }
+        },
+        "source": {
+          "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1632vj10i94",
+          "title": "『台語路故事講師課程—FINAL CALL！ 』",
+          "required_text": [
+            "『台語路故事講師課程—FINAL CALL！ 』",
+            "近大安森林公園",
+            "咱拜六早起同齊來上課--ooh!",
+            "💡 拄著聽無台語的囡仔欲按怎？貓仔老師來開破！",
+            "伊欲來共咱分享按怎運用『全身肢體反應法（TPR）』，予聽無台語ê囡仔，嘛通自然聽有心適ê台語囡仔古。",
+            "💡 按怎予囡仔感受台語ê媠kap文化價值？王梨老師來報你知！",
+            "阮特別邀請王梨老師uì屏東來到台北，佮咱分享in活動設計ê理念，做伙用無仝角度，思考講古活動ê無限可能。",
+            "來遮報名： CALL！ 》"
+          ],
+          "checked_at": "2026-10-02T08:46:14+08:00",
+          "snapshot_sha256": "195b5a3870420af496ef93a653969c0ef666234f5d739796d14e132812a22f84",
+          "automated_review": {
+            "mode": "official_rules_v1",
+            "source_type": "gameislearning",
+            "trusted_language_source": true,
+            "language_claims": [
+              {
+                "origin": "trusted_directory_policy",
+                "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+              }
+            ],
+            "registration_url": "https://forms.gle/zhRpGy3dWCfpqyeQ6%E3%80%8A%E5%8F%B0%E8%AA%9E%E8%B7%AF%E6%95%85%E4%BA%8B%E8%AC%9B%E5%B8%AB%E8%AA%B2%E7%A8%8B%E2%80%94FINAL",
+            "sessions": [
+              {
+                "start_time": "2026-10-03T09:00:00+08:00",
+                "end_time": "2026-10-03T12:00:00+08:00",
+                "venue": "近大安森林公園",
+                "address": "台北市大安區新生南路一段157巷19號三樓 客家藝文活動中心",
+                "city": "臺北市"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "activity_id": "gameislearning_1633m3bui94_20261004_1000",
+        "source_hash": "0c03fd854e76cda2f646fb4f6bf3d85085f733aea7e28a8dedabd1f085c99d69",
+        "activity": {
+          "id": "gameislearning_1633m3bui94_20261004_1000",
+          "title": "【台語情緒故事 × 感覺統合親子活動】",
+          "description": "台語繪本✖️感覺統合活動\n想要的東西沒買到，就開始哭、堅持、鬧脾氣。\n這些生活裡常見的反應，但其實蘊藏孩子說不清楚的情緒。\n這次將透過兩本貼近孩子生活經驗的繪本，陪孩子一起看見自己的需求和情緒，並學習如何表達～\n除了台語繪本共讀，故事之間也會穿插感覺統合活動與親子互動。\n讓孩子不只是「聽台語」，而是在動作、遊戲與互動中自然接觸台語，同時增加不同的語言與感覺刺激。孩子能在故事裡認識自己的情緒，同時也在遊戲中練習參與、表達與互動。\n帶領者｜黃玟菱老師 職能治療師 × 台語繪本講師",
+          "city": "新北市",
+          "district": "板橋區",
+          "category": "台語繪本",
+          "start_time": "2026-10-04T10:00:00+08:00",
+          "end_time": "2026-10-04T11:00:00+08:00",
+          "venue": "禾森語言及職能聯合治療所",
+          "address": "新北市板橋區雙十路三段12號3樓 禾森語言及職能聯合治療所",
+          "organizer": "主辦單位請見活動公告",
+          "source_platform": "台語站",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1633m3bui94",
+          "registration_url": "https://forms.gle/zpQLWUrsaKmrr6jz7",
+          "price_info": "費用未公告，請查看活動公告",
+          "is_free": null
+        },
+        "row": {
+          "activity": {
+            "id": "gameislearning_1633m3bui94_20261004_1000",
+            "title": "【台語情緒故事 × 感覺統合親子活動】",
+            "description": "台語繪本✖️感覺統合活動\n想要的東西沒買到，就開始哭、堅持、鬧脾氣。\n這些生活裡常見的反應，但其實蘊藏孩子說不清楚的情緒。\n這次將透過兩本貼近孩子生活經驗的繪本，陪孩子一起看見自己的需求和情緒，並學習如何表達～\n除了台語繪本共讀，故事之間也會穿插感覺統合活動與親子互動。\n讓孩子不只是「聽台語」，而是在動作、遊戲與互動中自然接觸台語，同時增加不同的語言與感覺刺激。孩子能在故事裡認識自己的情緒，同時也在遊戲中練習參與、表達與互動。\n帶領者｜黃玟菱老師 職能治療師 × 台語繪本講師",
+            "city": "新北市",
+            "district": "板橋區",
+            "category": "台語繪本",
+            "start_time": "2026-10-04T10:00:00+08:00",
+            "end_time": "2026-10-04T11:00:00+08:00",
+            "venue": "禾森語言及職能聯合治療所",
+            "address": "新北市板橋區雙十路三段12號3樓 禾森語言及職能聯合治療所",
+            "organizer": "主辦單位請見活動公告",
+            "source_platform": "台語站",
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1633m3bui94",
+            "registration_url": "https://forms.gle/zpQLWUrsaKmrr6jz7",
+            "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260930xm5l37.jpg?2",
+            "price_info": "費用未公告，請查看活動公告",
+            "is_free": null,
+            "tags": [
+              "台語",
+              "台語站信任來源",
+              "自動核實場次"
+            ],
+            "raw_metadata": {}
+          },
+          "verification": {
+            "status": "verified",
+            "source_id": "auto_gameislearning_1633m3bui94",
+            "mode": "official_rules_v1",
+            "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+            "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+            "gameislearning_session_key": "2026-10-04T10:00:00+08:00",
+            "confirmed_fields": {
+              "title": "【台語情緒故事 × 感覺統合親子活動】",
+              "start_time": "2026-10-04T10:00:00+08:00",
+              "end_time": "2026-10-04T11:00:00+08:00",
+              "venue": "禾森語言及職能聯合治療所",
+              "city": "新北市",
+              "organizer": "主辦單位請見活動公告",
+              "price_info": "費用未公告，請查看活動公告",
+              "is_free": null
+            },
+            "introduction_evidence": {
+              "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1633m3bui94",
+              "checked_at": "2026-10-02T08:46:26+08:00",
+              "snapshot_sha256": "e89c15fd682657c42a4ecdc163f384db260ef110261ae0cdac69a1cc6e14a882",
+              "method": "announcement_content",
+              "description_taigi": ""
+            },
+            "poster_evidence": {
+              "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_260930xm5l37.jpg?2",
+              "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1633m3bui94",
+              "checked_at": "2026-10-02T08:46:26+08:00",
+              "snapshot_sha256": "e89c15fd682657c42a4ecdc163f384db260ef110261ae0cdac69a1cc6e14a882"
+            }
+          }
+        },
+        "source": {
+          "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1633m3bui94",
+          "title": "【台語情緒故事 × 感覺統合親子活動】",
+          "required_text": [
+            "【台語情緒故事 × 感覺統合親子活動】",
+            "禾森語言及職能聯合治療所",
+            "台語繪本✖️感覺統合活動",
+            "想要的東西沒買到，就開始哭、堅持、鬧脾氣。",
+            "這些生活裡常見的反應，但其實蘊藏孩子說不清楚的情緒。",
+            "這次將透過兩本貼近孩子生活經驗的繪本，陪孩子一起看見自己的需求和情緒，並學習如何表達～",
+            "除了台語繪本共讀，故事之間也會穿插感覺統合活動與親子互動。",
+            "讓孩子不只是「聽台語」，而是在動作、遊戲與互動中自然接觸台語，同時增加不同的語言與感覺刺激。孩子能在故事裡認識自己的情緒，同時也在遊戲中練習參與、表達與互動。",
+            "帶領者｜黃玟菱老師 職能治療師 × 台語繪本講師"
+          ],
+          "checked_at": "2026-10-02T08:46:26+08:00",
+          "snapshot_sha256": "e89c15fd682657c42a4ecdc163f384db260ef110261ae0cdac69a1cc6e14a882",
+          "automated_review": {
+            "mode": "official_rules_v1",
+            "source_type": "gameislearning",
+            "trusted_language_source": true,
+            "language_claims": [
+              {
+                "origin": "trusted_directory_policy",
+                "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+              }
+            ],
+            "registration_url": "https://forms.gle/zpQLWUrsaKmrr6jz7",
+            "sessions": [
+              {
+                "start_time": "2026-10-04T10:00:00+08:00",
+                "end_time": "2026-10-04T11:00:00+08:00",
+                "venue": "禾森語言及職能聯合治療所",
+                "address": "新北市板橋區雙十路三段12號3樓 禾森語言及職能聯合治療所",
+                "city": "新北市",
+                "registration_choice": "日期｜115/10/4（日） 10:00-11:00",
+                "end_time_variants": [
+                  "2026-10-04T11:00:00+08:00"
+                ]
+              }
+            ],
+            "registration_evidence": {
+              "url": "https://forms.gle/zpQLWUrsaKmrr6jz7",
+              "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform?usp=send_form",
+              "checked_at": "2026-10-02T08:48:32+08:00",
+              "snapshot_sha256": "7a15dcdf24b347a84f47f772478e261a0502bf3ebd9450fe292a2dcb2687ce4f",
+              "title": "10/4禾森| 【台語情緒故事 × 感覺統合親子活動】",
+              "choices": [
+                "日期｜115/10/4（日） 10:00-11:00"
+              ],
+              "method": "public_text_v2",
+              "hops": [
+                {
+                  "url": "https://forms.gle/zpQLWUrsaKmrr6jz7",
+                  "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform?usp=send_form",
+                  "snapshot_sha256": "7a15dcdf24b347a84f47f772478e261a0502bf3ebd9450fe292a2dcb2687ce4f"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "validation": {
+    "unit_tests": 269,
+    "passed": true,
+    "skipped": 1,
+    "diff_check": "passed",
+    "existing_catalog_and_prose_unchanged": true
+  },
+  "publication": {
+    "status": "not_yet_submitted",
+    "published": 0
+  }
+}

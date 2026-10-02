@@ -19,7 +19,24 @@ def digest(text):
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def document(body, url):
+def document(body, url, version=1):
+    if type(version) is not int or version not in (1, 2):
+        raise ValueError('Unsupported disposition document version')
+    text = _document(body, url)
+    if version == 2:
+        from urllib.parse import urlsplit
+        # These sites include live visitor counters in the visible document.
+        # Preserve all announcement text, dates and limits; remove only the
+        # numeric value of their explicitly labelled page-view counters.
+        if urlsplit(url).hostname in {
+                'www.ceramics.ntpc.gov.tw', 'www.xzcac.ntpc.gov.tw',
+                'www.gep.ntpc.gov.tw', 'www.tapo.gov.taipei'}:
+            text = re.sub(r'((?:瀏覽人次|點閱數)\s*[:：]\s*)[0-9][0-9,]*',
+                          r'\1[page views]', text)
+    return text
+
+
+def _document(body, url):
     if url.startswith('https://cloud.culture.tw/frontsite/trans/SearchShowAction.do'):
         return json.dumps(json.loads(body), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
     if url.startswith('https://csm.api.opentix.life/programs/'):
@@ -67,6 +84,9 @@ def evidence_url(candidate):
 
 
 def validate(row):
+    version = row.get('document_version', 1)
+    if type(version) is not int or version not in (1, 2):
+        raise ValueError('Unsupported disposition document version')
     required = ('candidate_id', 'source_id', 'source_url', 'title', 'reason',
                 'rationale', 'reviewed_at', 'evidence_url', 'content_sha256', 'quotes')
     if not all(row.get(k) for k in required) or row['reason'] not in REASONS:
@@ -120,7 +140,7 @@ def matches(row, candidate, client):
     body, ev = client.get(row['evidence_url'])
     if ev['final_url'] != row['evidence_url']:
         return False
-    content = document(body, row['evidence_url'])
+    content = document(body, row['evidence_url'], row.get('document_version', 1))
     if archived_html and ('本節目已下架' not in content or candidate['title'] not in content):
         return False
     from .reviewed_supporting_evidence import valid as supporting_valid

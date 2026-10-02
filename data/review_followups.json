@@ -66,14 +66,15 @@
       "source_url": "https://www.accupass.com/event/2604161917471542799416",
       "title": "2026童演童語-霹靂電影日《奇人密碼—古羅布之謎》 ",
       "owner": "Codex",
-      "finding": "10/17桃園總館奇人密碼電影公告可读，104分鐘版本與片名一致；公告未列放映音軌，不能把布袋戲電影一概視為台語。",
+      "finding": "重新完整閱讀ACCUPASS與文化部同片資料：10/17總館免費、104分鐘電影，仍未寫本場音軌；布袋戲電影不直接等同台語版本。",
       "missing_fields": [
-        "本場放映版本語言"
+        "10/17實際放映版本的語言"
       ],
-      "next_action": "查桃園圖書館映演場次或片方同版本音軌資料；文化部同片公告與ACC交叉比對。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-03T07:00:00+08:00",
-      "source_content_sha256": "cf4a580ac9243529b4e3214d8de227a65ab956f9c2a5e9c46a203df98fc684e9",
+      "next_action": "續查桃園圖書館與片方官方場次或音軌說明，若仍未公告，維持待核實，不把讀取正常當成語言通過。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2604161917471542799416",
+      "content_sha256": "cf4a580ac9243529b4e3214d8de227a65ab956f9c2a5e9c46a203df98fc684e9",
       "fetch_error": null
     },
     "4b84bb4d166de282573f9b4a": {
@@ -186,29 +187,18 @@
       "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
       "title": "115年「掌藝薪傳-大師工作坊」",
       "owner": "Codex",
-      "finding": "已讀國藝會同一115年工作坊完整公告、公開報名表與官方海報。表單明列前場10/4、10/18 10:00–12:00、台北偶戲館3樓、市民大道五段99號；後場10/18改10/11，11/1成果在霞海城隍廟。課程3000元、材料費另計、前場自備偶，不能把四班全部視為台語課或用每週日推算。原FB分享頁仍轉址且只有摘要。",
+      "finding": "今天再讀國藝會公告及完整報名表，前場10/4及10/18 10:00–12:00、台北偶戲館3樓，3000元整期、自備偶；仍未說明中途加入條件與演出口白語言。Facebook轉址至劇團原貼文但僅可讀摘要；不得以摘要推定全部四班都屬台語。",
       "missing_fields": [
-        "前場演出口白實際使用語言",
-        "中途加入／單堂參加條件",
-        "11/1成果發表確切開始時間"
+        "中途加入或單堂參加条件",
+        "前場課程口白語言",
+        "11/1成果確切時間"
       ],
-      "next_action": "沿劇團本屆課程內容及官方報名表補核前場台語口白與參加條件；僅明確符合的前場日期建契約，其餘班別分開處理。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "next_action": "明早重查劇團本屆報名條件及場次異動；只核實有明確台語口白與參加條件的前場，工藝、後場分開。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-04T07:00:00+08:00",
       "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
-      "fetch_error": "Official page redirected; inspect destination before deciding",
-      "checked_supporting_sources": [
-        {
-          "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
-          "checked_at": "2026-10-02T07:07:35+08:00",
-          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574"
-        },
-        {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
-          "checked_at": "2026-10-02T07:07:35+08:00",
-          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd"
-        }
-      ]
+      "content_sha256": null,
+      "fetch_error": "Official page redirected; inspect destination before deciding"
     },
     "9d7c72661457ad8b528a7e02": {
       "candidate_id": "9d7c72661457ad8b528a7e02",
@@ -251,32 +241,31 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "title": "115年望間歌唱研習活動",
       "owner": "Codex",
-      "finding": "完整文化部UID6a304d0026b3243414ccd317明示國台客語教唱，5/8 19:00起、10/2 21:00整期結束；仍只寫新屋區，未提供今天是否上課、今日起始時間與教室。定向搜尋只有同一API轉載，不能補猜今晚19:00。",
+      "finding": "官方category=7本次回應已不含UID6a304d0026b3243414ccd317或活動名稱。舊紀錄截止10/2 21:00，但今天沒有可重新綁定的同筆公告；不能把官方列表移除直接判為過期結案。",
       "missing_fields": [
-        "今日實際上課時間",
-        "教室地址",
-        "參加條件"
+        "可重查的原活動結束或延期公告"
       ],
-      "next_action": "明早重讀同一官方UID，若仍明示10/2已結束且沒有延期／新場次，即以官方整期截止證據辦理過期結案；若延期則追查課表。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "next_action": "追查主辦望間社區及文化部原UID可讀詳頁；確認截止與無延期後才保存過期決定。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-04T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
-      "checked_supporting_sources": []
+      "content_sha256": "de7b5aae1ad79e28d920e46c2eb36760b78aa24ee51f92aa6c60ddf3ee9f484b",
+      "fetch_error": null
     },
     "310d83cbe91674eca1a83873": {
       "candidate_id": "310d83cbe91674eca1a83873",
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
       "title": "童演童語兒童閱讀推廣活動-霹靂電影日《奇人密碼—古羅布之謎》(2場)",
       "owner": "Codex",
-      "finding": "10/17桃園總館奇人密碼電影公告可读，104分鐘版本與片名一致；公告未列放映音軌，不能把布袋戲電影一概視為台語。",
+      "finding": "文化部完整同片紀錄與ACCUPASS交叉確認10/17下午14:00–16:00；未列本場語言音軌，6/21至10/17是兩場期間而非連續活動。",
       "missing_fields": [
-        "本場放映版本語言"
+        "10/17實際放映版本的語言"
       ],
-      "next_action": "查桃園圖書館映演場次或片方同版本音軌資料；文化部同片公告與ACC交叉比對。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-03T07:00:00+08:00",
-      "source_content_sha256": "53ff0f4bc4b45d216d6183190d20df5ab9b266e38ed7aa3c5767570ae4b8557d",
+      "next_action": "與ACCUPASS候選49b55809ecfe407f47bdd939合併查證，取得語言證據後只新增一次。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
+      "content_sha256": "a866616095cac9dbfc569c9d4117da2829ba93328e426b0a6fc3f7dec6a18a31",
       "fetch_error": null
     },
     "6a9af46326972658fff4e7d0": {
@@ -299,39 +288,18 @@
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
       "owner": "Codex",
-      "finding": "重讀主公告、Portaly及三張未決表單。10/3《熱人的冰麒麟》、10/17《雲遊博物館》表單仍寫星期日，但2026日期及Portaly為星期六；10/31漫才表單資訊欄仍誤列《雲遊博物館》；10/17下午《春福神傳說》仍顯示即將開放。此前已核實3場不重複新增。",
+      "finding": "重新讀Portaly及3張未決表單：10/3冰麒麟表單已額滿關閉，關閉頁未補正原日期矛盾；10/17雲遊博物館仍寫10/17（日），與2026日曆及Portaly（六）矛盾；10/31漫才資訊欄仍誤列雲遊博物館；10/17春福神傳說仍即將開放。已刊3場保留。",
       "missing_fields": [
-        "10/3及10/17星期矛盾的官方更正",
-        "10/31節目名稱更正",
-        "10/17下午完整報名說明"
+        "雲遊博物館日期星期官方更正",
+        "漫才活動名稱官方更正",
+        "春福神傳說完整報名證據"
       ],
-      "next_action": "優先於10/3早上重查冰麒麟表單是否更正；其他逐場追查。日期／名稱衝突不能由Codex代改，新增符合者僅建立新場次契約。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-03T07:00:00+08:00",
+      "next_action": "明早將已結束冰麒麟與其餘未決分開記錄，繼續核對10/17與10/31表單改正；不自行改日期、標題。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-04T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
-      "checked_supporting_sources": [
-        {
-          "url": "https://portaly.cc/nmhunitas",
-          "checked_at": "2026-10-02T07:07:34+08:00",
-          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e"
-        },
-        {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfgXrKf_PnZwNcNjHEUzK-a3z2vucMQdcSnrnw-1IGmgzgkdQ/viewform?usp=send_form",
-          "checked_at": "2026-10-02T07:07:36+08:00",
-          "content_sha256": "59df395ffa49bcf07246ab23f4812e18f6e92232f6c62236f031b8580188b432"
-        },
-        {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
-          "checked_at": "2026-10-02T07:07:36+08:00",
-          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b"
-        },
-        {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
-          "checked_at": "2026-10-02T07:07:36+08:00",
-          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c"
-        }
-      ]
+      "fetch_error": null
     },
     "d50adf5d105c3f70c43d3186": {
       "candidate_id": "d50adf5d105c3f70c43d3186",
@@ -817,7 +785,23 @@
       "evidence_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
       "fetch_error": "http_428",
       "checked_supporting_sources": []
+    },
+    "3a87074d16ef96870d3949ff": {
+      "candidate_id": "3a87074d16ef96870d3949ff",
+      "source_url": "https://www.accupass.com/event/2609290908339306700300",
+      "title": "【Open Site打開遺址】親子考古任務",
+      "owner": "Codex",
+      "finding": "完整正文確有台語場與14:00–16:00、五股集合地址和家庭票價，但11/14至12/19只是總期間，正文沒有日期與台語場逐場對應，不能全部當台語場。",
+      "missing_fields": [
+        "台語場各場確切日期"
+      ],
+      "next_action": "查主辦Open Site專頁與ACCUPASS票種對應日期，取得台語場日期後逐場建立契約。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "next_review_at": "2026-10-05T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609290908339306700300",
+      "content_sha256": "5914afb4c0f462bf6fce34d0322eb435f0b86ac212ee10703fb0e852cda63418",
+      "fetch_error": null
     }
   },
-  "updated_at": "2026-10-02T07:13:02+08:00"
+  "updated_at": "2026-10-03T07:16:35+08:00"
 }

@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "mode": "official_rules_v1",
+  "reviewed_at": "2026-10-03T07:11:00+08:00",
+  "source_priority": {
+    "gameislearning_1583v0joi94_20261017_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261017_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261121_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261121_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261219_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": null,
+      "reason": "accupass_session_not_verified"
+    },
+    "gameislearning_16086bkwi94_20261004_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20261004_1030",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1581w9d4i94_20260920_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20260920_1030",
+      "reason": "accupass_primary_session"
+    }
+  },
+  "applied_to_catalog": false,
+  "collected_at": null,
+  "candidate_count": 10,
+  "input_kind": "persisted_backlog",
+  "counts": {
+    "routed": 4,
+    "approved": 6
+  },
+  "collection_status_counts": {},
+  "decisions": [
+    {
+      "candidate_id": "2cc69ef21456b8f939faa506",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdtlTxQIN0pP93Qhkm9Gj09H6tpvJGoGB7xHpA5oc9xqXPXxw/viewform",
+      "title": "『台語路故事講師課程—FINAL CALL！ 』",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1
+    },
+    {
+      "candidate_id": "728cdc38e34bd283a053d9da",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform",
+      "title": "【台語情緒故事 × 感覺統合親子活動】",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1
+    },
+    {
+      "candidate_id": "4816e2fe33ad5795d00d54fc",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform",
+      "title": "古錐ê講古｜免費台語繪本活動（第1場：卵）",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 2
+    },
+    {
+      "candidate_id": "9e0b3b0e7f08cdeec495f644",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608060917163807075530",
+      "title": "臺灣布袋戲傳習中心旗艦巡演",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 2
+    },
+    {
+      "candidate_id": "b9c676a4ca9d5131bcd7c02b",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdtlTxQIN0pP93Qhkm9Gj09H6tpvJGoGB7xHpA5oc9xqXPXxw/viewform",
+      "title": "『台語路故事講師課程—FINAL CALL！ 』",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "gameislearning_1632vj10i94_20261003_0900",
+      "published_session_ids": [
+        "gameislearning_1632vj10i94_20261003_0900"
+      ]
+    },
+    {
+      "candidate_id": "d2de925a98ae3cfb2487cf58",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLScd7PshKSpUqXzD23PYRlHFM2W929DejB0kyhBRpoJ-6-6XuA/viewform",
+      "title": "【台語情緒故事 × 感覺統合親子活動】",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "gameislearning_1633m3bui94_20261004_1000",
+      "published_session_ids": [
+        "gameislearning_1633m3bui94_20261004_1000"
+      ]
+    },
+    {
+      "candidate_id": "445db4ddab6950eae67413bf",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform",
+      "title": "古錐ê講古｜免費台語繪本活動（第1場：卵）",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_guichue_20261003_1000",
+      "published_session_ids": [
+        "review_guichue_20261003_1000"
+      ]
+    },
+    {
+      "candidate_id": "547d32223fb9f110afcfb61a",
+      "source_id": "reviewed_official_form",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSdt8U1-0jqlasPfxyMmU9sCQUPowKnUQZNlzII9rVlFeaKrCA/viewform",
+      "title": "古錐ê講古｜免費台語繪本活動（第2場：動物）",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_guichue_20261003_1100",
+      "published_session_ids": [
+        "review_guichue_20261003_1000",
+        "review_guichue_20261003_1100"
+      ]
+    },
+    {
+      "candidate_id": "a30dcfe5fc887d20ebcc0f29",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608060917163807075530",
+      "title": "臺灣布袋戲傳習中心旗艦巡演｜昇平五洲園《穆桂英之降龍木》",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_puppet_20261004_1400",
+      "published_session_ids": [
+        "review_puppet_20261004_1400"
+      ]
+    },
+    {
+      "candidate_id": "dc3b2a9b5ba3ce0aa90d321d",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608060917163807075530",
+      "title": "臺灣布袋戲傳習中心旗艦巡演｜陳錫煌傳統掌中劇團《蒼穹萍生》",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_puppet_20270227_1430",
+      "published_session_ids": [
+        "review_puppet_20261004_1400",
+        "review_puppet_20270227_1430"
+      ]
+    }
+  ],
+  "attention": {
+    "pending_candidates": 0,
+    "already_has_published_sessions": 0,
+    "source_unavailable": 0,
+    "message": "本輪沒有未解決候選。"
+  },
+  "destination": "data/editorial/queue.json",
+  "scope": "focused subset: official supporting forms and the reviewed puppet tour; other persisted candidates unchanged"
+}

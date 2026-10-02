@@ -36,10 +36,10 @@ def export(root, output, limit=25, client=None):
             body, ev = client.get(url)
             if ev['final_url'] != url:
                 raise ValueError('Official page redirected; inspect destination before deciding')
-            content = document(body, url)
+            content = document(body, url, version=2)
             if not content:
                 raise ValueError('Empty official evidence')
-            row.update(content=content, content_sha256=digest(content), evidence=ev)
+            row.update(content=content, content_sha256=digest(content), document_version=2, evidence=ev)
         except Exception as e:
             row['fetch_error'] = str(e)
         selected.append(row)

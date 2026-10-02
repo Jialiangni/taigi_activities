@@ -52,6 +52,23 @@ class TriageTests(unittest.TestCase):
         self.assertFalse(matches(self.row, dict(self.c, title='New event'), Client(self.body)))
         self.assertFalse(matches(dict(self.row, quotes=['invented']), self.c, Client(self.body)))
 
+    def test_versioned_counter_change_does_not_reopen_resource_but_content_does(self):
+        url = 'https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=one'
+        c = dict(self.c, source_url=url)
+        body = '<main>台語語音導覽 2026/10/03 名額25人 瀏覽人次：1,234</main>'
+        row = dict(self.row, source_url=url, evidence_url=url, document_version=2,
+                   quotes=['台語語音導覽'], content_sha256=digest(document(body, url, 2)))
+        self.assertTrue(matches(row, c, Client(body.replace('1,234', '1,235'))))
+        for before, after in [('台語', '華語'), ('2026/10/03', '2026/10/04'), ('25人', '20人')]:
+            self.assertFalse(matches(row, c, Client(body.replace(before, after))))
+        old = dict(row, document_version=1, content_sha256=digest(document(body, url)))
+        self.assertTrue(matches(old, c, Client(body)))
+        self.assertFalse(matches(old, c, Client(body.replace('1,234', '1,235'))))
+        other = 'https://example.org/event'
+        self.assertNotEqual(document(body, other, 2), document(body.replace('1,234', '1,235'), other, 2))
+        with self.assertRaises(ValueError):
+            document(body, url, 3)
+
     def test_empty_taigiloo_entry_preserves_visible_index_identity(self):
         url = 'https://taigiloo.tw/articles/'
         body = '<div id="content"><h1>文章列表 – 台語路經驗分享</h1><div class="entry-content"></div></div>'

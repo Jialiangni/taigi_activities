@@ -17,6 +17,8 @@
 
 ## 結案格式
 
+2026-10-03：新匯出資料的 `document_version=2` 僅在陶博館、新莊文化藝術中心、黃金博物館及臺北市藝文推廣處官方網域，排除明列「瀏覽人次／點閱數」的計數值。來源全文、活動日期、名額及更新日期仍綁定。結案時須帶入匯出的版本並使用 `document(body, url, version=2)` 計算指紋；未指定版本的歷史決定仍用原版本核對，不自動重綁。這可避免每次讀頁增加瀏覽數，造成非活動資源永遠無法結案。
+
 `schema_version=1, decisions=[...]`；每筆包含 `candidate_id, source_id, source_url, title, reason, rationale, reviewed_at, evidence_url, content_sha256, quotes`。hash 使用 `crawler.candidate_triage.digest(document(...))`，不要另用不同正文抽取方法。允許原因見 `crawler/candidate_triage.py`。來源重新取得失敗或內容變動，整批不刪待辦。
 
 ## 台語判讀的界線

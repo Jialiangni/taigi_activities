@@ -4432,24 +4432,15 @@
       "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
       "title": "台文寫作概念研習_ 講師：藍春瑞",
       "reason": "already_covered",
-      "rationale": "公告尚未結束的2026年場次已逐場刊登；9/19、9/20等舊場已過期。來源改版時重開核實。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "10/18板橋場已刊tgb_writing_2026_20261018；9/19已結束，保留原活動台文。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
       "content_sha256": "6ea6367785bd067e4ba2efb8dccd01a5fd91b8c9621886cdd2b27d80c9fdf943",
       "quotes": [
-        "台文寫作概念研習_ 講師：藍春瑞"
-      ],
-      "evidence": {
-        "url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
-        "final_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:26+08:00",
-        "sha256": "c8e53212a182cb19a5099f9dca51fb2a8396a9b1c3ba2eed2aa5950ad3b80118",
-        "elapsed_ms": 984,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "10/18 禮拜 寫作ê主題kah範例",
+        "講師：藍春瑞",
+        "時間下晡2:00-4:00"
+      ]
     },
     {
       "candidate_id": "98d7616f80cd46c8e69bb09a",
@@ -5957,24 +5948,16 @@
       "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
       "title": "鶯歌陶瓷博物館導覽服務",
       "reason": "resource_only",
-      "rationale": "台語導覽／閱讀／展覽資訊，並非單一演出場次；不再佔用活動核實佇列，既有資訊區保留。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "定時真人導覽明列華語，台語部分為隨選語音導覽設備，不是固定台語活動場次。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
-      "content_sha256": "b7af2d56d975de7eb4e9bfbd15675092431ca10a1ff22d64df9c3eb74e545641",
+      "content_sha256": "b7f2b31c7a118607b07a49365d0659ef0734a7e2ce5230a54fdc85093246286d",
       "quotes": [
-        "首頁 參觀服務 導覽服務 導覽服務 回上一頁 友善列印 RSS 訂閱 字級： 字級小 字級中 字級大 分享： 分享到我的Facebook 分享到我的Twitter 分享到我的Plurk ::: 個人導"
+        "華語專人定時導覽",
+        "語音導覽設備",
+        "臺語"
       ],
-      "evidence": {
-        "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
-        "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G289653878181469975",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:23+08:00",
-        "sha256": "545e326051a73048cd12fdb545c3f1b381cc24fef576004f8ad7b474f565b6f6",
-        "elapsed_ms": 1170,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "4d7016b8d872d9e3142f3d56",
@@ -5982,24 +5965,16 @@
       "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
       "title": "語種選擇，請點選最下方數字方格",
       "reason": "resource_only",
-      "rationale": "台語導覽／閱讀／展覽資訊，並非單一演出場次；不再佔用活動核實佇列，既有資訊區保留。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "整頁為各語言音檔清單，沒有單場活動，既有資源保留。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
-      "content_sha256": "71f6cf17117ee521414e5bafd120e819b6d103d33d6016eca4ecafa2b6853a25",
+      "content_sha256": "366b7e8c8a8039d922ad7c7b4f5ed01eb77f7b34a100bc4517e806058199f0d9",
       "quotes": [
-        "語種選擇，請點選最下方數字方格"
+        "語音導覽",
+        "語種選擇，請點選最下方數字方格",
+        "一鍵下載"
       ],
-      "evidence": {
-        "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
-        "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0m327320819378174143",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:34+08:00",
-        "sha256": "8eae7422e639f072c896ca924ab8670dad3cbc42db27122ebca8227e9abd8684",
-        "elapsed_ms": 3927,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "8976e82703d1c6ac4c470899",
@@ -6007,24 +5982,16 @@
       "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0M327320819378174143",
       "title": "語種選擇，請點選最下方數字方格",
       "reason": "resource_only",
-      "rationale": "台語導覽／閱讀／展覽資訊，並非單一演出場次；不再佔用活動核實佇列，既有資訊區保留。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "同一語音導覽資源因URL大小寫另成候選，不是單場活動。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0M327320819378174143",
-      "content_sha256": "5b332b3ff1cbcbf05cb9e4a74f0c1acf6e6007b4bfb3b6d312947e3995296278",
+      "content_sha256": "366b7e8c8a8039d922ad7c7b4f5ed01eb77f7b34a100bc4517e806058199f0d9",
       "quotes": [
-        "語種選擇，請點選最下方數字方格"
+        "語音導覽",
+        "語種選擇，請點選最下方數字方格",
+        "一鍵下載"
       ],
-      "evidence": {
-        "url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0M327320819378174143",
-        "final_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0l179497893144672957&sid=0M327320819378174143",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:30+08:00",
-        "sha256": "27b5aaff40fb1efd9ca1e0f7f5a8d579b37b5332152f834852be72b1ee5fdd59",
-        "elapsed_ms": 6737,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "edf0d3e2802b8815c2b56d8e",
@@ -6032,24 +5999,15 @@
       "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
       "title": "《請戲—布袋戲一條街》特展：台語語音導覽",
       "reason": "resource_only",
-      "rationale": "台語導覽／閱讀／展覽資訊，並非單一演出場次；不再佔用活動核實佇列，既有資訊區保留。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "台語為展場隨選音檔，保留資訊區。另提10場走讀與2場工作坊但本頁未有場次表，不將展期建成活動。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
-      "content_sha256": "dcaa5efcf57c9586832184a6819cee13e1296aba85fd1be6bc4287962a4d08ed",
+      "content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
       "quotes": [
-        "﻿ 臺北市藝文推廣處-大稻埕戲苑活動-《請戲–布袋戲一條街》特展 跳到主要內容區塊 搜尋 搜尋 進階搜尋 分享 分享至 Facebook[另開新視窗] 分享至 Plurk[另開新視窗] 分享至 twi"
+        "語音導覽提醒：現場提供華語、臺灣台語、英語導覽",
+        "掃描場內QR Code即可聆聽"
       ],
-      "evidence": {
-        "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
-        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:29+08:00",
-        "sha256": "b01e534af7b1bdd154a9b79c3f93aeaba6ccbe5d29323297f40b1a86aa500ce4",
-        "elapsed_ms": 1088,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "d6b15a9aefbe3b294f277fdf",
@@ -6057,24 +6015,15 @@
       "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
       "title": "《請戲–布袋戲一條街》特展",
       "reason": "resource_only",
-      "rationale": "台語導覽／閱讀／展覽資訊，並非單一演出場次；不再佔用活動核實佇列，既有資訊區保留。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "相同展览公告參數排序的副本，台語為隨選音檔；不是固定場次。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
-      "content_sha256": "dcaa5efcf57c9586832184a6819cee13e1296aba85fd1be6bc4287962a4d08ed",
+      "content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
       "quotes": [
-        "《請戲–布袋戲一條街》特展"
+        "語音導覽提醒：現場提供華語、臺灣台語、英語導覽",
+        "掃描場內QR Code即可聆聽"
       ],
-      "evidence": {
-        "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
-        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:31+08:00",
-        "sha256": "3916c3d2ff6428d828d806cda63ef5f33b732516997f64545b05a7b952905b45",
-        "elapsed_ms": 1080,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "3fcdd80eb7beac074909affe",
@@ -6257,24 +6206,15 @@
       "source_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
       "title": "115年九合一地方公職人員選舉反賄選宣導-臺語影片",
       "reason": "not_event",
-      "rationale": "已讀正文，為影片、既往活動心得、機構／地名介紹、成果公告、名單、申請計畫或線上節目，不是北北桃可到場的新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "官方宣導影片供線上觀看下載；頁尾開館時間不是播映活動時間。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
-      "content_sha256": "d2c22c518d1c07402984b0029de6c5201e0d73282902039794dfaa162cc06c4f",
+      "content_sha256": "f06853c710a832c114add119dbcc03104556c31f02890de5aeaa4c9ad76a57e3",
       "quotes": [
-        "115年九合一地方公職人員選舉反賄選宣導-臺語影片"
-      ],
-      "evidence": {
-        "url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
-        "final_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:37+08:00",
-        "sha256": "2224710f5f543915236d03419788bcc571486df058eaf1cf05f0f2df46182bee",
-        "elapsed_ms": 1180,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "115年九合一地方公職人員選舉反賄選宣導-臺語影片",
+        "相關影音",
+        "DownLoad Movie"
+      ]
     },
     {
       "candidate_id": "c5c4cd62d6259d95dd4ab013",
@@ -6282,24 +6222,14 @@
       "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
       "title": "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊",
       "reason": "not_event",
-      "rationale": "已讀正文，為影片、既往活動心得、機構／地名介紹、成果公告、名單、申請計畫或線上節目，不是北北桃可到場的新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "公告為甄選結果名單，不是可報名或到場的演出場次公告；實際演出另依專頁收集。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
-      "content_sha256": "54dad07d4d0c662932c9e1fafb7c940e5426506978f14f670fd76c15fa468e59",
+      "content_sha256": "0e88f4c318f3f119d9bdb0d8f9e1d7c32c35b43f954064d0377e089debbb048c",
       "quotes": [
-        "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊"
-      ],
-      "evidence": {
-        "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
-        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:28+08:00",
-        "sha256": "fc5cd775a3e99e13be616fe65ac3d48d5b09fdf546343f5ab897a5b0c185d8af",
-        "elapsed_ms": 156,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "劇團甄選會議決議",
+        "入選劇團及劇目為"
+      ]
     },
     {
       "candidate_id": "ec709fb402df6e26daaa16cc",
@@ -6307,24 +6237,15 @@
       "source_url": "https://www.gep.ntpc.gov.tw/xmdoc/cont?xsmsid=0G246371101027433254",
       "title": "簡介 | 新北市立黃金博物館",
       "reason": "not_event",
-      "rationale": "已讀正文，為影片、既往活動心得、機構／地名介紹、成果公告、名單、申請計畫或線上節目，不是北北桃可到場的新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "完整內文為昇平戲院沿革與一般開館資訊，歌仔戲布袋戲是歷史描述，沒有現行演出場次。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.gep.ntpc.gov.tw/xmdoc/cont?xsmsid=0G246371101027433254",
-      "content_sha256": "3b40b0f0fb28219726f59ca1132d778e1edf15780639572b44815a05c58684c8",
+      "content_sha256": "23d651ef2b3cd07a6181330d74a2128bc5b865aafa02f9c9c234afb844624ffa",
       "quotes": [
-        "首頁 主題設施 昇平戲院 簡介 簡介 回上一頁 友善列印 RSS 訂閱 字級： 字級小 字級中 字級大 分享： 分享到我的Facebook 分享到我的Twitter 分享到我的Plurk ::: 昇平"
+        "一、昇平物語",
+        "四、參觀資訊"
       ],
-      "evidence": {
-        "url": "https://www.gep.ntpc.gov.tw/xmdoc/cont?xsmsid=0G246371101027433254",
-        "final_url": "https://www.gep.ntpc.gov.tw/xmdoc/cont?xsmsid=0G246371101027433254",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:40+08:00",
-        "sha256": "1505b0a7a6391e4df04050927281b3b6c893f7ac7f81aa87ee0e6c9adccb63f7",
-        "elapsed_ms": 1406,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "7c4a60eec1f20c17e249fa58",
@@ -7280,26 +7201,16 @@
       "candidate_id": "8467ed7be7bc44a65306a8a0",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609190329096343255250",
-      "title": "【台灣話行跤花】歷史街區台語散步｜鹿港場",
+      "title": "【台灣話行跤花】歷史街區台語導覽｜鹿港場",
       "reason": "outside_region",
-      "rationale": "核對實際活動場地位於彰化、臺中或高雄等北北桃以外地區；發文機關所在地不當作活動地點。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "讀完整活動與路線，實際為彰化鹿港導覽；JSON-LD誤附新北市，不屬北北桃。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.accupass.com/event/2609190329096343255250",
-      "content_sha256": "3ea2a743eeb93b92755c0cc7518a7895c13d008fb7c60134e7eb3df177ea75f5",
+      "content_sha256": "f6cf074927d93c09c3af32c6c8d5681fb784edd233aae897758108554fd470c8",
       "quotes": [
-        "【台灣話行跤花】歷史街區台語散步｜鹿港場"
-      ],
-      "evidence": {
-        "url": "https://www.accupass.com/event/2609190329096343255250",
-        "final_url": "https://www.accupass.com/event/2609190329096343255250",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:39:42+08:00",
-        "sha256": "cbf87ba1f9ccf2fbaa9449018ddb00a1edd768c589a9eb5bd01430addf6f1acb",
-        "elapsed_ms": 766,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "集合地點｜鹿港民俗文物館",
+        "彰化縣鹿港鎮泰興里館前街 88 號"
+      ]
     },
     {
       "candidate_id": "754aea2f8d1ebb5b491124af",
@@ -7332,24 +7243,14 @@
       "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
       "title": "2026林淑容【您的經典．我的歌】世界巡迴演唱會台中場",
       "reason": "outside_region",
-      "rationale": "核對實際活動場地位於彰化、臺中或高雄等北北桃以外地區；發文機關所在地不當作活動地點。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "rationale": "讀完整售票頁及場次表，演出位於臺中，臺北退票地址不是活動地點。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
-      "content_sha256": "a89a83b114ed487c2c722cc3f268165021876ee3005a845bc7b0f4ea40c6d7bf",
+      "content_sha256": "48351646d3f2a77b697e9589d28828b59ade634e5998754ed36ffee85d3cc3db",
       "quotes": [
-        "2026林淑容【您的經典．我的歌】世界巡迴演唱會台中場"
-      ],
-      "evidence": {
-        "url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
-        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:12+08:00",
-        "sha256": "fb877ed1aba92b25c3a0398a4c980fc9519ffcbd7aa6ffcc5771aedd8bd29a4d",
-        "elapsed_ms": 171,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "2026年12月5日（六）19：00",
+        "台中中興大學惠蓀堂"
+      ]
     },
     {
       "candidate_id": "164ecf8dfc7e8ec876140779",
@@ -11232,24 +11133,14 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
       "title": "桃園市土地公文化館常設展-202當伯公遇見土地公",
       "reason": "resource_only",
-      "rationale": "常設展、長期書展或共學／課程資源頁，不是具有單場日期的活動；不以總期間製造日曆場次，保留原來源供查詢。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "完整官方資料是常設展及互動裝置，年份起迄為展期，不能當全年連續台語活動。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-      "content_sha256": "507ece6826a7c5207212102b01af476d8991246d3cf5b457ac369263f54cfcc8",
+      "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
       "quotes": [
-        "桃園市土地公文化館常設展-202當伯公遇見土地公"
-      ],
-      "evidence": {
-        "url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:26+08:00",
-        "sha256": "519e29a501f2386c7e0601d5222a8478c345605ba54ae6368ace512a2f445e75",
-        "elapsed_ms": 341,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "桃園市土地公文化館常設展-202當伯公遇見土地公",
+        "常設展以"
+      ]
     },
     {
       "candidate_id": "b1bc953c8f1798f1c9741a08",
@@ -11257,24 +11148,14 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
       "title": "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
       "reason": "resource_only",
-      "rationale": "常設展、長期書展或共學／課程資源頁，不是具有單場日期的活動；不以總期間製造日曆場次，保留原來源供查詢。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "內容為祭祀用品、樂器、戲台展示及體驗，未列台語演出場次；常設展不作日曆事件。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-      "content_sha256": "507ece6826a7c5207212102b01af476d8991246d3cf5b457ac369263f54cfcc8",
+      "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
       "quotes": [
-        "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動"
-      ],
-      "evidence": {
-        "url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:26+08:00",
-        "sha256": "519e29a501f2386c7e0601d5222a8478c345605ba54ae6368ace512a2f445e75",
-        "elapsed_ms": 341,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
+        "本展間展示"
+      ]
     },
     {
       "candidate_id": "5ab65065446e6097b618375b",
@@ -11282,24 +11163,14 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
       "title": "【特展】 「請戲-布袋戲一條街」特展",
       "reason": "resource_only",
-      "rationale": "常設展、長期書展或共學／課程資源頁，不是具有單場日期的活動；不以總期間製造日曆場次，保留原來源供查詢。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "官方文化資料為展覽期間與展品介紹，不是固定台語演出場次。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-      "content_sha256": "507ece6826a7c5207212102b01af476d8991246d3cf5b457ac369263f54cfcc8",
+      "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
       "quotes": [
-        "【特展】 「請戲-布袋戲一條街」特展"
-      ],
-      "evidence": {
-        "url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:26+08:00",
-        "sha256": "519e29a501f2386c7e0601d5222a8478c345605ba54ae6368ace512a2f445e75",
-        "elapsed_ms": 341,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "【特展】 「請戲-布袋戲一條街」特展",
+        "本次特展透過介紹"
+      ]
     },
     {
       "candidate_id": "3a9361ee088d05fbba2851bb",
@@ -11307,24 +11178,16 @@
       "source_url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
       "title": "金鷹歸來：隆興閣掌中武林特展",
       "reason": "resource_only",
-      "rationale": "常設展、長期書展或共學／課程資源頁，不是具有單場日期的活動；不以總期間製造日曆場次，保留原來源供查詢。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "未來部分是常設型特展；頁内唯一工作坊4/25已結束，不能把展期當演出。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
-      "content_sha256": "3b404d5f23d9330389d7a3c9e14eec3d8aece0fb72953b7f58868dccb0dc3cba",
+      "content_sha256": "026499f2cb11626986bf48443acd054dc4a1758206e1db9ec9375ec0911cbe6e",
       "quotes": [
-        "金鷹歸來：隆興閣掌中武林特展"
+        "展覽資訊：",
+        "115 年 4 月 23 日至 116 年 3 月 14 日",
+        "時間：4/25（六）15:00–16:30"
       ],
-      "evidence": {
-        "url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
-        "final_url": "https://www.xzcac.ntpc.gov.tw/xmdoc/cont?xsmsid=0G286658855814597144&sid=0Q104505578179667774",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:34:38+08:00",
-        "sha256": "ab9cdedf92a392680b359b1a987543c436e6c5ef91a513420127f10a9b940f76",
-        "elapsed_ms": 861,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+      "document_version": 2
     },
     {
       "candidate_id": "491ba6490054f3bd4029717f",
@@ -11782,24 +11645,14 @@
       "source_url": "https://www.opentix.life/event/2063886748971831297",
       "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
       "reason": "already_covered",
-      "rationale": "已對照正式清單同節目、同日期、同場館場次；保留原刊登ID及文案，不另建副本。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "核對官方API本次歌仔戲、場地、10/30 19:30場次，與已刊gameislearning_1594rl4yi94_20261030_1930相同，不另建OPENTIX副本。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-      "content_sha256": "0c4566b72bfab2b9a856d24eb6cd711c7a92d39ad34e6d56d094f10b585848b6",
+      "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
       "quotes": [
-        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》"
-      ],
-      "evidence": {
-        "url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "final_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:41:37+08:00",
-        "sha256": "8ea8fbbabc6c31c385b75fab9838d0ff83792ee3937d190448531a82e75e13f4",
-        "elapsed_ms": 370,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+        "2063886750687301633"
+      ]
     },
     {
       "candidate_id": "09aa0cac7b6a84ead240160c",
@@ -11807,24 +11660,14 @@
       "source_url": "https://www.opentix.life/event/2063886748971831297",
       "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
       "reason": "already_covered",
-      "rationale": "已對照正式清單同節目、同日期、同場館場次；保留原刊登ID及文案，不另建副本。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "核對官方API10/31 14:30場次，與已刊gameislearning_1594rl4yi94_20261031_1430相同。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-      "content_sha256": "0c4566b72bfab2b9a856d24eb6cd711c7a92d39ad34e6d56d094f10b585848b6",
+      "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
       "quotes": [
-        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》"
-      ],
-      "evidence": {
-        "url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "final_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:41:37+08:00",
-        "sha256": "8ea8fbbabc6c31c385b75fab9838d0ff83792ee3937d190448531a82e75e13f4",
-        "elapsed_ms": 370,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+        "2063894037669744641"
+      ]
     },
     {
       "candidate_id": "3b4258252c35f92b70eb679f",
@@ -11832,24 +11675,14 @@
       "source_url": "https://www.opentix.life/event/2063886748971831297",
       "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
       "reason": "already_covered",
-      "rationale": "已對照正式清單同節目、同日期、同場館場次；保留原刊登ID及文案，不另建副本。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00",
+      "rationale": "核對官方API11/1 14:30場次，與已刊gameislearning_1594rl4yi94_20261101_1430相同。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-      "content_sha256": "0c4566b72bfab2b9a856d24eb6cd711c7a92d39ad34e6d56d094f10b585848b6",
+      "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
       "quotes": [
-        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》"
-      ],
-      "evidence": {
-        "url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "final_url": "https://csm.api.opentix.life/programs/2063886748971831297",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:41:37+08:00",
-        "sha256": "8ea8fbbabc6c31c385b75fab9838d0ff83792ee3937d190448531a82e75e13f4",
-        "elapsed_ms": 370,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
+        "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+        "2063898170380390401"
+      ]
     },
     {
       "candidate_id": "2cce09e44c2530c3a32b79da",
@@ -12015,6 +11848,65 @@
       "content_sha256": "f70f48aaa12dbb94d8cd33f6f0e49ca80aa745c990201b4d234428688e2edd10",
       "quotes": [
         "文章列表 – 台語路經驗分享"
+      ]
+    },
+    {
+      "candidate_id": "dc4753baf9da390fc1e583ed",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609150126476971150670",
+      "title": "漫遊老臺北─新公園時空解碼戰",
+      "reason": "already_covered",
+      "rationale": "逐場核對10/11與10/26兩個時段，正式catalog四場acc_2609150126476971150670均已刊登；其他日期是華語或英語，自由解謎不是額外台語場次。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609150126476971150670",
+      "content_sha256": "77a5fea9ab0f09c875539557f55f2592ea6cbcf683fcf97b6946e34104603aac",
+      "quotes": [
+        "臺語版｜Taiwanese",
+        "10/11（日）、10/26（一）",
+        "13:00–14:30｜15:30–17:00"
+      ]
+    },
+    {
+      "candidate_id": "0a56f68ceef0b5f4cfa347bd",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16342f5mi94",
+      "title": "【台語sa攏有】歷史教育ê轉型正義",
+      "reason": "already_covered",
+      "rationale": "同場已刊tgb_20261014_1930，並交叉核對公開報名表主講、主題及濟南教會；不新增目錄副本。",
+      "reviewed_at": "2026-10-03T07:06:30+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16342f5mi94",
+      "content_sha256": "719cb7b25b3eef3caddab4a6410695b876f35ff01626fae15bba0e9fb002d29c",
+      "quotes": [
+        "2026/10/14（拜三）19:30～21:30",
+        "黃惠貞"
+      ]
+    },
+    {
+      "candidate_id": "26fc8fd52baf542daaf8e1a6",
+      "source_id": "le_chang",
+      "source_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+      "title": "〔活動分享〕米特動物樂園《Do Re Mi 喜咧兜？》",
+      "reason": "already_covered",
+      "rationale": "本分享文未有獨立新場次。已追查同劇最新官方OPENTIX完整節目與API，2027/1/9、1/10臺北球劇場四場均已刊登（2084531968815738881、2085288395957346305、2085288476346302465、2085288541670158337）；不因舊分享文重複新增，不將高雄、臺中、宜蘭巡演納入。",
+      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "evidence_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+      "content_sha256": "8f6e38cf3897f4d38df9f31dbfca9c64212428f5fb0bb02f5d5ef3a85be3803d",
+      "quotes": [
+        "《Do Re Mi 喜咧兜？》",
+        "故事結合「台語」"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://csm.api.opentix.life/programs/2083124898860347393",
+          "content_sha256": "f2bbd4472d2dcba123db4e16be6eb04e3c33da7990836c0c75c93a12cb9b4175",
+          "quotes": [
+            "2084531968815738881",
+            "2085288541670158337",
+            "本節目多數段落將以台語演出"
+          ],
+          "rationale": "完整官方場次資料對照既有catalog，北北桃四場均已刊登。",
+          "reviewed_at": "2026-10-03T07:16:34+08:00"
+        }
       ]
     }
   ]
