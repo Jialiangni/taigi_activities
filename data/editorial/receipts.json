@@ -960,6 +960,36 @@
       "source_hash": "3881a20992ec0d3098f24e5670368faf64f3cacf99e5a2bda7c687a3a1e33c11",
       "result_hash": "c351f69a2e9258501320aa75cf16ecd373a8e1752c4005d9fe5d70d94e1dddeb",
       "accepted_at": "2026-10-02T08:27:32+08:00"
+    },
+    "gameislearning_1632vj10i94_20261003_0900-844da73480f84046d0d5b13263b653f2004d06220963fb47ff136a872b9bb66b.json": {
+      "activity_id": "gameislearning_1632vj10i94_20261003_0900",
+      "source_hash": "844da73480f84046d0d5b13263b653f2004d06220963fb47ff136a872b9bb66b",
+      "result_hash": "63f0642fa6808cec135dbf1a8bc414e54dc2310bda3715b684418f917c0269fc",
+      "accepted_at": "2026-10-03T07:27:37+08:00"
+    },
+    "review_guichue_20261003_1000-841c9e2fc2fbf349f00ad972fcae0340db35f2c769cd539583e0c378810c0211.json": {
+      "activity_id": "review_guichue_20261003_1000",
+      "source_hash": "841c9e2fc2fbf349f00ad972fcae0340db35f2c769cd539583e0c378810c0211",
+      "result_hash": "065b07806933b00188c5b769bac75739800f1bacb3634a5a2ef925faf4e1df7f",
+      "accepted_at": "2026-10-03T07:27:37+08:00"
+    },
+    "review_guichue_20261003_1100-1462fd67b7aaec84d1dea62ba803acbce2a765977f33eec7f73a0115f434cadf.json": {
+      "activity_id": "review_guichue_20261003_1100",
+      "source_hash": "1462fd67b7aaec84d1dea62ba803acbce2a765977f33eec7f73a0115f434cadf",
+      "result_hash": "319277148f2bbe60c46d631f74a315b74b32412e752eff5349d986ed78f8300b",
+      "accepted_at": "2026-10-03T07:27:37+08:00"
+    },
+    "gameislearning_1633m3bui94_20261004_1000-fb439a45f730ef49575f429fbce3100d2029f4c578171634ce111b751e2688b5.json": {
+      "activity_id": "gameislearning_1633m3bui94_20261004_1000",
+      "source_hash": "fb439a45f730ef49575f429fbce3100d2029f4c578171634ce111b751e2688b5",
+      "result_hash": "a1468972528f390f85c360e0f6ea83661c559f491b2d3dd5fa2c97cb73bd4bf4",
+      "accepted_at": "2026-10-03T07:27:37+08:00"
+    },
+    "review_puppet_20261004_1400-885ee88da9c468cb813813f140647faf6d6a461ed6aae26616783e5e83318cfc.json": {
+      "activity_id": "review_puppet_20261004_1400",
+      "source_hash": "885ee88da9c468cb813813f140647faf6d6a461ed6aae26616783e5e83318cfc",
+      "result_hash": "3f7771d827ad0cc4aff85b7514b66673c7d36f959314b1738003ab845f4902e5",
+      "accepted_at": "2026-10-03T07:27:37+08:00"
     }
   }
 }
