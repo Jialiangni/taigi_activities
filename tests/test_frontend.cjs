@@ -103,7 +103,6 @@ run(`
 assert.ok(element('modalDesc').innerText.startsWith('簡介原文：官方提供的活動介紹 <不可變成 HTML>'));
 assert.doesNotMatch(element('modalDesc').innerText,/猶待整理/);
 run("ACTIVITIES_DATA.pop()");
-const registrationEvent=data.find(a=>a.source_platform==='台語站' && a.registration_url);
 for (const event of data.filter(a=>a.source_platform==='台語站' && a.summary_taigi && a.summary_taigi!==a.description_taigi)) {
   run(`renderGrid([ACTIVITIES_DATA.find(a=>a.id===${JSON.stringify(event.id)})]);openModal(${JSON.stringify(event.id)})`);
   assert.ok(element('viewGrid').innerHTML.includes(event.summary_taigi));
@@ -111,11 +110,27 @@ for (const event of data.filter(a=>a.source_platform==='台語站' && a.summary_
   assert.ok(event.description_taigi.length>event.summary_taigi.length);
   assert.doesNotMatch(event.description_taigi,/台語站收錄的台語活動/);
 }
-assert.ok(registrationEvent);
-run(`openModal(${JSON.stringify(registrationEvent.id)})`);
-assert.equal(element('modalRegistrationLink').href,registrationEvent.registration_url);
+// Registration may be a separate page or the announcement itself. Switching
+// activities must clear a previous registration link when it is not needed.
+run(`
+  const registrationFixture = {...ACTIVITIES_DATA[0], id:'registration-test',
+    source_url:'https://example.com/announcement',
+    registration_url:'https://example.com/register'};
+  ACTIVITIES_DATA.push(registrationFixture);
+  openModal(registrationFixture.id);
+`);
+assert.equal(element('modalRegistrationLink').href,'https://example.com/register');
 assert.equal(element('modalRegistrationLink').hidden,false);
-assert.equal(element('modalTicketLink').href,registrationEvent.source_url);
+assert.equal(element('modalTicketLink').href,'https://example.com/announcement');
+for (const registrationUrl of ['https://example.com/announcement', '']) {
+  run(`registrationFixture.registration_url='https://example.com/register';openModal(registrationFixture.id)`);
+  assert.equal(element('modalRegistrationLink').hidden,false);
+  run(`registrationFixture.registration_url=${JSON.stringify(registrationUrl)};openModal(registrationFixture.id)`);
+  assert.equal(element('modalRegistrationLink').href,'#');
+  assert.equal(element('modalRegistrationLink').hidden,true);
+  assert.equal(element('modalTicketLink').href,'https://example.com/announcement');
+}
+run('ACTIVITIES_DATA.pop()');
 // Poster is the verified original, can open full size, and never leaves a broken image.
 const posterEvent = data.find(a=>a.source_platform==='台語站' && a.cover_image);
 assert.ok(posterEvent);
