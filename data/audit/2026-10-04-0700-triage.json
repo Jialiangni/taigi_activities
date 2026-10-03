@@ -441,7 +441,20 @@
   "next_editorial": "2026-10-06T08:00:00+08:00",
   "publication": {
     "newly_published": 0,
-    "status": "queued_for_normal_editorial"
+    "status": "queued_for_normal_editorial",
+    "validation_run": {
+      "id": 37161097612,
+      "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37161097612",
+      "conclusion": "success"
+    },
+    "live_verification": {
+      "html_sessions": 243,
+      "ics_sessions": 243,
+      "newly_published": 0,
+      "new_tours_not_yet_published": true,
+      "html_sha256": "7fbd3accc2b6f47aeb9dcb68aec4405ed190aa8c038f194ed540cbe772fabe88",
+      "ics_sha256": "dc7319880139d9975b2ca0b698fc12097765f9fa3263714737fe5cdf705fb020"
+    }
   },
   "protection": "No existing catalog, adopted Taiwanese copy, protected IDs, crawler, paid AI API, UI, or schedule changes. Original exclusion archived here before removal; unresolved December session remains in original backlog candidate.",
   "source_reading": "Official announcement bodies, relevant complete OPENTIX API program text and four sessions, official registration forms, church course page and weekly bulletin landing page read. Viewed original Wu Yu-hsiang poster (dates but no year) and church weekly cover only, not the linked full PDF. Culture API scanned for target UID/title; absent, not excluded.",
@@ -857,5 +870,6 @@
     "queue_requests_validated": 3,
     "git_diff_check": "passed",
     "catalog_and_existing_prose_unchanged": true
-  }
+  },
+  "completed_at": "2026-10-04T07:15:15+08:00"
 }
