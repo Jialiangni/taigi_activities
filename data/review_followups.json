@@ -6,45 +6,51 @@
       "source_url": "https://www.accupass.com/event/2609140247402019682780",
       "title": "台語咱佮意！台語主題系列講座 (10/17-11/21)",
       "owner": "Codex",
-      "finding": "11/15李孟珊講座仍同時寫大園分館5樓研習教室及中正西路12之1號4樓；其他已刊登場次不變。",
+      "finding": "完整ACC公告仍同時寫11/15大園分館5樓研習教室與地址4樓，未查到此場官方補正。12場已在catalog（該場僅用大園分館）；此待辦只追場內樓層，不代表整個系列未上站。",
       "missing_fields": [
         "11/15正確樓層"
       ],
-      "next_action": "比對大園分館正式活動場地表與此場最新報名資訊。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "8bda1b79c43e7038abc61680de67b4bd339695ed0e1282acfdc5b705437c4113",
-      "fetch_error": null
+      "next_action": "10/8重查報名公告及大園分館本場課表；來源自行更正前，不改既有活動或猜樓層。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609140247402019682780",
+      "content_sha256": "8bda1b79c43e7038abc61680de67b4bd339695ed0e1282acfdc5b705437c4113",
+      "fetch_error": null,
+      "checked_supporting_sources": []
     },
     "1bcfc3a7c9e4c1e2559c82d8": {
       "candidate_id": "1bcfc3a7c9e4c1e2559c82d8",
       "source_url": "https://www.accupass.com/event/2609140256552197197330",
       "title": "台語咱佮意！說故事培訓班",
       "owner": "Codex",
-      "finding": "11/22董力玄說故事培訓A班內文13:30–16:30，但ACC結構化系列結束16:00，差30分鐘；日期本身一致。",
+      "finding": "完整公告仍列11/22 A班董力玄13:30–16:30，結構化系列endDate為16:00，未找到單場補正；其餘11場已刊。",
       "missing_fields": [
-        "11/22結束時間"
+        "11/22 A班結束時間衝突"
       ],
-      "next_action": "優先查該場報名票種及主辦課表是否已訂正16:00／16:30。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "6cca081b54f2772a5d6bf193590a78616d1aac527c1de7cb3827d139d261b11c",
-      "fetch_error": null
+      "next_action": "10/8重查同場票種及主辦正式課表，若仍衝突留明確原因，不把系列終點當單場結束時間。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609140256552197197330",
+      "content_sha256": "6cca081b54f2772a5d6bf193590a78616d1aac527c1de7cb3827d139d261b11c",
+      "fetch_error": null,
+      "checked_supporting_sources": []
     },
     "ea63b67a5d7b39257caf3c6e": {
       "candidate_id": "ea63b67a5d7b39257caf3c6e",
       "source_url": "https://www.accupass.com/event/2609140313052076422556",
       "title": "台語咱佮意！親子生活會話基礎班",
       "owner": "Codex",
-      "finding": "11/22莊銘彥親子會話A班內文13:30–16:30，ACC結構化系列結束16:00，仍衝突。",
+      "finding": "完整公告仍列11/22 A班莊銘彥13:30–16:30，結構化系列endDate為16:00；其餘已刊場次保留，搜尋未找到單場補正。",
       "missing_fields": [
-        "11/22結束時間"
+        "11/22 A班結束時間衝突"
       ],
-      "next_action": "查主辦課表或報名票種的單場結束時間，解決30分鐘差異。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "22dddd391fb11440cc5fa5a2845826a7f1e8847903b48309419b3ce83aa34c33",
-      "fetch_error": null
+      "next_action": "10/8比對主辦最新單場時間及報名資訊；不自行選擇16:00或16:30。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609140313052076422556",
+      "content_sha256": "22dddd391fb11440cc5fa5a2845826a7f1e8847903b48309419b3ce83aa34c33",
+      "fetch_error": null,
+      "checked_supporting_sources": []
     },
     "e4858c7f13f5548a20fffad8": {
       "candidate_id": "e4858c7f13f5548a20fffad8",
@@ -127,78 +133,127 @@
       "source_url": "https://www.opentix.life/event/2090004484659298305",
       "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "owner": "Codex",
-      "finding": "焰王現身四場正文完整可讀，字幕只標國語；國家語言補助及布袋戲分類不能證明本場台語發音。",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
       "missing_fields": [
-        "本場口白語言"
+        "本場實際演出口白語言"
       ],
-      "next_action": "查集藝戲坊與場館正式節目詳頁／當季節目冊。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "299199cb80bf6930006cc4a5ba897964bd11d1f5abbf5e565d1ab0dda50a9454",
-      "fetch_error": null
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ]
     },
     "282ef64b8e651ede508fd205": {
       "candidate_id": "282ef64b8e651ede508fd205",
       "source_url": "https://www.opentix.life/event/2090004484659298305",
       "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "owner": "Codex",
-      "finding": "焰王現身四場正文完整可讀，字幕只標國語；國家語言補助及布袋戲分類不能證明本場台語發音。",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
       "missing_fields": [
-        "本場口白語言"
+        "本場實際演出口白語言"
       ],
-      "next_action": "查集藝戲坊與場館正式節目詳頁／當季節目冊。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "299199cb80bf6930006cc4a5ba897964bd11d1f5abbf5e565d1ab0dda50a9454",
-      "fetch_error": null
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ]
     },
     "8af11f045b3d4f74f9cb278a": {
       "candidate_id": "8af11f045b3d4f74f9cb278a",
       "source_url": "https://www.opentix.life/event/2090004484659298305",
       "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "owner": "Codex",
-      "finding": "焰王現身四場正文完整可讀，字幕只標國語；國家語言補助及布袋戲分類不能證明本場台語發音。",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
       "missing_fields": [
-        "本場口白語言"
+        "本場實際演出口白語言"
       ],
-      "next_action": "查集藝戲坊與場館正式節目詳頁／當季節目冊。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "299199cb80bf6930006cc4a5ba897964bd11d1f5abbf5e565d1ab0dda50a9454",
-      "fetch_error": null
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ]
     },
     "7300d9f17a8bcc75d9311a90": {
       "candidate_id": "7300d9f17a8bcc75d9311a90",
       "source_url": "https://www.opentix.life/event/2090004484659298305",
       "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "owner": "Codex",
-      "finding": "焰王現身四場正文完整可讀，字幕只標國語；國家語言補助及布袋戲分類不能證明本場台語發音。",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
       "missing_fields": [
-        "本場口白語言"
+        "本場實際演出口白語言"
       ],
-      "next_action": "查集藝戲坊與場館正式節目詳頁／當季節目冊。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "299199cb80bf6930006cc4a5ba897964bd11d1f5abbf5e565d1ab0dda50a9454",
-      "fetch_error": null
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ]
     },
     "113e6755357fa44896310110": {
       "candidate_id": "113e6755357fa44896310110",
       "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
       "title": "115年「掌藝薪傳-大師工作坊」",
       "owner": "Codex",
-      "finding": "今天再讀國藝會公告及完整報名表，前場10/4及10/18 10:00–12:00、台北偶戲館3樓，3000元整期、自備偶；仍未說明中途加入條件與演出口白語言。Facebook轉址至劇團原貼文但僅可讀摘要；不得以摘要推定全部四班都屬台語。",
+      "finding": "今天重新讀劇團公開報名表、國藝會公告：前場10/4、10/18 10:00–12:00，台北偶戲館3樓；3000元整期、前場自備偶，表單仍可填。國藝會場館欄2樓與課程正文3樓不同，以課程表3樓為教室證據。仍未明列前場口白使用語言或中途入班條件；Facebook只回傳劇團貼文標題，未以讀取不足判成非台語。",
       "missing_fields": [
-        "中途加入或單堂參加条件",
-        "前場課程口白語言",
-        "11/1成果確切時間"
+        "前場口白語言",
+        "中途加入條件",
+        "11/1成果確切開始時間"
       ],
-      "next_action": "明早重查劇團本屆報名條件及場次異動；只核實有明確台語口白與參加條件的前場，工藝、後場分開。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "next_action": "10/6再查劇團10/18前場及11/1成果公告；若可確認台語口白及報名條件才逐場核實，其他工藝班不混入。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
       "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
       "content_sha256": null,
-      "fetch_error": "Official page redirected; inspect destination before deciding"
+      "fetch_error": "Official page redirected; inspect destination before deciding",
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
+          "checked_at": "2026-10-04T07:04:41+08:00",
+          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
+          "checked_at": "2026-10-04T07:04:42+08:00",
+          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd"
+        },
+        {
+          "url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=xwqptA53XNQ8CmPc&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "22f223a9942051e10798ef6da929b4110352ec7135a138eeb07ec2de0dce3678"
+        }
+      ]
     },
     "9d7c72661457ad8b528a7e02": {
       "candidate_id": "9d7c72661457ad8b528a7e02",
@@ -241,16 +296,17 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "title": "115年望間歌唱研習活動",
       "owner": "Codex",
-      "finding": "官方category=7本次回應已不含UID6a304d0026b3243414ccd317或活動名稱。舊紀錄截止10/2 21:00，但今天沒有可重新綁定的同筆公告；不能把官方列表移除直接判為過期結案。",
+      "finding": "本次文化部category=7完整回應151筆，仍沒有UID6a304d0026b3243414ccd317或望間活動；定向搜尋未找到可讀主辦原公告。舊快照截止10/2不能冒充今日可重查證據。",
       "missing_fields": [
         "可重查的原活動結束或延期公告"
       ],
-      "next_action": "追查主辦望間社區及文化部原UID可讀詳頁；確認截止與無延期後才保存過期決定。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "next_action": "10/10重查文化部原UID與望間社區公告；保留來源讀取失效狀態，不能以缺席列表判非台語。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "content_sha256": "de7b5aae1ad79e28d920e46c2eb36760b78aa24ee51f92aa6c60ddf3ee9f484b",
-      "fetch_error": null
+      "content_sha256": "ad159b3394ff8667b3b53116e8bf48e04cbfe94b636ed86e42d4b77e6a41d663",
+      "fetch_error": null,
+      "checked_supporting_sources": []
     },
     "310d83cbe91674eca1a83873": {
       "candidate_id": "310d83cbe91674eca1a83873",
@@ -273,53 +329,90 @@
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
       "title": "中正紀念堂歷史小旅行【2026年台語場次】",
       "owner": "Codex",
-      "finding": "台語路目錄仍列12/19 10:00–12:00；原ACC系列總範圍與12月場次有衝突，既有9–11月場保留。",
+      "finding": "完整重讀台語站與ACC公告：12/19仍與結構化終日12/12衝突；另有11/10（二）、12/1（二）加開日期，已按同一活動時間欄10:00–12:00逐場建立契約及送正常編輯。發現舊ACC父候選曾誤標全數已刊，已撤銷該排除並保存原紀錄。",
       "missing_fields": [
-        "12月正確日期"
+        "12月週六場究竟12/12或12/19"
       ],
-      "next_action": "對照中正紀念堂與ACC12月報名場次；已有正式活動不另建。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
-      "source_content_sha256": "1e382b2d1e9aae7bc7d43357ad2fa38e1c01894543ecad30636921259a4f29f8",
-      "fetch_error": null
+      "next_action": "10/8重查12月週六場；兩個加開場由週二10/6 08:00地端編輯接手，未經實際發布不得算上站。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "content_sha256": "1e382b2d1e9aae7bc7d43357ad2fa38e1c01894543ecad30636921259a4f29f8",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.accupass.com/event/2608051357275636349740",
+          "checked_at": "2026-10-04T07:03:58+08:00",
+          "content_sha256": "0d85d89dafab3ffef168ad504a588a4ddc0190c07d6b50dc19078c5b67f7d6f6"
+        }
+      ]
     },
     "c1b791a8002c2b01dd6bd656": {
       "candidate_id": "c1b791a8002c2b01dd6bd656",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
       "owner": "Codex",
-      "finding": "重新讀Portaly及3張未決表單：10/3冰麒麟表單已額滿關閉，關閉頁未補正原日期矛盾；10/17雲遊博物館仍寫10/17（日），與2026日曆及Portaly（六）矛盾；10/31漫才資訊欄仍誤列雲遊博物館；10/17春福神傳說仍即將開放。已刊3場保留。",
+      "finding": "重讀Portaly及兩份未決完整表單：10/17雲遊博物館仍寫（日）與2026星期六不符；10/31漫才正文、講師及時間一致，但活動名稱欄仍誤列雲遊博物館。10/17春福神傳說仍即將開放。10/3熱人的冰麒麟在Portaly所列日期已過，從未來待補分場移除，不補發過期場；母候選因其他三場未決仍留存。已刊場不改寫。",
       "missing_fields": [
-        "雲遊博物館日期星期官方更正",
-        "漫才活動名稱官方更正",
-        "春福神傳說完整報名證據"
+        "10/17雲遊博物館日期星期更正",
+        "10/31漫才名稱欄更正",
+        "10/17春福神傳說完整報名頁"
       ],
-      "next_action": "明早將已結束冰麒麟與其餘未決分開記錄，繼續核對10/17與10/31表單改正；不自行改日期、標題。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "next_action": "10/6重查兩份表單及春福神報名連結；按分場保存結果，未解決的日期及活動身分衝突不猜。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
-      "fetch_error": null
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://portaly.cc/nmhunitas",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
+          "checked_at": "2026-10-04T07:05:35+08:00",
+          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
+          "checked_at": "2026-10-04T07:05:35+08:00",
+          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b"
+        }
+      ]
     },
     "d50adf5d105c3f70c43d3186": {
       "candidate_id": "d50adf5d105c3f70c43d3186",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
       "title": "雙連教會『兒童台語文秋季班』",
       "owner": "Codex",
-      "finding": "原公告仍明列每主日9:00–9:50、702/703教室、陳淑華與劉惠雅、國小1至6年級。2026秋季官方表單已關閉但文字明示歡迎隨時加入、請洽9樓辦公室靜婷幹事02-25415390#221；不是課程取消。未見學期末或逐堂課表。",
+      "finding": "新增核對雙連教會官方兒童台語文班頁：9/6至學期結束、每主日08:50–09:40；台語站公告09:00–09:50，兩者差10分鐘。官方本期2026秋季表單已關閉但明示歡迎隨時加入，電話洽九樓靜婷幹事；10/4兒童主日學週報頁本身未列台語班逐堂日期。不能以每主日或週報標題自行展開今天場次。",
       "missing_fields": [
-        "本期逐堂日期／結束日期",
-        "費用及參加規定"
+        "本期逐堂日期或確定期末日",
+        "08:50–09:40與09:00–09:50時間差",
+        "費用條件"
       ],
-      "next_action": "追查雙連教會本期兒童主日學／台語班正式公告或公開週報課表；未補齊前不自行展開每主日場次。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-04T07:00:00+08:00",
+      "next_action": "10/6優先核对教會最新兒童台語文公告與公開週報，確認時間及本期課表；不把表單關閉判為停課。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-06T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
       "content_sha256": "894c8d29108d0d4a682ce5cfa8464edf98705ab08a7da34d8dc4a9e986005ad6",
+      "fetch_error": null,
       "checked_supporting_sources": [
         {
+          "url": "https://www.slpctaipei.org/learning/3/119",
+          "checked_at": "2026-10-04T07:05:34+08:00",
+          "content_sha256": "b02561885197100edf5f3f5396527cf80616f7efeda76e3e5f8dc56c11991b34"
+        },
+        {
+          "url": "https://www.slpctaipei.org/learning/5/332",
+          "checked_at": "2026-10-04T07:05:34+08:00",
+          "content_sha256": "359b966a3375c8610db41972a666b531f316d98c44e56dea0831b5028c603cb1"
+        },
+        {
           "url": "https://docs.google.com/forms/d/e/1FAIpQLScBtmViVEh76tH_3-xNBkOPjKJWfisk1wkioT_OZUBqWwvUKQ/closedform",
-          "checked_at": "2026-10-02T07:07:36+08:00",
+          "checked_at": "2026-10-04T07:04:41+08:00",
           "content_sha256": "8e1d3ec848e6b04bcadb1980023cea7e8085469ef2e441e5c7a864e77cff8088"
         }
       ]
@@ -801,7 +894,30 @@
       "evidence_url": "https://www.accupass.com/event/2609290908339306700300",
       "content_sha256": "5914afb4c0f462bf6fce34d0322eb435f0b86ac212ee10703fb0e852cda63418",
       "fetch_error": null
+    },
+    "d74858e5d1a954a87d23235c": {
+      "candidate_id": "d74858e5d1a954a87d23235c",
+      "source_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
+      "title": "台文寫作概念研習_ 講師：吳玉祥",
+      "owner": "Codex",
+      "finding": "已讀吳玉祥研習全文、原始海報及連結表單。兩場只列7/19、8/23（禮拜），海報同樣缺年份；表單已停止回覆，兩場附活動相片連結。公告網址為2026/06，但不直接以發文年補作活動年，尚未建立明確年份的結束證據。",
+      "missing_fields": [
+        "活動年份或明確已結束紀錄"
+      ],
+      "next_action": "10/10沿基金會本場官方活動相簿或完整年度課表確認年份後結案；不新增推算場次。",
+      "reviewed_at": "2026-10-04T07:11:39+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
+      "content_sha256": "5737891fdcc9c8650761dfa51b74195264fe532a0e7c1352c4fcb9941475955d",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSf7ltfmOKTJaiRkZQIbXFq7Z-ws6QalfCJZud_aC4piz_Zfxg/closedform",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "6fd4fa3630122cf094d7da86ccfb2b55ade0a77b1949490df14358eb697bba95"
+        }
+      ]
     }
   },
-  "updated_at": "2026-10-03T07:16:35+08:00"
+  "updated_at": "2026-10-04T07:11:39+08:00"
 }

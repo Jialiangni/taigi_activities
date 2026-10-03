@@ -2,29 +2,31 @@
   "schema_version": 1,
   "decisions": [
     {
-      "candidate_id": "46c202f2f44dc4eb9a51406c",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2024/06/e.html",
       "title": "（連署） 台語就是台語",
+      "candidate_id": "46c202f2f44dc4eb9a51406c",
       "reason": "not_event",
-      "rationale": "正文為聲明、新聞／活動紀錄、書籍介紹或歷史休課通知，非可報名的新場次。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "（連署） 台語就是台語",
+        "連署網址："
+      ],
+      "rationale": "全文為語言正名連署訴求、相關論述與新聞連結，非具日期時間場地的可參加活動；不因提及台語或法規年份視為場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2024/06/e.html",
       "content_sha256": "74e70f0f60e37afac50d71a820f95543b7ce8bf92defd0322b9a75b80ba28e34",
-      "quotes": [
-        "（連署） 台語就是台語"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2024/06/e.html",
         "final_url": "https://www.tgb.org.tw/2024/06/e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:35:36+08:00",
-        "sha256": "c52b8184d98a1436cac230fc8bfe9a1c879f5840b4e40315c111eff231cdd109",
-        "elapsed_ms": 1213,
+        "fetched_at": "2026-10-04T07:02:07+08:00",
+        "sha256": "0cbc0f8051c23e37c21661dd87ee09af20610bb2468f36110d9a9a7803448b5f",
+        "elapsed_ms": 1168,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
       "candidate_id": "4c47bad6c53f75a0e2d9cafd",
@@ -552,304 +554,293 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "ff80882cf4990e6e35589ba1",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/08/2026tioh.html",
       "title": "2026陳雷台語文獎tio̍h獎名單",
+      "candidate_id": "ff80882cf4990e6e35589ba1",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/8/29拜六 16:00-17:00"
+      ],
+      "rationale": "頒獎名單及典禮紀錄；唯一明列典禮2026/8/29已結束，無未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/08/2026tioh.html",
       "content_sha256": "6689a46826adc40c9759a1e1d5b62b6ef7452957e8ff62fa62d7151c3c61aeba",
-      "quotes": [
-        "時間：2026/8/29拜六 16:00-17:00 地點：台北NGO會館（台北市中正區青島東路8號，捷運善導寺站2號出口行4分鐘） 贊助單位：台灣增格股份有限公司、多倫多台灣語文中心 主辦單位：李江"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/08/2026tioh.html",
         "final_url": "https://www.tgb.org.tw/2026/08/2026tioh.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:23+08:00",
-        "sha256": "de8e3dd92f3dc62205188f4aed07b58b5cd55ff05fd1a6c66eeba3501c55ccd3",
-        "elapsed_ms": 601,
+        "fetched_at": "2026-10-04T07:02:08+08:00",
+        "sha256": "b5105619791d66b33dacdbe1e4425864fca9d53e1b52111e9e98d4884621a1d4",
+        "elapsed_ms": 1017,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "2dae05743582417abffafd2d",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
       "title": "「轉型正義kap不當黨產」講座 【高雄場】是按怎lán ài ē記--得",
-      "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "candidate_id": "2dae05743582417abffafd2d",
+      "reason": "outside_region",
+      "quotes": [
+        "時間：2026/9/20（禮拜）14:30～17:30",
+        "高雄市新興區中正二路214號"
+      ],
+      "rationale": "全文為高雄三餘書店放映座談，超出北北桃；且2026/9/20已結束，非未來北部場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
       "content_sha256": "86292c68e67efa5f2bd011a53716d09bf796a38b737c2dc1e52c6e4383e0cf1b",
-      "quotes": [
-        "時間：2026/9/20（禮拜）14:30～17:30 地點： 三餘書店 （高雄市新興區中正二路214號） 講師： 顏蘭權 （《牽阮的手》、《無米樂》等記錄片導演） 主題： 是按怎lán ài ē記-"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
         "final_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:28+08:00",
-        "sha256": "4b46f88cb321eda0869375937aeb198b5443368353d3954de908ef13f52d6dd5",
-        "elapsed_ms": 560,
+        "fetched_at": "2026-10-04T07:02:10+08:00",
+        "sha256": "cc5fe41e5afbca266346ad41d1a67bad854cf1b7ec221cabcf662af43364ff4e",
+        "elapsed_ms": 1534,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "8192137c13e60e5c7d64731a",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/08/sa-e-httpsforms.html",
       "title": "【台語sa攏有】新聞ê主體位置",
+      "candidate_id": "8192137c13e60e5c7d64731a",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/9/9（拜三）19:30～21:30"
+      ],
+      "rationale": "陳慧蓉新聞主體講座已於9/9結束；全文無改期或新增場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/08/sa-e-httpsforms.html",
       "content_sha256": "51602b73ceaf97cd2490a0d3081e46df68548278ac579da3aa4cca029e8ab444",
-      "quotes": [
-        "時間：2026/9/9（拜三）19:30～21:30 地點：濟南教會 （ 台北市中山南路3號 ， 主日學教室 ） 台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/08/sa-e-httpsforms.html",
         "final_url": "https://www.tgb.org.tw/2026/08/sa-e-httpsforms.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:29+08:00",
-        "sha256": "a896f64583a8943d05dcef7385fe687b7d3519b05fdcea87f4ced7e968427719",
-        "elapsed_ms": 1038,
+        "fetched_at": "2026-10-04T07:02:11+08:00",
+        "sha256": "b1c60f9d357c132bf83162b59725b7869b8ca9be0495fc9babe389fd26db1a79",
+        "elapsed_ms": 1194,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "ab3a3f7fecb2af09ddf98053",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/07/sama-m.html",
       "title": "【台語sa攏有】我mā無想--著， 是逐家m̄敢講！",
+      "candidate_id": "ab3a3f7fecb2af09ddf98053",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/8/12（拜三）19:30～21:30"
+      ],
+      "rationale": "張瑞夫講座已於8/12結束；全文無未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/07/sama-m.html",
       "content_sha256": "c16f41deb6643e56bd6f81dd23aa8bd7e87e64ea049fa3e26caf32b3e15e1108",
-      "quotes": [
-        "時間：2026/8/12（拜三）19:30～21:30 地點：濟南教會 （ 台北市中山南路3號 ， 主日學教室 ） 台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/07/sama-m.html",
         "final_url": "https://www.tgb.org.tw/2026/07/sama-m.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:22+08:00",
-        "sha256": "4b05b232408958ab4866562f67adbd8c6b7a3046cfe821eb91cdb3500c292b7e",
-        "elapsed_ms": 601,
+        "fetched_at": "2026-10-04T07:02:13+08:00",
+        "sha256": "5cb531f3d5c1107101654bc48ede268e0082869536c603845b5dceb86e13ae5b",
+        "elapsed_ms": 1084,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "23ea13c6bb51cf06626ff6a3",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/07/kap-e.html",
       "title": "「轉型正義kap不當黨產」講座 【宜蘭場】聽！監控下ê台語歌黃金年代",
-      "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "candidate_id": "23ea13c6bb51cf06626ff6a3",
+      "reason": "outside_region",
+      "quotes": [
+        "時間：2026/8/1（拜六）14:30～16:30",
+        "宜蘭縣羅東鎮中正北路124巷2號"
+      ],
+      "rationale": "全文為宜蘭羅東森本屋書店講座，超出北北桃；且8/1已結束。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/07/kap-e.html",
       "content_sha256": "ef4801999fe1e8dab589c8757ac9f738b91a2e458ad262aadd22b6f2dd20fa3e",
-      "quotes": [
-        "時間：2026/8/1（拜六）14:30～16:30 地點：森本屋書店 （宜蘭縣羅東鎮中正北路124巷2號 ） 講師： 周馥儀 （台灣大學歷史所博士） 主題： 聽！監控下ê台語歌黃金年代 大綱： 手機"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/07/kap-e.html",
         "final_url": "https://www.tgb.org.tw/2026/07/kap-e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:22+08:00",
-        "sha256": "63760d3fcc5cf49aaad0a3981b54275ec6e909e88ffa9598fe528eda029e04ce",
-        "elapsed_ms": 1194,
+        "fetched_at": "2026-10-04T07:02:13+08:00",
+        "sha256": "1d3b5177d15eeb132090aee7ecc058283a738ecd5cb52dfde9388292d7d26cae",
+        "elapsed_ms": 671,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "d74858e5d1a954a87d23235c",
-      "source_id": "li_kang_khiok",
-      "source_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
-      "title": "台文寫作概念研習_ 講師：吳玉祥",
-      "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
-      "evidence_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
-      "content_sha256": "5737891fdcc9c8650761dfa51b74195264fe532a0e7c1352c4fcb9941475955d",
-      "quotes": [
-        "台文寫作概念研習_ 講師：吳玉祥"
-      ],
-      "evidence": {
-        "url": "https://www.tgb.org.tw/2026/06/blog-post.html",
-        "final_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:16+08:00",
-        "sha256": "97d919863bfc7a15578125ef9ce80180c6487874003733f36b26571d9ce6d480",
-        "elapsed_ms": 656,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
-    },
-    {
-      "candidate_id": "db9150a094a9f5bf79f693e9",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/06/sa.html",
       "title": "【台語sa攏有】用台語來紹介鶯歌瓷仔用語",
+      "candidate_id": "db9150a094a9f5bf79f693e9",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/7/8（拜三）19:30～21:30"
+      ],
+      "rationale": "林聰明鶯歌瓷仔講座已於7/8結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/06/sa.html",
       "content_sha256": "a51021875a139f0c788883e2a5083fd008ae66d61fdaa8bb32ea2d934e0143d7",
-      "quotes": [
-        "時間：2026/7/8（拜三）19:30～21:30 地點：濟南教會 （ 台北市中山南路3號 ， 主日學教室 ） 台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/06/sa.html",
         "final_url": "https://www.tgb.org.tw/2026/06/sa.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:18+08:00",
-        "sha256": "9950f599bc209beccf28f34e1307046e5ecb1c6a9154651c78324148c02c7a1a",
-        "elapsed_ms": 551,
+        "fetched_at": "2026-10-04T07:02:16+08:00",
+        "sha256": "3604c9113dff9e7becaa4c24405cd63d31f80b6a27f2373101e83c9227da390f",
+        "elapsed_ms": 554,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "4ce8e9b7cbe69be664b788f2",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
-      "title": "「轉型正義kap不當黨產」講座  【台北場】受政治影響ê台灣美術",
+      "title": "「轉型正義kap不當黨產」講座 【台北場】受政治影響ê台灣美術",
+      "candidate_id": "4ce8e9b7cbe69be664b788f2",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/7/12（禮拜）14:00～16:00"
+      ],
+      "rationale": "李拓梓臺灣美術講座已於7/12結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
       "content_sha256": "988c3ca58d01149634299f8aed4af39edbf716dc2a0de881cabac49f96fdba1c",
-      "quotes": [
-        "時間：2026/7/12（禮拜）14:00～16:00 地點：現流冊店 （台北市大同區重慶北路二段70巷15號1樓 ） 講師： 李拓梓 （ 國家文化藝術基金會副執行長 ） 主題： 受政治影響ê台灣美術"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/06/kap-e.html",
         "final_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:17+08:00",
-        "sha256": "3e14e1534e0dd4548cb899873054cd6698a46ed1853f99f538d33ca116488f08",
-        "elapsed_ms": 980,
+        "fetched_at": "2026-10-04T07:02:17+08:00",
+        "sha256": "2b3cbf54c136adbd249d92385f732afb49fb4ec24bd982b173128d997026c86b",
+        "elapsed_ms": 1174,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "fa8dc2a2c78e6b2dfe9efdef",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
       "title": "【台語sa攏有】面對世界ê鹿港腔台語： 阿愷之聲Podcast ê聲音實驗",
+      "candidate_id": "fa8dc2a2c78e6b2dfe9efdef",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/6/10（拜三）19:30～21:30"
+      ],
+      "rationale": "王麒愷鹿港腔Podcast講座已於6/10結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
       "content_sha256": "bb6b8721b54de40933766090d352a06f3f46e05cd360177134f9ae33797c4065",
-      "quotes": [
-        "時間：2026/6/10（拜三）19:30～21:30 相片 地點：濟南教會（台北市中山南路3號， 主日學教室 ）台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
         "final_url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:15+08:00",
-        "sha256": "594eecf2d1376e3014c5b14c10456e58caad5c90aad2805bb0aa838103e453fb",
-        "elapsed_ms": 564,
+        "fetched_at": "2026-10-04T07:02:19+08:00",
+        "sha256": "62d4e30dd53c90a2975500b6e68db1e73c8f87dfe86fdcf92e23ee131a25a16a",
+        "elapsed_ms": 1254,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "bf194bdbe0251e174f52a73a",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
       "title": "台文寫作概念研習_ 講師：邱文錫",
+      "candidate_id": "bf194bdbe0251e174f52a73a",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2026/5/17 禮拜 俗諺語ê應用",
+        "2026/6/13 拜六 華語轉台語ê經驗談"
+      ],
+      "rationale": "邱文錫台文寫作研習兩場日期均已結束；不把滿額或表單可讀當作未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
       "content_sha256": "f660143e87b630a363f1070dda32804cfdcee0de3f6db248e059dc1ba4c9966d",
-      "quotes": [
-        "台文寫作概念研習_ 講師：邱文錫"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
         "final_url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:13+08:00",
-        "sha256": "f7122eb631723ecf71581213983da8dc7b0c284af0150364193f4d7b92e5f57b",
-        "elapsed_ms": 1086,
+        "fetched_at": "2026-10-04T07:02:19+08:00",
+        "sha256": "8b44b5294294e4f5524eb22cad4f2e09158fb110a55fa1cc60a3ec858caac0c0",
+        "elapsed_ms": 385,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "edbe1aee4916799f3d157f5c",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/04/samgau.html",
       "title": "【台語sa攏有】講台語m̄是gâu，是食果子拜樹頭！",
+      "candidate_id": "edbe1aee4916799f3d157f5c",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/5/13（拜三）19:30～21:30"
+      ],
+      "rationale": "邵大倫講座已於5/13結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/04/samgau.html",
       "content_sha256": "581fde02a0d79bec7959c92262a1a0022b9e33d261a6a0d2712a508bdd453672",
-      "quotes": [
-        "時間：2026/5/13（拜三）19:30～21:30 地點：濟南教會（台北市中山南路3號， 主日學教室 ）台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/04/samgau.html",
         "final_url": "https://www.tgb.org.tw/2026/04/samgau.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:14+08:00",
-        "sha256": "3d69f7acb11a15d37a1f4ce67d2751b319f7bd3acbffdfed2e37ca7e599638d6",
-        "elapsed_ms": 588,
+        "fetched_at": "2026-10-04T07:02:20+08:00",
+        "sha256": "dcc585b551650532c39b6d76e1c80e60bf6c31f7af357a61ce7bc8d5ab7a992e",
+        "elapsed_ms": 496,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "7f5dc85dc6a4d2492406e264",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
       "title": "【台語sa攏有】電動提來sńg！——Tuì遊戲中siânn囡仔學習",
+      "candidate_id": "7f5dc85dc6a4d2492406e264",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/4/8（拜三）19:30～21:30"
+      ],
+      "rationale": "Lîm Ngá îng遊戲與科學講座已於4/8結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
       "content_sha256": "50bbee9d55d84d8ee279a33928e7b5fbc35b63860e61d72a0f92182b75587291",
-      "quotes": [
-        "時間：2026/4/8（拜三）19:30～21:30 地點：濟南教會（台北市中山南路3號，主日學教室）台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
         "final_url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:12+08:00",
-        "sha256": "6815e980f7d72d15f32f4ae9073bb69b35eac2b2a05dad05747758323caa8d52",
-        "elapsed_ms": 583,
+        "fetched_at": "2026-10-04T07:02:21+08:00",
+        "sha256": "1bda274cdf34f8b0a9c8444f54d059728d321643d57d4d01171ceac2aff3461e",
+        "elapsed_ms": 520,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
       "candidate_id": "6e36f52c76639deebef77cbd",
@@ -877,54 +868,56 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "11a05ca235adaddd3f75b775",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
       "title": "【台語sa攏有】 無耳ê茶鈷，按怎huah燒？——查某人ê故事kah集體thàng疼",
+      "candidate_id": "11a05ca235adaddd3f75b775",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/3/11（拜三）19:30～21:30"
+      ],
+      "rationale": "吳品瑜文學講座已於3/11結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
       "content_sha256": "8ffa4e857e21ad82ad558fd4fbd2a6a49334f58fa7f54cd776a0be7dc2700cc7",
-      "quotes": [
-        "時間：2026/3/11（拜三）19:30～21:30 地點：濟南教會（台北市中山南路3號，主日學教室）台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
         "final_url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:10+08:00",
-        "sha256": "194cefb63979bcc0c804337c1beef2ecb509c1e14bc2f943ce7926bf15386fd6",
-        "elapsed_ms": 570,
+        "fetched_at": "2026-10-04T07:02:22+08:00",
+        "sha256": "459bc4227900bdbd118c9922b0e1490ef0b6610879493a3f4f980a582fc09736",
+        "elapsed_ms": 632,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
-      "candidate_id": "837c4c69f40ab0d702df9938",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
       "title": "【台語sa攏有】自鬼仔古講起：鬼魂書寫hām歷史記持",
+      "candidate_id": "837c4c69f40ab0d702df9938",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "時間：2026/2/11（拜三）19:30～21:30"
+      ],
+      "rationale": "張嘉祥講唱會已於2/11結束，無其他未來場次。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
       "content_sha256": "63dc331a7e25c5cf2ed668a72b774f62f080f7ad8b3b7e650eec91e8e3678b13",
-      "quotes": [
-        "時間：2026/2/11（拜三）19:30～21:30 相片 地點：濟南教會（台北市中山南路3號，主日學教室）台北火車頭kah捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
         "final_url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:09+08:00",
-        "sha256": "5d90e81bec55948436fe857449ba2968d4f15e7bbeb50f8693645c0aac1676e9",
-        "elapsed_ms": 679,
+        "fetched_at": "2026-10-04T07:02:23+08:00",
+        "sha256": "c051da0a260b4fd11a40b07dde8fafc039fd7ce15637e9ed6f22b042f70cfcb2",
+        "elapsed_ms": 1049,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
       "candidate_id": "f08e0018352053e0c0d634bf",
@@ -4443,29 +4436,32 @@
       ]
     },
     {
-      "candidate_id": "98d7616f80cd46c8e69bb09a",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2026/07/829.html",
-      "title": "臺灣唸歌廳-楊秀卿篇  網站、講座",
+      "title": "臺灣唸歌廳-楊秀卿篇 網站、講座",
+      "candidate_id": "98d7616f80cd46c8e69bb09a",
       "reason": "already_covered",
-      "rationale": "公告尚未結束的2026年場次已逐場刊登；9/19、9/20等舊場已過期。來源改版時重開核實。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "10/17 拜六14:00-16:00 臺灣圖書館一樓簡報室",
+        "8/29 拜六14:00-16:00",
+        "9/20 禮拜14:00-16:00"
+      ],
+      "rationale": "完整公告僅三場；8/29與9/20已結束，未來10/17國臺圖場已存在正式catalog tgb_liamkua_2026_20261017（14:00–16:00、同場館、邱文錫、免費）。網站及七字仔投稿屬資源，不再建立相同講座。",
+      "reviewed_at": "2026-10-04T07:08:59+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/07/829.html",
       "content_sha256": "927cd2b2cde2df6e7fe0f1323fec59bd6bb18b70c034e672cbcf9ea156ef0718",
-      "quotes": [
-        "臺灣唸歌廳-楊秀卿篇 網站、講座 支援台客語字型列表 【看世事講台語】一枝草 一點露 【看世事講台語】第一戇 種甘蔗予會社磅 「臺灣唸歌廳」起鼓--looh 你kám bat聽過台灣傳統ê「唸歌」？T"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2026/07/829.html",
         "final_url": "https://www.tgb.org.tw/2026/07/829.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:37:20+08:00",
-        "sha256": "72ef67128e08fa28f41ffcbd9e330cafa82cfab221c029c8ea5e96cf7ec50fed",
-        "elapsed_ms": 374,
+        "fetched_at": "2026-10-04T07:02:05+08:00",
+        "sha256": "155de0673dfc54879151f0246486ae9c3d7ef16f530c7cc64b5a4ea341a1bfec",
+        "elapsed_ms": 971,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; full official source reading, not human certification"
     },
     {
       "candidate_id": "baec56c07d32ff0231f9c478",
@@ -7448,31 +7444,6 @@
         "fetched_at": "2026-09-30T23:39:43+08:00",
         "sha256": "eb10a269ddc608a369d5cced91300cf564b5d63814327f80768e46fdf45173e1",
         "elapsed_ms": 592,
-        "attempt": 1
-      },
-      "reviewer": "Codex; source reading, not human certification"
-    },
-    {
-      "candidate_id": "eb39465c415c5dfde5345256",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608051357275636349740",
-      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
-      "reason": "already_covered",
-      "rationale": "已逐一對照正式活動資料，本公告的未來台語場次已有刊登；保留既有活動ID與台文，不另建重複場。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
-      "evidence_url": "https://www.accupass.com/event/2608051357275636349740",
-      "content_sha256": "0d85d89dafab3ffef168ad504a588a4ddc0190c07d6b50dc19078c5b67f7d6f6",
-      "quotes": [
-        "中正紀念堂歷史小旅行【2026年台語場次】"
-      ],
-      "evidence": {
-        "url": "https://www.accupass.com/event/2608051357275636349740",
-        "final_url": "https://www.accupass.com/event/2608051357275636349740",
-        "http_status": 200,
-        "request_method": "GET",
-        "fetched_at": "2026-09-30T23:39:33+08:00",
-        "sha256": "b84e26e0de015ba605a6303000da3adf6fda709c3c177a8167b0dc1295f7b6a1",
-        "elapsed_ms": 600,
         "attempt": 1
       },
       "reviewer": "Codex; source reading, not human certification"

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mode": "official_rules_v1",
+  "reviewed_at": "2026-10-04T07:09:57+08:00",
+  "source_priority": {
+    "gameislearning_1583v0joi94_20261017_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261017_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261121_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": "acc_2608051357275636349740_20261121_1000",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1583v0joi94_20261219_1000": {
+      "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+      "primary_activity_id": null,
+      "reason": "accupass_session_not_verified"
+    },
+    "gameislearning_16086bkwi94_20261004_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20261004_1030",
+      "reason": "accupass_primary_session"
+    },
+    "gameislearning_1581w9d4i94_20260920_1030": {
+      "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+      "primary_activity_id": "acc_2607280236031295663510_20260920_1030",
+      "reason": "accupass_primary_session"
+    }
+  },
+  "applied_to_catalog": false,
+  "collected_at": null,
+  "candidate_count": 3,
+  "input_kind": "persisted_backlog",
+  "counts": {
+    "routed": 1,
+    "approved": 2
+  },
+  "collection_status_counts": {},
+  "decisions": [
+    {
+      "candidate_id": "eb39465c415c5dfde5345256",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 2,
+      "published_session_ids": [
+        "acc_2608051357275636349740_20260919_1000",
+        "acc_2608051357275636349740_20261017_1000",
+        "acc_2608051357275636349740_20261121_1000"
+      ]
+    },
+    {
+      "candidate_id": "1aa012a4c9d1b96128eed2a3",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_cksmh_20261110_1000",
+      "published_session_ids": [
+        "acc_2608051357275636349740_20260919_1000",
+        "acc_2608051357275636349740_20261017_1000",
+        "acc_2608051357275636349740_20261121_1000",
+        "review_cksmh_20261110_1000"
+      ]
+    },
+    {
+      "candidate_id": "5858c3bcf505b51acf82ce62",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608051357275636349740",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "decision": "approved",
+      "reason": "official_reviewed_sessions_verified",
+      "activity_id": "review_cksmh_20261201_1000",
+      "published_session_ids": [
+        "acc_2608051357275636349740_20260919_1000",
+        "acc_2608051357275636349740_20261017_1000",
+        "acc_2608051357275636349740_20261121_1000",
+        "review_cksmh_20261110_1000",
+        "review_cksmh_20261201_1000"
+      ]
+    }
+  ],
+  "attention": {
+    "pending_candidates": 0,
+    "already_has_published_sessions": 0,
+    "source_unavailable": 0,
+    "message": "本輪沒有未解決候選。"
+  },
+  "destination": "data/editorial/queue.json",
+  "scope_note": "Only the official ACCUPASS parent linked by exported persisted candidate 6a9af46326972658fff4e7d0 was rechecked. The original directory candidate remains pending for its conflicting December Saturday session. No crawler and no full-backlog recheck."
+}
