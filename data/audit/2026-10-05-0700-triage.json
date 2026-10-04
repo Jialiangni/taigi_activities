@@ -808,5 +808,19 @@
   },
   "tests": "269 tests passed; 1 skipped",
   "source_archive": "/Users/nijialiang/Library/Application Support/TaigiEditorial/state/jobs/20261005T0700-triage",
-  "publication_check": "pending GitHub deployment and live HTML/ICS comparison"
+  "publication_check": {
+    "run_id": 37242696433,
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37242696433",
+    "conclusion": "success",
+    "live_verification": {
+      "checked_at": "2026-10-05T07:10:05+08:00",
+      "html_sessions": 228,
+      "ics_sessions": 228,
+      "matches_expected_live_ids": true,
+      "newly_published": 0,
+      "pending_editorial_absent": true,
+      "html_sha256": "9c6241416bd5dc16749a2bc71728f9361ed890950d499ee8108fffb83af4f9b6",
+      "ics_sha256": "7d2c1b8b5e2fc080e604c4bc2c7dd7ea98aff27801aba11d805fb900bd159a27"
+    }
+  }
 }
