@@ -57,15 +57,16 @@
       "source_url": "https://www.accupass.com/event/2608300947345233191260",
       "title": "金枝演社《聖誕夜的神經病》讀劇演出",
       "owner": "Codex",
-      "finding": "12/12、12/13讀劇內容與演員名單可讀；正文沒有說明這次讀劇語言，劇團介紹提台語不能替代本場證據。",
+      "finding": "完整公告列12/12、12/13 14:30免費讀劇，台語只在金枝演社劇團沿革，沒有本次讀劇語言。以節目全名查人權館官方資訊仍未取得同版本發音說明。",
       "missing_fields": [
-        "本次讀劇發音"
+        "本次讀劇演出語言"
       ],
-      "next_action": "查金枝演社同版本演出公告或場館節目，找明確口述語言。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
-      "source_content_sha256": "928ae5a6eff55b9aee89cc7133ccb2c514e500aa93fd65e9d2157fd4999d4cff",
-      "fetch_error": null
+      "next_action": "核對人權艺术生活節與金枝演社本次讀劇節目更新，不以劇團曾演台語劇推定本場。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2608300947345233191260",
+      "content_sha256": "928ae5a6eff55b9aee89cc7133ccb2c514e500aa93fd65e9d2157fd4999d4cff",
+      "document_version": 2
     },
     "49b55809ecfe407f47bdd939": {
       "candidate_id": "49b55809ecfe407f47bdd939",
@@ -88,45 +89,48 @@
       "source_url": "https://www.opentix.life/event/2081990762330185729",
       "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
       "owner": "Codex",
-      "finding": "鷂婆在哪裡？正文談客家少年、客家文化及賽夏族傳說，但未列這三場的實際演出語言；題材不足以排除混合台語。",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
       "missing_fields": [
-        "本場發音語言"
+        "台北本場口白／演唱語言"
       ],
-      "next_action": "查山宛然與臺北場館同版本完整節目注意事項，不依客家題材直接排除。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
-      "source_content_sha256": "d61d07b78284d047ca7633b705f4ddbd46dc9c896f3109ff2353cc58416bd9f5",
-      "fetch_error": null
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2
     },
     "e0df23565b4e236588bdda64": {
       "candidate_id": "e0df23565b4e236588bdda64",
       "source_url": "https://www.opentix.life/event/2081990762330185729",
       "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
       "owner": "Codex",
-      "finding": "鷂婆在哪裡？正文談客家少年、客家文化及賽夏族傳說，但未列這三場的實際演出語言；題材不足以排除混合台語。",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
       "missing_fields": [
-        "本場發音語言"
+        "台北本場口白／演唱語言"
       ],
-      "next_action": "查山宛然與臺北場館同版本完整節目注意事項，不依客家題材直接排除。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
-      "source_content_sha256": "d61d07b78284d047ca7633b705f4ddbd46dc9c896f3109ff2353cc58416bd9f5",
-      "fetch_error": null
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2
     },
     "6e589e9ca5b2710ed36c2293": {
       "candidate_id": "6e589e9ca5b2710ed36c2293",
       "source_url": "https://www.opentix.life/event/2081990762330185729",
       "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
       "owner": "Codex",
-      "finding": "鷂婆在哪裡？正文談客家少年、客家文化及賽夏族傳說，但未列這三場的實際演出語言；題材不足以排除混合台語。",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
       "missing_fields": [
-        "本場發音語言"
+        "台北本場口白／演唱語言"
       ],
-      "next_action": "查山宛然與臺北場館同版本完整節目注意事項，不依客家題材直接排除。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
-      "source_content_sha256": "d61d07b78284d047ca7633b705f4ddbd46dc9c896f3109ff2353cc58416bd9f5",
-      "fetch_error": null
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2
     },
     "99b74f07e1e195ef8988e4d3": {
       "candidate_id": "99b74f07e1e195ef8988e4d3",
@@ -437,16 +441,23 @@
       "source_url": "https://www.tgb.org.tw/2026/07/23.html",
       "title": "報名第23期會輾轉台語文讀寫基礎班",
       "owner": "Codex",
-      "finding": "讀寫班9/1–12/29每週二19:30–21:30是線上課，但另有台北期中走讀及期末結業實體課；不能把整案直接排成區域外。官方報名表今日HTTP403。",
+      "finding": "官網完整課程仍為2026/9/1–12/29週二19:30–21:30線上18堂、4000元／舊生3500元；另有台北期中走讀及結業實體課，未列實體日期場地。今天公開報名表HTTP403，不能據此排除活動。",
       "missing_fields": [
-        "兩堂台北實體課日期",
-        "實體地點"
+        "兩堂台北實體課日期及開始時間",
+        "實體課場館地址",
+        "期中可否報名"
       ],
-      "next_action": "追查基金會公開補充課表及表單；線上時段不能套到實體課。",
-      "reviewed_at": "2026-10-01T07:17:36+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
-      "source_content_sha256": "2b988bb3f242a823bd3ef7d03f1a7299beec8cff855dd6e78eba3d1fa72d154c",
-      "fetch_error": null
+      "next_action": "追查基金會補充課表與公開表單；不得把週二線上時間套到台北實體課，也不得以403判非台語。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/07/23.html",
+      "content_sha256": "2b988bb3f242a823bd3ef7d03f1a7299beec8cff855dd6e78eba3d1fa72d154c",
+      "document_version": 2,
+      "registration_check": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeDufxC0Nj96BZO-QUvQafsevm8LDYzSbf1Bmfhh5E8bTw95A/viewform",
+        "result": "http_403",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      }
     },
     "864b407359e71db2eda8a859": {
       "candidate_id": "864b407359e71db2eda8a859",
@@ -884,16 +895,26 @@
       "source_url": "https://www.accupass.com/event/2609290908339306700300",
       "title": "【Open Site打開遺址】親子考古任務",
       "owner": "Codex",
-      "finding": "完整正文確有台語場與14:00–16:00、五股集合地址和家庭票價，但11/14至12/19只是總期間，正文沒有日期與台語場逐場對應，不能全部當台語場。",
+      "finding": "已讀ACCUPASS完整正文、主辦Open Site總頁與親子考古專頁、三張正文圖。確有華語／台語分場，14:00–16:00、家庭2400元起；主辦說實際日期以報名頁為準。瀏覽器點報名後導向ACCUPASS登入，未取得台語場日期，圖片亦無日期表。",
       "missing_fields": [
-        "台語場各場確切日期"
+        "台語場日期與票種對應"
       ],
-      "next_action": "查主辦Open Site專頁與ACCUPASS票種對應日期，取得台語場日期後逐場建立契約。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-05T07:00:00+08:00",
+      "next_action": "追查公開票種／主辦補充場次表；若仍只在登入後可看，列為需登入取得的證據，不把整段11/14–12/19當台語場。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2609290908339306700300",
       "content_sha256": "5914afb4c0f462bf6fce34d0322eb435f0b86ac212ee10703fb0e852cda63418",
-      "fetch_error": null
+      "document_version": 2,
+      "checked_support": {
+        "url": "https://www.archaeoquest.com.tw/parent-child-archaeology",
+        "content_sha256": "1b840e6d8628808f381b6f5fdbc569ebba2c3825203f84cce294659eddffa694",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      },
+      "registration_check": {
+        "url": "https://www.accupass.com/eflow/ticket/2609290908339306700300",
+        "result": "login_required",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      }
     },
     "d74858e5d1a954a87d23235c": {
       "candidate_id": "d74858e5d1a954a87d23235c",
@@ -917,7 +938,29 @@
           "content_sha256": "6fd4fa3630122cf094d7da86ccfb2b55ade0a77b1949490df14358eb697bba95"
         }
       ]
+    },
+    "ed206a7c3f3756dcc968e8b5": {
+      "candidate_id": "ed206a7c3f3756dcc968e8b5",
+      "source_url": "https://www.tgb.org.tw/2026/01/116.html",
+      "title": "學生報名1/16拜五看《大濛》",
+      "owner": "Codex",
+      "finding": "正文和官方原海報均只有1/16拜五，未明列年份；報名頁可讀但僅顯示客滿--ah，無年份。未以網址2026/01、發文年或星期反推年份。",
+      "missing_fields": [
+        "學生包場明確年份"
+      ],
+      "next_action": "查基金會本場學生電影觀賞會回顧或明列年份的補充公告，確認後依已過期結案；不因表單客滿直接推定過期。",
+      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/01/116.html",
+      "content_sha256": "0b19f4a4a6a0ae936b7f10b97246206c9490575367054d88df73cc171d263a49",
+      "document_version": 2,
+      "checked_poster": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyTrtwNHEk3WkXLXjHIn5v7Le6oq0R5VxaImszZ3bh17v4WOHctOcfTomkWiSk9gR8nDDSgmjpEvHNmDoIxYipEKbv3bs8-WOK74rw7DYJ6_MjHEBYeBZdgqVXAgWc8U8NUn67O2jsimdpBcVJDDPOVbY3kXW0nMUPa0QwTCIIJx-MlNwiSflv2hgO4CVa/s552/612452559_1277602011065028_6308138888464683241_n.jpg",
+        "sha256": "444210c5191a6e8fc3c49dfa39dfeada21df090c75c576eeb59fe952869a057c",
+        "transcription": "大濛 1/16拜五 學生場；未見年份",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      }
     }
   },
-  "updated_at": "2026-10-04T07:11:39+08:00"
+  "updated_at": "2026-10-05T07:07:39+08:00"
 }
