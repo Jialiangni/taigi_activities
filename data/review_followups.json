@@ -73,16 +73,30 @@
       "source_url": "https://www.accupass.com/event/2604161917471542799416",
       "title": "2026童演童語-霹靂電影日《奇人密碼—古羅布之謎》 ",
       "owner": "Codex",
-      "finding": "重新完整閱讀ACCUPASS與文化部同片資料：10/17總館免費、104分鐘電影，仍未寫本場音軌；布袋戲電影不直接等同台語版本。",
+      "finding": "已讀ACCUPASS完整正文、文化部本活動紀錄及桃圖官方系列表。確認10/17（六）14:00–16:00、總館1樓微光廳、免費、104分鐘電影，但本場未列口白語言。霹靂官方舊公開說明PDF第5頁記載此片製作時為國語配音且可能採多國語言發行；這不能證明本次放映版本，也不能單凭霹靂品牌認定台語。",
       "missing_fields": [
-        "10/17實際放映版本的語言"
+        "本次放映版本的實際台語口白內容"
       ],
-      "next_action": "續查桃園圖書館與片方官方場次或音軌說明，若仍未公告，維持待核實，不把讀取正常當成語言通過。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "續查桃圖與報名頁的本場放映語言說明，須能連結10/17本場版本；不將「童演童語」或布袋戲當語言證據。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2604161917471542799416",
+      "document_version": 2,
       "content_sha256": "cf4a580ac9243529b4e3214d8de227a65ab956f9c2a5e9c46a203df98fc684e9",
-      "fetch_error": null
+      "checked_support": [
+        {
+          "url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "final_url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "content_sha256": "e38aea6069eb726e1abafe8dfe7ea484e4ef1fcfb5e841b9550feb024383a9ea",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "historical_film_language_lead": {
+        "url": "https://www.pili.com.tw/file/corporate/conference/%E9%A2%A8%E9%9A%AA%E4%BA%8B%E9%A0%85%E5%8F%8A%E4%B8%BB%E7%AE%A1%E6%A9%9F%E9%97%9C%E8%A6%81%E6%B1%82%E8%A3%9C%E5%85%85%E6%8F%AD%E9%9C%B2%E4%BA%8B%E9%A0%85.pdf",
+        "page": 5,
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
+      }
     },
     "4b84bb4d166de282573f9b4a": {
       "candidate_id": "4b84bb4d166de282573f9b4a",
@@ -229,33 +243,30 @@
       "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
       "title": "115年「掌藝薪傳-大師工作坊」",
       "owner": "Codex",
-      "finding": "今天重新讀劇團公開報名表、國藝會公告：前場10/4、10/18 10:00–12:00，台北偶戲館3樓；3000元整期、前場自備偶，表單仍可填。國藝會場館欄2樓與課程正文3樓不同，以課程表3樓為教室證據。仍未明列前場口白使用語言或中途入班條件；Facebook只回傳劇團貼文標題，未以讀取不足判成非台語。",
+      "finding": "Facebook分享頁轉址，另已完整核對國藝會公告與主辦Google報名表。工作坊分前場口白操偶、後場音樂、工藝、雕刻；剩餘10/18課程，後場改10/11，11/1成果展。前場未明說教學／口白語言，整期3000元且未列中途加入辦法；成果展只寫下午、缺確切開始時間。",
       "missing_fields": [
-        "前場口白語言",
-        "中途加入條件",
-        "11/1成果確切開始時間"
+        "前場教學與口白語言",
+        "中途參加或單堂報名條件",
+        "11/1成果展確切開始時間及演出內容"
       ],
-      "next_action": "10/6再查劇團10/18前場及11/1成果公告；若可確認台語口白及報名條件才逐場核實，其他工藝班不混入。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "10/9再核對原報名表、官方工作坊補充公告與成果展公告；分開核實各班及成果展，不把純工藝／雕刻自動當台語活動，不因Facebook失敗排除。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
-      "content_sha256": null,
+      "document_version": 2,
       "fetch_error": "Official page redirected; inspect destination before deciding",
-      "checked_supporting_sources": [
+      "checked_support": [
         {
           "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
-          "checked_at": "2026-10-04T07:04:41+08:00",
-          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574"
+          "final_url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
+          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         },
         {
           "url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
-          "checked_at": "2026-10-04T07:04:42+08:00",
-          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd"
-        },
-        {
-          "url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=xwqptA53XNQ8CmPc&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
-          "checked_at": "2026-10-04T07:03:59+08:00",
-          "content_sha256": "22f223a9942051e10798ef6da929b4110352ec7135a138eeb07ec2de0dce3678"
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
+          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         }
       ]
     },
@@ -264,36 +275,38 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "title": "115年深入你心歌唱",
       "owner": "Codex",
-      "finding": "文化部UID69e1333c26b3242a48a9e3f7仍只有2026/1/6 19:00至10/27 21:00的整期起迄、八德區及大勇社區主辦，明示國台語教唱；搜尋未找到本期逐堂課表。",
+      "finding": "已讀文化部完整單筆紀錄，明列國、台語歌唱課程，主辦桃園市八德區大勇社區發展協會；唯一showInfo為1/6 19:00到10/27 21:00的整期區間，地點只到八德區。未取得剩餘逐堂課表、地址或參加條件。",
       "missing_fields": [
-        "逐堂日期及開始時間",
-        "確切教室地址",
-        "報名方式及費用"
+        "10月剩餘逐堂日期",
+        "實際場館地址",
+        "費用與可否中途加入"
       ],
-      "next_action": "再查大勇社區發展協會本期官方課表；不得將整期起迄拼成10/27 19:00的單場。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "續查大勇社區官方公開課表與招生公告；須取得單堂證據，不把整期開始日推算為每週二，不以混合國台語排除。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
-      "checked_supporting_sources": []
+      "document_version": 2,
+      "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
+      "checked_support": []
     },
     "953b320f05d64047a33265d7": {
       "candidate_id": "953b320f05d64047a33265d7",
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "title": "樂活歡唱無限",
       "owner": "Codex",
-      "finding": "文化部UID69e284b726b3242a48a9e4e6仍為3/6 13:30至10/16 16:30整期、龍潭區中山社區及詹國祥國台語歌唱，未見單堂課表與教室；外部搜尋沒有補足官方場次。",
+      "finding": "已讀文化部完整單筆紀錄，主辦桃園市龍潭區中山社區發展協會，內容明列國、台語歌唱；僅3/6 13:30到10/16 16:30整期區間、地點僅龍潭區，沒有剩餘單堂日期、場館地址及報名規則。",
       "missing_fields": [
-        "逐堂日期時間",
-        "確切教室地址",
-        "報名方式及費用"
+        "結束前剩餘逐堂日期",
+        "場館地址",
+        "費用與參加條件"
       ],
-      "next_action": "追查龍潭中山社區發展協會本期課程公告；保留國台語活動身分，勿把總期間當單場。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "10/8優先追查中山社區本課程官方課表／招生補充；不按首末日期推定每週五，也不把10/16整期終點直接當一場。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "content_sha256": "11cc3c241a7f725a8dd663829da0b463a0a8cfc7b138d02a632a83a2064415fb",
-      "checked_supporting_sources": []
+      "document_version": 2,
+      "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
+      "checked_support": []
     },
     "31e00a4048cc4a48d24cfd5a": {
       "candidate_id": "31e00a4048cc4a48d24cfd5a",
@@ -317,16 +330,30 @@
       "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
       "title": "童演童語兒童閱讀推廣活動-霹靂電影日《奇人密碼—古羅布之謎》(2場)",
       "owner": "Codex",
-      "finding": "文化部完整同片紀錄與ACCUPASS交叉確認10/17下午14:00–16:00；未列本場語言音軌，6/21至10/17是兩場期間而非連續活動。",
+      "finding": "已讀文化部本片完整紀錄及桃圖官方系列表。文化部6/21到10/17為兩場電影的整段區間；桃圖清楚列6/21與10/17各14:00–16:00，仍未列放映口白語言。片商歷史PDF提到國語配音及多語發行可能，未能證明這次版本。",
       "missing_fields": [
-        "10/17實際放映版本的語言"
+        "10/17實際放映版本的台語口白內容"
       ],
-      "next_action": "與ACCUPASS候選49b55809ecfe407f47bdd939合併查證，取得語言證據後只新增一次。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "與ACCUPASS同場候選49b55809ecfe407f47bdd939共用後續版本查證；若符合只建立一場，不用系列首末日期建立跨日活動。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
-      "content_sha256": "a866616095cac9dbfc569c9d4117da2829ba93328e426b0a6fc3f7dec6a18a31",
-      "fetch_error": null
+      "document_version": 2,
+      "content_sha256": "213c16691b275cbfd616fcb730f185c5bc993e478b4df3d9970f5bd38856a3d4",
+      "checked_support": [
+        {
+          "url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "final_url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "content_sha256": "e38aea6069eb726e1abafe8dfe7ea484e4ef1fcfb5e841b9550feb024383a9ea",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "historical_film_language_lead": {
+        "url": "https://www.pili.com.tw/file/corporate/conference/%E9%A2%A8%E9%9A%AA%E4%BA%8B%E9%A0%85%E5%8F%8A%E4%B8%BB%E7%AE%A1%E6%A9%9F%E9%97%9C%E8%A6%81%E6%B1%82%E8%A3%9C%E5%85%85%E6%8F%AD%E9%9C%B2%E4%BA%8B%E9%A0%85.pdf",
+        "page": 5,
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
+      }
     },
     "6a9af46326972658fff4e7d0": {
       "candidate_id": "6a9af46326972658fff4e7d0",
@@ -356,33 +383,36 @@
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
       "owner": "Codex",
-      "finding": "重讀Portaly及兩份未決完整表單：10/17雲遊博物館仍寫（日）與2026星期六不符；10/31漫才正文、講師及時間一致，但活動名稱欄仍誤列雲遊博物館。10/17春福神傳說仍即將開放。10/3熱人的冰麒麟在Portaly所列日期已過，從未來待補分場移除，不補發過期場；母候選因其他三場未決仍留存。已刊場不改寫。",
+      "finding": "已重讀台語站完整頁、史博館官方活動入口與兩份完整報名表。10/17雲遊博物館10:30–11:30仍寫「10/17（日）」但2026/10/17為六；10/31漫才15:00–16:30的標題、簡介是溱會灰台語漫才，活動名稱欄仍誤列雲遊博物館；10/17春福神傳說14:00–15:00仍即將開放，無報名詳頁。兩份表均有80%台語、免費及B1資訊，尚不能自行消除矛盾。已刊登場次不重建。",
       "missing_fields": [
-        "10/17雲遊博物館日期星期更正",
-        "10/31漫才名稱欄更正",
-        "10/17春福神傳說完整報名頁"
+        "10/17雲遊場次日期／星期一致的官方確認",
+        "10/31漫才正確活動名稱",
+        "10/17春福神傳說完整報名公告與參加条件"
       ],
-      "next_action": "10/6重查兩份表單及春福神報名連結；按分場保存結果，未解決的日期及活動身分衝突不猜。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "10/9追查同一官方入口及表單修訂，逐場比較來源；補齊才建立契約，保留已刊登的其他場次，不自行修正官方日期或混用活動名稱。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
+      "document_version": 2,
       "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
-      "fetch_error": null,
-      "checked_supporting_sources": [
+      "checked_support": [
         {
           "url": "https://portaly.cc/nmhunitas",
-          "checked_at": "2026-10-04T07:03:59+08:00",
-          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e"
+          "final_url": "https://portaly.cc/nmhunitas",
+          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         },
         {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
-          "checked_at": "2026-10-04T07:05:35+08:00",
-          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c"
+          "url": "https://forms.gle/yEb7LMwNuD6hpkDo8",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
+          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         },
         {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
-          "checked_at": "2026-10-04T07:05:35+08:00",
-          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b"
+          "url": "https://forms.gle/TUfMtaPr1hU6RKwUA",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
+          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         }
       ]
     },
@@ -391,35 +421,44 @@
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
       "title": "雙連教會『兒童台語文秋季班』",
       "owner": "Codex",
-      "finding": "新增核對雙連教會官方兒童台語文班頁：9/6至學期結束、每主日08:50–09:40；台語站公告09:00–09:50，兩者差10分鐘。官方本期2026秋季表單已關閉但明示歡迎隨時加入，電話洽九樓靜婷幹事；10/4兒童主日學週報頁本身未列台語班逐堂日期。不能以每主日或週報標題自行展開今天場次。",
+      "finding": "已讀教會完整課程頁與2026秋季班報名表。官網列9/6開始、每主日08:50–09:40到學期結束，台語站為09:00–09:50；表單雖線上截止但明說歡迎隨時加入、洽靜婷02-25415390#221。另已讀2026/10/4兒童主日學週報兩頁並檢視首頁；一般主日學10:00–11:40並非702／703台語班，不能借用其日期或時段。仍無本班學期截止與停課表。",
       "missing_fields": [
-        "本期逐堂日期或確定期末日",
-        "08:50–09:40與09:00–09:50時間差",
-        "費用條件"
+        "本期台語班確切上課時段的官方一致確認",
+        "本期截止日期與停課日期",
+        "費用資訊"
       ],
-      "next_action": "10/6優先核对教會最新兒童台語文公告與公開週報，確認時間及本期課表；不把表單關閉判為停課。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-06T07:00:00+08:00",
+      "next_action": "10/9再讀本班課程／招生頁及新週報，找具日期的本期台語班課表；不套用一般主日學時程，不把表單截止當不能参加。",
+      "reviewed_at": "2026-10-06T07:07:18+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
+      "document_version": 2,
       "content_sha256": "894c8d29108d0d4a682ce5cfa8464edf98705ab08a7da34d8dc4a9e986005ad6",
-      "fetch_error": null,
-      "checked_supporting_sources": [
+      "checked_support": [
         {
           "url": "https://www.slpctaipei.org/learning/3/119",
-          "checked_at": "2026-10-04T07:05:34+08:00",
-          "content_sha256": "b02561885197100edf5f3f5396527cf80616f7efeda76e3e5f8dc56c11991b34"
+          "final_url": "https://www.slpctaipei.org/learning/3/119",
+          "content_sha256": "b02561885197100edf5f3f5396527cf80616f7efeda76e3e5f8dc56c11991b34",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         },
         {
           "url": "https://www.slpctaipei.org/learning/5/332",
-          "checked_at": "2026-10-04T07:05:34+08:00",
-          "content_sha256": "359b966a3375c8610db41972a666b531f316d98c44e56dea0831b5028c603cb1"
+          "final_url": "https://www.slpctaipei.org/learning/5/332",
+          "content_sha256": "359b966a3375c8610db41972a666b531f316d98c44e56dea0831b5028c603cb1",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         },
         {
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLScBtmViVEh76tH_3-xNBkOPjKJWfisk1wkioT_OZUBqWwvUKQ/closedform",
-          "checked_at": "2026-10-04T07:04:41+08:00",
-          "content_sha256": "8e1d3ec848e6b04bcadb1980023cea7e8085469ef2e441e5c7a864e77cff8088"
+          "url": "https://forms.gle/d7Firxw9a62yet4s9",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScBtmViVEh76tH_3-xNBkOPjKJWfisk1wkioT_OZUBqWwvUKQ/closedform",
+          "content_sha256": "8e1d3ec848e6b04bcadb1980023cea7e8085469ef2e441e5c7a864e77cff8088",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
         }
-      ]
+      ],
+      "checked_pdf": {
+        "url": "https://drive.google.com/file/d/1TYjuxTjzSfmV6zJBchf90x5L4z_za1lE/view?usp=drive_link",
+        "sha256": "4860c7bae3ba6d49b35402dc93e27b0ce1ddbdae1fc0c83cdf622b72784fc0ce",
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "finding": "2026/10/4一般兒童主日學週報，未載本班期末與停課日期。"
+      }
     },
     "26fc8fd52baf542daaf8e1a6": {
       "candidate_id": "26fc8fd52baf542daaf8e1a6",
@@ -962,5 +1001,5 @@
       }
     }
   },
-  "updated_at": "2026-10-05T07:07:39+08:00"
+  "updated_at": "2026-10-06T07:07:18+08:00"
 }

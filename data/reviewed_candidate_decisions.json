@@ -1492,29 +1492,30 @@
       "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "adcdcc835c6a15101b4c8af9",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
       "title": "【基北北桃台語家庭意識培力講座】桃園場—台語流--去ē造成國民智力、健康kah經濟損失",
+      "candidate_id": "adcdcc835c6a15101b4c8af9",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/27 （禮拜）下晡3:30～5:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
       "content_sha256": "2328db05f4b4fe8b2e6b3a310b0b2b643e383293b4ee08a7a83fa4ca6b8161e9",
-      "quotes": [
-        "活動時間：2025/ 7/27 （禮拜）下晡3:30～5:30 ▎名額：網路報名30人 ▎地點： 桃園市立圖書館總館 6樓多功能活動室 （桃園市桃園區南平路303號） 洽詢電話：02-23112199"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
         "final_url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:33+08:00",
-        "sha256": "f3dc9b75dfb007aa02f88cf88c4b22ed9671c36d908c2237ced112f0087e85f3",
-        "elapsed_ms": 435,
+        "fetched_at": "2026-10-06T07:01:12+08:00",
+        "sha256": "410ea8d7081c2872b7100a99ef3d53beb06ef4fd1140c96654bf89a89707ce76",
+        "elapsed_ms": 494,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
       "candidate_id": "e56346d94c2322b7b472b4cb",
@@ -1567,79 +1568,82 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "25c21edaec2748a3ab4c6fe7",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/101bat.html",
       "title": "【基北北桃台語家庭意識培力講座】新北場—活用教典101——讀辭典、bat辭典、參與教典",
+      "candidate_id": "25c21edaec2748a3ab4c6fe7",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/19 (拜六) 下晡1:00～3:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/101bat.html",
       "content_sha256": "1d3837f955438e2cabbcce155363269e61d25577f293327d379b7473a051228b",
-      "quotes": [
-        "活動時間：2025/ 7/19 (拜六) 下晡1:00～3:00 ▎名額：網路報名30人 ▎地點： 華梵大學推廣教育處新北板橋中心603教室 （新北市板橋區文化路二段242號6樓） 洽詢電話：02-2"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/101bat.html",
         "final_url": "https://www.tgb.org.tw/2025/06/101bat.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:28+08:00",
-        "sha256": "c7eb2f9960eebbcbb3b4b379b71c98dc6e47d3554a2015eafb69978abf818bde",
-        "elapsed_ms": 425,
+        "fetched_at": "2026-10-06T07:01:14+08:00",
+        "sha256": "8e644c8d63e73eb7bd3c80c16e2b2c79e1eccf6bef83c5ac011ee97679304d43",
+        "elapsed_ms": 1232,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "326c348f04025bac40293fff",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
       "title": "【台文生活進行式】夜婆失眠pha-pha-tsáu台語輸入法研習（台中特別場）",
+      "candidate_id": "326c348f04025bac40293fff",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/12 (拜六) 下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
       "content_sha256": "9f241ef7ca54c03bfed18cf259b2f135c540ccb7f834d23fddbf4c64997b5049",
-      "quotes": [
-        "活動時間：2025/ 7/12 (拜六) 下晡2:00～4:00 ▎名額：網路報名30人 ▎地點： 台中市立圖書館烏日分館 5樓多功能活動室 （台中市烏日區興祥街121號） 洽詢電話：02-23112"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
         "final_url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:30+08:00",
-        "sha256": "4e7e545ba8aba1870fc80179bac9accf6c4cf181b325ef55a534cc3b6fece63e",
-        "elapsed_ms": 443,
+        "fetched_at": "2026-10-06T07:01:15+08:00",
+        "sha256": "667eae7e0c2211e2020cd97916661da32262b493417566219f005eebb6d95bf6",
+        "elapsed_ms": 670,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "3c99056a19c1a4d516b2218d",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/tie.html",
       "title": "【基北北桃台語家庭意識培力講座】新北場—建立活tī台灣ê儀式感",
+      "candidate_id": "3c99056a19c1a4d516b2218d",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/5 (拜六) 下晡3:30～5:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/tie.html",
       "content_sha256": "46dcd20a3b6c184e7677528328d3c0e43578b0893c171f6c198648716fbe210a",
-      "quotes": [
-        "活動時間：2025/ 7/5 (拜六) 下晡3:30～5:30 ▎名額：網路報名30人 ▎地點： 華梵大學推廣教育處新北板橋中心603教室 （新北市板橋區文化路二段242號6樓） 洽詢電話：02-23"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/tie.html",
         "final_url": "https://www.tgb.org.tw/2025/06/tie.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:36+08:00",
-        "sha256": "f91b5498e8e4de5cce143366c6a83ab9eb76433ff5c25138b546c99c186acadf",
-        "elapsed_ms": 1190,
+        "fetched_at": "2026-10-06T07:01:16+08:00",
+        "sha256": "05d0b0f61fe81c749bba7b3fb5dd63044bacbf79d814924934db25e357b7de35",
+        "elapsed_ms": 1278,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
       "candidate_id": "b8f3a1c8a7a1d6e07333cd97",
@@ -1667,54 +1671,56 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "cfafb7c61ad508a32fa32ffb",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/ekah.html",
       "title": "【基北北桃台語家庭意識培力講座】新北場—台語流--去ē造成國民智力、健康kah經濟損失",
+      "candidate_id": "cfafb7c61ad508a32fa32ffb",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/19 (拜六) 下晡3:30～5:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/ekah.html",
       "content_sha256": "4c8e63dfcb994673ea109abb4d431d3774ff1650835cb66879137577cbac7b57",
-      "quotes": [
-        "活動時間：2025/ 7/19 (拜六) 下晡3:30～5:30 ▎名額：網路報名30人 ▎地點： 華梵大學推廣教育處新北板橋中心603教室 （新北市板橋區文化路二段242號6樓） 洽詢電話：02-2"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/ekah.html",
         "final_url": "https://www.tgb.org.tw/2025/06/ekah.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:32+08:00",
-        "sha256": "9d57deff015268740ecef4aa490f3b559752b931d74eb71894f1e5a5dc020b65",
-        "elapsed_ms": 433,
+        "fetched_at": "2026-10-06T07:01:17+08:00",
+        "sha256": "14a4d9a7a3cc571517e98d27ad9c3e46a5ba7c591656c0e814aa42bafed9b47f",
+        "elapsed_ms": 527,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "28f80c24b68527420fcb2039",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/06/sabl.html",
       "title": "【百行百業台語sa攏有講座】用台語走揣自我，用台文起造BL青春世界",
+      "candidate_id": "28f80c24b68527420fcb2039",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 7/9 (拜三) 19:30 ~ 21:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/06/sabl.html",
       "content_sha256": "84fc3e455a14f2d4dcd01cf06258ed4286365488416f4505530ed17c295bd20e",
-      "quotes": [
-        "活動時間：2025/ 7/9 (拜三) 19:30 ~ 21:30 ▎名額：網路報名30人 ▎地點：濟南教會 (台北市中山南路3號，主日學教室) 台北火車頭kap捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/06/sabl.html",
         "final_url": "https://www.tgb.org.tw/2025/06/sabl.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:34+08:00",
-        "sha256": "7e22bee6b3e304736f62414b6764ceac8d1d3e14585f5becb6625b08148405bc",
-        "elapsed_ms": 1095,
+        "fetched_at": "2026-10-06T07:01:18+08:00",
+        "sha256": "a4c1cb733a0fb1d82a49b1ec354fec83c57c8786dbffde9749a835571e8ce34b",
+        "elapsed_ms": 627,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
       "candidate_id": "caa1b86df596baf5a1dbfe17",
@@ -1742,104 +1748,108 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "dbc91b175b0fd444bb587f21",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/blog-post.html",
       "title": "【基北北桃台語家庭意識培力講座】新北場—夜婆失眠拋拋走——台羅、台語意識拍通透",
+      "candidate_id": "dbc91b175b0fd444bb587f21",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 6/21 (拜六) 下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/05/blog-post.html",
       "content_sha256": "06b1721710a87c6c39cfca3ae45908ffe3f3ba788b33c58b0879e87b4cf41c17",
-      "quotes": [
-        "活動時間：2025/ 6/21 (拜六) 下晡2:00～4:00 相片 ▎名額：網路報名30人 ▎地點： 新北市立圖書館總館 5樓研習教室 （新北市板橋區貴興路139號） 洽詢電話：02-231121"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/05/blog-post.html",
         "final_url": "https://www.tgb.org.tw/2025/05/blog-post.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:25+08:00",
-        "sha256": "271fb7c794deb9c9606144f4e368d34a033baf0926b26a52fe68cc5e70b7584c",
-        "elapsed_ms": 1163,
+        "fetched_at": "2026-10-06T07:01:19+08:00",
+        "sha256": "537a1ad51feb273213a3e5185c2b53e08bcb0f7fb640cf99ba056d715570f7b2",
+        "elapsed_ms": 725,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "25cc388eb3750c6ffbf4dbe6",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/ai.html",
       "title": "【基北北桃台語家庭意識培力講座】台北場—反思「國語政策」，台灣ài啟動語言轉型正義",
+      "candidate_id": "25cc388eb3750c6ffbf4dbe6",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 6/14 (拜六) 下晡3:00～5:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/05/ai.html",
       "content_sha256": "2d10c8d44d06839225e4acd341f3c0d9721d6fca1320e2a788ce2ecdab627f7b",
-      "quotes": [
-        "活動時間：2025/ 6/14 (拜六) 下晡3:00～5:00 ▎名額：網路報名30人 ▎地點： 現流冊店 （台北市大同區重慶北路二段70巷15號1樓） 洽詢電話：02-23112199 聯絡信箱："
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/05/ai.html",
         "final_url": "https://www.tgb.org.tw/2025/05/ai.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:23+08:00",
-        "sha256": "c991ff09d8c19c70f91ec66e87d2b9d96aa3a766b72cde9fdbc35665e601e21c",
-        "elapsed_ms": 489,
+        "fetched_at": "2026-10-06T07:01:19+08:00",
+        "sha256": "1ca0be8e21268f18faa215b19e6ef9a937dbbd699b9e5e5cdaa005bb873e6667",
+        "elapsed_ms": 417,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "b6f2e5c6660df4c512f3c2d4",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/sakape.html",
       "title": "【百行百業台語sa攏有講座】〈保正伯〉kap〈放屎百姓〉：蔡秋桐ê台語小說",
+      "candidate_id": "b6f2e5c6660df4c512f3c2d4",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 6/11 (拜三) 19:30 ~ 21:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/05/sakape.html",
       "content_sha256": "00a6b00f3a64bd02a1b835a1f97a14cf2e0cd2b7b6866298ed50913baff88cb4",
-      "quotes": [
-        "活動時間：2025/ 6/11 (拜三) 19:30 ~ 21:30 ▎名額：網路報名30人 ▎地點：濟南教會 (台北市中山南路3號，主日學教室) 台北火車頭kap捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/05/sakape.html",
         "final_url": "https://www.tgb.org.tw/2025/05/sakape.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:28+08:00",
-        "sha256": "a1c326be58d213357cf28b6fc98ba502bab874aceda902d43907bb3e03b7b543",
-        "elapsed_ms": 442,
+        "fetched_at": "2026-10-06T07:01:20+08:00",
+        "sha256": "86193bc4ec267a5f2a8574225f99850eb8438bd40fd7fc0d7c5c64cdbe48b60a",
+        "elapsed_ms": 390,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "f5cd60260bd19f8d94250c86",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/e.html",
       "title": "【基北北桃台語家庭意識培力講座】台北場—本土語言政策ê再轉型正義",
+      "candidate_id": "f5cd60260bd19f8d94250c86",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 6/8 （禮拜）早起10:00～12:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。同頁附帶的兒童繪本活動亦屬同一舊日期。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/05/e.html",
       "content_sha256": "8eb765fdb5301e4d2ec872fd070a6e896a8f5d9b705a1357469d6241fdfc604c",
-      "quotes": [
-        "活動時間：2025/ 6/8 （禮拜）早起10:00～12:00 ▎名額：網路報名30人 ▎地點： 北原會館 （台北市南港區向陽路49號4樓） 洽詢電話：02-23112199 聯絡信箱：bongpo"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/05/e.html",
         "final_url": "https://www.tgb.org.tw/2025/05/e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:26+08:00",
-        "sha256": "23a52f6b21244b5f78575dd275730a301db92d5832d4aafb58d180de079807fc",
-        "elapsed_ms": 641,
+        "fetched_at": "2026-10-06T07:01:21+08:00",
+        "sha256": "3960770ec20437c238608656c3310c8e13d035341653ef9cb53fa24023790ef3",
+        "elapsed_ms": 417,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
       "candidate_id": "f98f06172db5ebee30ae4dbb",
@@ -1867,229 +1877,238 @@
       "reviewer": "Codex; source reading, not human certification"
     },
     {
-      "candidate_id": "abe83f3821967301fa72a808",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/20250518.html",
       "title": "(採訪通知)20250518藍春瑞《開花結子》新書發表會",
+      "candidate_id": "abe83f3821967301fa72a808",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/5/18（日）下午2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。本文為該場新書發表會採訪通知。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/05/20250518.html",
       "content_sha256": "e9938e579b7c4aabd05cebc13bf7d073cd828d87fc4380c123fe155d5267b3f1",
-      "quotes": [
-        "時間：2025/5/18（日）下午2:00～4:00 地點：左轉有書(台北市中正區鎮江街3-1號) 出席名單： 主持：劉承賢 教授 作者：藍春瑞 老師 與談：邱文錫 老師 主辦單位：李江却台語文教基金"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/05/20250518.html",
         "final_url": "https://www.tgb.org.tw/2025/05/20250518.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:21+08:00",
-        "sha256": "9988525ba0ab8b6ad88e0ca3eb4db6a8416253a1dd8960ac108aa2af79832b79",
-        "elapsed_ms": 475,
+        "fetched_at": "2026-10-06T07:01:21+08:00",
+        "sha256": "074250d390006b0a33b3cdce0f386b0b4fcf313d3d6626249f25c449ae5cc7f2",
+        "elapsed_ms": 365,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "194ce44c5b967cefef2254ee",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
       "title": "【基北北桃台語家庭意識培力講座】桃園場—Chiâⁿ做母語保育ê戰士——家庭、社區kah學校做伙來",
+      "candidate_id": "194ce44c5b967cefef2254ee",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 5/24 （拜六）早起10:00～12:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。同頁附帶的兒童繪本活動亦屬同一舊日期。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
       "content_sha256": "f15f53d0b11ba4b61ee25e68fc022ae8ddfcc84682c086f7b8f3118a9d8ca7b0",
-      "quotes": [
-        "活動時間：2025/ 5/24 （拜六）早起10:00～12:00 相片 ▎名額：網路報名30人 ▎地點： 桃園市立圖書館總館 6F多功能活動室 （桃園市桃園區南平路303號） 囡仔繪本意識課報名網址"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
         "final_url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:18+08:00",
-        "sha256": "33e416a9e180852bd56d78f76808d21fd33afb1df1ac36c807ecb000a98fce38",
-        "elapsed_ms": 1475,
+        "fetched_at": "2026-10-06T07:01:22+08:00",
+        "sha256": "f8a2512a9967e55bb8b451e2aeb992b8d730903e0d8e973bc0ca0345737e0dcd",
+        "elapsed_ms": 426,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "532a847b18b49d6cf56af7e1",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
       "title": "【基北北桃台語家庭意識培力講座】基隆場—夜婆失眠拋拋走——台羅、台語意識拍通透",
+      "candidate_id": "532a847b18b49d6cf56af7e1",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 5/17 （拜六）下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
       "content_sha256": "4925fe3a3f4dc5104dcc21c1b9a6144cb350585221dc77d68d9c8e18f3acff2f",
-      "quotes": [
-        "活動時間：2025/ 5/17 （拜六）下晡2:00～4:00 ▎名額：網路報名30人 ▎地點： 小獸書屋 （基隆市仁愛區仁三路11-9號2樓） 洽詢電話：02-23112199 聯絡信箱：bongp"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
         "final_url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:14+08:00",
-        "sha256": "5b6712ecbbc352552fbb54776dcf15fb3556a7a59c1b0878b2d44e1d367a6b9b",
-        "elapsed_ms": 1062,
+        "fetched_at": "2026-10-06T07:01:23+08:00",
+        "sha256": "61a4f5cf240bb09bec24e6ce070520963b86a6360901d70d7221782de0eb0b70",
+        "elapsed_ms": 461,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "92e0902bb18eec23d6a883d8",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
       "title": "【百行百業台語sa攏有講座】芋圓字典， hōo你學台語學bē siān",
+      "candidate_id": "92e0902bb18eec23d6a883d8",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 5/14 (拜三) 19:30 ~ 21:30"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
       "content_sha256": "195211491a91881fd18d63b9c5bb60749a5789d61cd1149cf7d3ef05a996ac97",
-      "quotes": [
-        "活動時間：2025/ 5/14 (拜三) 19:30 ~ 21:30 相片 ▎名額：網路報名50人 ▎地點：濟南教會 (台北市中山南路3號，主日學教室) 台北火車頭kap捷運「善導寺」站附近"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
         "final_url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:20+08:00",
-        "sha256": "02f86747a0e0b2092b35fae35696b8e18ce1fa91f0ce376707dae2372bb0e37f",
-        "elapsed_ms": 453,
+        "fetched_at": "2026-10-06T07:01:24+08:00",
+        "sha256": "1e2473bd452ff1f4fb4d4319396807f282df341da7fa454cafb3e43c4a30dd94",
+        "elapsed_ms": 489,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "42adf3b9c2dde4d5e6ae8c03",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
       "title": "【基北北桃台語家庭意識培力講座】新北場—Ná真熟sāi，koh無了解——台語意識你ài知",
+      "candidate_id": "42adf3b9c2dde4d5e6ae8c03",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/5/10（拜六）下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
       "content_sha256": "5b6643599ba8c2240ec95bd2165d813059e5d10b53212a8345288f37b4d012a9",
-      "quotes": [
-        "活動時間：2025/5/10（拜六）下晡2:00～4:00 ▎名額：網路報名30人 ▎地點： 新北市立圖書館總館5樓研習教室 （新北市板橋區貴興路139號） 洽詢電話：02-23112199 聯絡信箱"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
         "final_url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:20+08:00",
-        "sha256": "02f3c8242c4b4a52e1c1c98bb28fa20aa68e0cf781d7ef8edaa63f8297fe06a0",
-        "elapsed_ms": 952,
+        "fetched_at": "2026-10-06T07:01:24+08:00",
+        "sha256": "ee879a74eae0889cb09110f483557503c3944c3cdcc3d809879327d312e547a2",
+        "elapsed_ms": 411,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "84e51c298737b505075f06a6",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/04/blog-post.html",
       "title": "新冊發表會《開花結子》藍春瑞—長篇小說",
+      "candidate_id": "84e51c298737b505075f06a6",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 5/18 (禮拜日) 下晡2:00~4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。同頁書籍購買資訊不是另一場未來活動。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/04/blog-post.html",
       "content_sha256": "3a8537037808fa53573765a90c7df8b6585ebbf909d6c3dc65a1641fee210b4f",
-      "quotes": [
-        "活動時間： 2025/ 5/18 (禮拜日) 下晡2:00~4:00 ▎名額：網路報名50人 ▎地點： 左轉有書 （台北市中正區鎮江街3-1號） 洽詢電話：02-23112199 聯絡信箱：bongp"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/04/blog-post.html",
         "final_url": "https://www.tgb.org.tw/2025/04/blog-post.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:17+08:00",
-        "sha256": "ed5790cdacb1784a5867021894d52a12b5928da6e6a21bac323fd010e253c743",
-        "elapsed_ms": 1107,
+        "fetched_at": "2026-10-06T07:01:25+08:00",
+        "sha256": "3109f16938f9453aaae25936962a02a9bad32607ab77c1512f46b4b8d8ae6d31",
+        "elapsed_ms": 787,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "f32694cd385ed0ffb6c45514",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/03/e_20.html",
       "title": "【基北北桃台語家庭意識培力講座】 桃園場—台語充電讚——展開囡仔ê語言超能力！",
+      "candidate_id": "f32694cd385ed0ffb6c45514",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/4/30（拜三）早起10:00～12:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/03/e_20.html",
       "content_sha256": "d6f207ea680e0dce7d951584727b4060574851dc9b17ca8dd3172a0324fa37fe",
-      "quotes": [
-        "活動時間：2025/4/30（拜三）早起10:00～12:00 ▎名額：網路報名30人 ▎地點： 桃園市立圖書館總館 7樓711會議室 (桃園市桃園區南平路303號) 洽詢電話：02-23112199"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/03/e_20.html",
         "final_url": "https://www.tgb.org.tw/2025/03/e_20.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:11+08:00",
-        "sha256": "c1eb68770312bc3852145123dd4010f3d3c7e10e0310f01a6909c7f5aa005dfd",
-        "elapsed_ms": 653,
+        "fetched_at": "2026-10-06T07:01:26+08:00",
+        "sha256": "d29069ccf361a711ac9ae63e9bdafb02adaf3e440d50996ae46b7a780c29e6ae",
+        "elapsed_ms": 468,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "b76de03da2f2b534c171371d",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/03/e.html",
       "title": "【基北北桃台語家庭意識培力講座】 新北場—本土語言政策ê再轉型正義",
+      "candidate_id": "b76de03da2f2b534c171371d",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 4/19 (拜六) 下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/03/e.html",
       "content_sha256": "8a39376e47fe11ce1c1feeccc030b73e65f1c1e4cf9dbdff59fbf019b9c2fb8c",
-      "quotes": [
-        "活動時間：2025/ 4/19 (拜六) 下晡2:00～4:00 ▎名額：網路報名30人 ▎地點： 新北市立圖書館總館 5樓研習教室 (新北市板橋區貴興路139號) 洽詢電話：02-23112199 "
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/03/e.html",
         "final_url": "https://www.tgb.org.tw/2025/03/e.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:10+08:00",
-        "sha256": "5b7872bd70e6c94b00bc0029720da3219253acf47edd36e6fb0a71396c28642e",
-        "elapsed_ms": 506,
+        "fetched_at": "2026-10-06T07:01:27+08:00",
+        "sha256": "e11abf31010d58fa71add13853e7b5d56a4a20d7de4cb13db0694815f2450724",
+        "elapsed_ms": 563,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
-      "candidate_id": "5fd9393cad380791f7e2da55",
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/03/blog-post_18.html",
       "title": "【基北北桃台語家庭意識培力講座】台北場—夜婆失眠拋拋走——台羅、台語意識拍通透",
+      "candidate_id": "5fd9393cad380791f7e2da55",
       "reason": "expired",
-      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "quotes": [
+        "2025/ 4/12 (拜六) 下晡2:00～4:00"
+      ],
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00",
       "evidence_url": "https://www.tgb.org.tw/2025/03/blog-post_18.html",
       "content_sha256": "1c351621c565037505a0ef120a419fab69783ea34e159df7dfa64253655f8eea",
-      "quotes": [
-        "活動時間：2025/ 4/12 (拜六) 下晡2:00～4:00 ▎名額：網路報名25人 ▎地點： 市民書店 (松山區市民大道四段25號) 洽詢電話：02-23112199 聯絡信箱：bongpo19"
-      ],
+      "document_version": 2,
       "evidence": {
         "url": "https://www.tgb.org.tw/2025/03/blog-post_18.html",
         "final_url": "https://www.tgb.org.tw/2025/03/blog-post_18.html",
         "http_status": 200,
         "request_method": "GET",
-        "fetched_at": "2026-09-30T23:36:07+08:00",
-        "sha256": "fb9524da0aebef37616249d26ce11363bd69b59714b3b8c2d086a4a66a973afe",
-        "elapsed_ms": 498,
+        "fetched_at": "2026-10-06T07:01:27+08:00",
+        "sha256": "ef5a993da00753b6ec835ffcb1f5ad6ca196cff26a19be9e141ddec52b11dabb",
+        "elapsed_ms": 406,
         "attempt": 1
       },
-      "reviewer": "Codex; source reading, not human certification"
+      "reviewer": "Codex; complete official source reading, not human certification"
     },
     {
       "candidate_id": "a20c859f4a1a7de2e2bf76ea",
