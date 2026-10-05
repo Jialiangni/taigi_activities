@@ -999,9 +999,26 @@
     "opentix_editorial.json": "adcf74423976219cc3038faf7d88ceac49f63e3c2a94770a2d82b8a462401beb",
     "editorial/queue.json": "25ff97d8d3a7b59f9d1b8c65d262cc7aca8d15258f38e1449bfd2da4ea34bc2c"
   },
-  "tests": "269 tests passed; 1 skipped",
+  "tests": "269 tests completed successfully; 1 skipped",
   "source_archive": "/Users/nijialiang/Library/Application Support/TaigiEditorial/state/jobs/20261006T0700-triage",
-  "publication_check": "pending GitHub deployment and live HTML/ICS comparison",
+  "publication_check": {
+    "checked_at": "2026-10-06T07:09:13+08:00",
+    "html_sessions": 228,
+    "ics_sessions": 228,
+    "matches_expected_live_ids": true,
+    "newly_published": 0,
+    "pending_editorial_absent": true,
+    "html_sha256": "bccee05df13ba95e0896e1cf001a75c3755b2f247ebda1740532a223485d0031",
+    "ics_sha256": "7d2c1b8b5e2fc080e604c4bc2c7dd7ea98aff27801aba11d805fb900bd159a27",
+    "github_actions": {
+      "run_id": 37386724964,
+      "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37386724964",
+      "conclusion": "success",
+      "triage_commit": "dc131a9f88cb3fcefc53766675211ea53119e712",
+      "deployed_output_commit": "a12da53f334502b00d872b3ed0bda1971d6c46b8"
+    },
+    "test_annotations_note": "OPENAI_API_KEY missing and editorial-failure annotations were emitted by unit-test fixtures in the test step, not by an actual AI translation attempt."
+  },
   "workflow_snapshot": {
     "checked_at": "2026-10-06T07:07:52+08:00",
     "workflows_active": true,
