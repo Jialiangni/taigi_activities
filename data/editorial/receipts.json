@@ -1014,6 +1014,12 @@
       "source_hash": "2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad",
       "result_hash": "6e2c45e2bc0fcce1482cc223ab4a0aa47a0509904d844ca455073a166cde4896",
       "accepted_at": "2026-10-06T15:58:15+08:00"
+    },
+    "opentix_2054754824953241601-55db25a96ee3aebb163301147f4ec92895f4af44cefa8afbd72c50b1699fb22a.json": {
+      "activity_id": "opentix_2054754824953241601",
+      "source_hash": "55db25a96ee3aebb163301147f4ec92895f4af44cefa8afbd72c50b1699fb22a",
+      "result_hash": "fcacc0f2b1f4155b67cb5449d76f42b306bea23f24edca6e7fd83693eee3abc9",
+      "accepted_at": "2026-10-06T17:10:43+08:00"
     }
   }
 }
