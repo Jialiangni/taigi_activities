@@ -1136,7 +1136,2185 @@
       "evidence_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889238",
       "content_sha256": "36ea0024a292b4007937e3be27bed6fac0a64e2d197d08a3739b7b4a6180a73d",
       "apply_error": "network_or_tls_error"
+    },
+    "67c854218c7f7da13359b728": {
+      "candidate_id": "67c854218c7f7da13359b728",
+      "source_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+      "title": "桃園市政府教育局",
+      "owner": "Codex",
+      "finding": "官方教育局公告在本機重讀回覆network_or_tls_error，尚未取得可完整核實的正文；不判為非台語或過期。",
+      "missing_fields": [
+        "可讀的完整官方公告"
+      ],
+      "next_action": "10/7以官方瀏覽頁或原主辦公告補讀此教育局轉知資訊，取得正文後即判讀活動身分及日期。",
+      "reviewed_at": "2026-10-06T15:59:59+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+      "error": "network_or_tls_error"
+    },
+    "03f450ac3999d47f7d2e6631": {
+      "candidate_id": "03f450ac3999d47f7d2e6631",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+      "title": "國立臺灣圖書館",
+      "owner": "Codex",
+      "finding": "已讀完整官方公告及圖片（圖片為《就是要躁反》書封）。確認10/24 14:00–16:00、陳佳汝、國臺圖4045教室、自由參加；主題介紹台語及其他母語歌謠，卻未明示講座使用語言或現場台語演唱，不能只按主題認定全台語。",
+      "missing_fields": [
+        "本場台語口語／演唱或教學內容"
+      ],
+      "next_action": "10/7查國臺圖本場講座行事曆及主辦公告的語言資訊；若仍只列研究主題則明確保留，不能猜口白。",
+      "reviewed_at": "2026-10-06T15:59:59+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+      "content_sha256": "fb60f1fa5849098e987f1aaa03aba07dad72b4a2defe1c0cc2ecabc7777bfac2",
+      "document_version": 2
+    },
+    "922de7ea9931d58bc3ba5728": {
+      "candidate_id": "922de7ea9931d58bc3ba5728",
+      "source_url": "https://www.accupass.com/event/2607280236031295663510",
+      "title": "用台語講故事：講予囡仔聽的人權繪本",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:46:21+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2607280236031295663510",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "96b8a7fc2281e26a86b1b16c2f20a08ad9180a0566f3c550bcb21c12c794d38b",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "2e02ed88277aae539fed7a21": {
+      "candidate_id": "2e02ed88277aae539fed7a21",
+      "source_url": "https://www.accupass.com/event/2609211156474452477000",
+      "title": "共時的星叢系列座談二：重讀台灣現代文學/藝的「前衛」： 以共時星叢裡的賴和、蔡培火、世界語為例",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:46:22+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609211156474452477000",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "fa422a78c4160323f1c7cc7222eb4cfb364f0e99a13c40fb8b789fb66423bd3c",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "ae9b41dda95882cce536a08e": {
+      "candidate_id": "ae9b41dda95882cce536a08e",
+      "source_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+      "title": "115年九合一地方公職人員選舉反賄選宣導-臺語影片",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:46:24+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "f06853c710a832c114add119dbcc03104556c31f02890de5aeaa4c9ad76a57e3",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "5db9d0116590aac65fcc5312": {
+      "candidate_id": "5db9d0116590aac65fcc5312",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:46:25+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "09aa0cac7b6a84ead240160c": {
+      "candidate_id": "09aa0cac7b6a84ead240160c",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:46:25+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "3b4258252c35f92b70eb679f": {
+      "candidate_id": "3b4258252c35f92b70eb679f",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:46:25+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c097f2e07eb1d256a46a34db": {
+      "candidate_id": "c097f2e07eb1d256a46a34db",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-202當伯公遇見土地公",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:46:26+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "b1bc953c8f1798f1c9741a08": {
+      "candidate_id": "b1bc953c8f1798f1c9741a08",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:46:26+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "5ab65065446e6097b618375b": {
+      "candidate_id": "5ab65065446e6097b618375b",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "【特展】 「請戲-布袋戲一條街」特展",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:46:26+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "edf0d3e2802b8815c2b56d8e": {
+      "candidate_id": "edf0d3e2802b8815c2b56d8e",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+      "title": "《請戲—布袋戲一條街》特展：台語語音導覽",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:46:28+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "d6b15a9aefbe3b294f277fdf": {
+      "candidate_id": "d6b15a9aefbe3b294f277fdf",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+      "title": "《請戲–布袋戲一條街》特展",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:46:29+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c5c4cd62d6259d95dd4ab013": {
+      "candidate_id": "c5c4cd62d6259d95dd4ab013",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+      "title": "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:46:30+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "0e88f4c318f3f119d9bdb0d8f9e1d7c32c35b43f954064d0377e089debbb048c",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0dd7f2057c372351187e9568": {
+      "candidate_id": "0dd7f2057c372351187e9568",
+      "source_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+      "title": "2024.12.18 台灣國家正常化 台語復振袂當拖 記者會",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:48:19+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+      "prior_reason": "expired",
+      "prior_content_sha256": "33025e8ffbe72479011f63e3a4a92beb04d005dd81ecd20402af1d05cef689cb",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6c8b9913d65e15cefabacdc9": {
+      "candidate_id": "6c8b9913d65e15cefabacdc9",
+      "source_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+      "title": "二十週年故事 〈生湠〉 台語讀劇活動",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:50:38+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+      "prior_reason": "expired",
+      "prior_content_sha256": "05bd6fc1047ce321c7af78abf851b8e0c30bb05f2f240563297c86a3e0bbe304",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "dee18a145921d5cef96793d8": {
+      "candidate_id": "dee18a145921d5cef96793d8",
+      "source_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+      "title": "20250409「 地方政府無重視 | 立院預算烏白刣 | 台語家庭無未來」記者會",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:50:56+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "2a9cbf93d357a90f24b0bb1a2bfa8a367b9c9ad998eef518fd3ae21a19e30337",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "3fcdd80eb7beac074909affe": {
+      "candidate_id": "3fcdd80eb7beac074909affe",
+      "source_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+      "title": "參觀與預約 | 林本源園邸",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:52:15+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "c3ee33b1e2f2f72aa7bdb34c6153369f609a4bb00353db71876ec6cb43865848",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f7e02e5827ed2e38ce623cde": {
+      "candidate_id": "f7e02e5827ed2e38ce623cde",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+      "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:52:17+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "14abb40c2637cb4aa564bd6e56a44e7c9a616c945eaa48af9c73d5210d7e7131",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "7c2438d7753cf679ae8c808d": {
+      "candidate_id": "7c2438d7753cf679ae8c808d",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+      "title": "台語/手語說故事活動",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:52:18+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "e2b19bebaf8382d20cc3722ff9717af96bf29090a4adf08320f921842bfb3518",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f0bcead0a4c54899c0335ef8": {
+      "candidate_id": "f0bcead0a4c54899c0335ef8",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+      "title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:52:19+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "250f15cf55240b29a16003ec2040df1a2ef33dbddeb432f1ef8a68979e10d8e4",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "a08ee5ea7107bdc1b1407c10": {
+      "candidate_id": "a08ee5ea7107bdc1b1407c10",
+      "source_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+      "title": "2026「溪州提拔泥-泥巴野餐趣」",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為outside_region。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新官方地址及全部分場，確認是否新增北北桃場次，再依地區範圍判斷。",
+      "reviewed_at": "2026-10-06T15:52:21+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+      "prior_reason": "outside_region",
+      "prior_content_sha256": "363d657fb8cf608d24649141660777cb45ef5b4702e9ca381e6f5e558e9bd667",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "88c471912c644ff0fea112d0": {
+      "candidate_id": "88c471912c644ff0fea112d0",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+      "title": "2026-09-21 貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:52:22+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+      "prior_reason": "expired",
+      "prior_content_sha256": "edea4513cc865e7ceba3762784a495f4ff50e0945c0636235f760f0788105435",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f7f4b245cbedc9b1a59edc72": {
+      "candidate_id": "f7f4b245cbedc9b1a59edc72",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節 貢寮區公所 2026-09-21",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:52:23+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "prior_reason": "expired",
+      "prior_content_sha256": "edea4513cc865e7ceba3762784a495f4ff50e0945c0636235f760f0788105435",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "390321cc4d115711d3c67ed0": {
+      "candidate_id": "390321cc4d115711d3c67ed0",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動 秘書室 2026-09-21",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為outside_region。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新官方地址及全部分場，確認是否新增北北桃場次，再依地區範圍判斷。",
+      "reviewed_at": "2026-10-06T15:52:25+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "prior_reason": "outside_region",
+      "prior_content_sha256": "471705ff90b86145788e88e6d86af5c07fe13f0145c4dac189863a406464c520",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9e99e1e786f6a1a6349a2145": {
+      "candidate_id": "9e99e1e786f6a1a6349a2145",
+      "source_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+      "title": "2026-09-11 2026瑞芳黃金山城第4屆瓶燈節「山城拾光季」9月起精彩活動接力登場",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:52:26+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+      "prior_reason": "expired",
+      "prior_content_sha256": "2bcf3718ba12210056ff4484300742a39ac98b3f72f84d06d0827dcb041e65c5",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6eb146558935dd91098a7bb6": {
+      "candidate_id": "6eb146558935dd91098a7bb6",
+      "source_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+      "title": "教育成果-中小學教育-新北市政府教育局",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:52:28+08:00",
+      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "evidence_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "cf23e094d4e31670779bca22e3a172a23ba2736d2fd0d871c6600699622f20a6",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "5b932b0c3ff3908f54e91312": {
+      "candidate_id": "5b932b0c3ff3908f54e91312",
+      "source_url": "https://www.opentix.life/event/2077678411348267009",
+      "title": "2026秋天藝術節【藝術家對談】巴奈回家",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:29+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2077678411348267009",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "3c5cfa10f300c42792d01db3109652c57c01b86dc61b3a54fe6b7330670d323f",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9783169014ec2b85e262a4fe": {
+      "candidate_id": "9783169014ec2b85e262a4fe",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "11f1a8f1c1fe25e67c1e8068": {
+      "candidate_id": "11f1a8f1c1fe25e67c1e8068",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9aeacac9bb7b3bc50a426164": {
+      "candidate_id": "9aeacac9bb7b3bc50a426164",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "7c3dbe74c98586f806246d1c": {
+      "candidate_id": "7c3dbe74c98586f806246d1c",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "42cc5d7182ee9a956c447228": {
+      "candidate_id": "42cc5d7182ee9a956c447228",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c7b6c9dfd3cb3c0135aebbd0": {
+      "candidate_id": "c7b6c9dfd3cb3c0135aebbd0",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "2e05f52085b12a832550d13d": {
+      "candidate_id": "2e05f52085b12a832550d13d",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "52b5e5d95f1ba447cb5a7980": {
+      "candidate_id": "52b5e5d95f1ba447cb5a7980",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "8ab26ebf9986e6e9a9ee7b65": {
+      "candidate_id": "8ab26ebf9986e6e9a9ee7b65",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9144d42647c2c6874fd19fe1": {
+      "candidate_id": "9144d42647c2c6874fd19fe1",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:31+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0b4465d89335ba4b3eaa83c4": {
+      "candidate_id": "0b4465d89335ba4b3eaa83c4",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:32+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9cbfbc93f8ddea76be0cfeab": {
+      "candidate_id": "9cbfbc93f8ddea76be0cfeab",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:32+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "e679c2f176994938629bee05": {
+      "candidate_id": "e679c2f176994938629bee05",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:32+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0cc1ffb666e424fb080394db": {
+      "candidate_id": "0cc1ffb666e424fb080394db",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:32+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "91e375484e070820ffa35d85": {
+      "candidate_id": "91e375484e070820ffa35d85",
+      "source_url": "https://www.opentix.life/event/2102298802570960896",
+      "title": "《風笙 SS Project》薩克斯風Ｘ笙音樂會",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:34+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2102298802570960896",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "b3fda46da609eaefee86d99f94437b9182c9f19a055830eaee3bc4390f244219",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "a7ca9da2b192d60885014320": {
+      "candidate_id": "a7ca9da2b192d60885014320",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:35+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "83320c209abbe00b41d6e92c": {
+      "candidate_id": "83320c209abbe00b41d6e92c",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:35+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f982f2a208eaf3113745056f": {
+      "candidate_id": "f982f2a208eaf3113745056f",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:35+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "4107979a1f2d575c4e722e5e": {
+      "candidate_id": "4107979a1f2d575c4e722e5e",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:35+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "fd98af504902cab646d3fc10": {
+      "candidate_id": "fd98af504902cab646d3fc10",
+      "source_url": "https://www.opentix.life/event/1997861121855938561",
+      "title": "2026【唱 我們的歌 流行音樂故事展】",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:52:36+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1997861121855938561",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "c29cedd515611ca6c2326909dc5f8782577cedc04bfb25e73558b124440bc6e1",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "fbf770b73cc8075ce6b43083": {
+      "candidate_id": "fbf770b73cc8075ce6b43083",
+      "source_url": "https://www.opentix.life/event/2067491105969741825",
+      "title": "2026承功—新秀舞臺",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:40+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "09c9ac9abf0d32aee1be3ef4bf3ae0b35acf2232531bed9503852e5c80a9388d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "47ee554be0653aade3a3f5fa": {
+      "candidate_id": "47ee554be0653aade3a3f5fa",
+      "source_url": "https://www.opentix.life/event/2067491105969741825",
+      "title": "2026承功—新秀舞臺",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:40+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "09c9ac9abf0d32aee1be3ef4bf3ae0b35acf2232531bed9503852e5c80a9388d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "5dc4703b0cd0a82cd3cef6c4": {
+      "candidate_id": "5dc4703b0cd0a82cd3cef6c4",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "dbca52a079922d1f7ee4bbbf": {
+      "candidate_id": "dbca52a079922d1f7ee4bbbf",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c82c8648dc3a110541f85593": {
+      "candidate_id": "c82c8648dc3a110541f85593",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0bf64b37df0d7d655c6669ee": {
+      "candidate_id": "0bf64b37df0d7d655c6669ee",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "5a307bbd77455d480bb59c76": {
+      "candidate_id": "5a307bbd77455d480bb59c76",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c5865094151f814b775077d8": {
+      "candidate_id": "c5865094151f814b775077d8",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c22f7445d0596d467d4d81a0": {
+      "candidate_id": "c22f7445d0596d467d4d81a0",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f5cc29e7fbc563f738eb15f6": {
+      "candidate_id": "f5cc29e7fbc563f738eb15f6",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "ddb5bdd1d6b4ab141b5f28c7": {
+      "candidate_id": "ddb5bdd1d6b4ab141b5f28c7",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9e44ff3d8b894409a7de4c1f": {
+      "candidate_id": "9e44ff3d8b894409a7de4c1f",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0383c08e4f3fa1358e62d704": {
+      "candidate_id": "0383c08e4f3fa1358e62d704",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "0540a714c96964ec48e7bd7d": {
+      "candidate_id": "0540a714c96964ec48e7bd7d",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "527b87795f2923e1ed1dc4a2": {
+      "candidate_id": "527b87795f2923e1ed1dc4a2",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "a04ae9a335a49163cd1f32fe": {
+      "candidate_id": "a04ae9a335a49163cd1f32fe",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "cdcbf7c97b285e32a3775b32": {
+      "candidate_id": "cdcbf7c97b285e32a3775b32",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "b6a8bcea8bf7ccdc5afb8b35": {
+      "candidate_id": "b6a8bcea8bf7ccdc5afb8b35",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c86370fe6ee8b715e8046e0a": {
+      "candidate_id": "c86370fe6ee8b715e8046e0a",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "fd332bb9929817c536f35e54": {
+      "candidate_id": "fd332bb9929817c536f35e54",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6c2eba30eeb8c5133f8714a7": {
+      "candidate_id": "6c2eba30eeb8c5133f8714a7",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c5e710f098608c6e71021d4e": {
+      "candidate_id": "c5e710f098608c6e71021d4e",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "565be89a3016958bf6c17487": {
+      "candidate_id": "565be89a3016958bf6c17487",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "a38d9ad08722bb24fba2f4a5": {
+      "candidate_id": "a38d9ad08722bb24fba2f4a5",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c67041d2643cc5077f892eba": {
+      "candidate_id": "c67041d2643cc5077f892eba",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6bafd2ff83d5a4e282133b5b": {
+      "candidate_id": "6bafd2ff83d5a4e282133b5b",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "ae164c8c34dee61df06df897": {
+      "candidate_id": "ae164c8c34dee61df06df897",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "1f300a38b004f174ba920c5d": {
+      "candidate_id": "1f300a38b004f174ba920c5d",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "3cb5c85e1fbc1d7f60429244": {
+      "candidate_id": "3cb5c85e1fbc1d7f60429244",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "327df1f0252143a1ae60e4a9": {
+      "candidate_id": "327df1f0252143a1ae60e4a9",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "25b30ce6fc95dbe6c634fa37": {
+      "candidate_id": "25b30ce6fc95dbe6c634fa37",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "49f373e7f79ad6ed50e14cac": {
+      "candidate_id": "49f373e7f79ad6ed50e14cac",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "7c4552f4f92fd5370d3abb39": {
+      "candidate_id": "7c4552f4f92fd5370d3abb39",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "2078e80ef14127a7626a0dc2": {
+      "candidate_id": "2078e80ef14127a7626a0dc2",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6da5cc0aeacbbc1a2f46b618": {
+      "candidate_id": "6da5cc0aeacbbc1a2f46b618",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "e62afc30b1709ff60f239fc0": {
+      "candidate_id": "e62afc30b1709ff60f239fc0",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c7b4242d4bf4ebbe62f751bb": {
+      "candidate_id": "c7b4242d4bf4ebbe62f751bb",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "85c548699da906f6cdb7968a": {
+      "candidate_id": "85c548699da906f6cdb7968a",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "65c2f0a98e2a0e618c3ecc8a": {
+      "candidate_id": "65c2f0a98e2a0e618c3ecc8a",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "092218e0ca0f52e92a105436": {
+      "candidate_id": "092218e0ca0f52e92a105436",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "7002b7c7339c91c68c1c58da": {
+      "candidate_id": "7002b7c7339c91c68c1c58da",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "ef477d97c91b96ead82562ad": {
+      "candidate_id": "ef477d97c91b96ead82562ad",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "6a38a09a08a36c29fdb86a00": {
+      "candidate_id": "6a38a09a08a36c29fdb86a00",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:41+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "1ed312c294d17e93c0ac8f72": {
+      "candidate_id": "1ed312c294d17e93c0ac8f72",
+      "source_url": "https://www.opentix.life/event/2079832717837029377",
+      "title": "《奧義書》太古踏舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:43+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "104434fb0730607d7a7d7cf202490e2370f001dbd123db3a6ccb1a73ebf42b76",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "d52e86bd9feff58950d21624": {
+      "candidate_id": "d52e86bd9feff58950d21624",
+      "source_url": "https://www.opentix.life/event/2079832717837029377",
+      "title": "《奧義書》太古踏舞團",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:43+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "104434fb0730607d7a7d7cf202490e2370f001dbd123db3a6ccb1a73ebf42b76",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "7fe5cc72b1fb72aa3138b3dc": {
+      "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:44+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "e9757894bd4e03f7f1e346b389d565f7ca7062723015d8e2bc23656dca3de06b",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "aa7f8866e94f7ad5ff83c4d2": {
+      "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:52:44+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "e9757894bd4e03f7f1e346b389d565f7ca7062723015d8e2bc23656dca3de06b",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "97597c65d12135baddad246e": {
+      "candidate_id": "97597c65d12135baddad246e",
+      "source_url": "https://www.opentix.life/event/2095402846518976512",
+      "title": "在車上",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:45+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "bdd6e282a99125c850dc44db1faa5e1fb9be6e2d9fc4b7f474cd6955419d406d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9f56f9fb86feb2ed1dae79d1": {
+      "candidate_id": "9f56f9fb86feb2ed1dae79d1",
+      "source_url": "https://www.opentix.life/event/2095402846518976512",
+      "title": "在車上",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_taigi。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀本場口白／演出語言及官方異動，排除團隊履歷或其他分場的語言；取得本場證據再決定。",
+      "reviewed_at": "2026-10-06T15:52:45+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+      "prior_reason": "not_taigi",
+      "prior_content_sha256": "bdd6e282a99125c850dc44db1faa5e1fb9be6e2d9fc4b7f474cd6955419d406d",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "3b7c9208f2dc9d276cf57aaa": {
+      "candidate_id": "3b7c9208f2dc9d276cf57aaa",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+      "title": "十三行博物館個人化導覽服務",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:53:05+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "ada8668300bee4bb9fd1c7327f4da2487d2a2bd92379cd4fe5604dcb34b1cd41",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "d7c732aae15b836240e96d41": {
+      "candidate_id": "d7c732aae15b836240e96d41",
+      "source_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+      "title": "地名沿革",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:53:06+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "77b7b7b23d79160df29d425bcfb159c93143a043e6cc85e91f305a7b0868d696",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "afa44c408e05350163c1b5b0": {
+      "candidate_id": "afa44c408e05350163c1b5b0",
+      "source_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為expired。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀官方場次表，確認有無新增未來北北桃台語場次；全數已過期才按最新日期重結案。",
+      "reviewed_at": "2026-10-06T15:53:07+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "prior_reason": "expired",
+      "prior_content_sha256": "4d04e99ebb4395a4d03a7cb898d907c35797c2c8305466132bc21586ba855c4a",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "9e57e3cab7f30e9de50b595c": {
+      "candidate_id": "9e57e3cab7f30e9de50b595c",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "title": "永春分館「臺灣語初級研習班」，歡迎報名參加!",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為already_covered。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新正式場次表，逐場比對既有ID、時間、場館；沒有漏場才重新結案，新增場次接回核實。",
+      "reviewed_at": "2026-10-06T15:53:08+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "prior_reason": "already_covered",
+      "prior_content_sha256": "69e9ec040c8ba18c74dae6adab23cd2cf55b4561464ca9e16d73492f2798ab8b",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "4166922a4bafe35b76954780": {
+      "candidate_id": "4166922a4bafe35b76954780",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+      "title": "萬華分館「輪轉台語冊在此」主題書展，歡迎一起來讓 「台語冊，轉起來！」",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:53:09+08:00",
+      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "406dd4f56e9f140f480a57c45f05f86f95969ed731324bf91c706ceef1cdc1d6",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "867837fdc2d5bcee4aa2f552": {
+      "candidate_id": "867837fdc2d5bcee4aa2f552",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+      "title": "柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」鄉土語言暨電子資源閱讀推廣活動",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:53:11+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "a9df5d9811b0252b2af242aa0a323e20ede7c9e0b7841d5f1106f13c45cb3201",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f2088ecaf754ab4d1f8914c4": {
+      "candidate_id": "f2088ecaf754ab4d1f8914c4",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+      "title": "舊莊分館—「臺語拉吉歐」主題書展",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:53:12+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "7f51a6f21f791796bd8ea562965cf2055802468925dd063baae329fcb864fc5c",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c8bb350d70a3e4fd75104af7": {
+      "candidate_id": "c8bb350d70a3e4fd75104af7",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+      "title": "石牌分館「聽母語、說母語、讀母語」圖書資料展",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為resource_only。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀整份公告，確認是否從下載、書展或目錄新增可參加的台語分場，不能只沿用舊資源分類。",
+      "reviewed_at": "2026-10-06T15:53:13+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+      "prior_reason": "resource_only",
+      "prior_content_sha256": "07302fe6c0fcfbd842809938a2ec8b89b68cb334e87d1ef6ac70822fb927dd35",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "c34f28406d311cf244835759": {
+      "candidate_id": "c34f28406d311cf244835759",
+      "source_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+      "title": "行動博物館模組申請計畫 | 新北市立淡水古蹟博物館",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：network_or_tls_error；原結案理由為not_event。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀整份公告，確認是否新增實際活動日期、時間及台語內容；單純新聞或影片仍依最新證據结案。",
+      "reviewed_at": "2026-10-06T15:53:35+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+      "prior_reason": "not_event",
+      "prior_content_sha256": "9c1e241389466657033798f36bf26691ce1fa65db61d9d3a59271e093ac2070f",
+      "verification_status": "source_unavailable",
+      "verification_error": "network_or_tls_error",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "bd0d014308f31004258b51c8": {
+      "candidate_id": "bd0d014308f31004258b51c8",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+      "title": "2026-09-21 彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動",
+      "owner": "Codex",
+      "finding": "本次即時比對發現主公告或補充證據已不符合舊版本；原結案理由為outside_region。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "重讀最新官方地址及全部分場，確認是否新增北北桃場次，再依地區範圍判斷。",
+      "reviewed_at": "2026-10-06T15:53:36+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+      "prior_reason": "outside_region",
+      "prior_content_sha256": "471705ff90b86145788e88e6d86af5c07fe13f0145c4dac189863a406464c520",
+      "verification_status": "changed_or_identity_mismatch",
+      "verification_error": null,
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f1fab16f749f9e057aa53c23": {
+      "candidate_id": "f1fab16f749f9e057aa53c23",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:38+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "505d41497721a015fcc5d856": {
+      "candidate_id": "505d41497721a015fcc5d856",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:39+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "f753ad9f463c9f37ec9eac86": {
+      "candidate_id": "f753ad9f463c9f37ec9eac86",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:40+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "2e512951ec64e63f6ac80f1c": {
+      "candidate_id": "2e512951ec64e63f6ac80f1c",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:41+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "e4ff3be445fd1fafd65155e2": {
+      "candidate_id": "e4ff3be445fd1fafd65155e2",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:42+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "e906dc8a59ca1743c038df0e": {
+      "candidate_id": "e906dc8a59ca1743c038df0e",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:43+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "2874e18b14fb8b480610e5fa": {
+      "candidate_id": "2874e18b14fb8b480610e5fa",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:45+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
+    },
+    "fc59a35631358d0ee21d2a0b": {
+      "candidate_id": "fc59a35631358d0ee21d2a0b",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "owner": "Codex",
+      "finding": "本次即時重查失敗：http_400；原結案理由為irrelevant_keyword。舊決定暫不生效，沒有將本次比對當作新內容已讀。",
+      "missing_fields": [
+        "可重新支持原判斷的最新官方正文及必要補充證據"
+      ],
+      "next_action": "先恢復官方全文讀取；若OPENTIX API已下架，以可核對標題及日期的官方下架HTML查證，不把HTTP錯誤當過期。重讀台語詞出現的完整上下文，區分命名、履歷與實際台語活动，不僅憑關鍵字排除。",
+      "reviewed_at": "2026-10-06T15:53:46+08:00",
+      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+      "prior_reason": "irrelevant_keyword",
+      "prior_content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+      "verification_status": "source_unavailable",
+      "verification_error": "http_400",
+      "review_kind": "revalidation_failed_full_reread_scheduled"
     }
   },
-  "updated_at": "2026-10-06T15:55:55+08:00"
+  "updated_at": "2026-10-06T16:01:47+08:00"
 }

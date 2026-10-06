@@ -1,0 +1,155 @@
+{
+  "activity_id": "review_elephant_294_20261008_1900",
+  "method": "whole-paragraph-v1",
+  "writer": "Codex",
+  "independent_or_native_review": false,
+  "source_understanding": "國台語例會，以網路用語的放下、幽默和無奈為主題；另有摺紙飛機。沒有指定講者、參加年齡、名額或費用，均不補猜。",
+  "language_review": "整句自檢後將開頭由主办的被動敘述改成主辦單位欲辦例會的主動句；保留官方主題，避免宣稱全台語。摺按實際辭典折疊義使用，未編造複合詞音讀。",
+  "fact_review": "逐項對照主辦、294次、主題、提示問題、紙飛機、10/8拜四19:00–21:00、完整地址及未知費用；沒有添加講者或限制。",
+  "draft": {
+    "summary_taigi": "大象進階國際演講會 Elephant Advanced Toastmasters Club這擺欲佮逐家講「洗洗睡(較早睏，較好眠)」：有的代誌免想傷濟，放落來，日子就會較自在。現場嘛有摺紙飛機的小活動。",
+    "description_taigi": "「大象進階國台語國際演講會第294次例會~洗洗睡」由大象進階國際演講會 Elephant Advanced Toastmasters Club主辦，這擺的主題是「洗洗睡(較早睏，較好眠)」。\n\n網路頂講「洗洗睡」，有時是講「毋免閣想遐濟，放落就好」，嘛有「看起來無啥希望矣」的意思。這句話有咧講笑，嘛有一寡無奈；這擺的主題就是欲提醒逐家，有的代誌免遐認真，笑一下仔，日子會較自在。最近敢有一件代誌，予你想欲講「洗洗睡」？\n\n現場閣有摺紙飛機的小活動，欲共煩惱摺起來，予夢想飛出去。\n\n時間是2026年10月8日（拜四）19:00～21:00，所在佇台北市中正區寧波東街1號4樓。所費猶未公告，愛向主辦單位問，抑是看報名頁。",
+    "uncertain_terms": []
+  },
+  "final": {
+    "schema_version": 1,
+    "activity_id": "review_elephant_294_20261008_1900",
+    "source_hash": "2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad",
+    "guide_hash": "c04ea4a6eaf194dd8a6288c13412d0c5703db9e6a4826ef26bdbeab12db7e711",
+    "summary_taigi": "大象進階國際演講會 Elephant Advanced Toastmasters Club這擺欲佮逐家講「洗洗睡(較早睏，較好眠)」：有的代誌免想傷濟，放落來，日子就會較自在。現場嘛有摺紙飛機的小活動。",
+    "description_taigi": "大象進階國際演講會 Elephant Advanced Toastmasters Club欲辦第294次例會，主題是「洗洗睡(較早睏，較好眠)」。\n\n網路頂講「洗洗睡」，有時是講「毋免閣想遐濟，放落就好」，嘛有「看起來無啥希望矣」的意思。這句話有咧講笑，嘛有一寡無奈；這擺的主題就是欲提醒逐家，有的代誌免遐認真，笑一下仔，日子會較自在。最近敢有一件代誌，予你想欲講「洗洗睡」？\n\n現場閣有摺紙飛機的小活動，欲共煩惱摺起來，予夢想飛出去。\n\n時間是2026年10月8日（拜四）19:00～21:00，所在佇台北市中正區寧波東街1號4樓。所費猶未公告，愛向主辦單位問，抑是看報名頁。",
+    "uncertain_terms": [],
+    "review": {
+      "facts_match": true,
+      "natural_taiwanese": true,
+      "people_and_content_complete": true,
+      "issues": [],
+      "evidence": [
+        {
+          "claim": "大象進階國際演講會 Elephant Advanced Toastmasters Club",
+          "quote": "大象進階國際演講會 Elephant Advanced Toastmasters Club"
+        },
+        {
+          "claim": "第294次例會",
+          "quote": "第294次例會"
+        },
+        {
+          "claim": "洗洗睡(較早睏，較好眠)",
+          "quote": "洗洗睡(較早睏，較好眠)"
+        },
+        {
+          "claim": "毋免閣想遐濟，放落就好",
+          "quote": "別再糾結、放下吧"
+        },
+        {
+          "claim": "看起來無啥希望矣",
+          "quote": "沒希望啦"
+        },
+        {
+          "claim": "有咧講笑，嘛有一寡無奈",
+          "quote": "它帶著一點調侃、一點幽默、一點無奈"
+        },
+        {
+          "claim": "有的代誌免遐認真，笑一下仔，日子會較自在",
+          "quote": "不必太認真+笑一笑，生活就會自在許多"
+        },
+        {
+          "claim": "最近敢有一件代誌，予你想欲講「洗洗睡」",
+          "quote": "最近有沒有一件事, 讓你想說「洗洗睡」啦"
+        },
+        {
+          "claim": "摺紙飛機的小活動",
+          "quote": "摺紙飛機活動"
+        },
+        {
+          "claim": "欲共煩惱摺起來，予夢想飛出去",
+          "quote": "輕輕折起煩惱，放飛夢想"
+        },
+        {
+          "claim": "2026年10月8日（拜四）",
+          "quote": "2026年10月8日（星期四）"
+        },
+        {
+          "claim": "19:00",
+          "quote": "2026-10-08T19:00:00+08:00"
+        },
+        {
+          "claim": "21:00",
+          "quote": "2026-10-08T21:00:00+08:00"
+        },
+        {
+          "claim": "台北市中正區寧波東街1號4樓",
+          "quote": "台北市中正區寧波東街1號4樓"
+        },
+        {
+          "claim": "所費猶未公告，愛向主辦單位問，抑是看報名頁",
+          "quote": "費用未公告，請洽主辦單位或查看報名頁。"
+        }
+      ]
+    },
+    "dictionary_evidence": [
+      {
+        "query": "摺",
+        "source_url": "https://www.moedict.tw/t/%E6%91%BA.json",
+        "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+        "status": "ok",
+        "checked_at": "2026-10-06T15:56:05+08:00",
+        "title": "摺",
+        "readings": [
+          {
+            "tailo": "tsih",
+            "entry_id": "10558",
+            "variants": [],
+            "definitions": [
+              {
+                "meaning_zh": "折疊。",
+                "part_of_speech": "動",
+                "examples": [
+                  {
+                    "taiwanese": "你去摺衫好無？",
+                    "tailo": "Lí khì tsih-sann hó--bô? ",
+                    "mandarin": "你去摺衣服好嗎？"
+                  },
+                  {
+                    "taiwanese": "曝焦收入來的衫愛摺摺咧。",
+                    "tailo": "Pha̍k-ta siu--ji̍p-lâi ê sann ài tsih-tsih--leh. ",
+                    "mandarin": "曬乾收進來的衣服要折一折。"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "editor": {
+      "provider": "codex",
+      "model": "未提供"
+    },
+    "edited_at": "2026-10-06T15:57:42+08:00"
+  },
+  "source": {
+    "activity_id": "review_elephant_294_20261008_1900",
+    "source_hash": "2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad",
+    "activity": {
+      "id": "review_elephant_294_20261008_1900",
+      "title": "大象進階國台語國際演講會第294次例會~洗洗睡",
+      "description": "==========================\n📍 地點：台北市中正區寧波東街1號4樓\n📅 日期：2026年10月8日（星期四）\n🕖 時間：晚上7點～9點\n==========================\n大象進階國台語國際演講會第294次例會~邀請您 +++++++++++++++++++++++++ 在網路世界裡，「洗洗睡」是一句流行語 意思是「別再糾結、放下吧、沒希望啦 它帶著一點調侃、一點幽默、一點無奈 但也帶著一種輕鬆的智慧(哈哈!!!) 其實是提醒我們，有些事.... 不必太認真+笑一笑，生活就會自在許多 其中還有小活動: 摺紙飛機活動, 輕輕折起煩惱，放飛夢想。 主題: 洗洗睡(較早睏，較好眠) 問題: 最近有沒有一件事, 讓你想說「洗洗睡」啦",
+      "city": "臺北市",
+      "district": "中正區",
+      "category": "台語活動",
+      "start_time": "2026-10-08T19:00:00+08:00",
+      "end_time": "2026-10-08T21:00:00+08:00",
+      "venue": "台北市中正區寧波東街1號4樓",
+      "address": "台北市中正區寧波東街1號4樓",
+      "organizer": "大象進階國際演講會 Elephant Advanced Toastmasters Club",
+      "source_platform": "Accupass 活動通",
+      "source_url": "https://www.accupass.com/event/2610030629251925712636",
+      "registration_url": "https://www.accupass.com/event/2610030629251925712636",
+      "price_info": "費用未公告，請洽主辦單位或查看報名頁。",
+      "is_free": null
+    },
+    "result_file": "review_elephant_294_20261008_1900-2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad.json"
+  },
+  "reviewed_at": "2026-10-06T15:57:42+08:00"
+}

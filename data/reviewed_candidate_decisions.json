@@ -11899,8 +11899,8 @@
       "source_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
       "title": "〔活動分享〕米特動物樂園《Do Re Mi 喜咧兜？》",
       "reason": "already_covered",
-      "rationale": "本分享文未有獨立新場次。已追查同劇最新官方OPENTIX完整節目與API，2027/1/9、1/10臺北球劇場四場均已刊登（2084531968815738881、2085288395957346305、2085288476346302465、2085288541670158337）；不因舊分享文重複新增，不將高雄、臺中、宜蘭巡演納入。",
-      "reviewed_at": "2026-10-03T07:16:34+08:00",
+      "rationale": "2026/10/6重新閱讀完整分享文及OPENTIX完整節目、各場館注意事項及全部12場清單；臺北1/9、1/10四場ID、起始時間及球劇場均與既有catalog相符，沒有新增北北桃場次。保存新官方指紋後結案，不改既有四場文案。",
+      "reviewed_at": "2026-10-06T15:59:59+08:00",
       "evidence_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
       "content_sha256": "8f6e38cf3897f4d38df9f31dbfca9c64212428f5fb0bb02f5d5ef3a85be3803d",
       "quotes": [
@@ -11910,16 +11910,17 @@
       "supporting_evidence": [
         {
           "url": "https://csm.api.opentix.life/programs/2083124898860347393",
-          "content_sha256": "f2bbd4472d2dcba123db4e16be6eb04e3c33da7990836c0c75c93a12cb9b4175",
+          "content_sha256": "4e4ba8480bf2d70c00940b981046b2dc4bcd4d02892aac6983cde077114fa346",
           "quotes": [
             "2084531968815738881",
             "2085288541670158337",
             "本節目多數段落將以台語演出"
           ],
           "rationale": "完整官方場次資料對照既有catalog，北北桃四場均已刊登。",
-          "reviewed_at": "2026-10-03T07:16:34+08:00"
+          "reviewed_at": "2026-10-06T15:59:59+08:00"
         }
-      ]
+      ],
+      "document_version": 2
     },
     {
       "source_id": "gameislearning",

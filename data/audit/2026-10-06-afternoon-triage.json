@@ -3,11 +3,10 @@
   "reviewed_at": "2026-10-06T15:55:55+08:00",
   "baseline_revision": "273897c",
   "backlog_before": 394,
-  "backlog_after": 166,
+  "backlog_after": 165,
   "existing_closures_reconfirmed": 217,
-  "new_closures": 8,
+  "new_closures": 9,
   "verified_pending_editorial": 3,
-  "followups_updated": 23,
   "recheck_report": {
     "schema_version": 1,
     "checked_at": "2026-10-06T15:53:46+08:00",
@@ -3688,13 +3687,120 @@
     }
   },
   "publication": {
-    "status": "not_yet_submitted",
-    "published_new_count": 0,
-    "urgent_activity_id": "review_elephant_294_20261008_1900"
+    "checked_at": "2026-10-06T15:59:25+08:00",
+    "html_url": "https://jialiangni.github.io/taigi_activities/",
+    "ics_url": "https://jialiangni.github.io/taigi_activities/taigi_activities.ics",
+    "html_sha256": "88d8bbe97317199bc58c5744ce9a88d56d61f12d790321024c85d171b4a7f8eb",
+    "ics_sha256": "1d399d8e47bfd9fe7d8e2f517d7af3f3d44e76099cfec205939e3bab3c81fe30",
+    "live_count": 232,
+    "published_new_ids": [
+      "review_elephant_294_20261008_1900"
+    ],
+    "pending_not_published": [
+      "opentix_2100800611242684416",
+      "review_taishan_20261017_1000"
+    ],
+    "github_run": "https://github.com/Jialiangni/taigi_activities/actions/runs/37432963795",
+    "github_conclusion": "success",
+    "status": "published_and_verified",
+    "published_new_count": 1,
+    "editorial_submit_commit": "2a303415a0fcead1b713d7752f7e9e6d033bbf51",
+    "ingest_commit": "037d04b"
   },
   "tests": {
     "run": 271,
     "result": "OK",
     "skipped": 1
-  }
+  },
+  "additional_review": {
+    "decisions": [
+      {
+        "candidate_id": "26fc8fd52baf542daaf8e1a6",
+        "source_id": "le_chang",
+        "source_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+        "title": "〔活動分享〕米特動物樂園《Do Re Mi 喜咧兜？》",
+        "reason": "already_covered",
+        "rationale": "2026/10/6重新閱讀完整分享文及OPENTIX完整節目、各場館注意事項及全部12場清單；臺北1/9、1/10四場ID、起始時間及球劇場均與既有catalog相符，沒有新增北北桃場次。保存新官方指紋後結案，不改既有四場文案。",
+        "reviewed_at": "2026-10-06T15:59:59+08:00",
+        "evidence_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+        "content_sha256": "8f6e38cf3897f4d38df9f31dbfca9c64212428f5fb0bb02f5d5ef3a85be3803d",
+        "quotes": [
+          "《Do Re Mi 喜咧兜？》",
+          "故事結合「台語」"
+        ],
+        "supporting_evidence": [
+          {
+            "url": "https://csm.api.opentix.life/programs/2083124898860347393",
+            "content_sha256": "4e4ba8480bf2d70c00940b981046b2dc4bcd4d02892aac6983cde077114fa346",
+            "quotes": [
+              "2084531968815738881",
+              "2085288541670158337",
+              "本節目多數段落將以台語演出"
+            ],
+            "rationale": "完整官方場次資料對照既有catalog，北北桃四場均已刊登。",
+            "reviewed_at": "2026-10-06T15:59:59+08:00"
+          }
+        ],
+        "document_version": 2
+      }
+    ],
+    "followups": [
+      {
+        "candidate_id": "67c854218c7f7da13359b728",
+        "source_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+        "title": "桃園市政府教育局",
+        "owner": "Codex",
+        "finding": "官方教育局公告在本機重讀回覆network_or_tls_error，尚未取得可完整核實的正文；不判為非台語或過期。",
+        "missing_fields": [
+          "可讀的完整官方公告"
+        ],
+        "next_action": "10/7以官方瀏覽頁或原主辦公告補讀此教育局轉知資訊，取得正文後即判讀活動身分及日期。",
+        "reviewed_at": "2026-10-06T15:59:59+08:00",
+        "next_review_at": "2026-10-07T07:00:00+08:00",
+        "evidence_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+        "error": "network_or_tls_error"
+      },
+      {
+        "candidate_id": "03f450ac3999d47f7d2e6631",
+        "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+        "title": "國立臺灣圖書館",
+        "owner": "Codex",
+        "finding": "已讀完整官方公告及圖片（圖片為《就是要躁反》書封）。確認10/24 14:00–16:00、陳佳汝、國臺圖4045教室、自由參加；主題介紹台語及其他母語歌謠，卻未明示講座使用語言或現場台語演唱，不能只按主題認定全台語。",
+        "missing_fields": [
+          "本場台語口語／演唱或教學內容"
+        ],
+        "next_action": "10/7查國臺圖本場講座行事曆及主辦公告的語言資訊；若仍只列研究主題則明確保留，不能猜口白。",
+        "reviewed_at": "2026-10-06T15:59:59+08:00",
+        "next_review_at": "2026-10-07T07:00:00+08:00",
+        "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+        "content_sha256": "fb60f1fa5849098e987f1aaa03aba07dad72b4a2defe1c0cc2ecabc7777bfac2",
+        "document_version": 2
+      }
+    ]
+  },
+  "remaining_classes": {
+    "activity_evidence_followups": 49,
+    "prior_closure_evidence_changed_or_unavailable": 116
+  },
+  "post_publish_preservation": {
+    "protected_ids": 149,
+    "existing_editions_unchanged": 168,
+    "existing_catalog_rows_unchanged": 317
+  },
+  "urgent_editorial_record": "data/audit/2026-10-06-elephant-editorial.json",
+  "additional_image_review": {
+    "url": "https://www.ntl.edu.tw/wSite/public/Img/610116213771.jpg",
+    "sha256": "391218402cd1a7b5ad80f284a78bcb5f44e784bf1c537687f61e9489973b8707",
+    "finding": "書封：就是要躁反、臺灣獨立音樂二十年紀實、陳佳汝著；未提供本場講座使用語言。",
+    "visually_read": true
+  },
+  "failed_revalidation_followups_assigned": 113,
+  "planned_official_source_batches": {
+    "2026-10-07": 25,
+    "2026-10-08": 25,
+    "2026-10-09": 25,
+    "2026-10-10": 9
+  },
+  "full_read_followups_updated": 25,
+  "remaining_all_owned": true
 }
