@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "activity_id": "review_taishan_20261017_1000",
+  "source_hash": "57373331d92aeb0737c6308d6752131f43aac0959e60b2e8ccc1385bb7f20dc7",
+  "guide_hash": "c04ea4a6eaf194dd8a6288c13412d0c5703db9e6a4826ef26bdbeab12db7e711",
+  "summary_taigi": "陳柏宇(BOY)老師佇泰山分館帶國小學生佮親子讀故事、認捌空氣鳳梨，閣做萬聖節主題的手作。活動免錢，愛先用網路報名。",
+  "description_taigi": "泰山分館這場「萬聖空氣鳳梨小精靈」，由陳柏宇(BOY)老師帶領。先透過繪本、故事抑是主題閱讀，認捌自然環境佮永續生活；續落來看空氣鳳梨的生長特色、照顧方法，佮植物和環境的關係。最後用空氣鳳梨搭配簡單材料，做出萬聖節小精靈，嘛思考平常按怎愛護環境。\n\n10/17 10:00到12:00，佇泰山分館5F研習教室辦理。對象是國小學生、親子組，共20人，活動免錢。10/2開始開放網路報名，額滿為止；報名愛有新北市立圖書館借閱證，報名表愛填參加者的借閱證資料。若猶未辦證，請照公告先辦；這場無線上候補，干焦現場候補。\n\n請留會收著信的email，館方會佇活動前1日14點前寄通知，無另外打電話。無法度來請提早通知；當日超過10分鐘無到，就當做取消。若欲參加文化部「培育台語家庭計畫」集點，愛提供身分證字號。重複報名會予館方確認後刪除；報名資料干焦用來查資格，活動結束後銷毀。",
+  "uncertain_terms": [],
+  "review": {
+    "facts_match": true,
+    "natural_taiwanese": true,
+    "people_and_content_complete": true,
+    "issues": [],
+    "evidence": [
+      {
+        "claim": "陳柏宇(BOY)老師",
+        "quote": "講師：陳柏宇(BOY) 老師"
+      },
+      {
+        "claim": "繪本、故事抑是主題閱讀",
+        "quote": "透過繪本、故事或主題閱讀"
+      },
+      {
+        "claim": "空氣鳳梨的生長特色、照顧方法",
+        "quote": "空氣鳳梨的特色、照護方式"
+      },
+      {
+        "claim": "萬聖節小精靈",
+        "quote": "萬聖空氣鳳梨小精靈"
+      },
+      {
+        "claim": "國小學生、親子組",
+        "quote": "國小學童、親子組"
+      },
+      {
+        "claim": "共20人",
+        "quote": "活動人數:20人"
+      },
+      {
+        "claim": "活動免錢",
+        "quote": "費用：免費"
+      },
+      {
+        "claim": "網路報名",
+        "quote": "網路報名"
+      },
+      {
+        "claim": "借閱證",
+        "quote": "新北市立圖書館借閱證"
+      },
+      {
+        "claim": "無線上候補",
+        "quote": "未提供線上候補"
+      },
+      {
+        "claim": "超過10分鐘無到",
+        "quote": "逾時10分鐘未到者，視同取消"
+      },
+      {
+        "claim": "培育台語家庭計畫",
+        "quote": "培育台語家庭計畫"
+      },
+      {
+        "claim": "寄通知",
+        "quote": "發送email活動通知"
+      }
+    ]
+  },
+  "dictionary_evidence": [
+    {
+      "query": "照顧",
+      "source_url": "https://www.moedict.tw/t/%E7%85%A7%E9%A1%A7.json",
+      "notice": "萌典整理的教育部辭典資料；詞條收錄不等於現行推薦用字認證。",
+      "status": "ok",
+      "checked_at": "2026-10-06T17:19:05+08:00",
+      "title": "照顧",
+      "readings": [
+        {
+          "tailo": "tsiàu-kòo",
+          "entry_id": "9762",
+          "variants": [],
+          "definitions": [
+            {
+              "meaning_zh": "照料、看顧、幫助。",
+              "part_of_speech": "動",
+              "examples": [
+                {
+                  "taiwanese": "幼囡仔需要爸母全心的照顧。",
+                  "tailo": "Iù gín-á su-iàu pē-bú tsuân-sim ê tsiàu-kòo. ",
+                  "mandarin": "幼兒需要父母親全心的照顧。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editor": {
+    "provider": "codex",
+    "model": "gpt-6-astra"
+  },
+  "edited_at": "2026-10-06T17:19:05+08:00"
+}
