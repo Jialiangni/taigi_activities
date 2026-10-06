@@ -3394,5 +3394,15 @@
     "python": "274 tests run: 273 passed, 1 skipped",
     "diff_check": "passed"
   },
-  "publication": "本核實提交僅新增待編輯；尚未計入本輪上站數。10/7場另走緊急地端編輯與正式部署查核。"
+  "publication": "本核實提交僅新增待編輯；尚未計入本輪上站數。10/7場另走緊急地端編輯與正式部署查核。",
+  "publication_followup": {
+    "audit": "data/audit/2026-10-06-fish-editorial.json",
+    "published_activity_ids": [
+      "opentix_2054754824953241601"
+    ],
+    "new_qualified_still_in_editorial_queue": 38,
+    "total_editorial_queue": 40,
+    "prior_catalog_records_preserved": true,
+    "prior_editorial_records_preserved": true
+  }
 }
