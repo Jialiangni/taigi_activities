@@ -6,7 +6,7 @@ from pathlib import Path
 from crawler.candidate_triage import document, digest, matches, load, PATH
 from crawler.collection import relevant
 from crawler.reviewed_opentix_language import content, validate, claims, notice_valid
-from scripts.review_triage import apply, export, followup
+from scripts.review_triage import apply, export, followup, recheck_closed
 from datetime import datetime, timedelta
 from crawler.collection import TAIPEI
 
@@ -20,6 +20,40 @@ class Client:
 
 
 class TriageTests(unittest.TestCase):
+    def test_saved_closures_do_not_starve_overdue_and_new_candidates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); (root/'data').mkdir()
+            due = dict(self.c, id='due', source_url='https://example.org/due')
+            new = dict(self.c, id='new', source_url='https://example.org/new')
+            (root/'data/review_backlog.json').write_text(json.dumps({'candidates':[self.c, new, due]}))
+            (root/PATH).write_text(json.dumps({'schema_version':1, 'decisions':[self.row]}))
+            past = (datetime.now(TAIPEI)-timedelta(days=1)).isoformat()
+            (root/'data/review_followups.json').write_text(json.dumps({'cases':{'due':{'next_review_at':past}}}))
+            result = export(root, root/'out.json', limit=2, client=Client(self.body))
+            self.assertEqual(['due','new'], [r['candidate']['id'] for r in result])
+
+    def test_recheck_only_removes_matching_live_evidence_and_keeps_failure(self):
+        from crawler.collection import CollectionError
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); (root/'data').mkdir()
+            changed = dict(self.c, id='changed', source_url='https://example.org/changed')
+            failed = dict(self.c, id='failed', source_url='https://example.org/failed')
+            fresh = dict(self.c, id='fresh', source_url='https://example.org/fresh')
+            p = root/'data/review_backlog.json'
+            p.write_text(json.dumps({'candidates':[self.c,changed,failed,fresh]}))
+            rows = [dict(self.row, candidate_id=c['id'], source_url=c['source_url'], evidence_url=c['source_url']) for c in [self.c,changed,failed]]
+            (root/PATH).write_text(json.dumps({'schema_version':1,'decisions':rows}))
+            owner = self
+            class Pages:
+                def get(self, url):
+                    if url == failed['source_url']: raise CollectionError('http_429')
+                    return (owner.body.replace('2025','2027') if url == changed['source_url'] else owner.body), {'final_url':url}
+            report = recheck_closed(root, root/'out.json', client=Pages())
+            self.assertEqual(1, report['confirmed_closed'])
+            self.assertEqual(['changed','failed','fresh'],[c['id'] for c in json.loads(p.read_text())['candidates']])
+            self.assertEqual(['confirmed_closed','changed_or_identity_mismatch','source_unavailable'],[r['status'] for r in report['checks']])
+            self.assertEqual(rows,json.loads((root/PATH).read_text())['decisions'])
+
     def test_public_registration_form_is_not_a_google_search_page(self):
         from crawler.verified import detail_url
         url = 'https://docs.google.com/forms/d/e/public-form-id/viewform?usp=send_form'

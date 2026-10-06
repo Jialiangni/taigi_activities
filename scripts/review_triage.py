@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from crawler.collection import Client, TAIPEI
+from crawler.collection import Client, CollectionError, TAIPEI
 from crawler.candidate_triage import PATH, document, digest, evidence_url, load, matches, validate
 from crawler.ai_editorial import save_json
 
@@ -22,6 +22,17 @@ def export(root, output, limit=25, client=None):
     cases_path = root / 'data/review_followups.json'
     cases = json.loads(cases_path.read_text()).get('cases', {}) if cases_path.exists() else {}
     now = datetime.now(TAIPEI)
+    dispositions = load(root)
+    # Old closures that need a network retry must not starve unreviewed events.
+    # A saved decision alone does not exclude anything: recheck handles those.
+    def priority(c):
+        case = cases.get(c['id'], {})
+        due = case.get('next_review_at', '')
+        start = c.get('fields', {}).get('start_time') or ''
+        return ((c['source_id'], c['id']) in dispositions,
+                0 if due and datetime.fromisoformat(due) <= now else 1,
+                due or '9999', start if start >= now.isoformat() else '9999')
+    backlog = sorted(backlog, key=priority)
     selected, urls = [], set()
     for c in backlog:
         followup = cases.get(c['id'], {})
@@ -46,6 +57,53 @@ def export(root, output, limit=25, client=None):
     save_json(output, {'schema_version': 1, 'exported_at': now.isoformat(), 'items': selected})
     print('Review candidates:', len(selected), 'Official sources:', len(urls))
     return selected
+
+
+def recheck_closed(root, output, limit=25, client=None):
+    """Revalidate existing judgments without spending the human-reading batch.
+
+    Failed or changed evidence stays unresolved; never renew a judgment merely
+    because the candidate ID or a previously captured page matches.
+    """
+    client = client or Client(delay=1)
+    path = root / 'data/review_backlog.json'
+    before = path.read_bytes()
+    backlog = json.loads(before)
+    dispositions = load(root)
+    checked, urls, closed = [], set(), set()
+    for c in backlog['candidates']:
+        key = (c['source_id'], c['id'])
+        row = dispositions.get(key)
+        if row is None:
+            continue
+        url = row['evidence_url']
+        if url not in urls and len(urls) >= limit:
+            continue
+        urls.add(url)
+        record = {'candidate_id': c['id'], 'source_id': c['source_id'],
+                  'source_url': c['source_url'], 'evidence_url': url,
+                  'prior_reason': row['reason'], 'content_sha256': row['content_sha256']}
+        try:
+            if matches(row, c, client):
+                closed.add(key)
+                record['status'] = 'confirmed_closed'
+            else:
+                record['status'] = 'changed_or_identity_mismatch'
+        except (CollectionError, ValueError, OSError, KeyError, TypeError) as error:
+            record.update(status='source_unavailable', error=getattr(error, 'code', type(error).__name__))
+        record['checked_at'] = datetime.now(TAIPEI).isoformat(timespec='seconds')
+        checked.append(record)
+    report = {'schema_version': 1, 'checked_at': datetime.now(TAIPEI).isoformat(timespec='seconds'),
+              'sources_checked': len(urls), 'confirmed_closed': len(closed), 'checks': checked}
+    save_json(output, report)
+    if path.read_bytes() != before:
+        raise ValueError('Backlog changed during recheck; no removals applied')
+    if closed:
+        backlog['candidates'] = [c for c in backlog['candidates'] if (c['source_id'], c['id']) not in closed]
+        backlog['updated_at'] = report['checked_at']
+        save_json(path, backlog)
+    print('Confirmed existing closures:', len(closed), 'Remaining:', len(backlog['candidates']))
+    return report
 
 
 def apply(root, result, client=None):
@@ -108,12 +166,19 @@ def main():
     incoming = sub.add_parser('apply')
     incoming.add_argument('--results', type=Path, required=True)
     sub.add_parser('followup').add_argument('--results', type=Path, required=True)
+    retry = sub.add_parser('recheck-closed', help='Live-recheck existing exclusions; keep changed or unreachable sources')
+    retry.add_argument('--output', type=Path, required=True)
+    retry.add_argument('--limit', type=int, default=25, help='Maximum official sources (default 25)')
     sub.add_parser('queue', help='Recheck persisted candidates using live official evidence, without a new collection')
     args = parser.parse_args()
     if args.command == 'export':
         if not 1 <= args.limit <= 100:
             parser.error('limit must be 1..100')
         export(ROOT, args.output, args.limit)
+    elif args.command == 'recheck-closed':
+        if not 1 <= args.limit <= 1000:
+            parser.error('limit must be 1..1000')
+        recheck_closed(ROOT, args.output, args.limit)
     elif args.command == 'apply':
         apply(ROOT, json.loads(args.results.read_text()))
     elif args.command == 'followup':

@@ -1,0 +1,3700 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-06T15:55:55+08:00",
+  "baseline_revision": "273897c",
+  "backlog_before": 394,
+  "backlog_after": 166,
+  "existing_closures_reconfirmed": 217,
+  "new_closures": 8,
+  "verified_pending_editorial": 3,
+  "followups_updated": 23,
+  "recheck_report": {
+    "schema_version": 1,
+    "checked_at": "2026-10-06T15:53:46+08:00",
+    "sources_checked": 262,
+    "confirmed_closed": 217,
+    "checks": [
+      {
+        "candidate_id": "922de7ea9931d58bc3ba5728",
+        "source_id": "accupass",
+        "source_url": "https://www.accupass.com/event/2607280236031295663510",
+        "evidence_url": "https://www.accupass.com/event/2607280236031295663510",
+        "prior_reason": "already_covered",
+        "content_sha256": "96b8a7fc2281e26a86b1b16c2f20a08ad9180a0566f3c550bcb21c12c794d38b",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:21+08:00"
+      },
+      {
+        "candidate_id": "2e02ed88277aae539fed7a21",
+        "source_id": "accupass",
+        "source_url": "https://www.accupass.com/event/2609211156474452477000",
+        "evidence_url": "https://www.accupass.com/event/2609211156474452477000",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "fa422a78c4160323f1c7cc7222eb4cfb364f0e99a13c40fb8b789fb66423bd3c",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:22+08:00"
+      },
+      {
+        "candidate_id": "ae9b41dda95882cce536a08e",
+        "source_id": "confucius",
+        "source_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+        "evidence_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+        "prior_reason": "not_event",
+        "content_sha256": "f06853c710a832c114add119dbcc03104556c31f02890de5aeaa4c9ad76a57e3",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:24+08:00"
+      },
+      {
+        "candidate_id": "5db9d0116590aac65fcc5312",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2063886748971831297",
+        "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+        "prior_reason": "already_covered",
+        "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:25+08:00"
+      },
+      {
+        "candidate_id": "09aa0cac7b6a84ead240160c",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2063886748971831297",
+        "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+        "prior_reason": "already_covered",
+        "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:25+08:00"
+      },
+      {
+        "candidate_id": "3b4258252c35f92b70eb679f",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2063886748971831297",
+        "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+        "prior_reason": "already_covered",
+        "content_sha256": "79d94f0f2ca6848208ba77a0d9ae18b3672a89bb7601b5a6d29fcf630aad408d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:25+08:00"
+      },
+      {
+        "candidate_id": "c097f2e07eb1d256a46a34db",
+        "source_id": "culture_open_data",
+        "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "prior_reason": "resource_only",
+        "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:26+08:00"
+      },
+      {
+        "candidate_id": "b1bc953c8f1798f1c9741a08",
+        "source_id": "culture_open_data",
+        "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "prior_reason": "resource_only",
+        "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:26+08:00"
+      },
+      {
+        "candidate_id": "5ab65065446e6097b618375b",
+        "source_id": "culture_open_data",
+        "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+        "prior_reason": "resource_only",
+        "content_sha256": "4002b4a43be21ec52f6cf7376b7173ba1183b8a8db0d38d0d9e4eb1705d4dab2",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:26+08:00"
+      },
+      {
+        "candidate_id": "edf0d3e2802b8815c2b56d8e",
+        "source_id": "dadaocheng",
+        "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+        "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+        "prior_reason": "resource_only",
+        "content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:28+08:00"
+      },
+      {
+        "candidate_id": "d6b15a9aefbe3b294f277fdf",
+        "source_id": "dadaocheng",
+        "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+        "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+        "prior_reason": "resource_only",
+        "content_sha256": "4c13713728c965764bdb7b2d8361d434e4a120ef15664adc5dffd1af2c3b434c",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:29+08:00"
+      },
+      {
+        "candidate_id": "c5c4cd62d6259d95dd4ab013",
+        "source_id": "dadaocheng",
+        "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+        "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+        "prior_reason": "not_event",
+        "content_sha256": "0e88f4c318f3f119d9bdb0d8f9e1d7c32c35b43f954064d0377e089debbb048c",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:30+08:00"
+      },
+      {
+        "candidate_id": "26fc8fd52baf542daaf8e1a6",
+        "source_id": "le_chang",
+        "source_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+        "evidence_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
+        "prior_reason": "already_covered",
+        "content_sha256": "8f6e38cf3897f4d38df9f31dbfca9c64212428f5fb0bb02f5d5ef3a85be3803d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:46:36+08:00"
+      },
+      {
+        "candidate_id": "d0ebe28a8c815a240b9fd5d6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/08/blog-post_24.html",
+        "prior_reason": "already_covered",
+        "content_sha256": "6ea6367785bd067e4ba2efb8dccd01a5fd91b8c9621886cdd2b27d80c9fdf943",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:38+08:00"
+      },
+      {
+        "candidate_id": "98d7616f80cd46c8e69bb09a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/07/829.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/07/829.html",
+        "prior_reason": "already_covered",
+        "content_sha256": "927cd2b2cde2df6e7fe0f1323fec59bd6bb18b70c034e672cbcf9ea156ef0718",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:39+08:00"
+      },
+      {
+        "candidate_id": "46c202f2f44dc4eb9a51406c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/e.html",
+        "prior_reason": "not_event",
+        "content_sha256": "74e70f0f60e37afac50d71a820f95543b7ce8bf92defd0322b9a75b80ba28e34",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:41+08:00"
+      },
+      {
+        "candidate_id": "2dae05743582417abffafd2d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/08/kap-lan-ai-e.html",
+        "prior_reason": "outside_region",
+        "content_sha256": "86292c68e67efa5f2bd011a53716d09bf796a38b737c2dc1e52c6e4383e0cf1b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:42+08:00"
+      },
+      {
+        "candidate_id": "ab3a3f7fecb2af09ddf98053",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/07/sama-m.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/07/sama-m.html",
+        "prior_reason": "expired",
+        "content_sha256": "c16f41deb6643e56bd6f81dd23aa8bd7e87e64ea049fa3e26caf32b3e15e1108",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:43+08:00"
+      },
+      {
+        "candidate_id": "23ea13c6bb51cf06626ff6a3",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/07/kap-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/07/kap-e.html",
+        "prior_reason": "outside_region",
+        "content_sha256": "ef4801999fe1e8dab589c8757ac9f738b91a2e458ad262aadd22b6f2dd20fa3e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:45+08:00"
+      },
+      {
+        "candidate_id": "db9150a094a9f5bf79f693e9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/06/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/06/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "a51021875a139f0c788883e2a5083fd008ae66d61fdaa8bb32ea2d934e0143d7",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:46+08:00"
+      },
+      {
+        "candidate_id": "4ce8e9b7cbe69be664b788f2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "988c3ca58d01149634299f8aed4af39edbf716dc2a0de881cabac49f96fdba1c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:48+08:00"
+      },
+      {
+        "candidate_id": "fa8dc2a2c78e6b2dfe9efdef",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/05/sa-e-podcast-e-httpsforms.html",
+        "prior_reason": "expired",
+        "content_sha256": "bb6b8721b54de40933766090d352a06f3f46e05cd360177134f9ae33797c4065",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:49+08:00"
+      },
+      {
+        "candidate_id": "bf194bdbe0251e174f52a73a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/04/httpsforms.html",
+        "prior_reason": "expired",
+        "content_sha256": "f660143e87b630a363f1070dda32804cfdcee0de3f6db248e059dc1ba4c9966d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:51+08:00"
+      },
+      {
+        "candidate_id": "edbe1aee4916799f3d157f5c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/04/samgau.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/04/samgau.html",
+        "prior_reason": "expired",
+        "content_sha256": "581fde02a0d79bec7959c92262a1a0022b9e33d261a6a0d2712a508bdd453672",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:52+08:00"
+      },
+      {
+        "candidate_id": "7f5dc85dc6a4d2492406e264",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/03/20264819302130-3kah-lim-nga-ing.html",
+        "prior_reason": "expired",
+        "content_sha256": "50bbee9d55d84d8ee279a33928e7b5fbc35b63860e61d72a0f92182b75587291",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:54+08:00"
+      },
+      {
+        "candidate_id": "6e36f52c76639deebef77cbd",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/03/2026-e-ka-e-ti-threads-hoo-hoo-e-tang.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/03/2026-e-ka-e-ti-threads-hoo-hoo-e-tang.html",
+        "prior_reason": "expired",
+        "content_sha256": "fa078edd918b7e18df911e5dda5cf0fec289b7fa51af3f9aa22d963279859d50",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:55+08:00"
+      },
+      {
+        "candidate_id": "11a05ca235adaddd3f75b775",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/02/sa-ehuah.html",
+        "prior_reason": "expired",
+        "content_sha256": "8ffa4e857e21ad82ad558fd4fbd2a6a49334f58fa7f54cd776a0be7dc2700cc7",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:46:56+08:00"
+      },
+      {
+        "candidate_id": "837c4c69f40ab0d702df9938",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/01/sa-httpsforms.html",
+        "prior_reason": "expired",
+        "content_sha256": "63dc331a7e25c5cf2ed668a72b774f62f080f7ad8b3b7e650eec91e8e3678b13",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:00+08:00"
+      },
+      {
+        "candidate_id": "f08e0018352053e0c0d634bf",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/01/ing-2026321-ekah-2026419-e-200-400.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/01/ing-2026321-ekah-2026419-e-200-400.html",
+        "prior_reason": "expired",
+        "content_sha256": "4cc7693450445825ea9b7946a81fc252b2486ad20489e4ace94b7695da2c78fa",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:01+08:00"
+      },
+      {
+        "candidate_id": "107be6cecef8e81beb8566d4",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/12/sa-ekah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/12/sa-ekah.html",
+        "prior_reason": "expired",
+        "content_sha256": "bd38e2c679997af16b0cf1eb7c67b8f61600bb8656e5106d39e2d4f81fef7066",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:03+08:00"
+      },
+      {
+        "candidate_id": "a1c36f04815a9b4f4d127d23",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/12/e-88-165-1228-1630-thang-httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/12/e-88-165-1228-1630-thang-httpsforms.html",
+        "prior_reason": "expired",
+        "content_sha256": "82310d3f1c3786b14faf5782663693ea689219354de486db34c4cc7ad828bcd5",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:06+08:00"
+      },
+      {
+        "candidate_id": "cd5a4bde535948efabb00509",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/11/satie-20251210-19302130-3kah-tie-m.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/11/satie-20251210-19302130-3kah-tie-m.html",
+        "prior_reason": "expired",
+        "content_sha256": "64996e44adf3ddf0a8d67023c3ed9cbfd6779cf632ab442e7a21d0fa838b6017",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:08+08:00"
+      },
+      {
+        "candidate_id": "82eeb8d2a9bb5bd45f8b393e",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/09/pha-pha-tsau.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/09/pha-pha-tsau.html",
+        "prior_reason": "expired",
+        "content_sha256": "a31df721824cedf78615fbd05c58197ea78ea5a90e964c46a396248931584ff6",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:09+08:00"
+      },
+      {
+        "candidate_id": "28251083b437ac6f1bb9df23",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/09/pha-pha-tsau_16.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/09/pha-pha-tsau_16.html",
+        "prior_reason": "expired",
+        "content_sha256": "029ea934b129b32edea6b20ba65d93ad63655183698bfdf0eeb3a01b4af34e5f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:11+08:00"
+      },
+      {
+        "candidate_id": "1e827b34cbb9b947f06499ae",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/09/kah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/09/kah.html",
+        "prior_reason": "expired",
+        "content_sha256": "ac2a2c545e18b0d5d892f5b840444f0d16f8f6fe0feb243c73af55649b5f0d6c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:12+08:00"
+      },
+      {
+        "candidate_id": "8a1278abce7183e71529fae3",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/09/108-sa-beh.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/09/108-sa-beh.html",
+        "prior_reason": "expired",
+        "content_sha256": "0e990e8ff88e7c64415b4c121e2661a277fb8439e08b9f2c2b8853484b1c82de",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:14+08:00"
+      },
+      {
+        "candidate_id": "00cf260d5d0bb06115cfabed",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/m-na.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/m-na.html",
+        "prior_reason": "expired",
+        "content_sha256": "181531cc4ae3e1ce0cb0c0500b2f402cbe8768a272b4ec96f8bd31835793a479",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:15+08:00"
+      },
+      {
+        "candidate_id": "b793950e19ac044b94983f1b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/ai.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/ai.html",
+        "prior_reason": "expired",
+        "content_sha256": "5f587706183cc84979113a16302979b37c18bd5f8a6af1265a0fd2ad16f5c310",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:16+08:00"
+      },
+      {
+        "candidate_id": "90d8b5738be0c9477ba6ea92",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/96-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/96-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "094be9019161ac52adcf32076660b7606825998901d5921eff9f499659ddce8f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:18+08:00"
+      },
+      {
+        "candidate_id": "4ee63793a7c63a1b8c32850f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/202581319302130-3-kah-bat-e-khah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/202581319302130-3-kah-bat-e-khah.html",
+        "prior_reason": "expired",
+        "content_sha256": "6adccd26a9df6dabddb0e53c72a752e40ae868329f0fbffb4ae385139d83d837",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:19+08:00"
+      },
+      {
+        "candidate_id": "c50d7c9decd2ffc1dc4958a3",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/20258282025.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/20258282025.html",
+        "prior_reason": "expired",
+        "content_sha256": "e2f5e5575dd640dbb345e9f86374b47d0ddd2489e1a192c302d265b3bca41e1b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:21+08:00"
+      },
+      {
+        "candidate_id": "1c773125f91373f042e508b0",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/2025.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/2025.html",
+        "prior_reason": "expired",
+        "content_sha256": "b215cc9c23617a94f0bc1332b8e6a308dff304f0a2bb228650a01999aa92606f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:22+08:00"
+      },
+      {
+        "candidate_id": "66e6994f632d9aa4ea986e80",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/pha-pha-tsau.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/pha-pha-tsau.html",
+        "prior_reason": "expired",
+        "content_sha256": "a32a15d9131a6f3fd7e5739518fb568d148dfa603a471454f8fc5f31756a5d8b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:23+08:00"
+      },
+      {
+        "candidate_id": "0c8105ed2f4db20f55bdceb9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/e_22.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/e_22.html",
+        "prior_reason": "expired",
+        "content_sha256": "2e4fb3ed74bcefeef640f639e03a2080959099468a02692a2b7bc11df447127c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:25+08:00"
+      },
+      {
+        "candidate_id": "141fd642e5e114aeff694e89",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/hame.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/hame.html",
+        "prior_reason": "expired",
+        "content_sha256": "03344bc7c174e908cb8c3e1cc322defe514db27c01939912b928aba7742e0190",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:26+08:00"
+      },
+      {
+        "candidate_id": "3bab18974425a726f4359042",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/ngo.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/ngo.html",
+        "prior_reason": "expired",
+        "content_sha256": "97fcaacc1ecec5a64591bc409cc549e575059f2736a4703f35ff9605d295115c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:28+08:00"
+      },
+      {
+        "candidate_id": "23233dc17c343f429029bff5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/2025723.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/2025723.html",
+        "prior_reason": "not_event",
+        "content_sha256": "6b86d92a11cce30d257a08f85504eb081feea2e8f33af5fffb71e737a51c8c79",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:29+08:00"
+      },
+      {
+        "candidate_id": "2c0e136bfbc1d1e3d08058f2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/07/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/07/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "1b9fca744c910a53621914918890a1b12542b4911a6971efcda47a084177de3d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:31+08:00"
+      },
+      {
+        "candidate_id": "adcdcc835c6a15101b4c8af9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/ekah_20.html",
+        "prior_reason": "expired",
+        "content_sha256": "2328db05f4b4fe8b2e6b3a310b0b2b643e383293b4ee08a7a83fa4ca6b8161e9",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:32+08:00"
+      },
+      {
+        "candidate_id": "e56346d94c2322b7b472b4cb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/beh_20.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/beh_20.html",
+        "prior_reason": "expired",
+        "content_sha256": "3e37521769282c0be36cc834846f054f5438485b6062789c81d1b62bb55bb03c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:34+08:00"
+      },
+      {
+        "candidate_id": "61e15e08ec380e7d5b06bdea",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/2025.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/2025.html",
+        "prior_reason": "expired",
+        "content_sha256": "50aef8d819e0c2460b09c8c270f291ac03b011daf6bfcd22b9e5853f901c8f0b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:35+08:00"
+      },
+      {
+        "candidate_id": "25c21edaec2748a3ab4c6fe7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/101bat.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/101bat.html",
+        "prior_reason": "expired",
+        "content_sha256": "1d3837f955438e2cabbcce155363269e61d25577f293327d379b7473a051228b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:36+08:00"
+      },
+      {
+        "candidate_id": "326c348f04025bac40293fff",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/2025pha-pha-tsau.html",
+        "prior_reason": "expired",
+        "content_sha256": "9f241ef7ca54c03bfed18cf259b2f135c540ccb7f834d23fddbf4c64997b5049",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:38+08:00"
+      },
+      {
+        "candidate_id": "3c99056a19c1a4d516b2218d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/tie.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/tie.html",
+        "prior_reason": "expired",
+        "content_sha256": "46dcd20a3b6c184e7677528328d3c0e43578b0893c171f6c198648716fbe210a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:41+08:00"
+      },
+      {
+        "candidate_id": "b8f3a1c8a7a1d6e07333cd97",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/beh.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/beh.html",
+        "prior_reason": "expired",
+        "content_sha256": "2380789dc1b9259aec5e13e386c48ba84ba761e724ca399d3de3636b79e4bce8",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:42+08:00"
+      },
+      {
+        "candidate_id": "cfafb7c61ad508a32fa32ffb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/ekah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/ekah.html",
+        "prior_reason": "expired",
+        "content_sha256": "4c8e63dfcb994673ea109abb4d431d3774ff1650835cb66879137577cbac7b57",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:44+08:00"
+      },
+      {
+        "candidate_id": "28f80c24b68527420fcb2039",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/06/sabl.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/06/sabl.html",
+        "prior_reason": "expired",
+        "content_sha256": "84fc3e455a14f2d4dcd01cf06258ed4286365488416f4505530ed17c295bd20e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:45+08:00"
+      },
+      {
+        "candidate_id": "caa1b86df596baf5a1dbfe17",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/m-na.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/m-na.html",
+        "prior_reason": "expired",
+        "content_sha256": "63291d1f8d0cc54c9e6a1af7881169ac1660f6bab4b3cf87879a4f2bc4f47d27",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:47+08:00"
+      },
+      {
+        "candidate_id": "dbc91b175b0fd444bb587f21",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "06b1721710a87c6c39cfca3ae45908ffe3f3ba788b33c58b0879e87b4cf41c17",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:48+08:00"
+      },
+      {
+        "candidate_id": "25cc388eb3750c6ffbf4dbe6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/ai.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/ai.html",
+        "prior_reason": "expired",
+        "content_sha256": "2d10c8d44d06839225e4acd341f3c0d9721d6fca1320e2a788ce2ecdab627f7b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:50+08:00"
+      },
+      {
+        "candidate_id": "b6f2e5c6660df4c512f3c2d4",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/sakape.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/sakape.html",
+        "prior_reason": "expired",
+        "content_sha256": "00a6b00f3a64bd02a1b835a1f97a14cf2e0cd2b7b6866298ed50913baff88cb4",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:52+08:00"
+      },
+      {
+        "candidate_id": "f5cd60260bd19f8d94250c86",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "8eb765fdb5301e4d2ec872fd070a6e896a8f5d9b705a1357469d6241fdfc604c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:53+08:00"
+      },
+      {
+        "candidate_id": "f98f06172db5ebee30ae4dbb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/20250518_01869302696.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/20250518_01869302696.html",
+        "prior_reason": "expired",
+        "content_sha256": "9ea28ab6ee9ef9f02b475890ab9cc2c8c9783e49580095701be3866b91520375",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:54+08:00"
+      },
+      {
+        "candidate_id": "abe83f3821967301fa72a808",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/05/20250518.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/05/20250518.html",
+        "prior_reason": "expired",
+        "content_sha256": "e9938e579b7c4aabd05cebc13bf7d073cd828d87fc4380c123fe155d5267b3f1",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:56+08:00"
+      },
+      {
+        "candidate_id": "194ce44c5b967cefef2254ee",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/chiaekah.html",
+        "prior_reason": "expired",
+        "content_sha256": "f15f53d0b11ba4b61ee25e68fc022ae8ddfcc84682c086f7b8f3118a9d8ca7b0",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:57+08:00"
+      },
+      {
+        "candidate_id": "532a847b18b49d6cf56af7e1",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/100-2-tue-hoobate-kahka-m-bate-gong-kah.html",
+        "prior_reason": "expired",
+        "content_sha256": "4925fe3a3f4dc5104dcc21c1b9a6144cb350585221dc77d68d9c8e18f3acff2f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:47:59+08:00"
+      },
+      {
+        "candidate_id": "92e0902bb18eec23d6a883d8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/sa-hoobe-sian.html",
+        "prior_reason": "expired",
+        "content_sha256": "195211491a91881fd18d63b9c5bb60749a5789d61cd1149cf7d3ef05a996ac97",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:00+08:00"
+      },
+      {
+        "candidate_id": "42adf3b9c2dde4d5e6ae8c03",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/nasaikohai.html",
+        "prior_reason": "expired",
+        "content_sha256": "5b6643599ba8c2240ec95bd2165d813059e5d10b53212a8345288f37b4d012a9",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:02+08:00"
+      },
+      {
+        "candidate_id": "84e51c298737b505075f06a6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "3a8537037808fa53573765a90c7df8b6585ebbf909d6c3dc65a1641fee210b4f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:03+08:00"
+      },
+      {
+        "candidate_id": "f32694cd385ed0ffb6c45514",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/e_20.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/e_20.html",
+        "prior_reason": "expired",
+        "content_sha256": "d6f207ea680e0dce7d951584727b4060574851dc9b17ca8dd3172a0324fa37fe",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:05+08:00"
+      },
+      {
+        "candidate_id": "b76de03da2f2b534c171371d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "8a39376e47fe11ce1c1feeccc030b73e65f1c1e4cf9dbdff59fbf019b9c2fb8c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:06+08:00"
+      },
+      {
+        "candidate_id": "ce22b7bfcdd9be146231b8af",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/blog-post_20.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/blog-post_20.html",
+        "prior_reason": "not_event",
+        "content_sha256": "a11ac6222e2f27ce03dd1526b361260621f74523289212319ab554b9f101533e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:08+08:00"
+      },
+      {
+        "candidate_id": "a20c859f4a1a7de2e2bf76ea",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/sa-petere.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/sa-petere.html",
+        "prior_reason": "expired",
+        "content_sha256": "7424f599848d513c8e5cac53cbef8a59f09aa4ac5add35b2e441a2b40997d922",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:09+08:00"
+      },
+      {
+        "candidate_id": "b4c0ccb0e67fedaf9164fe33",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/blog-post_3.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/blog-post_3.html",
+        "prior_reason": "not_event",
+        "content_sha256": "e744488d83fcc4259d54bae97cf287aa54cd972281894c2d7e6ee53b5f05ebbd",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:11+08:00"
+      },
+      {
+        "candidate_id": "3cfe2a571278ffb1eaaa8a8b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/02/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/02/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "a15a6774509e02d639487adbe9ab280b614901144f0baf25524c3fdf712e9fb5",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:12+08:00"
+      },
+      {
+        "candidate_id": "7242660b8dde3367589c19de",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/02/m-na.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/02/m-na.html",
+        "prior_reason": "expired",
+        "content_sha256": "d517d39df95a01e1b5cacfa7509636614bce6fae27f22964512c6579d6646677",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:13+08:00"
+      },
+      {
+        "candidate_id": "80d5771a2ee5bf216535a614",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/02/nasaikoh-ai.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/02/nasaikoh-ai.html",
+        "prior_reason": "expired",
+        "content_sha256": "78309ba9094ea91e7efc5540eeb2bd1608fde3636a9f2f58d95e172a7807aacf",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:15+08:00"
+      },
+      {
+        "candidate_id": "12ff055e8eefe8d2de689c06",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/02/sana.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/02/sana.html",
+        "prior_reason": "expired",
+        "content_sha256": "c142b606459fac3162a8569fa42cafce4fce6a1751ed9115ed8eed4e0949b2d4",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:16+08:00"
+      },
+      {
+        "candidate_id": "0d1891f128501f342b81ce59",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/01/sabehmih-tie-hit.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/01/sabehmih-tie-hit.html",
+        "prior_reason": "expired",
+        "content_sha256": "0e1581e1a79478c4db338b9e9d63cd71b56c0691c48f4858868681e7fcf7bbb1",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:18+08:00"
+      },
+      {
+        "candidate_id": "0dd7f2057c372351187e9568",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+        "prior_reason": "expired",
+        "content_sha256": "33025e8ffbe72479011f63e3a4a92beb04d005dd81ecd20402af1d05cef689cb",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:48:19+08:00"
+      },
+      {
+        "candidate_id": "486686fc97b3c3ed7621d58e",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/12/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/12/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "4ceaf4a2dac8afde8576ed75d480846961c1c0b0b1dc0543e89595e9d61a3262",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:21+08:00"
+      },
+      {
+        "candidate_id": "57e24188aa1bcbf8b00ef28f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/11/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/11/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "2925dd19ba2a9a2e7c71c9ea687adab3b2413ea219283a1e15811e4eee0cb498",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:22+08:00"
+      },
+      {
+        "candidate_id": "11620764c90a01146cb4f817",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/12/sae-ham-siraya.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/12/sae-ham-siraya.html",
+        "prior_reason": "expired",
+        "content_sha256": "1cb1c8d36e96d40aef1954dc6967c74817686553f2b3dd2ca82ac051d0d7ad77",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:23+08:00"
+      },
+      {
+        "candidate_id": "fbed5570c74ce8625499f84d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/10/sa-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/10/sa-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "f96f944322cb9242dfe66f264f135eedfdba2b66236aa1806beeb731c7b36e4c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:25+08:00"
+      },
+      {
+        "candidate_id": "da3bc0ac8c331b87676da840",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/ham_28.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/ham_28.html",
+        "prior_reason": "expired",
+        "content_sha256": "39b8554df08a9ece05c59a2f3a4b039d4274f43233fae51d8eb092ea430a0583",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:26+08:00"
+      },
+      {
+        "candidate_id": "e9c2e1c7f8ef91a4197349d8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/kap-ekah-httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/kap-ekah-httpsforms.html",
+        "prior_reason": "expired",
+        "content_sha256": "19c4870165746809c9f36fc94e50c6d7685c6770a35929ea15f1c9400609bdaa",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:28+08:00"
+      },
+      {
+        "candidate_id": "912637b51de6f2e3d3cc62d7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/ham.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/ham.html",
+        "prior_reason": "expired",
+        "content_sha256": "68fcab247bb6a25a26386ec00ee2d576b44573eaa5e70cd10841963e5da1c17b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:29+08:00"
+      },
+      {
+        "candidate_id": "6174f9c0d080a32e6b78bc71",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/09/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/09/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "2b2bbedca7468b0a5ebd1a2940faf8150fcc82d6fa9a467e857de8d3b20a3448",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:30+08:00"
+      },
+      {
+        "candidate_id": "faf917a4986ed1457cccf1a9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/09/sakah.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/09/sakah.html",
+        "prior_reason": "expired",
+        "content_sha256": "15b21b767cb118e59f682badd95f853b58c73ab91c967ce76a511f5c08f37416",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:32+08:00"
+      },
+      {
+        "candidate_id": "a3fe83f5509be93fed797119",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/07/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/07/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "001f7ac90cfdaf1c5b0f5e716fabdc1e5ca9ba60e7657f573669b5f1474de2e7",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:33+08:00"
+      },
+      {
+        "candidate_id": "3b77b8d9ac01d9b68c1f9de0",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/ham_1.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/ham_1.html",
+        "prior_reason": "expired",
+        "content_sha256": "495bce5f0ac70df95966094af1386056668e32e4171110a928e1b250e2778c4b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:35+08:00"
+      },
+      {
+        "candidate_id": "ade72396a8390c363820494c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/07/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/07/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "b2b288c6b8149f1843d47dc8d374b70a1c2a18680b50a74c28f64e274a4467d3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:36+08:00"
+      },
+      {
+        "candidate_id": "d558863613c00072a814224b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/08/tioh.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/08/tioh.html",
+        "prior_reason": "expired",
+        "content_sha256": "b59c453172de0fc030a327903dd40b2a78933b4ffb287757083306c492c2b64f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:38+08:00"
+      },
+      {
+        "candidate_id": "3a75b016f0393bc8adc69a74",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/08/2024.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/08/2024.html",
+        "prior_reason": "expired",
+        "content_sha256": "2abc96633b94f6adde64a7f72fc3fa97cb04d8d804e4b6ef5f5c291f7afbc80d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:39+08:00"
+      },
+      {
+        "candidate_id": "463ee1d06eb4b8f97eaeb14b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/08/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/08/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "88ee7fb475efdfac12eb3f02792605388064e4beea23dcb5b5615bf3fad561ca",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:41+08:00"
+      },
+      {
+        "candidate_id": "86f6335c69c8a4d707d6f97a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/ham.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/ham.html",
+        "prior_reason": "expired",
+        "content_sha256": "16acc9722655922d30e9404e8942e7581cdfc82d6389062cd9e6e8a29b4e0b93",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:42+08:00"
+      },
+      {
+        "candidate_id": "54a792d6c4f9f7e6a3b033a8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/mihkah.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/mihkah.html",
+        "prior_reason": "expired",
+        "content_sha256": "00e02e6eed9c72302f1f9b0c37b453d712551cf4111a044ee4b9ab732b6a1d85",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:44+08:00"
+      },
+      {
+        "candidate_id": "4fad5f4ffc9e9e1b8368465d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/2024.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/2024.html",
+        "prior_reason": "expired",
+        "content_sha256": "6f02a64b7e7d02b60583f41445d475163d08f3a81e6fb3ffd077baaa4f065f51",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:46+08:00"
+      },
+      {
+        "candidate_id": "c8b059764182546522c9e98e",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/2024.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/2024.html",
+        "prior_reason": "expired",
+        "content_sha256": "918a76dc629e69844e878c50d3578d46279f3ee1b4b62e909ea9c03cd71daa26",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:48+08:00"
+      },
+      {
+        "candidate_id": "36535481251e053e6a6354d7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/07/satainn-tauh-gau.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/07/satainn-tauh-gau.html",
+        "prior_reason": "expired",
+        "content_sha256": "d02b40adf85a3b335eb87ca64842fb197a4ecdc3228a6793acbe94b65a3472f1",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:49+08:00"
+      },
+      {
+        "candidate_id": "b6db36b38e26586fecdf966f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/satsee-lah.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/satsee-lah.html",
+        "prior_reason": "expired",
+        "content_sha256": "77e2bfb2c33ce71107b926380b92944e13333aec34af38051c43ba3fde09358d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:50+08:00"
+      },
+      {
+        "candidate_id": "7bb4b3215cf0019c891710c5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/mihe.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/mihe.html",
+        "prior_reason": "expired",
+        "content_sha256": "cb36309210c6b1a41422d53a75546b129e20df13234a76e748cfbd23face4a60",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:52+08:00"
+      },
+      {
+        "candidate_id": "7cc6db65b51b1f1536a94ce2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/blog-post_12.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/blog-post_12.html",
+        "prior_reason": "expired",
+        "content_sha256": "d10b7bd62babcc3a596d6c6047eec0d9e43909568f4ae1101cdd6f242b2fc9f8",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:53+08:00"
+      },
+      {
+        "candidate_id": "f607e4a2ed2c5a4f5b4f9308",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/sabat.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/sabat.html",
+        "prior_reason": "expired",
+        "content_sha256": "484503dafabd4427fdddb60377f36a53b227706b1947044ed597c33b8faf718c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:55+08:00"
+      },
+      {
+        "candidate_id": "a273d4c18bd9c703f89f6565",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/ee.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/ee.html",
+        "prior_reason": "expired",
+        "content_sha256": "ca275740de880495da3bbbf3503dd0f897c2ee36bcd2385f2fba696ff92bca71",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:56+08:00"
+      },
+      {
+        "candidate_id": "baa578c4263bf0beda0cd115",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/05/202461.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/05/202461.html",
+        "prior_reason": "expired",
+        "content_sha256": "93138c29b06115fa6c05e00eddefd9400b4b21c17cc7340ffb52ad9954ab9232",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:58+08:00"
+      },
+      {
+        "candidate_id": "346269abb7a32c27c9728f2a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/04/202454.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/04/202454.html",
+        "prior_reason": "expired",
+        "content_sha256": "5d8d4d0a7c4551f79bb07c47fcef99e6e2a13c840fa679b31280091da5b790fb",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:48:59+08:00"
+      },
+      {
+        "candidate_id": "553bbc697788772d773e78c7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/04/sati.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/04/sati.html",
+        "prior_reason": "expired",
+        "content_sha256": "0d19c5999d14f096775a70a0ffd9247f865adad524088845b2c66423c6c0fd98",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:01+08:00"
+      },
+      {
+        "candidate_id": "a065adcec248bb69c4b90bac",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/02/221_21.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/02/221_21.html",
+        "prior_reason": "not_event",
+        "content_sha256": "7f31f0ab568f9ae2bc26b8687e70b37eb61029b342bcec4343571f0e94ceffd3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:03+08:00"
+      },
+      {
+        "candidate_id": "32c1f674fa61fbb701e13f77",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/02/221.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/02/221.html",
+        "prior_reason": "expired",
+        "content_sha256": "ed54aa14bae653b564d300fd2fdca70cde637e4718b4ec89d705a43659a0182a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:04+08:00"
+      },
+      {
+        "candidate_id": "fc49a5baacb32c542ed05af2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/09/vs-20230917.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/09/vs-20230917.html",
+        "prior_reason": "expired",
+        "content_sha256": "30cef080e6d7f47cee34cbb78d4aca1170c1d0b5a529ba58a99833d182143539",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:06+08:00"
+      },
+      {
+        "candidate_id": "e4dc9e3f6d0a4d8035c338f5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/09/vs.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/09/vs.html",
+        "prior_reason": "expired",
+        "content_sha256": "14dbbe64a7afa18fe19d32118c63d94dde32e9d4aad3f88ceb9980df8214f16d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:07+08:00"
+      },
+      {
+        "candidate_id": "a97c6986a2e5dca3de85fd89",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/07/beh_24.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/07/beh_24.html",
+        "prior_reason": "expired",
+        "content_sha256": "8379d81d0785db8d2bcc2c73d292e6793ab104d2e8e2fdf0caa70cca947f01d7",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:09+08:00"
+      },
+      {
+        "candidate_id": "df669cfab56cd57e3a42443f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/02/blog-post_14.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/02/blog-post_14.html",
+        "prior_reason": "expired",
+        "content_sha256": "cbb493d9dc16a0423042299f542eb2751720c50925fbb2d1e3723975b690e9ff",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:11+08:00"
+      },
+      {
+        "candidate_id": "697da7852ab00caad5bbbb34",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/02/2023.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/02/2023.html",
+        "prior_reason": "expired",
+        "content_sha256": "383acb6e118dfee01367c7bb43f245af196d1fe0f8d6c8360b229a4179d21c37",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:12+08:00"
+      },
+      {
+        "candidate_id": "f5437a84bf624c11286b1110",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/02/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/02/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "4ff862cc778cce6d5bba31fa801b6022bb40b2f4b32ea5d34970bcfca0ba3142",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:14+08:00"
+      },
+      {
+        "candidate_id": "414acc56ad4486393eb5796a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2022/08/blog-post_27.html",
+        "evidence_url": "https://www.tgb.org.tw/2022/08/blog-post_27.html",
+        "prior_reason": "expired",
+        "content_sha256": "675618e9aff261f7b4c8162ec05d5987f5709f674898738e5f4bdda9c2013c3a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:15+08:00"
+      },
+      {
+        "candidate_id": "5aaa2ef138890a943da45f6a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2022/09/ka-tai-bun-thak-sia-ka.html",
+        "evidence_url": "https://www.tgb.org.tw/2022/09/ka-tai-bun-thak-sia-ka.html",
+        "prior_reason": "expired",
+        "content_sha256": "a8124563bb956c840e73934cf843a1294a1b9fae524b5953c720a48d8d6cd31c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:16+08:00"
+      },
+      {
+        "candidate_id": "7efbcf7123fba64326b268b5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/11/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/11/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "119e963c9de3653d13a0b9010b9a8fb7140e0116c27c19c47c9884e0367daad0",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:18+08:00"
+      },
+      {
+        "candidate_id": "388998433bff916b22446f0c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/11/30.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/11/30.html",
+        "prior_reason": "expired",
+        "content_sha256": "52f63269c56234e2323c1e09e4c1e93f88d93c5eaa3705e5a2cc3ed26834ad2c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:19+08:00"
+      },
+      {
+        "candidate_id": "ee5950dc826b33f3ee7fbab2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/10/30.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/10/30.html",
+        "prior_reason": "expired",
+        "content_sha256": "576cf33b00040de0212672d71a031430f3c68bd161ff8ddef563d97dd5ab90af",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:21+08:00"
+      },
+      {
+        "candidate_id": "4bd6e7657689dba2cee72ed8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/10/927bong332.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/10/927bong332.html",
+        "prior_reason": "not_event",
+        "content_sha256": "67086c5aa1fc44784e3546535ba54cbada4aab3d9203ebac3aa5540a1c973329",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:22+08:00"
+      },
+      {
+        "candidate_id": "fb56a00d0296fffe922c1576",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/2021929.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/2021929.html",
+        "prior_reason": "expired",
+        "content_sha256": "947b6c61ad2f004b9329267b6b8a47bd9d2a0c33aa386cfac9edfb0233f4efce",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:24+08:00"
+      },
+      {
+        "candidate_id": "52a953ea1d98a6a4b0bddc9f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/20210929_29.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/20210929_29.html",
+        "prior_reason": "not_event",
+        "content_sha256": "07988008dac4d942ec30c52c790b0531a1cf815f084d9062ef274b1de529b519",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:25+08:00"
+      },
+      {
+        "candidate_id": "a877a048205d4ed695683268",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/20210929.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/20210929.html",
+        "prior_reason": "expired",
+        "content_sha256": "8dd0cf4ee9d98a334e40c35b031dcbc2ab6d0c37cb8f3976585b5a7b5b4d4f0b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:26+08:00"
+      },
+      {
+        "candidate_id": "c7456afc49a7ff381f59e512",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/927.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/927.html",
+        "prior_reason": "not_event",
+        "content_sha256": "3d4d699e120807673172bc45b48f4301831dd0eababcce4da2a23cb6ffb36285",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:28+08:00"
+      },
+      {
+        "candidate_id": "d50771d9b9cd41612ba46554",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/927toi-van-fa.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/927toi-van-fa.html",
+        "prior_reason": "not_event",
+        "content_sha256": "477ee2674cce0ebe34a9cf78dd4631497359ddf1294e86cc6a023151299aa791",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:29+08:00"
+      },
+      {
+        "candidate_id": "0368ab20ff9b7512722e7f46",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/05/2021a-khioh-siunn.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/05/2021a-khioh-siunn.html",
+        "prior_reason": "expired",
+        "content_sha256": "46aaa521e938c4073c72ed09cc33dbdefc52ec44e6725152970b63ca686a5281",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:31+08:00"
+      },
+      {
+        "candidate_id": "864b407359e71db2eda8a859",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/01/202121-215-hioh-khun.html",
+        "prior_reason": "resource_only",
+        "content_sha256": "01c53e836ab05948ee233e64cdab931ddf4e522202a2b6992f4280f3238c3ebb",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:32+08:00"
+      },
+      {
+        "candidate_id": "0a9d1303eff12e57ce494557",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/01/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/01/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "3684194dcc2c16dc22c04e7877d794f4e3008fb7e100bbbb164f278461f1457f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:34+08:00"
+      },
+      {
+        "candidate_id": "9036a8029c54a59826cf8cac",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/01/sa-tie.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/01/sa-tie.html",
+        "prior_reason": "expired",
+        "content_sha256": "06cfbde93c22e242c2562b214050a60a30529f05440cc38bd26d0ace8810ce09",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:35+08:00"
+      },
+      {
+        "candidate_id": "1b3ea19c4659e76a74f54488",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/01/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/01/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "d294d4e5e12014ae2870cb395b156022d358f8617605624267135f1a8ba1bcd8",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:36+08:00"
+      },
+      {
+        "candidate_id": "4a4058476167bd65c66dc8ef",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/11/ko-hiong-ji-ji-pat.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/11/ko-hiong-ji-ji-pat.html",
+        "prior_reason": "not_event",
+        "content_sha256": "42ccc26adab35f3535bbfb0a02a2c82fa0d1033eb09e46a6947851aebd48a330",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:38+08:00"
+      },
+      {
+        "candidate_id": "b69de734f173742f653a7e04",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/03/beh.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/03/beh.html",
+        "prior_reason": "not_event",
+        "content_sha256": "276d762af41218a8f31239ede8d0b440355ebbabef35eacd4f85d50f43609584",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:39+08:00"
+      },
+      {
+        "candidate_id": "4bfb1f595c51f2b4171322e2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/03/blog-post_2.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/03/blog-post_2.html",
+        "prior_reason": "not_event",
+        "content_sha256": "7fcdb19b62d0a78594a20d77347d34a6173d7d583aa1c188c39b7ba881b9d070",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:41+08:00"
+      },
+      {
+        "candidate_id": "791a1034c45394aa04cab761",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/02/221.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/02/221.html",
+        "prior_reason": "not_event",
+        "content_sha256": "691d1884da8cce6cdd0b17b2b39e31625449915907faff94c5d538d17b38a710",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:42+08:00"
+      },
+      {
+        "candidate_id": "8d2fda5421ba53accfc0017f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/1012-1000-1200-f201-140-fb-tsia-fb.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/1012-1000-1200-f201-140-fb-tsia-fb.html",
+        "prior_reason": "expired",
+        "content_sha256": "97a444a3468e9541245bb0b395c51f07a4a172128add4ccaa7fee137e40fed6e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:44+08:00"
+      },
+      {
+        "candidate_id": "c6de137aea29f65f5b83b0ed",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/1010-300-530-7892-tsia-ioh-fb.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/1010-300-530-7892-tsia-ioh-fb.html",
+        "prior_reason": "expired",
+        "content_sha256": "2b24881b824f32ac55f5fad7636b5c6a5a98caff3605386e38d0a714509a1d01",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:45+08:00"
+      },
+      {
+        "candidate_id": "a6e803b03e9410bf5c20b0c6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/928-230-400-547-2-mi-mooabon-tsia-fb.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/928-230-400-547-2-mi-mooabon-tsia-fb.html",
+        "prior_reason": "expired",
+        "content_sha256": "fc64a57d37c5ca28e4c5057afab52f8cdf5bf76e29a79b877f509ce7a30c0737",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:46+08:00"
+      },
+      {
+        "candidate_id": "8a13b3b89197538b3c9af4e7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/921.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/921.html",
+        "prior_reason": "expired",
+        "content_sha256": "a1ab7f98858002b2e603340b69790db492cbfd5c84a627bb9ac4bafb917b7db0",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:48+08:00"
+      },
+      {
+        "candidate_id": "e150ecf4770b88d0018e23b3",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/09/sae.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/09/sae.html",
+        "prior_reason": "expired",
+        "content_sha256": "ecd7109186b7e0b5ab5ab15f3ee50045e2610bb0afac8e21845a1a1c545e8026",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:49+08:00"
+      },
+      {
+        "candidate_id": "6efb43c749ec0ba9b54641ba",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "266414adfc11a54f9f46123dbb12867a13fb60c4a17807c254f88ce0ebee4d7d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:51+08:00"
+      },
+      {
+        "candidate_id": "102b71207f07c85b179d1467",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/08/sae.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/08/sae.html",
+        "prior_reason": "expired",
+        "content_sha256": "3cc61d87ea63766b0dc469da2a23231e5660cac1ca16424ecfe2ce024576b9da",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:52+08:00"
+      },
+      {
+        "candidate_id": "28f18b93bac88eb14b8b403b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/07/2019-811-1400-17001400-16001600-1700-15.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/07/2019-811-1400-17001400-16001600-1700-15.html",
+        "prior_reason": "expired",
+        "content_sha256": "46e6345c97d4cd1d0e9b820260e60243c0cc3191bab74019cf07e54aea5c9402",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:54+08:00"
+      },
+      {
+        "candidate_id": "ee4c3675c042b47926c4f187",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/07/sae.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/07/sae.html",
+        "prior_reason": "expired",
+        "content_sha256": "666d1b03cf0f1de4d5fc7f4f1a366d84cd3b0d3933c2026d3969dce5441d8c6a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:55+08:00"
+      },
+      {
+        "candidate_id": "e5617d97419328f6d5e61a53",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/06/ann.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/06/ann.html",
+        "prior_reason": "expired",
+        "content_sha256": "f0c9a9f28980b956e224f3c14bdf8a6c5713b497c25e3cc67e1e403a7726313a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:57+08:00"
+      },
+      {
+        "candidate_id": "87334006d9d5d85e75b5c988",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/05/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/05/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "cce7b8856499af62e373f09bcba0b88488ec688766e193fdcd7a82710be78fea",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:49:58+08:00"
+      },
+      {
+        "candidate_id": "c4335eded4c9d05ae3de42fd",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/04/sae.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/04/sae.html",
+        "prior_reason": "expired",
+        "content_sha256": "cbc2e6b67e0c3012a3f2cdc126bc8a88d983c6bf518c47fb8b3b60b371a61e04",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:00+08:00"
+      },
+      {
+        "candidate_id": "d62d231b4453569d07577030",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/03/sa-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/03/sa-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "64ec633bf3810b83545ead55ed0e0846ac0f6075ffba3e260c459f671aa8a848",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:01+08:00"
+      },
+      {
+        "candidate_id": "acbb878854877c818f8c8991",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/02/saetuie.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/02/saetuie.html",
+        "prior_reason": "expired",
+        "content_sha256": "285623c2d6003d9eed29df900fe43f9feb575427ddda22202ca169ef21ab3cc3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:03+08:00"
+      },
+      {
+        "candidate_id": "2d7fba369f3318b20cd081c4",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/01/sa-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/01/sa-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "81ae15b6e1c6222d89383a6321298fb72e35de93a2db2d635531eb7573ce5bfa",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:04+08:00"
+      },
+      {
+        "candidate_id": "fea53bc7f51b5af842cbb728",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/12/sakap.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/12/sakap.html",
+        "prior_reason": "expired",
+        "content_sha256": "66a4d91cf19851f9398a1139d2b09c780d637a09cc72e291092dda20d4c92f8c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:06+08:00"
+      },
+      {
+        "candidate_id": "370f3eb60b9664399e1ca32f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/11/saiahkapti.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/11/saiahkapti.html",
+        "prior_reason": "expired",
+        "content_sha256": "32ce0ebf9df5e3d0b0440ab671c225d8a889962f8ae4cd690eba58c1a12386a8",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:08+08:00"
+      },
+      {
+        "candidate_id": "44d4805559e5416d70371e33",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/11/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/11/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "19dc68d6e0669acc6388f1d63f73e43003d1871651d0358033ca8000dcca932e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:09+08:00"
+      },
+      {
+        "candidate_id": "b7cd5c6f0d2f58d265893a1b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/10/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/10/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "ac742faa41716a3541490aeb899f0cdda2d075a26a58a1bc0802b8690055b374",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:10+08:00"
+      },
+      {
+        "candidate_id": "840557126d65deca01912db4",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/09/sasiraya.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/09/sasiraya.html",
+        "prior_reason": "expired",
+        "content_sha256": "d8eb42d2549902d9a729d4289c8dca9a11f848ede2204e5e36fa9849333c989b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:12+08:00"
+      },
+      {
+        "candidate_id": "7cbc973b84f385553e83e436",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/08/818e.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/08/818e.html",
+        "prior_reason": "expired",
+        "content_sha256": "e973be3a44c8aa4b2607050827b520c81a68f114516b56cf3ccd7cb58aea27b9",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:13+08:00"
+      },
+      {
+        "candidate_id": "aa084e26e464d7d4ef067f92",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/07/sakap.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/07/sakap.html",
+        "prior_reason": "expired",
+        "content_sha256": "88b1b7cdaeec0dd7babfddf7905b11309d90b792df78be0150ae652b051d71c9",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:15+08:00"
+      },
+      {
+        "candidate_id": "9ec759552807b46258a22ea9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/06/sa.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/06/sa.html",
+        "prior_reason": "expired",
+        "content_sha256": "8e27615cd01ba6ed47776ef164315db18dac03e63727d713ea7ba4c8d825becc",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:16+08:00"
+      },
+      {
+        "candidate_id": "0d44521f5575e86624b95953",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/06/2018.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/06/2018.html",
+        "prior_reason": "expired",
+        "content_sha256": "3799688834b805d5eaeddf42ff509e06a3d52ca98ee0160b6cdf6a0943cb738d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:18+08:00"
+      },
+      {
+        "candidate_id": "e52f9245409855cacaae592c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/05/saaie.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/05/saaie.html",
+        "prior_reason": "expired",
+        "content_sha256": "3005fc70e5ace96385d870792d9b1f8ad9b0c96d906fe48ec060cf0c05ee05ca",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:20+08:00"
+      },
+      {
+        "candidate_id": "dc9ce658c543e542660a6c44",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/02/2018.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/02/2018.html",
+        "prior_reason": "expired",
+        "content_sha256": "928888fefbd4dd2b08415ff4529b764fc25683c7e6a28bb6e74c19d2820a3d78",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:22+08:00"
+      },
+      {
+        "candidate_id": "5e1c96d03e3fc887c507446a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/04/sati-aie.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/04/sati-aie.html",
+        "prior_reason": "expired",
+        "content_sha256": "bd8764dd8ff579f2728572584c7594940e6e1b6ca267020315952bf547b4cbbf",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:23+08:00"
+      },
+      {
+        "candidate_id": "96317c6f835cfdc497981787",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/03/e_22.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/03/e_22.html",
+        "prior_reason": "expired",
+        "content_sha256": "8b56e0d7605fdb78a9f34d5e5c27127498d23f8dabe759d7967e525e8b5b9f66",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:25+08:00"
+      },
+      {
+        "candidate_id": "f6c0fb23bf14d2b4e80013e0",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/03/e.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/03/e.html",
+        "prior_reason": "expired",
+        "content_sha256": "5596a9e602d2b20e13342cd4c3b137dbe3493843191176e665874d6f80a3f9c5",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:26+08:00"
+      },
+      {
+        "candidate_id": "afd27f8311d6ab7a988247c6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/03/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/03/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "682bf923c3d0d4a20883986b2e04b1c89df50f98306b7373991e81f0af5b2226",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:27+08:00"
+      },
+      {
+        "candidate_id": "30193da23855aca65babc692",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/02/2017.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/02/2017.html",
+        "prior_reason": "expired",
+        "content_sha256": "77a00c245705d797e19003a88fda4af543c7d0d540cea9dea7c079228f4eac9c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:29+08:00"
+      },
+      {
+        "candidate_id": "f361fdb7a33b025f27d6123f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/02/sa20180307-ekap.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/02/sa20180307-ekap.html",
+        "prior_reason": "expired",
+        "content_sha256": "9ae99a2189088d711495940c56e0f444fe8b626671f7f3db392ce5d9212a106f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:30+08:00"
+      },
+      {
+        "candidate_id": "48afbf90df8c6a8f36da4dc8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/01/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/01/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "5c1ff64689401e1edc85faa2fbd57f70a2740ff63da755ccc94f0990b42adbc3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:32+08:00"
+      },
+      {
+        "candidate_id": "515494e6562b7f02fa4b7906",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/12/sae.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/12/sae.html",
+        "prior_reason": "expired",
+        "content_sha256": "e3a67c29e373892ac82ee124f4eac9f41cef701be4a71d34e1d340df77186335",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:33+08:00"
+      },
+      {
+        "candidate_id": "f3b28c1592f2931bf76fb967",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/12/2017122320.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/12/2017122320.html",
+        "prior_reason": "not_event",
+        "content_sha256": "4daf171b58ca8ce202b2cd0e5b304bb313e43368948fc38a2a88e110e6a65c55",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:35+08:00"
+      },
+      {
+        "candidate_id": "7c9463b100c2767152bd7cf8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/12/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/12/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "4febf7f49e6f46a2daed3d2ae4714e05e7d4d1386770385fa913972714cf4805",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:36+08:00"
+      },
+      {
+        "candidate_id": "6c8b9913d65e15cefabacdc9",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+        "prior_reason": "expired",
+        "content_sha256": "05bd6fc1047ce321c7af78abf851b8e0c30bb05f2f240563297c86a3e0bbe304",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:50:38+08:00"
+      },
+      {
+        "candidate_id": "4e5bb590744c51ba3a527491",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/sa2017khah.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/sa2017khah.html",
+        "prior_reason": "expired",
+        "content_sha256": "89134123ee0b440f3e71d8a16633a17c5b045b2db677496db2ca0bc7ce00fcdf",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:40+08:00"
+      },
+      {
+        "candidate_id": "362e99f54fd3f47ee065a031",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/satuie.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/satuie.html",
+        "prior_reason": "expired",
+        "content_sha256": "23aa50b629d48ac41aabf4e330225ef21b40c5ecaebb2584463fbe1e6fc8fe59",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:42+08:00"
+      },
+      {
+        "candidate_id": "baec56c07d32ff0231f9c478",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/08/kah-30-1997-1-beh-30-ah-1997-kah-bong.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/08/kah-30-1997-1-beh-30-ah-1997-kah-bong.html",
+        "prior_reason": "not_event",
+        "content_sha256": "b840cff0e17c6ee5ca5557e7e9762d211ee38569271221ace4b3c04ad0225fca",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:43+08:00"
+      },
+      {
+        "candidate_id": "079daf80350d3eaa2905c55f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/08/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2026/08/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "6b8c337a19ca2749dff2729a9fd56c11810eadcdd49d2e9c160d76b9c1cc671b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:45+08:00"
+      },
+      {
+        "candidate_id": "0567022ee59ec301bf8f19a7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/12/2026.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/12/2026.html",
+        "prior_reason": "not_event",
+        "content_sha256": "3eba3e1b505e5c28ba4a001987111f9f6e9d4cf026ee091ca016a01b569decfd",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:47+08:00"
+      },
+      {
+        "candidate_id": "fcf94a9cce68c68ceb44bb0d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "f0e8e324c72f8a7c8bc7f85c865b1349ebe5979e162b9de3cd1692c0ff5dae52",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:50+08:00"
+      },
+      {
+        "candidate_id": "591fef2875f1ce08be942ffe",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/10/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/10/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "6e8ac769e2404ce6d25e3db803fccef85814c0aabad273626b27ce1b226db67b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:51+08:00"
+      },
+      {
+        "candidate_id": "5f1eb805fe2050e3bc375dfb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/11/2025.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/11/2025.html",
+        "prior_reason": "not_event",
+        "content_sha256": "ce2f946042eff601563694bf3f351abe33d03bb2ad5ecc84a7ba271e0f6bfe13",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:53+08:00"
+      },
+      {
+        "candidate_id": "e02d251bdb4adc663e62c6e8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/08/2025tioh.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/08/2025tioh.html",
+        "prior_reason": "not_event",
+        "content_sha256": "1a5df86d85fef62c9cce147a511535117ec4c23f4f4bdc894ce15f200f502a8f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:54+08:00"
+      },
+      {
+        "candidate_id": "dee18a145921d5cef96793d8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+        "prior_reason": "not_event",
+        "content_sha256": "2a9cbf93d357a90f24b0bb1a2bfa8a367b9c9ad998eef518fd3ae21a19e30337",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:50:56+08:00"
+      },
+      {
+        "candidate_id": "fe83c567d69c7a611eb0b7c1",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2025/03/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2025/03/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "15ae072e763c025d4a3b75e5447bf770b96b9f9a283ae4b51dddc157c33fddbb",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:57+08:00"
+      },
+      {
+        "candidate_id": "0f3b9fb6a4dedb5e1cd4dc12",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/11/2025.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/11/2025.html",
+        "prior_reason": "not_event",
+        "content_sha256": "2405449172704c1e9db07247328010e90d381ad2fd46ca12d2c08c745b9af949",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:50:58+08:00"
+      },
+      {
+        "candidate_id": "a333ba157dcfd1ef387f7c43",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/06/kap-uiee-httpsforms.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/06/kap-uiee-httpsforms.html",
+        "prior_reason": "not_event",
+        "content_sha256": "d55909d4e5f8895b9533901d17b2a40302ffec9950a34dbb49a1dbfb8176990f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:00+08:00"
+      },
+      {
+        "candidate_id": "491ba6490054f3bd4029717f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2022/01/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2022/01/blog-post.html",
+        "prior_reason": "resource_only",
+        "content_sha256": "6bd338a36878b2627d595d457ab322a3ad58f39567894910cedc2b1d864d9b8d",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:02+08:00"
+      },
+      {
+        "candidate_id": "33665e98fa2639713d391e82",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2024/02/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2024/02/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "f4f1b786c05d3aefabcfccd90654c5acae99ad42e5a0a555924fcb6bfa524a6a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:03+08:00"
+      },
+      {
+        "candidate_id": "bf9e6fc3725030b051c9c2e1",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/12/2024.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/12/2024.html",
+        "prior_reason": "not_event",
+        "content_sha256": "79a133b136293765a3311fd27c308c1803c1bfd3ae83805bfcb6487f0781b6a2",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:05+08:00"
+      },
+      {
+        "candidate_id": "2b791f528ec1f9ba88082103",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2023/07/beh.html",
+        "evidence_url": "https://www.tgb.org.tw/2023/07/beh.html",
+        "prior_reason": "not_event",
+        "content_sha256": "86288cb7d4db53e006b7752d93147123b3753ec2d6a4d41ae405673cdb5cf0dc",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:06+08:00"
+      },
+      {
+        "candidate_id": "aced15d66dd9f008dff17d59",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2022/11/2023.html",
+        "evidence_url": "https://www.tgb.org.tw/2022/11/2023.html",
+        "prior_reason": "not_event",
+        "content_sha256": "ece6ed4b357ab3d56c0331d1c82c6c234958eaa69bfa4b0c7ceb44f6b1a4fad7",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:08+08:00"
+      },
+      {
+        "candidate_id": "d1c25a973dba195caa5c4dd2",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2022/10/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2022/10/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "8d7c95293a999b95dacdaffa020af05cf7cb38913097593f7729d8e036062cd0",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:09+08:00"
+      },
+      {
+        "candidate_id": "b3d195e9fb0beec8a0025af5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/12/2021a-khioh-siunn.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/12/2021a-khioh-siunn.html",
+        "prior_reason": "not_event",
+        "content_sha256": "dd03e9ac6be09cbf80acd4499f631d3dec5744c1e2e7d1661be86cc0972437f3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:11+08:00"
+      },
+      {
+        "candidate_id": "948e188db7b80c25cb212738",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/11/30-20211118.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/11/30-20211118.html",
+        "prior_reason": "not_event",
+        "content_sha256": "c56ea7d858cdc0c851a4e8434bd01f7f3dfeed24857bd62da2d681fd498c2501",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:12+08:00"
+      },
+      {
+        "candidate_id": "b7ff7726a00565ff854adf75",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/10/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/10/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "19aee4672be5ade4d845b4b80492db7ed9ac3c98014bbb55f80ed480be8a5613",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:13+08:00"
+      },
+      {
+        "candidate_id": "07beae6f132b9ff7c8f96ca1",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/09/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/09/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "4b48af72c176bbae9735ebd72083b19e7bda8ff05503b0de659add71031cfa04",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:15+08:00"
+      },
+      {
+        "candidate_id": "ad2b9a48875f5fdfb34906ee",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/06/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/06/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "0a5ad262b8167d1647e0ec17de1bb7ebec9acc71893c5232f3047208b4a236a5",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:16+08:00"
+      },
+      {
+        "candidate_id": "014d55d2ad13e1716eec081e",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/06/20210610.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/06/20210610.html",
+        "prior_reason": "not_event",
+        "content_sha256": "d52f0e8c26500a11a57bd2b0e3f77d59a6da9959f9d581599833345e26e0705b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:18+08:00"
+      },
+      {
+        "candidate_id": "935b1557e4483aa4d2da3928",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/06/20210603.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/06/20210603.html",
+        "prior_reason": "not_event",
+        "content_sha256": "6084def04a9108795d633dd96ae88b4a5d2542b6a12c0d80b493d22b445a878b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:19+08:00"
+      },
+      {
+        "candidate_id": "7d8fa72ebce501e8fa705442",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/05/20210527.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/05/20210527.html",
+        "prior_reason": "not_event",
+        "content_sha256": "5c304a235efd515d3fd5304f50f2e62b5f92321b4b735ccf4b2299b9d963b2e9",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:21+08:00"
+      },
+      {
+        "candidate_id": "16065f57cd0c0cf9cd241fe5",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/05/20210520.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/05/20210520.html",
+        "prior_reason": "not_event",
+        "content_sha256": "a97711b8e7261082a01a25d09c41fc0312035fc9c84f23eb7eb73fce6246a366",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:22+08:00"
+      },
+      {
+        "candidate_id": "d78f8d21735fa66c8727289c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/05/20210513.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/05/20210513.html",
+        "prior_reason": "not_event",
+        "content_sha256": "440019d8dc02ece68feca5d81bec3a2a7f653eacd6b5d2246b65c902ae14a521",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:24+08:00"
+      },
+      {
+        "candidate_id": "9e24f7a1b64d36f655c3a1f6",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/05/20210506.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/05/20210506.html",
+        "prior_reason": "not_event",
+        "content_sha256": "b722efebb9460b8d1c5834fc5c183661aeb612c2b082e6fbd7eb5e26735cb1cf",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:25+08:00"
+      },
+      {
+        "candidate_id": "b8e1ed461e18a1383bbca9ca",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/04/20210429.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/04/20210429.html",
+        "prior_reason": "not_event",
+        "content_sha256": "2dd89df2eb15f74c5db1815ed80f7301b494119fce95be46352ff9acfe8bcef3",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:26+08:00"
+      },
+      {
+        "candidate_id": "a8a0573247d997ff72c528ed",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/04/20210422.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/04/20210422.html",
+        "prior_reason": "not_event",
+        "content_sha256": "4b0d0deff5bc006dfbe0d986d7e1c76036fc3a1392755502d8afb8fae5e77931",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:28+08:00"
+      },
+      {
+        "candidate_id": "d817817a9236480bedaf397f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/04/20210415.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/04/20210415.html",
+        "prior_reason": "not_event",
+        "content_sha256": "8e9edeb60b628a60cfb022ddca86d6dee7ecd8c669faeba5f0d57f0f0c47d59a",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:29+08:00"
+      },
+      {
+        "candidate_id": "e70dff98f5aea148ddfca91a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/04/20210408.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/04/20210408.html",
+        "prior_reason": "not_event",
+        "content_sha256": "d47770399e4801c5868465fe3576fc9496f052e82fe52891b279b7ee0ee2fa7e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:31+08:00"
+      },
+      {
+        "candidate_id": "e4035074a1541297b4320613",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2021/04/20210401.html",
+        "evidence_url": "https://www.tgb.org.tw/2021/04/20210401.html",
+        "prior_reason": "not_event",
+        "content_sha256": "a14fd45875e87b42a1ab698120ff5f9cf963dca0018d681f739c3bd01b0b4293",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:32+08:00"
+      },
+      {
+        "candidate_id": "8c9c70aabfaa5200548eab34",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/12/2021.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/12/2021.html",
+        "prior_reason": "not_event",
+        "content_sha256": "f340c18fe8914a71cc925a45bae2ac5f65e44b3b3966cd870db7824b7fd20854",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:34+08:00"
+      },
+      {
+        "candidate_id": "a614fe7af923900f1f0009cc",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/12/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/12/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "78603f657c3e8534c118245e0f39203344ad79f483e0b17a5c3108f3eb50d0ba",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:35+08:00"
+      },
+      {
+        "candidate_id": "4596718213fcec85e79979eb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2020/03/e2.html",
+        "evidence_url": "https://www.tgb.org.tw/2020/03/e2.html",
+        "prior_reason": "not_event",
+        "content_sha256": "75556c741ab5800a7be11762cc90eb3a0d3d98f3bd683bcd9d7b5f8b047fe38f",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:36+08:00"
+      },
+      {
+        "candidate_id": "a60d3344623974eaadcb0899",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/11/20152016.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/11/20152016.html",
+        "prior_reason": "not_event",
+        "content_sha256": "744a51dcae64137ba8321132b6e30f4fc5de47af366a65d9ab6b64439dd43584",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:38+08:00"
+      },
+      {
+        "candidate_id": "96aa82413112878eac7b0b23",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/10/2mi-moo.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/10/2mi-moo.html",
+        "prior_reason": "not_event",
+        "content_sha256": "c8a6ffb486112085965433342cf1560319391fd746d6bb08dbafab5af2c3f2ae",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:40+08:00"
+      },
+      {
+        "candidate_id": "71f1173e6f0386c897c7891c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/10/2tshit-tho.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/10/2tshit-tho.html",
+        "prior_reason": "not_event",
+        "content_sha256": "b3877a3dd6720a0661be1e775171705436fdcd6657baae607cfa2a42258e9584",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:41+08:00"
+      },
+      {
+        "candidate_id": "5bd46f56abe98f38fd0e5192",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/10/2tsia.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/10/2tsia.html",
+        "prior_reason": "not_event",
+        "content_sha256": "f9b0558dbfe2158d12b1a4d3baf12ce097edf181a56dd63e10d918b7c09dc200",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:45+08:00"
+      },
+      {
+        "candidate_id": "5eb3316d8b5828103a1c6f9c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/02/2019_12.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/02/2019_12.html",
+        "prior_reason": "expired",
+        "content_sha256": "8c97dab84fc4e2051bc533c0fc017925b8c17d54aa4d190c62fef98258ef24c4",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:46+08:00"
+      },
+      {
+        "candidate_id": "e5e06a19eabb5e4b747fdc7c",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/02/2019.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/02/2019.html",
+        "prior_reason": "not_event",
+        "content_sha256": "ef7b9dcc0b5bed121d6a1d0fbad013a0c37ca7f2708063b2d2cc48bc1e2bbb78",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:48+08:00"
+      },
+      {
+        "candidate_id": "d48af30ad375fed328fe475b",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2019/02/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2019/02/blog-post.html",
+        "prior_reason": "not_event",
+        "content_sha256": "4c5922fbfd1dd5f075d58a36132cfddbbede78a1b3c6c3f0e03a13b4103bdd9b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:49+08:00"
+      },
+      {
+        "candidate_id": "9c540a45b6fb16a7984fdfdc",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/10/blog-post.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/10/blog-post.html",
+        "prior_reason": "expired",
+        "content_sha256": "892f1576cd3492cd8de8286f3d3e7650fbe9c113a6b6dbb2750ac5146347b041",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:51+08:00"
+      },
+      {
+        "candidate_id": "4250cb5c46f35c12b1f89add",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/04/satsham-e-e.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/04/satsham-e-e.html",
+        "prior_reason": "expired",
+        "content_sha256": "24d385aaba262cb31cc470c78057db6a42eea94805e4c43ca7d3d450cb51a735",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:52+08:00"
+      },
+      {
+        "candidate_id": "c22066f475a111ecb472e861",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2018/02/2017a-khioh-siunn-kap.html",
+        "evidence_url": "https://www.tgb.org.tw/2018/02/2017a-khioh-siunn-kap.html",
+        "prior_reason": "not_event",
+        "content_sha256": "1d88d5a677333f83536a14ddd803db35c8215c86dcb7127e275c43517225d414",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:53+08:00"
+      },
+      {
+        "candidate_id": "4c427f15314220c62de7bb68",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/11/sa20171206kape.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/11/sa20171206kape.html",
+        "prior_reason": "expired",
+        "content_sha256": "245b1ec8ff07e00b22b9a0b95d8e703b605bbf60c006a7a691f894aa0b4df695",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:55+08:00"
+      },
+      {
+        "candidate_id": "56fee8ea37fecf53db75cccb",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/11/1130.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/11/1130.html",
+        "prior_reason": "not_event",
+        "content_sha256": "62b2ec5818f16d3de3de9932d37856778b75c8042101335adc004c65e966b2d6",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:56+08:00"
+      },
+      {
+        "candidate_id": "341c378fc10abe73dad5892e",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/10/sakhah.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/10/sakhah.html",
+        "prior_reason": "not_event",
+        "content_sha256": "eefb35983bd4efa15261d9d06433ce10bb4628815278c26be43c321e3b2da365",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:58+08:00"
+      },
+      {
+        "candidate_id": "62032d6bc072bd15f90c53ea",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/10/sa2017118.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/10/sa2017118.html",
+        "prior_reason": "expired",
+        "content_sha256": "2734a439a4365b06e69b0c08f15e50c3081ece278417e22ba12340ad1f82245b",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:51:59+08:00"
+      },
+      {
+        "candidate_id": "69b15a81be12499d6da4d7f7",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/2017921.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/2017921.html",
+        "prior_reason": "not_event",
+        "content_sha256": "b1558d839c27502d7e6fa354c331d3b7e5da7f5416b133b42b7275e1a1d59632",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:01+08:00"
+      },
+      {
+        "candidate_id": "d1a7e570a4f64ee52ad674d3",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/2017914.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/2017914.html",
+        "prior_reason": "not_event",
+        "content_sha256": "dd1b15a47221e58ed73a1103fc1ecaa598329c4d36ca34c68f5d1c82f4e71d0e",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:02+08:00"
+      },
+      {
+        "candidate_id": "eeada1aa4cf6ec90f1c3c195",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/201797.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/201797.html",
+        "prior_reason": "not_event",
+        "content_sha256": "d2499db61a8994dcdb7e1e6674d9e9578d0fee6d040633495cade2eb18486c39",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:04+08:00"
+      },
+      {
+        "candidate_id": "1bd77e7efa4369374c59819d",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/09/2017831.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/09/2017831.html",
+        "prior_reason": "not_event",
+        "content_sha256": "a31b7ea330b1a3c0b65a163baebf58cc89a9d51cbdc3a361a1abc6a0971fdb25",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:05+08:00"
+      },
+      {
+        "candidate_id": "828212c26b44bf0354be346a",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/08/2017824.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/08/2017824.html",
+        "prior_reason": "not_event",
+        "content_sha256": "bb37823b52b23e334d444423165e7e946f45a09b559ae2a7ef244d6930d42c16",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:07+08:00"
+      },
+      {
+        "candidate_id": "13a6330b7c3ef963546304f8",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/08/2017817.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/08/2017817.html",
+        "prior_reason": "not_event",
+        "content_sha256": "5b53ba9df3b736c00855b06bcb94f48caf34b2e31c9db54c4e5f346119eafb0c",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:08+08:00"
+      },
+      {
+        "candidate_id": "abae90258a65edbfe0fb8f62",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/08/2017810.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/08/2017810.html",
+        "prior_reason": "not_event",
+        "content_sha256": "416ecd6d2c3a5b060e5e68b17de0a38de8e2148ba04da78907ce37f529c42b97",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:09+08:00"
+      },
+      {
+        "candidate_id": "056fdb3facfd4a115e3d8a7f",
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2017/08/201783.html",
+        "evidence_url": "https://www.tgb.org.tw/2017/08/201783.html",
+        "prior_reason": "not_event",
+        "content_sha256": "d2cd155fbde715b9025f788c86e63b3c6c78b828f329f776372c1dd0b757f565",
+        "status": "confirmed_closed",
+        "checked_at": "2026-10-06T15:52:11+08:00"
+      },
+      {
+        "candidate_id": "3fcdd80eb7beac074909affe",
+        "source_id": "linfamily",
+        "source_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+        "evidence_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+        "prior_reason": "resource_only",
+        "content_sha256": "c3ee33b1e2f2f72aa7bdb34c6153369f609a4bb00353db71876ec6cb43865848",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:15+08:00"
+      },
+      {
+        "candidate_id": "f7e02e5827ed2e38ce623cde",
+        "source_id": "ntl",
+        "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+        "evidence_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+        "prior_reason": "already_covered",
+        "content_sha256": "14abb40c2637cb4aa564bd6e56a44e7c9a616c945eaa48af9c73d5210d7e7131",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:17+08:00"
+      },
+      {
+        "candidate_id": "7c2438d7753cf679ae8c808d",
+        "source_id": "ntl",
+        "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+        "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+        "prior_reason": "already_covered",
+        "content_sha256": "e2b19bebaf8382d20cc3722ff9717af96bf29090a4adf08320f921842bfb3518",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:18+08:00"
+      },
+      {
+        "candidate_id": "f0bcead0a4c54899c0335ef8",
+        "source_id": "ntm",
+        "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+        "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+        "prior_reason": "already_covered",
+        "content_sha256": "250f15cf55240b29a16003ec2040df1a2ef33dbddeb432f1ef8a68979e10d8e4",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:19+08:00"
+      },
+      {
+        "candidate_id": "a08ee5ea7107bdc1b1407c10",
+        "source_id": "ntpc_center_banqiao",
+        "source_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+        "evidence_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+        "prior_reason": "outside_region",
+        "content_sha256": "363d657fb8cf608d24649141660777cb45ef5b4702e9ca381e6f5e558e9bd667",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:21+08:00"
+      },
+      {
+        "candidate_id": "88c471912c644ff0fea112d0",
+        "source_id": "ntpc_center_gongliao",
+        "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+        "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+        "prior_reason": "expired",
+        "content_sha256": "edea4513cc865e7ceba3762784a495f4ff50e0945c0636235f760f0788105435",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:22+08:00"
+      },
+      {
+        "candidate_id": "f7f4b245cbedc9b1a59edc72",
+        "source_id": "ntpc_center_gongliao",
+        "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+        "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+        "prior_reason": "expired",
+        "content_sha256": "edea4513cc865e7ceba3762784a495f4ff50e0945c0636235f760f0788105435",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:23+08:00"
+      },
+      {
+        "candidate_id": "390321cc4d115711d3c67ed0",
+        "source_id": "ntpc_center_jinshan",
+        "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+        "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+        "prior_reason": "outside_region",
+        "content_sha256": "471705ff90b86145788e88e6d86af5c07fe13f0145c4dac189863a406464c520",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:25+08:00"
+      },
+      {
+        "candidate_id": "9e99e1e786f6a1a6349a2145",
+        "source_id": "ntpc_center_ruifang",
+        "source_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+        "evidence_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+        "prior_reason": "expired",
+        "content_sha256": "2bcf3718ba12210056ff4484300742a39ac98b3f72f84d06d0827dcb041e65c5",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:26+08:00"
+      },
+      {
+        "candidate_id": "6eb146558935dd91098a7bb6",
+        "source_id": "ntpc_education",
+        "source_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+        "evidence_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+        "prior_reason": "not_event",
+        "content_sha256": "cf23e094d4e31670779bca22e3a172a23ba2736d2fd0d871c6600699622f20a6",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:28+08:00"
+      },
+      {
+        "candidate_id": "5b932b0c3ff3908f54e91312",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2077678411348267009",
+        "evidence_url": "https://csm.api.opentix.life/programs/2077678411348267009",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "3c5cfa10f300c42792d01db3109652c57c01b86dc61b3a54fe6b7330670d323f",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:29+08:00"
+      },
+      {
+        "candidate_id": "9783169014ec2b85e262a4fe",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "11f1a8f1c1fe25e67c1e8068",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "9aeacac9bb7b3bc50a426164",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "7c3dbe74c98586f806246d1c",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "42cc5d7182ee9a956c447228",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "c7b6c9dfd3cb3c0135aebbd0",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "2e05f52085b12a832550d13d",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "52b5e5d95f1ba447cb5a7980",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "8ab26ebf9986e6e9a9ee7b65",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "9144d42647c2c6874fd19fe1",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2084178428940558336",
+        "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "05af3d28ab156d93403f8089879517a42f28a6ff2cc60082773b4b0b55eaa0ee",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:31+08:00"
+      },
+      {
+        "candidate_id": "0b4465d89335ba4b3eaa83c4",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2070446724700692480",
+        "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:32+08:00"
+      },
+      {
+        "candidate_id": "9cbfbc93f8ddea76be0cfeab",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2070446724700692480",
+        "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:32+08:00"
+      },
+      {
+        "candidate_id": "e679c2f176994938629bee05",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2070446724700692480",
+        "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:32+08:00"
+      },
+      {
+        "candidate_id": "0cc1ffb666e424fb080394db",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2070446724700692480",
+        "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "aca056639bcf3b975d6f758c15254c5e0c6f9053d519c126aaa105b9e043c8dc",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:32+08:00"
+      },
+      {
+        "candidate_id": "91e375484e070820ffa35d85",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2102298802570960896",
+        "evidence_url": "https://csm.api.opentix.life/programs/2102298802570960896",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "b3fda46da609eaefee86d99f94437b9182c9f19a055830eaee3bc4390f244219",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:34+08:00"
+      },
+      {
+        "candidate_id": "a7ca9da2b192d60885014320",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079840877876432897",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:35+08:00"
+      },
+      {
+        "candidate_id": "83320c209abbe00b41d6e92c",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079840877876432897",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:35+08:00"
+      },
+      {
+        "candidate_id": "f982f2a208eaf3113745056f",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079840877876432897",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:35+08:00"
+      },
+      {
+        "candidate_id": "4107979a1f2d575c4e722e5e",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079840877876432897",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "2a8b5888f5ca4548d167659516776d7533c0f7264e90783367fef8302c56e376",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:35+08:00"
+      },
+      {
+        "candidate_id": "fd98af504902cab646d3fc10",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1997861121855938561",
+        "evidence_url": "https://csm.api.opentix.life/programs/1997861121855938561",
+        "prior_reason": "resource_only",
+        "content_sha256": "c29cedd515611ca6c2326909dc5f8782577cedc04bfb25e73558b124440bc6e1",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:36+08:00"
+      },
+      {
+        "candidate_id": "dfcfc1b1dac024e27020ef3a",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2090269380048343041",
+        "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+        "prior_reason": "not_taigi",
+        "content_sha256": "c2aaeece874b290456c0130ecc04d3be3ee4f33e2d80356586590176bdb86c74",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:38+08:00"
+      },
+      {
+        "candidate_id": "2bcdecfab7a0fe9f3c1e2ff2",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2090269380048343041",
+        "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+        "prior_reason": "not_taigi",
+        "content_sha256": "c2aaeece874b290456c0130ecc04d3be3ee4f33e2d80356586590176bdb86c74",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:38+08:00"
+      },
+      {
+        "candidate_id": "06e2413bf111c55e7209d238",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2090269380048343041",
+        "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+        "prior_reason": "not_taigi",
+        "content_sha256": "c2aaeece874b290456c0130ecc04d3be3ee4f33e2d80356586590176bdb86c74",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:38+08:00"
+      },
+      {
+        "candidate_id": "fbf770b73cc8075ce6b43083",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2067491105969741825",
+        "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+        "prior_reason": "not_taigi",
+        "content_sha256": "09c9ac9abf0d32aee1be3ef4bf3ae0b35acf2232531bed9503852e5c80a9388d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:40+08:00"
+      },
+      {
+        "candidate_id": "47ee554be0653aade3a3f5fa",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2067491105969741825",
+        "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+        "prior_reason": "not_taigi",
+        "content_sha256": "09c9ac9abf0d32aee1be3ef4bf3ae0b35acf2232531bed9503852e5c80a9388d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:40+08:00"
+      },
+      {
+        "candidate_id": "5dc4703b0cd0a82cd3cef6c4",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "dbca52a079922d1f7ee4bbbf",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c82c8648dc3a110541f85593",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "0bf64b37df0d7d655c6669ee",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "5a307bbd77455d480bb59c76",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c5865094151f814b775077d8",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c22f7445d0596d467d4d81a0",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "f5cc29e7fbc563f738eb15f6",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "ddb5bdd1d6b4ab141b5f28c7",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "9e44ff3d8b894409a7de4c1f",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "0383c08e4f3fa1358e62d704",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "0540a714c96964ec48e7bd7d",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "527b87795f2923e1ed1dc4a2",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "a04ae9a335a49163cd1f32fe",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "cdcbf7c97b285e32a3775b32",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "b6a8bcea8bf7ccdc5afb8b35",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c86370fe6ee8b715e8046e0a",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "fd332bb9929817c536f35e54",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "6c2eba30eeb8c5133f8714a7",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c5e710f098608c6e71021d4e",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "565be89a3016958bf6c17487",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "a38d9ad08722bb24fba2f4a5",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c67041d2643cc5077f892eba",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "6bafd2ff83d5a4e282133b5b",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "ae164c8c34dee61df06df897",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "1f300a38b004f174ba920c5d",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "3cb5c85e1fbc1d7f60429244",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "327df1f0252143a1ae60e4a9",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "25b30ce6fc95dbe6c634fa37",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "49f373e7f79ad6ed50e14cac",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "7c4552f4f92fd5370d3abb39",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "2078e80ef14127a7626a0dc2",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "6da5cc0aeacbbc1a2f46b618",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "e62afc30b1709ff60f239fc0",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "c7b4242d4bf4ebbe62f751bb",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "85c548699da906f6cdb7968a",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "65c2f0a98e2a0e618c3ecc8a",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "092218e0ca0f52e92a105436",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "7002b7c7339c91c68c1c58da",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "ef477d97c91b96ead82562ad",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "6a38a09a08a36c29fdb86a00",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/1863403624657735681",
+        "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "prior_reason": "not_taigi",
+        "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:41+08:00"
+      },
+      {
+        "candidate_id": "1ed312c294d17e93c0ac8f72",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079832717837029377",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "104434fb0730607d7a7d7cf202490e2370f001dbd123db3a6ccb1a73ebf42b76",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:43+08:00"
+      },
+      {
+        "candidate_id": "d52e86bd9feff58950d21624",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2079832717837029377",
+        "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "104434fb0730607d7a7d7cf202490e2370f001dbd123db3a6ccb1a73ebf42b76",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:43+08:00"
+      },
+      {
+        "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2055198355043160065",
+        "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "e9757894bd4e03f7f1e346b389d565f7ca7062723015d8e2bc23656dca3de06b",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:44+08:00"
+      },
+      {
+        "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2055198355043160065",
+        "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "e9757894bd4e03f7f1e346b389d565f7ca7062723015d8e2bc23656dca3de06b",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:44+08:00"
+      },
+      {
+        "candidate_id": "97597c65d12135baddad246e",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2095402846518976512",
+        "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+        "prior_reason": "not_taigi",
+        "content_sha256": "bdd6e282a99125c850dc44db1faa5e1fb9be6e2d9fc4b7f474cd6955419d406d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:45+08:00"
+      },
+      {
+        "candidate_id": "9f56f9fb86feb2ed1dae79d1",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2095402846518976512",
+        "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+        "prior_reason": "not_taigi",
+        "content_sha256": "bdd6e282a99125c850dc44db1faa5e1fb9be6e2d9fc4b7f474cd6955419d406d",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:52:45+08:00"
+      },
+      {
+        "candidate_id": "3b7c9208f2dc9d276cf57aaa",
+        "source_id": "sshm",
+        "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+        "evidence_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+        "prior_reason": "resource_only",
+        "content_sha256": "ada8668300bee4bb9fd1c7327f4da2487d2a2bd92379cd4fe5604dcb34b1cd41",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:05+08:00"
+      },
+      {
+        "candidate_id": "d7c732aae15b836240e96d41",
+        "source_id": "tp_center_nhdo",
+        "source_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+        "evidence_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+        "prior_reason": "not_event",
+        "content_sha256": "77b7b7b23d79160df29d425bcfb159c93143a043e6cc85e91f305a7b0868d696",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:06+08:00"
+      },
+      {
+        "candidate_id": "afa44c408e05350163c1b5b0",
+        "source_id": "tp_center_xydo",
+        "source_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+        "evidence_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+        "prior_reason": "expired",
+        "content_sha256": "4d04e99ebb4395a4d03a7cb898d907c35797c2c8305466132bc21586ba855c4a",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:07+08:00"
+      },
+      {
+        "candidate_id": "9e57e3cab7f30e9de50b595c",
+        "source_id": "tpml_district_b",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+        "prior_reason": "already_covered",
+        "content_sha256": "69e9ec040c8ba18c74dae6adab23cd2cf55b4561464ca9e16d73492f2798ab8b",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:08+08:00"
+      },
+      {
+        "candidate_id": "4166922a4bafe35b76954780",
+        "source_id": "tpml_district_g",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+        "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+        "prior_reason": "resource_only",
+        "content_sha256": "406dd4f56e9f140f480a57c45f05f86f95969ed731324bf91c706ceef1cdc1d6",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:09+08:00"
+      },
+      {
+        "candidate_id": "867837fdc2d5bcee4aa2f552",
+        "source_id": "tpml_district_g",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+        "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+        "prior_reason": "resource_only",
+        "content_sha256": "a9df5d9811b0252b2af242aa0a323e20ede7c9e0b7841d5f1106f13c45cb3201",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:11+08:00"
+      },
+      {
+        "candidate_id": "f2088ecaf754ab4d1f8914c4",
+        "source_id": "tpml_district_i",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+        "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+        "prior_reason": "resource_only",
+        "content_sha256": "7f51a6f21f791796bd8ea562965cf2055802468925dd063baae329fcb864fc5c",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:12+08:00"
+      },
+      {
+        "candidate_id": "c8bb350d70a3e4fd75104af7",
+        "source_id": "tpml_district_l",
+        "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+        "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+        "prior_reason": "resource_only",
+        "content_sha256": "07302fe6c0fcfbd842809938a2ec8b89b68cb334e87d1ef6ac70822fb927dd35",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:13+08:00"
+      },
+      {
+        "candidate_id": "c34f28406d311cf244835759",
+        "source_id": "tshs",
+        "source_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+        "evidence_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+        "prior_reason": "not_event",
+        "content_sha256": "9c1e241389466657033798f36bf26691ce1fa65db61d9d3a59271e093ac2070f",
+        "status": "source_unavailable",
+        "error": "network_or_tls_error",
+        "checked_at": "2026-10-06T15:53:35+08:00"
+      },
+      {
+        "candidate_id": "bd0d014308f31004258b51c8",
+        "source_id": "ntpc_center_jinshan",
+        "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+        "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+        "prior_reason": "outside_region",
+        "content_sha256": "471705ff90b86145788e88e6d86af5c07fe13f0145c4dac189863a406464c520",
+        "status": "changed_or_identity_mismatch",
+        "checked_at": "2026-10-06T15:53:36+08:00"
+      },
+      {
+        "candidate_id": "f1fab16f749f9e057aa53c23",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:38+08:00"
+      },
+      {
+        "candidate_id": "505d41497721a015fcc5d856",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:39+08:00"
+      },
+      {
+        "candidate_id": "f753ad9f463c9f37ec9eac86",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:40+08:00"
+      },
+      {
+        "candidate_id": "2e512951ec64e63f6ac80f1c",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:41+08:00"
+      },
+      {
+        "candidate_id": "e4ff3be445fd1fafd65155e2",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:42+08:00"
+      },
+      {
+        "candidate_id": "e906dc8a59ca1743c038df0e",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:43+08:00"
+      },
+      {
+        "candidate_id": "2874e18b14fb8b480610e5fa",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:45+08:00"
+      },
+      {
+        "candidate_id": "fc59a35631358d0ee21d2a0b",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2052297227960516609",
+        "evidence_url": "https://csm.api.opentix.life/programs/2052297227960516609",
+        "prior_reason": "irrelevant_keyword",
+        "content_sha256": "4e0f282eab3785ea35740bc80fbe988cfbb9158005e4c21ed9ee8d979b810767",
+        "status": "source_unavailable",
+        "error": "http_400",
+        "checked_at": "2026-10-06T15:53:46+08:00"
+      }
+    ]
+  },
+  "new_decisions": {
+    "schema_version": 1,
+    "decisions": [
+      {
+        "source_id": "accupass",
+        "source_url": "https://www.accupass.com/event/2610010854341306121672",
+        "title": "新生地藝術節 ✿ 𝐅𝐥𝐨𝐰𝐞𝐫 𝐄𝐩𝐢𝐬𝐨𝐝𝐞 小插花",
+        "candidate_id": "7f3ccc16aa08648dcb5fd349",
+        "reason": "irrelevant_keyword",
+        "quotes": [
+          "更是台語俚語中隨興「湊一腳」、不請自來的草根生命力"
+        ],
+        "rationale": "已完整讀七類工作坊與時程；「台語」用於解释藝術節名稱雙關，實際工作坊是植物、繪畫、刺繡、花藝，並未宣稱台語教學或演出。排除這則以命名語意命中的候選，來源若新增台語場次則重開。",
+        "reviewed_at": "2026-10-06T15:54:06+08:00",
+        "evidence_url": "https://www.accupass.com/event/2610010854341306121672",
+        "content_sha256": "86c061156bb542882be17679462431fc9038dda5e11109b0222663ea1f58a8c2",
+        "document_version": 2,
+        "reviewer": "Codex; full source reading"
+      },
+      {
+        "source_id": "li_kang_khiok",
+        "source_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+        "title": "【台語sa攏有】歷史教育ê轉型正義",
+        "candidate_id": "0d310dbf8977ca977933b3ee",
+        "reason": "already_covered",
+        "quotes": [
+          "時間：2026/10/14（拜三）19:30～21:30",
+          "黃惠貞",
+          "濟南教會"
+        ],
+        "rationale": "完整公告及主辦報名表對應已刊登tgb_20261014_1930，同時間、講師、場館及主題；不重複建立。",
+        "reviewed_at": "2026-10-06T15:54:06+08:00",
+        "evidence_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+        "content_sha256": "8727f2ccf9cda0265283fa0d8d7cc31086db51f2dac9cdccbdee71d06d04e077",
+        "document_version": 2,
+        "reviewer": "Codex; full source reading"
+      },
+      {
+        "source_id": "ntpclib",
+        "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+        "title": "【總館X土城、樹林、三峽、鶯歌區】Ready？帶上手機出任務！新北圖「在地知識學列車」開跑！-新北市立圖書館",
+        "candidate_id": "e3854a494160cdf09169ee74",
+        "reason": "resource_only",
+        "quotes": [
+          "不同於傳統定時導覽",
+          "隨時出發、隨時闖關",
+          "8/1 閱讀藍染×永續時尚×臺語創客坊"
+        ],
+        "rationale": "全文是自主手機解謎和系列目錄；明示台語的創客坊是8/1舊場，未來定時活動沒有相應台語內容證據。此頁不作單場活動刊登，新增官方台語分場時重開。",
+        "reviewed_at": "2026-10-06T15:54:06+08:00",
+        "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+        "content_sha256": "2cd999bcb5aeba21331b2eaa8f70996b2c9e4ad3a6b2f28e99112693874c06df",
+        "document_version": 2,
+        "reviewer": "Codex; full source reading"
+      },
+      {
+        "source_id": "ntpclib_district_220",
+        "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+        "title": "【總館X土城、樹林、三峽、鶯歌區】Ready？帶上手機出任務！新北圖「在地知識學列車」開跑！",
+        "candidate_id": "0dede2675e5ae2cd79ed1e86",
+        "reason": "resource_only",
+        "quotes": [
+          "不同於傳統定時導覽",
+          "隨時出發、隨時闖關",
+          "8/1 閱讀藍染×永續時尚×臺語創客坊"
+        ],
+        "rationale": "與總館候選同一官方頁，是自主手機解謎及系列目錄；明示台語創客坊為8/1舊場，未來沒有新台語分場，不將整個期間製造成單場。",
+        "reviewed_at": "2026-10-06T15:54:06+08:00",
+        "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+        "content_sha256": "2cd999bcb5aeba21331b2eaa8f70996b2c9e4ad3a6b2f28e99112693874c06df",
+        "document_version": 2,
+        "reviewer": "Codex; full source reading"
+      },
+      {
+        "source_id": "ntpclib_district_241",
+        "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
+        "title": "【三重東區分館】115年8月-11月份【本土語言書展】",
+        "candidate_id": "8c5db2e9b917ad7343995a9f",
+        "reason": "resource_only",
+        "quotes": [
+          "115年8月1日至11月30日",
+          "1樓書展區",
+          "本次書展特別精挑細選，展出台灣的各類本土語言"
+        ],
+        "rationale": "完整公告是持續展出的本土語言圖書展示及借閱，無定時台語導讀或演出，不作場次或ICS。",
+        "reviewed_at": "2026-10-06T15:54:06+08:00",
+        "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
+        "content_sha256": "c07e26468f5babf38e383417fdecdae0780d52d504b7617052bab9b502e595d1",
+        "document_version": 2,
+        "reviewer": "Codex; full source reading"
+      }
+    ],
+    "deferred": [
+      {
+        "index": 18,
+        "candidate_id": "eae15fb955b24827377481f3",
+        "reason": "source_changed"
+      },
+      {
+        "index": 19,
+        "candidate_id": "9210c588b5bb7376f839c63e",
+        "reason": "source_changed"
+      },
+      {
+        "index": 24,
+        "candidate_id": "fe652bb87e22e0976d6ed370",
+        "reason": "network_or_tls_error"
+      },
+      {
+        "index": 27,
+        "candidate_id": "ba37326b13529aaf8f0c100c",
+        "reason": "network_or_tls_error"
+      }
+    ]
+  },
+  "duplicate_decisions": {
+    "decisions": [
+      {
+        "source_id": "typl",
+        "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+        "title": "【影帝影后講台語】 「台語咱佮意！」台語主題講座 2026.10.24 演講研習 總館",
+        "candidate_id": "987e701b8b6f81de990a0952",
+        "reason": "already_covered",
+        "quotes": [
+          "時間：10/24（六）13:00–16:00",
+          "講師：陳豐惠老師"
+        ],
+        "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609140247402019682780_20261024_1300，保留已刊登活動，不重複上站。",
+        "reviewed_at": "2026-10-06T15:55:16+08:00",
+        "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+        "content_sha256": "1268c94bdad1cc31364027513c2a509013b9eff750a0d3d433f2fd000a5f7e8a",
+        "document_version": 2,
+        "reviewer": "Codex; full official announcement and existing catalog comparison"
+      },
+      {
+        "source_id": "typl_district_2",
+        "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+        "title": "【影帝影后講台語】 「台語咱佮意！」台語主題講座",
+        "candidate_id": "c6ff02c1af4cb4862873a522",
+        "reason": "already_covered",
+        "quotes": [
+          "時間：10/24（六）13:00–16:00",
+          "講師：陳豐惠老師"
+        ],
+        "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609140247402019682780_20261024_1300，保留已刊登活動，不重複上站。",
+        "reviewed_at": "2026-10-06T15:55:16+08:00",
+        "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+        "content_sha256": "1268c94bdad1cc31364027513c2a509013b9eff750a0d3d433f2fd000a5f7e8a",
+        "document_version": 2,
+        "reviewer": "Codex; full official announcement and existing catalog comparison"
+      },
+      {
+        "source_id": "typl_district_2",
+        "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10194",
+        "title": "【總館活動】「台語咱佮意！」台語說故事",
+        "candidate_id": "bcbf52033a2fea0cf3bd5c7b",
+        "reason": "already_covered",
+        "quotes": [
+          "10/17（六）14:00–16:00",
+          "講師：鄭家和老師"
+        ],
+        "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609110733451525240428_20261017_1400_2e920c9addad，保留已刊登活動，不重複上站。",
+        "reviewed_at": "2026-10-06T15:55:16+08:00",
+        "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10194",
+        "content_sha256": "ffe623a3e799f3e1dedc36cdf9dcc09421aba3991511399a589ed273023533fa",
+        "document_version": 2,
+        "reviewer": "Codex; full official announcement and existing catalog comparison"
+      }
+    ],
+    "deferred": []
+  },
+  "qualified_review": {
+    "schema_version": 1,
+    "mode": "official_rules_v1",
+    "reviewed_at": "2026-10-06T15:50:25+08:00",
+    "source_priority": {
+      "gameislearning_1583v0joi94_20261017_1000": {
+        "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+        "primary_activity_id": "acc_2608051357275636349740_20261017_1000",
+        "reason": "accupass_primary_session"
+      },
+      "gameislearning_1583v0joi94_20261121_1000": {
+        "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+        "primary_activity_id": "acc_2608051357275636349740_20261121_1000",
+        "reason": "accupass_primary_session"
+      },
+      "gameislearning_1583v0joi94_20261219_1000": {
+        "primary_url": "https://www.accupass.com/event/2608051357275636349740",
+        "primary_activity_id": null,
+        "reason": "accupass_session_not_verified"
+      },
+      "gameislearning_16086bkwi94_20261004_1030": {
+        "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+        "primary_activity_id": "acc_2607280236031295663510_20261004_1030",
+        "reason": "accupass_primary_session"
+      },
+      "gameislearning_1581w9d4i94_20260920_1030": {
+        "primary_url": "https://www.accupass.com/event/2607280236031295663510",
+        "primary_activity_id": "acc_2607280236031295663510_20260920_1030",
+        "reason": "accupass_primary_session"
+      }
+    },
+    "applied_to_catalog": false,
+    "collected_at": null,
+    "candidate_count": 5,
+    "input_kind": "persisted_backlog",
+    "counts": {
+      "routed": 2,
+      "approved": 3
+    },
+    "collection_status_counts": {},
+    "decisions": [
+      {
+        "candidate_id": "b42182c92a2212a0ebc0abec",
+        "source_id": "accupass",
+        "source_url": "https://www.accupass.com/event/2610030629251925712636",
+        "title": "大象進階國台語國際演講會第294次例會~洗洗睡",
+        "decision": "routed",
+        "reason": "reviewed_announcement_sessions_split",
+        "routed_session_count": 1
+      },
+      {
+        "candidate_id": "2726f364c1180accd35d884e",
+        "source_id": "ntpclib_district_243",
+        "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=2cc481c7f2a94e6ebdac8cdf3bee6985",
+        "title": "【泰山分館】10/17(六)永續閱讀活動-萬聖空氣鳳梨小精靈",
+        "decision": "routed",
+        "reason": "reviewed_announcement_sessions_split",
+        "routed_session_count": 1
+      },
+      {
+        "candidate_id": "7bf05feb0091021c447a0e0d",
+        "source_id": "opentix",
+        "source_url": "https://www.opentix.life/event/2100799903336443905",
+        "title": "金采合唱團「風聲水起」十一週年公益關懷音樂會",
+        "decision": "approved",
+        "reason": "official_page_and_session_api_verified",
+        "activity_id": "opentix_2100800611242684416",
+        "published_session_ids": [
+          "opentix_2100800611242684416"
+        ]
+      },
+      {
+        "candidate_id": "ea5c7c3d2f65acf2ba55c9e7",
+        "source_id": "accupass",
+        "source_url": "https://www.accupass.com/event/2610030629251925712636",
+        "title": "大象進階國台語國際演講會第294次例會~洗洗睡",
+        "decision": "approved",
+        "reason": "official_reviewed_sessions_verified",
+        "activity_id": "review_elephant_294_20261008_1900",
+        "published_session_ids": [
+          "review_elephant_294_20261008_1900"
+        ]
+      },
+      {
+        "candidate_id": "009c73afdb51a512c04492c9",
+        "source_id": "ntpclib_district_243",
+        "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=2cc481c7f2a94e6ebdac8cdf3bee6985",
+        "title": "【泰山分館】10/17(六)永續閱讀活動-萬聖空氣鳳梨小精靈",
+        "decision": "approved",
+        "reason": "official_reviewed_sessions_verified",
+        "activity_id": "review_taishan_20261017_1000",
+        "published_session_ids": [
+          "review_taishan_20261017_1000"
+        ]
+      }
+    ],
+    "attention": {
+      "pending_candidates": 0,
+      "already_has_published_sessions": 0,
+      "source_unavailable": 0,
+      "message": "本輪沒有未解決候選。"
+    },
+    "destination": "data/editorial/queue.json"
+  },
+  "elephant_date_resolution": {
+    "official_body_date": "2026-10-08",
+    "jsonld_period": "2026-10-01 through 2026-10-08 is not a single session",
+    "poster_evidence": [
+      {
+        "local_path": "/tmp/taigi-elephant-20261006.jpg",
+        "sha256": "0ff6b460405f1ce763a8d0aec947b94e1b3787aad235ade18e65f5b02de0752a",
+        "visually_read": true,
+        "relevant_text": "大象第294次例會；洗洗睡；2026/10/8"
+      },
+      {
+        "local_path": "/tmp/taigi-elephant-intro-0.jpg",
+        "sha256": "caae661bfad13c09caff5b4c6a114cd0716e19083e81128c6c626daa1fedb4a4",
+        "visually_read": true,
+        "relevant_text": "2026/10/8；晚上7點～9點；寧波東街1號4樓"
+      },
+      {
+        "local_path": "/tmp/taigi-elephant-intro-1.jpg",
+        "sha256": "7bbee21a9549a61102e6a505f4286c5f45e65baacadcc4d900b1f0ea7729859f",
+        "visually_read": true,
+        "relevant_text": "10/8；紙飛機活動"
+      },
+      {
+        "local_path": "/tmp/taigi-elephant-intro-2.jpg",
+        "sha256": "218963c570fc437a65a2902cd719c34cbf4bfab22c95013e46d4fa90bb4df23b",
+        "visually_read": true,
+        "relevant_text": "因為10/9(五)是休假，將改成10/8(四)開例會"
+      }
+    ],
+    "poster_urls": [
+      "https://static.accupass.com/eventbanner/2610030625496990145750.jpg",
+      "https://static.accupass.com/eventintro/2610030632031818327570.jpg",
+      "https://static.accupass.com/eventintro/2610030632335103748180.jpg",
+      "https://static.accupass.com/eventintro/2610030633131806039018.jpg"
+    ],
+    "reason": "Explicit reschedule poster and body agree on Oct 8; unknown fee remains null"
+  },
+  "preserved_files": {
+    "data/ai_taigi.json": {
+      "sha256": "c8554d6ab0fcdcc40abc9aeeea8245665272f91cfe77c7fdeb613adb38de8a16",
+      "unchanged_from": "273897c"
+    },
+    "data/ui_taigi.json": {
+      "sha256": "f4ca44c82ed22724ec26fa7b10ff6d18b62b22e928b317e84726e75eb45600a5",
+      "unchanged_from": "273897c"
+    }
+  },
+  "publication": {
+    "status": "not_yet_submitted",
+    "published_new_count": 0,
+    "urgent_activity_id": "review_elephant_294_20261008_1900"
+  },
+  "tests": {
+    "run": 271,
+    "result": "OK",
+    "skipped": 1
+  }
+}

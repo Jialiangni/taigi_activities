@@ -11936,6 +11936,145 @@
         "10:00-10.50 (第一場)：主題： 卵",
         "11:00-11:50 (第二場)：主題：動物"
       ]
+    },
+    {
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610010854341306121672",
+      "title": "新生地藝術節 ✿ 𝐅𝐥𝐨𝐰𝐞𝐫 𝐄𝐩𝐢𝐬𝐨𝐝𝐞 小插花",
+      "candidate_id": "7f3ccc16aa08648dcb5fd349",
+      "reason": "irrelevant_keyword",
+      "quotes": [
+        "更是台語俚語中隨興「湊一腳」、不請自來的草根生命力"
+      ],
+      "rationale": "已完整讀七類工作坊與時程；「台語」用於解释藝術節名稱雙關，實際工作坊是植物、繪畫、刺繡、花藝，並未宣稱台語教學或演出。排除這則以命名語意命中的候選，來源若新增台語場次則重開。",
+      "reviewed_at": "2026-10-06T15:54:06+08:00",
+      "evidence_url": "https://www.accupass.com/event/2610010854341306121672",
+      "content_sha256": "86c061156bb542882be17679462431fc9038dda5e11109b0222663ea1f58a8c2",
+      "document_version": 2,
+      "reviewer": "Codex; full source reading"
+    },
+    {
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+      "title": "【台語sa攏有】歷史教育ê轉型正義",
+      "candidate_id": "0d310dbf8977ca977933b3ee",
+      "reason": "already_covered",
+      "quotes": [
+        "時間：2026/10/14（拜三）19:30～21:30",
+        "黃惠貞",
+        "濟南教會"
+      ],
+      "rationale": "完整公告及主辦報名表對應已刊登tgb_20261014_1930，同時間、講師、場館及主題；不重複建立。",
+      "reviewed_at": "2026-10-06T15:54:06+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/09/sa-e-httpsforms.html",
+      "content_sha256": "8727f2ccf9cda0265283fa0d8d7cc31086db51f2dac9cdccbdee71d06d04e077",
+      "document_version": 2,
+      "reviewer": "Codex; full source reading"
+    },
+    {
+      "source_id": "ntpclib",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+      "title": "【總館X土城、樹林、三峽、鶯歌區】Ready？帶上手機出任務！新北圖「在地知識學列車」開跑！-新北市立圖書館",
+      "candidate_id": "e3854a494160cdf09169ee74",
+      "reason": "resource_only",
+      "quotes": [
+        "不同於傳統定時導覽",
+        "隨時出發、隨時闖關",
+        "8/1 閱讀藍染×永續時尚×臺語創客坊"
+      ],
+      "rationale": "全文是自主手機解謎和系列目錄；明示台語的創客坊是8/1舊場，未來定時活動沒有相應台語內容證據。此頁不作單場活動刊登，新增官方台語分場時重開。",
+      "reviewed_at": "2026-10-06T15:54:06+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+      "content_sha256": "2cd999bcb5aeba21331b2eaa8f70996b2c9e4ad3a6b2f28e99112693874c06df",
+      "document_version": 2,
+      "reviewer": "Codex; full source reading"
+    },
+    {
+      "source_id": "ntpclib_district_220",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+      "title": "【總館X土城、樹林、三峽、鶯歌區】Ready？帶上手機出任務！新北圖「在地知識學列車」開跑！",
+      "candidate_id": "0dede2675e5ae2cd79ed1e86",
+      "reason": "resource_only",
+      "quotes": [
+        "不同於傳統定時導覽",
+        "隨時出發、隨時闖關",
+        "8/1 閱讀藍染×永續時尚×臺語創客坊"
+      ],
+      "rationale": "與總館候選同一官方頁，是自主手機解謎及系列目錄；明示台語創客坊為8/1舊場，未來沒有新台語分場，不將整個期間製造成單場。",
+      "reviewed_at": "2026-10-06T15:54:06+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
+      "content_sha256": "2cd999bcb5aeba21331b2eaa8f70996b2c9e4ad3a6b2f28e99112693874c06df",
+      "document_version": 2,
+      "reviewer": "Codex; full source reading"
+    },
+    {
+      "source_id": "ntpclib_district_241",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
+      "title": "【三重東區分館】115年8月-11月份【本土語言書展】",
+      "candidate_id": "8c5db2e9b917ad7343995a9f",
+      "reason": "resource_only",
+      "quotes": [
+        "115年8月1日至11月30日",
+        "1樓書展區",
+        "本次書展特別精挑細選，展出台灣的各類本土語言"
+      ],
+      "rationale": "完整公告是持續展出的本土語言圖書展示及借閱，無定時台語導讀或演出，不作場次或ICS。",
+      "reviewed_at": "2026-10-06T15:54:06+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
+      "content_sha256": "c07e26468f5babf38e383417fdecdae0780d52d504b7617052bab9b502e595d1",
+      "document_version": 2,
+      "reviewer": "Codex; full source reading"
+    },
+    {
+      "source_id": "typl",
+      "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+      "title": "【影帝影后講台語】 「台語咱佮意！」台語主題講座 2026.10.24 演講研習 總館",
+      "candidate_id": "987e701b8b6f81de990a0952",
+      "reason": "already_covered",
+      "quotes": [
+        "時間：10/24（六）13:00–16:00",
+        "講師：陳豐惠老師"
+      ],
+      "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609140247402019682780_20261024_1300，保留已刊登活動，不重複上站。",
+      "reviewed_at": "2026-10-06T15:55:16+08:00",
+      "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+      "content_sha256": "1268c94bdad1cc31364027513c2a509013b9eff750a0d3d433f2fd000a5f7e8a",
+      "document_version": 2,
+      "reviewer": "Codex; full official announcement and existing catalog comparison"
+    },
+    {
+      "source_id": "typl_district_2",
+      "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+      "title": "【影帝影后講台語】 「台語咱佮意！」台語主題講座",
+      "candidate_id": "c6ff02c1af4cb4862873a522",
+      "reason": "already_covered",
+      "quotes": [
+        "時間：10/24（六）13:00–16:00",
+        "講師：陳豐惠老師"
+      ],
+      "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609140247402019682780_20261024_1300，保留已刊登活動，不重複上站。",
+      "reviewed_at": "2026-10-06T15:55:16+08:00",
+      "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10198",
+      "content_sha256": "1268c94bdad1cc31364027513c2a509013b9eff750a0d3d433f2fd000a5f7e8a",
+      "document_version": 2,
+      "reviewer": "Codex; full official announcement and existing catalog comparison"
+    },
+    {
+      "source_id": "typl_district_2",
+      "source_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10194",
+      "title": "【總館活動】「台語咱佮意！」台語說故事",
+      "candidate_id": "bcbf52033a2fea0cf3bd5c7b",
+      "reason": "already_covered",
+      "quotes": [
+        "10/17（六）14:00–16:00",
+        "講師：鄭家和老師"
+      ],
+      "rationale": "完整桃圖官方公告與既有場次時間、講者、場址及主題相同；既有ID=acc_2609110733451525240428_20261017_1400_2e920c9addad，保留已刊登活動，不重複上站。",
+      "reviewed_at": "2026-10-06T15:55:16+08:00",
+      "evidence_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10194",
+      "content_sha256": "ffe623a3e799f3e1dedc36cdf9dcc09421aba3991511399a589ed273023533fa",
+      "document_version": 2,
+      "reviewer": "Codex; full official announcement and existing catalog comparison"
     }
   ]
 }
