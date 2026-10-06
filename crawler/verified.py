@@ -1,12 +1,13 @@
 """Load reviewed sessions; legacy seeds and crawler guesses cannot be published."""
 import json
 import re
+import time
 from datetime import datetime, timezone, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 from .models import Activity, CityEnum, CategoryEnum, SourcePlatformEnum
-from .collection import Client
+from .collection import Client, CollectionError
 from .sources.opentix import parse_program
 from .posters import poster_url
 from .source_priority import publication_priority
@@ -90,7 +91,14 @@ def check_live_sources(sources):
     client = Client(timeout=30)
     posters = {}
     for source in sources.values():
-        html, evidence = client.get(source['url'])
+        for attempt in range(3):
+            try:
+                html, evidence = client.get(source['url'])
+                break
+            except CollectionError as exc:
+                if exc.code != 'network_or_tls_error' or attempt == 2:
+                    raise ValueError(f"官方來源讀取失敗：{source['url']} ({exc.code})") from exc
+                time.sleep(attempt + 1)
         detail_url(evidence['final_url'])
         if urlsplit(evidence['final_url']).hostname != urlsplit(source['url']).hostname:
             raise ValueError('來源轉址至不同網站，需重新核對')
