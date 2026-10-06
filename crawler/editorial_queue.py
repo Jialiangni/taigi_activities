@@ -38,6 +38,20 @@ def request_for(row, source):
     if 'opentix_sessions' in source:
         sid = row['verification']['opentix_session_id']
         source['opentix_sessions'] = [s for s in source['opentix_sessions'] if s['session_id'] == sid]
+        proof = source.get('automated_review', {})
+        scoped = []
+        for claim in proof.get('language_claims', []):
+            if 'session_ids' in claim:
+                if sid not in claim['session_ids']:
+                    continue
+                claim['session_ids'] = [sid]
+                if 'end_time_conflicts' in claim:
+                    claim['end_time_conflicts'] = [r for r in claim['end_time_conflicts']
+                                                 if r['session_id'] == sid]
+            if claim not in scoped:
+                scoped.append(claim)
+        if 'language_claims' in proof:
+            proof['language_claims'] = scoped
     if source.get('automated_review', {}).get('source_type') == 'gameislearning':
         source['automated_review']['sessions'] = [s for s in source['automated_review']['sessions']
                                                  if s['start_time'] == activity['start_time']]

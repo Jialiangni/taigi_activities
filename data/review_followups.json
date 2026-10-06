@@ -11,12 +11,13 @@
         "11/15正確樓層"
       ],
       "next_action": "10/8重查報名公告及大園分館本場課表；來源自行更正前，不改既有活動或猜樓層。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2609140247402019682780",
       "content_sha256": "8bda1b79c43e7038abc61680de67b4bd339695ed0e1282acfdc5b705437c4113",
       "fetch_error": null,
-      "checked_supporting_sources": []
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "1bcfc3a7c9e4c1e2559c82d8": {
       "candidate_id": "1bcfc3a7c9e4c1e2559c82d8",
@@ -62,11 +63,12 @@
         "本次讀劇演出語言"
       ],
       "next_action": "核對人權艺术生活節與金枝演社本次讀劇節目更新，不以劇團曾演台語劇推定本場。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2608300947345233191260",
       "content_sha256": "928ae5a6eff55b9aee89cc7133ccb2c514e500aa93fd65e9d2157fd4999d4cff",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "49b55809ecfe407f47bdd939": {
       "candidate_id": "49b55809ecfe407f47bdd939",
@@ -78,8 +80,8 @@
         "本次放映版本的實際台語口白內容"
       ],
       "next_action": "續查桃圖與報名頁的本場放映語言說明，須能連結10/17本場版本；不將「童演童語」或布袋戲當語言證據。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2604161917471542799416",
       "document_version": 2,
       "content_sha256": "cf4a580ac9243529b4e3214d8de227a65ab956f9c2a5e9c46a203df98fc684e9",
@@ -96,7 +98,8 @@
         "page": 5,
         "reviewed_at": "2026-10-06T07:07:18+08:00",
         "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "4b84bb4d166de282573f9b4a": {
       "candidate_id": "4b84bb4d166de282573f9b4a",
@@ -108,11 +111,12 @@
         "台北本場口白／演唱語言"
       ],
       "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
       "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "e0df23565b4e236588bdda64": {
       "candidate_id": "e0df23565b4e236588bdda64",
@@ -124,11 +128,12 @@
         "台北本場口白／演唱語言"
       ],
       "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
       "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "6e589e9ca5b2710ed36c2293": {
       "candidate_id": "6e589e9ca5b2710ed36c2293",
@@ -140,11 +145,12 @@
         "台北本場口白／演唱語言"
       ],
       "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
       "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "99b74f07e1e195ef8988e4d3": {
       "candidate_id": "99b74f07e1e195ef8988e4d3",
@@ -156,8 +162,8 @@
         "本場實際演出口白語言"
       ],
       "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
       "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
       "fetch_error": null,
@@ -167,7 +173,8 @@
           "checked_at": "2026-10-04T07:03:59+08:00",
           "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "282ef64b8e651ede508fd205": {
       "candidate_id": "282ef64b8e651ede508fd205",
@@ -179,8 +186,8 @@
         "本場實際演出口白語言"
       ],
       "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
       "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
       "fetch_error": null,
@@ -190,7 +197,8 @@
           "checked_at": "2026-10-04T07:03:59+08:00",
           "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "8af11f045b3d4f74f9cb278a": {
       "candidate_id": "8af11f045b3d4f74f9cb278a",
@@ -202,8 +210,8 @@
         "本場實際演出口白語言"
       ],
       "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
       "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
       "fetch_error": null,
@@ -213,7 +221,8 @@
           "checked_at": "2026-10-04T07:03:59+08:00",
           "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "7300d9f17a8bcc75d9311a90": {
       "candidate_id": "7300d9f17a8bcc75d9311a90",
@@ -225,8 +234,8 @@
         "本場實際演出口白語言"
       ],
       "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
       "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
       "fetch_error": null,
@@ -236,7 +245,8 @@
           "checked_at": "2026-10-04T07:03:59+08:00",
           "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "113e6755357fa44896310110": {
       "candidate_id": "113e6755357fa44896310110",
@@ -250,8 +260,8 @@
         "11/1成果展確切開始時間及演出內容"
       ],
       "next_action": "10/9再核對原報名表、官方工作坊補充公告與成果展公告；分開核實各班及成果展，不把純工藝／雕刻自動當台語活動，不因Facebook失敗排除。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
       "document_version": 2,
       "fetch_error": "Official page redirected; inspect destination before deciding",
@@ -268,7 +278,8 @@
           "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd",
           "reviewed_at": "2026-10-06T07:07:18+08:00"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "9d7c72661457ad8b528a7e02": {
       "candidate_id": "9d7c72661457ad8b528a7e02",
@@ -282,12 +293,13 @@
         "費用與可否中途加入"
       ],
       "next_action": "續查大勇社區官方公開課表與招生公告；須取得單堂證據，不把整期開始日推算為每週二，不以混合國台語排除。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "document_version": 2,
       "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
-      "checked_support": []
+      "checked_support": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "953b320f05d64047a33265d7": {
       "candidate_id": "953b320f05d64047a33265d7",
@@ -301,12 +313,13 @@
         "費用與參加條件"
       ],
       "next_action": "10/8優先追查中山社區本課程官方課表／招生補充；不按首末日期推定每週五，也不把10/16整期終點直接當一場。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "document_version": 2,
       "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
-      "checked_support": []
+      "checked_support": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "31e00a4048cc4a48d24cfd5a": {
       "candidate_id": "31e00a4048cc4a48d24cfd5a",
@@ -318,12 +331,13 @@
         "可重查的原活動結束或延期公告"
       ],
       "next_action": "10/10重查文化部原UID與望間社區公告；保留來源讀取失效狀態，不能以缺席列表判非台語。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
       "content_sha256": "ad159b3394ff8667b3b53116e8bf48e04cbfe94b636ed86e42d4b77e6a41d663",
       "fetch_error": null,
-      "checked_supporting_sources": []
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "310d83cbe91674eca1a83873": {
       "candidate_id": "310d83cbe91674eca1a83873",
@@ -335,8 +349,8 @@
         "10/17實際放映版本的台語口白內容"
       ],
       "next_action": "與ACCUPASS同場候選49b55809ecfe407f47bdd939共用後續版本查證；若符合只建立一場，不用系列首末日期建立跨日活動。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
       "document_version": 2,
       "content_sha256": "213c16691b275cbfd616fcb730f185c5bc993e478b4df3d9970f5bd38856a3d4",
@@ -353,7 +367,8 @@
         "page": 5,
         "reviewed_at": "2026-10-06T07:07:18+08:00",
         "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "6a9af46326972658fff4e7d0": {
       "candidate_id": "6a9af46326972658fff4e7d0",
@@ -383,15 +398,15 @@
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
       "owner": "Codex",
-      "finding": "已重讀台語站完整頁、史博館官方活動入口與兩份完整報名表。10/17雲遊博物館10:30–11:30仍寫「10/17（日）」但2026/10/17為六；10/31漫才15:00–16:30的標題、簡介是溱會灰台語漫才，活動名稱欄仍誤列雲遊博物館；10/17春福神傳說14:00–15:00仍即將開放，無報名詳頁。兩份表均有80%台語、免費及B1資訊，尚不能自行消除矛盾。已刊登場次不重建。",
+      "finding": "本轮補讀官方Portaly和4份完整表單。10/17下午《卡滋幫》報名表已可讀，但內文題名仍混入《熱人的冰麒麟》；10/17上午星期仍不符2026日期；10/31漫才表單活動名稱欄仍混入《雲遊博物館》。10/18已刊，不能重建。",
       "missing_fields": [
         "10/17雲遊場次日期／星期一致的官方確認",
         "10/31漫才正確活動名稱",
         "10/17春福神傳說完整報名公告與參加条件"
       ],
-      "next_action": "10/9追查同一官方入口及表單修訂，逐場比較來源；補齊才建立契約，保留已刊登的其他場次，不自行修正官方日期或混用活動名稱。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "next_action": "逐場比較官方更正與報名表，不混用不同活動題名；正確日期與場次對應仍需明確。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
       "document_version": 2,
       "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
@@ -414,7 +429,8 @@
           "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b",
           "reviewed_at": "2026-10-06T07:07:18+08:00"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "d50adf5d105c3f70c43d3186": {
       "candidate_id": "d50adf5d105c3f70c43d3186",
@@ -428,8 +444,8 @@
         "費用資訊"
       ],
       "next_action": "10/9再讀本班課程／招生頁及新週報，找具日期的本期台語班課表；不套用一般主日學時程，不把表單截止當不能参加。",
-      "reviewed_at": "2026-10-06T07:07:18+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
       "document_version": 2,
       "content_sha256": "894c8d29108d0d4a682ce5cfa8464edf98705ab08a7da34d8dc4a9e986005ad6",
@@ -458,7 +474,8 @@
         "sha256": "4860c7bae3ba6d49b35402dc93e27b0ce1ddbdae1fc0c83cdf622b72784fc0ce",
         "reviewed_at": "2026-10-06T07:07:18+08:00",
         "finding": "2026/10/4一般兒童主日學週報，未載本班期末與停課日期。"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "26fc8fd52baf542daaf8e1a6": {
       "candidate_id": "26fc8fd52baf542daaf8e1a6",
@@ -487,7 +504,7 @@
         "期中可否報名"
       ],
       "next_action": "追查基金會補充課表與公開表單；不得把週二線上時間套到台北實體課，也不得以403判非台語。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/07/23.html",
       "content_sha256": "2b988bb3f242a823bd3ef7d03f1a7299beec8cff855dd6e78eba3d1fa72d154c",
@@ -496,7 +513,8 @@
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSeDufxC0Nj96BZO-QUvQafsevm8LDYzSbf1Bmfhh5E8bTw95A/viewform",
         "result": "http_403",
         "reviewed_at": "2026-10-05T07:07:39+08:00"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "864b407359e71db2eda8a859": {
       "candidate_id": "864b407359e71db2eda8a859",
@@ -534,11 +552,12 @@
         "本次正確活動日期"
       ],
       "next_action": "10/7比對臺博本場海報、官方月曆及報名資訊，須有可連結本次活動的更正證據。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
       "content_sha256": "5dfebec7be406589185a7e1750b6dc391c112a63a2fecd4ae479bf4973ac2d52",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "534bf1e38811de452bb8cc45": {
       "candidate_id": "534bf1e38811de452bb8cc45",
@@ -582,11 +601,12 @@
         "3場說故事日期時間與台語分場"
       ],
       "next_action": "10/7查分館十月說故事課表或官方海報，逐場核對。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
       "content_sha256": "2333c4e5ddca331e7e9f8662e1bdfcc5a78dcc80bacfe0b07dd0b92bd79d3e9f",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "f2e5f2254b334ff062c77c3d": {
       "candidate_id": "f2e5f2254b334ff062c77c3d",
@@ -598,11 +618,12 @@
         "12/5本場口白語言"
       ],
       "next_action": "10/7查臺北木偶及分館本場公告；其他兩齣節目分開核實。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
       "content_sha256": "d4a31a0851f1d4c184fdc58485b2b96864ca646556326cf1bea6e95eed877049",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "391f5e8c7c80cd85b39483e6": {
       "candidate_id": "391f5e8c7c80cd85b39483e6",
@@ -630,11 +651,12 @@
         "本次演出實際口白語言"
       ],
       "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
       "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "9536d3788d0ad8287e08c44a": {
       "candidate_id": "9536d3788d0ad8287e08c44a",
@@ -646,11 +668,12 @@
         "本次演出實際口白語言"
       ],
       "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
       "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "ca9d315ceace54ffb3cf53f8": {
       "candidate_id": "ca9d315ceace54ffb3cf53f8",
@@ -662,11 +685,12 @@
         "本次演出實際口白語言"
       ],
       "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
       "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "0ffb8dbdd398f9fa634e048e": {
       "candidate_id": "0ffb8dbdd398f9fa634e048e",
@@ -678,11 +702,12 @@
         "本場有效售票／演出狀態"
       ],
       "next_action": "10/7比對OPENTIX本場售票及主辦取消、改期公告，狀態有效後直接接回核實，不重判語言。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2084482215968473088",
       "content_sha256": "e7e49bba6255268ba3d5342f85eed6cc4e0a0051d65f0c402710fd11bff3cfba",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "3840f5fc146158fbd3337558": {
       "candidate_id": "3840f5fc146158fbd3337558",
@@ -707,11 +732,12 @@
         "本分場實際演出語言"
       ],
       "next_action": "10/7查江之翠本場節目單或主辦語言說明。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
       "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "e75fcbc9810240b230605a44": {
       "candidate_id": "e75fcbc9810240b230605a44",
@@ -775,11 +801,12 @@
         "本節目是否實際包含台灣唸歌及演出者"
       ],
       "next_action": "追查當代傳奇／板橋放送所本節目正式節目單，確認唸歌是否另屬藝術節其他節目；不以京劇曲目直接否定有唸歌的矛盾總述。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
       "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
-      "checked_supporting_sources": []
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "5c6660b8262bfe3f31cfc623": {
       "candidate_id": "5c6660b8262bfe3f31cfc623",
@@ -791,11 +818,12 @@
         "本場是否包含台灣唸歌及演出者"
       ],
       "next_action": "與同來源另一場共同追查正式節目單，僅對獲得台語證據的場次採用。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
       "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
-      "checked_supporting_sources": []
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "69e6b1d9a4f6c7c705536fb6": {
       "candidate_id": "69e6b1d9a4f6c7c705536fb6",
@@ -807,11 +835,12 @@
         "本場實際口白語言"
       ],
       "next_action": "10/7查劇團本場節目資料，字幕與口白分開核對。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2095045191349043200",
       "content_sha256": "9d7c2615793890059ac0a42f124ddfa732550c6dcbe576badc7748c188aea51c",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "f8ebc54324d597bc142c1ff9": {
       "candidate_id": "f8ebc54324d597bc142c1ff9",
@@ -823,11 +852,12 @@
         "本場台語曲目或口白內容"
       ],
       "next_action": "10/7查主辦正式曲目表；不以台灣經典或歌手背景推定。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2087818083774783489",
       "content_sha256": "7b794f2ec045217f7cc4784ae981cf0e828f0a4964f5d133388d36fc870ea6b3",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "354df5cb54dab32cf32620a7": {
       "candidate_id": "354df5cb54dab32cf32620a7",
@@ -854,11 +884,12 @@
         "現行參加辦法"
       ],
       "next_action": "沿台灣台語路協會官方共學團更新查本期招生及場地；若只是長期團體介紹，須確認後改列非場次資訊，不擅自排入每週二。",
-      "reviewed_at": "2026-10-02T07:12:58+08:00",
-      "next_review_at": "2026-10-08T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://taigiloo.tw/course/tuesday/",
       "content_sha256": "fce7bf4a9e60fac33063dd0b30868d89077b2338e37349d203bf638d2df0175a",
-      "checked_supporting_sources": []
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "e1e402c37a1d67499b7caa1f": {
       "candidate_id": "e1e402c37a1d67499b7caa1f",
@@ -870,11 +901,12 @@
         "10/17分場的台語導覽或演唱內容"
       ],
       "next_action": "10/7查兩場音樂會的實際曲目、語言及工作坊版本，不將過期台語場套用未來場。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
       "content_sha256": "ac43dc02007619dfab1b147fb4c07f86e458fb252cbca369cf8e81c88f3a6073",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "d3b02cefbeaec5471565476c": {
       "candidate_id": "d3b02cefbeaec5471565476c",
@@ -886,26 +918,28 @@
         "台語專車可預約場次日期及時間"
       ],
       "next_action": "10/7沿官方公告的KKday訂購連結核對實際台語票種與出發時間，不能把整段販售期當單場。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
       "content_sha256": "4c590a0532b7d65dc8cfd77e49dce13aab49a3fd6d4d5bdb59a141e46eab0a9c",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "627b611118572afd8e772b71": {
       "candidate_id": "627b611118572afd8e772b71",
       "source_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
       "title": "縮放你我、縮放世界 桃園市兒童美術館「放大鏡與縮小燈：縮放自如主題書展」 陪你一起加入變化多端的冒險",
       "owner": "Codex",
-      "finding": "本次官方頁回覆HTTP428，尚未取得可完整閱讀的公告，不以讀取失敗認定非台語。",
+      "finding": "已用瀏覽器通過官方頁自動檢查並完整閱讀正文。書展為2025/11/26–2026/3/2，延伸活動2025/12/13，均已過期；頁尾2026/10/6是網站更新日。一般程式仍HTTP428，因此尚未建立可重查的結案契約，不是缺少活動日期。",
       "missing_fields": [
-        "完整公告及分場日期、語言"
+        "可由程式重查的官方過期證據（瀏覽器正文已讀）"
       ],
-      "next_action": "10/7以官方頁瀏覽器及館方同名公告補讀，保留實際HTTP錯誤。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "next_action": "修復此官方頁瀏覽器證據保存與程式重查，或取得同館同書展可讀公告後，以過期結案；不可把HTTP428判為非台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
-      "fetch_error": "http_428"
+      "fetch_error": "http_428",
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "3a87074d16ef96870d3949ff": {
       "candidate_id": "3a87074d16ef96870d3949ff",
@@ -917,8 +951,8 @@
         "台語場日期與票種對應"
       ],
       "next_action": "追查公開票種／主辦補充場次表；若仍只在登入後可看，列為需登入取得的證據，不把整段11/14–12/19當台語場。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-09T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.accupass.com/event/2609290908339306700300",
       "content_sha256": "5914afb4c0f462bf6fce34d0322eb435f0b86ac212ee10703fb0e852cda63418",
       "document_version": 2,
@@ -931,7 +965,8 @@
         "url": "https://www.accupass.com/eflow/ticket/2609290908339306700300",
         "result": "login_required",
         "reviewed_at": "2026-10-05T07:07:39+08:00"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "d74858e5d1a954a87d23235c": {
       "candidate_id": "d74858e5d1a954a87d23235c",
@@ -943,8 +978,8 @@
         "活動年份或明確已結束紀錄"
       ],
       "next_action": "10/10沿基金會本場官方活動相簿或完整年度課表確認年份後結案；不新增推算場次。",
-      "reviewed_at": "2026-10-04T07:11:39+08:00",
-      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
       "content_sha256": "5737891fdcc9c8650761dfa51b74195264fe532a0e7c1352c4fcb9941475955d",
       "fetch_error": null,
@@ -954,7 +989,8 @@
           "checked_at": "2026-10-04T07:03:59+08:00",
           "content_sha256": "6fd4fa3630122cf094d7da86ccfb2b55ade0a77b1949490df14358eb697bba95"
         }
-      ]
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "ed206a7c3f3756dcc968e8b5": {
       "candidate_id": "ed206a7c3f3756dcc968e8b5",
@@ -966,8 +1002,8 @@
         "學生包場明確年份"
       ],
       "next_action": "查基金會本場學生電影觀賞會回顧或明列年份的補充公告，確認後依已過期結案；不因表單客滿直接推定過期。",
-      "reviewed_at": "2026-10-05T07:07:39+08:00",
-      "next_review_at": "2026-10-10T07:00:00+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.tgb.org.tw/2026/01/116.html",
       "content_sha256": "0b19f4a4a6a0ae936b7f10b97246206c9490575367054d88df73cc171d263a49",
       "document_version": 2,
@@ -976,7 +1012,8 @@
         "sha256": "444210c5191a6e8fc3c49dfa39dfeada21df090c75c576eeb59fe952869a057c",
         "transcription": "大濛 1/16拜五 學生場；未見年份",
         "reviewed_at": "2026-10-05T07:07:39+08:00"
-      }
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "1eebb5c5b9f3720025f245a1": {
       "candidate_id": "1eebb5c5b9f3720025f245a1",
@@ -1035,11 +1072,12 @@
         "本分場口白語言"
       ],
       "next_action": "10/7查本分場正式節目單及口白標示，若非台語按新證據重結案。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
       "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "dfcfc1b1dac024e27020ef3a": {
       "candidate_id": "dfcfc1b1dac024e27020ef3a",
@@ -1051,11 +1089,12 @@
         "本分場口白語言"
       ],
       "next_action": "10/7查曲藝本分場節目單及語言，按新證據決定。",
-      "reviewed_at": "2026-10-06T15:55:02+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
       "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "06e2413bf111c55e7209d238": {
       "candidate_id": "06e2413bf111c55e7209d238",
@@ -1147,10 +1186,11 @@
         "可讀的完整官方公告"
       ],
       "next_action": "10/7以官方瀏覽頁或原主辦公告補讀此教育局轉知資訊，取得正文後即判讀活動身分及日期。",
-      "reviewed_at": "2026-10-06T15:59:59+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
-      "error": "network_or_tls_error"
+      "error": "network_or_tls_error",
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "03f450ac3999d47f7d2e6631": {
       "candidate_id": "03f450ac3999d47f7d2e6631",
@@ -1162,11 +1202,12 @@
         "本場台語口語／演唱或教學內容"
       ],
       "next_action": "10/7查國臺圖本場講座行事曆及主辦公告的語言資訊；若仍只列研究主題則明確保留，不能猜口白。",
-      "reviewed_at": "2026-10-06T15:59:59+08:00",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
       "next_review_at": "2026-10-07T07:00:00+08:00",
       "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
       "content_sha256": "fb60f1fa5849098e987f1aaa03aba07dad72b4a2defe1c0cc2ecabc7777bfac2",
-      "document_version": 2
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
     },
     "922de7ea9931d58bc3ba5728": {
       "candidate_id": "922de7ea9931d58bc3ba5728",
@@ -3316,5 +3357,5 @@
       "review_kind": "revalidation_failed_full_reread_scheduled"
     }
   },
-  "updated_at": "2026-10-06T16:01:47+08:00"
+  "updated_at": "2026-10-06T17:09:03+08:00"
 }

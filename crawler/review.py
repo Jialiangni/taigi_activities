@@ -542,10 +542,16 @@ def verify_opentix(candidate, client, now, root=ROOT):
     if f['is_free'] is None:
         price += '；免費票適用資格未確認，請洽主辦單位'
     session_note = ('本場公告：' + f['session_name']) if f['session_name'] else ''
-    description = '\n\n'.join(filter(None, [plain(program.get('changeNotification')), session_note, *introduction]))
+    description = '\n\n'.join(filter(None, [plain(program.get('changeNotification')), session_note,
+                                            *claims[0].get('context_quotes', []), *introduction]))
+    from .reviewed_opentix_language import omits_end
+    unknown_end = omits_end(claims[0], f)
+    if unknown_end:
+        require(start > now, 'unknown_end_started_session')
+        description += '\n\n官方演出長度與售票平台結束時間不一致；僅刊已確認的開始時間，結束時間請向主辦單位確認。'
     act = Activity(id='opentix_' + sid, title=program['name'], description=description,
                    city=f['city'], category=CategoryEnum.PERFORMANCE,
-                   start_time=f['start_time'], end_time=f['end_time'], venue=f['venue'], address=f['address'],
+                   start_time=f['start_time'], end_time=None if unknown_end else f['end_time'], venue=f['venue'], address=f['address'],
                    organizer='、'.join(f['organizer']), source_platform=SourcePlatformEnum.OPENTIX,
                    source_url=url, price_info=price, is_free=f['is_free'], tags=['台語', '官方資料自動核實']).to_dict()
     key = 'auto_op_' + pid
@@ -763,7 +769,8 @@ def review(folder, root=ROOT, client=None, now=None, apply=False, backlog_only=F
                 contract=reviewed_sessions.automatic_contract(html,url)
                 if contract:
                     block_contracts[c['source_url']]=contract
-            if contract and c['source_id'] == 'accupass' and not c['fields'].get('reviewed_block_key'):
+            if (contract and c['source_id'] == 'accupass' and not c['fields'].get('reviewed_block_key')
+                    and not c['fields'].get('reviewed_announcement_id')):
                 children = reviewed_sessions.expand(c, client, contract)
                 require(len(candidates)+len(children)<=20000,'too_many_candidates')
                 candidates.extend(children)

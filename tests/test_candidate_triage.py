@@ -101,7 +101,7 @@ class TriageTests(unittest.TestCase):
         other = 'https://example.org/event'
         self.assertNotEqual(document(body, other, 2), document(body.replace('1,234', '1,235'), other, 2))
         with self.assertRaises(ValueError):
-            document(body, url, 3)
+            document(body, url, 4)
 
     def test_empty_taigiloo_entry_preserves_visible_index_identity(self):
         url = 'https://taigiloo.tw/articles/'
@@ -220,6 +220,40 @@ class TriageTests(unittest.TestCase):
         self.assertTrue(notice_valid(claim, p, '10'))
         self.assertFalse(notice_valid(claim, p, '11'))
         self.assertFalse(notice_valid(claim, dict(p, changeNotification='Friday cancelled'), '10'))
+
+    def test_v3_ignores_only_reviewed_navigation_counters_and_clock(self):
+        url = 'https://www.jinshan.ntpc.gov.tw/home.jsp?id=event'
+        h = '<main>進入內容區塊 Toggle navigation 115 - 10 - 06 星期二 16 : 48 請輸入關鍵字搜尋 活動115年10月9日19:00 票價100元 名額20人 累計人數：2471294人</main>'
+        changed = h.replace('16 : 48', '17 : 01').replace('2471294', '2471303')
+        self.assertEqual(document(h, url, 3), document(changed, url, 3))
+        self.assertNotEqual(document(h, url, 2), document(changed, url, 2))
+        for old, new in [('10月9日', '10月10日'), ('票價100', '票價200'), ('名額20', '名額30')]:
+            self.assertNotEqual(document(h, url, 3), document(h.replace(old, new), url, 3))
+        self.assertNotEqual(document(h, url, 3), document(h.replace('</main>', '活動取消</main>'), url, 3))
+        self.assertNotEqual(document(h, 'https://example.com/', 3), document(changed, 'https://example.com/', 3))
+
+    def test_unknown_end_requires_exact_session_conflict_and_live_prose(self):
+        from crawler.reviewed_opentix_language import omits_end
+        start = datetime(2026, 10, 7, 20, tzinfo=TAIPEI)
+        end = datetime(2026, 10, 7, 23, 30, tzinfo=TAIPEI)
+        p = {'id': 1, 'name': '歌仔戲', 'description': '台語演出'}
+        g = {'id': 2, 'eventNoteContent': '演出全長：1小時',
+             'events': [{'id': 10, 'startDateTime': start.timestamp(), 'endDateTime': end.timestamp()}]}
+        conflict = dict(session_id='10', start_time=start.isoformat(), api_end_time=end.isoformat(),
+                        quote='演出全長：1小時', rationale='Conflicting end; publish start only')
+        claim = dict(origin='reviewed_program', program_id='1', group_id='2',
+                     quote='台語演出', rationale='Official program', reviewed_at='2026-10-06',
+                     content_sha256=digest(content(p, g)), session_ids=['10'], end_time_conflicts=[conflict])
+        session = dict(session_id='10', start_time=start.isoformat(), end_time=end.isoformat())
+        self.assertTrue(validate(claim, p, g))
+        self.assertTrue(omits_end(claim, session))
+        self.assertFalse(omits_end(claim, dict(session, session_id='11')))
+        self.assertFalse(omits_end(claim, dict(session, end_time=start.isoformat())))
+        self.assertFalse(validate(dict(claim, end_time_conflicts=[dict(conflict, rationale='')]), p, g))
+        self.assertFalse(validate(dict(claim, end_time_conflicts=[dict(conflict, quote='invented')]), p, g))
+        changed = dict(g, events=[dict(g['events'][0], endDateTime=end.timestamp()+60)])
+        self.assertFalse(validate(claim, p, changed))
+        self.assertFalse(validate(claim, p, dict(g, eventNoteContent='演出全長：2小時')))
 
     def test_followups_have_due_dates_and_do_not_remove_candidates(self):
         with tempfile.TemporaryDirectory() as temp:

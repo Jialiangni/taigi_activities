@@ -221,5 +221,19 @@ class EditorialQueueTests(unittest.TestCase):
         self.assertEqual(len(source['opentix_sessions']), 2)
 
 
+    def test_requested_session_scopes_conflicts_and_deduplicates_proof(self):
+        row = copy.deepcopy(self.row)
+        row['verification']['opentix_session_id'] = 'new'
+        claim = {'session_ids': ['ended', 'new'], 'end_time_conflicts': [
+            {'session_id': 'ended'}, {'session_id': 'new'}], 'supporting_evidence': [{'url': 'official'}]}
+        source = dict(self.source, opentix_sessions=[{'session_id': 'new'}],
+                      automated_review={'language_claims': [claim, copy.deepcopy(claim), {'session_ids': ['other']}]})
+        scoped = q.request_for(row, source)['source']['automated_review']['language_claims']
+        self.assertEqual(len(scoped), 1)
+        self.assertEqual(scoped[0]['session_ids'], ['new'])
+        self.assertEqual(scoped[0]['end_time_conflicts'], [{'session_id': 'new'}])
+        self.assertEqual(source['automated_review']['language_claims'][0]['session_ids'], ['ended', 'new'])
+
+
 if __name__ == '__main__':
     unittest.main()

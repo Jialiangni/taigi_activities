@@ -20,10 +20,10 @@ def digest(text):
 
 
 def document(body, url, version=1):
-    if type(version) is not int or version not in (1, 2):
+    if type(version) is not int or version not in (1, 2, 3):
         raise ValueError('Unsupported disposition document version')
     text = _document(body, url)
-    if version == 2:
+    if version >= 2:
         from urllib.parse import urlsplit
         # These sites include live visitor counters in the visible document.
         # Preserve all announcement text, dates and limits; remove only the
@@ -33,6 +33,22 @@ def document(body, url, version=1):
                 'www.gep.ntpc.gov.tw', 'www.tapo.gov.taipei'}:
             text = re.sub(r'((?:瀏覽人次|點閱數)\s*[:：]\s*)[0-9][0-9,]*',
                           r'\1[page views]', text)
+    if version == 3:
+        from urllib.parse import urlsplit
+        host = urlsplit(url).hostname
+        if host in {'www.tamsui.ntpc.gov.tw', 'www.wanli.ntpc.gov.tw',
+                    'www.sshm.ntpc.gov.tw', 'www.linfamily.ntpc.gov.tw',
+                    'www.jinshan.ntpc.gov.tw', 'www.gongliao.ntpc.gov.tw',
+                    'www.ruifang.ntpc.gov.tw', 'www.ntpc.edu.tw',
+                    'www.tshs.ntpc.gov.tw', 'www.ntl.edu.tw'}:
+            text = re.sub(r'((?:累計線上人數|累計人數|瀏覽人次|瀏覽人數|總點閱次數)\s*[:：]\s*)[0-9][0-9,]*',
+                          r'\1[page views]', text)
+        if host in {'www.wanli.ntpc.gov.tw', 'www.jinshan.ntpc.gov.tw',
+                    'www.gongliao.ntpc.gov.tw', 'www.ntpc.edu.tw'}:
+            # Only the navigation clock before the search box, never dates in an article.
+            text = re.sub(r'(進入內容區塊 Toggle navigation )\d{3}\s*-\s*\d{2}\s*-\s*\d{2}'
+                          r'\s+星期[一二三四五六日]\s+\d{2}\s*:\s*\d{2}(?= 請輸入關鍵字搜尋)',
+                          r'\1[site clock]', text, count=1)
     return text
 
 
@@ -85,7 +101,7 @@ def evidence_url(candidate):
 
 def validate(row):
     version = row.get('document_version', 1)
-    if type(version) is not int or version not in (1, 2):
+    if type(version) is not int or version not in (1, 2, 3):
         raise ValueError('Unsupported disposition document version')
     required = ('candidate_id', 'source_id', 'source_url', 'title', 'reason',
                 'rationale', 'reviewed_at', 'evidence_url', 'content_sha256', 'quotes')

@@ -1,0 +1,3398 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-06T17:09:03+08:00",
+  "base_commit": "43c070f",
+  "scope": "接續核實剩餘165候選，不重跑收集器，不付費呼叫模型",
+  "input_candidates": 165,
+  "input_official_sources": 82,
+  "closed_count": 94,
+  "closures": [
+    {
+      "candidate_id": "fbf770b73cc8075ce6b43083",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2067491105969741825",
+      "title": "2026承功—新秀舞臺",
+      "reason": "not_taigi",
+      "rationale": "逐場對照承功系列：本候選10/16為客家戲與京劇，10/23為京劇與豫劇；僅排除這兩場，其他台語戲曲場不受影響。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+      "content_sha256": "4d6d60d41998e4ecb7af0b5cb6e7b866455446d64b21dc6835134cca6777c01f",
+      "document_version": 2,
+      "quotes": [
+        "昭君．怨",
+        "盜庫銀"
+      ]
+    },
+    {
+      "candidate_id": "47ee554be0653aade3a3f5fa",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2067491105969741825",
+      "title": "2026承功—新秀舞臺",
+      "reason": "not_taigi",
+      "rationale": "逐場對照承功系列：本候選10/16為客家戲與京劇，10/23為京劇與豫劇；僅排除這兩場，其他台語戲曲場不受影響。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2067491105969741825",
+      "content_sha256": "4d6d60d41998e4ecb7af0b5cb6e7b866455446d64b21dc6835134cca6777c01f",
+      "document_version": 2,
+      "quotes": [
+        "昭君．怨",
+        "盜庫銀"
+      ]
+    },
+    {
+      "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整演出是武俠戲劇配管樂，台語僅出現在風動室內樂團名稱的閩南語諧音介紹，並非本場演出語言證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+      "content_sha256": "145650c6f9143919f1cd36a401e3a1c394bedc1fd11d06a40810ce713999faf9",
+      "document_version": 2,
+      "quotes": [
+        "風動",
+        "閩南"
+      ]
+    },
+    {
+      "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2055198355043160065",
+      "title": "《英雄點點名》勇者集結—夢幻聯名首演場！",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整演出是武俠戲劇配管樂，台語僅出現在風動室內樂團名稱的閩南語諧音介紹，並非本場演出語言證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2055198355043160065",
+      "content_sha256": "145650c6f9143919f1cd36a401e3a1c394bedc1fd11d06a40810ce713999faf9",
+      "document_version": 2,
+      "quotes": [
+        "風動",
+        "閩南"
+      ]
+    },
+    {
+      "candidate_id": "1ed312c294d17e93c0ac8f72",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079832717837029377",
+      "title": "《奧義書》太古踏舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整主節目為舞蹈與器樂的奧義書，台語命中來自舞台語言等字串及其他場節慶介紹，非本場台語內容。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+      "content_sha256": "141a1842b9d44666ca677dd16b8c98ebea8183de9cd2ab0666aed44478ab81fe",
+      "document_version": 2,
+      "quotes": [
+        "奧義書"
+      ]
+    },
+    {
+      "candidate_id": "d52e86bd9feff58950d21624",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079832717837029377",
+      "title": "《奧義書》太古踏舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整主節目為舞蹈與器樂的奧義書，台語命中來自舞台語言等字串及其他場節慶介紹，非本場台語內容。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079832717837029377",
+      "content_sha256": "141a1842b9d44666ca677dd16b8c98ebea8183de9cd2ab0666aed44478ab81fe",
+      "document_version": 2,
+      "quotes": [
+        "奧義書"
+      ]
+    },
+    {
+      "candidate_id": "9783169014ec2b85e262a4fe",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "11f1a8f1c1fe25e67c1e8068",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "9aeacac9bb7b3bc50a426164",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "7c3dbe74c98586f806246d1c",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "42cc5d7182ee9a956c447228",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "c7b6c9dfd3cb3c0135aebbd0",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "2e05f52085b12a832550d13d",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "52b5e5d95f1ba447cb5a7980",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "8ab26ebf9986e6e9a9ee7b65",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "9144d42647c2c6874fd19fe1",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2084178428940558336",
+      "title": "《看不見》親子繪本說故事",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為兒童感官劇場《看不見》；台語出現在創作者過去台語微電影《掩咯雞》獎項履歷，不能作為這十場使用台語的證據。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084178428940558336",
+      "content_sha256": "4fd31dcaef1cdb44faf229bf8ee4b7167bb5c7d2319ed8a7946145d602b4499f",
+      "document_version": 2,
+      "quotes": [
+        "掩咯雞"
+      ]
+    },
+    {
+      "candidate_id": "97597c65d12135baddad246e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2095402846518976512",
+      "title": "在車上",
+      "reason": "not_taigi",
+      "rationale": "完整電影場次明列發音為國語、英語、日語、韓語，沒有台語；台語關鍵字不適用這部電影實際語言。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+      "content_sha256": "ec9d8f606365f0aa8ddf702a28797e83d01a7c9aa43b7d6d61e04fa50de5de4a",
+      "document_version": 2,
+      "quotes": [
+        "國語",
+        "韓語"
+      ]
+    },
+    {
+      "candidate_id": "9f56f9fb86feb2ed1dae79d1",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2095402846518976512",
+      "title": "在車上",
+      "reason": "not_taigi",
+      "rationale": "完整電影場次明列發音為國語、英語、日語、韓語，沒有台語；台語關鍵字不適用這部電影實際語言。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095402846518976512",
+      "content_sha256": "ec9d8f606365f0aa8ddf702a28797e83d01a7c9aa43b7d6d61e04fa50de5de4a",
+      "document_version": 2,
+      "quotes": [
+        "國語",
+        "韓語"
+      ]
+    },
+    {
+      "candidate_id": "5b932b0c3ff3908f54e91312",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2077678411348267009",
+      "title": "2026秋天藝術節【藝術家對談】巴奈回家",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為巴奈與馬世芳講座；台語僅在《夜婆》得獎履歷，無本場台語演講證據，不能把得獎背景視作活動语言。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2077678411348267009",
+      "content_sha256": "782f5bb169c32ed51a71874b22ef9d9565775eb63b0a39d984d21bc4f4c57a9c",
+      "document_version": 2,
+      "quotes": [
+        "夜婆"
+      ]
+    },
+    {
+      "candidate_id": "0b4465d89335ba4b3eaa83c4",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整節目為巴奈流浪邊界演出，台語獎项在個人專輯履歷，不是本場語言或曲目聲明；按關鍵字與本場無關結案，沒有宣稱她不會唱台語。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "content_sha256": "542aa6bc2c1887bceedb6564c327d6d28f0e781fbfe32984582626e1852d0f8a",
+      "document_version": 2,
+      "quotes": [
+        "夜婆"
+      ]
+    },
+    {
+      "candidate_id": "9cbfbc93f8ddea76be0cfeab",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整節目為巴奈流浪邊界演出，台語獎项在個人專輯履歷，不是本場語言或曲目聲明；按關鍵字與本場無關結案，沒有宣稱她不會唱台語。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "content_sha256": "542aa6bc2c1887bceedb6564c327d6d28f0e781fbfe32984582626e1852d0f8a",
+      "document_version": 2,
+      "quotes": [
+        "夜婆"
+      ]
+    },
+    {
+      "candidate_id": "e679c2f176994938629bee05",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整節目為巴奈流浪邊界演出，台語獎项在個人專輯履歷，不是本場語言或曲目聲明；按關鍵字與本場無關結案，沒有宣稱她不會唱台語。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "content_sha256": "542aa6bc2c1887bceedb6564c327d6d28f0e781fbfe32984582626e1852d0f8a",
+      "document_version": 2,
+      "quotes": [
+        "夜婆"
+      ]
+    },
+    {
+      "candidate_id": "0cc1ffb666e424fb080394db",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2070446724700692480",
+      "title": "2026秋天藝術節 巴奈《流浪邊界》",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整節目為巴奈流浪邊界演出，台語獎项在個人專輯履歷，不是本場語言或曲目聲明；按關鍵字與本場無關結案，沒有宣稱她不會唱台語。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2070446724700692480",
+      "content_sha256": "542aa6bc2c1887bceedb6564c327d6d28f0e781fbfe32984582626e1852d0f8a",
+      "document_version": 2,
+      "quotes": [
+        "夜婆"
+      ]
+    },
+    {
+      "candidate_id": "a7ca9da2b192d60885014320",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為佛朗明哥舞蹈及飲食體驗，舞台語言與節慶其他節目字串不代表台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "content_sha256": "54773dde6821c01e8cfeffd3a7e18e43ffb23bb68983fc21cdf4fc0597c0d25c",
+      "document_version": 2,
+      "quotes": [
+        "Amor"
+      ]
+    },
+    {
+      "candidate_id": "83320c209abbe00b41d6e92c",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為佛朗明哥舞蹈及飲食體驗，舞台語言與節慶其他節目字串不代表台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "content_sha256": "54773dde6821c01e8cfeffd3a7e18e43ffb23bb68983fc21cdf4fc0597c0d25c",
+      "document_version": 2,
+      "quotes": [
+        "Amor"
+      ]
+    },
+    {
+      "candidate_id": "f982f2a208eaf3113745056f",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為佛朗明哥舞蹈及飲食體驗，舞台語言與節慶其他節目字串不代表台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "content_sha256": "54773dde6821c01e8cfeffd3a7e18e43ffb23bb68983fc21cdf4fc0597c0d25c",
+      "document_version": 2,
+      "quotes": [
+        "Amor"
+      ]
+    },
+    {
+      "candidate_id": "4107979a1f2d575c4e722e5e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2079840877876432897",
+      "title": "《Amor Místico—迷靈之戀》精靈幻舞舞團",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整本場為佛朗明哥舞蹈及飲食體驗，舞台語言與節慶其他節目字串不代表台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079840877876432897",
+      "content_sha256": "54773dde6821c01e8cfeffd3a7e18e43ffb23bb68983fc21cdf4fc0597c0d25c",
+      "document_version": 2,
+      "quotes": [
+        "Amor"
+      ]
+    },
+    {
+      "candidate_id": "91e375484e070820ffa35d85",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2102298802570960896",
+      "title": "《風笙 SS Project》薩克斯風Ｘ笙音樂會",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整曲目為笙、薩克斯風、鋼琴等器樂演出，台語來自合作團隊A_Root得獎履歷，不是本場台語內容。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2102298802570960896",
+      "content_sha256": "88da84178cbd518e01f0b19b6f58ee581b8b7e4c6c08deb09d6bdae022e21551",
+      "document_version": 2,
+      "quotes": [
+        "A_Root"
+      ]
+    },
+    {
+      "candidate_id": "0dd7f2057c372351187e9568",
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+      "title": "2024.12.18 台灣國家正常化 台語復振袂當拖 記者會",
+      "reason": "expired",
+      "rationale": "官方正文明列2024年12月22日會議，已過期；不以網站最新文章連結或抓取時間當活動日期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2024/12/20241218.html",
+      "content_sha256": "2becae03fc3be727b85ed4c382acfa55d084e319b06d95cf6708f5b80f4d4091",
+      "document_version": 2,
+      "quotes": [
+        "時間：2024年12月22日"
+      ]
+    },
+    {
+      "candidate_id": "6c8b9913d65e15cefabacdc9",
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+      "title": "二十週年故事 〈生湠〉 台語讀劇活動",
+      "reason": "expired",
+      "rationale": "官方全文明列南部2017/12/23、北部2018/1/7二十週年讀劇，均已結束。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
+      "content_sha256": "753c6aaa68976a249fa013534ccc2943788e0c6c23080f38ab6432449fdabd84",
+      "document_version": 2,
+      "quotes": [
+        "2017年12月23",
+        "2018年1月初7"
+      ]
+    },
+    {
+      "candidate_id": "dee18a145921d5cef96793d8",
+      "source_id": "li_kang_khiok",
+      "source_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+      "title": "20250409「 地方政府無重視 | 立院預算烏白刣 | 台語家庭無未來」記者會",
+      "reason": "not_event",
+      "rationale": "完整公告為2025/4/9記者會及媒體報導紀錄，不是新的公開台語活動場次。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2025/04/20250409.html",
+      "content_sha256": "177fbc169ea895661c07f3a05d16753e81e5aa9efe60382e349ccee5d8b2a71b",
+      "document_version": 2,
+      "quotes": [
+        "20250409",
+        "相關媒體報導"
+      ]
+    },
+    {
+      "candidate_id": "fd98af504902cab646d3fc10",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1997861121855938561",
+      "title": "2026【唱 我們的歌 流行音樂故事展】",
+      "reason": "resource_only",
+      "rationale": "完整官方節目為2026–2030常設展與換展休館資訊，非單場台語活動；不把五年展期當連續活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1997861121855938561",
+      "content_sha256": "09b0a2a485c9aee3bc3d6d5d1714762f63af88742d1ba59fa1d30fe50f840e88",
+      "document_version": 2,
+      "quotes": [
+        "常設展"
+      ]
+    },
+    {
+      "candidate_id": "f1fab16f749f9e057aa53c23",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "505d41497721a015fcc5d856",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "f753ad9f463c9f37ec9eac86",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "2e512951ec64e63f6ac80f1c",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "e4ff3be445fd1fafd65155e2",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "e906dc8a59ca1743c038df0e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "2874e18b14fb8b480610e5fa",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "fc59a35631358d0ee21d2a0b",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2052297227960516609",
+      "title": "2026ECHO偶計劃－Maryia Kamarova《Krajina 地。景》＆張懿茹x林信宇《一場名為相親的…攻防戰?》",
+      "reason": "expired",
+      "rationale": "API400不是過期證據；已完整閱讀同一節目官方HTML，明示2026年度10/2至10/4全8場、暫停銷售公告及本節目已下架；10/6時均已過期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.opentix.life/event/2052297227960516609",
+      "evidence_kind": "opentix_archived_html",
+      "content_sha256": "eb12aab8d4d71fcaddc3b7094eb042bd63b982485f324f067b1cc6883e2dfeac",
+      "document_version": 2,
+      "quotes": [
+        "本節目已下架",
+        "2026 ECHO",
+        "10/4 14:30"
+      ]
+    },
+    {
+      "candidate_id": "ba37326b13529aaf8f0c100c",
+      "source_id": "ty_culture",
+      "source_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889238",
+      "title": "桃園市政府文化局",
+      "reason": "expired",
+      "rationale": "完整新聞記錄115年10月3、4日鐵玫瑰音樂節，至本次10/6已結束；不把上版日或新聞當未來活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889238",
+      "content_sha256": "36ea0024a292b4007937e3be27bed6fac0a64e2d197d08a3739b7b4a6180a73d",
+      "document_version": 2,
+      "quotes": [
+        "上版日期：115-10-03",
+        "明（4）日"
+      ]
+    },
+    {
+      "candidate_id": "edf0d3e2802b8815c2b56d8e",
+      "source_id": "dadaocheng",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+      "title": "《請戲—布袋戲一條街》特展：台語語音導覽",
+      "reason": "resource_only",
+      "rationale": "完整公告為長期展覽及QR Code自助語音導覽；另提走讀/工作坊但未列本候選單場日時，不將整個展期假造為一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
+      "content_sha256": "df7bad4a16e83b6294f7f9599bfe5e2a72acfd71af4ee1055304663e82fc5062",
+      "document_version": 2,
+      "quotes": [
+        "115年3月12日",
+        "掃描場內QR Code即可聆聽"
+      ]
+    },
+    {
+      "candidate_id": "d6b15a9aefbe3b294f277fdf",
+      "source_id": "dadaocheng",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+      "title": "《請戲–布袋戲一條街》特展",
+      "reason": "resource_only",
+      "rationale": "完整公告為長期展覽及QR Code自助語音導覽；另提走讀/工作坊但未列本候選單場日時，不將整個展期假造為一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
+      "content_sha256": "df7bad4a16e83b6294f7f9599bfe5e2a72acfd71af4ee1055304663e82fc5062",
+      "document_version": 2,
+      "quotes": [
+        "115年3月12日",
+        "掃描場內QR Code即可聆聽"
+      ]
+    },
+    {
+      "candidate_id": "c5c4cd62d6259d95dd4ab013",
+      "source_id": "dadaocheng",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+      "title": "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊",
+      "reason": "not_event",
+      "rationale": "完整公告只列甄選入選劇團與劇目，屬甄選結果，不含可報名或參加的單場日程。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+      "content_sha256": "19a94c9762f10d5b2bea320fd719059a4ec1a6c470a6ca7ebc8b62a0d0678333",
+      "document_version": 2,
+      "quotes": [
+        "劇團甄選會議決議"
+      ]
+    },
+    {
+      "candidate_id": "a08ee5ea7107bdc1b1407c10",
+      "source_id": "ntpc_center_banqiao",
+      "source_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+      "title": "2026「溪州提拔泥-泥巴野餐趣」",
+      "reason": "outside_region",
+      "rationale": "完整官方公告明示彰化縣溪州鄉溪州花博公園；新北公所轉貼不代表地點在新北，超出北北桃範圍。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
+      "content_sha256": "d7c5e123659b6740e2062349261caa1bcfa3029c429a66f4ac454aaa98df48e4",
+      "document_version": 2,
+      "quotes": [
+        "彰化縣溪州鄉公所",
+        "溪州花博公園"
+      ]
+    },
+    {
+      "candidate_id": "afa44c408e05350163c1b5b0",
+      "source_id": "tp_center_xydo",
+      "source_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
+      "reason": "expired",
+      "rationale": "官方114年新聞明列7/12、7/19課程，2025年活動已結束。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "content_sha256": "7d29b7a6391695d817d170c6660179d4379b1f05b16e671ce16fb1e0d4992b0a",
+      "document_version": 2,
+      "quotes": [
+        "114年新住民家庭親子共學手作班",
+        "7月12日與7月19日"
+      ]
+    },
+    {
+      "candidate_id": "4166922a4bafe35b76954780",
+      "source_id": "tpml_district_g",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+      "title": "萬華分館「輪轉台語冊在此」主題書展，歡迎一起來讓 「台語冊，轉起來！」",
+      "reason": "resource_only",
+      "rationale": "完整公告為館藏書展或每週詞彙/線上閱讀資源，沒有定時教學場次，不將數月展期當一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
+      "content_sha256": "5540c9c8a80e7cf1b1f329c94a4da6515d051ca072eae63d7a03d4fb70a78d80",
+      "document_version": 2,
+      "quotes": [
+        "萬華分館「輪轉台語冊在此」主題書展，歡迎一起來讓 「台語冊，轉起來！」"
+      ]
+    },
+    {
+      "candidate_id": "867837fdc2d5bcee4aa2f552",
+      "source_id": "tpml_district_g",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+      "title": "柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」鄉土語言暨電子資源閱讀推廣活動",
+      "reason": "resource_only",
+      "rationale": "完整公告為館藏書展或每週詞彙/線上閱讀資源，沒有定時教學場次，不將數月展期當一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
+      "content_sha256": "b937ac7eb764a1dfead81f1c6d9619c068f7048b5c2cb4b47ab8d5f74715329c",
+      "document_version": 2,
+      "quotes": [
+        "柳鄉兒童圖書館「臺語冊香味——每週一詞閱讀計畫」鄉土語言暨電子資源閱讀推廣活動"
+      ]
+    },
+    {
+      "candidate_id": "f2088ecaf754ab4d1f8914c4",
+      "source_id": "tpml_district_i",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+      "title": "舊莊分館—「臺語拉吉歐」主題書展",
+      "reason": "resource_only",
+      "rationale": "完整公告為館藏書展或每週詞彙/線上閱讀資源，沒有定時教學場次，不將數月展期當一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
+      "content_sha256": "fcd98dada888297cc934ffce8dde7b03dfd98cb390d01cadfad25c3ed74198b9",
+      "document_version": 2,
+      "quotes": [
+        "舊莊分館—「臺語拉吉歐」主題書展"
+      ]
+    },
+    {
+      "candidate_id": "c8bb350d70a3e4fd75104af7",
+      "source_id": "tpml_district_l",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+      "title": "石牌分館「聽母語、說母語、讀母語」圖書資料展",
+      "reason": "resource_only",
+      "rationale": "完整公告為館藏書展或每週詞彙/線上閱讀資源，沒有定時教學場次，不將數月展期當一場台語活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
+      "content_sha256": "fd400a8b029122b02bd114b451ed74da6c60e94f233592668d22af3b6c9af045",
+      "document_version": 2,
+      "quotes": [
+        "石牌分館「聽母語、說母語、讀母語」圖書資料展"
+      ]
+    },
+    {
+      "candidate_id": "eae15fb955b24827377481f3",
+      "source_id": "ntpc_center_tamsui",
+      "source_url": "https://www.tamsui.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=9ca29758ab87695acff27ac9cd6a0c52",
+      "title": "交通部高速公路局「115年國慶日連續假期高速公路疏導措施推展短片」",
+      "reason": "not_event",
+      "rationale": "完整公告為國慶交通疏導宣導影片，多語版本不是現場台語活動；公告截止日不是活動日期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tamsui.ntpc.gov.tw/home.jsp?id=a6af86d2ea26b816&act=be4f48068b2b0031&dataserno=9ca29758ab87695acff27ac9cd6a0c52",
+      "content_sha256": "8e6548617067764b60f61ec68bb394befb051902044bd3a05f10973b9f7ff66b",
+      "document_version": 3,
+      "quotes": [
+        "115年國慶日連續假期高速公路疏導措施推展短片"
+      ]
+    },
+    {
+      "candidate_id": "9210c588b5bb7376f839c63e",
+      "source_id": "ntpc_center_wanli",
+      "source_url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=feedc6aaa5b86fab3923784d71cc75fe&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
+      "title": "2026-10-02 115年國慶日連續假期高速公路疏導措施推展短片",
+      "reason": "not_event",
+      "rationale": "完整公告為國慶交通疏導宣導影片，多語版本不是現場台語活動；公告截止日不是活動日期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=feedc6aaa5b86fab3923784d71cc75fe&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
+      "content_sha256": "75f432b905c5ad74f0d432ba9351fa2cac32c68f7edb7bb547330a42bd44877b",
+      "document_version": 3,
+      "quotes": [
+        "115年國慶日連續假期高速公路疏導措施推展短片"
+      ]
+    },
+    {
+      "candidate_id": "fe652bb87e22e0976d6ed370",
+      "source_id": "sshm",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
+      "title": "十三行博物館摺頁 | 新北市立十三行博物館",
+      "reason": "resource_only",
+      "rationale": "完整頁面為博物館多語摺頁下載，台文是摺頁版本，沒有單場活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244540222385142603",
+      "content_sha256": "b35dda99c8867467dc7609c9513e02073582c1f967ed666ffdb5907bd34b171d",
+      "document_version": 3,
+      "quotes": [
+        "新北市立十三行博物館簡介摺頁-台文版"
+      ]
+    },
+    {
+      "candidate_id": "3fcdd80eb7beac074909affe",
+      "source_id": "linfamily",
+      "source_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+      "title": "參觀與預約 | 林本源園邸",
+      "reason": "resource_only",
+      "rationale": "完整頁為園邸一般參觀與團體預約服務；台語是常態影片語言之一，並未公告單場台語導覽。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.linfamily.ntpc.gov.tw/xmdoc/cont?xsmsid=0G245356561322447606",
+      "content_sha256": "63ef86ad9fb1e7356b9ebcfb425a113f0846697fcdab94d2d29278bb94772f28",
+      "document_version": 3,
+      "quotes": [
+        "影片簡介放映",
+        "團體導覽預約"
+      ]
+    },
+    {
+      "candidate_id": "390321cc4d115711d3c67ed0",
+      "source_id": "ntpc_center_jinshan",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動 秘書室 2026-09-21",
+      "reason": "outside_region",
+      "rationale": "完整官方公告明示彰化縣溪州鄉溪州花博公園；新北公所轉貼不代表地點在新北，超出北北桃範圍。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "content_sha256": "2f519d2a84588fcde50e5c642e9bab6402c265ff46270c8a5d3668d4cb784c15",
+      "document_version": 3,
+      "quotes": [
+        "彰化縣溪州鄉公所",
+        "溪州花博公園"
+      ]
+    },
+    {
+      "candidate_id": "88c471912c644ff0fea112d0",
+      "source_id": "ntpc_center_gongliao",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+      "title": "2026-09-21 貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節",
+      "reason": "expired",
+      "rationale": "官方正文115年9月25日中秋晚會，已結束；2031年網頁截止日期不等於活動日期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+      "content_sha256": "40c314a7c4f4b0983014c0e89a450a56c36f726fe4eaeaf152e615cc36d9a04b",
+      "document_version": 3,
+      "quotes": [
+        "115年9月25日"
+      ]
+    },
+    {
+      "candidate_id": "f7f4b245cbedc9b1a59edc72",
+      "source_id": "ntpc_center_gongliao",
+      "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "title": "貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節 貢寮區公所 2026-09-21",
+      "reason": "expired",
+      "rationale": "官方正文115年9月25日中秋晚會，已結束；2031年網頁截止日期不等於活動日期。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+      "content_sha256": "40c314a7c4f4b0983014c0e89a450a56c36f726fe4eaeaf152e615cc36d9a04b",
+      "document_version": 3,
+      "quotes": [
+        "115年9月25日"
+      ]
+    },
+    {
+      "candidate_id": "9e99e1e786f6a1a6349a2145",
+      "source_id": "ntpc_center_ruifang",
+      "source_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+      "title": "2026-09-11 2026瑞芳黃金山城第4屆瓶燈節「山城拾光季」9月起精彩活動接力登場",
+      "reason": "expired",
+      "rationale": "完整公告所列9/19歌仔戲及其餘9/20、9/27、10/3活動均已結束，沒有未來單場。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=0f6d355c91ac254b&act=be4f48068b2b0031&dataserno=09aa032a4d4196645ff91e96845e4488&mserno=85a59ab66d9130b668c6a389373056ea",
+      "content_sha256": "bb898259ead7bd608d7272e24dc925c4b5626d6b09ca5dfdacb51c98b2becac1",
+      "document_version": 3,
+      "quotes": [
+        "2026",
+        "9月19日至10月3日"
+      ]
+    },
+    {
+      "candidate_id": "6eb146558935dd91098a7bb6",
+      "source_id": "ntpc_education",
+      "source_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+      "title": "教育成果-中小學教育-新北市政府教育局",
+      "reason": "not_event",
+      "rationale": "完整頁是歷年教育成果與政策指標，台語教材是成果敘述，不是當前可參加活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.ntpc.edu.tw/home.jsp?id=ea63572cd5291017&act=be4f48068b2b0031&dataserno=97f8518814f758fe65ab73df67043b05&mserno=f5c12a43b8e10aa380850cc25011f4bc",
+      "content_sha256": "f3914f25a288b6df610d646fd8429631f39984dd9d753d75247868385728fb66",
+      "document_version": 3,
+      "quotes": [
+        "新北市研發創意本土語桌遊教材"
+      ]
+    },
+    {
+      "candidate_id": "3b7c9208f2dc9d276cf57aaa",
+      "source_id": "sshm",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+      "title": "十三行博物館個人化導覽服務",
+      "reason": "resource_only",
+      "rationale": "完整頁台語僅提供自助語音導覽；定時與預約導覽明列華語，不應當作台語場次。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?sid=0I260840731511575794&xsmsid=0G244539301206394658",
+      "content_sha256": "2ee4630464e9fb4298068ca4bfc1646339e31685c1a429b41b7835980c5049b1",
+      "document_version": 3,
+      "quotes": [
+        "免費定時華語導覽服務",
+        "線上語音導覽服務"
+      ]
+    },
+    {
+      "candidate_id": "c34f28406d311cf244835759",
+      "source_id": "tshs",
+      "source_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+      "title": "行動博物館模組申請計畫 | 新北市立淡水古蹟博物館",
+      "reason": "resource_only",
+      "rationale": "完整頁是供機關申請教學模組與推廣服務的辦法；申請後另約日時，尚非公開單場活動。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.tshs.ntpc.gov.tw/xmdoc/cont?xsmsid=0M306615419965852517",
+      "content_sha256": "399260d777c7c7696b575160bdd9cc9a1cf3a50186fcdefba4b7896592609e39",
+      "document_version": 3,
+      "quotes": [
+        "如有專案合作可洽談推廣時程"
+      ]
+    },
+    {
+      "candidate_id": "bd0d014308f31004258b51c8",
+      "source_id": "ntpc_center_jinshan",
+      "source_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+      "title": "2026-09-21 彰化縣溪州鄉公所辦理2026「溪州提拔泥-泥巴野餐趣」活動",
+      "reason": "outside_region",
+      "rationale": "新北金山轉貼之活動實際位在彰化溪州花博公園，超出北北桃。",
+      "reviewed_at": "2026-10-06T16:55:12+08:00",
+      "evidence_url": "https://www.jinshan.ntpc.gov.tw/home.jsp?id=ce44096e0f12fec9&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=953b6240440206272c39d1d0c14abd8c",
+      "content_sha256": "2f519d2a84588fcde50e5c642e9bab6402c265ff46270c8a5d3668d4cb784c15",
+      "document_version": 3,
+      "quotes": [
+        "彰化縣溪州鄉公所",
+        "溪州花博公園"
+      ]
+    },
+    {
+      "candidate_id": "2e02ed88277aae539fed7a21",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609211156474452477000",
+      "title": "共時的星叢系列座談二：重讀台灣現代文學/藝的「前衛」： 以共時星叢裡的賴和、蔡培火、世界語為例",
+      "reason": "irrelevant_keyword",
+      "rationale": "完整座談主題為賴和、蔡培火、世界語與前衛藝術；台語出現在講者呂美親著作履歷，未宣布本場以台語進行或專談台語作品。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609211156474452477000",
+      "content_sha256": "6f16526c3b54711868fd47ed666fb8eb5743d4adeb4d27bd2a4d82dff7ecffe7",
+      "document_version": 2,
+      "quotes": [
+        "主講嘉賓介紹",
+        "台語現代小說選"
+      ]
+    },
+    {
+      "candidate_id": "ae9b41dda95882cce536a08e",
+      "source_id": "confucius",
+      "source_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+      "title": "115年九合一地方公職人員選舉反賄選宣導-臺語影片",
+      "reason": "not_event",
+      "rationale": "完整公告為反賄選台語影片資源，不是現場活動。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
+      "content_sha256": "49d04d29305d8b123d57d3c87f23c3c84046701db2589a17a54f1be7fec6031c",
+      "document_version": 2,
+      "quotes": [
+        "反賄選宣導-臺語影片",
+        "DownLoad Movie"
+      ]
+    },
+    {
+      "candidate_id": "f0bcead0a4c54899c0335ef8",
+      "source_id": "ntm",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+      "title": "【臺灣有犀】「犀」缺一角—臺灣台語繪本親子共作",
+      "reason": "already_covered",
+      "rationale": "唯一未來場10/18 14:00–16:00，與catalog ntm_rhino_20261018同地同時，已刊登；過去8/2、9/20不另刊。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
+      "content_sha256": "b80e9d8b1577314f0fb5c653efb5a32608439c8654d4fd2fb5243723debefb33",
+      "document_version": 2,
+      "quotes": [
+        "2026/10/18 14:00",
+        "本館3樓自然教室"
+      ]
+    },
+    {
+      "candidate_id": "9e57e3cab7f30e9de50b595c",
+      "source_id": "tpml_district_b",
+      "source_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "title": "永春分館「臺灣語初級研習班」，歡迎報名參加!",
+      "reason": "already_covered",
+      "rationale": "官方115/9/23至116/1/6每週三14–16，共16堂；已逐堂核對catalog tpml_yongchun的16日期/場地均有資料，不重复新增。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
+      "content_sha256": "2670283896bf4728640eb23c7bcec3afd4bb08d25d343c68e7383de83d330563",
+      "document_version": 2,
+      "quotes": [
+        "115年9月23日起至116年1月6日止",
+        "永春分館4樓多功能活動室"
+      ]
+    },
+    {
+      "candidate_id": "6a9af46326972658fff4e7d0",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "title": "中正紀念堂歷史小旅行【2026年台語場次】",
+      "reason": "already_covered",
+      "rationale": "台語站公告未來10/17、11/21、12/19三場歷史小旅行，均對應catalog gameislearning_1583v0joi94，已有逐場時地，不重複新增。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1583v0joi94",
+      "content_sha256": "1e382b2d1e9aae7bc7d43357ad2fa38e1c01894543ecad30636921259a4f29f8",
+      "document_version": 2,
+      "quotes": [
+        "10/17",
+        "12/19"
+      ]
+    },
+    {
+      "candidate_id": "6c2eba30eeb8c5133f8714a7",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "c5e710f098608c6e71021d4e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "565be89a3016958bf6c17487",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "a38d9ad08722bb24fba2f4a5",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "c67041d2643cc5077f892eba",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "6bafd2ff83d5a4e282133b5b",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "ae164c8c34dee61df06df897",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "1f300a38b004f174ba920c5d",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "3cb5c85e1fbc1d7f60429244",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "327df1f0252143a1ae60e4a9",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "25b30ce6fc95dbe6c634fa37",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "49f373e7f79ad6ed50e14cac",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "7c4552f4f92fd5370d3abb39",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "6a38a09a08a36c29fdb86a00",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "逐場對應臺北戲棚官方節目表：本場日期在11/18–12/5金錢豹或12/30孫悟空智鬥白骨精京劇期間，非魚美人歌仔戲；不排除同系列台語場。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "1cf05f1023068e154fa8838989db7df12d27dcef59259f341615255d6fb57ef8",
+      "document_version": 2,
+      "quotes": [
+        "京劇"
+      ],
+      "supporting_evidence": [
+        {
+          "url": "https://www.taipeieye.com/tw/program/nowshowing/",
+          "content_sha256": "bbe7068be28bb9ddedc18b43c3fb5fad902a77cd9ad0879da713bced64151868",
+          "reviewed_at": "2026-10-06T16:58:11+08:00",
+          "rationale": "完整官網按日期標示這些為京劇；與魚美人歌仔戲分開判讀。",
+          "quotes": [
+            "京劇主題秀 金錢豹 2026/11/18～2026/12/05",
+            "京劇主題秀 孫悟空智鬥白骨精 2026/12/30～2027/01/16"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "5db9d0116590aac65fcc5312",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "reason": "already_covered",
+      "rationale": "逐場核對官方10/30 19:30、10/31 14:30、11/1 14:30梁紅玉與catalog的gameislearning_1594rl4yi94三場日期及大稻埕戲苑相同，已刊登，不重複新增。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "content_sha256": "f04bae88dd6a7eb223d895ac895442aac63b3d6fe3b4aa35fdc1515ba375a9fe",
+      "document_version": 3,
+      "quotes": [
+        "梁紅玉",
+        "大稻埕戲苑"
+      ]
+    },
+    {
+      "candidate_id": "09aa0cac7b6a84ead240160c",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "reason": "already_covered",
+      "rationale": "逐場核對官方10/30 19:30、10/31 14:30、11/1 14:30梁紅玉與catalog的gameislearning_1594rl4yi94三場日期及大稻埕戲苑相同，已刊登，不重複新增。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "content_sha256": "f04bae88dd6a7eb223d895ac895442aac63b3d6fe3b4aa35fdc1515ba375a9fe",
+      "document_version": 3,
+      "quotes": [
+        "梁紅玉",
+        "大稻埕戲苑"
+      ]
+    },
+    {
+      "candidate_id": "3b4258252c35f92b70eb679f",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "reason": "already_covered",
+      "rationale": "逐場核對官方10/30 19:30、10/31 14:30、11/1 14:30梁紅玉與catalog的gameislearning_1594rl4yi94三場日期及大稻埕戲苑相同，已刊登，不重複新增。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2063886748971831297",
+      "content_sha256": "f04bae88dd6a7eb223d895ac895442aac63b3d6fe3b4aa35fdc1515ba375a9fe",
+      "document_version": 3,
+      "quotes": [
+        "梁紅玉",
+        "大稻埕戲苑"
+      ]
+    },
+    {
+      "candidate_id": "c097f2e07eb1d256a46a34db",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-202當伯公遇見土地公",
+      "reason": "resource_only",
+      "rationale": "完整文化部紀錄是土地公文化館常設展全年展期及互動裝置；不是單場台語演出或教學。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "content_sha256": "74fd539edc24d03d9af06e8161865d77a9b5bae8b8de662154c7c4e20ee86494",
+      "document_version": 3,
+      "quotes": [
+        "常設展"
+      ]
+    },
+    {
+      "candidate_id": "b1bc953c8f1798f1c9741a08",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "桃園市土地公文化館常設展-302土地公節日慶典與科儀活動",
+      "reason": "resource_only",
+      "rationale": "完整文化部紀錄是土地公文化館常設展全年展期及互動裝置；不是單場台語演出或教學。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "content_sha256": "74fd539edc24d03d9af06e8161865d77a9b5bae8b8de662154c7c4e20ee86494",
+      "document_version": 3,
+      "quotes": [
+        "常設展"
+      ]
+    },
+    {
+      "candidate_id": "5ab65065446e6097b618375b",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "title": "【特展】 「請戲-布袋戲一條街」特展",
+      "reason": "resource_only",
+      "rationale": "完整文化部紀錄為請戲歷史特展，開放多月；不是單場台語活動。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+      "content_sha256": "74fd539edc24d03d9af06e8161865d77a9b5bae8b8de662154c7c4e20ee86494",
+      "document_version": 3,
+      "quotes": [
+        "請戲-布袋戲一條街"
+      ]
+    },
+    {
+      "candidate_id": "f7e02e5827ed2e38ce623cde",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+      "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+      "reason": "already_covered",
+      "rationale": "完整公告10/15、11/19、12/17台語手語三場，逐場與catalog ntl_taigiloo_20261015/20261119/20261217及B1研習教室核對一致，已刊登。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+      "content_sha256": "d8f40ad0c2ee804c51e9f17e1a4c738ea755b1232da666ac9053290e3866279a",
+      "document_version": 3,
+      "quotes": [
+        "10月15日",
+        "12月 17 日",
+        "視障資料中心B1研習教室"
+      ]
+    },
+    {
+      "candidate_id": "7c2438d7753cf679ae8c808d",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+      "title": "台語/手語說故事活動",
+      "reason": "already_covered",
+      "rationale": "完整公告10/15、11/19、12/17台語手語三場，逐場與catalog ntl_taigiloo_20261015/20261119/20261217及B1研習教室核對一致，已刊登。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+      "content_sha256": "d8f40ad0c2ee804c51e9f17e1a4c738ea755b1232da666ac9053290e3866279a",
+      "document_version": 3,
+      "quotes": [
+        "10月15日",
+        "12月 17 日",
+        "視障資料中心B1研習教室"
+      ]
+    },
+    {
+      "candidate_id": "922de7ea9931d58bc3ba5728",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2607280236031295663510",
+      "title": "用台語講故事：講予囡仔聽的人權繪本",
+      "reason": "already_covered",
+      "rationale": "完整公告11/1上午10:30與下午13:30兩場，已逐場與正式catalog acc_2607280236031295663510_20261101_1030及_1330比對相符；其他9/20、10/4場已結束，不另新增。",
+      "reviewed_at": "2026-10-06T17:03:33+08:00",
+      "evidence_url": "https://www.accupass.com/event/2607280236031295663510",
+      "content_sha256": "f5e3b2e632a886cd9c08a053504593ae244ef3aa4ddff46f327dedc787bddfae",
+      "document_version": 3,
+      "quotes": [
+        "11月1日（日）",
+        "10:30-12:00",
+        "13:30-15:00"
+      ]
+    },
+    {
+      "candidate_id": "bd4730940ab6b29031e4aaf4",
+      "source_id": "ty_culture",
+      "source_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889564",
+      "title": "桃園市政府文化局",
+      "reason": "expired",
+      "rationale": "恢復讀取完整官方10/4鐵玫瑰音樂節成果新聞；連續兩天演出已結束，與先前同活動10/3公告一致。",
+      "reviewed_at": "2026-10-06T17:08:03+08:00",
+      "evidence_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889564",
+      "content_sha256": "36d0e86d009e2f048a7286b5d50f52c7320688bd7692d18631a24bb8e833e4d1",
+      "document_version": 3,
+      "quotes": [
+        "上版日期：115-10-04",
+        "今(4)日"
+      ]
+    },
+    {
+      "candidate_id": "06e2413bf111c55e7209d238",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2090269380048343041",
+      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
+      "reason": "not_taigi",
+      "rationale": "逐場核對11/21晚間為榮興客家採茶劇團《狸貓換太子》，非同系列其他歌仔戲/布袋戲台語場；只排除此客家場。",
+      "reviewed_at": "2026-10-06T17:08:05+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+      "content_sha256": "ef7b77bfffcdf212cfc7abed464515941e5690a5fa63dee0820ca1083153ac1b",
+      "document_version": 3,
+      "quotes": [
+        "榮興客家採茶劇團",
+        "狸貓換太子"
+      ]
+    },
+    {
+      "candidate_id": "d7c732aae15b836240e96d41",
+      "source_id": "tp_center_nhdo",
+      "source_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+      "title": "地名沿革",
+      "reason": "not_event",
+      "rationale": "已讀地名沿革全文為內湖區行政歷史、舊地名釋義、文獻出處，閩南語出現於詞源解釋，並非可參加活動。",
+      "reviewed_at": "2026-10-06T17:08:26+08:00",
+      "evidence_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
+      "content_sha256": "67304b9d27c7da461dabc426a9cdf639182925cef80cd2aebdbd9f031f483235",
+      "document_version": 3,
+      "quotes": [
+        "地方行政異動沿革表",
+        "參考資料"
+      ]
+    },
+    {
+      "candidate_id": "49f607c5bb36155ad00bf8df",
+      "source_id": "tp_center_whdo",
+      "source_url": "https://whdo.gov.taipei/News_Content.aspx?n=73CC1D8DBFE4CB7D&sms=78D644F2755ACCAA&s=3287EB910EE2D9C8",
+      "title": "115-10-05 2026「溪州提拔泥-泥巴野餐趣」活動",
+      "reason": "outside_region",
+      "rationale": "完整公告為溪州花博公園活動，與板橋/金山同一彰化溪州公告；臺北公所只是轉貼，地點不在北北桃。",
+      "reviewed_at": "2026-10-06T17:08:26+08:00",
+      "evidence_url": "https://whdo.gov.taipei/News_Content.aspx?n=73CC1D8DBFE4CB7D&sms=78D644F2755ACCAA&s=3287EB910EE2D9C8",
+      "content_sha256": "8e4aaecd675a98670271e5ec21531bd1881ea4f6a421885931a999056cc064a6",
+      "document_version": 3,
+      "quotes": [
+        "溪州花博公園",
+        "溪州鄉公所"
+      ]
+    }
+  ],
+  "qualified_parent_count": 30,
+  "new_qualified_count": 39,
+  "new_qualified_activities": [
+    {
+      "activity_id": "review_acc_2609140323345113976390_a1_20261025",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-10-25T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_a2_20261101",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-01T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_a3_20261115",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-15T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_a4_20261122",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-22T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_a5_20261129",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-29T13:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_b1_20261104",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-04T13:30:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_b2_20261107",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-07T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_b3_20261108",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-08T09:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_b4_20261114",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-14T13:30:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140323345113976390_b5_20261115",
+      "title": "台語咱佮意！親子生活會話進階班",
+      "start_time": "2026-11-15T13:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054754824953241601",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-07T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054754827834728449",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-09T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054754830786617344",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-10T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755287663939585",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-14T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755290885165057",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-16T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755293590315009",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-17T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755296509726721",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-21T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755299245137921",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-23T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755301857288193",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-24T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755304588681217",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-28T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755314683469825",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-30T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755317582635009",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-10-31T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755320191492097",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-04T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755323537821697",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-06T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2054755327140552705",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-07T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2062823204013744128",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-11T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2062823214794117121",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-13T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2062823218484092929",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-11-14T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970773323358209",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-09T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970776070627329",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-11T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970779512094721",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-12T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970781896515585",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-16T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970789351931905",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-18T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970796610203649",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-19T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970799539896321",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-23T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970802496880641",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-25T20:00:00+08:00"
+    },
+    {
+      "activity_id": "opentix_2068970804864524289",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "start_time": "2026-12-26T20:00:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140256552197197330_20261122_1330",
+      "title": "台語咱佮意！說故事培訓班",
+      "start_time": "2026-11-22T13:30:00+08:00"
+    },
+    {
+      "activity_id": "review_acc_2609140313052076422556_20261122_1330",
+      "title": "台語咱佮意！親子生活會話基礎班",
+      "start_time": "2026-11-22T13:30:00+08:00"
+    }
+  ],
+  "queue_count": 41,
+  "remaining_candidates": 41,
+  "remaining_cases": [
+    {
+      "candidate_id": "4823f23854bb8b94c3482615",
+      "source_url": "https://www.accupass.com/event/2609140247402019682780",
+      "title": "台語咱佮意！台語主題系列講座 (10/17-11/21)",
+      "owner": "Codex",
+      "finding": "完整ACC公告仍同時寫11/15大園分館5樓研習教室與地址4樓，未查到此場官方補正。12場已在catalog（該場僅用大園分館）；此待辦只追場內樓層，不代表整個系列未上站。",
+      "missing_fields": [
+        "11/15正確樓層"
+      ],
+      "next_action": "10/8重查報名公告及大園分館本場課表；來源自行更正前，不改既有活動或猜樓層。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609140247402019682780",
+      "content_sha256": "8bda1b79c43e7038abc61680de67b4bd339695ed0e1282acfdc5b705437c4113",
+      "fetch_error": null,
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "3a87074d16ef96870d3949ff",
+      "source_url": "https://www.accupass.com/event/2609290908339306700300",
+      "title": "【Open Site打開遺址】親子考古任務",
+      "owner": "Codex",
+      "finding": "已讀ACCUPASS完整正文、主辦Open Site總頁與親子考古專頁、三張正文圖。確有華語／台語分場，14:00–16:00、家庭2400元起；主辦說實際日期以報名頁為準。瀏覽器點報名後導向ACCUPASS登入，未取得台語場日期，圖片亦無日期表。",
+      "missing_fields": [
+        "台語場日期與票種對應"
+      ],
+      "next_action": "追查公開票種／主辦補充場次表；若仍只在登入後可看，列為需登入取得的證據，不把整段11/14–12/19當台語場。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2609290908339306700300",
+      "content_sha256": "5914afb4c0f462bf6fce34d0322eb435f0b86ac212ee10703fb0e852cda63418",
+      "document_version": 2,
+      "checked_support": {
+        "url": "https://www.archaeoquest.com.tw/parent-child-archaeology",
+        "content_sha256": "1b840e6d8628808f381b6f5fdbc569ebba2c3825203f84cce294659eddffa694",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      },
+      "registration_check": {
+        "url": "https://www.accupass.com/eflow/ticket/2609290908339306700300",
+        "result": "login_required",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "e4858c7f13f5548a20fffad8",
+      "source_url": "https://www.accupass.com/event/2608300947345233191260",
+      "title": "金枝演社《聖誕夜的神經病》讀劇演出",
+      "owner": "Codex",
+      "finding": "完整公告列12/12、12/13 14:30免費讀劇，台語只在金枝演社劇團沿革，沒有本次讀劇語言。以節目全名查人權館官方資訊仍未取得同版本發音說明。",
+      "missing_fields": [
+        "本次讀劇演出語言"
+      ],
+      "next_action": "核對人權艺术生活節與金枝演社本次讀劇節目更新，不以劇團曾演台語劇推定本場。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2608300947345233191260",
+      "content_sha256": "928ae5a6eff55b9aee89cc7133ccb2c514e500aa93fd65e9d2157fd4999d4cff",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "49b55809ecfe407f47bdd939",
+      "source_url": "https://www.accupass.com/event/2604161917471542799416",
+      "title": "2026童演童語-霹靂電影日《奇人密碼—古羅布之謎》 ",
+      "owner": "Codex",
+      "finding": "已讀ACCUPASS完整正文、文化部本活動紀錄及桃圖官方系列表。確認10/17（六）14:00–16:00、總館1樓微光廳、免費、104分鐘電影，但本場未列口白語言。霹靂官方舊公開說明PDF第5頁記載此片製作時為國語配音且可能採多國語言發行；這不能證明本次放映版本，也不能單凭霹靂品牌認定台語。",
+      "missing_fields": [
+        "本次放映版本的實際台語口白內容"
+      ],
+      "next_action": "續查桃圖與報名頁的本場放映語言說明，須能連結10/17本場版本；不將「童演童語」或布袋戲當語言證據。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.accupass.com/event/2604161917471542799416",
+      "document_version": 2,
+      "content_sha256": "cf4a580ac9243529b4e3214d8de227a65ab956f9c2a5e9c46a203df98fc684e9",
+      "checked_support": [
+        {
+          "url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "final_url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "content_sha256": "e38aea6069eb726e1abafe8dfe7ea484e4ef1fcfb5e841b9550feb024383a9ea",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "historical_film_language_lead": {
+        "url": "https://www.pili.com.tw/file/corporate/conference/%E9%A2%A8%E9%9A%AA%E4%BA%8B%E9%A0%85%E5%8F%8A%E4%B8%BB%E7%AE%A1%E6%A9%9F%E9%97%9C%E8%A6%81%E6%B1%82%E8%A3%9C%E5%85%85%E6%8F%AD%E9%9C%B2%E4%BA%8B%E9%A0%85.pdf",
+        "page": 5,
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "4b84bb4d166de282573f9b4a",
+      "source_url": "https://www.opentix.life/event/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "owner": "Codex",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
+      "missing_fields": [
+        "台北本場口白／演唱語言"
+      ],
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "e0df23565b4e236588bdda64",
+      "source_url": "https://www.opentix.life/event/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "owner": "Codex",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
+      "missing_fields": [
+        "台北本場口白／演唱語言"
+      ],
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "6e589e9ca5b2710ed36c2293",
+      "source_url": "https://www.opentix.life/event/2081990762330185729",
+      "title": "山宛然劇團兒童布袋戲《鷂婆在哪裡？》",
+      "owner": "Codex",
+      "finding": "已讀OPENTIX完整節目、三場台北時間票价250元及場館注意事項（語言欄為空），正文為客家文化與賽夏傳說，未明列口白語言。新竹文化局同節目詳頁一般下載僅回傳頁尾，不能當作無台語的證據。",
+      "missing_fields": [
+        "台北本場口白／演唱語言"
+      ],
+      "next_action": "續查山宛然或台北偶戲館同版本演出說明；若另有官方語言佐證須綁定這一場session_id。不得以客家題材或布袋戲類型直接判斷。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081990762330185729",
+      "content_sha256": "2b4051494dfcad32e184ea3fe837a32f33519a4e211d8dadd065a5af4e1f5f5e",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "99b74f07e1e195ef8988e4d3",
+      "source_url": "https://www.opentix.life/event/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "owner": "Codex",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
+      "missing_fields": [
+        "本場實際演出口白語言"
+      ],
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "282ef64b8e651ede508fd205",
+      "source_url": "https://www.opentix.life/event/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "owner": "Codex",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
+      "missing_fields": [
+        "本場實際演出口白語言"
+      ],
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "8af11f045b3d4f74f9cb278a",
+      "source_url": "https://www.opentix.life/event/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "owner": "Codex",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
+      "missing_fields": [
+        "本場實際演出口白語言"
+      ],
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "7300d9f17a8bcc75d9311a90",
+      "source_url": "https://www.opentix.life/event/2090004484659298305",
+      "title": "兒童布袋戲《焰王現身：心火山的祕密》",
+      "owner": "Codex",
+      "finding": "完整讀OPENTIX劇情、製作名單、場館須知、四場API及公開HTML。仍只標「字幕語言：國語」，未標口白語言；四场10/31、11/1仍在售。定向查找只找到同內容轉載，不能以國家語言補助或現代親子布袋戲類型直接認證台語。",
+      "missing_fields": [
+        "本場實際演出口白語言"
+      ],
+      "next_action": "10/8重查OPENTIX演出須知及集藝戲坊正式宣傳；如新增語言證據，逐場綁定四個session_id，保留錄影場差異。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090004484659298305",
+      "content_sha256": "26967ce4caf0173a2766aaf89df0ddd5393d012d99a67a7a4173cb00c821582b",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://www.opentix.life/event/2090004484659298305",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "23072be226f31ac40ad6c69bf00b27af3d39fa59169c60c9ff984a54b8d95037"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "113e6755357fa44896310110",
+      "source_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
+      "title": "115年「掌藝薪傳-大師工作坊」",
+      "owner": "Codex",
+      "finding": "Facebook分享頁轉址，另已完整核對國藝會公告與主辦Google報名表。工作坊分前場口白操偶、後場音樂、工藝、雕刻；剩餘10/18課程，後場改10/11，11/1成果展。前場未明說教學／口白語言，整期3000元且未列中途加入辦法；成果展只寫下午、缺確切開始時間。",
+      "missing_fields": [
+        "前場教學與口白語言",
+        "中途參加或單堂報名條件",
+        "11/1成果展確切開始時間及演出內容"
+      ],
+      "next_action": "10/9再核對原報名表、官方工作坊補充公告與成果展公告；分開核實各班及成果展，不把純工藝／雕刻自動當台語活動，不因Facebook失敗排除。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.facebook.com/share/p/1BX5mdbRz3/",
+      "document_version": 2,
+      "fetch_error": "Official page redirected; inspect destination before deciding",
+      "checked_support": [
+        {
+          "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
+          "final_url": "https://www.ncafroc.org.tw/event_detail.html?sid=6432",
+          "content_sha256": "f891649eb7c91ef90a122938b589553ac8791633374871d5c935264ae328d574",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSeivKeEaq2Ixfk_Ui7KCneDUMg5DjSypzkjG4BMeG3EJGDJDw/viewform?usp=send_form",
+          "content_sha256": "441a379801e2f791b2ea14707098aa7f9cd1c1a04da0608d599e540f3b2532dd",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "9d7c72661457ad8b528a7e02",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年深入你心歌唱",
+      "owner": "Codex",
+      "finding": "已讀文化部完整單筆紀錄，明列國、台語歌唱課程，主辦桃園市八德區大勇社區發展協會；唯一showInfo為1/6 19:00到10/27 21:00的整期區間，地點只到八德區。未取得剩餘逐堂課表、地址或參加條件。",
+      "missing_fields": [
+        "10月剩餘逐堂日期",
+        "實際場館地址",
+        "費用與可否中途加入"
+      ],
+      "next_action": "續查大勇社區官方公開課表與招生公告；須取得單堂證據，不把整期開始日推算為每週二，不以混合國台語排除。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "document_version": 2,
+      "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
+      "checked_support": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "953b320f05d64047a33265d7",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "樂活歡唱無限",
+      "owner": "Codex",
+      "finding": "已讀文化部完整單筆紀錄，主辦桃園市龍潭區中山社區發展協會，內容明列國、台語歌唱；僅3/6 13:30到10/16 16:30整期區間、地點僅龍潭區，沒有剩餘單堂日期、場館地址及報名規則。",
+      "missing_fields": [
+        "結束前剩餘逐堂日期",
+        "場館地址",
+        "費用與參加條件"
+      ],
+      "next_action": "10/8優先追查中山社區本課程官方課表／招生補充；不按首末日期推定每週五，也不把10/16整期終點直接當一場。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "document_version": 2,
+      "content_sha256": "e68dc81af9c98a9082a7d9994b2ea0b894d9de85fc4eab7ae192f8dabc83ae67",
+      "checked_support": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "310d83cbe91674eca1a83873",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
+      "title": "童演童語兒童閱讀推廣活動-霹靂電影日《奇人密碼—古羅布之謎》(2場)",
+      "owner": "Codex",
+      "finding": "已讀文化部本片完整紀錄及桃圖官方系列表。文化部6/21到10/17為兩場電影的整段區間；桃圖清楚列6/21與10/17各14:00–16:00，仍未列放映口白語言。片商歷史PDF提到國語配音及多語發行可能，未能證明這次版本。",
+      "missing_fields": [
+        "10/17實際放映版本的台語口白內容"
+      ],
+      "next_action": "與ACCUPASS同場候選49b55809ecfe407f47bdd939共用後續版本查證；若符合只建立一場，不用系列首末日期建立跨日活動。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
+      "document_version": 2,
+      "content_sha256": "213c16691b275cbfd616fcb730f185c5bc993e478b4df3d9970f5bd38856a3d4",
+      "checked_support": [
+        {
+          "url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "final_url": "https://www.typl.gov.tw/Senior/Activity/Content/9550",
+          "content_sha256": "e38aea6069eb726e1abafe8dfe7ea484e4ef1fcfb5e841b9550feb024383a9ea",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "historical_film_language_lead": {
+        "url": "https://www.pili.com.tw/file/corporate/conference/%E9%A2%A8%E9%9A%AA%E4%BA%8B%E9%A0%85%E5%8F%8A%E4%B8%BB%E7%AE%A1%E6%A9%9F%E9%97%9C%E8%A6%81%E6%B1%82%E8%A3%9C%E5%85%85%E6%8F%AD%E9%9C%B2%E4%BA%8B%E9%A0%85.pdf",
+        "page": 5,
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "limitation": "製作時的舊文件，不是2026/10/17現場放映版本確認；不作排除依據。"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "c1b791a8002c2b01dd6bd656",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
+      "title": "國立歷史博物館｜走揣城南ê熱天｜活動報名",
+      "owner": "Codex",
+      "finding": "本轮補讀官方Portaly和4份完整表單。10/17下午《卡滋幫》報名表已可讀，但內文題名仍混入《熱人的冰麒麟》；10/17上午星期仍不符2026日期；10/31漫才表單活動名稱欄仍混入《雲遊博物館》。10/18已刊，不能重建。",
+      "missing_fields": [
+        "10/17雲遊場次日期／星期一致的官方確認",
+        "10/31漫才正確活動名稱",
+        "10/17春福神傳說完整報名公告與參加条件"
+      ],
+      "next_action": "逐場比較官方更正與報名表，不混用不同活動題名；正確日期與場次對應仍需明確。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
+      "document_version": 2,
+      "content_sha256": "f9f1a2caebf7d45772b9c1c7239b80231f440517bbc2cca5782d579d0b86a77e",
+      "checked_support": [
+        {
+          "url": "https://portaly.cc/nmhunitas",
+          "final_url": "https://portaly.cc/nmhunitas",
+          "content_sha256": "d9f2261bc886d7c5929c3516f0e308eb794eff73e4840d73c4e854d1f7435a2e",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        },
+        {
+          "url": "https://forms.gle/yEb7LMwNuD6hpkDo8",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScDgvpNP-EGYTCQ8h7Az38BpBcIKDORZQRnEoG9dLJb8DxDYw/viewform?usp=send_form",
+          "content_sha256": "30c42c15b3d3225d1a3194caa3b603deb2d76ac7127baa685b47ebadeca25a7c",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        },
+        {
+          "url": "https://forms.gle/TUfMtaPr1hU6RKwUA",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfVUvguOU6VCTajYlaaK-_rPm25SettqbG6dHfewOn2rJ4rOg/viewform?usp=send_form",
+          "content_sha256": "e8252e67734a8479ed2e23fadb0201f7d29208496d8278dc226b40782a4e4d3b",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "d50adf5d105c3f70c43d3186",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
+      "title": "雙連教會『兒童台語文秋季班』",
+      "owner": "Codex",
+      "finding": "已讀教會完整課程頁與2026秋季班報名表。官網列9/6開始、每主日08:50–09:40到學期結束，台語站為09:00–09:50；表單雖線上截止但明說歡迎隨時加入、洽靜婷02-25415390#221。另已讀2026/10/4兒童主日學週報兩頁並檢視首頁；一般主日學10:00–11:40並非702／703台語班，不能借用其日期或時段。仍無本班學期截止與停課表。",
+      "missing_fields": [
+        "本期台語班確切上課時段的官方一致確認",
+        "本期截止日期與停課日期",
+        "費用資訊"
+      ],
+      "next_action": "10/9再讀本班課程／招生頁及新週報，找具日期的本期台語班課表；不套用一般主日學時程，不把表單截止當不能参加。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
+      "document_version": 2,
+      "content_sha256": "894c8d29108d0d4a682ce5cfa8464edf98705ab08a7da34d8dc4a9e986005ad6",
+      "checked_support": [
+        {
+          "url": "https://www.slpctaipei.org/learning/3/119",
+          "final_url": "https://www.slpctaipei.org/learning/3/119",
+          "content_sha256": "b02561885197100edf5f3f5396527cf80616f7efeda76e3e5f8dc56c11991b34",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        },
+        {
+          "url": "https://www.slpctaipei.org/learning/5/332",
+          "final_url": "https://www.slpctaipei.org/learning/5/332",
+          "content_sha256": "359b966a3375c8610db41972a666b531f316d98c44e56dea0831b5028c603cb1",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        },
+        {
+          "url": "https://forms.gle/d7Firxw9a62yet4s9",
+          "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScBtmViVEh76tH_3-xNBkOPjKJWfisk1wkioT_OZUBqWwvUKQ/closedform",
+          "content_sha256": "8e1d3ec848e6b04bcadb1980023cea7e8085469ef2e441e5c7a864e77cff8088",
+          "reviewed_at": "2026-10-06T07:07:18+08:00"
+        }
+      ],
+      "checked_pdf": {
+        "url": "https://drive.google.com/file/d/1TYjuxTjzSfmV6zJBchf90x5L4z_za1lE/view?usp=drive_link",
+        "sha256": "4860c7bae3ba6d49b35402dc93e27b0ce1ddbdae1fc0c83cdf622b72784fc0ce",
+        "reviewed_at": "2026-10-06T07:07:18+08:00",
+        "finding": "2026/10/4一般兒童主日學週報，未載本班期末與停課日期。"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "1c6493508b4d0fca0170f1df",
+      "source_url": "https://www.tgb.org.tw/2026/07/23.html",
+      "title": "報名第23期會輾轉台語文讀寫基礎班",
+      "owner": "Codex",
+      "finding": "官網完整課程仍為2026/9/1–12/29週二19:30–21:30線上18堂、4000元／舊生3500元；另有台北期中走讀及結業實體課，未列實體日期場地。今天公開報名表HTTP403，不能據此排除活動。",
+      "missing_fields": [
+        "兩堂台北實體課日期及開始時間",
+        "實體課場館地址",
+        "期中可否報名"
+      ],
+      "next_action": "追查基金會補充課表與公開表單；不得把週二線上時間套到台北實體課，也不得以403判非台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/07/23.html",
+      "content_sha256": "2b988bb3f242a823bd3ef7d03f1a7299beec8cff855dd6e78eba3d1fa72d154c",
+      "document_version": 2,
+      "registration_check": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeDufxC0Nj96BZO-QUvQafsevm8LDYzSbf1Bmfhh5E8bTw95A/viewform",
+        "result": "http_403",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "d74858e5d1a954a87d23235c",
+      "source_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
+      "title": "台文寫作概念研習_ 講師：吳玉祥",
+      "owner": "Codex",
+      "finding": "已讀吳玉祥研習全文、原始海報及連結表單。兩場只列7/19、8/23（禮拜），海報同樣缺年份；表單已停止回覆，兩場附活動相片連結。公告網址為2026/06，但不直接以發文年補作活動年，尚未建立明確年份的結束證據。",
+      "missing_fields": [
+        "活動年份或明確已結束紀錄"
+      ],
+      "next_action": "10/10沿基金會本場官方活動相簿或完整年度課表確認年份後結案；不新增推算場次。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
+      "content_sha256": "5737891fdcc9c8650761dfa51b74195264fe532a0e7c1352c4fcb9941475955d",
+      "fetch_error": null,
+      "checked_supporting_sources": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSf7ltfmOKTJaiRkZQIbXFq7Z-ws6QalfCJZud_aC4piz_Zfxg/closedform",
+          "checked_at": "2026-10-04T07:03:59+08:00",
+          "content_sha256": "6fd4fa3630122cf094d7da86ccfb2b55ade0a77b1949490df14358eb697bba95"
+        }
+      ],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "ed206a7c3f3756dcc968e8b5",
+      "source_url": "https://www.tgb.org.tw/2026/01/116.html",
+      "title": "學生報名1/16拜五看《大濛》",
+      "owner": "Codex",
+      "finding": "正文和官方原海報均只有1/16拜五，未明列年份；報名頁可讀但僅顯示客滿--ah，無年份。未以網址2026/01、發文年或星期反推年份。",
+      "missing_fields": [
+        "學生包場明確年份"
+      ],
+      "next_action": "查基金會本場學生電影觀賞會回顧或明列年份的補充公告，確認後依已過期結案；不因表單客滿直接推定過期。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tgb.org.tw/2026/01/116.html",
+      "content_sha256": "0b19f4a4a6a0ae936b7f10b97246206c9490575367054d88df73cc171d263a49",
+      "document_version": 2,
+      "checked_poster": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyTrtwNHEk3WkXLXjHIn5v7Le6oq0R5VxaImszZ3bh17v4WOHctOcfTomkWiSk9gR8nDDSgmjpEvHNmDoIxYipEKbv3bs8-WOK74rw7DYJ6_MjHEBYeBZdgqVXAgWc8U8NUn67O2jsimdpBcVJDDPOVbY3kXW0nMUPa0QwTCIIJx-MlNwiSflv2hgO4CVa/s552/612452559_1277602011065028_6308138888464683241_n.jpg",
+        "sha256": "444210c5191a6e8fc3c49dfa39dfeada21df090c75c576eeb59fe952869a057c",
+        "transcription": "大濛 1/16拜五 學生場；未見年份",
+        "reviewed_at": "2026-10-05T07:07:39+08:00"
+      },
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "72edde934c4530680c1af542",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
+      "title": "三少爺遊世界：臺灣台語繪本說故事",
+      "owner": "Codex",
+      "finding": "完整報名公告頁首列2026/10/24 14:00–15:30，內文卻仍寫10/12(日)；已確認80%台語、黃郁欽及12組親子，未把日期矛盾當作非台語。",
+      "missing_fields": [
+        "本次正確活動日期"
+      ],
+      "next_action": "10/7比對臺博本場海報、官方月曆及報名資訊，須有可連結本次活動的更正證據。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
+      "content_sha256": "5dfebec7be406589185a7e1750b6dc391c112a63a2fecd4ae479bf4973ac2d52",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "70c1fd0d84b337d74c0167bc",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
+      "title": "【汐止分館】115年10月主題書展：書香傳承母語情、台語共讀趣",
+      "owner": "Codex",
+      "finding": "已讀完整汐止十月書展公告，另提3場說故事活動，卻沒有逐場日期及主題；不能將書展期間製造成3場活動。",
+      "missing_fields": [
+        "3場說故事日期時間與台語分場"
+      ],
+      "next_action": "10/7查分館十月說故事課表或官方海報，逐場核對。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
+      "content_sha256": "2333c4e5ddca331e7e9f8662e1bdfcc5a78dcc80bacfe0b07dd0b92bd79d3e9f",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "f2e5f2254b334ff062c77c3d",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
+      "title": "【淡水分館】 115年全年度藝文展演一覽表",
+      "owner": "Codex",
+      "finding": "淡水全年表確認12/5 14:00臺北木偶《觀音山的秘密》，地點文化路65號、70分鐘、免索票；仍缺本場口白語言，不能只按布袋戲名稱判斷。",
+      "missing_fields": [
+        "12/5本場口白語言"
+      ],
+      "next_action": "10/7查臺北木偶及分館本場公告；其他兩齣節目分開核實。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
+      "content_sha256": "d4a31a0851f1d4c184fdc58485b2b96864ca646556326cf1bea6e95eed877049",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "4f9bb42f7b315990d6b18349",
+      "source_url": "https://www.opentix.life/event/2081904868818423809",
+      "title": "新文化館年度戲劇演出《大正十六年》",
+      "owner": "Codex",
+      "finding": "已重讀OPENTIX完整節目與臺灣新文化運動紀念館本齣官方頁；節目職員列台語指導黃郁盛，但兩頁仍無本次口白語言說明。",
+      "missing_fields": [
+        "本次演出實際口白語言"
+      ],
+      "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
+      "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "9536d3788d0ad8287e08c44a",
+      "source_url": "https://www.opentix.life/event/2081904868818423809",
+      "title": "新文化館年度戲劇演出《大正十六年》",
+      "owner": "Codex",
+      "finding": "已重讀OPENTIX完整節目與臺灣新文化運動紀念館本齣官方頁；節目職員列台語指導黃郁盛，但兩頁仍無本次口白語言說明。",
+      "missing_fields": [
+        "本次演出實際口白語言"
+      ],
+      "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
+      "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "ca9d315ceace54ffb3cf53f8",
+      "source_url": "https://www.opentix.life/event/2081904868818423809",
+      "title": "新文化館年度戲劇演出《大正十六年》",
+      "owner": "Codex",
+      "finding": "已重讀OPENTIX完整節目與臺灣新文化運動紀念館本齣官方頁；節目職員列台語指導黃郁盛，但兩頁仍無本次口白語言說明。",
+      "missing_fields": [
+        "本次演出實際口白語言"
+      ],
+      "next_action": "10/7查本次主辦場次節目單或正式演出語言，不以職員履歷推定全場台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2081904868818423809",
+      "content_sha256": "3bca5599ee263ec5b42253c37bbd7808df5a1b9096bc7184e27068b62cc0dcaa",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "0ffb8dbdd398f9fa634e048e",
+      "source_url": "https://www.opentix.life/event/2084482215968473088",
+      "title": "歌頌。頌歌－幕聲合唱團20週年音樂會",
+      "owner": "Codex",
+      "finding": "節目介紹已明示台語曲目，語言符合；但官方API臺北10/24及臺中11/8場目前status=4，無法依售票狀態通過核實。",
+      "missing_fields": [
+        "本場有效售票／演出狀態"
+      ],
+      "next_action": "10/7比對OPENTIX本場售票及主辦取消、改期公告，狀態有效後直接接回核實，不重判語言。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2084482215968473088",
+      "content_sha256": "e7e49bba6255268ba3d5342f85eed6cc4e0a0051d65f0c402710fd11bff3cfba",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "43ab2434874dc7f43b2df4a1",
+      "source_url": "https://www.opentix.life/event/2090269380048343041",
+      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
+      "owner": "Codex",
+      "finding": "已完整閱讀江之翠11/15晚場《陳三五娘》節目，確認曲目及演出團隊；本分場未明示口白語言，不能將同系列其他場語言套用。",
+      "missing_fields": [
+        "本分場實際演出語言"
+      ],
+      "next_action": "10/7查江之翠本場節目單或主辦語言說明。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+      "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "dfcfc1b1dac024e27020ef3a",
+      "source_url": "https://www.opentix.life/event/2090269380048343041",
+      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
+      "owner": "Codex",
+      "finding": "已重讀《戲釀青春》系列正文，本候選為11/21 14:30曲藝場；舊結案來源指紋已失效，僅團名及類型不能取代實際語言證據。",
+      "missing_fields": [
+        "本分場口白語言"
+      ],
+      "next_action": "10/7查曲藝本分場節目單及語言，按新證據決定。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+      "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "2bcdecfab7a0fe9f3c1e2ff2",
+      "source_url": "https://www.opentix.life/event/2090269380048343041",
+      "title": "戲釀青春──2026駐團演訓計畫 育成聯合展演",
+      "owner": "Codex",
+      "finding": "已重讀《戲釀青春》系列正文，本候選為11/15 14:30當代傳奇場；舊非台語決定的來源指紋已失效，現文仍需分場語言證據，不能直接沿用。",
+      "missing_fields": [
+        "本分場口白語言"
+      ],
+      "next_action": "10/7查本分場正式節目單及口白標示，若非台語按新證據重結案。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2090269380048343041",
+      "content_sha256": "2d63d1aaef6b7b0b61e9478b11e7dc2415284c0cc2240850c8ab710fa9bead12",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "aff4987e3ecf4e1363512619",
+      "source_url": "https://www.opentix.life/event/2079846338651627521",
+      "title": "梨園《傾國之戀》當代傳奇劇場",
+      "owner": "Codex",
+      "finding": "全文重讀OPENTIX：藝術節總述仍稱《傾國之戀》融合台灣唸歌，但本節目曲目只有《貴妃醉酒》《拾玉鐲》《霸王別姬》，主演黃若琳、許立縈、張偉全；售票頁無唸歌段落或演出者。搜尋的其他節目轉載不能用來證實本節目台語內容。",
+      "missing_fields": [
+        "本節目是否實際包含台灣唸歌及演出者"
+      ],
+      "next_action": "追查當代傳奇／板橋放送所本節目正式節目單，確認唸歌是否另屬藝術節其他節目；不以京劇曲目直接否定有唸歌的矛盾總述。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
+      "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "5c6660b8262bfe3f31cfc623",
+      "source_url": "https://www.opentix.life/event/2079846338651627521",
+      "title": "梨園《傾國之戀》當代傳奇劇場",
+      "owner": "Codex",
+      "finding": "與同一節目另一場一併全文核對：藝術節總述稱融合台灣唸歌，但本節目只列京劇三折及京劇演員，尚無唸歌段落對應。兩場同一未解矛盾。",
+      "missing_fields": [
+        "本場是否包含台灣唸歌及演出者"
+      ],
+      "next_action": "與同來源另一場共同追查正式節目單，僅對獲得台語證據的場次採用。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2079846338651627521",
+      "content_sha256": "05cd28da26918b2c9dded09bbf70d7fdd3d18e2a681748b205b33f594ef33d1f",
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "69e6b1d9a4f6c7c705536fb6",
+      "source_url": "https://www.opentix.life/event/2095045191349043200",
+      "title": "大稻埕戲苑「115年駐館團隊專場演出」《三國演義之古城會》",
+      "owner": "Codex",
+      "finding": "大稻埕《古城會》已確認11/15 14:30–16:00、陳錫煌傳統掌中劇團及陳冠霖；官方欄位僅寫字幕語言台語，仍未證明實際口白。",
+      "missing_fields": [
+        "本場實際口白語言"
+      ],
+      "next_action": "10/7查劇團本場節目資料，字幕與口白分開核對。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2095045191349043200",
+      "content_sha256": "9d7c2615793890059ac0a42f124ddfa732550c6dcbe576badc7748c188aea51c",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "f8ebc54324d597bc142c1ff9",
+      "source_url": "https://www.opentix.life/event/2087818083774783489",
+      "title": "《聽見那個年代》張林峯2026音樂會",
+      "owner": "Codex",
+      "finding": "已讀張林峯《聽見那個年代》完整七章節介紹，確有台灣經典音樂及布袋戲歌曲描述，但沒有實際台語曲目或口白說明。",
+      "missing_fields": [
+        "本場台語曲目或口白內容"
+      ],
+      "next_action": "10/7查主辦正式曲目表；不以台灣經典或歌手背景推定。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/2087818083774783489",
+      "content_sha256": "7b794f2ec045217f7cc4784ae981cf0e828f0a4964f5d133388d36fc870ea6b3",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "80f5dc08121066e2b79da2b1",
+      "source_url": "https://taigiloo.tw/course/tuesday/",
+      "title": "台語囡仔共學團",
+      "owner": "Codex",
+      "finding": "全文重讀共學團頁：全台語2–6歲、家長陪同並輪值、每週二上午、台北市室內、免費；仍未提供本期起訖、單堂開始時間或固定地址。頁面沒有公開報名表，只連官方粉專；不能把未定地點的團體紹介當逐場活動。",
+      "missing_fields": [
+        "本期有效日期及單堂開始時間",
+        "實際上課地址",
+        "現行參加辦法"
+      ],
+      "next_action": "沿台灣台語路協會官方共學團更新查本期招生及場地；若只是長期團體介紹，須確認後改列非場次資訊，不擅自排入每週二。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://taigiloo.tw/course/tuesday/",
+      "content_sha256": "fce7bf4a9e60fac33063dd0b30868d89077b2338e37349d203bf638d2df0175a",
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "e1e402c37a1d67499b7caa1f",
+      "source_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
+      "title": "臺北市政府文化局",
+      "owner": "Codex",
+      "finding": "完整茶室系列消息中，明示台語的10/3青草綻放已結束；10/17工作坊及艋舺公園音樂會仍有未來場次，但未列相應台語內容。",
+      "missing_fields": [
+        "10/17分場的台語導覽或演唱內容"
+      ],
+      "next_action": "10/7查兩場音樂會的實際曲目、語言及工作坊版本，不將過期台語場套用未來場。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
+      "content_sha256": "ac43dc02007619dfab1b147fb4c07f86e458fb252cbca369cf8e81c88f3a6073",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "d3b02cefbeaec5471565476c",
+      "source_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+      "title": "彩虹觀光巴士10月開跑！國際變裝巨星妮妃雅、 Pangina Heals邀你探索多元友善的臺北 115-09-19 迎接10月同志驕傲月，臺北市政府觀光傳播局推出「2026 Color Taipei Color your way」系列活動。10月來臺北，除了參加亞洲最具指標性的同志盛事，千萬別錯過廣受好評的彩虹觀光巴士遊程！遊程將於10月9日至30日登場，即日起於KKday獨家販售。帶領旅客穿梭臺北市區，走訪西門紅樓、二二八和平公園、台北101、臺北大巨蛋及華山文創園區等臺北經典地標及彩虹文化景點，今年更首度駛進林森條通商圈，探索條通街區夜間文化、欣賞變裝皇后演出還有國際巨星限定場次，深入感受臺北多元友善的城市魅力。今年彩虹觀光巴士推出三大特色遊程，下午場次的「一般導覽場」帶領旅客穿梭臺北市區，透過變裝皇后的導覽分享，認識臺北的彩虹文化故事；晚上場次的「派對演出場」則首度進入林森條通商圈，旅客將造訪天津大酒店及Bar Nine，跟著條通媽媽桑探索條通不為人知的歷史故事與夜間文化，欣賞變裝皇后精彩演出與互動體驗，還可免費享用一杯飲料，在微醺與歡樂氛圍中感受條通獨特魅力；另於10月28日及30日推出限量「特別嘉賓派對場」，邀請國際變裝巨星Pangina Heals及妮妃雅登車，打造今年最具話題性的彩虹觀光體驗。觀傳局表示，今年彩虹觀光巴士不僅首度結合條通街區探索與夜間文化體驗，更邀請泰國知名變裝天后Pangina Heals及《RuPaul's Drag Race》冠軍妮妃雅參與限定場次，打造兼具文化深度與娛樂話題的觀光遊程，期盼藉由彩虹文化、街區故事及國際級嘉賓等吸引更多國內外旅客走進臺北，感受自由、多元且包容的城市魅力。今年邀集8位臺灣知名變裝皇后擔任導覽員，包括跩姬寶貝、漢娜、小花寶貝、Yolanda、Marian、Bagel、Yugee及Honey Ji；同時結合《甲板日誌》、女同志派對品牌「浪漫銀河大舞廳」及高人氣的Sandra Hoe等LGBTQ+網路創作者共同參與。此外，今年特別規劃臺語導覽場次，並推出5場英文導覽，讓國內外旅客輕鬆認識臺北的多元文化。除彩虹觀光巴士外，「2026 Color Taipei Color your way」系列活動也推出多項限定體驗。9月24日至10月12日，只要至「臺北旅遊網」Facebook及Instagram指定貼文留言「Color Taipei Color your way」，並標記兩位好友，就有機會抽中彩虹觀光巴士遊程票券等限定好禮；西門町遊客中心則於10月1日至31日特別設置限定彩虹主題拍貼框，體驗拍貼還能獲得限定彩虹小禮。觀傳局表示，為迎接來臺北參與同志驕傲月活動及臺灣同志遊行的國內外旅客，今年更攜手Agoda推出「Taipei Nice Stay」限時住宿專區，提供友善優質的住宿選擇，鼓勵旅客多停留臺北，體驗臺北自由包容的城市氛圍與豐富精彩的文化風貌，共同創造屬於自己的「Color Taipei Color your way」。KKday「彩虹觀光巴士遊程」購票：連結「2026 Color Taipei Color your way」10月登場，邀旅客探索臺北多元友善魅力。國際知名變裝皇后妮妃雅將於10月30日登上彩虹觀光巴士與旅客近距離互動。 泰國知名變裝表演者Pangina Heals將於10月28日參與彩虹觀巴行程。臺灣知名變裝表演品牌灣島皇后們將登上彩虹觀光巴士，帶領旅客認識臺北彩虹文化。",
+      "owner": "Codex",
+      "finding": "完整官方消息確有台語導覽版本，但仍未指明台語版本對應的可選日期與時間。",
+      "missing_fields": [
+        "台語專車可預約場次日期及時間"
+      ],
+      "next_action": "10/7沿官方公告的KKday訂購連結核對實際台語票種與出發時間，不能把整段販售期當單場。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
+      "content_sha256": "4c590a0532b7d65dc8cfd77e49dce13aab49a3fd6d4d5bdb59a141e46eab0a9c",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "627b611118572afd8e772b71",
+      "source_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
+      "title": "縮放你我、縮放世界 桃園市兒童美術館「放大鏡與縮小燈：縮放自如主題書展」 陪你一起加入變化多端的冒險",
+      "owner": "Codex",
+      "finding": "已用瀏覽器通過官方頁自動檢查並完整閱讀正文。書展為2025/11/26–2026/3/2，延伸活動2025/12/13，均已過期；頁尾2026/10/6是網站更新日。一般程式仍HTTP428，因此尚未建立可重查的結案契約，不是缺少活動日期。",
+      "missing_fields": [
+        "可由程式重查的官方過期證據（瀏覽器正文已讀）"
+      ],
+      "next_action": "修復此官方頁瀏覽器證據保存與程式重查，或取得同館同書展可讀公告後，以過期結案；不可把HTTP428判為非台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
+      "fetch_error": "http_428",
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "67c854218c7f7da13359b728",
+      "source_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+      "title": "桃園市政府教育局",
+      "owner": "Codex",
+      "finding": "官方教育局公告在本機重讀回覆network_or_tls_error，尚未取得可完整核實的正文；不判為非台語或過期。",
+      "missing_fields": [
+        "可讀的完整官方公告"
+      ],
+      "next_action": "10/7以官方瀏覽頁或原主辦公告補讀此教育局轉知資訊，取得正文後即判讀活動身分及日期。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+      "error": "network_or_tls_error",
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "31e00a4048cc4a48d24cfd5a",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年望間歌唱研習活動",
+      "owner": "Codex",
+      "finding": "本次文化部category=7完整回應151筆，仍沒有UID6a304d0026b3243414ccd317或望間活動；定向搜尋未找到可讀主辦原公告。舊快照截止10/2不能冒充今日可重查證據。",
+      "missing_fields": [
+        "可重查的原活動結束或延期公告"
+      ],
+      "next_action": "10/10重查文化部原UID與望間社區公告；保留來源讀取失效狀態，不能以缺席列表判非台語。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "content_sha256": "ad159b3394ff8667b3b53116e8bf48e04cbfe94b636ed86e42d4b77e6a41d663",
+      "fetch_error": null,
+      "checked_supporting_sources": [],
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    },
+    {
+      "candidate_id": "03f450ac3999d47f7d2e6631",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+      "title": "國立臺灣圖書館",
+      "owner": "Codex",
+      "finding": "已讀完整官方公告及圖片（圖片為《就是要躁反》書封）。確認10/24 14:00–16:00、陳佳汝、國臺圖4045教室、自由參加；主題介紹台語及其他母語歌謠，卻未明示講座使用語言或現場台語演唱，不能只按主題認定全台語。",
+      "missing_fields": [
+        "本場台語口語／演唱或教學內容"
+      ],
+      "next_action": "10/7查國臺圖本場講座行事曆及主辦公告的語言資訊；若仍只列研究主題則明確保留，不能猜口白。",
+      "reviewed_at": "2026-10-06T17:09:03+08:00",
+      "next_review_at": "2026-10-07T07:00:00+08:00",
+      "evidence_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+      "content_sha256": "fb60f1fa5849098e987f1aaa03aba07dad72b4a2defe1c0cc2ecabc7777bfac2",
+      "document_version": 2,
+      "latest_check": "2026-10-06接續批次：來源全文重讀或記錄實際讀取障礙，未因批次25來源限制延至隔日；未解事實不猜測。"
+    }
+  ],
+  "superseded_exclusions": [
+    {
+      "candidate_id": "5dc4703b0cd0a82cd3cef6c4",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "dbca52a079922d1f7ee4bbbf",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "c82c8648dc3a110541f85593",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "0bf64b37df0d7d655c6669ee",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "5a307bbd77455d480bb59c76",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "c5865094151f814b775077d8",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "c22f7445d0596d467d4d81a0",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "f5cc29e7fbc563f738eb15f6",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "ddb5bdd1d6b4ab141b5f28c7",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "9e44ff3d8b894409a7de4c1f",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "0383c08e4f3fa1358e62d704",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "0540a714c96964ec48e7bd7d",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "527b87795f2923e1ed1dc4a2",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "a04ae9a335a49163cd1f32fe",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "cdcbf7c97b285e32a3775b32",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "b6a8bcea8bf7ccdc5afb8b35",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "c86370fe6ee8b715e8046e0a",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "fd332bb9929817c536f35e54",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "2078e80ef14127a7626a0dc2",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "6da5cc0aeacbbc1a2f46b618",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "e62afc30b1709ff60f239fc0",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "c7b4242d4bf4ebbe62f751bb",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "85c548699da906f6cdb7968a",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "65c2f0a98e2a0e618c3ecc8a",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "092218e0ca0f52e92a105436",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "7002b7c7339c91c68c1c58da",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    },
+    {
+      "candidate_id": "ef477d97c91b96ead82562ad",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/1863403624657735681",
+      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
+      "reason": "not_taigi",
+      "rationale": "依使用者既有決定，臺北戲棚以京劇為主，不收作台語活動；此決定適用本節目同版各場。 來源內容改變時重開，不沿用此版結論。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00",
+      "evidence_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+      "content_sha256": "d6bba11592ae67986f83372a7d5491d9cb2a5d28f666de13cad3f58944eba1d7",
+      "quotes": [
+        "文化觀光傳統表演藝術劇場-臺北戲棚"
+      ],
+      "evidence": {
+        "url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "final_url": "https://csm.api.opentix.life/programs/1863403624657735681",
+        "http_status": 200,
+        "request_method": "GET",
+        "fetched_at": "2026-09-30T23:41:31+08:00",
+        "sha256": "8a362626545da3846c8eb5df17c4ec609befb06cc227e7da2def9d36db1f017f",
+        "elapsed_ms": 690,
+        "attempt": 1
+      },
+      "reviewer": "Codex; source reading, not human certification"
+    }
+  ],
+  "superseded_reason": "逐場官方節目表明示魚美人歌仔戲台語唱念，不能沿用整個臺北戲棚以京劇為主的舊概括判斷；其他京劇場維持排除。",
+  "preserved_files": {
+    "data/verified_activities.json": true,
+    "data/ai_taigi.json": true,
+    "data/ui_taigi.json": true
+  },
+  "previous_queue_items_unchanged": true,
+  "tests": {
+    "python": "274 tests run: 273 passed, 1 skipped",
+    "diff_check": "passed"
+  },
+  "publication": "本核實提交僅新增待編輯；尚未計入本輪上站數。10/7場另走緊急地端編輯與正式部署查核。"
+}

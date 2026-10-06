@@ -191,7 +191,11 @@ def load_verified(path=DATA_PATH, now=None, check_sources=False):
                 raise ValueError('自動核實活動缺少可重查的官方證據')
         if 'opentix_sessions' in source:
             session = next((s for s in source['opentix_sessions'] if s['session_id'] == review.get('opentix_session_id')), None)
-            if not session or any(data[k] != session[k] for k in ('start_time', 'end_time', 'venue', 'address', 'city', 'is_free')):
+            from .reviewed_opentix_language import omits_end
+            omitted_end = session and data['end_time'] is None and any(
+                omits_end(c, session) for c in source.get('automated_review', {}).get('language_claims', []))
+            if (not session or any(data[k] != session[k] for k in ('start_time', 'venue', 'address', 'city', 'is_free'))
+                    or (data['end_time'] != session['end_time'] and not omitted_end)):
                 raise ValueError('正式活動與已核對的 OPENTIX 場次不一致')
         if data['source_url'] != source['url']:
             raise ValueError('活動連結與核實來源不一致')
