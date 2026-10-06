@@ -688,5 +688,19 @@
         }
       ]
     }
-  ]
+  ],
+  "publication": {
+    "submitted_commit": "a5e6ba6",
+    "source_retry_and_audit_commit": "34ead3b",
+    "applied_commit": "38ff7d6",
+    "deploy_run": 37442620377,
+    "deploy_conclusion": "success",
+    "receipts_for_batch": 40,
+    "live_html_ids": 40,
+    "live_ics_unique_events": 40,
+    "live_total_ics_events": 273,
+    "checked_url": "https://jialiangni.github.io/taigi_activities/",
+    "ics_url": "https://jialiangni.github.io/taigi_activities/taigi_activities.ics",
+    "checked_at": "2026-10-06T17:30:00+08:00"
+  }
 }
