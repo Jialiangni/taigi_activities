@@ -209,7 +209,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
       <div class="month-filter" role="group" aria-label="揀月份"><span class="month-filter-label">月份</span><div class="month-options" id="monthFilterOptions"></div></div>
       <button class="mobile-filter-button" id="mobileFilterButton" onclick="openFilterModal()" aria-haspopup="dialog" aria-controls="filterModal">來源・種類・所費 <span id="mobileFilterCount"></span><span aria-hidden="true">☷</span></button>
       <div class="select-filters" id="advancedFilters">
-        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（81）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（98）</option><option value="北北桃市府局處">北北桃市府局處（2）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="台語站">台語站（17）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="年代售票">年代售票（2）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
+        <label for="sourceFilter">來源 <select id="sourceFilter" data-filter-select="platform" onchange="setPlatformFilter(this.value)"><option value="all">攏總</option><option value="Accupass 活動通">Accupass 活動通（82）</option><option value="OPENTIX 兩廳院">OPENTIX 兩廳院（98）</option><option value="北北桃市府局處">北北桃市府局處（2）</option><option value="北北桃市立圖書館">北北桃市立圖書館（23）</option><option value="台語站">台語站（17）</option><option value="國立臺灣圖書館">國立臺灣圖書館（3）</option><option value="年代售票">年代售票（2）</option><option value="李江却基金會">李江却基金會（3）</option><option value="美術館與博物館">美術館與博物館（2）</option></select></label>
         <label for="categoryFilter">種類 <select id="categoryFilter" data-filter-select="category" onchange="setCategoryFilter(this.value)"><option value="all">攏總</option><option value="台語舞台劇">舞台劇</option><option value="台語表演">表演</option><option value="台語故事">講古</option><option value="台語繪本">繪本</option><option value="台語體驗">體驗</option><option value="台語導覽">導覽</option><option value="台語活動">其他活動</option></select></label>
         <label for="priceFilter">所費 <select id="priceFilter" data-filter-select="price" onchange="setPriceFilter(this.value)"><option value="all">攏總</option><option value="free">毋免錢</option><option value="paid">愛納錢</option></select></label>
       </div>
@@ -371,7 +371,7 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
         這頁干焦收有核對官方公告的場次，毋是所有的活動。各地的數目照已核實的資料來算；出門進前請閣看一擺官方公告。
       </p>
       <p style="margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-light);">
-        頁面做好的時間：2026-10-06 15:56:54（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
+        頁面做好的時間：2026-10-06 15:58:17（臺北時間；毋代表有閣核對過） ｜ 咱做伙來講台語！
       </p>
     </div>
   </footer>
@@ -448,6 +448,41 @@ dialog.modal-overlay::backdrop{background:#0008;backdrop-filter:blur(5px);-webki
     "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=115-2%E5%88%9D%E9%9A%8E%E5%8F%B0%E8%AA%9E%E6%8E%A8%E5%BB%A3%E8%AA%B2%E7%A8%8B&dates=20261007T104000Z%2F20261007T124000Z&ctz=Asia%2FTaipei&details=%E5%8F%B0%E7%81%A3%E5%8F%B0%E8%AA%9E%E6%96%87%E5%8C%96%E5%8D%94%E6%9C%83%E9%96%8B%E8%A8%AD%E7%9A%84%E5%88%9D%E9%9A%8E%E8%AA%B2%E7%A8%8B%EF%BC%8C%E4%BB%A5%E6%95%99%E8%82%B2%E9%83%A8%E5%8F%B0%E8%AA%9E%E8%AA%8D%E8%AD%89%E8%80%83%E8%A9%A6+A+%E5%8D%B7%E5%85%A7%E5%AE%B9%E7%82%BA%E4%B8%BB%EF%BC%8C%E5%AD%B8%E7%BF%92%E6%95%99%E8%82%B2%E9%83%A8%E5%85%AC%E5%91%8A%E7%9A%84%E7%94%A8%E5%AD%97%E8%88%87%E6%8B%BC%E9%9F%B3%EF%BC%8C%E9%81%A9%E5%90%88%E5%85%A5%E9%96%80%E8%80%85%E5%8F%8A%E8%A6%AA%E5%AD%90%E5%85%B1%E5%AD%B8%E3%80%82%0A%0A%E8%AA%B2%E7%A8%8B%E5%85%B110%E9%80%B1%EF%BC%8C%E6%AF%8F%E9%80%B1%E4%B8%89%E6%99%9A%E9%96%93%E5%9C%A8%E8%87%BA%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A811%E6%A8%93%E7%A0%94%E7%BF%92%E6%95%99%E5%AE%A4%E4%B8%8A%E8%AA%B2%E3%80%82%E5%85%AC%E7%9B%8A%E8%AA%B2%E7%A8%8B%E5%85%8D%E8%B2%BB%EF%BC%8C%E9%A0%88%E5%85%88%E5%A0%B1%E5%90%8D%EF%BC%9B%E7%8F%BE%E5%A0%B4%E9%85%8D%E5%90%88%E6%96%87%E5%8C%96%E9%83%A8%E5%9F%B9%E8%82%B2%E5%8F%B0%E8%AA%9E%E5%AE%B6%E5%BA%AD%E8%A8%88%E7%95%AB%E9%9B%86%E9%BB%9E%E3%80%82%0A%E5%85%8D%E8%B2%BB%EF%BC%8C%E5%A0%B1%E5%90%8D%E6%96%B9%E5%BC%8F%E8%AB%8B%E7%9C%8B%E6%B4%BB%E5%8B%95%E5%85%AC%E5%91%8A%0Ahttps%3A%2F%2Fwww.gameislearning.url.tw%2Ftaigi-info.php%3Fnews%3D1615lr4vi187&location=%E5%8F%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A811%E6%A8%93+%E7%A0%94%E7%BF%92%E6%95%99%E5%AE%A4+%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%BB%BA%E5%9C%8B%E5%8D%97%E8%B7%AF%E4%BA%8C%E6%AE%B5125%E8%99%9F+%E8%87%BA%E5%8C%97%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E7%B8%BD%E9%A4%A8",
     "ics_event": "BEGIN:VEVENT\r\nUID:gameislearning_1615lr4vi187_20261007_1840@taigiactivities.tw\r\nDTSTAMP:20260919T134227Z\r\nDTSTART:20261007T104000Z\r\nDTEND:20261007T124000Z\r\nSUMMARY:115-2初階台語推廣課程\r\nDESCRIPTION:台灣台語文化協會開設的初階課程，以教育部台\r\n 語認證考試 A 卷內容為主，學習教育部公告的用字與拼\r\n 音，適合入門者及親子共學。\\n\\n課程共10週，每週三晚\r\n 間在臺北市立圖書館總館11樓研習教室上課。公益課程免\r\n 費，須先報名；現場配合文化部培育台語家庭計畫集點\r\n 。\\n免費，報名方式請看活動公告\\nhttps://www.gameislearning.u\r\n rl.tw/taigi-info.php?news=1615lr4vi187\r\nLOCATION:台北市立圖書館總館11樓 研習教室 台北市大安區\r\n 建國南路二段125號 臺北立圖書館總館\r\nURL:https://www.gameislearning.url.tw/taigi-info.php?news=1615lr4vi187\r\nEND:VEVENT\r\n",
     "ics_path": "calendar-events/16afe302a997aead44e9f95b8c83fe369ac08cf96c59fc70c004b75b9816ddb6.ics"
+  },
+  {
+    "id": "review_elephant_294_20261008_1900",
+    "title": "大象進階國台語國際演講會第294次例會~洗洗睡",
+    "description": "==========================\n📍 地點：台北市中正區寧波東街1號4樓\n📅 日期：2026年10月8日（星期四）\n🕖 時間：晚上7點～9點\n==========================\n大象進階國台語國際演講會第294次例會~邀請您 +++++++++++++++++++++++++ 在網路世界裡，「洗洗睡」是一句流行語 意思是「別再糾結、放下吧、沒希望啦 它帶著一點調侃、一點幽默、一點無奈 但也帶著一種輕鬆的智慧(哈哈!!!) 其實是提醒我們，有些事.... 不必太認真+笑一笑，生活就會自在許多 其中還有小活動: 摺紙飛機活動, 輕輕折起煩惱，放飛夢想。 主題: 洗洗睡(較早睏，較好眠) 問題: 最近有沒有一件事, 讓你想說「洗洗睡」啦",
+    "city": "臺北市",
+    "district": "中正區",
+    "category": "台語活動",
+    "start_time": "2026-10-08T19:00:00+08:00",
+    "end_time": "2026-10-08T21:00:00+08:00",
+    "venue": "台北市中正區寧波東街1號4樓",
+    "address": "台北市中正區寧波東街1號4樓",
+    "organizer": "大象進階國際演講會 Elephant Advanced Toastmasters Club",
+    "source_platform": "Accupass 活動通",
+    "source_url": "https://www.accupass.com/event/2610030629251925712636",
+    "registration_url": "https://www.accupass.com/event/2610030629251925712636",
+    "cover_image": "https://static.accupass.com/eventbanner/2610030625496990145750.jpg",
+    "price_info": "費用未公告，請洽主辦單位或查看報名頁。",
+    "is_free": null,
+    "tags": [
+      "國語",
+      "台語",
+      "演講會"
+    ],
+    "raw_metadata": {
+      "verified_at": "2026-10-06T15:50:26+08:00",
+      "source_title": "大象進階國台語國際演講會第294次例會~洗洗睡"
+    },
+    "description_taigi": "大象進階國際演講會 Elephant Advanced Toastmasters Club欲辦第294次例會，主題是「洗洗睡(較早睏，較好眠)」。\n\n網路頂講「洗洗睡」，有時是講「毋免閣想遐濟，放落就好」，嘛有「看起來無啥希望矣」的意思。這句話有咧講笑，嘛有一寡無奈；這擺的主題就是欲提醒逐家，有的代誌免遐認真，笑一下仔，日子會較自在。最近敢有一件代誌，予你想欲講「洗洗睡」？\n\n現場閣有摺紙飛機的小活動，欲共煩惱摺起來，予夢想飛出去。\n\n時間是2026年10月8日（拜四）19:00～21:00，所在佇台北市中正區寧波東街1號4樓。所費猶未公告，愛向主辦單位問，抑是看報名頁。",
+    "summary_taigi": "大象進階國際演講會 Elephant Advanced Toastmasters Club這擺欲佮逐家講「洗洗睡(較早睏，較好眠)」：有的代誌免想傷濟，放落來，日子就會較自在。現場嘛有摺紙飛機的小活動。",
+    "price_info_taigi": "",
+    "title_taigi": "大象進階國台語國際演講會第294次例會~洗洗睡",
+    "gcal_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%A4%A7%E8%B1%A1%E9%80%B2%E9%9A%8E%E5%9C%8B%E5%8F%B0%E8%AA%9E%E5%9C%8B%E9%9A%9B%E6%BC%94%E8%AC%9B%E6%9C%83%E7%AC%AC294%E6%AC%A1%E4%BE%8B%E6%9C%83~%E6%B4%97%E6%B4%97%E7%9D%A1&dates=20261008T110000Z%2F20261008T130000Z&ctz=Asia%2FTaipei&details=%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%F0%9F%93%8D+%E5%9C%B0%E9%BB%9E%EF%BC%9A%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%AF%A7%E6%B3%A2%E6%9D%B1%E8%A1%971%E8%99%9F4%E6%A8%93%0A%F0%9F%93%85+%E6%97%A5%E6%9C%9F%EF%BC%9A2026%E5%B9%B410%E6%9C%888%E6%97%A5%EF%BC%88%E6%98%9F%E6%9C%9F%E5%9B%9B%EF%BC%89%0A%F0%9F%95%96+%E6%99%82%E9%96%93%EF%BC%9A%E6%99%9A%E4%B8%8A7%E9%BB%9E%EF%BD%9E9%E9%BB%9E%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%E5%A4%A7%E8%B1%A1%E9%80%B2%E9%9A%8E%E5%9C%8B%E5%8F%B0%E8%AA%9E%E5%9C%8B%E9%9A%9B%E6%BC%94%E8%AC%9B%E6%9C%83%E7%AC%AC294%E6%AC%A1%E4%BE%8B%E6%9C%83~%E9%82%80%E8%AB%8B%E6%82%A8+%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B+%E5%9C%A8%E7%B6%B2%E8%B7%AF%E4%B8%96%E7%95%8C%E8%A3%A1%EF%BC%8C%E3%80%8C%E6%B4%97%E6%B4%97%E7%9D%A1%E3%80%8D%E6%98%AF%E4%B8%80%E5%8F%A5%E6%B5%81%E8%A1%8C%E8%AA%9E+%E6%84%8F%E6%80%9D%E6%98%AF%E3%80%8C%E5%88%A5%E5%86%8D%E7%B3%BE%E7%B5%90%E3%80%81%E6%94%BE%E4%B8%8B%E5%90%A7%E3%80%81%E6%B2%92%E5%B8%8C%E6%9C%9B%E5%95%A6+%E5%AE%83%E5%B8%B6%E8%91%97%E4%B8%80%E9%BB%9E%E8%AA%BF%E4%BE%83%E3%80%81%E4%B8%80%E9%BB%9E%E5%B9%BD%E9%BB%98%E3%80%81%E4%B8%80%E9%BB%9E%E7%84%A1%E5%A5%88+%E4%BD%86%E4%B9%9F%E5%B8%B6%E8%91%97%E4%B8%80%E7%A8%AE%E8%BC%95%E9%AC%86%E7%9A%84%E6%99%BA%E6%85%A7%28%E5%93%88%E5%93%88%21%21%21%29+%E5%85%B6%E5%AF%A6%E6%98%AF%E6%8F%90%E9%86%92%E6%88%91%E5%80%91%EF%BC%8C%E6%9C%89%E4%BA%9B%E4%BA%8B....+%E4%B8%8D%E5%BF%85%E5%A4%AA%E8%AA%8D%E7%9C%9F%2B%E7%AC%91%E4%B8%80%E7%AC%91%EF%BC%8C%E7%94%9F%E6%B4%BB%E5%B0%B1%E6%9C%83%E8%87%AA%E5%9C%A8%E8%A8%B1%E5%A4%9A+%E5%85%B6%E4%B8%AD%E9%82%84%E6%9C%89%E5%B0%8F%E6%B4%BB%E5%8B%95%3A+%E6%91%BA%E7%B4%99%E9%A3%9B%E6%A9%9F%E6%B4%BB%E5%8B%95%2C+%E8%BC%95%E8%BC%95%E6%8A%98%E8%B5%B7%E7%85%A9%E6%83%B1%EF%BC%8C%E6%94%BE%E9%A3%9B%E5%A4%A2%E6%83%B3%E3%80%82+%E4%B8%BB%E9%A1%8C%3A+%E6%B4%97%E6%B4%97%E7%9D%A1%28%E8%BC%83%E6%97%A9%E7%9D%8F%EF%BC%8C%E8%BC%83%E5%A5%BD%E7%9C%A0%29+%E5%95%8F%E9%A1%8C%3A+%E6%9C%80%E8%BF%91%E6%9C%89%E6%B2%92%E6%9C%89%E4%B8%80%E4%BB%B6%E4%BA%8B%2C+%E8%AE%93%E4%BD%A0%E6%83%B3%E8%AA%AA%E3%80%8C%E6%B4%97%E6%B4%97%E7%9D%A1%E3%80%8D%E5%95%A6%0A%E8%B2%BB%E7%94%A8%E6%9C%AA%E5%85%AC%E5%91%8A%EF%BC%8C%E8%AB%8B%E6%B4%BD%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%E6%88%96%E6%9F%A5%E7%9C%8B%E5%A0%B1%E5%90%8D%E9%A0%81%E3%80%82%0Ahttps%3A%2F%2Fwww.accupass.com%2Fevent%2F2610030629251925712636&location=%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%AF%A7%E6%B3%A2%E6%9D%B1%E8%A1%971%E8%99%9F4%E6%A8%93+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%AF%A7%E6%B3%A2%E6%9D%B1%E8%A1%971%E8%99%9F4%E6%A8%93",
+    "ics_event": "BEGIN:VEVENT\r\nUID:review_elephant_294_20261008_1900@taigiactivities.tw\r\nDTSTAMP:20261006T075026Z\r\nDTSTART:20261008T110000Z\r\nDTEND:20261008T130000Z\r\nSUMMARY:大象進階國台語國際演講會第294次例會~洗洗睡\r\nDESCRIPTION:==========================\\n📍 地點：台北市中正區寧\r\n 波東街1號4樓\\n📅 日期：2026年10月8日（星期四）\\n🕖 時\r\n 間：晚上7點～9點\\n==========================\\n大象進階國台語\r\n 國際演講會第294次例會~邀請您 +++++++++++++++++++++++++ 在網\r\n 路世界裡，「洗洗睡」是一句流行語 意思是「別再糾結\r\n 、放下吧、沒希望啦 它帶著一點調侃、一點幽默、一點\r\n 無奈 但也帶著一種輕鬆的智慧(哈哈!!!) 其實是提醒我們\r\n ，有些事.... 不必太認真+笑一笑，生活就會自在許多 其\r\n 中還有小活動: 摺紙飛機活動\\, 輕輕折起煩惱，放飛夢想\r\n 。 主題: 洗洗睡(較早睏，較好眠) 問題: 最近有沒有一件\r\n 事\\, 讓你想說「洗洗睡」啦\\n費用未公告，請洽主辦單位\r\n 或查看報名頁。\\nhttps://www.accupass.com/event/26100306292519257126\r\n 36\r\nLOCATION:台北市中正區寧波東街1號4樓 台北市中正區寧波東\r\n 街1號4樓\r\nURL:https://www.accupass.com/event/2610030629251925712636\r\nEND:VEVENT\r\n",
+    "ics_path": "calendar-events/b7eda7172f568ff0b8124a84dd55b534bd8337e6e2f2d2150efd6ae22528839f.ics"
   },
   {
     "id": "opentix_2075132078315433985",

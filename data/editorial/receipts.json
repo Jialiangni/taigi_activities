@@ -1008,6 +1008,12 @@
       "source_hash": "1a4e4677779377431a4f2473f7e847cdceb00a4bd7b953302d975993b8f600c5",
       "result_hash": "0ccd090e8d266dcf7f10f22d11a24e6a41f7f63ade6328bf54544b5421b295b6",
       "accepted_at": "2026-10-06T08:03:24+08:00"
+    },
+    "review_elephant_294_20261008_1900-2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad.json": {
+      "activity_id": "review_elephant_294_20261008_1900",
+      "source_hash": "2927c17ae366ada2a01bdf23dad271c19ba0461c1f1db232a20599e8d47eebad",
+      "result_hash": "6e2c45e2bc0fcce1482cc223ab4a0aa47a0509904d844ca455073a166cde4896",
+      "accepted_at": "2026-10-06T15:58:15+08:00"
     }
   }
 }
