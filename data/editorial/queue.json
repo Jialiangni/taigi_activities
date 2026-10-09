@@ -1,12 +1,133 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-06T17:00:21+08:00",
+  "prepared_at": "2026-10-09T09:13:18+08:00",
   "collection_run": {
-    "id": 37397788050,
-    "head_sha": "61208841145ca9f62fda4f53e281e3d21b85b837",
+    "id": 37863401778,
+    "head_sha": "f997e21cf215ba54cf0d8736dff25cb00c1f68c6",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37397788050",
-    "artifact_id": 11385732524
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37863401778",
+    "artifact_id": 11589581752
   },
-  "items": []
+  "items": [
+    {
+      "activity_id": "gameislearning_1653sxgvi187_20261017_1000",
+      "source_hash": "b57c2bc8a24a9dd44ae6191ed67d779277191876231452f41d156f4a94452d03",
+      "activity": {
+        "id": "gameislearning_1653sxgvi187_20261017_1000",
+        "title": "台語文化講堂～ 〈安童哥〉ê 前世今生",
+        "description": "〈安童哥〉ê 前世今生\n特別邀請 劉秀庭老師 蒞臨演講\n早年傳統歌仔戲《安童買菜》的經典唱段，在民間唸謠、歌仔、歌仔冊中便已出現，在對話與演唱間轉換，風格輕鬆活潑，勾勒出傳統菜市場的鮮活場景。\n秀庭老師為文資獎典禮編創的〈安童哥〉短劇出發，認識這個題材可愛的前世今生風貌。\n⏰️時間：115/10/17(六) 10:00~12:00\n🏠地點：臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)\n文化部培育台語家庭計畫集點活動\n請先報名，以利人數掌握。謝謝！\n社團法人台灣台語文化協會 邀請您",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語舞台劇",
+        "start_time": "2026-10-17T10:00:00+08:00",
+        "end_time": "2026-10-17T12:00:00+08:00",
+        "venue": "臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+        "address": "台北市大安區臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+        "organizer": "社團法人台灣台語文化協會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
+        "registration_url": "https://www.beclass.com/rid=305288a6abf7b5857e08",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true
+      },
+      "row": {
+        "activity": {
+          "id": "gameislearning_1653sxgvi187_20261017_1000",
+          "title": "台語文化講堂～ 〈安童哥〉ê 前世今生",
+          "description": "〈安童哥〉ê 前世今生\n特別邀請 劉秀庭老師 蒞臨演講\n早年傳統歌仔戲《安童買菜》的經典唱段，在民間唸謠、歌仔、歌仔冊中便已出現，在對話與演唱間轉換，風格輕鬆活潑，勾勒出傳統菜市場的鮮活場景。\n秀庭老師為文資獎典禮編創的〈安童哥〉短劇出發，認識這個題材可愛的前世今生風貌。\n⏰️時間：115/10/17(六) 10:00~12:00\n🏠地點：臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)\n文化部培育台語家庭計畫集點活動\n請先報名，以利人數掌握。謝謝！\n社團法人台灣台語文化協會 邀請您",
+          "city": "臺北市",
+          "district": "大安區",
+          "category": "台語舞台劇",
+          "start_time": "2026-10-17T10:00:00+08:00",
+          "end_time": "2026-10-17T12:00:00+08:00",
+          "venue": "臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+          "address": "台北市大安區臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+          "organizer": "社團法人台灣台語文化協會",
+          "source_platform": "台語站",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
+          "registration_url": "https://www.beclass.com/rid=305288a6abf7b5857e08",
+          "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/ibps187_2610081hxys7.jpg?2",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true,
+          "tags": [
+            "台語",
+            "台語站信任來源",
+            "自動核實場次"
+          ],
+          "raw_metadata": {}
+        },
+        "verification": {
+          "status": "verified",
+          "source_id": "auto_gameislearning_1653sxgvi187",
+          "mode": "official_rules_v1",
+          "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+          "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+          "gameislearning_session_key": "2026-10-17T10:00:00+08:00",
+          "confirmed_fields": {
+            "title": "台語文化講堂～ 〈安童哥〉ê 前世今生",
+            "start_time": "2026-10-17T10:00:00+08:00",
+            "end_time": "2026-10-17T12:00:00+08:00",
+            "venue": "臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+            "city": "臺北市",
+            "organizer": "社團法人台灣台語文化協會",
+            "price_info": "免費，報名方式請看活動公告",
+            "is_free": true
+          },
+          "introduction_evidence": {
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
+            "checked_at": "2026-10-09T09:13:28+08:00",
+            "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2",
+            "method": "announcement_content",
+            "description_taigi": ""
+          },
+          "poster_evidence": {
+            "url": "https://files.gameislearning.url.tw/taigi/info-pic/ibps187_2610081hxys7.jpg?2",
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
+            "checked_at": "2026-10-09T09:13:28+08:00",
+            "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2"
+          }
+        }
+      },
+      "source": {
+        "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
+        "title": "台語文化講堂～ 〈安童哥〉ê 前世今生",
+        "required_text": [
+          "台語文化講堂～ 〈安童哥〉ê 前世今生",
+          "臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+          "〈安童哥〉ê 前世今生",
+          "特別邀請 劉秀庭老師 蒞臨演講",
+          "早年傳統歌仔戲《安童買菜》的經典唱段，在民間唸謠、歌仔、歌仔冊中便已出現，在對話與演唱間轉換，風格輕鬆活潑，勾勒出傳統菜市場的鮮活場景。",
+          "秀庭老師為文資獎典禮編創的〈安童哥〉短劇出發，認識這個題材可愛的前世今生風貌。",
+          "⏰️時間：115/10/17(六) 10:00~12:00",
+          "🏠地點：臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+          "文化部培育台語家庭計畫集點活動",
+          "請先報名，以利人數掌握。謝謝！",
+          "社團法人台灣台語文化協會 邀請您"
+        ],
+        "checked_at": "2026-10-09T09:13:28+08:00",
+        "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2",
+        "automated_review": {
+          "mode": "official_rules_v1",
+          "source_type": "gameislearning",
+          "trusted_language_source": true,
+          "language_claims": [
+            {
+              "origin": "trusted_directory_policy",
+              "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+            }
+          ],
+          "registration_url": "https://www.beclass.com/rid=305288a6abf7b5857e08",
+          "sessions": [
+            {
+              "start_time": "2026-10-17T10:00:00+08:00",
+              "end_time": "2026-10-17T12:00:00+08:00",
+              "venue": "臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+              "address": "台北市大安區臺北市立圖書館總館11樓研習教室(台北市建國南路二段125號)",
+              "city": "臺北市"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }
