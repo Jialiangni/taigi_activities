@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-09T09:13:18+08:00",
+  "prepared_at": "2026-10-13T10:56:40+08:00",
   "collection_run": {
-    "id": 37863401778,
-    "head_sha": "f997e21cf215ba54cf0d8736dff25cb00c1f68c6",
+    "id": 38334161912,
+    "head_sha": "3f7e6e087884ccf4e590cb4b2df9cc603659c938",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/37863401778",
-    "artifact_id": 11589581752
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/38334161912",
+    "artifact_id": 11785636971
   },
   "items": [
     {
@@ -75,7 +75,7 @@
           },
           "introduction_evidence": {
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
-            "checked_at": "2026-10-09T09:13:28+08:00",
+            "checked_at": "2026-10-13T10:56:49+08:00",
             "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2",
             "method": "announcement_content",
             "description_taigi": ""
@@ -83,7 +83,7 @@
           "poster_evidence": {
             "url": "https://files.gameislearning.url.tw/taigi/info-pic/ibps187_2610081hxys7.jpg?2",
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1653sxgvi187",
-            "checked_at": "2026-10-09T09:13:28+08:00",
+            "checked_at": "2026-10-13T10:56:49+08:00",
             "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2"
           }
         }
@@ -104,7 +104,7 @@
           "請先報名，以利人數掌握。謝謝！",
           "社團法人台灣台語文化協會 邀請您"
         ],
-        "checked_at": "2026-10-09T09:13:28+08:00",
+        "checked_at": "2026-10-13T10:56:49+08:00",
         "snapshot_sha256": "da1803aa4fc95c6d4edf030721efdd8f193ca6b31f09e0aa148470843bbf07c2",
         "automated_review": {
           "mode": "official_rules_v1",
