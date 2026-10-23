@@ -1,137 +1,14 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-20T08:13:59+08:00",
+  "prepared_at": "2026-10-23T07:58:56+08:00",
   "collection_run": {
-    "id": 39341280075,
-    "head_sha": "70b811845894d6b271e8ac220ec7a96772daa816",
+    "id": 39868887148,
+    "head_sha": "60d187a20e954eea263a4c65670aca5ce27db581",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/39341280075",
-    "artifact_id": 12230163829
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/39868887148",
+    "artifact_id": 12468087197
   },
   "items": [
-    {
-      "activity_id": "gameislearning_16558z9li94_20261021_0930",
-      "source_hash": "27812c44581618e4dd32895ff9e75313f0c0fb465a34ab76273cf4f410d82354",
-      "activity": {
-        "id": "gameislearning_16558z9li94_20261021_0930",
-        "title": "「考古X台語X跨域教學師培工作坊」",
-        "description": "邀請大家做伙來講台語囉\n「考古X台語X跨域教學師培工作坊」緊來報名💪\n對博物館文物有興趣者都可以參加\n專業博物館現場導覽x設計思考趣味學習\n還有台語專家引導與教具實作教學\n一起把台語帶進專業學科的課堂👍\n✨台語版行動博物館教具實作\n✨專業知識台語轉譯與教學示範\n✨分組共備教案，提升教學設計實戰力\n📍工作坊A：台語融入跨領域教學工作坊\n📍工作坊B：台語分齡教學工作坊\n📍活動地點：新北市立十三行博物館",
-        "city": "新北市",
-        "district": "八里區",
-        "category": "台語導覽",
-        "start_time": "2026-10-21T09:30:00+08:00",
-        "end_time": "2026-10-21T16:30:00+08:00",
-        "venue": "新北市立十三行博物館",
-        "address": "新北市八里區博物館路200號 新北市立十三行博物館",
-        "organizer": "主辦單位請見活動公告",
-        "source_platform": "台語站",
-        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-        "registration_url": "",
-        "price_info": "免費，報名方式請看活動公告",
-        "is_free": true
-      },
-      "row": {
-        "activity": {
-          "id": "gameislearning_16558z9li94_20261021_0930",
-          "title": "「考古X台語X跨域教學師培工作坊」",
-          "description": "邀請大家做伙來講台語囉\n「考古X台語X跨域教學師培工作坊」緊來報名💪\n對博物館文物有興趣者都可以參加\n專業博物館現場導覽x設計思考趣味學習\n還有台語專家引導與教具實作教學\n一起把台語帶進專業學科的課堂👍\n✨台語版行動博物館教具實作\n✨專業知識台語轉譯與教學示範\n✨分組共備教案，提升教學設計實戰力\n📍工作坊A：台語融入跨領域教學工作坊\n📍工作坊B：台語分齡教學工作坊\n📍活動地點：新北市立十三行博物館",
-          "city": "新北市",
-          "district": "八里區",
-          "category": "台語導覽",
-          "start_time": "2026-10-21T09:30:00+08:00",
-          "end_time": "2026-10-21T16:30:00+08:00",
-          "venue": "新北市立十三行博物館",
-          "address": "新北市八里區博物館路200號 新北市立十三行博物館",
-          "organizer": "主辦單位請見活動公告",
-          "source_platform": "台語站",
-          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-          "registration_url": "",
-          "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_261013twe54n.jpg?2",
-          "price_info": "免費，報名方式請看活動公告",
-          "is_free": true,
-          "tags": [
-            "台語",
-            "台語站信任來源",
-            "自動核實場次"
-          ],
-          "raw_metadata": {}
-        },
-        "verification": {
-          "status": "verified",
-          "source_id": "auto_gameislearning_16558z9li94",
-          "mode": "official_rules_v1",
-          "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
-          "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
-          "gameislearning_session_key": "2026-10-21T09:30:00+08:00",
-          "confirmed_fields": {
-            "title": "「考古X台語X跨域教學師培工作坊」",
-            "start_time": "2026-10-21T09:30:00+08:00",
-            "end_time": "2026-10-21T16:30:00+08:00",
-            "venue": "新北市立十三行博物館",
-            "city": "新北市",
-            "organizer": "主辦單位請見活動公告",
-            "price_info": "免費，報名方式請看活動公告",
-            "is_free": true
-          },
-          "introduction_evidence": {
-            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-            "checked_at": "2026-10-20T08:14:18+08:00",
-            "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3",
-            "method": "announcement_content",
-            "description_taigi": ""
-          },
-          "poster_evidence": {
-            "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_261013twe54n.jpg?2",
-            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-            "checked_at": "2026-10-20T08:14:18+08:00",
-            "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3"
-          }
-        }
-      },
-      "source": {
-        "url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-        "title": "「考古X台語X跨域教學師培工作坊」",
-        "required_text": [
-          "「考古X台語X跨域教學師培工作坊」",
-          "新北市立十三行博物館",
-          "邀請大家做伙來講台語囉",
-          "「考古X台語X跨域教學師培工作坊」緊來報名💪",
-          "對博物館文物有興趣者都可以參加",
-          "專業博物館現場導覽x設計思考趣味學習",
-          "還有台語專家引導與教具實作教學",
-          "一起把台語帶進專業學科的課堂👍",
-          "✨台語版行動博物館教具實作",
-          "✨專業知識台語轉譯與教學示範",
-          "✨分組共備教案，提升教學設計實戰力",
-          "📍工作坊A：台語融入跨領域教學工作坊",
-          "📍工作坊B：台語分齡教學工作坊",
-          "📍活動地點：新北市立十三行博物館"
-        ],
-        "checked_at": "2026-10-20T08:14:18+08:00",
-        "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3",
-        "automated_review": {
-          "mode": "official_rules_v1",
-          "source_type": "gameislearning",
-          "trusted_language_source": true,
-          "language_claims": [
-            {
-              "origin": "trusted_directory_policy",
-              "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
-            }
-          ],
-          "registration_url": "",
-          "sessions": [
-            {
-              "start_time": "2026-10-21T09:30:00+08:00",
-              "end_time": "2026-10-21T16:30:00+08:00",
-              "venue": "新北市立十三行博物館",
-              "address": "新北市八里區博物館路200號 新北市立十三行博物館",
-              "city": "新北市"
-            }
-          ]
-        }
-      }
-    },
     {
       "activity_id": "gameislearning_16558z9li94_20261030_0930",
       "source_hash": "f4a88e3d4f0f3b8b932df1ac11e81552d4422a87e3cf743cc6671eb259c99c20",
@@ -198,7 +75,7 @@
           },
           "introduction_evidence": {
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-            "checked_at": "2026-10-20T08:14:18+08:00",
+            "checked_at": "2026-10-23T07:59:17+08:00",
             "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3",
             "method": "announcement_content",
             "description_taigi": ""
@@ -206,7 +83,7 @@
           "poster_evidence": {
             "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_261013twe54n.jpg?2",
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16558z9li94",
-            "checked_at": "2026-10-20T08:14:18+08:00",
+            "checked_at": "2026-10-23T07:59:17+08:00",
             "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3"
           }
         }
@@ -230,7 +107,7 @@
           "📍工作坊B：台語分齡教學工作坊",
           "📍活動地點：新北市立十三行博物館"
         ],
-        "checked_at": "2026-10-20T08:14:18+08:00",
+        "checked_at": "2026-10-23T07:59:17+08:00",
         "snapshot_sha256": "ac5c5d420fcb6fa743c70fa70c821ce054ecd9cecd5f2aee8a07b7b1c7812cc3",
         "automated_review": {
           "mode": "official_rules_v1",
@@ -321,7 +198,7 @@
           },
           "introduction_evidence": {
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16575pmgi94",
-            "checked_at": "2026-10-20T08:14:07+08:00",
+            "checked_at": "2026-10-23T07:59:05+08:00",
             "snapshot_sha256": "fa0abbdcd40b1521344c18b10111c1104e4c3463a193740865cc709d99c00456",
             "method": "announcement_content",
             "description_taigi": ""
@@ -329,7 +206,7 @@
           "poster_evidence": {
             "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_2610138po55t.jpg?2",
             "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16575pmgi94",
-            "checked_at": "2026-10-20T08:14:07+08:00",
+            "checked_at": "2026-10-23T07:59:05+08:00",
             "snapshot_sha256": "fa0abbdcd40b1521344c18b10111c1104e4c3463a193740865cc709d99c00456"
           }
         }
@@ -354,7 +231,7 @@
           "牽囡仔ê手行台語ê路｜台灣台語路協會",
           "對囡仔講台語－台中台語囡仔伴"
         ],
-        "checked_at": "2026-10-20T08:14:07+08:00",
+        "checked_at": "2026-10-23T07:59:05+08:00",
         "snapshot_sha256": "fa0abbdcd40b1521344c18b10111c1104e4c3463a193740865cc709d99c00456",
         "automated_review": {
           "mode": "official_rules_v1",
@@ -373,6 +250,122 @@
               "end_time": "2026-10-29T16:30:00+08:00",
               "venue": "濟南教會 B102（臺北市中正區中山南路3號）",
               "address": "台北市中正區中山南路3號 濟南教會",
+              "city": "臺北市"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activity_id": "gameislearning_1669xt14i94_20261024_1400",
+      "source_hash": "efb2008bcb420de356fbc025082956aba54e08746920e33d2675d0f75b7d39f9",
+      "activity": {
+        "id": "gameislearning_1669xt14i94_20261024_1400",
+        "title": "台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+        "description": "「紀念張裕宏教授系列臺語講座：第七場」\n演講主題：台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵\n講者：陳培豐教授（中央研究院臺灣史研究所兼任研究員）\n主辦單位：國立臺灣大學語言學研究所、台灣語文學會\n協辦單位：國立臺灣大學文學院",
+        "city": "臺北市",
+        "district": "大安區",
+        "category": "台語活動",
+        "start_time": "2026-10-24T14:00:00+08:00",
+        "end_time": "2026-10-24T16:00:00+08:00",
+        "venue": "國立臺灣大學文學院會議室",
+        "address": "台北市大安區羅斯福路四段一號 國立臺灣大學",
+        "organizer": "國立臺灣大學語言學研究所、台灣語文學會",
+        "source_platform": "台語站",
+        "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1669xt14i94",
+        "registration_url": "",
+        "price_info": "免費，報名方式請看活動公告",
+        "is_free": true
+      },
+      "row": {
+        "activity": {
+          "id": "gameislearning_1669xt14i94_20261024_1400",
+          "title": "台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+          "description": "「紀念張裕宏教授系列臺語講座：第七場」\n演講主題：台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵\n講者：陳培豐教授（中央研究院臺灣史研究所兼任研究員）\n主辦單位：國立臺灣大學語言學研究所、台灣語文學會\n協辦單位：國立臺灣大學文學院",
+          "city": "臺北市",
+          "district": "大安區",
+          "category": "台語活動",
+          "start_time": "2026-10-24T14:00:00+08:00",
+          "end_time": "2026-10-24T16:00:00+08:00",
+          "venue": "國立臺灣大學文學院會議室",
+          "address": "台北市大安區羅斯福路四段一號 國立臺灣大學",
+          "organizer": "國立臺灣大學語言學研究所、台灣語文學會",
+          "source_platform": "台語站",
+          "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1669xt14i94",
+          "registration_url": "",
+          "cover_image": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_261020i0e3pl.jpg?2",
+          "price_info": "免費，報名方式請看活動公告",
+          "is_free": true,
+          "tags": [
+            "台語",
+            "台語站信任來源",
+            "自動核實場次"
+          ],
+          "raw_metadata": {}
+        },
+        "verification": {
+          "status": "verified",
+          "source_id": "auto_gameislearning_1669xt14i94",
+          "mode": "official_rules_v1",
+          "method": "台語站為使用者指定信任的台語活動來源；重新核對單場日期、時間、地點、費用標示與報名網址。",
+          "language_evidence": "台語站活動專頁全部列為台語活動（使用者指定信任來源）",
+          "gameislearning_session_key": "2026-10-24T14:00:00+08:00",
+          "confirmed_fields": {
+            "title": "台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+            "start_time": "2026-10-24T14:00:00+08:00",
+            "end_time": "2026-10-24T16:00:00+08:00",
+            "venue": "國立臺灣大學文學院會議室",
+            "city": "臺北市",
+            "organizer": "國立臺灣大學語言學研究所、台灣語文學會",
+            "price_info": "免費，報名方式請看活動公告",
+            "is_free": true
+          },
+          "introduction_evidence": {
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1669xt14i94",
+            "checked_at": "2026-10-23T07:59:07+08:00",
+            "snapshot_sha256": "34026c64fad5e5f26cf8c037fdfc997c6daca8b407d54c8ea1e229db7856ef1c",
+            "method": "announcement_content",
+            "description_taigi": ""
+          },
+          "poster_evidence": {
+            "url": "https://files.gameislearning.url.tw/taigi/info-pic/8oar94_261020i0e3pl.jpg?2",
+            "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1669xt14i94",
+            "checked_at": "2026-10-23T07:59:07+08:00",
+            "snapshot_sha256": "34026c64fad5e5f26cf8c037fdfc997c6daca8b407d54c8ea1e229db7856ef1c"
+          }
+        }
+      },
+      "source": {
+        "url": "https://www.gameislearning.url.tw/taigi-info.php?news=1669xt14i94",
+        "title": "台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+        "required_text": [
+          "台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+          "國立臺灣大學文學院會議室",
+          "「紀念張裕宏教授系列臺語講座：第七場」",
+          "演講主題：台語·歌謠·「台灣味」：從語言的角度思考台語歌曲的型態特徵",
+          "講者：陳培豐教授（中央研究院臺灣史研究所兼任研究員）",
+          "主辦單位：國立臺灣大學語言學研究所、台灣語文學會",
+          "協辦單位：國立臺灣大學文學院"
+        ],
+        "checked_at": "2026-10-23T07:59:07+08:00",
+        "snapshot_sha256": "34026c64fad5e5f26cf8c037fdfc997c6daca8b407d54c8ea1e229db7856ef1c",
+        "automated_review": {
+          "mode": "official_rules_v1",
+          "source_type": "gameislearning",
+          "trusted_language_source": true,
+          "language_claims": [
+            {
+              "origin": "trusted_directory_policy",
+              "quote": "台語站活動專頁全部列為台語活動（使用者指定信任來源）"
+            }
+          ],
+          "registration_url": "",
+          "sessions": [
+            {
+              "start_time": "2026-10-24T14:00:00+08:00",
+              "end_time": "2026-10-24T16:00:00+08:00",
+              "venue": "國立臺灣大學文學院會議室",
+              "address": "台北市大安區羅斯福路四段一號 國立臺灣大學",
               "city": "臺北市"
             }
           ]
