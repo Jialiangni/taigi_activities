@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "official_rules_v1",
-  "reviewed_at": "2026-10-27T08:40:03+08:00",
+  "reviewed_at": "2026-10-30T08:45:53+08:00",
   "source_priority": {
     "gameislearning_1583v0joi94_20261017_1000": {
       "primary_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -30,20 +30,20 @@
     }
   },
   "applied_to_catalog": false,
-  "collected_at": "2026-10-27T08:36:54+08:00",
-  "candidate_count": 815,
+  "collected_at": "2026-10-30T08:45:26+08:00",
+  "candidate_count": 838,
   "input_kind": "trusted_collection_and_backlog",
   "counts": {
-    "excluded": 299,
-    "pending": 227,
-    "routed": 38,
-    "duplicate": 241,
-    "approved": 10
+    "excluded": 305,
+    "pending": 246,
+    "routed": 37,
+    "approved": 12,
+    "duplicate": 238
   },
   "collection_status_counts": {
-    "ok": 59,
-    "partial": 72,
-    "failed": 26,
+    "ok": 57,
+    "partial": 75,
+    "failed": 25,
     "needs_configuration": 1
   },
   "decisions": [
@@ -67,33 +67,15 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610010350371993342605",
-        "fetched_at": "2026-10-27T08:40:30+08:00",
-        "sha256": "04c1bdee432504da35b5c2b32ef0dc4334b012b53dec6e744f06eee025aba7c9",
+        "fetched_at": "2026-10-30T08:46:23+08:00",
+        "sha256": "ef29405cc4ff2c04ddbf9934f381fcb673704f80ba61729181dc35cf6eec1813",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:30+08:00",
+      "rechecked_at": "2026-10-30T08:46:23+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
       "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
-    },
-    {
-      "candidate_id": "922de7ea9931d58bc3ba5728",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2607280236031295663510",
-      "title": "用台語講故事：講予囡仔聽的人權繪本",
-      "decision": "excluded",
-      "reason": "reviewed_already_covered",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "完整公告11/1上午10:30與下午13:30兩場，已逐場與正式catalog acc_2607280236031295663510_20261101_1030及_1330比對相符；其他9/20、10/4場已結束，不另新增。",
-      "reviewed_at": "2026-10-06T17:03:33+08:00",
-      "published_session_ids": [
-        "acc_2607280236031295663510_20260920_1030",
-        "acc_2607280236031295663510_20260920_1330",
-        "acc_2607280236031295663510_20261004_1030",
-        "acc_2607280236031295663510_20261101_1030",
-        "acc_2607280236031295663510_20261101_1330"
-      ]
     },
     {
       "candidate_id": "cd897e6b5bed2112f45e8671",
@@ -236,9 +218,8 @@
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609140313052076422556",
       "title": "台語咱佮意！親子生活會話基礎班",
-      "decision": "routed",
-      "reason": "reviewed_announcement_sessions_split",
-      "routed_session_count": 1,
+      "decision": "pending",
+      "reason": "verification_failed:reviewed_announcement_content_changed",
       "published_session_ids": [
         "acc_2609140313052076422556_20261003_0900_b8b25ead3bd9",
         "acc_2609140313052076422556_20261010_0900_92282bc5a27b",
@@ -248,26 +229,18 @@
         "acc_2609140313052076422556_20261101_1330_ca5c25044671",
         "acc_2609140313052076422556_20261108_1330_0bc53deed03c",
         "review_acc_2609140313052076422556_20261122_1330"
-      ]
-    },
-    {
-      "candidate_id": "4da2ef5dc233b4d97249f269",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610031827531949029773",
-      "title": "台語情歌遶境．Final 場｜誠品音樂松菸【台式浪漫不打烊】",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
+      ],
       "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2610031827531949029773",
-        "fetched_at": "2026-10-27T08:40:46+08:00",
-        "sha256": "719d4f16a26ccc5061e4cf5abf0a880df12402270f0bda136ef14b8d9f7911c7",
+        "final_url": "https://www.accupass.com/event/2609140313052076422556",
+        "fetched_at": "2026-10-30T08:46:37+08:00",
+        "sha256": "238536049483cb572ff3601b191f8b7a09222c816ba59433415f31ffd9dd2433",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:46+08:00",
+      "rechecked_at": "2026-10-30T08:46:37+08:00",
       "missing_evidence": [
-        "explicit_taigi_content"
+        "complete_future_session_and_taigi_evidence"
       ],
-      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "791e805c87c4abbfda1a73dd",
@@ -278,11 +251,30 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610080840431271327475",
-        "fetched_at": "2026-10-27T08:40:47+08:00",
-        "sha256": "947433dcd67894bc533f03c294b6f312f7bd54cfa75f21cdca04e610f572edae",
+        "fetched_at": "2026-10-30T08:46:39+08:00",
+        "sha256": "c73460864be4b155761b2962a9342ff6fcefe6344f6941266942e3479d8d5a45",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:47+08:00",
+      "rechecked_at": "2026-10-30T08:46:39+08:00",
+      "missing_evidence": [
+        "explicit_taigi_content"
+      ],
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
+    },
+    {
+      "candidate_id": "4da2ef5dc233b4d97249f269",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610031827531949029773",
+      "title": "台語情歌遶境．Final 場｜誠品音樂松菸【台式浪漫不打烊】",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610031827531949029773",
+        "fetched_at": "2026-10-30T08:46:41+08:00",
+        "sha256": "febea8bd7e62234e82e31b156361e9a5d24ed8414300ba484686907b2073d7ce",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:46:41+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -292,16 +284,16 @@
       "candidate_id": "5f99e5b309bb19cd45f8fe8b",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2610120604081855394796",
-      "title": "【淡水生活節】〈竹圍有畫要說〉親子台語繪本共創工作坊",
+      "title": "【淡水生活節】「竹圍有啥物色？」親子台語繪本共創工作坊",
       "decision": "pending",
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610120604081855394796",
-        "fetched_at": "2026-10-27T08:40:49+08:00",
-        "sha256": "c15e4b7db8f3e232acefebd993e9915ba87ba4243e9b9faa8f172b93ab9e058c",
+        "fetched_at": "2026-10-30T08:46:42+08:00",
+        "sha256": "167d1cad9449b7b65f0cdc32879d2f9d3b087de18f030bd57c6f3f5c23ebc651",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:49+08:00",
+      "rechecked_at": "2026-10-30T08:46:42+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -319,11 +311,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2608120722439860768370",
-        "fetched_at": "2026-10-27T08:40:49+08:00",
-        "sha256": "75de1f077bed329267faa3abc1727c0972bf8a2e6bb516f46cfbf5e16782c85a",
+        "fetched_at": "2026-10-30T08:46:44+08:00",
+        "sha256": "877afde42133a3adbdae684e2ef25b555dc2dcb979db8252bfc4998fd96698ad",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:49+08:00",
+      "rechecked_at": "2026-10-30T08:46:44+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -338,15 +330,34 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609290908339306700300",
-        "fetched_at": "2026-10-27T08:40:51+08:00",
-        "sha256": "e956b95e50afabeca35ef2859752ef09c3b295204b2b14d68286c9b01a90b036",
+        "fetched_at": "2026-10-30T08:46:46+08:00",
+        "sha256": "29080287c437eacdba84ec73d8c19cf1c4f81f20b701e1857d94af8854fef335",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:51+08:00",
+      "rechecked_at": "2026-10-30T08:46:46+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
       "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
+    },
+    {
+      "candidate_id": "f4af08bdc0bf96c8f9bda6f4",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610070738359639806280",
+      "title": "【2026松菸原創基地節】台文小學堂——咱來講故事！",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610070738359639806280",
+        "fetched_at": "2026-10-30T08:46:48+08:00",
+        "sha256": "96ba1ff0efbb85dbf16d17fd29489e732878b504211b51213a1709ca02dce810",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:46:48+08:00",
+      "missing_evidence": [
+        "explicit_taigi_content"
+      ],
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "c6cba2cc888a23ecd7d3683e",
@@ -355,6 +366,25 @@
       "title": "20261103 Excellence 英台語例會~免費",
       "decision": "excluded",
       "reason": "outside_region"
+    },
+    {
+      "candidate_id": "1cb4b23c163ff1c24e9dd692",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610280407471766780358",
+      "title": "台文怎麼編？從經典文學到青少年讀物，探索台文編輯的挑戰與實踐【出版靈感發電所 基礎電流站EP4】",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610280407471766780358",
+        "fetched_at": "2026-10-30T08:46:51+08:00",
+        "sha256": "62e44c88f041162f3269f9eb37db2d7aec2be715fa105ec5ec739bda89f46955",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:46:51+08:00",
+      "missing_evidence": [
+        "explicit_taigi_content"
+      ],
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "eb39465c415c5dfde5345256",
@@ -381,32 +411,52 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610160837111130126990",
-        "fetched_at": "2026-10-27T08:40:54+08:00",
-        "sha256": "54bdea40c3ebcd49c5f8bfbccc7cad42ce1ee26220e5f5fa6e978bb46eebc20f",
+        "fetched_at": "2026-10-30T08:46:52+08:00",
+        "sha256": "59b8399866f9884bf69a32ab08c5a0bca4005deee382d476ca82222693c84bb2",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:54+08:00",
+      "rechecked_at": "2026-10-30T08:46:52+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
       "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
+      "candidate_id": "4e969076a1a246964416180f",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610281133291224784829",
+      "title": "愛與自由的倡議現場：走讀臺灣婚姻平權的歷史足跡【台語場：12月06日（日）下午場】",
+      "decision": "approved",
+      "reason": "official_page_single_session_verified",
+      "activity_id": "acc_2610281133291224784829_20261206_1400",
+      "published_session_ids": [
+        "acc_2610281133291224784829_20261206_1400"
+      ]
+    },
+    {
+      "candidate_id": "41c8a8b79e09e19e7438bb6d",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610270728249780681050",
+      "title": "《超級台與怪物》Ultimate Tai & Monsters",
+      "decision": "pending",
+      "reason": "missing_identity_fields",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610270728249780681050",
+        "fetched_at": "2026-10-30T08:46:56+08:00",
+        "sha256": "be66da7da1ad441f47ceb139c551ee7df88fd0cd4545d97c7a00c1e29498be4d",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:46:56+08:00",
+      "missing_evidence": [
+        "venue_address_or_organizer"
+      ],
+      "next_action": "從官方正文補核場地、地址及主辦單位。"
+    },
+    {
       "candidate_id": "0cfe4e1372425d37ac9069c0",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608131014032349915110",
       "title": "2026人權主題歷史解謎遊戲——【五個被洪水沖走的手提箱】",
-      "decision": "excluded",
-      "reason": "reviewed_irrelevant_keyword",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "讀取活動正文後，台語搜尋命中來自講師履歷、團名語源、跨平台語言或旁及介紹；本次活動未提供台語演出／教學／參與內容證據，移出誤搜待辦，來源更新時重新判讀。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00"
-    },
-    {
-      "candidate_id": "fd185109957360e48156efa3",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608170923234871848230",
-      "title": "2026人權主題情境體驗遊戲——【超時空副本】",
       "decision": "excluded",
       "reason": "reviewed_irrelevant_keyword",
       "review_mode": "evidence_bound_ai_review",
@@ -422,15 +472,33 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610130319212303300100",
-        "fetched_at": "2026-10-27T08:41:00+08:00",
-        "sha256": "73dfe1bdc818db87c15c8b043dc7208c0e382d1dc671a1d37d6a544c1f845ceb",
+        "fetched_at": "2026-10-30T08:46:58+08:00",
+        "sha256": "f56607579bda41ec78888679b69abd2fa18b5d3d825976accb52ce1e7884723d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:00+08:00",
+      "rechecked_at": "2026-10-30T08:46:58+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
       "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
+    },
+    {
+      "candidate_id": "922de7ea9931d58bc3ba5728",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2607280236031295663510",
+      "title": "用台語講故事：講予囡仔聽的人權繪本",
+      "decision": "excluded",
+      "reason": "reviewed_already_covered",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整公告11/1上午10:30與下午13:30兩場，已逐場與正式catalog acc_2607280236031295663510_20261101_1030及_1330比對相符；其他9/20、10/4場已結束，不另新增。",
+      "reviewed_at": "2026-10-06T17:03:33+08:00",
+      "published_session_ids": [
+        "acc_2607280236031295663510_20260920_1030",
+        "acc_2607280236031295663510_20260920_1330",
+        "acc_2607280236031295663510_20261004_1030",
+        "acc_2607280236031295663510_20261101_1030",
+        "acc_2607280236031295663510_20261101_1330"
+      ]
     },
     {
       "candidate_id": "4f38ce0416695fa9cbe0addb",
@@ -461,28 +529,6 @@
       ]
     },
     {
-      "candidate_id": "22e8f62015f9e0ff24ab8f08",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609100854024528725810",
-      "title": "【一本書，變成一整季的行銷素材】AI內容行銷實戰工作坊",
-      "decision": "pending",
-      "reason": "verification_failed:reviewed_announcement_content_changed",
-      "published_session_ids": [
-        "acc_2609100854024528725810_20261028_0900"
-      ],
-      "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2609100854024528725810",
-        "fetched_at": "2026-10-27T08:41:06+08:00",
-        "sha256": "2a1f399a4ae81336e7f20694664b88502bd4731a74f32112c54df15af686c00a",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:41:06+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
       "candidate_id": "8c6099a53378b65a45691903",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2609181101568312033380",
@@ -493,6 +539,17 @@
       "published_session_ids": [
         "acc_2609181101568312033380_20261108_1000"
       ]
+    },
+    {
+      "candidate_id": "fd185109957360e48156efa3",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608170923234871848230",
+      "title": "2026人權主題情境體驗遊戲——【超時空副本】",
+      "decision": "excluded",
+      "reason": "reviewed_irrelevant_keyword",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "讀取活動正文後，台語搜尋命中來自講師履歷、團名語源、跨平台語言或旁及介紹；本次活動未提供台語演出／教學／參與內容證據，移出誤搜待辦，來源更新時重新判讀。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "b19fd9580d13c6ea33ed3540",
@@ -514,27 +571,15 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609020739499009527100",
-        "fetched_at": "2026-10-27T08:41:10+08:00",
-        "sha256": "989ff5eec8d13acf241d6aec39fd6b94d4764c2b52504a25a635d138f5f18790",
+        "fetched_at": "2026-10-30T08:47:10+08:00",
+        "sha256": "ea37b2f75d851bdb554f69117a89c149b922053d80dfc8d7f87f0b41c3f237f9",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:10+08:00",
+      "rechecked_at": "2026-10-30T08:47:10+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
       "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
-    },
-    {
-      "candidate_id": "b007654cd8d19ec0eb441747",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609171337331414810900",
-      "title": "《春雨の喜劇力開發研究部》11、12月號",
-      "decision": "routed",
-      "reason": "reviewed_announcement_sessions_split",
-      "routed_session_count": 1,
-      "published_session_ids": [
-        "acc_2609171337331414810900_20261108_2000"
-      ]
     },
     {
       "candidate_id": "c9e935674bdd5b0030aa5e73",
@@ -557,6 +602,18 @@
       "review_mode": "evidence_bound_ai_review",
       "rationale": "公告內容為粵語／華語導覽、客語計畫、韓語教學或法式甜點線上課；台語詞只出現在背景說明，非本次台語活動內容。",
       "reviewed_at": "2026-10-01T00:42:58+08:00"
+    },
+    {
+      "candidate_id": "b007654cd8d19ec0eb441747",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2609171337331414810900",
+      "title": "《春雨の喜劇力開發研究部》11、12月號",
+      "decision": "routed",
+      "reason": "reviewed_announcement_sessions_split",
+      "routed_session_count": 1,
+      "published_session_ids": [
+        "acc_2609171337331414810900_20261108_2000"
+      ]
     },
     {
       "candidate_id": "14185c70d1549d8be401d4cb",
@@ -584,34 +641,15 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610130920421573278644",
-        "fetched_at": "2026-10-27T08:41:17+08:00",
-        "sha256": "83d5bac481fb1030b6777e7517c52c173d923f82030a3def7acd181a0f3c382e",
+        "fetched_at": "2026-10-30T08:47:22+08:00",
+        "sha256": "8b9f37a2aa0b2cad339f692161eabf5701788f2f0685e07e4c7b1bcfedf03f25",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:17+08:00",
+      "rechecked_at": "2026-10-30T08:47:22+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
       "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
-    },
-    {
-      "candidate_id": "ae79c597c77d4f1439a3b689",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608200212191995773747",
-      "title": "11月【映画故事屋】《蘋果的滋味》｜一粒蘋果的旅行",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2608200212191995773747",
-        "fetched_at": "2026-10-27T08:41:18+08:00",
-        "sha256": "042146186b95735876754aaa608df2e800ba4c03cbf4381ce5ace358fcf0f124",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:41:18+08:00",
-      "missing_evidence": [
-        "explicit_taigi_content"
-      ],
-      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "b4a1bfffa2c530beff61e80f",
@@ -634,15 +672,34 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610200634171959762092",
-        "fetched_at": "2026-10-27T08:41:21+08:00",
-        "sha256": "df429718f8155f9a9d84637e674e3ed2750c19d81b45e0e3ba37b7ded9150cad",
+        "fetched_at": "2026-10-30T08:47:25+08:00",
+        "sha256": "586333f50b0dc5a184e2c5c7022be0772a64ea95e93214ebf6e6b6ca0544dae9",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:21+08:00",
+      "rechecked_at": "2026-10-30T08:47:25+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
       "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
+    },
+    {
+      "candidate_id": "ae79c597c77d4f1439a3b689",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608200212191995773747",
+      "title": "11月【映画故事屋】《蘋果的滋味》｜一粒蘋果的旅行",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2608200212191995773747",
+        "fetched_at": "2026-10-30T08:47:26+08:00",
+        "sha256": "ee16b003307d437234798a836da56cb8a0ab92093f447656c0378722bb5c749e",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:47:26+08:00",
+      "missing_evidence": [
+        "explicit_taigi_content"
+      ],
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "8f8cec47edc8254a5d05d028",
@@ -656,6 +713,25 @@
       "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
+      "candidate_id": "66c38b4ded6791e5d22cc40f",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610280412501763592690",
+      "title": "2026城西生活節 𓊝 小巷相拼｜表演藝術 ∿ Jam 鬧熱 ∿",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610280412501763592690",
+        "fetched_at": "2026-10-30T08:47:30+08:00",
+        "sha256": "0d79ef624538e31e0f266236ec941d62d4499f859792cc76f1020d02db492ecb",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:47:30+08:00",
+      "missing_evidence": [
+        "individual_session_and_participation_terms"
+      ],
+      "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
+    },
+    {
       "candidate_id": "1b28663bc20c1c33b3c41f98",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2610010434591229963047",
@@ -664,53 +740,15 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610010434591229963047",
-        "fetched_at": "2026-10-27T08:41:24+08:00",
-        "sha256": "fd15b07396296779319cb8640fcc052061f16db50d8e0bc5c4a6534836a3383a",
+        "fetched_at": "2026-10-30T08:47:31+08:00",
+        "sha256": "c2eaab5577cc2be149da28cdaaed1403589f9e7f8cc73ea8a2dcfbe991480b44",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:24+08:00",
+      "rechecked_at": "2026-10-30T08:47:31+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
       "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
-    },
-    {
-      "candidate_id": "99cf42eedd2640aed8c1d409",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610220912285144786490",
-      "title": "關心台灣故事的你別錯過！《風吹》免費放映＋映後座談 🎬",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2610220912285144786490",
-        "fetched_at": "2026-10-27T08:41:25+08:00",
-        "sha256": "e0c4cdfb12451809fea28bf0cf3c2cebc6296cfd4fba8659af66c4e5d72c7f88",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:41:25+08:00",
-      "missing_evidence": [
-        "explicit_taigi_content"
-      ],
-      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
-    },
-    {
-      "candidate_id": "a35ec88ec144a58c0b8f4b5a",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610060531269999530870",
-      "title": "同黨劇團《終身大事》新作讀劇會",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2610060531269999530870",
-        "fetched_at": "2026-10-27T08:41:26+08:00",
-        "sha256": "06cd84313ef933908c376ec3a19b800cb02b9ecfa7a2fb5fd0fc9615bd89b658",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:41:26+08:00",
-      "missing_evidence": [
-        "explicit_taigi_content"
-      ],
-      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "dc4753baf9da390fc1e583ed",
@@ -727,56 +765,53 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609150126476971150670",
-        "fetched_at": "2026-10-27T08:41:27+08:00",
-        "sha256": "6ffb4844f04ee27cf0e5daf44642238efa8272b8fcbcc4ce5288c53552c10b78",
+        "fetched_at": "2026-10-30T08:47:33+08:00",
+        "sha256": "5ed1e1c35670d2caa4ebd57c6f100c3d241eeb3361b56cca8680119800281b94",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:27+08:00",
+      "rechecked_at": "2026-10-30T08:47:33+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
       "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
-      "candidate_id": "d718d00f5ab40db085e25a1f",
+      "candidate_id": "99cf42eedd2640aed8c1d409",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610110403281800091422",
-      "title": "2026城西生活節 𓊝 走讀前導場 ∿ 郊關引路 ∿",
+      "source_url": "https://www.accupass.com/event/2610220912285144786490",
+      "title": "關心台灣故事的你別錯過！《風吹》免費放映＋映後座談 🎬",
       "decision": "pending",
-      "reason": "series_or_duration_needs_review",
+      "reason": "explicit_session_language_missing",
       "source_recheck": {
-        "final_url": "https://www.accupass.com/event/2610110403281800091422",
-        "fetched_at": "2026-10-27T08:41:28+08:00",
-        "sha256": "6e1aa6560508ac45b97d071466fa6b37261c2944b716a2e66df3aa604b12d4bd",
+        "final_url": "https://www.accupass.com/event/2610220912285144786490",
+        "fetched_at": "2026-10-30T08:47:35+08:00",
+        "sha256": "4fc5e431c78e5d565686ca5d528696f92a6c8a8f9c7b746196a8eac6010477f9",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:28+08:00",
+      "rechecked_at": "2026-10-30T08:47:35+08:00",
       "missing_evidence": [
-        "individual_session_and_participation_terms"
+        "explicit_taigi_content"
       ],
-      "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
-      "candidate_id": "def2157d8519e4535d760385",
+      "candidate_id": "a35ec88ec144a58c0b8f4b5a",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2303130833491195750522",
-      "title": "【線上課程】Ferrandi 主廚不藏私｜系統化零基礎法式甜點課",
-      "decision": "excluded",
-      "reason": "reviewed_not_taigi",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "公告內容為粵語／華語導覽、客語計畫、韓語教學或法式甜點線上課；台語詞只出現在背景說明，非本次台語活動內容。",
-      "reviewed_at": "2026-10-01T00:42:58+08:00"
-    },
-    {
-      "candidate_id": "e6d69815741b5f5fd6caca20",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2608290544597291528600",
-      "title": "2026淡水福爾摩莎國際詩歌節",
-      "decision": "excluded",
-      "reason": "reviewed_expired",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "完整節目表唯一明列台語文學的胡長松講座為9月13日，已結束；其他尚未結束的展覽與即興詩會未有台語場證據，不能把整個藝術節當台語講座。",
-      "reviewed_at": "2026-10-01T00:53:18+08:00"
+      "source_url": "https://www.accupass.com/event/2610060531269999530870",
+      "title": "同黨劇團《終身大事》新作讀劇會",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610060531269999530870",
+        "fetched_at": "2026-10-30T08:47:36+08:00",
+        "sha256": "258db51aa88124d51f1b6c90063b75e996e908a912fd78b245e8553b60e6f692",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:47:36+08:00",
+      "missing_evidence": [
+        "explicit_taigi_content"
+      ],
+      "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
     },
     {
       "candidate_id": "fcfd6574d03fc4077e924375",
@@ -787,11 +822,11 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610061925031520150583",
-        "fetched_at": "2026-10-27T08:41:33+08:00",
-        "sha256": "86e9549185575ecec0b022cdc10831d42c8e08347a24eb032895505ccac96d0f",
+        "fetched_at": "2026-10-30T08:47:38+08:00",
+        "sha256": "72190a8cc6196e52b3ceced0c64833363b64f70574b9cfd878b677fb78fa188b",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:33+08:00",
+      "rechecked_at": "2026-10-30T08:47:38+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -806,15 +841,56 @@
       "reason": "explicit_session_language_missing",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610191150561813230560",
-        "fetched_at": "2026-10-27T08:41:33+08:00",
-        "sha256": "41a54f6cd3185a533e15b4c62c7186a533af7407d5c584b7f1d1dd128655d680",
+        "fetched_at": "2026-10-30T08:47:40+08:00",
+        "sha256": "9caae83dd845f1e6ddb40691d128bb87499cc4e42967c405405897791c58754d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:33+08:00",
+      "rechecked_at": "2026-10-30T08:47:40+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
       "next_action": "補核官方是否明確包含台語教學／演出，不能用人物簡介或關鍵字代替。"
+    },
+    {
+      "candidate_id": "def2157d8519e4535d760385",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2303130833491195750522",
+      "title": "【線上課程】Ferrandi 主廚不藏私｜系統化零基礎法式甜點課",
+      "decision": "excluded",
+      "reason": "reviewed_not_taigi",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "公告內容為粵語／華語導覽、客語計畫、韓語教學或法式甜點線上課；台語詞只出現在背景說明，非本次台語活動內容。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
+    },
+    {
+      "candidate_id": "d718d00f5ab40db085e25a1f",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2610110403281800091422",
+      "title": "2026城西生活節 𓊝 走讀前導場 ∿ 郊關引路 ∿",
+      "decision": "pending",
+      "reason": "series_or_duration_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2610110403281800091422",
+        "fetched_at": "2026-10-30T08:47:43+08:00",
+        "sha256": "bdbcca6c4a9a4cf32e7bb494607bbea6473f5301a53bec7d6e05105ad38dcde6",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:47:43+08:00",
+      "missing_evidence": [
+        "individual_session_and_participation_terms"
+      ],
+      "next_action": "逐場核對日期、講師、地點與參加條件；查看已拆出的場次與解析問題。"
+    },
+    {
+      "candidate_id": "e6d69815741b5f5fd6caca20",
+      "source_id": "accupass",
+      "source_url": "https://www.accupass.com/event/2608290544597291528600",
+      "title": "2026淡水福爾摩莎國際詩歌節",
+      "decision": "excluded",
+      "reason": "reviewed_expired",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整節目表唯一明列台語文學的胡長松講座為9月13日，已結束；其他尚未結束的展覽與即興詩會未有台語場證據，不能把整個藝術節當台語講座。",
+      "reviewed_at": "2026-10-01T00:53:18+08:00"
     },
     {
       "candidate_id": "579a1dd37ac1971f655a411d",
@@ -828,11 +904,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2608280851407382646440",
-        "fetched_at": "2026-10-27T08:41:35+08:00",
-        "sha256": "3c914c58843118596d492e9b4d7a07a258342b03b89cd084c187cfbda781d4db",
+        "fetched_at": "2026-10-30T08:47:47+08:00",
+        "sha256": "cc8a79f6c18c9d57789ddac637939cec3a5bbe5e32ed99eb9dcd718b29398255",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:35+08:00",
+      "rechecked_at": "2026-10-30T08:47:47+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -847,11 +923,11 @@
       "reason": "text_schedule:incomplete_text_schedule",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609160803118110539600",
-        "fetched_at": "2026-10-27T08:41:36+08:00",
-        "sha256": "bb9c70382e0db90096e8a9c4e687d46662e81defe45c638354b00dc96f91e1bc",
+        "fetched_at": "2026-10-30T08:47:47+08:00",
+        "sha256": "4fd008818c5bf011f1a39877beccbd1ac92f08397b45243e9059b4d90b5d0825",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:36+08:00",
+      "rechecked_at": "2026-10-30T08:47:47+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
@@ -866,11 +942,11 @@
       "reason": "series_or_duration_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2608300947345233191260",
-        "fetched_at": "2026-10-27T08:41:37+08:00",
-        "sha256": "227357a832db780b9528392152b867418c73c6420f0cd2648518767174126051",
+        "fetched_at": "2026-10-30T08:47:48+08:00",
+        "sha256": "e3d2910eca7b9abd25bfbdace93c02d335b15680a2c2935e2e1488da1f286e06",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:37+08:00",
+      "rechecked_at": "2026-10-30T08:47:48+08:00",
       "missing_evidence": [
         "individual_session_and_participation_terms"
       ],
@@ -885,11 +961,11 @@
       "reason": "missing_identity_fields",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610200406521163500088",
-        "fetched_at": "2026-10-27T08:41:39+08:00",
-        "sha256": "de24b1d9df378a2ba330822feb64cf9ff1ea7c49be9b6a241d800c30950e92c5",
+        "fetched_at": "2026-10-30T08:47:50+08:00",
+        "sha256": "fae06ac832b8229003c20bb8ff8fb123db1fe2524fa1689788c45bccd4ee26bf",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:39+08:00",
+      "rechecked_at": "2026-10-30T08:47:50+08:00",
       "missing_evidence": [
         "venue_address_or_organizer"
       ],
@@ -904,11 +980,11 @@
       "reason": "missing_identity_fields",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610200305515444214400",
-        "fetched_at": "2026-10-27T08:41:39+08:00",
-        "sha256": "dfe074699cedd33ea756ea49e1a57d9a749bbd06319c44bfde5805171b47c45c",
+        "fetched_at": "2026-10-30T08:47:51+08:00",
+        "sha256": "fc26874c8977fc99b200949cb8bc500fa23a13be6e56dee8a8b031a145271dfe",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:39+08:00",
+      "rechecked_at": "2026-10-30T08:47:51+08:00",
       "missing_evidence": [
         "venue_address_or_organizer"
       ],
@@ -934,11 +1010,11 @@
       "reason": "missing_identity_fields",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610210805275700377770",
-        "fetched_at": "2026-10-27T08:41:40+08:00",
-        "sha256": "8aa051d224cdc79fa036b4bb271ab19ab50f227eb5dd2c8eb6ce0d6e0130aebe",
+        "fetched_at": "2026-10-30T08:47:54+08:00",
+        "sha256": "752f756f94f5bad407048b0f65903960e69bf142cf93f9c516624dfcd13570ab",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:40+08:00",
+      "rechecked_at": "2026-10-30T08:47:54+08:00",
       "missing_evidence": [
         "venue_address_or_organizer"
       ],
@@ -953,11 +1029,11 @@
       "reason": "missing_identity_fields",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610210823583797215420",
-        "fetched_at": "2026-10-27T08:41:41+08:00",
-        "sha256": "53db7d8d853114322f5faf5e486e3af51bd7e72167dfc5b712157e9d3cf596f1",
+        "fetched_at": "2026-10-30T08:47:54+08:00",
+        "sha256": "cad335826713e2b473a4c08bd0505d5a90a15600b0d9188be167104d0f0a1e01",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:41+08:00",
+      "rechecked_at": "2026-10-30T08:47:54+08:00",
       "missing_evidence": [
         "venue_address_or_organizer"
       ],
@@ -978,11 +1054,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609110511001151318561",
-        "fetched_at": "2026-10-27T08:41:42+08:00",
-        "sha256": "4983f457961f4f5d46df8a22b8b09f4847112de938a0705ba5b7c82cca4f5fcf",
+        "fetched_at": "2026-10-30T08:47:56+08:00",
+        "sha256": "a6806dcf28fc54563275e4c5b165e52246ef619c54ea571262d10403bb01c301",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:42+08:00",
+      "rechecked_at": "2026-10-30T08:47:56+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1030,11 +1106,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://tct.gov.taipei/News_Content.aspx?n=20D5F230784470CD&sms=BA94654030F99F12&s=8F541DFB9A140844",
-        "fetched_at": "2026-10-27T08:41:52+08:00",
-        "sha256": "8d956cad72d5bc1a5c5567564d2baa67eaebf0f5c1e2843b341709ac6e561c30",
+        "fetched_at": "2026-10-30T08:48:08+08:00",
+        "sha256": "fa55ee80712cee3d01e333d875d8e72936b44561030dd1cd974872f2cba27139",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:52+08:00",
+      "rechecked_at": "2026-10-30T08:48:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1059,7 +1135,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "09aa0cac7b6a84ead240160c",
@@ -1072,7 +1148,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "3b4258252c35f92b70eb679f",
@@ -1085,7 +1161,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "58c8ab48810f3456e114e429",
@@ -1314,7 +1390,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "e0df23565b4e236588bdda64",
@@ -1327,7 +1403,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "6e589e9ca5b2710ed36c2293",
@@ -1340,7 +1416,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:10+08:00"
     },
     {
       "candidate_id": "4e233b2c3035b4ac7269f502",
@@ -1569,7 +1645,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "282ef64b8e651ede508fd205",
@@ -1582,7 +1658,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "8af11f045b3d4f74f9cb278a",
@@ -1595,7 +1671,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "7300d9f17a8bcc75d9311a90",
@@ -1608,7 +1684,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "2854e3a513355cbe78658d5c",
@@ -1749,7 +1825,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "fd2a502e0abc0eba081279f3",
@@ -1762,7 +1838,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:53+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "1e125a0ccf6000591a0be225",
@@ -1807,7 +1883,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:54+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "34a9d3a8a0b5c236fde56b2e",
@@ -1820,7 +1896,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:54+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "3a8165580665e0ac06cb879a",
@@ -1833,7 +1909,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:41:54+08:00"
+      "rechecked_at": "2026-10-30T08:48:11+08:00"
     },
     {
       "candidate_id": "af7be268a9e3129a934a61cd",
@@ -1907,12 +1983,12 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "final_url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=JAOLbejBZGjITkrt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
-        "fetched_at": "2026-10-27T08:41:55+08:00",
-        "sha256": "060475fd258af22ddfcdd1366c6ab535bd71b8e6812d80a6cb01da8e425c3faf",
+        "final_url": "https://www.facebook.com/chenhsihuangpuppet/posts/pfbid02ntRVDtDNRj9QdKVFuz2w97GyUQ5giz7EJSQqPCZF9fGUTDy4mdru4ypHQKHYnvjCl?rdid=PKE4ws2iDRMxKDKn&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1BX5mdbRz3%2F",
+        "fetched_at": "2026-10-30T08:48:12+08:00",
+        "sha256": "4cdd4e8fdfc65db86bb27392a0b91cc5341a1dba4b7cc5cca1ea09d6006894f0",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:55+08:00",
+      "rechecked_at": "2026-10-30T08:48:12+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1927,11 +2003,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610010350371993342605",
-        "fetched_at": "2026-10-27T08:40:30+08:00",
-        "sha256": "04c1bdee432504da35b5c2b32ef0dc4334b012b53dec6e744f06eee025aba7c9",
+        "fetched_at": "2026-10-30T08:46:23+08:00",
+        "sha256": "ef29405cc4ff2c04ddbf9934f381fcb673704f80ba61729181dc35cf6eec1813",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:30+08:00",
+      "rechecked_at": "2026-10-30T08:46:23+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1946,11 +2022,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2610010350371993342605",
-        "fetched_at": "2026-10-27T08:40:30+08:00",
-        "sha256": "04c1bdee432504da35b5c2b32ef0dc4334b012b53dec6e744f06eee025aba7c9",
+        "fetched_at": "2026-10-30T08:46:23+08:00",
+        "sha256": "ef29405cc4ff2c04ddbf9934f381fcb673704f80ba61729181dc35cf6eec1813",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:30+08:00",
+      "rechecked_at": "2026-10-30T08:46:23+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1965,11 +2041,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "fetched_at": "2026-10-27T08:41:57+08:00",
-        "sha256": "90fce2728e9a7084e80787ec8e4d7316e8a20e58b0446bcd4f8037f99608464a",
+        "fetched_at": "2026-10-30T08:48:16+08:00",
+        "sha256": "036ea8347fcd3c09cde1c36e50d98c0cb4c12e9c0ad0ce6483d374995c66589e",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:57+08:00",
+      "rechecked_at": "2026-10-30T08:48:16+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -1984,11 +2060,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "fetched_at": "2026-10-27T08:41:57+08:00",
-        "sha256": "90fce2728e9a7084e80787ec8e4d7316e8a20e58b0446bcd4f8037f99608464a",
+        "fetched_at": "2026-10-30T08:48:16+08:00",
+        "sha256": "036ea8347fcd3c09cde1c36e50d98c0cb4c12e9c0ad0ce6483d374995c66589e",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:57+08:00",
+      "rechecked_at": "2026-10-30T08:48:16+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2003,11 +2079,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
-        "fetched_at": "2026-10-27T08:41:57+08:00",
-        "sha256": "90fce2728e9a7084e80787ec8e4d7316e8a20e58b0446bcd4f8037f99608464a",
+        "fetched_at": "2026-10-30T08:48:16+08:00",
+        "sha256": "036ea8347fcd3c09cde1c36e50d98c0cb4c12e9c0ad0ce6483d374995c66589e",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:41:57+08:00",
+      "rechecked_at": "2026-10-30T08:48:16+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2025,25 +2101,6 @@
       "reviewed_at": "2026-10-03T07:06:30+08:00"
     },
     {
-      "candidate_id": "9d7c72661457ad8b528a7e02",
-      "source_id": "culture_open_data",
-      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-      "title": "115年深入你心歌唱",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review",
-      "source_recheck": {
-        "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-27T08:42:00+08:00",
-        "sha256": "4690e11a06cd1db203300ebdb5f32a9a726aa6d2310d47ad8021680edda3572c",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:42:00+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
       "candidate_id": "edf0d3e2802b8815c2b56d8e",
       "source_id": "dadaocheng",
       "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
@@ -2052,11 +2109,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=574623D4555EC568&sms=9A0025CA3D7482D6",
-        "fetched_at": "2026-10-27T08:42:03+08:00",
-        "sha256": "5f23e39f39e1f201fcb790a40d90dcfdf30a2bdfbcbabc2c1777ad0318a9fd62",
+        "fetched_at": "2026-10-30T08:48:19+08:00",
+        "sha256": "848120879b9fc52d60287a719b2d4036b5c32022d9cc4abd5212867b96fa65ea",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:03+08:00",
+      "rechecked_at": "2026-10-30T08:48:19+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2071,11 +2128,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=574623D4555EC568",
-        "fetched_at": "2026-10-27T08:42:04+08:00",
-        "sha256": "7a283567c48add6a7a858b6fd58372c80799a0d842046296ce5dec6c936c1e37",
+        "fetched_at": "2026-10-30T08:48:21+08:00",
+        "sha256": "12d739d69436c8acf3dc7a9523b02b344769b8f4422cbb8b334045809334e6af",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:04+08:00",
+      "rechecked_at": "2026-10-30T08:48:21+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2090,30 +2147,30 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&sms=9A0025CA3D7482D6&s=FC2EBF431109F4FC",
-        "fetched_at": "2026-10-27T08:42:06+08:00",
-        "sha256": "295f3400d1c32ec87ab16638812e765f4c3060c890ddfaa0a3df15142335bdc2",
+        "fetched_at": "2026-10-30T08:48:22+08:00",
+        "sha256": "1ab7efd7512e17be2c238951fa42ea39bfa4ad1472673c3135e716fc3d621a5c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:06+08:00",
+      "rechecked_at": "2026-10-30T08:48:22+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
       "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
-      "candidate_id": "c5c4cd62d6259d95dd4ab013",
+      "candidate_id": "8f8129a409b63a34ff479e24",
       "source_id": "dadaocheng",
-      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
-      "title": "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=42BCF6467CA8FD19&sms=C9104E520DD5CC56&s=011C1A89B967B7D5",
+      "title": "《閻王想放假，而我們還在演戲》──老劇團如何把歌仔戲「玩」成今天的樣子",
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
-        "fetched_at": "2026-10-27T08:42:08+08:00",
-        "sha256": "81bab92d8a7c4873dacc38511e865bb0cb4d4b369481c51577fa73d3aba5a486",
+        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=42BCF6467CA8FD19&sms=C9104E520DD5CC56&s=011C1A89B967B7D5",
+        "fetched_at": "2026-10-30T08:48:22+08:00",
+        "sha256": "015a2b210765b6f0ea198a3cee7c4b4ac6729025b86abe04702d3736db66f20d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:08+08:00",
+      "rechecked_at": "2026-10-30T08:48:22+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2198,11 +2255,19 @@
       "source_id": "eraticket",
       "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
       "title": "2026林淑容【您的經典．我的歌】世界巡迴演唱會台中場",
-      "decision": "excluded",
-      "reason": "reviewed_outside_region",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "讀完整售票頁及場次表，演出位於臺中，臺北退票地址不是活動地點。",
-      "reviewed_at": "2026-10-03T07:06:30+08:00"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1DL4DZ2",
+        "fetched_at": "2026-10-30T08:48:27+08:00",
+        "sha256": "04dbdd8813abfdf930f12d667a6a0eaaf296ef2b92da586b348ae65701d4b91e",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:27+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "164ecf8dfc7e8ec876140779",
@@ -2224,11 +2289,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1G6H7IA",
-        "fetched_at": "2026-10-27T08:42:17+08:00",
-        "sha256": "288d9044cc85305a02b123fa10dec304829a8cc949aae2f27bf62effcc4ce5bf",
+        "fetched_at": "2026-10-30T08:48:30+08:00",
+        "sha256": "e438568f535990dfacdd3127d5d8bd766ee3845005d7132a8a0aae83930dd778",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:17+08:00",
+      "rechecked_at": "2026-10-30T08:48:30+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2243,15 +2308,248 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1GUY38Z",
-        "fetched_at": "2026-10-27T08:42:19+08:00",
-        "sha256": "079ba051d0b121a21e0d5e796c6e4954a3d8ce1378cbc2a2bb071588946df8d2",
+        "fetched_at": "2026-10-30T08:48:32+08:00",
+        "sha256": "a93625d91a6cd6f77805fb095cfdaa4ddf01f63527236c8329e1effa4b0579b6",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:19+08:00",
+      "rechecked_at": "2026-10-30T08:48:32+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
       "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "a92c11a1a7010453585a7cb2",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "c5221bcbe7820ac90e868dcd",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "8e6c70636ad57fbcd40ca0a5",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "417030130cf2c065e8d3bc05",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "bb7dcd99418d5f614f87786f",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "f903459f079729a76ca4ea29",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "6d9031d699a091a57f59ec6c",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "ae99a7315010321a9a9ec247",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "54a632c17e15b294f8c37327",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "e6142244efc32a7f9f675afb",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "84b0539e0a03c2b42979a399",
+      "source_id": "eraticket",
+      "source_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+      "title": "11月高雄市電影館｜世紀初戀 楊麗花",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://ticket.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+        "fetched_at": "2026-10-30T08:48:34+08:00",
+        "sha256": "9548b974303bfaf38e173c0c4c971df5ea026606a56c27e855e3f89d11f93f00",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:48:34+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "160c86b8abbeff3f3130c95e",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1672kuu3i94",
+      "title": "2026台北喜劇節：妹迪 IN TAIWAN『你共我擋咧！』",
+      "decision": "approved",
+      "reason": "trusted_taigi_directory_session_verified",
+      "activity_id": "gameislearning_1672kuu3i94_20261205_1530",
+      "published_session_ids": [
+        "gameislearning_1672kuu3i94_20261205_1530"
+      ]
+    },
+    {
+      "candidate_id": "1b75eae05f5ac62ba077f864",
+      "source_id": "gameislearning",
+      "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=167480v4i94",
+      "title": "【台語sa攏有】經典化、世俗化、文學景致：講寡『台語現代文學選』三冊ê編選心內話",
+      "decision": "approved",
+      "reason": "trusted_taigi_directory_session_verified",
+      "activity_id": "gameislearning_167480v4i94_20261109_1900",
+      "published_session_ids": [
+        "gameislearning_167480v4i94_20261109_1900"
+      ]
     },
     {
       "candidate_id": "cec5dca3f4892d2137f2cd0f",
@@ -2262,11 +2560,11 @@
       "reason": "missing_identity_fields",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1683aewxi187",
-        "fetched_at": "2026-10-27T08:40:12+08:00",
+        "fetched_at": "2026-10-30T08:46:05+08:00",
         "sha256": "5fc6cb3ec729f1ee038f1b3cfb19dfd72c3ffaf2ed771cd8c2a03dacc30fde49",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:12+08:00",
+      "rechecked_at": "2026-10-30T08:46:05+08:00",
       "missing_evidence": [
         "venue_address_or_organizer"
       ],
@@ -2281,11 +2579,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1673c1qsi94",
-        "fetched_at": "2026-10-27T08:40:13+08:00",
+        "fetched_at": "2026-10-30T08:46:06+08:00",
         "sha256": "8ea9fedbbc8d1c7b1913fccb15b7e8b6bb76d678152d6007d2fa61e0d67ec63c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:13+08:00",
+      "rechecked_at": "2026-10-30T08:46:06+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2296,12 +2594,8 @@
       "source_id": "gameislearning",
       "source_url": "https://www.gameislearning.url.tw/taigi-info.php?news=16575pmgi94",
       "title": "台語，拍予世界看｜台語創作者培訓！",
-      "decision": "approved",
-      "reason": "trusted_taigi_directory_session_verified",
-      "activity_id": "gameislearning_16575pmgi94_20261029_1000",
-      "published_session_ids": [
-        "gameislearning_16575pmgi94_20261029_1000"
-      ]
+      "decision": "excluded",
+      "reason": "expired"
     },
     {
       "candidate_id": "a94662191626bb2b53ccec93",
@@ -2312,11 +2606,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1664adh7i94",
-        "fetched_at": "2026-10-27T08:40:16+08:00",
+        "fetched_at": "2026-10-30T08:46:08+08:00",
         "sha256": "c4f1a229509dd4af9906f4900f351e1c76fbc20f567fa47bd39133db7d2e38a0",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:16+08:00",
+      "rechecked_at": "2026-10-30T08:46:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2331,11 +2625,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1663pt3ei94",
-        "fetched_at": "2026-10-27T08:40:17+08:00",
+        "fetched_at": "2026-10-30T08:46:10+08:00",
         "sha256": "ca77e32f4da9a8a50dab93fcf043025b5e104391ccb9ace3d2580a933ea66a8d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:17+08:00",
+      "rechecked_at": "2026-10-30T08:46:10+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2548,11 +2842,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1593k7wci94",
-        "fetched_at": "2026-10-27T08:40:23+08:00",
+        "fetched_at": "2026-10-30T08:46:16+08:00",
         "sha256": "bb3d66634e8bef1f681ef8ef8c5456fa6efcc5bfbab31720275cb894948c19de",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:23+08:00",
+      "rechecked_at": "2026-10-30T08:46:16+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2567,11 +2861,11 @@
       "reason": "unsupported_trusted_directory_candidate",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=15878g5xi94",
-        "fetched_at": "2026-10-27T08:40:25+08:00",
+        "fetched_at": "2026-10-30T08:46:17+08:00",
         "sha256": "7f91079ca5e8725eeffc4ef12b90f400919babbfade017c8d0075079bcdd200c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:25+08:00",
+      "rechecked_at": "2026-10-30T08:46:17+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2630,11 +2924,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1662ba50i267",
-        "fetched_at": "2026-10-27T08:40:29+08:00",
+        "fetched_at": "2026-10-30T08:46:21+08:00",
         "sha256": "9e657b34d3f8e7fe0b451ff897c9d5f1c25f55f6d5cef9cd6c516c0ce2c32c43",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:29+08:00",
+      "rechecked_at": "2026-10-30T08:46:21+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2658,11 +2952,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2700,11 +2994,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2720,11 +3014,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2740,11 +3034,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2760,11 +3054,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2780,11 +3074,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2800,11 +3094,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2820,11 +3114,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2840,11 +3134,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2860,11 +3154,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2880,11 +3174,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2900,11 +3194,11 @@
       "reason": "accupass_session_not_verified",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1658g5v2i94",
-        "fetched_at": "2026-10-27T08:40:31+08:00",
+        "fetched_at": "2026-10-30T08:46:24+08:00",
         "sha256": "2e31ad992aa3f65a8db81c3d7b307ded13010297cbb96bdfcb94837a9fa8d179",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:31+08:00",
+      "rechecked_at": "2026-10-30T08:46:24+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -2996,11 +3290,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.lesecondfloor.com/post/%E6%B4%BB%E5%8B%95%E5%88%86%E4%BA%AB-%E7%B1%B3%E7%89%B9%E5%8B%95%E7%89%A9%E6%A8%82%E5%9C%92-do-re-mi-%E5%96%9C%E5%92%A7%E5%85%9C%EF%BC%9F",
-        "fetched_at": "2026-10-27T08:42:36+08:00",
-        "sha256": "d21c90dc4f051b1c5f865df2e2b7b41a3f8909ea7583a7d2e43167e977f70d1d",
+        "fetched_at": "2026-10-30T08:48:43+08:00",
+        "sha256": "1123581e23453d39d419e55d50e73b1950445d4b335c63469bc10f0ac7b5d74c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:36+08:00",
+      "rechecked_at": "2026-10-30T08:48:43+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3114,11 +3408,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/10/sa.html",
-        "fetched_at": "2026-10-27T08:42:59+08:00",
-        "sha256": "035bec61edf9806d6f45abe9562a1e6d8cb1ade952893adc3c634f0ef45cabfd",
+        "fetched_at": "2026-10-30T08:49:11+08:00",
+        "sha256": "6e6c68b99463967d05ca21f1c1fdc258dcc444ee85a409056e9e03b4506dbd51",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:59+08:00",
+      "rechecked_at": "2026-10-30T08:49:11+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3133,11 +3427,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/07/23.html",
-        "fetched_at": "2026-10-27T08:42:59+08:00",
-        "sha256": "15f89e03fb03f7a02b8cc5293a6036f5f3c13bd8592ddd7aa1476ad6efeb5fba",
+        "fetched_at": "2026-10-30T08:49:12+08:00",
+        "sha256": "e4e0fa099fa268b268dff9194872c95912bcebfc17165134e58336078c23a4b2",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:59+08:00",
+      "rechecked_at": "2026-10-30T08:49:12+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3229,11 +3523,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/07/829.html",
-        "fetched_at": "2026-10-27T08:43:02+08:00",
-        "sha256": "b107f143218353a0810fa17e90f3ef41eaf272b2e066e1f676b4affe0ebe3b5c",
+        "fetched_at": "2026-10-30T08:49:16+08:00",
+        "sha256": "1e503968f747c840b2279870d8f8366cd13a7eb2bd9afe31ae8395a3da75c654",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:43:02+08:00",
+      "rechecked_at": "2026-10-30T08:49:16+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3270,11 +3564,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/06/blog-post.html",
-        "fetched_at": "2026-10-27T08:43:03+08:00",
-        "sha256": "c675280bfacf0110f9fb460980d23a6602b3aac9aefecf2eb54784c49b3d06c4",
+        "fetched_at": "2026-10-30T08:49:18+08:00",
+        "sha256": "86ad1deece7690871c4f0586b62baf57c03efc7b146014d3971d4f67593cf8e4",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:43:03+08:00",
+      "rechecked_at": "2026-10-30T08:49:18+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3300,11 +3594,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/06/kap-e.html",
-        "fetched_at": "2026-10-27T08:43:04+08:00",
-        "sha256": "140ec6ded892da9a35ddf6b4db626e8d89a049fbbbc48a7339e446351ca89186",
+        "fetched_at": "2026-10-30T08:49:19+08:00",
+        "sha256": "470d850c347b4af3694f28cb9c27477096b389951ee3946e2d94f867deddbb8a",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:43:04+08:00",
+      "rechecked_at": "2026-10-30T08:49:19+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3407,11 +3701,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2026/01/116.html",
-        "fetched_at": "2026-10-27T08:43:08+08:00",
-        "sha256": "d62e5448531b59b8a5d6fbfe7f9f41df6a45f1ae93022dd5d6c41da9cce95f3a",
+        "fetched_at": "2026-10-30T08:49:30+08:00",
+        "sha256": "179b829d1988153d9ef2716c0d6dae72a3a7f413ac3563be7691963a57323cfc",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:43:08+08:00",
+      "rechecked_at": "2026-10-30T08:49:30+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -3807,19 +4101,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/05/e.html",
       "title": "【基北北桃台語家庭意識培力講座】台北場—本土語言政策ê再轉型正義",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2025/05/e.html",
-        "fetched_at": "2026-10-27T08:43:34+08:00",
-        "sha256": "82bffc5df1aad6fcc7d4fdb948d851ae5fd9b7ad6c693dea3b2af6b8539a973b",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:43:34+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_expired",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。同頁附帶的兒童繪本活動亦屬同一舊日期。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00"
     },
     {
       "candidate_id": "f98f06172db5ebee30ae4dbb",
@@ -3903,19 +4189,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2025/03/e_20.html",
       "title": "【基北北桃台語家庭意識培力講座】 桃園場—台語充電讚——展開囡仔ê語言超能力！",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2025/03/e_20.html",
-        "fetched_at": "2026-10-27T08:43:42+08:00",
-        "sha256": "34ae3d386c5fde5a96a8fd12f8b6679fc9ac7cd350e557652bc96449fc260443",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:43:42+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_expired",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整官方公告明列2025年場次，於本次2026/10/6核實時已結束；全文未有改期或新增未來場次。重新綁定目前全文並移出待刊登候選，保留原始紀錄。",
+      "reviewed_at": "2026-10-06T07:06:19+08:00"
     },
     {
       "candidate_id": "b76de03da2f2b534c171371d",
@@ -4058,11 +4336,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2024/12/20241218.html",
-        "fetched_at": "2026-10-27T08:43:54+08:00",
-        "sha256": "21b7775ae8a5c224e3dc595479739774aaf943e3a0eeadc8cfff34023d35f96b",
+        "fetched_at": "2026-10-30T08:50:05+08:00",
+        "sha256": "1ce88f5d5a9c7a1398394b02d0b98797e6ce77989684e5e22314482667402da6",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:43:54+08:00",
+      "rechecked_at": "2026-10-30T08:50:05+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -4447,19 +4725,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2023/02/2023.html",
       "title": "2023 母語‧鬧熱‧講 國家語言生活節",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2023/02/2023.html",
-        "fetched_at": "2026-10-27T08:44:19+08:00",
-        "sha256": "8cfde27f79ac7de2c62bbe28b45c881877bb80c7f6ec7fc741d509bceef4df5e",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:44:19+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_expired",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "2c207646808de81e18bc9b94",
@@ -4576,19 +4846,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2021/09/20210929.html",
       "title": "20210929記者會採訪通知【落實國家語言發展法，支持專業同步通譯制度化】",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2021/09/20210929.html",
-        "fetched_at": "2026-10-27T08:44:28+08:00",
-        "sha256": "33b6204be83030011ab8aff32dcf6a7a512dff96a0d18c6c6637103062e032aa",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:44:28+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_expired",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "逐篇核對正文的活動日期／該期課程期間，公告場次均已於2026-10-01以前結束；保留歷史來源，不再列作新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "c7456afc49a7ff381f59e512",
@@ -5193,11 +5455,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2017/11/blog-post_27.html",
-        "fetched_at": "2026-10-27T08:45:02+08:00",
-        "sha256": "3789ec60543cd8073c0a978ca2788066aa618194ba01f5bc255ffd71e32f3732",
+        "fetched_at": "2026-10-30T08:51:14+08:00",
+        "sha256": "3b04d764ce5859f10114a551ace41ec8f24a5aaab067c2985119b1a6f605b08e",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:45:02+08:00",
+      "rechecked_at": "2026-10-30T08:51:14+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -5267,11 +5529,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2025/11/blog-post.html",
-        "fetched_at": "2026-10-27T08:45:05+08:00",
-        "sha256": "430eab0022b5f5130561edbb99f74c67b81c6536bad1e249d90a90392f688e2f",
+        "fetched_at": "2026-10-30T08:51:18+08:00",
+        "sha256": "44abbb7dab392a83dd5b35e661cdc9ff41f3422806dcc488bdce4ae7364ee361",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:45:05+08:00",
+      "rechecked_at": "2026-10-30T08:51:18+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -5316,14 +5578,14 @@
       "source_url": "https://www.tgb.org.tw/2025/04/20250409.html",
       "title": "20250409「 地方政府無重視 | 立院預算烏白刣 | 台語家庭無未來」記者會",
       "decision": "pending",
-      "reason": "verification_failed:http_429",
+      "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tgb.org.tw/2025/04/20250409.html",
-        "fetched_at": "2026-10-27T08:45:13+08:00",
-        "sha256": "e0e8653c1eb6397a51c57cd60019505c7a3f1877ce3f12c444fdff7eeff491c4",
+        "fetched_at": "2026-10-30T08:51:21+08:00",
+        "sha256": "f4011b6bf8687642f82b3197aaf5f6c6fe3e84c5e1278b445e100ca1a6bd6eb2",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:45:13+08:00",
+      "rechecked_at": "2026-10-30T08:51:21+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -5433,19 +5695,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2022/11/2023.html",
       "title": "【歡迎分享】2023 兔年妥當Thò͘ nî thò-tòng/勇健活跳Ióng-kiānn ua̍h-thiàu 春仔táng-lóo (download)",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2022/11/2023.html",
-        "fetched_at": "2026-10-27T08:45:27+08:00",
-        "sha256": "5f3853ffba047cc4cba44759f6262981bdfa5510e954e7f0af12aacfcca33254",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:45:27+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_not_event",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "正文為徵文、網站／出版品、連署、得獎名單、新聞、捐款或歷史影音，不是北北桃可到場的新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "d1c25a973dba195caa5c4dd2",
@@ -5529,19 +5783,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2021/06/blog-post.html",
       "title": "【民視台灣學堂】台語講世事-上新影片",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2021/06/blog-post.html",
-        "fetched_at": "2026-10-27T08:45:34+08:00",
-        "sha256": "b78d5f7a10967b7668d56950d8c0282cfb53af3dabe32992f14fddce3873cb87",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:45:34+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_not_event",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "正文為徵文、網站／出版品、連署、得獎名單、新聞、捐款或歷史影音，不是北北桃可到場的新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "014d55d2ad13e1716eec081e",
@@ -5713,19 +5959,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2019/10/2mi-moo.html",
       "title": "(2版)暗mi-moo(台語有聲繪本)",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2019/10/2mi-moo.html",
-        "fetched_at": "2026-10-27T08:45:49+08:00",
-        "sha256": "053b8c155d3af0aaa8748683bc5690e2abe9d6357ef5ba9ebe4efa4d3c7923a4",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:45:49+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_not_event",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "正文為徵文、網站／出版品、連署、得獎名單、新聞、捐款或歷史影音，不是北北桃可到場的新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "71f1173e6f0386c897c7891c",
@@ -5820,19 +6058,11 @@
       "source_id": "li_kang_khiok",
       "source_url": "https://www.tgb.org.tw/2018/02/2017a-khioh-siunn-kap.html",
       "title": "2017年阿却賞（A-Khioh Siúnn） 台語短篇小說組kap台語繪本故事組獎勵金入選名單",
-      "decision": "pending",
-      "reason": "verification_failed:http_429",
-      "source_recheck": {
-        "final_url": "https://www.tgb.org.tw/2018/02/2017a-khioh-siunn-kap.html",
-        "fetched_at": "2026-10-27T08:46:02+08:00",
-        "sha256": "2cc9f1588af60ce899642de3ff7b77bb07174adffbfd0ff4143533822b43ef35",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:46:02+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+      "decision": "excluded",
+      "reason": "reviewed_not_event",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "正文為徵文、網站／出版品、連署、得獎名單、新聞、捐款或歷史影音，不是北北桃可到場的新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
       "candidate_id": "26993db772731283b0f1c10f",
@@ -5978,6 +6208,55 @@
       "reviewed_at": "2026-10-06T16:55:12+08:00"
     },
     {
+      "candidate_id": "fd55bc9a9ca015b5d1a53607",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=97215&ctNode=2796&mp=1",
+      "title": "【公告】115年獎助國內訪問學人（員）名單公告",
+      "decision": "excluded",
+      "reason": "reviewed_not_event",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "已讀正文，為影片、既往活動心得、機構／地名介紹、成果公告、名單、申請計畫或線上節目，不是北北桃可到場的新活動。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
+    },
+    {
+      "candidate_id": "b28368d8c3b8ae8bafee0a2f",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2796&mp=1",
+      "title": "大手牽小手˙好繪說母語| 台語手語做伙來講古",
+      "decision": "excluded",
+      "reason": "reviewed_already_covered",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "已逐一對照正式活動資料，本公告的未來台語場次已有刊登；保留既有活動ID與台文，不另建重複場。",
+      "reviewed_at": "2026-10-01T00:42:58+08:00"
+    },
+    {
+      "candidate_id": "f7e02e5827ed2e38ce623cde",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?ctNode=1876&mp=1&xItem=96939",
+      "title": "大手牽小手˙好繪說母語｜台語手語做伙來講古",
+      "decision": "excluded",
+      "reason": "reviewed_already_covered",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整公告10/15、11/19、12/17台語手語三場，逐場與catalog ntl_taigiloo_20261015/20261119/20261217及B1研習教室核對一致，已刊登。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00",
+      "published_session_ids": [
+        "ntl_taigiloo_20261015",
+        "ntl_taigiloo_20261119",
+        "ntl_taigiloo_20261217"
+      ]
+    },
+    {
+      "candidate_id": "7c2438d7753cf679ae8c808d",
+      "source_id": "ntl",
+      "source_url": "https://www.ntl.edu.tw/wSite/ct?xItem=96939&ctNode=2739&mp=1",
+      "title": "台語/手語說故事活動",
+      "decision": "excluded",
+      "reason": "reviewed_already_covered",
+      "review_mode": "evidence_bound_ai_review",
+      "rationale": "完整公告10/15、11/19、12/17台語手語三場，逐場與catalog ntl_taigiloo_20261015/20261119/20261217及B1研習教室核對一致，已刊登。",
+      "reviewed_at": "2026-10-06T17:00:09+08:00"
+    },
+    {
       "candidate_id": "0630be0cf3b2489f7e9e3dec",
       "source_id": "ntm",
       "source_url": "https://www.ntm.gov.tw/News_Content.aspx?n=5651&s=147688",
@@ -5997,11 +6276,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60201",
-        "fetched_at": "2026-10-27T08:46:14+08:00",
-        "sha256": "aef5501b2a6c09d8171c3c87785b8bd905f95bed6a266648dc793d6be9fa8f06",
+        "fetched_at": "2026-10-30T08:52:08+08:00",
+        "sha256": "72f8aab8dfb7e2a2641f14750be038d5968034fcb341ead95187c92d2426974f",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:14+08:00",
+      "rechecked_at": "2026-10-30T08:52:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6012,22 +6291,38 @@
       "source_id": "ntpc_center_gongliao",
       "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
       "title": "2026-09-21 貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節",
-      "decision": "excluded",
-      "reason": "reviewed_expired",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "官方正文115年9月25日中秋晚會，已結束；2031年網頁截止日期不等於活動日期。",
-      "reviewed_at": "2026-10-06T16:55:12+08:00"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061&mserno=81abc92811fb68762e9a16cf379e4a4a",
+        "fetched_at": "2026-10-30T08:52:11+08:00",
+        "sha256": "42b2217e5692026845a3079f4d82acfa22b46bb834a3e43cf5904f50847ebe51",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:52:11+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "f7f4b245cbedc9b1a59edc72",
       "source_id": "ntpc_center_gongliao",
       "source_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
       "title": "貢寮中秋聯歡晚會9月25日登場 德心宮前邀鄉親歡度佳節 貢寮區公所 2026-09-21",
-      "decision": "excluded",
-      "reason": "reviewed_expired",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "官方正文115年9月25日中秋晚會，已結束；2031年網頁截止日期不等於活動日期。",
-      "reviewed_at": "2026-10-06T16:55:12+08:00"
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.gongliao.ntpc.gov.tw/home.jsp?id=703cd03eb5e556a0&act=be4f48068b2b0031&dataserno=b2cc1035c4480ae955f267359ae3f061",
+        "fetched_at": "2026-10-30T08:52:12+08:00",
+        "sha256": "79a8900c075846e67ef6fe1531569317e3120ef7d3260a3dd733458821cedf54",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:52:12+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "534bf1e38811de452bb8cc45",
@@ -6064,25 +6359,6 @@
       "reviewed_at": "2026-10-06T16:55:12+08:00"
     },
     {
-      "candidate_id": "fbc84384bfe6fd2d5d9ec101",
-      "source_id": "ntpclib",
-      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=41a4b81c1abd491ea8fed9d77f1d2255",
-      "title": "【汐止大同分館】「原」汐「新」生活：台語走讀活動",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review",
-      "source_recheck": {
-        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=41a4b81c1abd491ea8fed9d77f1d2255",
-        "fetched_at": "2026-10-27T08:46:32+08:00",
-        "sha256": "2bdb4f307bc5a5a330f7cbf66d4cb270168a84a84ee72b0fc76cdc541bff656b",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:46:32+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
       "candidate_id": "7709fe8bacc979f246998e70",
       "source_id": "ntpclib_district_220",
       "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=02ee3336d84542bb81c761a81514afaa",
@@ -6091,26 +6367,34 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=02ee3336d84542bb81c761a81514afaa",
-        "fetched_at": "2026-10-27T08:46:35+08:00",
-        "sha256": "4fdc30f98b3b44abf3742db2da18cc8bc1fd9f6cdff11f08316165570b7359bf",
+        "fetched_at": "2026-10-30T08:52:32+08:00",
+        "sha256": "97b8698ff61566f985e38882bd2286f99505869ebb03efa816787e74e28435ea",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:35+08:00",
+      "rechecked_at": "2026-10-30T08:52:32+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
       "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
-      "candidate_id": "0dede2675e5ae2cd79ed1e86",
+      "candidate_id": "8a87c7f4989dbe297dbe3dc9",
       "source_id": "ntpclib_district_220",
-      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9e44ee68933445b296b403869465bcdc",
-      "title": "【總館X土城、樹林、三峽、鶯歌區】Ready？帶上手機出任務！新北圖「在地知識學列車」開跑！",
-      "decision": "excluded",
-      "reason": "reviewed_resource_only",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "與總館候選同一官方頁，是自主手機解謎及系列目錄；明示台語創客坊為8/1舊場，未來沒有新台語分場，不將整個期間製造成單場。",
-      "reviewed_at": "2026-10-06T15:54:06+08:00"
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=884a8b8ae7b44f94a8975162873f870a",
+      "title": "【總館】115年11月彩虹故事屋",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=884a8b8ae7b44f94a8975162873f870a",
+        "fetched_at": "2026-10-30T08:52:35+08:00",
+        "sha256": "c73804b154d6dc52d70af7ac1c3582ae6b27c4f2e0ac5a72b084fba282441f4d",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:52:35+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "2c558340cb83c07b53c1842f",
@@ -6121,11 +6405,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=41a4b81c1abd491ea8fed9d77f1d2255",
-        "fetched_at": "2026-10-27T08:46:32+08:00",
-        "sha256": "2bdb4f307bc5a5a330f7cbf66d4cb270168a84a84ee72b0fc76cdc541bff656b",
+        "fetched_at": "2026-10-30T08:52:37+08:00",
+        "sha256": "b81dbe43dad2cfcd8a72a3f25381e764be7316923c753915d4aa92cee52f6a56",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:32+08:00",
+      "rechecked_at": "2026-10-30T08:52:37+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6135,7 +6419,7 @@
       "candidate_id": "4ff89a4935819dff35d5e06a",
       "source_id": "ntpclib_district_221",
       "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=72068aa4eb7f4e3dbcdb0fccb900f4d4",
-      "title": "【汐止分館】台語繪本說故事活動",
+      "title": "【汐止分館】台語繪本說故事活動(10/24活動延至11/8辦理)",
       "decision": "pending",
       "reason": "verification_failed:reviewed_announcement_content_changed",
       "published_session_ids": [
@@ -6145,11 +6429,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=72068aa4eb7f4e3dbcdb0fccb900f4d4",
-        "fetched_at": "2026-10-27T08:46:46+08:00",
-        "sha256": "54e363989aff48bb95a1e582b43f14eb80426d73a79fd4df1f42b3c6d6ff00f5",
+        "fetched_at": "2026-10-30T08:52:39+08:00",
+        "sha256": "6a13ca4aa0d1c438a31761c6afb7d43a723e98559e998ddb28f1690b582b8ecf",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:46+08:00",
+      "rechecked_at": "2026-10-30T08:52:39+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6164,11 +6448,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9da279e504e54cc99190c8a6ae12ecf5",
-        "fetched_at": "2026-10-27T08:46:48+08:00",
-        "sha256": "02a2aff4d4a0fbfb21d7cef006f752f4e5b79faac8a8d00f141922b239e31335",
+        "fetched_at": "2026-10-30T08:52:43+08:00",
+        "sha256": "d383ae6b52643144a9735212b4cd724eff82c5b129690c2120dc34e00f5b3c8c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:48+08:00",
+      "rechecked_at": "2026-10-30T08:52:43+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6183,11 +6467,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=a790298421c84ee99e3fb1643ebdddd1",
-        "fetched_at": "2026-10-27T08:46:50+08:00",
-        "sha256": "a6013376472676077aa1f73839c58a39a7b0db4224ac29fdae21813ecc03235e",
+        "fetched_at": "2026-10-30T08:52:46+08:00",
+        "sha256": "7a611f0afd233d950bd5f899141ebb9d891f37a59cbbe9bca5f287bc6fad2dfc",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:50+08:00",
+      "rechecked_at": "2026-10-30T08:52:46+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6206,15 +6490,23 @@
       ]
     },
     {
-      "candidate_id": "8c5db2e9b917ad7343995a9f",
-      "source_id": "ntpclib_district_241",
-      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=661fbc4eb9f543d3ac065a21215b0ced",
-      "title": "【三重東區分館】115年8月-11月份【本土語言書展】",
-      "decision": "excluded",
-      "reason": "reviewed_resource_only",
-      "review_mode": "evidence_bound_ai_review",
-      "rationale": "完整公告是持續展出的本土語言圖書展示及借閱，無定時台語導讀或演出，不作場次或ICS。",
-      "reviewed_at": "2026-10-06T15:54:06+08:00"
+      "candidate_id": "f16949d0ead321f28b7e86f5",
+      "source_id": "ntpclib_district_243",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=a3c1ed5844044b5b9af2d04cb2148399",
+      "title": "【泰山分館 / 泰山親子閱覽室】115年11月彩虹故事屋",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=a3c1ed5844044b5b9af2d04cb2148399",
+        "fetched_at": "2026-10-30T08:52:51+08:00",
+        "sha256": "8a5900a418785c96da84eee4e9736d3d5291a3a650cd22f8bf8f9c4d03dd5d07",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:52:51+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "f2e5f2254b334ff062c77c3d",
@@ -6225,11 +6517,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=9960a6ec99794f3c89ac763c1ef7c532",
-        "fetched_at": "2026-10-27T08:46:56+08:00",
-        "sha256": "b79990401b1f9a51e67d6e17cff9300640866bf0d0a14ea879f1c2617ccb8e74",
+        "fetched_at": "2026-10-30T08:52:53+08:00",
+        "sha256": "e40b0999fba35df6eb08603493ed37422857a881d4e689e0c6598227bd78255d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:56+08:00",
+      "rechecked_at": "2026-10-30T08:52:53+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6244,11 +6536,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=55766c3274044fad991145a5f48ee035",
-        "fetched_at": "2026-10-27T08:46:58+08:00",
-        "sha256": "4989742d453245862c6735fc507ce8f251e7797ef37a89230698ff014c6fb2d3",
+        "fetched_at": "2026-10-30T08:52:55+08:00",
+        "sha256": "78a379488fa60f2b28335c8dbc4543f99de0bec341d19e171047ae54a1ab31b6",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:58+08:00",
+      "rechecked_at": "2026-10-30T08:52:55+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -6303,7 +6595,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:00+08:00"
+      "rechecked_at": "2026-10-30T08:52:57+08:00"
     },
     {
       "candidate_id": "2958965f46a38f93c3a9eb4d",
@@ -6316,7 +6608,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:01+08:00"
+      "rechecked_at": "2026-10-30T08:52:58+08:00"
     },
     {
       "candidate_id": "5bf5d88c6e75ca4fc1f210cf",
@@ -6329,7 +6621,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:01+08:00"
+      "rechecked_at": "2026-10-30T08:52:58+08:00"
     },
     {
       "candidate_id": "1683481f1cffc1f682dc3a17",
@@ -6342,7 +6634,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:01+08:00"
+      "rechecked_at": "2026-10-30T08:52:58+08:00"
     },
     {
       "candidate_id": "3ec3a447d731e21babfbe5db",
@@ -6355,7 +6647,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:01+08:00"
+      "rechecked_at": "2026-10-30T08:52:58+08:00"
     },
     {
       "candidate_id": "102133c0b23a733b4a7f7d78",
@@ -6616,7 +6908,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:02+08:00"
+      "rechecked_at": "2026-10-30T08:52:59+08:00"
     },
     {
       "candidate_id": "24b2ea49c0ad848c38422e76",
@@ -6695,7 +6987,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "11f1a8f1c1fe25e67c1e8068",
@@ -6708,7 +7000,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "9aeacac9bb7b3bc50a426164",
@@ -6721,7 +7013,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "7c3dbe74c98586f806246d1c",
@@ -6734,7 +7026,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "42cc5d7182ee9a956c447228",
@@ -6747,7 +7039,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "c7b6c9dfd3cb3c0135aebbd0",
@@ -6760,7 +7052,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "2e05f52085b12a832550d13d",
@@ -6773,7 +7065,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:03+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "52b5e5d95f1ba447cb5a7980",
@@ -6786,7 +7078,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:04+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "8ab26ebf9986e6e9a9ee7b65",
@@ -6799,7 +7091,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:04+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "9144d42647c2c6874fd19fe1",
@@ -6812,7 +7104,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:04+08:00"
+      "rechecked_at": "2026-10-30T08:53:00+08:00"
     },
     {
       "candidate_id": "0b4465d89335ba4b3eaa83c4",
@@ -6825,7 +7117,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:05+08:00"
+      "rechecked_at": "2026-10-30T08:53:01+08:00"
     },
     {
       "candidate_id": "9cbfbc93f8ddea76be0cfeab",
@@ -6838,7 +7130,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:05+08:00"
+      "rechecked_at": "2026-10-30T08:53:01+08:00"
     },
     {
       "candidate_id": "e679c2f176994938629bee05",
@@ -6851,7 +7143,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:05+08:00"
+      "rechecked_at": "2026-10-30T08:53:02+08:00"
     },
     {
       "candidate_id": "0cc1ffb666e424fb080394db",
@@ -6864,7 +7156,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:05+08:00"
+      "rechecked_at": "2026-10-30T08:53:02+08:00"
     },
     {
       "candidate_id": "d3847418bad2bad34c59732f",
@@ -7011,19 +7303,20 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:06+08:00"
+      "rechecked_at": "2026-10-30T08:53:02+08:00"
     },
     {
-      "candidate_id": "b0355a6006ea72c7e995ae39",
+      "candidate_id": "e9dae78541f7692a6b7ddde5",
       "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2092446061770362880",
-      "title": "【如此愛你】雅歌樂集年度音樂會",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "opentix_2092446565876240385",
-      "published_session_ids": [
-        "opentix_2092446565876240385"
-      ]
+      "source_url": "https://www.opentix.life/event/2112446898907934721",
+      "title": "《天織星光2》和諧之聲歌手新年音樂會",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:53:03+08:00"
     },
     {
       "candidate_id": "aed1e564175f2501f9204c55",
@@ -7172,7 +7465,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:18+08:00"
+      "rechecked_at": "2026-10-30T08:53:12+08:00"
     },
     {
       "candidate_id": "c7922761ebb50d5b986522d7",
@@ -7195,7 +7488,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:19+08:00"
+      "rechecked_at": "2026-10-30T08:53:13+08:00"
     },
     {
       "candidate_id": "83320c209abbe00b41d6e92c",
@@ -7208,7 +7501,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:19+08:00"
+      "rechecked_at": "2026-10-30T08:53:13+08:00"
     },
     {
       "candidate_id": "f982f2a208eaf3113745056f",
@@ -7221,7 +7514,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:19+08:00"
+      "rechecked_at": "2026-10-30T08:53:13+08:00"
     },
     {
       "candidate_id": "4107979a1f2d575c4e722e5e",
@@ -7234,7 +7527,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:19+08:00"
+      "rechecked_at": "2026-10-30T08:53:13+08:00"
     },
     {
       "candidate_id": "b7d149d751c2896f938d2b14",
@@ -7247,7 +7540,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:20+08:00"
+      "rechecked_at": "2026-10-30T08:53:14+08:00"
     },
     {
       "candidate_id": "b12a8995fbd1d5a3edb893cd",
@@ -7260,7 +7553,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:20+08:00"
+      "rechecked_at": "2026-10-30T08:53:15+08:00"
     },
     {
       "candidate_id": "6a02fc8788511e4d6bfe398f",
@@ -7273,7 +7566,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:21+08:00"
+      "rechecked_at": "2026-10-30T08:53:16+08:00"
     },
     {
       "candidate_id": "8b199abcd6a3e18e4246efba",
@@ -7286,7 +7579,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:22+08:00"
+      "rechecked_at": "2026-10-30T08:53:17+08:00"
     },
     {
       "candidate_id": "17c86d41e5d1dcccd900f3d8",
@@ -7299,7 +7592,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:23+08:00"
+      "rechecked_at": "2026-10-30T08:53:19+08:00"
     },
     {
       "candidate_id": "76d14c9439bca7d191ca74af",
@@ -7528,7 +7821,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:24+08:00"
+      "rechecked_at": "2026-10-30T08:53:20+08:00"
     },
     {
       "candidate_id": "ab346b7f56a1567e60fe1f1a",
@@ -7609,7 +7902,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:25+08:00"
+      "rechecked_at": "2026-10-30T08:53:21+08:00"
     },
     {
       "candidate_id": "dfcfc1b1dac024e27020ef3a",
@@ -7630,7 +7923,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:25+08:00"
+      "rechecked_at": "2026-10-30T08:53:21+08:00"
     },
     {
       "candidate_id": "e75fcbc9810240b230605a44",
@@ -7702,7 +7995,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:25+08:00"
+      "rechecked_at": "2026-10-30T08:53:21+08:00"
     },
     {
       "candidate_id": "7cba3532e61cb6d54fb356c2",
@@ -7740,7 +8033,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:25+08:00"
+      "rechecked_at": "2026-10-30T08:53:21+08:00"
     },
     {
       "candidate_id": "f7478e874ccccfe0fd4534ac",
@@ -7804,6 +8097,31 @@
         "opentix_2069979970899398657",
         "opentix_2069980028719353857"
       ]
+    },
+    {
+      "candidate_id": "b23881111eecdb918cdb242e",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2067491105969741825",
+      "title": "2026承功—新秀舞臺",
+      "decision": "pending",
+      "reason": "explicit_session_language_missing",
+      "published_session_ids": [
+        "opentix_2069979320480288768",
+        "opentix_2069979454930292737",
+        "opentix_2069979465842679809",
+        "opentix_2069979472712552449",
+        "opentix_2069979167001845761",
+        "opentix_2069979173344104449",
+        "opentix_2069979782025695232",
+        "opentix_2067534055683293185",
+        "opentix_2069979970899398657",
+        "opentix_2069980028719353857"
+      ],
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:53:23+08:00"
     },
     {
       "candidate_id": "5d52037bd3c456d091b706da",
@@ -7977,44 +8295,6 @@
       "title": "兒童布袋戲《焰王現身：心火山的祕密》",
       "decision": "duplicate",
       "reason": "duplicate_candidate"
-    },
-    {
-      "candidate_id": "9e44ff3d8b894409a7de4c1f",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/1863403624657735681",
-      "title": "文化觀光傳統表演藝術劇場-臺北戲棚",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "opentix_2054755304588681217",
-      "published_session_ids": [
-        "opentix_2054754824953241601",
-        "opentix_2054754827834728449",
-        "opentix_2054754830786617344",
-        "opentix_2054755287663939585",
-        "opentix_2054755290885165057",
-        "opentix_2054755293590315009",
-        "opentix_2054755296509726721",
-        "opentix_2054755299245137921",
-        "opentix_2054755301857288193",
-        "opentix_2054755304588681217",
-        "opentix_2054755314683469825",
-        "opentix_2054755317582635009",
-        "opentix_2054755320191492097",
-        "opentix_2054755323537821697",
-        "opentix_2054755327140552705",
-        "opentix_2062823204013744128",
-        "opentix_2062823214794117121",
-        "opentix_2062823218484092929",
-        "opentix_2068970773323358209",
-        "opentix_2068970776070627329",
-        "opentix_2068970779512094721",
-        "opentix_2068970781896515585",
-        "opentix_2068970789351931905",
-        "opentix_2068970796610203649",
-        "opentix_2068970799539896321",
-        "opentix_2068970802496880641",
-        "opentix_2068970804864524289"
-      ]
     },
     {
       "candidate_id": "0383c08e4f3fa1358e62d704",
@@ -8360,7 +8640,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "7aa3d17c708dc28f07323c7c",
@@ -8441,7 +8721,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "565be89a3016958bf6c17487",
@@ -8483,7 +8763,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "a38d9ad08722bb24fba2f4a5",
@@ -8525,7 +8805,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "c67041d2643cc5077f892eba",
@@ -8567,7 +8847,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "6bafd2ff83d5a4e282133b5b",
@@ -8609,7 +8889,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "ae164c8c34dee61df06df897",
@@ -8651,7 +8931,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "1f300a38b004f174ba920c5d",
@@ -8693,7 +8973,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "3cb5c85e1fbc1d7f60429244",
@@ -8735,7 +9015,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "327df1f0252143a1ae60e4a9",
@@ -8777,7 +9057,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "25b30ce6fc95dbe6c634fa37",
@@ -8819,7 +9099,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "49f373e7f79ad6ed50e14cac",
@@ -8861,7 +9141,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "7c4552f4f92fd5370d3abb39",
@@ -8903,7 +9183,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "2078e80ef14127a7626a0dc2",
@@ -9287,7 +9567,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:26+08:00"
+      "rechecked_at": "2026-10-30T08:53:24+08:00"
     },
     {
       "candidate_id": "4b84bb4d166de282573f9b4a",
@@ -9324,7 +9604,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:27+08:00"
+      "rechecked_at": "2026-10-30T08:53:26+08:00"
     },
     {
       "candidate_id": "5c6660b8262bfe3f31cfc623",
@@ -9337,46 +9617,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:27+08:00"
-    },
-    {
-      "candidate_id": "c094f01672a44be0783b4e12",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:28+08:00"
-    },
-    {
-      "candidate_id": "cda035130a8e24d7f3adfb1a",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
-    },
-    {
-      "candidate_id": "11682439671a363f572aa5a3",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
+      "rechecked_at": "2026-10-30T08:53:26+08:00"
     },
     {
       "candidate_id": "914e4c2c54cbf7afaea36ce5",
@@ -9389,33 +9630,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
-    },
-    {
-      "candidate_id": "700d42a2492e03926b0fc0a7",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
-    },
-    {
-      "candidate_id": "e6b19e27b73ca850e394c3dc",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
+      "rechecked_at": "2026-10-30T08:53:27+08:00"
     },
     {
       "candidate_id": "fe78cbd202835874887b0d94",
@@ -9428,20 +9643,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
-    },
-    {
-      "candidate_id": "e3fb6817efff2c55153731d3",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2078041749721079808",
-      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
-      "decision": "pending",
-      "reason": "explicit_session_language_missing",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:47:29+08:00"
+      "rechecked_at": "2026-10-30T08:53:27+08:00"
     },
     {
       "candidate_id": "2c108a59d1d8d496f4f0cd44",
@@ -9454,7 +9656,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:30+08:00"
+      "rechecked_at": "2026-10-30T08:53:27+08:00"
     },
     {
       "candidate_id": "69e6b1d9a4f6c7c705536fb6",
@@ -9467,7 +9669,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:31+08:00"
+      "rechecked_at": "2026-10-30T08:53:28+08:00"
     },
     {
       "candidate_id": "ee7be7b9044f55bc8da8eab8",
@@ -9480,6 +9682,30 @@
       "published_session_ids": [
         "opentix_2082715096956166145"
       ]
+    },
+    {
+      "candidate_id": "5db9d0116590aac65fcc5312",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "duplicate",
+      "reason": "duplicate_candidate"
+    },
+    {
+      "candidate_id": "09aa0cac7b6a84ead240160c",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "duplicate",
+      "reason": "duplicate_candidate"
+    },
+    {
+      "candidate_id": "3b4258252c35f92b70eb679f",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2063886748971831297",
+      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
+      "decision": "duplicate",
+      "reason": "duplicate_candidate"
     },
     {
       "candidate_id": "1f796896e1e95983ac4859b6",
@@ -9508,30 +9734,6 @@
       ]
     },
     {
-      "candidate_id": "5db9d0116590aac65fcc5312",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2063886748971831297",
-      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
-      "decision": "duplicate",
-      "reason": "duplicate_candidate"
-    },
-    {
-      "candidate_id": "09aa0cac7b6a84ead240160c",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2063886748971831297",
-      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
-      "decision": "duplicate",
-      "reason": "duplicate_candidate"
-    },
-    {
-      "candidate_id": "3b4258252c35f92b70eb679f",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2063886748971831297",
-      "title": "【歌仔戲】元和劇子-鼓震千秋《梁紅玉》",
-      "decision": "duplicate",
-      "reason": "duplicate_candidate"
-    },
-    {
       "candidate_id": "20b6dc623e4195e05b6e003c",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2087822052724801537",
@@ -9554,7 +9756,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:32+08:00"
+      "rechecked_at": "2026-10-30T08:53:29+08:00"
     },
     {
       "candidate_id": "17bd208dea80bd6f83ba893c",
@@ -9573,6 +9775,19 @@
       "reason": "duplicate_candidate"
     },
     {
+      "candidate_id": "f8ebc54324d597bc142c1ff9",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2087818083774783489",
+      "title": "《聽見那個年代》張林峯2026音樂會",
+      "decision": "pending",
+      "reason": "session_status_needs_review",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:53:29+08:00"
+    },
+    {
       "candidate_id": "c73cdd3082a71a39f3444120",
       "source_id": "opentix",
       "source_url": "https://www.opentix.life/event/2079497217047240705",
@@ -9583,7 +9798,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:30+08:00"
     },
     {
       "candidate_id": "bb3777fd7ced541bc5ead3a5",
@@ -9596,7 +9811,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:30+08:00"
     },
     {
       "candidate_id": "f992066b5a4bb06a571cbf10",
@@ -9609,7 +9824,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:31+08:00"
     },
     {
       "candidate_id": "0582ed17d4c8c0b6420050d1",
@@ -9622,7 +9837,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:31+08:00"
     },
     {
       "candidate_id": "d946dd1bae9b3d5e302a9cfc",
@@ -9635,7 +9850,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:31+08:00"
     },
     {
       "candidate_id": "5ee476650334903886d1ebae",
@@ -9648,7 +9863,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:33+08:00"
+      "rechecked_at": "2026-10-30T08:53:31+08:00"
     },
     {
       "candidate_id": "457c55ff578725fb66996f3c",
@@ -9661,7 +9876,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:34+08:00"
+      "rechecked_at": "2026-10-30T08:53:31+08:00"
     },
     {
       "candidate_id": "2c087e3da460e4cd70ea6873",
@@ -9698,7 +9913,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:34+08:00"
+      "rechecked_at": "2026-10-30T08:53:32+08:00"
     },
     {
       "candidate_id": "9f56f9fb86feb2ed1dae79d1",
@@ -9711,7 +9926,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:47:34+08:00"
+      "rechecked_at": "2026-10-30T08:53:32+08:00"
     },
     {
       "candidate_id": "3b7c9208f2dc9d276cf57aaa",
@@ -9865,11 +10080,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://taigiloo.tw/course/tuesday/",
-        "fetched_at": "2026-10-27T08:47:54+08:00",
-        "sha256": "01fbc189ce30854266b7690d330b594c7d58f72ff608442a4887a07ff2669375",
+        "fetched_at": "2026-10-30T08:53:51+08:00",
+        "sha256": "cc8462a7525d4572c836eb477ff0c4d44f11650f2c91a65c476212ac06081575",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:47:54+08:00",
+      "rechecked_at": "2026-10-30T08:53:51+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -9920,6 +10135,25 @@
       "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
+      "candidate_id": "78267d532b363052b805c255",
+      "source_id": "taipei_culture",
+      "source_url": "https://culture.gov.taipei/News_Content.aspx?n=63F36AA6E434AD08&sms=78D644F2755ACCAA&s=C23D141AE42878C4",
+      "title": "臺北市政府文化局",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://culture.gov.taipei/News_Content.aspx?n=63F36AA6E434AD08&sms=78D644F2755ACCAA&s=C23D141AE42878C4",
+        "fetched_at": "2026-10-30T08:53:57+08:00",
+        "sha256": "26f975059d4c15701e8ad25a3e7b46617d13ed98bfe26b8d1280774c153317f4",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:53:57+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
       "candidate_id": "7a0c74acf36c29e68adccb37",
       "source_id": "taipei_culture",
       "source_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=CEEBB8051ABEC5FC",
@@ -9928,11 +10162,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=CEEBB8051ABEC5FC",
-        "fetched_at": "2026-10-27T08:48:01+08:00",
-        "sha256": "5d7961bda1d82a8e459c1f0827229386b4c9ac1cd4f549045af8981295fb6364",
+        "fetched_at": "2026-10-30T08:54:00+08:00",
+        "sha256": "5debde0b3943b5f8c3e16916688a451e8faa9f36a604e63071cc12506846690c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:01+08:00",
+      "rechecked_at": "2026-10-30T08:54:00+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -9957,16 +10191,13 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "final_url": "https://tmofa.tycg.gov.tw/ch/news/latest-news/633",
-        "fetched_at": "2026-10-27T08:48:06+08:00",
-        "sha256": "6dac20b305c93530145585e7119138a78cd38c34807e9499f0db6594a75c2162",
-        "http_status": 200
+        "status": "failed",
+        "code": "http_428"
       },
-      "rechecked_at": "2026-10-27T08:48:06+08:00",
+      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
       "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+        "reachable_official_source"
+      ]
     },
     {
       "candidate_id": "d7c732aae15b836240e96d41",
@@ -9977,30 +10208,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://nhdo.gov.taipei/News_Content.aspx?n=14624B66DAE97712&sms=182753B4C8854F02&s=3FCAD6F7074FC09E",
-        "fetched_at": "2026-10-27T08:48:07+08:00",
-        "sha256": "d401f48870768685b6b74241be063855b4aa541316cccfeaae4a59cdd3ac2673",
+        "fetched_at": "2026-10-30T08:54:06+08:00",
+        "sha256": "cce55e31012cdb56af76be418451f1871399cb147956ed54fb1ffd5d3fabe5c8",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:07+08:00",
-      "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
-    },
-    {
-      "candidate_id": "afa44c408e05350163c1b5b0",
-      "source_id": "tp_center_xydo",
-      "source_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
-      "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
-      "decision": "pending",
-      "reason": "unstructured_source_needs_review",
-      "source_recheck": {
-        "final_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
-        "fetched_at": "2026-10-27T08:48:11+08:00",
-        "sha256": "803a03deda98133b98e286ae06721977c6abff6f39a6f485d7ccdc4997bc8c86",
-        "http_status": 200
-      },
-      "rechecked_at": "2026-10-27T08:48:11+08:00",
+      "rechecked_at": "2026-10-30T08:54:06+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10033,11 +10245,11 @@
       ],
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=AF0E43EB498C9E89&sms=9D72E82EC16F3E64&s=D3DFA71B03975717",
-        "fetched_at": "2026-10-27T08:48:12+08:00",
-        "sha256": "db98bebb06b7aba00b740a0ca600987e0849fe44bb610499670fc2463c911fa9",
+        "fetched_at": "2026-10-30T08:54:07+08:00",
+        "sha256": "76c273c73e31fbd33198bb4d8b34825c4cd2c041de4d4fac7eac8d952d2addf6",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:12+08:00",
+      "rechecked_at": "2026-10-30T08:54:07+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10052,11 +10264,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=F429ED1373F10317&sms=9D72E82EC16F3E64&s=38B1B2747969B6BF",
-        "fetched_at": "2026-10-27T08:48:12+08:00",
-        "sha256": "9f58328e8c18a2e6832429c9b1abb7d207ee61ddd19698a827444f71b621026d",
+        "fetched_at": "2026-10-30T08:54:08+08:00",
+        "sha256": "d61d2ef6f4f74fd834a666c93807edd51bb922ae5ec93f9f710f5afdbf8886c3",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:12+08:00",
+      "rechecked_at": "2026-10-30T08:54:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10071,11 +10283,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=D153D49D150C3438&sms=9D72E82EC16F3E64&s=DE3E88434F5F8762",
-        "fetched_at": "2026-10-27T08:48:13+08:00",
-        "sha256": "a482745bad42d28ddc97b160be8a2146522594b8ace7f116933a05e280243946",
+        "fetched_at": "2026-10-30T08:54:08+08:00",
+        "sha256": "38717f8282c9ea5fd1aa5ee1e27ae2bac77c5ecf31751be5c3d7c2c4e8917ff7",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:13+08:00",
+      "rechecked_at": "2026-10-30T08:54:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10090,11 +10302,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=DCE78298076E275D&sms=9D72E82EC16F3E64&s=7B9A90BA1BD4EA94",
-        "fetched_at": "2026-10-27T08:48:14+08:00",
-        "sha256": "0d3185899a8d821a8b6218d1e3b24174851070f0357992221290b46f174193a1",
+        "fetched_at": "2026-10-30T08:54:09+08:00",
+        "sha256": "708d6160792fcc3d1a5bf92a1817ec99a10edd7a99275ad0906eed30aa7a4e5c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:14+08:00",
+      "rechecked_at": "2026-10-30T08:54:09+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10109,11 +10321,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=A518747EFB971FC7&sms=9D72E82EC16F3E64&s=F492BEBC527519C8",
-        "fetched_at": "2026-10-27T08:48:15+08:00",
-        "sha256": "8c0e6405a4401ac8ad665ba84604c0a613a95a4daec1d17c531835f46b575cb0",
+        "fetched_at": "2026-10-30T08:54:10+08:00",
+        "sha256": "6536e59c08248010c7866f4dda0f3a79f4ad0fc00908c8b032cf788661f5e3bb",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:15+08:00",
+      "rechecked_at": "2026-10-30T08:54:10+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10128,11 +10340,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://reading.tpml.gov.taipei/News_Content.aspx?n=2652429EF81FBBAA&sms=9D72E82EC16F3E64&s=F11D5A4037542EF4",
-        "fetched_at": "2026-10-27T08:48:16+08:00",
-        "sha256": "6756c0965ebfee92b53d8a8c21c51d94598e31a1c46b4c89c1e75a5f128f0687",
+        "fetched_at": "2026-10-30T08:54:11+08:00",
+        "sha256": "eb49cc921a98c1ab2186ed17434f438423efb6f9f0c8f1f0281b6c3bbd8cca7c",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:16+08:00",
+      "rechecked_at": "2026-10-30T08:54:11+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10150,23 +10362,36 @@
       "reviewed_at": "2026-10-06T16:55:12+08:00"
     },
     {
-      "candidate_id": "67c854218c7f7da13359b728",
-      "source_id": "ty_education",
-      "source_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
-      "title": "桃園市政府教育局",
+      "candidate_id": "2e221fd1097902190bc1e089",
+      "source_id": "ty_culture",
+      "source_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1927761",
+      "title": "115-10-27 「台語，咱佮意！」桃園市台語家庭設置27處推廣點，邀市民做伙講台語",
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "final_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
-        "fetched_at": "2026-10-27T08:48:20+08:00",
-        "sha256": "200287ce36851381aee375c3bbf727cd83eec9bd788e521cb25e16e720bb86aa",
-        "http_status": 200
+        "status": "failed",
+        "code": "network_or_tls_error"
       },
-      "rechecked_at": "2026-10-27T08:48:20+08:00",
+      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
       "missing_evidence": [
-        "complete_future_session_and_taigi_evidence"
-      ],
-      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+        "reachable_official_source"
+      ]
+    },
+    {
+      "candidate_id": "a969141f7e434d2831ad26ea",
+      "source_id": "ty_culture",
+      "source_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1928225",
+      "title": "桃園市政府文化局",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "status": "failed",
+        "code": "network_or_tls_error"
+      },
+      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "missing_evidence": [
+        "reachable_official_source"
+      ]
     },
     {
       "candidate_id": "33b24205e0eb12ce37a2adce",
@@ -10182,11 +10407,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
-        "fetched_at": "2026-10-27T08:48:22+08:00",
-        "sha256": "42f24ed42a51aa42bff41786e7d0ece9f168e4b8e9fdedc2156bf761433760af",
+        "fetched_at": "2026-10-30T08:55:22+08:00",
+        "sha256": "8bc13d731e34bde7986c98a1ac0d42d32bcb09480333ee67c57b9f6177d32a82",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:22+08:00",
+      "rechecked_at": "2026-10-30T08:55:22+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10206,11 +10431,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.typl.gov.tw/zh-tw/Activity/Content/10103",
-        "fetched_at": "2026-10-27T08:48:22+08:00",
-        "sha256": "42f24ed42a51aa42bff41786e7d0ece9f168e4b8e9fdedc2156bf761433760af",
+        "fetched_at": "2026-10-30T08:55:22+08:00",
+        "sha256": "8bc13d731e34bde7986c98a1ac0d42d32bcb09480333ee67c57b9f6177d32a82",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:22+08:00",
+      "rechecked_at": "2026-10-30T08:55:22+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10242,20 +10467,199 @@
       "reviewed_at": "2026-10-01T00:42:58+08:00"
     },
     {
-      "candidate_id": "c77130127cc348af65880230",
+      "candidate_id": "22e8f62015f9e0ff24ab8f08",
       "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610170130462896152980",
-      "title": "20261023 大象國台語例會(這次是ZOOM線上)",
-      "decision": "excluded",
-      "reason": "expired"
+      "source_url": "https://www.accupass.com/event/2609100854024528725810",
+      "title": "【一本書，變成一整季的行銷素材】AI內容行銷實戰工作坊",
+      "decision": "pending",
+      "reason": "verification_failed:reviewed_announcement_content_changed",
+      "published_session_ids": [
+        "acc_2609100854024528725810_20261028_0900"
+      ],
+      "source_recheck": {
+        "final_url": "https://www.accupass.com/event/2609100854024528725810",
+        "fetched_at": "2026-10-30T08:55:26+08:00",
+        "sha256": "64c033018d2166f13e1bfefd1688d70b49e54c8708dffa4989275b919f3c3be7",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:55:26+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
-      "candidate_id": "305727509dac3803c6c4f54a",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2610190610442080629935",
-      "title": "「台語，咱佮意！」台語家庭推廣說明會-10/24 (六) 中壢區洽溪市民活動中心",
-      "decision": "excluded",
-      "reason": "expired"
+      "candidate_id": "9d7c72661457ad8b528a7e02",
+      "source_id": "culture_open_data",
+      "source_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+      "title": "115年深入你心歌唱",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
+        "fetched_at": "2026-10-30T08:55:28+08:00",
+        "sha256": "9e4389a5b68136e7f30b306b4cf41b712071749cdfa8c5834d8480ee96e1436b",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:55:28+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "c5c4cd62d6259d95dd4ab013",
+      "source_id": "dadaocheng",
+      "source_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+      "title": "公告本處「臺北市115年歌仔戲觀摩匯演」入選團隊",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=19994A24AB6FD47A&sms=61D456768E73CD92&s=D3B73314C3603650",
+        "fetched_at": "2026-10-30T08:55:29+08:00",
+        "sha256": "a9dba7aed34b27894e2dd016f96bb77d9ee9da2299890edc7b821163fa5a8b60",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:55:29+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "fbc84384bfe6fd2d5d9ec101",
+      "source_id": "ntpclib",
+      "source_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=41a4b81c1abd491ea8fed9d77f1d2255",
+      "title": "【汐止大同分館】「原」汐「新」生活：台語走讀活動",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=41a4b81c1abd491ea8fed9d77f1d2255",
+        "fetched_at": "2026-10-30T08:52:37+08:00",
+        "sha256": "b81dbe43dad2cfcd8a72a3f25381e764be7316923c753915d4aa92cee52f6a56",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:52:37+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "c094f01672a44be0783b4e12",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "cda035130a8e24d7f3adfb1a",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "11682439671a363f572aa5a3",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "700d42a2492e03926b0fc0a7",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "e6b19e27b73ca850e394c3dc",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "e3fb6817efff2c55153731d3",
+      "source_id": "opentix",
+      "source_url": "https://www.opentix.life/event/2078041749721079808",
+      "title": "傳奇戲樓《藝決天下・四部曲》興傳奇青年劇場",
+      "decision": "pending",
+      "reason": "session_missing",
+      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
+      "missing_evidence": [
+        "spoken_language_or_change_notice"
+      ],
+      "rechecked_at": "2026-10-30T08:55:29+08:00"
+    },
+    {
+      "candidate_id": "afa44c408e05350163c1b5b0",
+      "source_id": "tp_center_xydo",
+      "source_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+      "title": "114-07-12 音樂一夏・大手小手藝起動手做 × 唱乎你聽的臺語歌謠",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://xydo.gov.taipei/News_Content.aspx?n=7D4B1377A1232237&sms=72544237BBE4C5F6&s=CE301549FF283180",
+        "fetched_at": "2026-10-30T08:55:33+08:00",
+        "sha256": "1776debf18aab4f10d88cf0bb954879aa3e33c2588dfd9fb5062b2c7d8d737b6",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:55:33+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
+    },
+    {
+      "candidate_id": "67c854218c7f7da13359b728",
+      "source_id": "ty_education",
+      "source_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+      "title": "桃園市政府教育局",
+      "decision": "pending",
+      "reason": "unstructured_source_needs_review",
+      "source_recheck": {
+        "final_url": "https://www.tyc.edu.tw/News_Content.aspx?Create=1&n=5144&state=1C5D152DDF4F3ED0&s=1887836&ccms_cs=1&sms=10536",
+        "fetched_at": "2026-10-30T08:55:35+08:00",
+        "sha256": "404f8958c25a018eda70e78a0eaff107fc2f2ac7bd39fa362a36a7621a515d02",
+        "http_status": 200
+      },
+      "rechecked_at": "2026-10-30T08:55:35+08:00",
+      "missing_evidence": [
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "0ffb8dbdd398f9fa634e048e",
@@ -10268,7 +10672,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:48:40+08:00"
+      "rechecked_at": "2026-10-30T08:55:36+08:00"
     },
     {
       "candidate_id": "47ee554be0653aade3a3f5fa",
@@ -10293,20 +10697,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:48:41+08:00"
-    },
-    {
-      "candidate_id": "f8ebc54324d597bc142c1ff9",
-      "source_id": "opentix",
-      "source_url": "https://www.opentix.life/event/2087818083774783489",
-      "title": "《聽見那個年代》張林峯2026音樂會",
-      "decision": "pending",
-      "reason": "verification_failed:http_400",
-      "next_action": "核對官方場次語言／異動公告；未有明確證據前不進編輯佇列。",
-      "missing_evidence": [
-        "spoken_language_or_change_notice"
-      ],
-      "rechecked_at": "2026-10-27T08:48:42+08:00"
+      "rechecked_at": "2026-10-30T08:55:36+08:00"
     },
     {
       "candidate_id": "987e701b8b6f81de990a0952",
@@ -10349,11 +10740,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.wanli.ntpc.gov.tw/home.jsp?id=f5819bb65919966a&act=be4f48068b2b0031&dataserno=b2c0a4cabbd15c824e3373cdcdfc878f&mserno=be3fddfc5a7df5b3468e71e3fa13c49f",
-        "fetched_at": "2026-10-27T08:48:58+08:00",
-        "sha256": "8cd0b63b752fe51aea707218c3db17ccb7cb9106392436e8348afce62570aa7d",
+        "fetched_at": "2026-10-30T08:55:50+08:00",
+        "sha256": "6554d5d52a5bb19888d666bc3b05c3ad34b9e2344ce923cf1df36b201fc3f9aa",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:48:58+08:00",
+      "rechecked_at": "2026-10-30T08:55:50+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10368,11 +10759,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.ntpc.edu.tw/home.jsp?id=d127e0ce0f4f407b&act=be4f48068b2b0031&dataserno=1108812994fcf795a6ba537e56d5e768&mserno=cdfca8f4e3eeb6df81e43a5af771c42f",
-        "fetched_at": "2026-10-27T08:49:00+08:00",
-        "sha256": "652958e0831d188636608f6419f083a23875f7fdcdf6ebeb784b39245b4c47fc",
+        "fetched_at": "2026-10-30T08:55:51+08:00",
+        "sha256": "46019b1e05dedbc5f6888664b7dc6b817706b33ba96718a0d7615ae2d9c3d0bf",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:00+08:00",
+      "rechecked_at": "2026-10-30T08:55:51+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10387,11 +10778,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=55766c3274044fad991145a5f48ee035",
-        "fetched_at": "2026-10-27T08:46:58+08:00",
-        "sha256": "4989742d453245862c6735fc507ce8f251e7797ef37a89230698ff014c6fb2d3",
+        "fetched_at": "2026-10-30T08:52:55+08:00",
+        "sha256": "78a379488fa60f2b28335c8dbc4543f99de0bec341d19e171047ae54a1ab31b6",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:46:58+08:00",
+      "rechecked_at": "2026-10-30T08:52:55+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10406,11 +10797,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.gov.taipei/News_Content.aspx?n=63F36AA6E434AD08&sms=78D644F2755ACCAA&s=B0A462C6779F613D",
-        "fetched_at": "2026-10-27T08:49:00+08:00",
-        "sha256": "f035c62fdae436d76ec844b294d37e0caeffb809b10c6df76ca832b85c5455ba",
+        "fetched_at": "2026-10-30T08:55:52+08:00",
+        "sha256": "e2fa3356c44c1c0e4b4ea71be3fd0257d4c7f09423ee1878c123ed0e3f049768",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:00+08:00",
+      "rechecked_at": "2026-10-30T08:55:52+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10425,11 +10816,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.gov.taipei/News_Content.aspx?n=621F0409A1ABDD34&sms=72544237BBE4C5F6&s=6217AAF425AB1B2A",
-        "fetched_at": "2026-10-27T08:49:01+08:00",
-        "sha256": "b3531493e9049beb8977bb473e2f7c3587fca47c472d50b6d4ff6c0fdf15c9e5",
+        "fetched_at": "2026-10-30T08:55:56+08:00",
+        "sha256": "e7378faa52aefb36d92e116f6d09787fb7be1386958d232ecc6195936428d3a4",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:01+08:00",
+      "rechecked_at": "2026-10-30T08:55:56+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10447,11 +10838,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609180844161047784508",
-        "fetched_at": "2026-10-27T08:49:03+08:00",
-        "sha256": "e1150adddbcdd4d371ec26136b9c6145844f76c691c83af9e70779c166d329b1",
+        "fetched_at": "2026-10-30T08:55:57+08:00",
+        "sha256": "32df6256d98c3153e94914d50bc5e31e2f1bba3b0eed8dcba88258c6476fe788",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:03+08:00",
+      "rechecked_at": "2026-10-30T08:55:57+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10466,11 +10857,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-27T08:42:00+08:00",
-        "sha256": "4690e11a06cd1db203300ebdb5f32a9a726aa6d2310d47ad8021680edda3572c",
+        "fetched_at": "2026-10-30T08:55:28+08:00",
+        "sha256": "9e4389a5b68136e7f30b306b4cf41b712071749cdfa8c5834d8480ee96e1436b",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:00+08:00",
+      "rechecked_at": "2026-10-30T08:55:28+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10489,11 +10880,11 @@
       ],
       "source_recheck": {
         "final_url": "https://www.accupass.com/event/2609080954292886555710",
-        "fetched_at": "2026-10-27T08:49:05+08:00",
-        "sha256": "a3eb719a624f27a1ba4818ca1e28007dd6cbdbc0d98b0529f59649a0a3ed0272",
+        "fetched_at": "2026-10-30T08:55:59+08:00",
+        "sha256": "07e8e4125f4ad0ffc5e46699fe15605b66bbe65d1e8a3b4b7a80012b7d84db2d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:05+08:00",
+      "rechecked_at": "2026-10-30T08:55:59+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10508,11 +10899,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8",
-        "fetched_at": "2026-10-27T08:49:06+08:00",
-        "sha256": "301dea3b6ffc15c692d5f28b23619f49856ce042a620e5a6349dc731f2d0e9c2",
+        "fetched_at": "2026-10-30T08:56:00+08:00",
+        "sha256": "7713fc2062712e915df11955db9c122557550d57aa3a62b2f52bcc99b64ef42a",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:06+08:00",
+      "rechecked_at": "2026-10-30T08:56:00+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10531,11 +10922,11 @@
       ],
       "source_recheck": {
         "final_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60185",
-        "fetched_at": "2026-10-27T08:49:07+08:00",
-        "sha256": "7bf54f20776a9bacc9a135afae71a61e949096902736e6dbd5dfed7d5f04e016",
+        "fetched_at": "2026-10-30T08:56:02+08:00",
+        "sha256": "1f38c6e8eed0de49bf926986fc89a176d74a7449e61b1cc45e729791276c1b9a",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:07+08:00",
+      "rechecked_at": "2026-10-30T08:56:02+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10552,7 +10943,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:08+08:00"
+      "rechecked_at": "2026-10-30T08:56:02+08:00"
     },
     {
       "candidate_id": "9536d3788d0ad8287e08c44a",
@@ -10565,7 +10956,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:09+08:00"
+      "rechecked_at": "2026-10-30T08:56:03+08:00"
     },
     {
       "candidate_id": "ca9d315ceace54ffb3cf53f8",
@@ -10578,7 +10969,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:09+08:00"
+      "rechecked_at": "2026-10-30T08:56:04+08:00"
     },
     {
       "candidate_id": "fbf770b73cc8075ce6b43083",
@@ -10603,7 +10994,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:09+08:00"
+      "rechecked_at": "2026-10-30T08:56:04+08:00"
     },
     {
       "candidate_id": "7fe5cc72b1fb72aa3138b3dc",
@@ -10616,7 +11007,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:10+08:00"
+      "rechecked_at": "2026-10-30T08:56:05+08:00"
     },
     {
       "candidate_id": "aa7f8866e94f7ad5ff83c4d2",
@@ -10629,7 +11020,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:11+08:00"
+      "rechecked_at": "2026-10-30T08:56:06+08:00"
     },
     {
       "candidate_id": "ca2b3a6fb0ffbe1757d9e767",
@@ -10640,11 +11031,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.doe.gov.taipei/News_Content.aspx?n=9AA0CC873BD001A2&sms=2E90303507CA4A6B&s=547CD0A127A91D65",
-        "fetched_at": "2026-10-27T08:49:13+08:00",
-        "sha256": "26bedf756b17d1e1ab838d5ea38e65dbf63542eec0e1b7e14d1165ecb2d71963",
+        "fetched_at": "2026-10-30T08:56:08+08:00",
+        "sha256": "743bc544b95fbc4f3203abb35f782807932572e42c64e442e6d592c6ca8e179d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:13+08:00",
+      "rechecked_at": "2026-10-30T08:56:08+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10659,11 +11050,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.tpedoit.gov.taipei/News_Content.aspx?n=603755835E928BED&sms=72544237BBE4C5F6&s=52F8C8D12518C98D",
-        "fetched_at": "2026-10-27T08:49:16+08:00",
-        "sha256": "1abc6d92f1af536c52282622584a88da7b50c69f38b37b60435998820c1212eb",
+        "fetched_at": "2026-10-30T08:56:11+08:00",
+        "sha256": "1bb88ce33e5024679e055f40641adebd9010983748e132663077d348549c5f2d",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:16+08:00",
+      "rechecked_at": "2026-10-30T08:56:11+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10677,13 +11068,16 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "status": "failed",
-        "code": "network_or_tls_error"
+        "final_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1896065",
+        "fetched_at": "2026-10-30T08:56:14+08:00",
+        "sha256": "9cc327d3aae3ad0261086f005c04e0f77141aa4487fab538de8dc21dfcc7aea9",
+        "http_status": 200
       },
-      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "rechecked_at": "2026-10-30T08:56:14+08:00",
       "missing_evidence": [
-        "reachable_official_source"
-      ]
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "ad7dbceeb69f0afff7362753",
@@ -10694,11 +11088,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.ntpc.edu.tw/home.jsp?id=d127e0ce0f4f407b&act=be4f48068b2b0031&dataserno=8be6d2b985c4d7ac175f73b96a30000e&mserno=cdfca8f4e3eeb6df81e43a5af771c42f",
-        "fetched_at": "2026-10-27T08:49:49+08:00",
-        "sha256": "9e5d1ea9c7be6d3651cb4bcb32c8391cb6f8e21342179b7a21f1a04fbbd2ac88",
+        "fetched_at": "2026-10-30T08:56:15+08:00",
+        "sha256": "a3dd483b7ac1dd15396fab52279817891fc4de637b50439865c1135be6298fea",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:49:49+08:00",
+      "rechecked_at": "2026-10-30T08:56:15+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10715,7 +11109,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:50+08:00"
+      "rechecked_at": "2026-10-30T08:56:16+08:00"
     },
     {
       "candidate_id": "d52e86bd9feff58950d21624",
@@ -10728,7 +11122,7 @@
       "missing_evidence": [
         "spoken_language_or_change_notice"
       ],
-      "rechecked_at": "2026-10-27T08:49:51+08:00"
+      "rechecked_at": "2026-10-30T08:56:17+08:00"
     },
     {
       "candidate_id": "c9ff01f5df42cb7b2d5eb9ac",
@@ -10738,13 +11132,16 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "status": "failed",
-        "code": "network_or_tls_error"
+        "final_url": "https://www.tyc.edu.tw/News_Content.aspx?n=5144&s=1887836",
+        "fetched_at": "2026-10-30T08:56:19+08:00",
+        "sha256": "9fcb7b7a5f76a372d12a6ed4912eb41336e0e4e6fabe44b578dae4695c48511c",
+        "http_status": 200
       },
-      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "rechecked_at": "2026-10-30T08:56:19+08:00",
       "missing_evidence": [
-        "reachable_official_source"
-      ]
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "d7fe292bd7658a172b698a4d",
@@ -10755,11 +11152,11 @@
       "reason": "trusted_language_source_missing",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1646st4ti94",
-        "fetched_at": "2026-10-27T08:40:33+08:00",
+        "fetched_at": "2026-10-30T08:46:27+08:00",
         "sha256": "3a65e7f2990de22880dc1f8350a9bdcd3e610f178977fe3894d3e56563f5be22",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:33+08:00",
+      "rechecked_at": "2026-10-30T08:46:27+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -10774,11 +11171,11 @@
       "reason": "trusted_language_source_missing",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1646st4ti94",
-        "fetched_at": "2026-10-27T08:40:33+08:00",
+        "fetched_at": "2026-10-30T08:46:27+08:00",
         "sha256": "3a65e7f2990de22880dc1f8350a9bdcd3e610f178977fe3894d3e56563f5be22",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:33+08:00",
+      "rechecked_at": "2026-10-30T08:46:27+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -10793,11 +11190,11 @@
       "reason": "trusted_language_source_missing",
       "source_recheck": {
         "final_url": "https://www.gameislearning.url.tw/taigi-info.php?news=1646st4ti94",
-        "fetched_at": "2026-10-27T08:40:33+08:00",
+        "fetched_at": "2026-10-30T08:46:27+08:00",
         "sha256": "3a65e7f2990de22880dc1f8350a9bdcd3e610f178977fe3894d3e56563f5be22",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:40:33+08:00",
+      "rechecked_at": "2026-10-30T08:46:27+08:00",
       "missing_evidence": [
         "explicit_taigi_content"
       ],
@@ -10812,11 +11209,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://www.banqiao.ntpc.gov.tw/home.jsp?id=b6ef2e53ee690ce6&act=be4f48068b2b0031&dataserno=ceb4c57b67737d353499d78bd3319c9c",
-        "fetched_at": "2026-10-27T08:50:24+08:00",
-        "sha256": "7dd6e15cff347210f73f4c6b3aac0f67f33bf0ef844825e6c08aacce3530e24f",
+        "fetched_at": "2026-10-30T08:56:22+08:00",
+        "sha256": "2814d87d9d31330c6f8c560105d550eb7d89e429d41f0de227d2fd48c717ad56",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:50:24+08:00",
+      "rechecked_at": "2026-10-30T08:56:22+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10847,11 +11244,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1890760",
-        "fetched_at": "2026-10-27T08:50:31+08:00",
-        "sha256": "eebf2ade92d1dba2f40af80bb40f89725e35fa3fe1cb45bb55236046a3816754",
+        "fetched_at": "2026-10-30T08:56:28+08:00",
+        "sha256": "528a6a1e9061f5b3d301d4813e9ccbd4e1b13265115fca69b93b4f12dc50f147",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:50:31+08:00",
+      "rechecked_at": "2026-10-30T08:56:28+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10866,11 +11263,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1889638",
-        "fetched_at": "2026-10-27T08:50:34+08:00",
-        "sha256": "1f728f3ec6b50e1905abba6dd74c20a6cf27887e9332327f6c842dd7cc3433fd",
+        "fetched_at": "2026-10-30T08:56:33+08:00",
+        "sha256": "34503fce1fb817330d0d3946c3912aad38e1d1d5470c1c568b556cea3b85157f",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:50:34+08:00",
+      "rechecked_at": "2026-10-30T08:56:33+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10885,11 +11282,11 @@
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
         "final_url": "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=7",
-        "fetched_at": "2026-10-27T08:42:00+08:00",
-        "sha256": "4690e11a06cd1db203300ebdb5f32a9a726aa6d2310d47ad8021680edda3572c",
+        "fetched_at": "2026-10-30T08:55:28+08:00",
+        "sha256": "9e4389a5b68136e7f30b306b4cf41b712071749cdfa8c5834d8480ee96e1436b",
         "http_status": 200
       },
-      "rechecked_at": "2026-10-27T08:42:00+08:00",
+      "rechecked_at": "2026-10-30T08:55:28+08:00",
       "missing_evidence": [
         "complete_future_session_and_taigi_evidence"
       ],
@@ -10903,13 +11300,16 @@
       "decision": "pending",
       "reason": "unstructured_source_needs_review",
       "source_recheck": {
-        "status": "failed",
-        "code": "network_or_tls_error"
+        "final_url": "https://www.ntl.edu.tw/wSite/ct?xItem=98537&ctNode=2791&mp=1",
+        "fetched_at": "2026-10-30T08:56:35+08:00",
+        "sha256": "795d2a42a7daa0bf53944b883af276dc1cf81f90fbf744364ec71ae4774d4031",
+        "http_status": 200
       },
-      "next_action": "來源目前無法讀取，待恢復後重查；保留候選。",
+      "rechecked_at": "2026-10-30T08:56:35+08:00",
       "missing_evidence": [
-        "reachable_official_source"
-      ]
+        "complete_future_session_and_taigi_evidence"
+      ],
+      "next_action": "核對正文中的未來場次、台語內容及參加條件；一般文章／展覽／導覽服務不直接作為單場活動。"
     },
     {
       "candidate_id": "3cc8d7aa7dd27ffd3a433912",
@@ -11849,25 +12249,6 @@
       ]
     },
     {
-      "candidate_id": "25ad49cf31204b4006d349c0",
-      "source_id": "accupass",
-      "source_url": "https://www.accupass.com/event/2609140313052076422556",
-      "title": "台語咱佮意！親子生活會話基礎班",
-      "decision": "duplicate",
-      "reason": "already_published",
-      "activity_id": "review_acc_2609140313052076422556_20261122_1330",
-      "published_session_ids": [
-        "acc_2609140313052076422556_20261003_0900_b8b25ead3bd9",
-        "acc_2609140313052076422556_20261010_0900_92282bc5a27b",
-        "acc_2609140313052076422556_20261018_1330_78868c23f2e4",
-        "acc_2609140313052076422556_20261024_0900_76636055dfda",
-        "acc_2609140313052076422556_20261025_1330_65a035e138a2",
-        "acc_2609140313052076422556_20261101_1330_ca5c25044671",
-        "acc_2609140313052076422556_20261108_1330_0bc53deed03c",
-        "review_acc_2609140313052076422556_20261122_1330"
-      ]
-    },
-    {
       "candidate_id": "1aa012a4c9d1b96128eed2a3",
       "source_id": "accupass",
       "source_url": "https://www.accupass.com/event/2608051357275636349740",
@@ -12229,17 +12610,17 @@
     }
   ],
   "attention": {
-    "pending_candidates": 227,
-    "already_has_published_sessions": 33,
+    "pending_candidates": 246,
+    "already_has_published_sessions": 35,
     "source_unavailable": 6,
     "message": "待編輯0筆不代表所有候選已核實；以下待核實項目仍須處理。"
   },
   "collection_run": {
-    "id": 40420916221,
-    "head_sha": "df88b019a0c6cbd64a93961abe0e36ac83339226",
+    "id": 40975706262,
+    "head_sha": "063ef6fecfc91914c4b019262f1915d5e3488cca",
     "conclusion": "failure",
-    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/40420916221",
-    "artifact_id": 12699978475
+    "url": "https://github.com/Jialiangni/taigi_activities/actions/runs/40975706262",
+    "artifact_id": 12945345731
   },
   "destination": "data/editorial/queue.json"
 }
